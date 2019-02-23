@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Sung Codes`,
+    description: `Static Site (Gatsby) version of SlightEdgeCoder.com`,
+    author: `Sung M. Kim`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,6 +45,8 @@ module.exports = {
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 5,
         useACF: false,
+        // Set how many pages are retrieved per API request.
+        perPage: 100,
         // Set WP REST API routes whitelists
         // and blacklists using glob patterns.
         // Defaults to whitelist the routes shown
