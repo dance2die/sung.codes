@@ -1,9 +1,8 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
-import ClockIcon from "react-icons/lib/fa/clock-o"
 
 import Layout from "../layouts"
-import PostIcons from "../components/post-icons"
+import PostIcons from "../components/post-icon"
 
 import { rhythm } from "../utils/typography"
 
@@ -21,14 +20,7 @@ class Home extends Component {
                 <h3>{node.title}</h3>
               </Link>
               <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              <span>
-                <ClockIcon
-                  size={14}
-                  css={{ position: `relative`, bottom: 1 }}
-                />
-                {` `}
-                {node.date}
-              </span>
+              <span>{node.date}</span>
             </div>
           ))}
         </div>
