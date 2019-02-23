@@ -51,6 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
             status
             template
             format
+            jetpack_featured_media_url
           }
         }
       }

@@ -4,25 +4,22 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Layout from "../layouts"
 
-// import PostIcons from "../components/post-icon"
-// import { rhythm } from "../utils/typography"
+import PostIcons from "../components/post-icon"
+import { rhythm } from "../utils/typography"
 
 class PostTemplate extends Component {
   render() {
-    // const post = this.props.data.wordpressPost
+    const post = this.props.data.wordpressPost
 
+    // return (<Layout><h1>Post!</h1></Layout>)
     return (
       <Layout>
-        <h1>Post!</h1>
+        <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+        <img src={post.jetpack_featured_media_url} alt="featured" />
+        <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </Layout>
     )
-    // return (
-    //   <Layout>
-    //     <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-    //     <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
-    //     <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    //   </Layout>
-    // )
   }
 }
 
@@ -38,6 +35,7 @@ export const pageQuery = graphql`
     wordpressPost(id: { eq: $id }) {
       title
       content
+      jetpack_featured_media_url
       ...PostIcons
     }
     site {
