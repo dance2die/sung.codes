@@ -11,6 +11,11 @@
 const path = require(`path`)
 const slash = require(`slash`)
 
+// // https://www.gatsbyjs.org/tutorial/part-seven/
+// exports.onCreateNode = ({ node }) => {
+//   console.log(node.internal.type)
+// }
+
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
 // access to any information necessary to programmatically
@@ -31,6 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             link
+            slug
             status
             template
           }
@@ -41,6 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             link
+            slug
             status
             template
             format
