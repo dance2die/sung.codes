@@ -45,7 +45,7 @@ export default Home
 // Set here the ID of the home page.
 export const pageQuery = graphql`
   query {
-    allWordpressPage {
+    allWordpressPage(sort: { fields: [date], order: DESC }) {
       edges {
         node {
           id
@@ -56,7 +56,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allWordpressPost(sort: { fields: [date] }) {
+    allWordpressPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
           title

@@ -1,7 +1,7 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
+// import PropTypes from "prop-types"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -58,8 +58,8 @@ class DefaultLayout extends React.Component {
   }
 }
 
-DefaultLayout.propTypes = {
-  children: PropTypes.object.isRequired,
-}
+// DefaultLayout.propTypes = {
+//   children: PropTypes.object.isRequired,
+// }
 
 export default DefaultLayout
