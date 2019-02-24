@@ -11,6 +11,15 @@
 const path = require(`path`)
 const slash = require(`slash`)
 
+const jsdom = require("jsdom")
+const { JSDOM } = jsdom
+const cheerio = require("cheerio")
+const axios = require("axios")
+// https://github.com/axios/axios/issues/1418#issue-305515527
+const adapter = require("axios/lib/adapters/http")
+
+const log = console.log
+
 // // https://www.gatsbyjs.org/tutorial/part-seven/
 // exports.onCreateNode = ({ node }) => {
 //   console.log(node.internal.type)
@@ -102,4 +111,53 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+}
+
+exports.onCreateNode = async ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+
+  // List of possible `node.internal.type` - found from terminal console.
+  // wordpress__POST
+  // SitePage
+  // wordpress__TAG
+  // wordpress__wp_media
+  // wordpress__site_metadata
+  // ImageSharp
+  // File
+  // SitePlugin
+  // wordpress__acf_options
+  if (node.internal.type === `wordpress__POST`) {
+    // Create a new field for "content" that has GitHub gist
+    // rendered as HTML instead of as a script
+    const name = "content"
+    const value = await normalizedContent(node.content)
+    createNodeField({ node, name, value })
+  }
+}
+
+async function normalizedContent(content) {
+  const $ = cheerio.load(content)
+  const $script = $(`script[src^="https://gist.github.com"]`)
+
+  if (
+    $script &&
+    $script.length > 0 &&
+    $script[0].attribs &&
+    $script[0].attribs.src
+  ) {
+    const result = await axios($script[0].attribs.src, { adapter })
+    const { data } = result
+    const window = new JSDOM(`<body><script>${data}</script></body>`, {
+      runScripts: "dangerously",
+    }).window
+
+    const renderedHTML = cheerio
+      .load(window.document.body.innerHTML)("body")
+      .html()
+    log(`renderedHTML`, renderedHTML)
+
+    return renderedHTML
+  } else {
+    return content
+  }
 }
