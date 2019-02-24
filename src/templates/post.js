@@ -17,7 +17,7 @@ class PostTemplate extends Component {
         <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
         <img src={post.jetpack_featured_media_url} alt="featured" />
         <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div dangerouslySetInnerHTML={{ __html: post.fields.content }} />
       </Layout>
     )
   }
@@ -34,9 +34,12 @@ export const pageQuery = graphql`
   query($id: String!) {
     wordpressPost(id: { eq: $id }) {
       title
-      content
       jetpack_featured_media_url
+      content
       ...PostIcons
+      fields {
+        content
+      }
     }
     site {
       siteMetadata {

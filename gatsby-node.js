@@ -18,7 +18,7 @@ const axios = require("axios")
 // https://github.com/axios/axios/issues/1418#issue-305515527
 const adapter = require("axios/lib/adapters/http")
 
-const log = console.log
+// const log = console.log
 
 // // https://www.gatsbyjs.org/tutorial/part-seven/
 // exports.onCreateNode = ({ node }) => {
@@ -61,6 +61,9 @@ exports.createPages = async ({ graphql, actions }) => {
             template
             format
             jetpack_featured_media_url
+            fields {
+              content
+            }
           }
         }
       }
@@ -157,7 +160,6 @@ async function normalizeContent(content) {
 
     $script.prepend(gistHTML)
     const renderedHTML = $("body").html()
-    // log(`renderedHTML`, renderedHTML)
 
     return renderedHTML
   } else {
