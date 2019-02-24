@@ -158,7 +158,8 @@ async function normalizeContent(content) {
       .load(window.document.body.innerHTML)("body")
       .html()
 
-    $script.prepend(gistHTML)
+    // $script.prepend(gistHTML)
+    $script.replaceWith(gistHTML)
     const renderedHTML = $("body").html()
 
     return renderedHTML
