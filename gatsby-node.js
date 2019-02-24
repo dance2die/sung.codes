@@ -157,7 +157,7 @@ async function normalizeContent(content) {
 
     $script.prepend(gistHTML)
     const renderedHTML = $("body").html()
-    log(`renderedHTML`, renderedHTML)
+    // log(`renderedHTML`, renderedHTML)
 
     return renderedHTML
   } else {
