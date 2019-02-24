@@ -130,12 +130,12 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
     // Create a new field for "content" that has GitHub gist
     // rendered as HTML instead of as a script
     const name = "content"
-    const value = await normalizedContent(node.content)
+    const value = await normalizeContent(node.content)
     createNodeField({ node, name, value })
   }
 }
 
-async function normalizedContent(content) {
+async function normalizeContent(content) {
   const $ = cheerio.load(content)
   const $script = $(`script[src^="https://gist.github.com"]`)
 
