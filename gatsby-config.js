@@ -104,7 +104,7 @@ module.exports = {
           // return decodedSlugEntities
           return decodedSlugEntities
             .filter(e => e.__type === "wordpress__POST")
-            .map(e => {
+            .map(async e => {
               // Contains the gist script - We need to render the HTML output
               // as WordPress returns only the gist script, not the rendered HTML
               if (e.content.match(gistPattern)) {
@@ -113,39 +113,75 @@ module.exports = {
                 const $ = cheerio.load(e.content)
                 const script = $(`script[src^="https://gist.github.com"]`)
 
-                return (
-                  axios(script[0].attribs.src, { adapter })
-                    .then(result => {
-                      console.log(`result`, result)
+                try {
+                  const result = await axios(script[0].attribs.src, { adapter })
 
-                      if (!result) return e
-                      if (!result.data) return e
-                      const { data } = result
+                  if (!result) return e
+                  if (!result.data) return e
+                  const { data } = result
 
-                      const window = new JSDOM(
-                        `<body><script>${data}</script></body>`,
-                        {
-                          runScripts: "dangerously",
-                        }
-                      ).window
+                  const window = new JSDOM(
+                    `<body><script>${data}</script></body>`,
+                    {
+                      runScripts: "dangerously",
+                    }
+                  ).window
 
-                      const renderedGist = cheerio
-                        .load(window.document.body.innerHTML)("body")
-                        .html()
+                  const renderedGist = cheerio
+                    .load(window.document.body.innerHTML)("body")
+                    .html()
 
-                      // Inject rendered gist
-                      let scriptContainer = script.parentElement
-                      let gist = document.createElement("div")
-                      scriptContainer.appendChild(gist)
-                      gist.insertAdjacentElement("afterbegin", renderedGist)
+                  // Inject rendered gist
+                  // let scriptContainer = script.parentElement
+                  let gist = window.document.createElement("div")
+                  // scriptContainer.appendChild(gist)
+                  window.document.body.appendChild(gist)
+                  // script.appendChild(gist)
+                  gist.insertAdjacentHTML("afterbegin", renderedGist)
 
-                      // Reassign the content with rendered GitHub gist.
-                      e.content = $("body").html()
-                      return e
-                    })
-                    // .then(cleanup)
-                    .catch(console.log)
-                )
+                  // Reassign the content with rendered GitHub gist.
+                  // e.content = $("body").html()
+                  e.content = window.document.body.innerHTML
+                  // console.log(`e.content updated!!!!`, e)
+                  return e
+                } catch (e) {
+                  console.log(e)
+                  return e
+                }
+
+                // return (
+                //   axios(script[0].attribs.src, { adapter })
+                //     .then(result => {
+                //       console.log(`result`, result)
+
+                //       if (!result) return e
+                //       if (!result.data) return e
+                //       const { data } = result
+
+                //       const window = new JSDOM(
+                //         `<body><script>${data}</script></body>`,
+                //         {
+                //           runScripts: "dangerously",
+                //         }
+                //       ).window
+
+                //       const renderedGist = cheerio
+                //         .load(window.document.body.innerHTML)("body")
+                //         .html()
+
+                //       // Inject rendered gist
+                //       let scriptContainer = script.parentElement
+                //       let gist = document.createElement("div")
+                //       scriptContainer.appendChild(gist)
+                //       gist.insertAdjacentElement("afterbegin", renderedGist)
+
+                //       // Reassign the content with rendered GitHub gist.
+                //       e.content = $("body").html()
+                //       return e
+                //     })
+                //     // .then(cleanup)
+                //     .catch(console.log)
+                // )
               }
 
               return e
