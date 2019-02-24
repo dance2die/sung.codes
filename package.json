@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
     "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.19",
@@ -14,6 +16,8 @@
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-source-wordpress": "^3.0.38",
     "gatsby-transformer-sharp": "^2.1.14",
+    "jsdom": "^13.2.0",
+    "jsdom-global": "^3.0.2",
     "lodash.kebabcase": "^4.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
