@@ -1,3 +1,12 @@
+const cleanup = require("jsdom-global")()
+const jsdom = require("jsdom")
+const { JSDOM } = jsdom
+const cheerio = require("cheerio")
+const axios = require("axios")
+// For some reason axios uses XMLHttpsRequest
+// https://github.com/axios/axios/issues/1418#issue-305515527
+const adapter = require("axios/lib/adapters/http");
+
 module.exports = {
   siteMetadata: {
     title: `Sung Codes`,
@@ -66,7 +75,8 @@ module.exports = {
           // "**/taxonomies",
         ],
         // use a custom normalizer which is applied after the built-in ones.
-        normalizer: function({ entities }) {
+        // normalizer: function({ entities }) {
+        async normalizer({ entities }) {
           // return entities
           console.log(
             `entities`,
@@ -84,6 +94,8 @@ module.exports = {
 
           // This is needed as the plugin turns "img.src" to a blank data:image
           // and stores actual image path to "img.data-src"
+          const gistPattern = /<script src=\"https:\/\/gist.github.com/gi
+
           return entities.map(e => {
             // if (e.__type === `wordpress__POST`) {
             //   // https://stackoverflow.com/a/41751240/4035
@@ -94,6 +106,40 @@ module.exports = {
             //   )
             // }
             e.slug = decodeURIComponent(e.slug)
+
+            // Contains the gist script - We need to render the HTML output
+            // as WordPress returns only the gist script, not the rendered HTML
+            if (e.content.match(gistPattern)) {
+              // Load the content script, and get the gist JavaScript from GitHub
+              // render it using JSDOM & extract the rendered HTML using cheerio
+              const $ = cheerio.load(content);
+              const script = $(`script[src^="https://gist.github.com"]`);
+
+              try {
+                const result = await axios(script[0].attribs.src, { adapter });
+                const { data } = result;
+  
+                const window = new JSDOM(`<body><script>${data}</script></body>`, {
+                  runScripts: "dangerously"
+                }).window;
+  
+                const renderedGist = cheerio
+                  .load(window.document.body.innerHTML)("body")
+                  .html();
+
+                // Inject rendered gist
+                let scriptContainer = script.parentElement;
+                let gist = document.createElement("div");
+                scriptContainer.appendChild(gist);
+                gist.insertAdjacentElement('afterbegin', renderedGist);
+
+                // Reassign the content with rendered GitHub gist.
+                e.content = $("body").html();
+              } catch (error) {
+                console.log(error);
+              }
+            }
+
             return e
           })
         },
