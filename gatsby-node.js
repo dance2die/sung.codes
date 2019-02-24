@@ -151,9 +151,12 @@ async function normalizedContent(content) {
       runScripts: "dangerously",
     }).window
 
-    const renderedHTML = cheerio
+    const gistHTML = cheerio
       .load(window.document.body.innerHTML)("body")
       .html()
+
+    $script.prepend(gistHTML)
+    const renderedHTML = $("body").html()
     log(`renderedHTML`, renderedHTML)
 
     return renderedHTML
