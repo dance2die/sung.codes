@@ -138,32 +138,97 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
   }
 }
 
+// Playground: https://repl.it/@dance2die/cheerio-manipulation-of-gist?language=nodejs&folderId=5b21216a-be77-4f8e-b167-9739291fc451
 async function normalizeContent(content) {
   const $ = cheerio.load(content)
-  const $script = $(`script[src^="https://gist.github.com"]`)
+  const $scripts = $(`script[src^="https://gist.github.com"]`)
+  if (!$scripts || $scripts.length < 1) return content
 
-  if (
-    $script &&
-    $script.length > 0 &&
-    $script[0].attribs &&
-    $script[0].attribs.src
-  ) {
-    const result = await axios($script[0].attribs.src, { adapter })
-    const { data } = result
-    const window = new JSDOM(`<body><script>${data}</script></body>`, {
-      runScripts: "dangerously",
-    }).window
+  try {
+    const scriptPromises = []
+    $scripts.each(function(i, script) {
+      const promise = axios(script.attribs.src, { adapter }).then(_ => ({
+        src: script.attribs.src,
+        data: _.data,
+      }))
+      scriptPromises.push(promise)
+    })
 
-    const gistHTML = cheerio
-      .load(window.document.body.innerHTML)("body")
-      .html()
+    await Promise.all(scriptPromises).then(function(values) {
+      // log(`values`, values);
+      values.forEach(({ src, data }) => {
+        const window = new JSDOM(`<body><script>${data}</script></body>`, {
+          runScripts: "dangerously",
+        }).window
 
-    // $script.prepend(gistHTML)
-    $script.replaceWith(gistHTML)
-    const renderedHTML = $("body").html()
+        const gistHTML = cheerio
+          .load(window.document.body.innerHTML)("body")
+          .html()
 
-    return renderedHTML
-  } else {
+        let $script = $(`script[src="${src}"]`)
+        $script.replaceWith(gistHTML)
+      })
+    })
+
+    return $("body").html()
+  } catch (e) {
     return content
   }
 }
+
+// function normalizeContent(content) {
+//   const $ = cheerio.load(content)
+//   const $scripts = $(`script[src^="https://gist.github.com"]`)
+//   if (!$scripts || $scripts.length < 1) return content
+
+//   try {
+//     return $scripts.map(async function(i, script) {
+//       const result = await axios(script.attribs.src, { adapter })
+//       const { data } = result
+//       const window = new JSDOM(`<body><script>${data}</script></body>`, {
+//         runScripts: "dangerously",
+//       }).window
+
+//       const gistHTML = cheerio
+//         .load(window.document.body.innerHTML)("body")
+//         .html()
+
+//       let $script = $(`script[src="${$(this)[0].attribs.src}"]`)
+//       $script.replaceWith(gistHTML)
+
+//       if (i === $script.length - 1) {
+//         // console.log(`$.html()===========>`, $.html())
+//         return $("body").html()
+//       }
+//     })
+
+//     // return $("body").html()
+//   } catch (e) {
+//     return content
+//   }
+
+//   // if (
+//   //   $scripts &&
+//   //   $scripts.length > 0 &&
+//   //   $scripts[0].attribs &&
+//   //   $scripts[0].attribs.src
+//   // ) {
+//   //   const result = await axios($scripts[0].attribs.src, { adapter })
+//   //   const { data } = result
+//   //   const window = new JSDOM(`<body><script>${data}</script></body>`, {
+//   //     runScripts: "dangerously",
+//   //   }).window
+
+//   //   const gistHTML = cheerio
+//   //     .load(window.document.body.innerHTML)("body")
+//   //     .html()
+
+//   //   // $scripts.prepend(gistHTML)
+//   //   $scripts.replaceWith(gistHTML)
+//   //   const renderedHTML = $("body").html()
+
+//   //   return renderedHTML
+//   // } else {
+//   //   return content
+//   // }
+// }
