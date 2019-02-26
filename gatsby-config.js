@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Sung Codes`,
+    title: `Sung.Codes`,
     description: `Static Site (Gatsby) version of SlightEdgeCoder.com`,
     author: `Sung M. Kim`,
   },
