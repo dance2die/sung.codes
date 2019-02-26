@@ -1,5 +1,5 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/templates/post.js
-import React, { Component } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
@@ -9,31 +9,29 @@ import SEO from "../components/seo"
 import PostIcons from "../components/post-icon"
 import { rhythm } from "../utils/typography"
 
-class PostTemplate extends Component {
-  render() {
-    const post = this.props.data.wordpressPost
-    const {
-      link,
-      title,
-      fields: { content },
-      categories,
-    } = post
+function PostTemplate({ data }) {
+  const post = data.wordpressPost
+  const {
+    link,
+    title,
+    fields: { content },
+    categories,
+  } = post
 
-    return (
-      <Layout>
-        <SEO
-          title={title}
-          canonicalURL={link}
-          description={title}
-          keywords={categories.map(_ => _.name)}
-        />
-        <h1 dangerouslySetInnerHTML={{ __html: title }} />
-        <img src={post.jetpack_featured_media_url} alt="featured" />
-        <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <SEO
+        title={title}
+        canonicalURL={link}
+        description={title}
+        keywords={categories.map(_ => _.name)}
+      />
+      <h1 dangerouslySetInnerHTML={{ __html: title }} />
+      <img src={post.jetpack_featured_media_url} alt="featured" />
+      <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </Layout>
+  )
 }
 
 PostTemplate.propTypes = {
