@@ -16,6 +16,7 @@
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-source-wordpress": "^3.0.38",
     "gatsby-transformer-sharp": "^2.1.14",
+    "html-entities": "^1.2.1",
     "jsdom": "^13.2.0",
     "jsdom-global": "^3.0.2",
     "lodash.kebabcase": "^4.1.1",

@@ -116,7 +116,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 }
 
-exports.onCreateNode = async ({ node, getNode, actions }) => {
+exports.onCreateNode = async ({ node, actions }) => {
   const { createNodeField } = actions
 
   // List of possible `node.internal.type` - found from terminal console.
@@ -175,60 +175,3 @@ async function normalizeContent(content) {
     return content
   }
 }
-
-// function normalizeContent(content) {
-//   const $ = cheerio.load(content)
-//   const $scripts = $(`script[src^="https://gist.github.com"]`)
-//   if (!$scripts || $scripts.length < 1) return content
-
-//   try {
-//     return $scripts.map(async function(i, script) {
-//       const result = await axios(script.attribs.src, { adapter })
-//       const { data } = result
-//       const window = new JSDOM(`<body><script>${data}</script></body>`, {
-//         runScripts: "dangerously",
-//       }).window
-
-//       const gistHTML = cheerio
-//         .load(window.document.body.innerHTML)("body")
-//         .html()
-
-//       let $script = $(`script[src="${$(this)[0].attribs.src}"]`)
-//       $script.replaceWith(gistHTML)
-
-//       if (i === $script.length - 1) {
-//         // console.log(`$.html()===========>`, $.html())
-//         return $("body").html()
-//       }
-//     })
-
-//     // return $("body").html()
-//   } catch (e) {
-//     return content
-//   }
-
-//   // if (
-//   //   $scripts &&
-//   //   $scripts.length > 0 &&
-//   //   $scripts[0].attribs &&
-//   //   $scripts[0].attribs.src
-//   // ) {
-//   //   const result = await axios($scripts[0].attribs.src, { adapter })
-//   //   const { data } = result
-//   //   const window = new JSDOM(`<body><script>${data}</script></body>`, {
-//   //     runScripts: "dangerously",
-//   //   }).window
-
-//   //   const gistHTML = cheerio
-//   //     .load(window.document.body.innerHTML)("body")
-//   //     .html()
-
-//   //   // $scripts.prepend(gistHTML)
-//   //   $scripts.replaceWith(gistHTML)
-//   //   const renderedHTML = $("body").html()
-
-//   //   return renderedHTML
-//   // } else {
-//   //   return content
-//   // }
-// }

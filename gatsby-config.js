@@ -1,3 +1,6 @@
+const Entities = require("html-entities").XmlEntities
+const decoder = new Entities()
+
 module.exports = {
   siteMetadata: {
     title: `Sung.Codes`,
@@ -67,24 +70,11 @@ module.exports = {
         ],
         // use a custom normalizer which is applied after the built-in ones.
         normalizer: function({ entities }) {
-          // console.log(
-          //   `entities`,
-          //   JSON.stringify(
-          //     entities.filter(
-          //       e =>
-          //         e.__type === "wordpress__POST" &&
-          //         // e.id === "c6dbad63-7d4a-5414-ae71-ba538c1f448c"
-          //         e.id === "50a425b8-dbf5-5c52-b18c-09768bc21721"
-          //     ),
-          //     null,
-          //     2
-          //   )
-          // )
-
           // This is needed as the plugin turns "img.src" to a blank data:image
           // and stores actual image path to "img.data-src"
           return entities.map(e => {
             e.slug = decodeURIComponent(e.slug)
+            e.title = decoder.decode(e.title)
             return e
           })
         },
