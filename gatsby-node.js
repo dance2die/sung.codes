@@ -48,6 +48,7 @@ exports.createPages = async ({ graphql, actions }) => {
             slug
             status
             template
+            date
           }
         }
       }
@@ -61,6 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
             template
             format
             jetpack_featured_media_url
+            date
             fields {
               content
             }
@@ -107,7 +109,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // The Post ID is prefixed with 'POST_'
   allWordpressPost.edges.forEach(edge => {
     createPage({
-      path: `/${edge.node.slug}/`,
+      path: `/${new Date(edge.node.date).getFullYear()}/${edge.node.slug}/`,
       component: slash(postTemplate),
       context: {
         id: edge.node.id,
