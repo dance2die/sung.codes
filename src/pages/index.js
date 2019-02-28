@@ -9,7 +9,15 @@ import { rhythm } from "../utils/typography"
 class Home extends Component {
   render() {
     const data = this.props.data
-
+    // const years = new Set(
+    //   data.allWordpressPost.edges.map(({ node }) => {
+    //     console.log(`node.year="${node.year}"`)
+    //     return node.year
+    //   })
+    // )
+    const years = new Set(
+      data.allWordpressPost.edges.map(({ node }) => node.year)
+    )
     return (
       <Layout>
         <div css={{ marginBottom: rhythm(1) }}>
@@ -25,6 +33,18 @@ class Home extends Component {
           ))}
         </div>
         <hr />
+
+        <section>
+          <h1>Distinct Years</h1>
+          <ul>
+            {Array.from(years)
+              .sort((a, b) => b - a)
+              .map(year => (
+                <li key={year}>{year}</li>
+              ))}
+          </ul>
+        </section>
+
         <h1>Posts</h1>
         {data.allWordpressPost.edges.map(({ node }) => (
           <div css={{ marginBottom: rhythm(2) }} key={node.slug}>
