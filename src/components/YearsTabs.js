@@ -22,8 +22,8 @@ function reducer(state = {}, action) {
 function YearsTabs({ years }) {
   //   const years = ["2019", "2018", "2017", "2016"]
   const [state, dispatch] = React.useReducer(reducer, {}, () =>
-    years.reduce((state, year) => {
-      state[year] = { isClicked: false }
+    years.reduce((state, year, i) => {
+      state[year] = { isClicked: i === 0 }
       return state
     }, {})
   )

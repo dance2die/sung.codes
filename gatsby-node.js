@@ -40,18 +40,6 @@ exports.createPages = async ({ graphql, actions }) => {
   // from the fetched data that you can run queries against.
   const result = await graphql(`
     {
-      allWordpressPage {
-        edges {
-          node {
-            id
-            link
-            slug
-            status
-            template
-            date
-          }
-        }
-      }
       allWordpressPost {
         edges {
           node {
@@ -63,6 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
             format
             jetpack_featured_media_url
             date
+            year: date(formatString: "YYYY")
             fields {
               content
             }
@@ -78,29 +67,21 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Access query results via object destructuring
-  const { allWordpressPage, allWordpressPost } = result.data
+  const { allWordpressPost } = result.data
 
-  // // Create Page pages.
-  // const pageTemplate = path.resolve(`./src/templates/page.js`)
-  // // We want to create a detailed page for each
-  // // page node. We'll just use the WordPress Slug for the slug.
-  // // The Page ID is prefixed with 'PAGE_'
-  // allWordpressPage.edges.forEach(edge => {
-  //   // Gatsby uses Redux to manage its internal state.
-  //   // Plugins and sites can use functions like "createPage"
-  //   // to interact with Gatsby.
-  //   createPage({
-  //     // Each page is required to have a `path` as well
-  //     // as a template component. The `context` is
-  //     // optional but is often necessary so the template
-  //     // can query data specific to each page.
-  //     path: `/${edge.node.slug}/`,
-  //     component: slash(pageTemplate),
-  //     context: {
-  //       id: edge.node.id,
-  //     },
-  //   })
-  // })
+  // Create Page pages.
+  const pageTemplate = path.resolve(`./src/templates/page.js`)
+  allWordpressPost.edges.forEach(edge => {
+    const year = new Date(edge.node.date).getFullYear()
+    createPage({
+      path: `/${year}/`,
+      component: slash(pageTemplate),
+      context: {
+        id: edge.node.id,
+        year,
+      },
+    })
+  })
 
   // Create Post pages
   const postTemplate = path.resolve(`./src/templates/post.js`)
@@ -108,11 +89,14 @@ exports.createPages = async ({ graphql, actions }) => {
   // post node. We'll just use the WordPress Slug for the slug.
   // The Post ID is prefixed with 'POST_'
   allWordpressPost.edges.forEach(edge => {
+    const year = new Date(edge.node.date).getFullYear()
+
     createPage({
-      path: `/${new Date(edge.node.date).getFullYear()}/${edge.node.slug}/`,
+      path: `/${year}/${edge.node.slug}/`,
       component: slash(postTemplate),
       context: {
         id: edge.node.id,
+        year,
       },
     })
   })
@@ -134,9 +118,19 @@ exports.onCreateNode = async ({ node, actions }) => {
   if (node.internal.type === `wordpress__POST`) {
     // Create a new field for "content" that has GitHub gist
     // rendered as HTML instead of as a script
-    const name = "content"
-    const value = await normalizeContent(node.content)
-    createNodeField({ node, name, value })
+    // const name = "content"
+    // const value = await normalizeContent(node.content)
+    createNodeField({
+      node,
+      name: "content",
+      value: await normalizeContent(node.content),
+    })
+
+    createNodeField({
+      node,
+      name: "year",
+      value: new Date(node.date).getFullYear(),
+    })
   }
 }
 

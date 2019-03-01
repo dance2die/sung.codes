@@ -14,7 +14,7 @@ function Home({ data }) {
 
   return (
     <Layout>
-      <div css={{ marginBottom: rhythm(1) }}>
+      {/* <div css={{ marginBottom: rhythm(1) }}>
         <h1>Pages</h1>
         {data.allWordpressPage.edges.map(({ node }) => (
           <div key={node.slug}>
@@ -25,7 +25,7 @@ function Home({ data }) {
             <span>{node.date}</span>
           </div>
         ))}
-      </div>
+      </div> */}
       <hr />
 
       <section>
@@ -55,17 +55,17 @@ export default Home
 // Set here the ID of the home page.
 export const pageQuery = graphql`
   query {
-    allWordpressPage(sort: { fields: [date], order: DESC }) {
-      edges {
-        node {
-          id
-          title
-          excerpt
-          slug
-          date
-        }
-      }
-    }
+    # allWordpressPage(sort: { fields: [date], order: DESC }) {
+    #   edges {
+    #     node {
+    #       id
+    #       title
+    #       excerpt
+    #       slug
+    #       date
+    #     }
+    #   }
+    # }
     allWordpressPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
