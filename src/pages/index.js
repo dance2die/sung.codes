@@ -8,8 +8,8 @@ import YearsTabs from "../components/YearsTabs"
 import { rhythm } from "../utils/typography"
 
 function Home({ data }) {
-  const years = new Set(
-    data.allWordpressPost.edges.map(({ node }) => node.year)
+  const years = Array.from(
+    new Set(data.allWordpressPost.edges.map(({ node }) => node.year))
   )
 
   return (
@@ -30,19 +30,8 @@ function Home({ data }) {
 
       <section>
         <h1>Years</h1>
-        <YearsTabs years={Array.from(years)} />
+        <YearsTabs years={years} />
       </section>
-
-      {/*<section>
-        <h1>Distinct Years</h1>
-        <ul>
-          {Array.from(years)
-            .sort((a, b) => b - a)
-            .map(year => (
-              <li key={year}>{year}</li>
-            ))}
-        </ul>
-            </section>*/}
 
       <h1>Posts</h1>
       {data.allWordpressPost.edges.map(({ node }) => (
