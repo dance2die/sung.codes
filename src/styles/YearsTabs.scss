@@ -1,0 +1,40 @@
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  height: 50px;
+
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.menuItem {
+  padding: 1rem 2.5rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ccc;
+  }
+
+  &.clicked {
+    background-color: red;
+  }
+}

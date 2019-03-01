@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../layouts"
 import PostIcons from "../components/post-icon"
+import YearsTabs from "../components/YearsTabs"
 
 import { rhythm } from "../utils/typography"
 
@@ -28,6 +29,11 @@ function Home({ data }) {
       <hr />
 
       <section>
+        <h1>Years</h1>
+        <YearsTabs years={Array.from(years)} />
+      </section>
+
+      {/*<section>
         <h1>Distinct Years</h1>
         <ul>
           {Array.from(years)
@@ -36,7 +42,7 @@ function Home({ data }) {
               <li key={year}>{year}</li>
             ))}
         </ul>
-      </section>
+            </section>*/}
 
       <h1>Posts</h1>
       {data.allWordpressPost.edges.map(({ node }) => (
