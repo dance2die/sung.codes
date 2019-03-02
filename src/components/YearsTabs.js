@@ -1,7 +1,6 @@
 import React from "react"
 import produce from "immer"
 import classNames from "classnames"
-// import { graphql } from "gatsby"
 
 import "../styles/YearsTabs.scss"
 
