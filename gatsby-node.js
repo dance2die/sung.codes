@@ -71,13 +71,14 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create Page pages.
   const pageTemplate = path.resolve(`./src/templates/page.js`)
-  allWordpressPost.edges.forEach(edge => {
-    const year = new Date(edge.node.date).getFullYear()
+  allWordpressPost.edges.forEach(({ node }) => {
+    const year = new Date(node.date).getFullYear()
+
     createPage({
       path: `/${year}/`,
       component: slash(pageTemplate),
       context: {
-        id: edge.node.id,
+        id: node.id,
         year,
       },
     })
@@ -88,15 +89,18 @@ exports.createPages = async ({ graphql, actions }) => {
   // We want to create a detailed page for each
   // post node. We'll just use the WordPress Slug for the slug.
   // The Post ID is prefixed with 'POST_'
-  allWordpressPost.edges.forEach(edge => {
-    const year = new Date(edge.node.date).getFullYear()
+  allWordpressPost.edges.forEach(({ node }) => {
+    const year = new Date(node.date).getFullYear()
+    const path = `/${year}/${node.slug}/`
+    const internalLink = `https://sung.codes${path}`
 
     createPage({
-      path: `/${year}/${edge.node.slug}/`,
+      path,
       component: slash(postTemplate),
       context: {
-        id: edge.node.id,
+        id: node.id,
         year,
+        internalLink,
       },
     })
   })
