@@ -3,36 +3,11 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../layouts"
 import PostIcons from "../components/post-icon"
-import YearsTabs from "../components/YearsTabs"
-
 import { rhythm } from "../utils/typography"
 
 function Home({ data }) {
-  const years = Array.from(
-    new Set(data.allWordpressPost.edges.map(({ node }) => node.year))
-  )
-
   return (
     <Layout>
-      {/* <div css={{ marginBottom: rhythm(1) }}>
-        <h1>Pages</h1>
-        {data.allWordpressPage.edges.map(({ node }) => (
-          <div key={node.slug}>
-            <Link to={node.slug} css={{ textDecoration: `none` }}>
-              <h3>{node.title}</h3>
-            </Link>
-            <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            <span>{node.date}</span>
-          </div>
-        ))}
-      </div> */}
-      <hr />
-
-      <section>
-        <h1>Years</h1>
-        <YearsTabs years={years} />
-      </section>
-
       <h1>Posts</h1>
       {data.allWordpressPost.edges.map(({ node }) => (
         <div css={{ marginBottom: rhythm(2) }} key={node.slug}>
@@ -55,17 +30,6 @@ export default Home
 // Set here the ID of the home page.
 export const pageQuery = graphql`
   query {
-    # allWordpressPage(sort: { fields: [date], order: DESC }) {
-    #   edges {
-    #     node {
-    #       id
-    #       title
-    #       excerpt
-    #       slug
-    #       date
-    #     }
-    #   }
-    # }
     allWordpressPost(sort: { fields: [date], order: DESC }) {
       edges {
         node {
