@@ -8,7 +8,6 @@ import { rhythm } from "../utils/typography"
 function Home({ data }) {
   return (
     <Layout>
-      <h1>Posts</h1>
       {data.allWordpressPost.edges.map(({ node }) => (
         <div css={{ marginBottom: rhythm(2) }} key={node.slug}>
           <Link

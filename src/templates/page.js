@@ -22,12 +22,10 @@ const PostExerpts = ({ posts }) => (
 
 const PageTemplate = ({ data }) => {
   const currentPage = data.allWordpressPost
-  console.log(`=> props`, currentPage)
 
   return (
     <Layout>
       <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
-      <PostIcons node={currentPage} css={{ marginBottom: rhythm(1 / 2) }} />
       <PostExerpts posts={currentPage.edges} />
     </Layout>
   )
