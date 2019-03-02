@@ -19,7 +19,6 @@
     "gatsby-source-wordpress": "^3.0.38",
     "gatsby-transformer-sharp": "^2.1.14",
     "html-entities": "^1.2.1",
-    "immer": "^2.1.0",
     "jsdom": "^13.2.0",
     "jsdom-global": "^3.0.2",
     "lodash.kebabcase": "^4.1.1",
