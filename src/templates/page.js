@@ -55,19 +55,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-// export const pageQuery = graphql`
-//   query($id: String!) {
-//     wordpressPage(id: { eq: $id }) {
-//       title
-//       content
-//       date(formatString: "MMMM DD, YYYY")
-//     }
-//     site {
-//       id
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `
