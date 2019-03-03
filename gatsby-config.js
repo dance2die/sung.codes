@@ -86,6 +86,16 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      // refer to following documentation for options
+      // https://www.styled-components.com/docs/tooling#babel-plugin
+      options: {
+        fileName: false,
+        pure: true,
+        transpileTemplateLiterals: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-plugin-styled-components": "^1.10.0",
     "cheerio": "^1.0.0-rc.2",
     "classnames": "^2.2.6",
     "gatsby": "^2.1.17",
@@ -15,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.22",
+    "gatsby-plugin-styled-components": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-source-wordpress": "^3.0.38",
     "gatsby-transformer-sharp": "^2.1.14",
