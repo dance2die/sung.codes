@@ -7,7 +7,7 @@ import Header from "../components/header"
 import { rhythm, scale } from "../utils/typography"
 
 const containerStyle = {
-  maxWidth: 700,
+  maxWidth: 750,
   margin: `0 auto`,
   padding: rhythm(3 / 4),
 }
@@ -38,7 +38,6 @@ function Layout(props) {
               background: "-webkit-linear-gradient(to right, #ACB6E5, #74ebd5)",
               background: "linear-gradient(to right, #ACB6E5, #74ebd5)",
 
-              marginBottom: rhythm(2),
               padding: `${rhythm(1)} 0px`,
               "@media screen and (min-width: 500px)": {
                 padding: `${rhythm(2)} 0px`,
