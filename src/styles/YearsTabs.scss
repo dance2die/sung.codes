@@ -1,6 +1,6 @@
 .menu {
   list-style-type: none;
-  margin: 40px;
+  margin: 0;
   padding: 0;
 
   height: 50px;
@@ -13,12 +13,14 @@
 .menuItem > a {
   padding: 1rem 2.5rem 1rem;
   cursor: pointer;
+  font-size: 20px;
 
   &:hover {
-    background-color: #ccc;
+    background-color: #3f51b51c;
   }
 
   &.clicked {
-    background-color: red;
+    background-color: #3f51b573;
+    color: white;
   }
 }
