@@ -2,6 +2,7 @@
 import React from "react"
 import { Link, StaticQuery } from "gatsby"
 import YearsTabs from "../components/YearsTabs"
+import Header from "../components/header"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -33,8 +34,11 @@ function Layout(props) {
         <div>
           <div
             css={{
-              background: `rgb(207, 58, 62)`,
-              marginBottom: rhythm(1),
+              background: "#74ebd5",
+              background: "-webkit-linear-gradient(to right, #ACB6E5, #74ebd5)",
+              background: "linear-gradient(to right, #ACB6E5, #74ebd5)",
+
+              marginBottom: rhythm(2),
               padding: `${rhythm(1)} 0px`,
               "@media screen and (min-width: 500px)": {
                 padding: `${rhythm(2)} 0px`,
@@ -42,30 +46,7 @@ function Layout(props) {
             }}
           >
             <div css={containerStyle}>
-              <h1
-                css={{
-                  margin: 0,
-                  fontSize: scale(1.5).fontSize,
-                  lineHeight: 1,
-                  "@media screen and (min-width: 500px)": {
-                    fontSize: scale(1.9).fontSize,
-                    lineHeight: 1,
-                  },
-                }}
-              >
-                <Link
-                  css={{
-                    color: `rgb(224,203,144)`,
-                    ":hover": {
-                      color: `rgb(224,203,144)`,
-                      textDecoration: `none`,
-                    },
-                  }}
-                  to="/"
-                >
-                  {"sung.{ codes }"}
-                </Link>
-              </h1>
+              <Header siteTitle={"sung.{ codes }"} />
               <section>
                 <YearsTabs years={getYears(data.allWordpressPost.edges)} />
               </section>

@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { scale } from "../utils/typography"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -16,15 +16,29 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1
+        css={{
+          margin: 0,
+          fontSize: scale(1.5).fontSize,
+          lineHeight: 1,
+          borderBottom: "none",
+          "@media screen and (min-width: 500px)": {
+            fontSize: scale(1.9).fontSize,
+            lineHeight: 1,
+          },
+        }}
+      >
         <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
+          css={{
+            color: `#4078c0`,
+            ":hover": {
+              color: `#FFEB3B`,
+              textDecoration: `none`,
+            },
           }}
+          to="/"
         >
-          {siteTitle}
+          {"sung.{ codes }"}
         </Link>
       </h1>
     </div>
