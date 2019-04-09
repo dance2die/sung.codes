@@ -25,7 +25,6 @@ const PageTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
       <PostExerpts posts={currentPage.edges} />
     </Layout>
   )
