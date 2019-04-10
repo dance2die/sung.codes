@@ -38,7 +38,7 @@ const Header = ({ siteTitle }) => (
           }}
           to="/"
         >
-          {"sung.{ codes }"}
+          {siteTitle}
         </Link>
       </h1>
     </header>
