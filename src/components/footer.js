@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import { scale } from "../utils/typography"
 
-const Header = ({ siteTitle }) => (
-  <header
+const Footer = ({ siteTitle }) => (
+  <footer
     style={{
       marginBottom: `1.45rem`,
     }}
@@ -42,15 +42,15 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-  </header>
+  </footer>
 )
 
-Header.propTypes = {
+Footer.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Footer.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Footer
