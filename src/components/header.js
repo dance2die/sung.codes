@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+    <header
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
           {"sung.{ codes }"}
         </Link>
       </h1>
-    </div>
+    </header>
   </header>
 )
 
