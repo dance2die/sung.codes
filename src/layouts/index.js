@@ -3,6 +3,7 @@ import React from "react"
 import { Link, StaticQuery } from "gatsby"
 import YearsTabs from "../components/YearsTabs"
 import Header from "../components/header"
+import Footer from "../components/Footer"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -52,6 +53,7 @@ function Layout(props) {
             </div>
           </div>
           <div css={containerStyle}>{props.children}</div>
+          <Footer />
         </div>
       )}
     />
