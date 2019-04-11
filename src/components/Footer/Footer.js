@@ -1,7 +1,5 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import { scale, rhythm } from "../../utils/typography"
+import { rhythm } from "../../utils/typography"
 
 import GoToTop from "./GoToTop"
 import SourceMaterial from "./SourceMaterial"
@@ -20,7 +18,7 @@ const footerContainerStyle = {
   color: "#ffffffb8",
 }
 
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <footer css={footerContainerStyle}>
     <GoToTop />
     <SourceMaterial />
@@ -28,13 +26,5 @@ const Footer = ({ siteTitle }) => (
     <Copyright />
   </footer>
 )
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Footer.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Footer
