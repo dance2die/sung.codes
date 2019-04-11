@@ -19,7 +19,7 @@ function OriginalPost({ canonicalURL, location }) {
       💫 Originally posted <ExternalLink url={canonicalURL}>here</ExternalLink>.{" "}
       Broken?{" "}
       <ExternalLink
-        url={`https://twitter.com/intent/tweet?text=${
+        url={`https://twitter.com/intent/tweet?text=@dance2die%20${
           location.href
         } is broken!`}
       >
