@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 
 import PostIcons from "../components/post-icon"
 import { rhythm } from "../utils/typography"
+import OriginalPost from "../components/OriginalPost"
 
 function PostTemplate({ data }) {
   const post = data.wordpressPost
@@ -29,6 +30,7 @@ function PostTemplate({ data }) {
       <h1 dangerouslySetInnerHTML={{ __html: title }} />
       <img src={post.jetpack_featured_media_url} alt="featured" />
       <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
+      <OriginalPost url={link} />
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </Layout>
   )
