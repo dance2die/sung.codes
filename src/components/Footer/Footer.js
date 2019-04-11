@@ -14,8 +14,9 @@ const footerContainerStyle = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: `#495057`,
+  backgroundColor: `#263238`,
   color: "#ffffffb8",
+  textAlign: "center",
 }
 
 const Footer = () => (

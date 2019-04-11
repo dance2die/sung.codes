@@ -30,9 +30,9 @@ const Header = ({ siteTitle }) => (
       >
         <Link
           css={{
-            color: `#4078c0`,
+            color: `#17a8e2`,
             ":hover": {
-              color: `#FFEB3B`,
+              color: `#78bdb7`,
               textDecoration: `none`,
             },
           }}

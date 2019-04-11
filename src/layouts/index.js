@@ -35,9 +35,9 @@ function Layout(props) {
         <div>
           <div
             css={{
-              background: "#74ebd5",
-              background: "-webkit-linear-gradient(to right, #ACB6E5, #74ebd5)",
-              background: "linear-gradient(to right, #ACB6E5, #74ebd5)",
+              background: "#263238",
+              // background: "-webkit-linear-gradient(to right, #ACB6E5, #74ebd5)",
+              // background: "linear-gradient(to right, #ACB6E5, #74ebd5)",
 
               padding: `${rhythm(1)} 0px`,
               "@media screen and (min-width: 500px)": {

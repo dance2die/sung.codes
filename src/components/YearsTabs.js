@@ -23,9 +23,10 @@ function YearsTabs({ years }) {
         >
           <Link
             css={{
-              // 1 rhythm is equal to the height of the line-height of
-              // normal body text.
-              padding: rhythm(1),
+              padding: rhythm(1.3),
+              "@media screen and (max-width: 500px)": {
+                padding: rhythm(0.5),
+              },
             }}
             to={year}
             activeClassName="clicked"
