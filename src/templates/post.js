@@ -30,7 +30,7 @@ function PostTemplate({ data }) {
       <h1 dangerouslySetInnerHTML={{ __html: title }} />
       <img src={post.jetpack_featured_media_url} alt="featured" />
       <PostIcons node={post} css={{ marginBottom: rhythm(1 / 2) }} />
-      <OriginalPost url={link} />
+      <OriginalPost canonicalURL={link} />
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </Layout>
   )
