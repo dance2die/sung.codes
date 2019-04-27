@@ -9,6 +9,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "cheerio": "^1.0.0-rc.2",
     "classnames": "^2.2.6",
+    "dangerous-components": "0.0.1-alpha.16",
     "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.19",
