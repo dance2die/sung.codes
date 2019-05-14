@@ -7,6 +7,8 @@ import Footer from "../components/Footer"
 
 import { rhythm, scale } from "../utils/typography"
 
+import background from "../images/background.svg"
+
 const containerStyle = {
   maxWidth: 750,
   margin: `0 auto`,
@@ -38,7 +40,9 @@ function Layout(props) {
               background: "#263238",
               // background: "-webkit-linear-gradient(to right, #ACB6E5, #74ebd5)",
               // background: "linear-gradient(to right, #ACB6E5, #74ebd5)",
-
+              background: `linear-gradient(rgba(0,0,0,0.79),rgba(0,0,0,0.75)),url(${background})`,
+              backgroundSize: "1% 2%",
+              backgroundRepeat: "repeat",
               padding: `${rhythm(1)} 0px`,
               "@media screen and (min-width: 500px)": {
                 padding: `${rhythm(2)} 0px`,
