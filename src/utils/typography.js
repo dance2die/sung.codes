@@ -14,8 +14,8 @@ import githubTheme from "typography-theme-github"
 //   }
 // }
 
-githubTheme.headerFontFamily = ["Roboto Condensed", "Roboto"]
-githubTheme.bodyFontFamily = ["Roboto"]
+githubTheme.headerFontFamily = ["Playfair Display", "Roboto"]
+githubTheme.bodyFontFamily = ["Hind Madurai"]
 
 const typography = new Typography(githubTheme)
 

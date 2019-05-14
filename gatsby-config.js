@@ -102,6 +102,23 @@ module.exports = {
         transpileTemplateLiterals: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Playfair Display`,
+            subsets: [`latin`],
+            variants: [`400`],
+          },
+          {
+            family: `Hind Madurai`,
+            subsets: [`latin`],
+            variants: [`400`],
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
