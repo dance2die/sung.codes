@@ -6,7 +6,10 @@ function Contact() {
     <p>
       Conctact me via{" "}
       <ExternalLink url="https://twitter.com/dance2die">
-        Twitter 🐤
+        Twitter{" "}
+        <span role="img" aria-label="twitter">
+          🐤
+        </span>
       </ExternalLink>
     </p>
   )

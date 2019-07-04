@@ -6,7 +6,7 @@ import Layout from "../layouts"
 import PostIcons from "../components/post-icon"
 import { rhythm } from "../utils/typography"
 
-function Home({ data }) {
+function BlogList({ data }) {
   return (
     <Layout>
       {data.allWordpressPost.edges.map(({ node }) => (
@@ -26,12 +26,16 @@ function Home({ data }) {
   )
 }
 
-export default Home
+export default BlogList
 
 // Set here the ID of the home page.
 export const pageQuery = graphql`
-  query {
-    allWordpressPost(sort: { fields: [date], order: DESC }) {
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    allWordpressPost(
+      sort: { fields: [date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           title

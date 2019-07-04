@@ -1,11 +1,11 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
-import { Link, StaticQuery } from "gatsby"
+import { StaticQuery } from "gatsby"
 import YearsTabs from "../components/YearsTabs"
 import Header from "../components/header"
 import Footer from "../components/Footer"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 import background from "../images/background.svg"
 // https://www.gatsbyjs.org/docs/global-css/
@@ -39,7 +39,7 @@ function Layout(props) {
         <div>
           <div
             css={{
-              background: "#263238",
+              // background: "#263238",
               // background: "-webkit-linear-gradient(to right, #ACB6E5, #74ebd5)",
               // background: "linear-gradient(to right, #ACB6E5, #74ebd5)",
               background: `linear-gradient(rgba(0,0,0,0.79),rgba(0,0,0,0.75)),url(${background})`,

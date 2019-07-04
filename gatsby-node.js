@@ -69,13 +69,31 @@ exports.createPages = async ({ graphql, actions }) => {
   // Access query results via object destructuring
   const { allWordpressPost } = result.data
 
+  // https://www.gatsbyjs.org/docs/adding-pagination/
+  // Create Home page pagination
+  const posts = allWordpressPost
+  const postsPerPage = 6
+  const numPages = Math.ceil(posts.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: path.resolve("./src/templates/blogListTemplate.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
+
   // Create Page pages.
   const pageTemplate = path.resolve(`./src/templates/page.js`)
   allWordpressPost.edges.forEach(({ node }) => {
     const year = new Date(node.date).getFullYear()
 
     createPage({
-      path: `/${year}/`,
+      path: `/year/${year}/`,
       component: slash(pageTemplate),
       context: {
         id: node.id,
@@ -91,7 +109,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // The Post ID is prefixed with 'POST_'
   allWordpressPost.edges.forEach(({ node }) => {
     const year = new Date(node.date).getFullYear()
-    const path = `/${year}/${node.slug}/`
+    const path = `/year/${year}/${node.slug}/`
     const internalLink = `https://sung.codes${path}`
 
     createPage({
