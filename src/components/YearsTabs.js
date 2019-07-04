@@ -28,7 +28,7 @@ function YearsTabs({ years }) {
                 padding: rhythm(0.5),
               },
             }}
-            to={`/year/${year}`}
+            to={`/${year}`}
             activeClassName="clicked"
           >
             {year}

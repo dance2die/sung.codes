@@ -93,7 +93,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const year = new Date(node.date).getFullYear()
 
     createPage({
-      path: `/year/${year}/`,
+      path: `/${year}/`,
       component: slash(pageTemplate),
       context: {
         id: node.id,
@@ -109,7 +109,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // The Post ID is prefixed with 'POST_'
   allWordpressPost.edges.forEach(({ node }) => {
     const year = new Date(node.date).getFullYear()
-    const path = `/year/${year}/${node.slug}/`
+    const path = `/${year}/${node.slug}/`
     const internalLink = `https://sung.codes${path}`
 
     createPage({
