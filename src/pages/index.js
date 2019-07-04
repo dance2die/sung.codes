@@ -43,3 +43,22 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// export const pageQuery = graphql`
+//   query blogListQuery($skip: Int!, $limit: Int!) {
+//     allWordpressPost(
+//       sort: { fields: [date], order: DESC }
+//       limit: $limit
+//       skip: $skip
+//     ) {
+//       edges {
+//         node {
+//           title
+//           excerpt
+//           slug
+//           ...PostIcons
+//         }
+//       }
+//     }
+//   }
+// `
