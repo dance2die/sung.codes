@@ -8,6 +8,8 @@ import Footer from "../components/Footer"
 import { rhythm, scale } from "../utils/typography"
 
 import background from "../images/background.svg"
+// https://www.gatsbyjs.org/docs/global-css/
+import "./index.scss"
 
 const containerStyle = {
   maxWidth: 750,
