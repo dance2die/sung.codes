@@ -11,26 +11,27 @@ import ExternalLink from "../utils/ExternalLink"
 const HomeContainer = styled.main`
   display: flex;
   flex-direction: column;
+  margin: ${rhythm(1)} 0;
+  text-align: center;
 `
 
 const Intro = styled.h2`
   border-bottom: none;
-  margin-bottom: ${rhythm(0)};
   line-height: ${rhythm(1.2)};
 `
-const IntroSubtitle = styled.em`
+const IntroSubtitle = styled.div`
   display: block;
   margin: ${rhythm(0.1)};
 `
-const GreetingTitle = styled.h3``
+const GreetingTitle = styled.h5``
 const GreetingSubtitle = styled.em``
-const Greeting = styled.section``
-const Body = styled.p`
-  margin: ${rhythm(0.7)} ${rhythm(1.5)};
+const Greeting = styled.article``
+const Body = styled.section`
+  margin: ${rhythm(1.5)} ${rhythm(1.5)};
 `
 
 function Home({ data }) {
-  // console.log(`data`, data)
+  const { years } = data.allWordpressPost
 
   return (
     <Layout>
@@ -45,26 +46,24 @@ function Home({ data }) {
         </Intro>
         <Greeting>
           <GreetingTitle>
-            Hi, I am{" "}
+            By{" "}
             <ExternalLink url="https://sungkim.co/">Sung M. Kim</ExternalLink>
+            <GreetingSubtitle>
+              {" "}
+              (aka. dance2die{" "}
+              <span role="img" aria-label="dance2die">
+                🕺✌🎲
+              </span>
+              )
+            </GreetingSubtitle>
           </GreetingTitle>
-          <GreetingSubtitle>
-            (aka. dance2die{" "}
-            <span role="img" aria-label="dance2die">
-              🕺✌🎲
-            </span>
-            )
-          </GreetingSubtitle>
         </Greeting>
         <Body>
-          Hopefully this site provides a better/faster experience than the
-          WordPress version,{" "}
+          Hope you get a better experience than{" "}
           <ExternalLink url="https://www.slightedgecoder.com/">
             SlightEdgeCoder.com
-          </ExternalLink>
-        </Body>
-        <Body>And easier to remember</Body>
-        <Body>
+          </ExternalLink>{" "}
+          <p>&amp; And easier to remember</p>
           You can also reach this site using{" "}
           <ExternalLink url="http://dance2die.com">dance2die.com</ExternalLink>
         </Body>
@@ -78,18 +77,27 @@ export default Home
 // Set here the ID of the home page.
 export const pageQuery = graphql`
   query {
-    allWordpressPost(sort: { fields: [date], order: DESC }) {
-      edges {
-        node {
-          title
-          excerpt
-          slug
-          ...PostIcons
-        }
-      }
+    allWordpressPost {
+      years: distinct(field: fields___year)
     }
   }
 `
+
+// // Set here the ID of the home page.
+// export const pageQuery = graphql`
+//   query {
+//     allWordpressPost(sort: { fields: [date], order: DESC }) {
+//       edges {
+//         node {
+//           title
+//           excerpt
+//           slug
+//           ...PostIcons
+//         }
+//       }
+//     }
+//   }
+// `
 
 // export const pageQuery = graphql`
 //   query blogListQuery($skip: Int!, $limit: Int!) {
