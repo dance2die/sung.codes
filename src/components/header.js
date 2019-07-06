@@ -1,12 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { scale } from "../utils/typography"
+import { scale, rhythm } from "../utils/typography"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      marginBottom: `1.45rem`,
+      marginBottom: rhythm(2),
     }}
   >
     <div

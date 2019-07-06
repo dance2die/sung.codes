@@ -49,6 +49,7 @@ function Layout(props) {
               "@media screen and (min-width: 500px)": {
                 padding: `${rhythm(2)} 0px`,
               },
+              // textAlign: "center",
             }}
           >
             <div css={containerStyle}>
