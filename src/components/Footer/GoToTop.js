@@ -14,7 +14,6 @@ function GoToTop() {
     <a
       css={css}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      href="/"
     >
       Go to Top{" "}
       <span role="img" aria-label="top">
