@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Layout from "../layouts"
 // import Dangerous from "dangerous-components"
 // import PostIcons from "../components/post-icon"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import ExternalLink from "../utils/ExternalLink"
 
 const HomeContainer = styled.main`
@@ -16,6 +16,7 @@ const HomeContainer = styled.main`
 const Intro = styled.h2`
   border-bottom: none;
   margin-bottom: ${rhythm(0)};
+  line-height: ${rhythm(1.2)};
 `
 const IntroSubtitle = styled.em`
   display: block;
@@ -24,8 +25,8 @@ const IntroSubtitle = styled.em`
 const GreetingTitle = styled.h3``
 const GreetingSubtitle = styled.em``
 const Greeting = styled.section``
-const Body = styled.section`
-  margin: ${rhythm(0.5)};
+const Body = styled.p`
+  margin: ${rhythm(0.7)} ${rhythm(1.5)};
 `
 
 function Home({ data }) {
@@ -43,31 +44,31 @@ function Home({ data }) {
           </IntroSubtitle>
         </Intro>
         <Greeting>
-          <GreetingTitle>Hi, I am Sung M. Kim </GreetingTitle>
-          <IntroSubtitle>(aka. dance2die 🕺✌🎲)</IntroSubtitle>
+          <GreetingTitle>
+            Hi, I am{" "}
+            <ExternalLink url="https://sungkim.co/">Sung M. Kim</ExternalLink>
+          </GreetingTitle>
+          <GreetingSubtitle>
+            (aka. dance2die{" "}
+            <span role="img" aria-label="dance2die">
+              🕺✌🎲
+            </span>
+            )
+          </GreetingSubtitle>
         </Greeting>
         <Body>
           Hopefully this site provides a better/faster experience than the
-          WordPress version, SlightEdgeCoder.com.
+          WordPress version,{" "}
+          <ExternalLink url="https://www.slightedgecoder.com/">
+            SlightEdgeCoder.com
+          </ExternalLink>
         </Body>
+        <Body>And easier to remember</Body>
         <Body>
-          And easier to remember (sung.codes) than arcane SlightEdgeCoder
+          You can also reach this site using{" "}
+          <ExternalLink url="http://dance2die.com">dance2die.com</ExternalLink>
         </Body>
-        <Body>You can also reach this site via dance2die.com</Body>
       </HomeContainer>
-      {/* {data.allWordpressPost.edges.map(({ node }) => (
-        <div css={{ marginBottom: rhythm(2) }} key={node.slug}>
-          <Link
-            to={`${node.year}/${node.slug}`}
-            css={{ textDecoration: `none` }}
-          >
-            <h3>{node.title}</h3>
-          </Link>
-
-          <Dangerous html={node.excerpt} />
-          <PostIcons node={node} />
-        </div>
-      ))} */}
     </Layout>
   )
 }
