@@ -1,0 +1,7 @@
+$offset: 8rem;
+
+@for $i from 0 through 2 {
+  .level-#{$i} {
+    margin-left: $offset * $i;
+  }
+}
