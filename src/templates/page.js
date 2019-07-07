@@ -34,14 +34,21 @@ const PostExerpts = ({ posts }) => (
         </Link>
         <Dangerous html={node.excerpt} />
         <PostIcons node={node} />
-        <span
-          css={{ display: "inline-block" }}
-          role="img"
-          aria-label="direction"
-          className={`arrow ${getDirection(i)} level-${getLevel(i)}`}
+        <article
+          css={{
+            textAlign: "center",
+            fontSize: "2rem",
+          }}
         >
-          👉
-        </span>
+          <span
+            css={{ display: "inline-block" }}
+            role="img"
+            aria-label="direction"
+            className={`arrow ${getDirection(i)} level-${getLevel(i)}`}
+          >
+            👉
+          </span>
+        </article>
       </div>
     ))}
   </>
