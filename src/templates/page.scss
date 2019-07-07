@@ -1,7 +1,16 @@
-$offset: 8rem;
+$offset: 5rem;
+
+.arrow {
+  &.right {
+    transform: rotate(80deg);
+  }
+  &.left {
+    transform: rotate(120deg);
+  }
+}
 
 @for $i from 0 through 2 {
-  .level-#{$i} {
+  .post.level-#{$i} {
     margin-left: $offset * $i;
   }
 }

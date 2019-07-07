@@ -11,18 +11,21 @@ import { rhythm } from "../utils/typography"
 import "./page.scss"
 
 const levels = [0, 1, 2, 1]
+const directions = ["right", "right", "left", "left"]
 // /*
 // 0 1 2 3   4 5 6 7   8 9 10 11   12 13 14 15
 // 0 1 2 1   0 1 2 1   0 1 2  1    0  1  2  1
 // */
 
-const getLevel = index => levels[index % 4]
+const depth = 4
+const getLevel = index => levels[index % depth]
+const getDirection = index => directions[index % depth]
 
 const PostExerpts = ({ posts }) => (
   <>
     {posts.map(({ node }, i) => (
       <div
-        className={`level-${getLevel(i)}`}
+        className={`post level-${getLevel(i)}`}
         css={{ marginBottom: rhythm(2), width: "50%" }}
         key={node.slug}
       >
@@ -31,6 +34,14 @@ const PostExerpts = ({ posts }) => (
         </Link>
         <Dangerous html={node.excerpt} />
         <PostIcons node={node} />
+        <span
+          css={{ display: "inline-block" }}
+          role="img"
+          aria-label="direction"
+          className={`arrow ${getDirection(i)} level-${getLevel(i)}`}
+        >
+          👉
+        </span>
       </div>
     ))}
   </>
