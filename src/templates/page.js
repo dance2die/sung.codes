@@ -26,7 +26,7 @@ const PostExerpts = ({ posts }) => (
     {posts.map(({ node }, i) => (
       <div
         className={`post level-${getLevel(i)}`}
-        css={{ marginBottom: rhythm(2), width: "50%" }}
+        css={{ marginBottom: rhythm(2) }}
         key={node.slug}
       >
         <Link to={`${node.year}/${node.slug}`} css={{ textDecoration: `none` }}>
@@ -37,7 +37,6 @@ const PostExerpts = ({ posts }) => (
         <article
           css={{
             textAlign: "center",
-            fontSize: "2rem",
           }}
         >
           <span
