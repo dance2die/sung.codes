@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "sung-codes",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A static version of SlightEdgeCoder.com",
+  "version": "0.1.1",
+  "author": "Sung M. Kim (aka dance2die)",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.10.0",
