@@ -81,4 +81,43 @@ const createPages = async ({ graphql, actions, reporter }) => {
   })
 }
 
+// https://github.com/dance2die/sung.codes/blob/master/gatsby-node.js#L159
+// Playground: https://repl.it/@dance2die/cheerio-manipulation-of-gist?language=nodejs&folderId=5b21216a-be77-4f8e-b167-9739291fc451
+async function renderGistToHtml(content) {
+  const $ = cheerio.load(content)
+  const $scripts = $(`script[src^="https://gist.github.com"]`)
+  if (!$scripts || $scripts.length < 1) return content
+
+  try {
+    const scriptPromises = []
+    $scripts.each(function(i, script) {
+      const promise = axios(script.attribs.src, { adapter }).then(_ => ({
+        src: script.attribs.src,
+        data: _.data,
+      }))
+      scriptPromises.push(promise)
+    })
+
+    await Promise.all(scriptPromises).then(function(values) {
+      // log(`values`, values);
+      values.forEach(({ src, data }) => {
+        const window = new JSDOM(`<body><script>${data}</script></body>`, {
+          runScripts: "dangerously",
+        }).window
+
+        const gistHTML = cheerio
+          .load(window.document.body.innerHTML)("body")
+          .html()
+
+        let $script = $(`script[src="${src}"]`)
+        $script.replaceWith(gistHTML)
+      })
+    })
+
+    return $("body").html()
+  } catch (e) {
+    return content
+  }
+}
+
 module.exports = { onCreateNode, createPages }
