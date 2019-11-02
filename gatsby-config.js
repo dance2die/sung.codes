@@ -11,6 +11,19 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        // https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/?=gatsby-plugin-mdx#gatsby-remark-plugins
+        // https://www.gatsbyjs.org/packages/gatsby-remark-liquid-tags/?=liquid
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-liquid-tags`,
+          // https://www.gatsbyjs.org/packages/gatsby-remark-embed-gist/
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: "dance2die",
+              includeDefaultCss: true,
+            },
+          },
+        ],
       },
     },
     {
