@@ -12,8 +12,7 @@ There are already two methods available in modern browsers, [Promise.all](https:
 
 Let's take a look at differences and how each method works.
 
-##   
-🚀 Prerequisite
+## 🚀 Prerequisite
 
 ### 🔆 Promise Definition
 
@@ -34,14 +33,13 @@ For more info, refer to following documentations.
 - **Rejected** \- When a promise failed.
 - **Pending** \- When a promise is "[neither fulfilled nor rejected](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)".
 - **Settled** \- Not really a state but an _umbrella term_ to describe that a promise is either fulfilled or rejected.
-    - This term will be used to describe characteristics of new methods later.
+  - This term will be used to describe characteristics of new methods later.
 
 For more detailed explanation of states & fates, please refer to [States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).
 
 There are other static Promise methods such as [Promise.reject](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject), [Promise.resolve](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) but I will cover only "combinator" methods, which takes in an iterable object as an argument.
 
-##   
-🚀 Differences
+## 🚀 Differences
 
 Let's first take a look at difference between existing & new combinator methods.
 
@@ -59,8 +57,7 @@ Both accepts an iterable object but
 - `Promise.race` short-circuits on the first settled (fulfilled or rejected) promise within the iterable object.
 - `Promise.any` short-circuits on the first fulfilled promise and continues to resolve regardless of rejected promises unless all within the iterable object reject.
 
-##   
-🚀 Comparison Table
+## 🚀 Comparison Table
 
 Now let's take a look at existing/upcoming combinator methods.
 
@@ -72,8 +69,7 @@ Now let's move on to learn more about each method.
 
 **Note that all "Characteristics" are taken from TC39 proposal [README](https://github.com/tc39/proposal-promise-any/blob/master/README.md).**
 
-##   
-🚀 Promise.all
+## 🚀 Promise.all
 
 - **What is this?** Resolve all promises passed as an iterable object.
 - **Idiom** - One bad 🍏 spoils the bunch ("all").
@@ -85,13 +81,11 @@ Now let's move on to learn more about each method.
 
 <a href="https://gist.github.com/dance2die/9ba18d739224d408af8a8f239cde9a2b">View this gist on GitHub</a>
 
-  
 When `Promise.all` fulfilled(`promisesWithoutReject`), all apples are returned.
 
 The latter example using `promisesWithOneReject` shows that one rejected promise results in rejecting all promises.
 
-##   
-🚀 Promise.allSettled
+## 🚀 Promise.allSettled
 
 - **What is this?** all promises regardless of settled (fulfilled/rejected) status.
 - **Idiom** - Let's "wait and see" 🤔.
@@ -104,7 +98,6 @@ The latter example using `promisesWithOneReject` shows that one rejected promise
 
 <a href="https://gist.github.com/dance2die/e6f491a82eb10a28f3743f68f5c9d4fe">View this gist on GitHub</a>
 
-  
 Regardless of settled (fulfilled or rejected) state, all promises resolve without short-circuiting to `catch`.
 
 To differentiate if resolved values were successful, they are returned as an array of objects of following shape.
@@ -112,12 +105,11 @@ To differentiate if resolved values were successful, they are returned as an arr
 - _Fulfilled_ promise is returned as `{status: 'fulfilled', value}`
 - _Rejected_ promise is returned as `{status: 'rejected', reason}`
 
-##   
-🚀 Promise.race
+## 🚀 Promise.race
 
 - **What is this?** The first fulfilled promise or reject the whole promise when even one promise rejects.
 - **Idiom** - A race between Good 😇 (Fulfilled) and Evil 😈 (Rejected)
-    - Not really an idiom though 😅
+  - Not really an idiom though 😅
 - **Characteristic** - Short-circuits when an input value is settled
 
 ### 🔆 Example
@@ -126,7 +118,6 @@ To differentiate if resolved values were successful, they are returned as an arr
 
 <a href="https://gist.github.com/dance2die/e59a0f90b6a0ea585520b994652bfb55">View this gist on GitHub</a>
 
-  
 In `promiseWillFulfill` example, the first promise _fulfilled_ within 1 millisecond and thus the humanity survived.
 
 But the second example using `promiseWillReject` had a promise _rejecting_ in 1 millisecond and thus the humanity is doomed.
@@ -136,8 +127,7 @@ three" was returned.
 
 From these examples, you can see that the first settled state (fulfilled or reject) short circuited the promise.
 
-##   
-🚀 Promise.any
+## 🚀 Promise.any
 
 - **What is this?** Returns the first fulfilled promise regardless of other rejected promises. If all promises reject, then reject by providing errors for all rejects.
 - **Idiom** - All's well that ends well.
@@ -150,15 +140,13 @@ From these examples, you can see that the first settled state (fulfilled or reje
 
 <a href="https://gist.github.com/dance2die/992a1157c191eca2b277e1380b323e8b">View this gist on GitHub</a>
 
-  
 First example has promises that rejects right away but did not short-circuit because of a fulfilled promise, thus you win at life.
 
 Second example has promises resolving after a certain period. The first fulfilled promise was resolved after a series of rejects but didn't short-circuit. And you were able to get a job.
 
 When all promises reject, then that's when Promise.any rejects and you didn't get any job offers.
 
-##   
-👋 Conclusion
+## 👋 Conclusion
 
 How I understood was that the new `Promise.allSettled/any` are introduced for Promise to try its best to resolve promises to fulfill unlike existing ones that fails on first encounter of reject.
 

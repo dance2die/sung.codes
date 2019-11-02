@@ -156,23 +156,23 @@ Similar concept as how [Promise.all](https://developer.mozilla.org/en-US/docs/We
 
 **Caveat**: Nested components in Suspense are going to run with waterfall.
 
-**_Sung's Note_**: N_ot sure how this works exactly..._
+**_Sung's Note_**: N*ot sure how this works exactly...*
 
 And you can nest Suspense within each other infinitely.
 
 ### 🔹 Use Cases
 
 1. Using a low quality image place holder while a high res version is loading.
-    - Wrap regular image component in Suspense.
-    - Regular image will be fetched while Suspense displays a low quality image as a fallback until the high resolution resource becomes available in cache.
+   - Wrap regular image component in Suspense.
+   - Regular image will be fetched while Suspense displays a low quality image as a fallback until the high resolution resource becomes available in cache.
 2. Loading external 3rd party payment script.
-    - You can enable check out button only when [Stripe](https://stripe.com/docs/api) script is loaded.
+   - You can enable check out button only when [Stripe](https://stripe.com/docs/api) script is loaded.
 3. You can load next component to load ahead of time to enable a transition effect.
 4. For SSR (server-side rendering), you have to know what data your components need ahead of time.
-    - This forces Apollo to traverse React tree twice (  
-        Components have to figure out what data they need so React is going to render without data and then with data).
-    - This slows down the SSR page.
-    - In later cache implementations, React tree can be walked down only once but not yet "quite there, yet".
+   - This forces Apollo to traverse React tree twice (  
+      Components have to figure out what data they need so React is going to render without data and then with data).
+   - This slows down the SSR page.
+   - In later cache implementations, React tree can be walked down only once but not yet "quite there, yet".
 
 ### 🔹 Cache
 
