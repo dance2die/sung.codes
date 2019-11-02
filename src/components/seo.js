@@ -17,49 +17,21 @@ function SEO({ description, lang, meta, keywords, title, canonicalURL }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            // prettier-ignore
             meta={[
-              {
-                name: `description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:title`,
-                content: title,
-              },
-              {
-                property: `og:description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:type`,
-                content: `website`,
-              },
-              {
-                name: `twitter:card`,
-                content: `summary`,
-              },
-              {
-                name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
-              },
-              {
-                name: `twitter:title`,
-                content: title,
-              },
-              {
-                name: `twitter:description`,
-                content: metaDescription,
-              },
+              { name: "description", content: metaDescription },
+              { property: "og:title", content: title },
+              { property: "og:description", content: metaDescription, },
+              { property: "og:type", content: "website", },
+              { name: "twitter:card", content: "summary", },
+              { name: "twitter:creator", content: data.site.siteMetadata.author, },
+              { name: "twitter:title", content: title, },
+              { name: "twitter:description", content: metaDescription, },
             ]
-              .concat(
-                keywords.length > 0
-                  ? {
-                      name: `keywords`,
-                      content: keywords.join(`, `),
-                    }
+              .concat(keywords.length > 0
+                  ? { name: `keywords`, content: keywords.join(`, `), }
                   : []
-              )
-              .concat(meta)}
+              ).concat(meta)}
           >
             {canonicalURL && <link rel="canonical" href={canonicalURL} />}
           </Helmet>
