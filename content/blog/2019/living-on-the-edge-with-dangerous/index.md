@@ -32,7 +32,7 @@ React team has made it hard to set `innerHTML` of a component to help developers
 
 But `dangerous` makes it easy to set an `innerHTML` value and returns a component with the unsafe HTML string.
 
-<script src="https://gist.github.com/dance2die/e219cafdc2ffb319c37aea2ee994470d.js"></script>
+`gist:e219cafdc2ffb319c37aea2ee994470d#DangerousApp.js`
 
 <a href="https://gist.github.com/dance2die/e219cafdc2ffb319c37aea2ee994470d">View this gist on GitHub</a>
 

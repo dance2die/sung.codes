@@ -17,7 +17,7 @@ One day all four characters found cheese in a maze. Sniff was always monitoring 
 
 When the cheese was gone Sniff and Scurry immediately look for another cheese in the maze and moved on. Hem and Haw were busy blaming external factors for cheese being gone. Haw eventually realized that he was in the wrong for not realizing that the cheese will be gone someday and looked for another cheese while Hem was stuck in the past without moving on.
 
-While Haw was in the journey looking for another cheese, he left many clues to motivate Hem to move on and taken an action but it was of no use. Haw eventually found another cheese and discovered Sniff and Scurry there.
+While Haw was in the journey looking for another cheese, he left many clues to motivate Hem to move on and taken an action but it was of no use. Haw eventually found another cheese and discovered Sniff and Scurry there.Fng on the edge w
 
 **Lessons Learned.**
 
