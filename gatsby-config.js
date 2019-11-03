@@ -14,6 +14,7 @@ module.exports = {
         // https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/?=gatsby-plugin-mdx#gatsby-remark-plugins
         // https://www.gatsbyjs.org/packages/gatsby-remark-liquid-tags/?=liquid
         gatsbyRemarkPlugins: [
+          `gatsby-remark-embedder`,
           `gatsby-remark-liquid-tags`,
           // https://www.gatsbyjs.org/packages/gatsby-remark-embed-gist/
           {
