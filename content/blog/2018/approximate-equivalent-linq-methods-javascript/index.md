@@ -23,19 +23,19 @@ Here are the methods covered so far.
 
 ### 🔴 Overview
 
-Here are the examples I will show you in this article. \[table id=1 /\]
+Here are the examples I will show you in this article. [table id=1]
 
 I tried to match the code look similar to each other (as you can see the full source codes in [LINQ](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo/blob/master/Program.cs) & [JavaScript](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo/blob/master/index.js) on GitHub).
 
 Here are the sample collections I will use to demo each method.
 
-###### C#
+###### CSharp
 
-https://gist.github.com/dance2die/91eccd44af4248a07ca031c7cb97c1d5
+gist:dance2die/91eccd44af4248a07ca031c7cb97c1d5
 
 ###### JavaScript
 
-https://gist.github.com/dance2die/8ddcdfd02c4dc710d16cc71875a748c5
+gist:dance2die/8ddcdfd02c4dc710d16cc71875a748c5
 
 ### 🔴 Examples
 
@@ -43,43 +43,43 @@ https://gist.github.com/dance2die/8ddcdfd02c4dc710d16cc71875a748c5
 
 `map` is the equivalent of `Select`.
 
-https://gist.github.com/dance2die/8da7e590187ff210510519b1f1f937d2
+gist:dance2die/8da7e590187ff210510519b1f1f937d2
 
-https://gist.github.com/dance2die/163b8cf88f85a62c08372f7783d7b18f
+gist:dance2die/163b8cf88f85a62c08372f7783d7b18f
 
 Syntax-wise, it's basically one-to-one replacement from `Select` to `map`. I said "equivalent" but I lied. While `map` returns a new array, `Select` has a side effect (it can update the iterating collection). Just remember this difference for the rest of JavaScript methods.
 
 Results of calling `SelectDemo` and `mapDemo`.
 
-https://gist.github.com/dance2die/34f32390c65c0852575315a65bba8ad3
+gist:dance2die/34f32390c65c0852575315a65bba8ad3
 
 ##### 🔸 Aggregate
 
 `reduce` works the same way `Aggregate` does.
 
-https://gist.github.com/dance2die/6dfb6a38bc0faaa74f0f29c3cb09570e
+gist:dance2die/6dfb6a38bc0faaa74f0f29c3cb09570e
 
-https://gist.github.com/dance2die/741d1c59e2c3aecbb8a3346b1d9a3f48
+gist:dance2die/741d1c59e2c3aecbb8a3346b1d9a3f48
 
 **⚡ NOTE ⚡**: While the initial value for the accumulator is passed as a first argument in `Aggregate`, it's passed as the last one in `reduce`.
 
 Results of calling `AggregateDemo` and `reduceDemo`.
 
-https://gist.github.com/dance2die/52273094e42444491749169afa7e6555
+gist:dance2die/52273094e42444491749169afa7e6555
 
 ##### 🔸  Where
 
 As you might have guessed it 😉, `Where` is for _filtering_ records in a collection.  So the equivalent is..., 🎉 `filter`.
 
-https://gist.github.com/dance2die/80fa116898f3f57857551f96bd116eef
+gist:dance2die/80fa116898f3f57857551f96bd116eef
 
-https://gist.github.com/dance2die/61d8ab6a503e7b26be4a83524fc1c238
+gist:dance2die/61d8ab6a503e7b26be4a83524fc1c238
 
 Another drop-in replacement of `filter` for `Where`. The code so far looked the same thanks to the Lamda expression syntax in both C# & JavaScript (ES6).
 
 Results of calling `WhereDemo` and `filterDemo`.
 
-https://gist.github.com/dance2die/145a586dc68343e7c1694e7577130a50
+gist:dance2die/145a586dc68343e7c1694e7577130a50
 
 ##### 🔸 OrderBy
 
@@ -87,35 +87,35 @@ Now here is where it gets tricky.
 
 While there are two methods for ordering (ascending/descending) in LINQ, there is only one method in Javascript, `sort`, which can handle both scenarios.
 
-`sort` is more roughly equivalent to .NET's [Array.Sort](https://msdn.microsoft.com/en-us/library/bzw8611x%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396) method which accepts an object instance of type [IComparer<T>](https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx), which works the same as a callback in `sort`.
+`sort` is more roughly equivalent to .NET's [Array.Sort](https://msdn.microsoft.com/en-us/library/bzw8611x%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396) method which accepts an object instance of type [IComparer<T>](<https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx>), which works the same as a callback in `sort`.
 
 In the examples below, if the callback, which requires two arguments, returns a value less than 0, then the left value comes before right value, and vice versa. For 0, the order is not changed.
 
 That's why you can emulate `OrderBy` and `OrderByDescending` with only `sort`.
 
-###### 1\. Ascending Order
+###### 1. Ascending Order
 
-https://gist.github.com/dance2die/e2d987d315f9c1ad954a30eab61beafc
+gist:dance2die/e2d987d315f9c1ad954a30eab61beafc
 
-https://gist.github.com/dance2die/adc7daccc0b290e238de5f254a7bcd8b
+gist:dance2die/adc7daccc0b290e238de5f254a7bcd8b
 
 In `sortByAscendingDemo`, if `o1.quantity - o2.quantity` returns a negative value, then `o1` comes before `o2` and vice versa. If quantity in both objects are equal (the difference is 0) then the order is not changed.
 
 Results of calling `OrderByDemo` and `sortByAscendingDemo`.
 
-https://gist.github.com/dance2die/3eb8c296149fc6107226248b2fd49caf
+gist:dance2die/3eb8c296149fc6107226248b2fd49caf
 
-###### 2\. Descending Order
+###### 2. Descending Order
 
-https://gist.github.com/dance2die/90f8485e2a88d682bc695a87279ab8bb
+gist:dance2die/90f8485e2a88d682bc695a87279ab8bb
 
-https://gist.github.com/dance2die/66b66906596ca7151778c7628391ceba
+gist:dance2die/66b66906596ca7151778c7628391ceba
 
 In this JavaScript function, `sortByDescendingDemo`, two objects are switched from `sortByAscendingDemo`. To emulate the descending order, we simply switch `o1` and `o2`, which will negate the return values from the callback.
 
 Result of `OrderByDescendingDemo` and `sortByDescendingDemo`.
 
-https://gist.github.com/dance2die/363d8cd1c5f24a0161c4173f1da6be6f
+gist:dance2die/363d8cd1c5f24a0161c4173f1da6be6f
 
 ### 🔴 Closing Remark
 

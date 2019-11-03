@@ -4,7 +4,7 @@ date: "2017-10-01"
 coverImage: "featured-image.jpg"
 ---
 
-\*\* **UPDATE**: April 21, 2019 \*\*
+ **UPDATE**: April 21, 2019 
 
 Both [Eugene Karataev](https://dev.to/karataev) & [Noah Pederson](https://dev.to/chiefnoah) provided a better way than what's in this post.
 
@@ -33,13 +33,13 @@ Suppose that you are taking an advantage of all javascript boilerplates floating
 
 But when you try to commit the code back to GitHub, you get an error message that you don't have a permission since the cloned repo belongs to another user.
 
-https://gist.github.com/dance2die/841f50055b95318e29f31376e0bd18fa
+gist:dance2die/841f50055b95318e29f31376e0bd18fa
 
 ### How to commit to your own GitHub repository
 
 First, remove the remote repository associated using `git remote rm origin`.
 
-https://gist.github.com/dance2die/04273b00df9a7345bf4e3ee461816ac5
+gist:dance2die/04273b00df9a7345bf4e3ee461816ac5
 
 Then [create your own repository](https://help.github.com/articles/create-a-repo/) on GitHub.
 
@@ -51,11 +51,11 @@ After creating the repository, copy the repo URL.
 
 Now, add the URL to your repo.
 
-https://gist.github.com/dance2die/234f77836173c2271b4c63e3b45a2b2a
+gist:dance2die/234f77836173c2271b4c63e3b45a2b2a
 
 Now you can push/publish it to your own repository!
 
-https://gist.github.com/dance2die/41dcb516ef61ba06ba75668923e54248
+gist:dance2die/41dcb516ef61ba06ba75668923e54248
 
 Wolla! It's committed to your GitHub repository.
 

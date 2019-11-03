@@ -5,7 +5,7 @@ date: "2018-11-09"
 
 _Photo by _[_freestocks.org_](https://unsplash.com/photos/CH6-cfiY2Yo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/force?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-\*\* UPDATE: 2019-02-12 \*\*
+ UPDATE: 2019-02-12 
 
 This post would not work any more starting v16.8.0 as [pointed out](https://www.slightedgecoder.com/2018/11/08/emulate-forceupdate-with-react-hooks/?preview_id=1931&preview_nonce=5e2a9a7f1b&preview=true&_thumbnail_id=1949#comment-4333911452) by **[Dimitar Nestorov](https://disqus.com/by/dimitarnestorov/)** in the comment section.
 
@@ -47,7 +47,7 @@ More questions...
 
 I tried to go thru the code in Chrome devtool but would require understanding React Fiber code to dig it.
 
-## \*\* Update \*\*
+##  Update 
 
 Asked the question in Reddit, 
 

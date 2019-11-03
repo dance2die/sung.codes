@@ -1,5 +1,5 @@
 ---
-title: ""dotnet new install" issue - "Error: Value cannot be null""
+title: "dotnet new install issue - Error: Value cannot be null"
 date: "2018-04-08"
 coverImage: "matt-lamers-399809-unsplash.jpg"
 ---
@@ -8,7 +8,7 @@ Photo by [Matt Lamers](https://unsplash.com/photos/R6uybPo0Lv0?utm_source=unspla
 
 .NET CLI has made it easy to create a new template. Sometimes you might get a following error message while creating a SPA template.
 
-https://gist.github.com/dance2die/8b718a44aa893504105337808287b21d
+gist:dance2die/8b718a44aa893504105337808287b21d
 
 I will show you what has caused it and how to get around it.
 
@@ -17,8 +17,6 @@ I will show you what has caused it and how to get around it.
 According to [Mike Lorbetske](https://github.com/mlorbetske), the error occurs when one of the `node_modules` folders contain a `template.json` file.
 
 > TL;DR - the particular node modules that have been added to the project contain a `template.json` file
-
- 
 
 ### 💡 Resolution
 

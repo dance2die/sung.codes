@@ -33,11 +33,11 @@ The sample collections used in this article.
 
 ###### C#
 
-https://gist.github.com/dance2die/91eccd44af4248a07ca031c7cb97c1d5
+gist:dance2die/91eccd44af4248a07ca031c7cb97c1d5
 
 ###### JavaScript
 
-https://gist.github.com/dance2die/8ddcdfd02c4dc710d16cc71875a748c5
+gist:dance2die/8ddcdfd02c4dc710d16cc71875a748c5
 
 ### 🔴 Examples
 
@@ -45,13 +45,13 @@ https://gist.github.com/dance2die/8ddcdfd02c4dc710d16cc71875a748c5
 
 I will show you "Sum" demo first since "Average" is basically a sum divided by count.
 
-https://gist.github.com/dance2die/6a39ea12bc4253c0eda08f456162650b
+gist:dance2die/6a39ea12bc4253c0eda08f456162650b
 
-https://gist.github.com/dance2die/10f4e530b7cc145d84c9efa5cf4f2134
+gist:dance2die/10f4e530b7cc145d84c9efa5cf4f2134
 
 ###### Results
 
-https://gist.github.com/dance2die/8257620ec4b39b0fc4ad8de1c6b50717
+gist:dance2die/8257620ec4b39b0fc4ad8de1c6b50717
 
 `Array.prototype.sum` simply reduces each order quantity by summing it in the callback. Note 📝: It's exactly the same as the [reduceDemo](https://www.slightedgecoder.com/2018/02/24/approximate-equivalent-linq-methods-javascript/#aggregate).
 
@@ -59,13 +59,13 @@ https://gist.github.com/dance2die/8257620ec4b39b0fc4ad8de1c6b50717
 
 Now let's get an average quantity ordered.
 
-https://gist.github.com/dance2die/3a50fa4e91997ac7518f2a55f0332992
+gist:dance2die/3a50fa4e91997ac7518f2a55f0332992
 
-https://gist.github.com/dance2die/0013a7255e993ac11914e663799fd8c8
+gist:dance2die/0013a7255e993ac11914e663799fd8c8
 
 ###### Results
 
-https://gist.github.com/dance2die/8d5c5e20e7a453004eda71053bbd1bba
+gist:dance2die/8d5c5e20e7a453004eda71053bbd1bba
 
 The only difference here is that sum is divided by the order count to calculate an average.
 
@@ -75,13 +75,13 @@ Count is overloaded in LINQ; [One](https://msdn.microsoft.com/en-us/library/bb33
 
 I will implement the one with the predicate as the former is too simple.
 
-https://gist.github.com/dance2die/e625943d0df70bfcf2248edbd220e187
+gist:dance2die/e625943d0df70bfcf2248edbd220e187
 
-https://gist.github.com/dance2die/a33e3a0fbad62840fdba9ad70260aef1
+gist:dance2die/a33e3a0fbad62840fdba9ad70260aef1
 
 ###### Results
 
-https://gist.github.com/dance2die/8910c67f5533f20b747f191ae34e0793
+gist:dance2die/8910c67f5533f20b747f191ae34e0793
 
 The demo counts number of orders placed on and after March of 2018. Count without a predicate is same as `array.length` but `filter` is required for testing each element in an array.
 

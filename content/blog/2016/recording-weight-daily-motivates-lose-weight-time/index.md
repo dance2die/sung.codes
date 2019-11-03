@@ -31,4 +31,4 @@ Here is the graph since December of 2015 until Yesterday (11/19/2016)
 
 ![Dec 2015~Nov 2016](https://www.slightedgecoder.com/wp-content/uploads/2016/11/WeightGraph3-300x186.jpg)
 
-Being able to \*see\* the weight going down makes whole lotta difference.
+Being able to see the weight going down makes whole lotta difference.

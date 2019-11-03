@@ -4,7 +4,7 @@ date: "2017-03-18"
 coverImage: "featured-image-removed-by-Don-Crowley.jpg"
 ---
 
-\* Featured Image - "[removed.jpg](https://www.flickr.com/photos/doncrowley/2194796278/in/photolist-4kWUt9-7nJpV8-7t4XtP-8yCe1C-5iFzwq-8yCd2u-247GL-2hZHyH-247Er-j7z7T-b5fzx-4vqboo-h8DgpC-4WH8Lw-Re2ChR-jnfYUr-4WHaDw-4ZRqzt-247GT-247GS-4Ky6xK-247GN-247Gz-247GK-arm2re-6Vb9QA-5XRyEq-b3d2BD-G9oA9n-e4VTdH-dvgarU-dkRhkT-bsfoE5-8ZmUAd-5bWCeC-6aAXSt-jKr7zA-baHzmc-4WCR5x-syW9C5-jnfXcD-dg8w16-4WCVQp-4WCUsF-4ZRqex-4WHbmu-nN3hSJ-6icUnS-SSCTUz-8jAAex)" by [Don Crowley](https://www.flickr.com/photos/doncrowley/), used under [BY SA](https://creativecommons.org/licenses/by-sa/2.0/)
+Featured Image - "[removed.jpg](https://www.flickr.com/photos/doncrowley/2194796278/in/photolist-4kWUt9-7nJpV8-7t4XtP-8yCe1C-5iFzwq-8yCd2u-247GL-2hZHyH-247Er-j7z7T-b5fzx-4vqboo-h8DgpC-4WH8Lw-Re2ChR-jnfYUr-4WHaDw-4ZRqzt-247GT-247GS-4Ky6xK-247GN-247Gz-247GK-arm2re-6Vb9QA-5XRyEq-b3d2BD-G9oA9n-e4VTdH-dvgarU-dkRhkT-bsfoE5-8ZmUAd-5bWCeC-6aAXSt-jKr7zA-baHzmc-4WCR5x-syW9C5-jnfXcD-dg8w16-4WCVQp-4WCUsF-4ZRqex-4WHbmu-nN3hSJ-6icUnS-SSCTUz-8jAAex)" by [Don Crowley](https://www.flickr.com/photos/doncrowley/), used under [BY SA](https://creativecommons.org/licenses/by-sa/2.0/)
 
 I've experimented a few different ways to remove duplicate items in an array.
 
@@ -20,20 +20,22 @@ Supposed that you are given an array, _{1, 2, 2, 3, 4, 4, 4, 5}_.
 
 Since an array is ordered, you can simply check if a next item is same as the current item being checked against. Here is the function, which implements the algorithm.
 
-private static int\[\] RemoveDuplicatesByCheckingPreviousElement(int\[\] a)
+```csharp
+private static int RemoveDuplicatesByCheckingPreviousElement(int a)
 {
 	List<int> result = new List<int>();
 	for (int i = 0; i < a.Length - 1; i++)
 	{
-		if (a\[i\] != a\[i + 1\])
+		if (a[i] != a[i + 1])
 		{
-			result.Add(a\[i\]);
+			result.Add(a[i]);
 		}
 	}
 
-	result.Add(a\[a.Length - 1\]);
+	result.Add(a[a.Length - 1]);
 	return result.ToArray();
 }
+```
 
 You only add the current item, if the next one is not the same as the current one. E.g.)
 
@@ -43,32 +45,36 @@ You can find more details on this YouTube video, [How to remove duplicates from 
 
 #### **Case 2.1** - Removing duplicates from an _unordered_ array using a set.
 
-By definition, a set doesn't allow duplicate value. So in .NET, instantiating a HashSet object by passing an array would have removed duplicates automatically. But the point of this exercise is to do so manually. I am using [HashSet](https://msdn.microsoft.com/en-us/library/bb359438(v=vs.110).aspx) because it has an O(1) lookup time while an array has an O(N) time complexity.
+By definition, a set doesn't allow duplicate value. So in .NET, instantiating a HashSet object by passing an array would have removed duplicates automatically. But the point of this exercise is to do so manually. I am using [HashSet](<https://msdn.microsoft.com/en-us/library/bb359438(v=vs.110).aspx>) because it has an O(1) lookup time while an array has an O(N) time complexity.
 
 The algorithm is simple. While going through each item in the array, if the current item has not been seen, we add it to the set as demonstrated in following code snippet.
 
-private static int\[\] RemoveDuplicatesUsingHashTable(int\[\] a)
+```csharp
+private static int RemoveDuplicatesUsingHashTable(int a)
 {
-	HashSet<int> alreadySeen = new HashSet<int>();
-	foreach (int item in a)
-	{
-		if (!alreadySeen.Contains(item))
-			alreadySeen.Add(item);
-	}
-	return alreadySeen.ToArray();
+HashSet<int> alreadySeen = new HashSet<int>();
+foreach (int item in a)
+{
+if (!alreadySeen.Contains(item))
+alreadySeen.Add(item);
 }
+return alreadySeen.ToArray();
+}
+```
 
-You can find details on this YouTube video, [\[Interview Question\] Duplicate Integers in Array](https://youtu.be/H1TOX-TposY).
+You can find details on this YouTube video, [[Interview Question] Duplicate Integers in Array](https://youtu.be/H1TOX-TposY).
 
 #### **Case 2.2** - Removing duplicates from an _unordered_ array by sorting it and check for next element for duplicates.
 
 The algorithm is to sort the current array and apply case 1 algorithm.
 
-private static int\[\] RemoveDuplicatesBySortingFirst(int\[\] a)
+```csharp
+private static int RemoveDuplicatesBySortingFirst(int a)
 {
 	Array.Sort(a);
 	return RemoveDuplicatesByCheckingPreviousElement(a);
 }
+```
 
 Note that `RemoveDuplicatesByCheckingPreviousElement` is the function name from case 1.
 

@@ -22,7 +22,7 @@ Let's implement a method, `GetIndexAfterFoundWord`, which searches a word within
 
 E.g.) If you search for a word "_long_" in "_This is a long text to be searched_". "_long_" is found at index 10 (zero-based) and the method returns an index after found word. In this case, the method returns 14 (index 10 + 4, which is the length of "_long_").
 
-\***Note**: Don't try to understand the code. Just skim through and imagine how hard it'd be to update the code.
+**Note**: Don't try to understand the code. Just skim through and imagine how hard it'd be to update the code.
 
 private static int GetIndexAfterFoundWord(string text, string searchWord)
 {

@@ -73,7 +73,7 @@ TypeScript is now 🙂
 
 Does anyone know why TypeScript wasn't able to infer the return type correctly?
 
-\*\*\* **UPDATE**: 2019-02-12 \*\*\*
+ **UPDATE**: 2019-02-12 
 
 [pgrizzay](https://www.reddit.com/user/pgrizzay) & [AngularBeginner](https://www.reddit.com/user/AngularBeginner) have generously answered the question above in Reddit.
 

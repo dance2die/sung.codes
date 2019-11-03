@@ -1,5 +1,5 @@
 ---
-title: ""Move files around until it feels right""
+title: "Move files around until it feels right"
 date: "2018-11-18"
 ---
 
@@ -10,17 +10,16 @@ _Self note..._
 A user [u/iKenshu](https://www.reddit.com/user/iKenshu/) asked following question on Reddit.
 
 > how to structure my project folder for something like a portafolio o simple web page
-> 
+>
 > u/iKenshu
 
 And `u/timmonsjg` [responded](https://www.reddit.com/r/reactjs/comments/9t5sic/beginners_thread_easy_questions_november_2018/e9aof1l/) with [Dan Abramov's site](http://react-file-structure.surge.sh/), which reads,
 
 > move files around until it feels right
-> 
->   
+>
 > this is [not a joke](https://mobile.twitter.com/dan_abramov/status/1027248875072114689)
-> 
-> Dan Abramov  
+>
+> Dan Abramov
 
 That advice of "trial and error" works initially but we will barely have time to enjoy our life.
 

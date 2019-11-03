@@ -29,11 +29,11 @@ The sample collection used in this part is the same as all previous ones but I w
 
 ###### C#
 
-https://gist.github.com/dance2die/91eccd44af4248a07ca031c7cb97c1d5
+gist:dance2die/91eccd44af4248a07ca031c7cb97c1d5
 
 ###### JavaScript
 
-https://gist.github.com/dance2die/8ddcdfd02c4dc710d16cc71875a748c5
+gist:dance2die/8ddcdfd02c4dc710d16cc71875a748c5
 
 OK, now let's dive into some examples 👍.
 
@@ -43,13 +43,13 @@ OK, now let's dive into some examples 👍.
 
 Ah yes. Yet again, there is another JavaScript method named same as in LINQ, [reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse). **⚡ NOTE ⚡**: Both in LINQ & JavaScript, reverse has a side effect; it alters current collection and doesn't return a new array.
 
-https://gist.github.com/dance2die/b1d35b898bb62f577854b10571fc81ee
+gist:dance2die/b1d35b898bb62f577854b10571fc81ee
 
-https://gist.github.com/dance2die/30d8fa3f3c240c8cbafcf2c16ad2d161
+gist:dance2die/30d8fa3f3c240c8cbafcf2c16ad2d161
 
 ###### Results
 
-https://gist.github.com/dance2die/164aa4763dd5a74aacbcc50398cce795
+gist:dance2die/164aa4763dd5a74aacbcc50398cce795
 
 **Reverse** is different from [OrderByDescending](https://msdn.microsoft.com/en-us/library/bb534855(v=vs.110).aspx) that you don't specify which element to reverse with. It simply reverses the  current sequence in opposite order.
 
@@ -61,13 +61,13 @@ And now let's move onto the next example, [Zip](#zip), which is you might use se
 
 There is no one-to-one equivalence in JavaScript but you can emulate one. Note that Lodash has [zipWith](https://lodash.com/docs/4.17.5#zipWith) method which works the same as the LINQ version (Maybe I will write LINQ -> Lodash equivalent methods as a next series 😉).
 
-https://gist.github.com/dance2die/346e92a6beaf551c8120652d6351d3e7
+gist:dance2die/346e92a6beaf551c8120652d6351d3e7
 
-https://gist.github.com/dance2die/36a0b9f37a5d98d908b886522597972a
+gist:dance2die/36a0b9f37a5d98d908b886522597972a
 
 ###### Results
 
-https://gist.github.com/dance2die/fe2e148190c62aadca83e65d80f64540
+gist:dance2die/fe2e148190c62aadca83e65d80f64540
 
 As [Zip](https://msdn.microsoft.com/en-us/library/dd267698(v=vs.110).aspx) returns one element from each collection in order, we can emulate the functionality in JavaScript with [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), which accepts a callback with an index. We can simply retrieve the matching second collection's item (`const text = orderNumbersInText[index]`) with the callback's index. Refer to a simpler case on this [StackOverflow answer](https://stackoverflow.com/questions/22015684/how-do-i-zip-two-arrays-in-javascript/22015771#22015771).
 
@@ -75,13 +75,13 @@ As [Zip](https://msdn.microsoft.com/en-us/library/dd267698(v=vs.110).aspx) retur
 
 Although Lodash has a similar methods, [minBy](https://lodash.com/docs/4.17.5#minBy) and [maxBy](https://lodash.com/docs/4.17.5#maxBy) that works the same way as LINQ, I will show you a way to implement it using [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min) and [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max). (I've combined two methods since both `min` and `max` are called the same way)
 
-https://gist.github.com/dance2die/4c00edfc21e4e6d1122fb37ae90eb26b
+gist:dance2die/4c00edfc21e4e6d1122fb37ae90eb26b
 
-https://gist.github.com/dance2die/07ef47f94bac0fc2ffa5f2f4b416e95c
+gist:dance2die/07ef47f94bac0fc2ffa5f2f4b416e95c
 
 ###### Results
 
-https://gist.github.com/dance2die/1ffc1636e85a872de0078e35ccf182ee
+gist:dance2die/1ffc1636e85a872de0078e35ccf182ee
 
 You can use "Math.min/max" functions to emulate LINQ versions of Min/Max.
 
@@ -89,7 +89,7 @@ Notice that spread syntax (`...orders`) is used within Math.min/max functions be
 
 If you use "min/max" frequently or make it look just like the LINQ version, you can simply extend the Array prototype as shown below.
 
-https://gist.github.com/dance2die/dedfbb43f3b0b32820ac960b0b4a4533
+gist:dance2die/dedfbb43f3b0b32820ac960b0b4a4533
 
 Now the it looks the same as the LINQ version.
 

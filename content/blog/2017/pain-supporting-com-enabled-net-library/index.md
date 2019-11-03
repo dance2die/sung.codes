@@ -4,7 +4,7 @@ date: "2017-03-04"
 coverImage: "featured-image-Wojtek-Gurak.jpg"
 ---
 
-\* Featured Image - "[Stockholm Public Library](https://www.flickr.com/photos/wojtekgurak/5617290873/in/photolist-9yo5SD-8tuaF4-7LUp5T-chQiW-4bij9y-4Qb8dX-e1oibS-c9JibN-7R1u2K-6masys-9urLf3-7R4PS3-jGG92n-cRtGFo-8c1MDP-avzvsg-7ygCHH-Bf1yg-9u2j95-8PUw4i-qwEkDL-7ygF8D-E64e3-74BkLW-7R4HzQ-6uSYM1-avC99w-7fNVQ3-6EVajT-hM5HF3-4v5KjS-6m6iEr-8UvQ8h-7R4UW7-cRtJkJ-6vv1Xd-NytKT-7R2nNB-93WXwT-787Wt9-7xytdc-2gMjT-7xytkM-o5BQYY-7JYMRm-97NH5y-7xChWA-96DMZm-7xCi79-8QA6PP)" by [Wojtek Gurak](https://www.flickr.com/photos/wojtekgurak/), used under [BY NC](https://creativecommons.org/licenses/by-nc/2.0/) / Dropped Quality to 60% from original
+ Featured Image - "[Stockholm Public Library](https://www.flickr.com/photos/wojtekgurak/5617290873/in/photolist-9yo5SD-8tuaF4-7LUp5T-chQiW-4bij9y-4Qb8dX-e1oibS-c9JibN-7R1u2K-6masys-9urLf3-7R4PS3-jGG92n-cRtGFo-8c1MDP-avzvsg-7ygCHH-Bf1yg-9u2j95-8PUw4i-qwEkDL-7ygF8D-E64e3-74BkLW-7R4HzQ-6uSYM1-avC99w-7fNVQ3-6EVajT-hM5HF3-4v5KjS-6m6iEr-8UvQ8h-7R4UW7-cRtJkJ-6vv1Xd-NytKT-7R2nNB-93WXwT-787Wt9-7xytdc-2gMjT-7xytkM-o5BQYY-7JYMRm-97NH5y-7xChWA-96DMZm-7xCi79-8QA6PP)" by [Wojtek Gurak](https://www.flickr.com/photos/wojtekgurak/), used under [BY NC](https://creativecommons.org/licenses/by-nc/2.0/) / Dropped Quality to 60% from original
 
  
 

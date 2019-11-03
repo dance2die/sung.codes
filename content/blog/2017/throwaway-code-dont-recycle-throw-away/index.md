@@ -30,7 +30,7 @@ It basically means that your priority has been reversed. In my case, I was spend
 
 I decided to focus purely on React and found a book called [Pure React](https://daveceddia.com/pure-react/) by Dave Ceddia.
 
-Dave instructed to create _**Throwaway codes**_ for each exercises in the book. Until learning into this concept, I've been doing useless ceremony of setting up a [GitHub repos](https://github.com/dance2die?utf8=%E2%9C%93&tab=repositories&q=demo.&type=&language=) with "Demo.\*" prefix, which hindered me to do quick and dirty prototyping.
+Dave instructed to create _**Throwaway codes**_ for each exercises in the book. Until learning into this concept, I've been doing useless ceremony of setting up a [GitHub repos](https://github.com/dance2die?utf8=%E2%9C%93&tab=repositories&q=demo.&type=&language=) with "Demo." prefix, which hindered me to do quick and dirty prototyping.
 
 I created a myriad of throwaway codes for each exercise.
 

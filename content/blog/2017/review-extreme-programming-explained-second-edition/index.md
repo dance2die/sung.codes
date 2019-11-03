@@ -13,7 +13,7 @@ I'd like to do a bit of review and what I learned.
 1. Exploring XP
 2. Philophy of XP
 
-\* Featured image by [**Damien Pollet**](https://www.flickr.com/photos/damienpollet/5048830734/in/photolist-8G9ztL-5HP2Lh-nZDNuv-7CyDbt-dYFeYi-okB3kk-dYFf3X-dYFeU2-dYFeHg-6vkpVp-mET1h8-nNH8Lb-bR3md4-4Wyyg-7UfM1w-yZ1hS-7Hxgmw-9S4fk3-7SxRJ1-7xuFqe-aRe2V2-7bfXSN-9S4fwL-9S1mk8-wJYJQ-3akWk1-dcy2Kp-djuyPj-pM7Uv1-4ejqfD-nZDX5o-fa5NyG-p7ueu-wJYJH-7LUYnb-oiUBc4-nQKH84-dgfsqd-nZF6pr-8KkdEL-wJYJT-p7uet-8YH4zm-8TYGza-wJYJU-wJYJX-6vkcr8-n9XZUA-oh6PTf-5U35Wi) \*
+ Featured image by [**Damien Pollet**](https://www.flickr.com/photos/damienpollet/5048830734/in/photolist-8G9ztL-5HP2Lh-nZDNuv-7CyDbt-dYFeYi-okB3kk-dYFf3X-dYFeU2-dYFeHg-6vkpVp-mET1h8-nNH8Lb-bR3md4-4Wyyg-7UfM1w-yZ1hS-7Hxgmw-9S4fk3-7SxRJ1-7xuFqe-aRe2V2-7bfXSN-9S4fwL-9S1mk8-wJYJQ-3akWk1-dcy2Kp-djuyPj-pM7Uv1-4ejqfD-nZDX5o-fa5NyG-p7ueu-wJYJH-7LUYnb-oiUBc4-nQKH84-dgfsqd-nZF6pr-8KkdEL-wJYJT-p7uet-8YH4zm-8TYGza-wJYJU-wJYJX-6vkcr8-n9XZUA-oh6PTf-5U35Wi) 
 
  
 

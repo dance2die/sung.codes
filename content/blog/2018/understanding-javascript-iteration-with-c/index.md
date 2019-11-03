@@ -6,7 +6,7 @@ coverImage: "featured-image.jpg"
 
 As I was chatting, someone from [Coding Blocks slack channel](https://www.codingblocks.net/slack/) (#javascript) has asked a question regarding a code snippet
 
-https://gist.github.com/dance2die/1c0f3799d371c2c4bdaf1603ed32f228
+gist:dance2die/1c0f3799d371c2c4bdaf1603ed32f228
 
 His question was "Kinda lost in the `[].filter.call` , etc part."
 
@@ -20,7 +20,7 @@ Given an array `[1, 1, 2, 2, 2, 3, 3, 3, 3],` uniqueInOrder returns `[1, 2, 3]`.
 
 <iframe style="width: 100%; height: 500px; border: 0; border-radius: 4px; overflow: hidden;" src="https://codesandbox.io/embed/w0mp565v75?autoresize=1&amp;codemirror=1&amp;expanddevtools=1&amp;hidenavigation=1&amp;moduleview=1&amp;view=split" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe>
 
-But couldn't you have just used [Array#filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)? 
+But couldn't you have just used [Array#filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)?
 
 <iframe style="width: 100%; height: 500px; border: 0; border-radius: 4px; overflow: hidden;" src="https://codesandbox.io/embed/moowx3ynqx?autoresize=1&amp;codemirror=1&amp;expanddevtools=1&amp;hidenavigation=1&amp;module=%2Fsrc%2Findex.js&amp;moduleview=1&amp;view=split" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe>
 
@@ -40,31 +40,31 @@ The (notoriously) notable one is [NodeList](https://developer.mozilla.org/en-US/
 
 Here is an example.
 
-- - `document.querySelectorAll('a')` returns an object of type NodeList.
+- `document.querySelectorAll('a')` returns an object of type NodeList.
 
 - When you try to call filter directly, it fails.
 - You can get around it by using a spread syntax.
-- And \[\].filter.call works as well.
+- And [].filter.call works as well.
 
-\[caption id="attachment\_1078" align="aligncenter" width="768"\]![document queryselctorall example](https://www.slightedgecoder.com/wp-content/uploads/2018/07/document-queryselctorall.jpg) document queryselctorall example\[/caption\]
+[document queryselctorall example](https://www.slightedgecoder.com/wp-content/uploads/2018/07/document-queryselctorall.jpg) document queryselctorall example
 
 ## 🐳 C# Analogy
 
-If you use C#, you might have run into [IEnumerable<T>](https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx). It's an interface, which enables implementing class to be iterable.
+If you use C#, you might have run into [IEnumerable<T>](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>). It's an interface, which enables implementing class to be iterable.
 
 Let's see two methods that accepts an iterable object of type string and prints each element.
 
 <iframe width="100%" height="650" src="https://dotnetfiddle.net/Widget?Languages=CSharp&amp;CSharp_FiddleId=CBCHVu" frameborder="0"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe>
 
- If you were to pass `wordArray` to `ListPrintWords`, it will fail to compile while `GenericPrintWords` is happy to work with it.
+If you were to pass `wordArray` to `ListPrintWords`, it will fail to compile while `GenericPrintWords` is happy to work with it.
 
-\[caption id="attachment\_1076" align="aligncenter" width="697"\]![Argument Error](https://www.slightedgecoder.com/wp-content/uploads/2018/07/error-wordArray.jpg) Argument Error\[/caption\]
+[caption id="attachment_1076" align="aligncenter" width="697"]![Argument Error](https://www.slightedgecoder.com/wp-content/uploads/2018/07/error-wordArray.jpg) Argument Error[/caption]
 
 ## 😀 What did we learn?
 
 So `[].filter.call` can be used to deal with any iterable objects that do not inherit Array prototypes.
 
-And it's roughly equivalent to dealing with objects implementing [IEnumerable<T>](https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx) interface in .NET, thus enabling methods accept any kind of generic iterable sequences.
+And it's roughly equivalent to dealing with objects implementing [IEnumerable<T>](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>) interface in .NET, thus enabling methods accept any kind of generic iterable sequences.
 
 ## 👋 Parting Words
 

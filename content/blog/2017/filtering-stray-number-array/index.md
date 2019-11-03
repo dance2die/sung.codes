@@ -24,7 +24,7 @@ One would usually approach the problem by counting number of each element and fi
 
 Here is my implementation submitted on CodeWars.
 
-https://gist.github.com/dance2die/c50e88d09b7782b974f9f6e1bbdc0d87
+gist:dance2die/c50e88d09b7782b974f9f6e1bbdc0d87
 
 The code above gets a count of each element(`GroupBy` then `Select`) and returns an item with an odd number of counts (`o.Count % 2 == 1`).
 
@@ -32,7 +32,7 @@ When your answer is accepted on CodeWars, you can see solutions posted by other
 
 Then I spotted a one-liner using a XOR (Exclusive OR) bitwise operation by [Unnamed](https://www.codewars.com/users/Unnamed) (that's a user ID).
 
-https://gist.github.com/dance2die/886360849deeebb4664a3b982a7e5f80
+gist:dance2die/886360849deeebb4664a3b982a7e5f80
 
 Note that,
 
@@ -47,7 +47,7 @@ So for an even number of elements, they will all come out as 0 (false) and be le
 
 To visualize what's going on, I created a [simple program](https://github.com/dance2die/Blog.FindTheStrayNumber/blob/master/FindTheStrayNumber/Program.cs) below.
 
-https://gist.github.com/dance2die/8a9bc2ba9fa1c2e265b3e7b9a91e5412
+gist:dance2die/8a9bc2ba9fa1c2e265b3e7b9a91e5412
 
 It's just an iterative version of the one-liner answer by Unnamed.
 
@@ -55,7 +55,7 @@ So for two arrays, `a1` & `a2` above, `n1` would print 2 and `n2`, 3.
 
 I've added `WriteLine` to show what is going on more visually.
 
-https://gist.github.com/dance2die/01a645b87df47fb3c53f8fba728d93c3
+gist:dance2die/01a645b87df47fb3c53f8fba728d93c3
 
 **Note**: Numbers in parenthesis are binary representations.
 

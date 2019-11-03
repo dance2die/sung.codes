@@ -8,13 +8,13 @@ I was implementing a [trie,](https://en.wikipedia.org/wiki/Trie) which is a tr
 
 But then I ran into a problem where simply calls to adding children to a collection (Line# 9) didn't work.
 
-https://gist.github.com/dance2die/57e7aa68fcef7a7fe8cc983d0c922422
+gist:dance2die/57e7aa68fcef7a7fe8cc983d0c922422
 
 After 30 minutes of debugging, I was like...
 
 ![](https://media.giphy.com/media/11dR2hEgtN5KoM/giphy.gif)
 
-Just what the h\*\*l happened?
+Just what the hl happened?
 
 ### TL;DR
 
@@ -24,19 +24,19 @@ Just what the h\*\*l happened?
 
 According to [Wikpedia](https://en.wikipedia.org/wiki/Trie#Algorithms), you can declare a trie like this (in Haskell).
 
-https://gist.github.com/dance2die/7255d7236b1eed8d2dd287607cdaa88d
+gist:dance2die/7255d7236b1eed8d2dd287607cdaa88d
 
 So I created a `TrieNode` class as shown below.
 
-https://gist.github.com/dance2die/5b29a64f8f5ab7a880255b7e043e057f
+gist:dance2die/5b29a64f8f5ab7a880255b7e043e057f
 
-_\*If you are an astute reader, you might have already spotted the problem. Congratulations!\*_
+_If you are an astute reader, you might have already spotted the problem. Congratulations!_
 
 ### ▬ Problem ▬
 
 The complete source for building a trie, `TrieBuilder` is declared as below.
 
-https://gist.github.com/dance2die/dd97d22fce289dd3359f307fb2c67364
+gist:dance2die/dd97d22fce289dd3359f307fb2c67364
 
 Given a list of words passed to `BuildTrie` method, it populates a trie and returns an object instance.
 
@@ -50,11 +50,11 @@ Later on, I found out a StackOverflow [answer](https://stackoverflow.com/a/33235
 
 So my declaration below,
 
-https://gist.github.com/dance2die/72ae994cff4f452330a732c53945d845
+gist:dance2die/72ae994cff4f452330a732c53945d845
 
 is equivalent to
 
-https://gist.github.com/dance2die/e90747c077f43de460b13d0aeeccf512
+gist:dance2die/e90747c077f43de460b13d0aeeccf512
 
 returning a new array whenever `Children` property was accessed, thus not adding a new node to it.
 
@@ -62,11 +62,11 @@ returning a new array whenever `Children` property was accessed, thus not adding
 
 The fix is simple. Declare Children with a backing field or use an auto property initialization syntax.
 
-https://gist.github.com/dance2die/bca476ec22b64a031b8b6539572599df
+gist:dance2die/bca476ec22b64a031b8b6539572599df
 
 Above declaration is equivalent to
 
-https://gist.github.com/dance2die/8cee8a9abcd8fcec8ce6f5c35789705e
+gist:dance2die/8cee8a9abcd8fcec8ce6f5c35789705e
 
 That was all it took to make me a happy camper ?.
 

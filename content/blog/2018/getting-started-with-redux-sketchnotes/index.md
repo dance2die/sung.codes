@@ -1,5 +1,5 @@
 ---
-title: "Sketchnotes for "Getting Started with Redux""
+title: Sketchnotes for 'Getting Started with Redux'
 date: "2018-09-21"
 ---
 
@@ -13,7 +13,7 @@ Here are my first sketchnotes created while watching [Getting Started with Redux
 
 Here are the sketchnotes summarizing (most of videos).
 
-\[wonderplugin\_slider id=1\]
+\[wonderplugin_slider id=1\]
 
 ## 👍 Benefits
 

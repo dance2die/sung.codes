@@ -1,5 +1,5 @@
 ---
-title: ""href" vs. "src" in HTML"
+title: "'href' vs. 'src' in HTML"
 date: "2019-07-18"
 coverImage: "featured-image.jpg"
 ---
@@ -30,7 +30,7 @@ https://twitter.com/BrendanEich/status/1151323779131305984
 
 https://twitter.com/BrendanEich/status/1151326755749163008
 
-But as for CSS, he agreed that `href` for CSS "[seems\[ed\] inconsistent](https://twitter.com/BrendanEich/status/1151324101157347328)".
+But as for CSS, he agreed that `href` for CSS "[seems[ed] inconsistent](https://twitter.com/BrendanEich/status/1151324101157347328)".
 
 ## **<link href>**
 
@@ -40,7 +40,7 @@ The rationale was because the "HTML2 specification said so".
 
 https://twitter.com/wiumlie/status/1151458530567831553
 
-_"_[_There we have it, HTML2 spec._](https://twitter.com/vuildco/status/1151462988798464002)_" (Vuild took words out of my mouth_ 😀_)._  
+_"_[_There we have it, HTML2 spec._](https://twitter.com/vuildco/status/1151462988798464002)_" (Vuild took words out of my mouth_ 😀*).*  
 _Note that [it's the HTML2 spec not XHTML2](https://twitter.com/wiumlie/status/1151576065934012422)._
 
 ## **<img src>**

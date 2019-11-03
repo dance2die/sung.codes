@@ -24,15 +24,15 @@ How do we fix it?
 
 Here is the sample code in Quick Start section.
 
-https://gist.github.com/dance2die/c2419393ab06a98f8207654536c027c5
+gist:dance2die/c2419393ab06a98f8207654536c027c5
 
 In my case, I needed to display a line chart so updated `chartType` to `LineChart`.
 
-https://gist.github.com/dance2die/0e82a44251dad3a511341b9906bb9f62
+gist:dance2die/0e82a44251dad3a511341b9906bb9f62
 
 So the code for displaying multiple charts is as follows.
 
-https://gist.github.com/dance2die/9c75c883cee40937db79593591f10eab
+gist:dance2die/9c75c883cee40937db79593591f10eab
 
 But for some reason, it was populating one graph.
 
@@ -70,7 +70,7 @@ Here you see that each chart had the same `id="LineChart"`.![](https://www.sligh
 
 Each chart needs to have a unique ID. I chose an easy way out and used [shortid](https://www.npmjs.com/package/shortid) NPM package.
 
-https://gist.github.com/dance2die/3c7bd30aa6f54d3dc62ab279fd2a8847
+gist:dance2die/3c7bd30aa6f54d3dc62ab279fd2a8847
 
 ### Conclusion
 

@@ -4,7 +4,7 @@ date: "2017-02-04"
 coverImage: "Featured-Image-by-Martin-Cron.jpg"
 ---
 
- Featured Image by [Martin Cron](https://www.flickr.com/photos/martincron/4127880673/in/photolist-5Uz3so-2s5eGW-2rZNMD-7hLt7r-5xjUSF-uB4au9-uBbC6n-64Qkeb-9EcyP-7VF6zc-9Tym55-9TvuTM) \*
+ Featured Image by [Martin Cron](https://www.flickr.com/photos/martincron/4127880673/in/photolist-5Uz3so-2s5eGW-2rZNMD-7hLt7r-5xjUSF-uB4au9-uBbC6n-64Qkeb-9EcyP-7VF6zc-9Tym55-9TvuTM) 
 
 I've been using [Resharper](https://www.jetbrains.com/resharper/) (R#), a Visual Studio plug-in for over 7 years. I've finally been able to convince the company I work for to purchase R# for other developers.
 

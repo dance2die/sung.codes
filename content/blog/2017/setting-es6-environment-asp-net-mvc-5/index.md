@@ -4,13 +4,13 @@ date: "2017-05-22"
 coverImage: "featured-image.jpg"
 ---
 
-\*\*\* **UPDATE**: October 13th, 2018 \*\*\*
+**UPDATE**: October 13th, 2018
 
 Following post uses Babel 7 & Webpack 4.
 
 https://www.slightedgecoder.com/2018/10/13/setting-up-a-react-environment-for-asp-net-mvc/
 
-* * *
+---
 
 I still haven't moved to ASP.NET Core and still use ASP.NET MVC. As I am learning ES6 features I've been looking for articles for setting up an environment for ES6 for ASP.NET MVC.
 
@@ -18,21 +18,19 @@ Unfortunately, all the articles I've run into dealt with ASP.NET Core and had to
 
 This article with show you how to set up ASP.NET MVC 5 to enable ES6 javascript development using [Webpack](https://webpack.github.io/) and [Babel](https://babeljs.io/).
 
-\*\* **UPDATE**: 6/13/2018 \*\* [Works for Webpack 4](https://www.slightedgecoder.com/2017/05/22/setting-es6-environment-asp-net-mvc-5/#comment-3943320423) - Thank you, [Brent Labasan](https://disqus.com/by/brentlabasan/)😁
+**UPDATE**: 6/13/2018 [Works for Webpack 4](https://www.slightedgecoder.com/2017/05/22/setting-es6-environment-asp-net-mvc-5/#comment-3943320423) - Thank you, [Brent Labasan](https://disqus.com/by/brentlabasan/)😁
 
-\*\* **UPDATE**: 1/13/2018 \*\* Added `npm-watch` to make the refreshing easier (Thank you, [digiface](https://disqus.com/by/disqus_IDFdu7rgFV/) & [Frank Nguyen](https://disqus.com/by/disqus_udhcEu1mWd/) for the feedback 👍)
+**UPDATE**: 1/13/2018 Added `npm-watch` to make the refreshing easier (Thank you, [digiface](https://disqus.com/by/disqus_IDFdu7rgFV/) & [Frank Nguyen](https://disqus.com/by/disqus_udhcEu1mWd/) for the feedback 👍)
 
-\*\* **UPDATE**: 1/7/2018 \*\* Babel preset used changed from [babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/) to [babel-preset-env](https://babeljs.io/env/) according to Babel's recommendation.
+**UPDATE**: 1/7/2018 Babel preset used changed from [babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/) to [babel-preset-env](https://babeljs.io/env/) according to Babel's recommendation.
 
 ![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/babel-preset-es2015-to-babel-preset-env.jpg)
 
-\*\* **UPDATE**: 9/22/2017 \*\*
+**UPDATE**: 9/22/2017
 
 I created a 5-minute walkthrough [video](https://youtu.be/wbZnl93g_3I).
 
 https://youtu.be/wbZnl93g\_3I
-
- 
 
 ## Step by Step Guide
 
@@ -87,11 +85,11 @@ Right click on "package.json" and include it in the project.
 If you open up "package.json", you can see that "devDependencies" section has references to Babel and Webpack.
 
 "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "webpack": "^3.10.0"
+"babel-core": "^6.26.0",
+"babel-loader": "^7.1.2",
+"babel-polyfill": "^6.26.0",
+"babel-preset-env": "^1.6.1",
+"webpack": "^3.10.0"
 }
 
 ##### 4\. Create some ES6 javascript files
@@ -109,22 +107,24 @@ Create two javascript files under "es6" folder.
 
 **person.js**
 
-export default class Person { 
-    constructor(name, age) { 
-        this.name = name; 
-        this.age = age; 
-    } 
- 
-    speak() { 
-        console.log(\`Hi I'm ${this.name} and ${this.age} years old and I am awesome\`); 
-    } 
+```jsx
+export default class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    speak() {
+        console.log(\`Hi I'm ${this.name} and ${this.age} years old and I am awesome\`);
+    }
 }
+```
 
 **main.js**
 
-import Person from './person'; 
- 
-var person = new Person("David", 20); 
+import Person from './person';
+
+var person = new Person("David", 20);
 person.speak();
 
 ##### 5. Create an ASP.NET Controller and a View
@@ -132,20 +132,6 @@ person.speak();
 Right click on "Controllers" folder, and create an empty controller named, "HomeController".
 
 ![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/add-controller.jpg)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 Right click on "View()" and click on "Add View".
 
@@ -161,14 +147,14 @@ Add a script tag in "Views/Shared/\_Layout.cshtml".
 
 Create `webpack.config.js` on project root. Add following configuration option in the file.
 
-https://gist.github.com/dance2die/7898ed6dbfc121e6844a12beec114ea6
+gist:dance2die/7898ed6dbfc121e6844a12beec114ea6
 
 - "entry" indicates files for webpack to work on.
 - "output" specifies which folder ("path") to write to while "filename" specifies what the result file name should be.
 - "module" instructs webpack to use Babel to transpile.
-- "test" tells webpack to include all files with ".js" extension while "exclude" leaves out "node\_module" folder.
+- "test" tells webpack to include all files with ".js" extension while "exclude" leaves out "node_module" folder.
 
-**\*\* IMPORTANT \*\***: If you are using Webpack 2 or above, replace `loaders`  with `rules` in `webpack.config.js`.
+** IMPORTANT **: If you are using Webpack 2 or above, replace `loaders`  with `rules` in `webpack.config.js`.
 
 Refer to [this article](https://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/#moduleloaders--modulerules) on migrating from Webpack 1 to Webpack 2.
 
@@ -176,8 +162,8 @@ Now let's update "package.json" to instruct NPM to call webpack.
 
 Add a "scripts" section.
 
-"scripts": { 
-    "build": "webpack" 
+"scripts": {
+"build": "webpack"
 },
 
 We can configure Visual Studio to run `npm run build` during compile time.
@@ -186,7 +172,7 @@ Right-click on the project and select "properties" and go to "Build Events".
 
 In the "Pre-build event command line:" enter following code snippet to run webpack when you compile the project.
 
-npm run build --prefix $(ProjectDir)
+npm run build --prefix \$(ProjectDir)
 
 ##### ![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/build-events.jpg)
 
@@ -195,7 +181,7 @@ npm run build --prefix $(ProjectDir)
 Open "package.json" and add Babel Preset.
 
 "babel": {
-    "presets": \[ "env" \]
+"presets": \[ "env" \]
 },
 
 Presets are basically a set of plugins so that you don't have to specify every plugin that are needed by Babel one by one. I will use ES2015 preset, which includes all Babel plugins listed here.
@@ -220,13 +206,15 @@ npm install --save-dev npm-watch
 
 We need to add a configuration for the command installed in `package.json`.
 
+```json
 "watch": {
-  "build": "Scripts/es6/\*.js"
+    "build": "Scripts/es6/.js"
 },
 "scripts": {
-  "watch": "npm-watch",
-  "build": "webpack"
+    "watch": "npm-watch",
+    "build": "webpack"
 },
+```
 
 Now run `npm run watch` in the command line window after changing to the project directory where `package.json` is located (You can also run the command while the Visual Studio is in the debug/run mode).
 
@@ -234,12 +222,14 @@ Now run `npm run watch` in the command line window after changing to the project
 
 The command will watch for the javascript file changes. Let's update the `speak()` method in  `person.js` file while the Visual Studio is in debug mode.
 
+```javascript
 export default class Person {
 //... constructor...
-  speak() {
-    console.log(\`Hi I'm ${this.name} and ${this.age} years old and I love CodingBlocks podcast!\`);
-  }
+speak() {
+console.log(\`Hi I'm ${this.name} and ${this.age} years old and I love CodingBlocks podcast!\`);
+}
 ...
+```
 
 Refresh the browser and you will see that the content has changed without restarting Visual Studio.
 
@@ -255,4 +245,4 @@ If you are using `npm-watch`, you can clear the "Pre-build event command line" c
 
 I described how to set up ASP.NET MVC 5 web application for ES6 using Webpack and Babel. The "ceremony" seems too much of trouble. If you are ready to move on to ASP.NET Core, it'd be easier to do so (even though most of the steps would be the same) and you can find much more resources on how to do so.
 
-The full source for this demo is avaialble on [GitHub](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/BlogDemo). The new source using `babel-preset-env` is on the same repository but in different folder [AspNetMvc5\_BabelPresetEnv.](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/AspNetMvc5_BabelPresetEnv)
+The full source for this demo is avaialble on [GitHub](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/BlogDemo). The new source using `babel-preset-env` is on the same repository but in different folder [AspNetMvc5_BabelPresetEnv.](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/AspNetMvc5_BabelPresetEnv)

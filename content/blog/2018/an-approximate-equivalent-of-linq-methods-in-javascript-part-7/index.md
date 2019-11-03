@@ -31,13 +31,13 @@ I won't be using `Orders` collections as I have in previous articles.
 
 C# is a typed language while JavaScript is not. `.Empty` returns a typed sequence but since there is no need for a type, you can just return an empty array `[]` in JavaScript
 
-https://gist.github.com/dance2die/a3cf555476ee1a81f5cc3d3d8547e7ea
+gist:dance2die/a3cf555476ee1a81f5cc3d3d8547e7ea
 
-https://gist.github.com/dance2die/13d4e1b43584e8420c7afbd3af3fc624
+gist:dance2die/13d4e1b43584e8420c7afbd3af3fc624
 
 ###### Results
 
-https://gist.github.com/dance2die/3191e9817d277fda821bc62c90f7ac5c
+gist:dance2die/3191e9817d277fda821bc62c90f7ac5c
 
 Nothing surprising as shown above 😀.
 
@@ -45,13 +45,13 @@ Nothing surprising as shown above 😀.
 
 For this demo, I thought it was an overkill to use Orders collection used in last 6 articles so simply repeated a sentence, "I love your smile" five times.
 
-https://gist.github.com/dance2die/ce1a85d6f16961b3f6347a3e6a1b9207
+gist:dance2die/ce1a85d6f16961b3f6347a3e6a1b9207
 
-https://gist.github.com/dance2die/46fba8b00962893de1b8976d7d1d32b0
+gist:dance2die/46fba8b00962893de1b8976d7d1d32b0
 
 ###### Results
 
-https://gist.github.com/dance2die/6aa8a7b6d935878f606af39cafee8171
+gist:dance2die/6aa8a7b6d935878f606af39cafee8171
 
 JavaScript version uses [Array#fill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) method to simply fill it with undefined and populate it with [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 
@@ -59,13 +59,13 @@ JavaScript version uses [Array#fill](https://developer.mozilla.org/en-US/docs/We
 
 Same here with the Repeat Demo, I will use a simple case to demo how to generate a range of numbers.
 
-https://gist.github.com/dance2die/526bcddc2779116e299595b8e36aa463
+gist:dance2die/526bcddc2779116e299595b8e36aa463
 
-https://gist.github.com/dance2die/042c3f009b4836d3673fe385f0976321
+gist:dance2die/042c3f009b4836d3673fe385f0976321
 
 ###### Results
 
-https://gist.github.com/dance2die/c7a64bb49aef2213946010582bcfc4bd
+gist:dance2die/c7a64bb49aef2213946010582bcfc4bd
 
 I used he same technique but utilizing an index property of [map callback](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax), which is where initialization of a range occurs (index starts from 0).
 

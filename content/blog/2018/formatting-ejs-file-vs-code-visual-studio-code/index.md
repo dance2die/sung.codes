@@ -1,5 +1,5 @@
 ---
-title: "Formatting ".ejs" file in VS Code (Visual Studio Code)"
+title: "Formatting '.ejs' file in VS Code (Visual Studio Code)"
 date: "2018-01-19"
 coverImage: "featured-image-1.jpg"
 ---
@@ -30,11 +30,11 @@ After searching for "files.assocations", copy `"files.assocations": {}` to clipb
 
 On the right side under "user settings" tab, add
 
-https://gist.github.com/dance2die/f166bfa67e41fb91a8e051a013ac5550
+gist:dance2die/f166bfa67e41fb91a8e051a013ac5550
 
 ![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/Add-a-custom-user-setting-all.jpg)
 
-* * *
+---
 
 Now you can reformat with a keyboard shortcut without an error. The reformatted code looks like following. ![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/reformatted.gif)
 

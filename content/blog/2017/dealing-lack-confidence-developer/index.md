@@ -1,5 +1,5 @@
 ---
-title: "Thoughts on "Dealing With Lack Of Confidence As A Developer""
+title: Thoughts on "Dealing With Lack Of Confidence As A Developer"
 date: "2017-01-07"
 coverImage: "featured-image-2017.01.13.png"
 ---
@@ -19,7 +19,5 @@ The gist of the content is that, everyone takes jobs they are not prepared for. 
 Then, John says something that made me feel guilty." At [3:35](https://youtu.be/KmimOJIR0zE?t=3m35s),  he says that a lot of his old co-workers have been "doing the same thing for the last 10 or 15 years". To get around the problem, he suggested to constantly put yourself in an uncomfortable situations.
 
 He ends his video mentioning that if you aim for your goal and you will achieve it.
-
- 
 
 I will shoot the moon, and hit the moon.

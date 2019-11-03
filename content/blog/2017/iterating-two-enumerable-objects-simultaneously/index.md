@@ -10,6 +10,7 @@ I was solving a question on Cracking the Coding Interview Edition 6 question 4.1
 
 My first attempt was a brute force approach of iterating all nodes in a graph. But then I thought about the possibility of having to deal with thousands or millions of nodes in a graph and my approach would not work.
 
+```csharp
 public bool HasRouteUsingDfs<T>(Node<T> node1, Node<T> node2)
 {
 	var nodeValues1 = GetValuesUsingDfs(node1).ToList();
@@ -17,9 +18,11 @@ public bool HasRouteUsingDfs<T>(Node<T> node1, Node<T> node2)
 
 	return nodeValues1.Contains(node2.Name) && nodeValues2.Contains(node1.Name);
 }
+```
 
 where `GetValuesUsingDfs(...)`is just a graph iteration function using DFS (Depth-First Search) algorithm.
 
+```csharp
 private IEnumerable<T> GetValuesUsingDfs<T>(Node<T> node)
 {
 	var stack = new Stack<Node<T>>();
@@ -40,6 +43,7 @@ private IEnumerable<T> GetValuesUsingDfs<T>(Node<T> node)
 		}
 	}
 }
+```
 
 To be able to pull that off, I had to think of a way to run returned enumerators of `GetValuesUsingDfs(...)`  at the same time. Until now, I've been simply been using two nested for/foreach loops to accomplish such tasks. But ever since I've been conscious about Big O (where using two nested for/foreach would require B(N^2)), I was looking for a different way.
 
@@ -47,6 +51,7 @@ So the optimization technique I thought of was to iterate from both sides and if
 
 Here is the code that utilizes simultaneous iteration.
 
+```csharp
 public bool HasRouteUsingDfs2(Node<int> node1, Node<int> node2)
 {
 	var nodes1 = GetValuesUsingDfs(node1);
@@ -66,7 +71,8 @@ public bool HasRouteUsingDfs2(Node<int> node1, Node<int> node2)
 	}
 
 	return false;
-}		
+}
+```
 
 Now the function terminates as soon as a common node between the two nodes is found, which runs much faster for four of my test cases.  I've found simultaneous iteration code from StackOverflow as usual from [this question](http://stackoverflow.com/questions/18395943/using-foreach-to-iterate-simultaneously-through-multiple-lists-syntax-sugar) answered by [Eren Ersönmez](http://stackoverflow.com/users/201088/eren-ers%C3%B6nmez) (Answer is [here](http://stackoverflow.com/a/18396163/4035); Eren also created a generic "ZipAll" function that accepts any number of IEnumerables in the answer.)
 

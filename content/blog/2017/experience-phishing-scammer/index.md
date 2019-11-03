@@ -37,13 +37,13 @@ My coworker also received a same phone call a few minutes later and hung up agit
 
 I then decided to email PluralSight support. A **real** rep, [Paddy](https://twitter.com/pluralsghtpaddy), has responded and told me that PluralSight reps only follow up on "a potential renewal or if the call had been requested from one of our contact us forms".
 
-I found out that my work email has been \*pwned\* according to [HaveIBeenPwned](https://haveibeenpwned.com/) by Troy Hunt
+I found out that my work email has been pwned according to [HaveIBeenPwned](https://haveibeenpwned.com/) by Troy Hunt
 
 And also, Troy generously has reached out to me on Twitter to pass on the details of my account to PluralSight.
 
  
 
-\***update**\*: [Shawn](http://swyx.io/) has brought up a very interesting point on [Coding Blocks Slack channel](https://www.codingblocks.net/slack/).
+**update**: [Shawn](http://swyx.io/) has brought up a very interesting point on [Coding Blocks Slack channel](https://www.codingblocks.net/slack/).
 
 ![](https://www.slightedgecoder.com/wp-content/uploads/2017/08/swyx-comment.jpg)
 

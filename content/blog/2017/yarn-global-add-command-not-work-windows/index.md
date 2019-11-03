@@ -1,5 +1,5 @@
 ---
-title: ""yarn global add" command does not work on Windows"
+title: "'yarn global add' command does not work on Windows"
 date: "2017-12-31"
 coverImage: "featured-image-2.jpg"
 ---
@@ -14,7 +14,7 @@ I will show you how to resolve that issue.
 
 Here is the example of yarn global installed package ([Parcel JS](https://parceljs.org/)) not found.
 
-https://gist.github.com/dance2die/6a0d1d5064451234a231d25eceac150a
+gist:dance2die/6a0d1d5064451234a231d25eceac150a
 
 **NOTE**: The package name is `parcel-bundler` but the command is `parcel` according to the [Parcel JS documentation](https://parceljs.org/getting_started.html).
 
@@ -28,13 +28,13 @@ Let's fix this.
 
 Let's find out where `yarn` stores globally installed binary files with `yarn global bin` command.
 
-https://gist.github.com/dance2die/f4254c7ee51bd55e4dea0fe3fbce7a7e
+gist:dance2die/f4254c7ee51bd55e4dea0fe3fbce7a7e
 
 On my local machine, `yarn global add <package>` will save files under **_C:\\Users\\dance2die\\AppData\\Roaming\\npm\\bin_**.
 
 We need to add that path to Windows Environment Variable Path so that Windows command line interpreter (`cmd.exe` or `powershell.exe`) can search the path to find command to run.
 
-Now \*copy\* that path to clipboard (e.g. **_C:\\Users\\dance2die\\AppData\\Roaming\\npm\\bin_**).
+Now copy that path to clipboard (e.g. **_C:\\Users\\dance2die\\AppData\\Roaming\\npm\\bin_**).
 
 ### Step 2 - Add the yarn global binary path to PATH environment variable
 

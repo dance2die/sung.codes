@@ -20,15 +20,15 @@ Create an external JavaScript file: Name it however you want but I usually use a
 
 Add an object containing API keys and export it.
 
-https://gist.github.com/dance2die/77064be53f74977d3acbf6c1460cfee3
+gist:dance2die/77064be53f74977d3acbf6c1460cfee3
 
 Add an entry in `.gitignore` the name of file you created.
 
-https://gist.github.com/dance2die/9d65b4319aa0e204401f89bb66be9613
+gist:dance2die/9d65b4319aa0e204401f89bb66be9613
 
 You can now access API keys in other JavaScript files simply by importing/requiring it.
 
-https://gist.github.com/dance2die/52b8031861bd358f7cb30e20b85b6a33
+gist:dance2die/52b8031861bd358f7cb30e20b85b6a33
 
 > ##### Advantage
 > 
@@ -94,7 +94,7 @@ I created `Project_MyAnimeList.Password` & `Project_MyAnimeList.UserName`.
 
 In your code, simply access environment variable to fetch secret information ([CredentialContext.cs](https://github.com/dance2die/MyAnimeListSharp/blob/master/Project.MyAnimeList/Project.MyAnimeList/Auth/CredentialContext.cs)).
 
-https://gist.github.com/dance2die/1efad8bdf3f3ae4217fd1aadc5423b8d
+gist:dance2die/1efad8bdf3f3ae4217fd1aadc5423b8d
 
 > ##### Advantage
 > 
@@ -108,7 +108,7 @@ As a side note, I chose environment variable option for [MyAnimeListSharp](https
 
  
 
-**\*\* Update \*\***
+** Update **
 
 [Jamie Taylor](https://www.gaprogman.com/) kindly explained to me on [CodingBlocks Slack Channel](https://www.codingblocks.net/slack/) that .NET Core has a built-in support for storing and accessing configuration secrets.
 

@@ -145,7 +145,7 @@ There is a plan to create practical how-tos inspired by [React Router](https://r
     - Think about this. You don't declare/define states or life cycle methods conditionally.
     
     - As hooks mirror those features, it doesn't make sense to use hooks within a condition.
-2. Prefix with "use\*".
+2. Prefix with "use".
 3. Order in which hook is defined matters
     - Same way you'd write your synchronous code.
 

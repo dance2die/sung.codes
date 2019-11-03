@@ -12,7 +12,7 @@ Keith, the Software Engineering Manager walks into the office one day to check t
 
 “Hey, guys. Why is Joe the only one working on the project?” Allen replies to Keith, “Joe is fixing a bug on this ‘main.js’ file, which both Michael and I need to update.”
 
-“Couldn’t you guys just create a new branch?” Keith suggested. “We were waiting for Joe’s \*quick\* bug fix to mitigate merge conflicts. But Joe’s been working on the \*quick\* fix for a few hours.” Michael tried to justify the situation while scratching his head.
+“Couldn’t you guys just create a new branch?” Keith suggested. “We were waiting for Joe’s quick bug fix to mitigate merge conflicts. But Joe’s been working on the quick fix for a few hours.” Michael tried to justify the situation while scratching his head.
 
 “Listen up. I say there is never a better than time now to refactor that ‘main.js’ file into smaller modules so that you guys can work on the project independently.”, and then Keith adds, “And Joe, I want you to follow up with me tomorrow.”
 

@@ -1,5 +1,5 @@
 ---
-title: "React Podcast Episode 29 -  "Don't Rewrite Your App for Hooks and Suspense" with Jared Palmer"
+title: "React Podcast Episode 29 -  'Don't Rewrite Your App for Hooks and Suspense' with Jared Palmer"
 date: "2018-11-22"
 ---
 

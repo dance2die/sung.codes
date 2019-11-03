@@ -10,6 +10,7 @@ I've recently released a new version of [MyAnimeListSharp](https://github.com/da
 
 Here is the edited sample response from MAL API for an anime search ("synopsys" section usually contains undeclared XML entities)
 
+```xml
 <?xml version=""1.0"" encoding=""utf-8"" ?>
 <anime>
   <entry>
@@ -25,11 +26,11 @@ Here is the edited sample response from MAL API for an anime search ("synopsys" 
     <image>http://cdn.myanimelist.net/images/anime/4/75260.jpg</image>
   </entry>
 </anime>
-
- 
+```
 
 Hacking begins...
 
+```csharp
 public class SearchResponseDeserializer<T> where T : class
 {
 	public T Deserialize(string responseString)
@@ -52,8 +53,7 @@ public class SearchResponseDeserializer<T> where T : class
          ...
 	}
 }
-
- 
+```
 
 Here is the run-down of [`SearchResponseDeserializer.Deserialize`](https://github.com/dance2die/MyAnimeListSharp/blob/master/Project.MyAnimeList/Project.MyAnimeList/Util/SearchResponseDeserializer.cs).
 
@@ -65,14 +65,14 @@ The part I was having trouble figuring out was #2, disabling undeclared entity c
 
 I looked for an alternative in .NET documentation. There were no properties to set or functions to call to disable the entity check. But I've found a way in one of StackOverflow [answer](http://stackoverflow.com/questions/3504227/prevent-xmltextreader-from-expanding-entities/22787825#22787825) (by [Sam Harwell](http://stackoverflow.com/users/138304/sam-harwell) who is a Microsoft MVP in .NET), which discusses how to use reflection to set an internal variable to bypass entity check.
 
+```csharp
 private static void DisableUndeclaredEntityCheck(XmlReader xmlReader)
 {
 	PropertyInfo propertyInfo = xmlReader.GetType().GetProperty(
 		"DisableUndeclaredEntityCheck", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 	propertyInfo.SetValue(xmlReader, true);
 }
-
- 
+```
 
 `XmlReader` does not expose a property `DisableUndeclaredEntityCheck` publicly so it needs to be turned on using reflection. The property name is aptly named since you can guess what it does from the name.
 

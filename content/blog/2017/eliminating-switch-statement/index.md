@@ -32,7 +32,7 @@ Let's implement it using a `switch` statement.
 
 ### "With" Switch
 
-https://gist.github.com/dance2die/638139dd386ec7a3b806327aa470911a
+gist:dance2die/638139dd386ec7a3b806327aa470911a
 
 Iterative version **matches** against each command and performs **operations**.
 
@@ -55,7 +55,7 @@ We all the pieces in place, let's look at the version without the `switch` stat
 
 ### "Without" Switch
 
-https://gist.github.com/dance2die/067a741bca0d2bce5024567e05eb8e2a
+gist:dance2die/067a741bca0d2bce5024567e05eb8e2a
 
 The first thing I did was to create a [dictionary](https://msdn.microsoft.com/en-us/library/xfhwa508(v=vs.110).aspx), `commands` for a fast lookup.
 

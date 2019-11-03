@@ -23,7 +23,7 @@ And below is the custom CSS in [index.js](https://github.com/dance2die/bunpkg-c
 
 <a href="https://gist.github.com/dance2die/81217485264ccab442ad58026f245433">View this gist on GitHub</a>
 
-And "\*Step" components (for Wizard) were lazily imported as shown below.
+And "Step" components (for Wizard) were lazily imported as shown below.
 
 <script src="https://gist.github.com/dance2die/ea0b127fd9a13a274f70b6a8b9afe952.js"></script>
 

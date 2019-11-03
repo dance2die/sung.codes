@@ -4,7 +4,7 @@ date: "2017-05-13"
 coverImage: "Featured-Image-Union-St.-Street-Sign-in-Bodie.jpg"
 ---
 
-\* Featured Image - "[Union St. Street Sign in Bodie](https://www.flickr.com/photos/39908901@N06/14815502318/in/photolist-ozcjF9-nrKv69-a3tpyD-3fSBwq-a4wb5c-aLmjVz-pfSRLp-9qyvtR-myYQ7T-nA4G5s-ptfmGt-dh5bf2-gtf6dZ-db4Vqo-9YYbF1-a7d8AL-8FA6cF-freTSE-oLyZYY-coggGb-bT6Mkk-9QJjyk-2Si9ig-aNmeLa-7oSdMS-9yXosF-nGqW7x-cvdzP1-oRpHsX-dH3t8z-aou2qc-svQKHc-9kTby1-eeUcL8-83Fd5K-LFGHJ-4hdkBZ-aEvL7W-8PAyxv-iHZ35u-e8iHdf-agAMsy-9xsrSf-bji9xB-dd2kHq-ae26nH-wQRgYr-dfTsmM-dknx5Z-qHMjuV)" by [m01229](https://www.flickr.com/photos/39908901@N06/), used under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) (Medium sized image)
+ Featured Image - "[Union St. Street Sign in Bodie](https://www.flickr.com/photos/39908901@N06/14815502318/in/photolist-ozcjF9-nrKv69-a3tpyD-3fSBwq-a4wb5c-aLmjVz-pfSRLp-9qyvtR-myYQ7T-nA4G5s-ptfmGt-dh5bf2-gtf6dZ-db4Vqo-9YYbF1-a7d8AL-8FA6cF-freTSE-oLyZYY-coggGb-bT6Mkk-9QJjyk-2Si9ig-aNmeLa-7oSdMS-9yXosF-nGqW7x-cvdzP1-oRpHsX-dH3t8z-aou2qc-svQKHc-9kTby1-eeUcL8-83Fd5K-LFGHJ-4hdkBZ-aEvL7W-8PAyxv-iHZ35u-e8iHdf-agAMsy-9xsrSf-bji9xB-dd2kHq-ae26nH-wQRgYr-dfTsmM-dknx5Z-qHMjuV)" by [m01229](https://www.flickr.com/photos/39908901@N06/), used under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) (Medium sized image)
 
 There is a really cool course on Coursera regarding [Union-Find](https://www.coursera.org/learn/algorithms-part1/supplement/aYr6R/overview). The course was quite refreshing because I was never exposed to this simple concept before.
 
@@ -22,7 +22,7 @@ Union-Find made me realize the flaw in my approach that I was just busy finding 
 
 Here is the C# version of Union-Find converted from Java (using Improved algorithm, which tracks sizes)
 
-https://gist.github.com/dance2die/27b1c7f81bbc459c4dd7f85892f4b84e
+gist:dance2die/27b1c7f81bbc459c4dd7f85892f4b84e
 
 I was able to solve the problem with this code without any timeouts. Learning a new algorithm will make your day as well!
 

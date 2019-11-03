@@ -4,7 +4,7 @@ date: "2017-04-20"
 coverImage: "Featured-Image-Edsger-W.-Dijkstra.jpg"
 ---
 
-\* Featured Image of Edsger Wybe Dijkstra from [Wikipedia](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra#/media/File:Edsger_Wybe_Dijkstra.jpg), used under [CC BY 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Featured Image of Edsger Wybe Dijkstra from [Wikipedia](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra#/media/File:Edsger_Wybe_Dijkstra.jpg), used under [CC BY 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 I've spent about 3 days trying to implement Dijkstra's algorithm after watching a YouTube video.
 
@@ -20,6 +20,7 @@ I used [pseudocode on Wikipedia page](https://en.wikipedia.org/wiki/Dijkstra%27s
 
 Here is the failed implementation.
 
+```csharp
 public List<T> GetPathBetween(Node<T> fromNode, Node<T> toNode)
 {
     List<T> path = new List<T>();
@@ -75,12 +76,13 @@ public List<T> GetPathBetween(Node<T> fromNode, Node<T> toNode)
 
     return path;
 }
+```
 
 It's basically a hodgepodge of a mess (the last implementation looks ugly as well by the way) and doesn't work at all. I knew that I was lacking knowledge on how the algorithm worked.
 
 #### Day 2
 
-After understanding how the algorithm works was important, I found a [great video](https://youtu.be/zXfDYaahsNA) on YouTube by [Sesh Venugopal](https://www.youtube.com/channel/UC3QLHt6mHfmg4x_h2am7ecg) and watched it before implementing another version. 
+After understanding how the algorithm works was important, I found a [great video](https://youtu.be/zXfDYaahsNA) on YouTube by [Sesh Venugopal](https://www.youtube.com/channel/UC3QLHt6mHfmg4x_h2am7ecg) and watched it before implementing another version.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zXfDYaahsNA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
@@ -90,13 +92,14 @@ But I failed beautifully again because I couldn't get the Wikipedia and other ve
 
 Here is the 2nd failed attempt.
 
+```csharp
 public List<Node<T>> GetPathBetween2(Node<T> fromNode, Node<T> toNode)
 {
-    var s = \_vertices;
-    var dist = new Dictionary<Node<T>, int>();
-    var prev = new Dictionary<Node<T>, T>();
-    var Q = new List<Node<T>>();
-    var processed = new List<Node<T>>();
+var s = \_vertices;
+var dist = new Dictionary<Node<T>, int>();
+var prev = new Dictionary<Node<T>, T>();
+var Q = new List<Node<T>>();
+var processed = new List<Node<T>>();
 
     // Initial
     KeyValuePair<Node<T>, Edge<T>\[\]> first = s.First(pair => pair.Key.Value.Equals(fromNode.Value));
@@ -157,7 +160,9 @@ public List<Node<T>> GetPathBetween2(Node<T> fromNode, Node<T> toNode)
     }
 
     return prev.Select(pair => pair.Key).ToList();
+
 }
+```
 
 #### Day 3
 
@@ -169,11 +174,12 @@ It's kind of funny that, after watching it work, I felt ecstatic and felt a jolt
 
 Here is the 3rd working implementation.
 
+```csharp
 public List<Node<T>> GetPathBetween3(Node<T> fromNode, Node<T> toNode)
 {
-    var dist = new Dictionary<Node<T>, int>();
-    var prev = new Dictionary<Node<T>, Node<T>>();
-    var Q = new HashSet<Node<T>>();
+var dist = new Dictionary<Node<T>, int>();
+var prev = new Dictionary<Node<T>, Node<T>>();
+var Q = new HashSet<Node<T>>();
 
     foreach (KeyValuePair<Node<T>, Edge<T>\[\]> v in \_vertices)
     {
@@ -227,7 +233,9 @@ public List<Node<T>> GetPathBetween3(Node<T> fromNode, Node<T> toNode)
     }
 
     return null;
+
 }
+```
 
 It's by no means production ready, so copy/paste at your own risk. I'd never release this to production without heavy testing and refactoring first.
 
