@@ -4,7 +4,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Layout from "../layouts"
 
 const buildPostYears = nodes =>
-  nodes.reduce((acc, { relativeDirectory: year }) => {
+  nodes.reduce((acc, { year }) => {
     acc[year] = ++acc[year] || 1
     return acc
   }, {})
@@ -19,7 +19,7 @@ export default () => {
         }
       ) {
         nodes {
-          relativeDirectory
+          year: relativeDirectory
         }
       }
     }

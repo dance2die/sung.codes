@@ -22,17 +22,16 @@ const onCreateNode = ({ node, actions, getNode }) => {
     const slug = `/blog/${year}/${month}/${day}/${parentNode.relativeDirectory}/`
 
     const { createNodeField } = actions
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
+    createNodeField({ node, name: "slug", value: slug })
+    createNodeField({ node, name: "year", value: year })
+    createNodeField({ node, name: "month", value: month })
+    createNodeField({ node, name: "day", value: day })
   }
 }
 
-const createPosts = async ({ graphql, actions }) => {
+const createPosts = async ({ graphql, actions, reporter }) => {
   // Destructure the createPage function from the actions object
-  const result = await graphql(`
+  const query = await graphql(`
     query {
       allMdx {
         edges {
@@ -47,12 +46,12 @@ const createPosts = async ({ graphql, actions }) => {
     }
   `)
 
-  if (result.errors) {
+  if (query.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
   }
 
   // Create blog post pages.
-  const posts = result.data.allMdx.edges
+  const posts = query.data.allMdx.edges
   const { createPage } = actions
 
   posts.forEach(({ node }, index) => {
@@ -64,12 +63,43 @@ const createPosts = async ({ graphql, actions }) => {
   })
 }
 
-const createBlogYearPages = async ({ graphql, actions }) => {}
+const createBlogYearPages = async ({ graphql, actions, reporter }) => {
+  const query = await graphql(`
+    {
+      allDirectory(
+        filter: {
+          sourceInstanceName: { eq: "blog" }
+          relativeDirectory: { regex: "/^\\\\d{4}$/gi" }
+        }
+      ) {
+        nodes {
+          year: relativeDirectory
+        }
+      }
+    }
+  `)
+
+  if (query.errors) {
+    reporter.panicOnBuild('🚨  ERROR: Loading "postYears" query')
+  }
+
+  // Create a page per year
+  const years = query.data.allDirectory.nodes
+  const { createPage } = actions
+
+  years.forEach(year => {
+    createPage({
+      path: `/blog/${year}`,
+      component: path.resolve(`./src/templates/year-page-layout.js`),
+      context: { year },
+    })
+  })
+}
 
 // https://www.gatsbyjs.org/docs/mdx/programmatically-creating-pages/#make-a-template-for-your-posts
 const createPages = async ({ graphql, actions, reporter }) => {
-  await createBlogYearPages({ graphql, actions })
-  await createPosts({ graphql, actions })
+  await createBlogYearPages({ graphql, actions, reporter })
+  await createPosts({ graphql, actions, reporter })
 }
 
 module.exports = { onCreateNode, createPages }
