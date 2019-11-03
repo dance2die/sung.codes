@@ -27,12 +27,6 @@ const onCreateNode = ({ node, actions, getNode }) => {
       name: `slug`,
       value: slug,
     })
-
-    // createNodeField({
-    //   node,
-    //   name: 'content',
-    //   value: await renderGistToHtml(node.content)
-    // })
   }
 }
 
