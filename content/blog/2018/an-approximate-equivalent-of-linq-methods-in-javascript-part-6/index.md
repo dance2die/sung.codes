@@ -25,6 +25,7 @@ In this article, I will cover following methods.
 
 The sample collections used in this part are shown as below.
 
+<!-- prettier-ignore -->
 ###### C#
 
 `gist:dance2die/50ecc824ac0690b748578638506c37f0`
