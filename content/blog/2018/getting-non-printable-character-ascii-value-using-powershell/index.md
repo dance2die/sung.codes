@@ -13,7 +13,7 @@ He did a quick `ltrim(rtrim(column))` to quickly get rid of spaces but didn't wo
 
 As he had requested for help, I asked him to open Notepad++ and show all symbols.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/11/2018-11-07_19-41-34.gif)
+![](./images/2018-11-07_19-41-34.gif)
 
 But it wasn't showing the white text at the end of the text.
 

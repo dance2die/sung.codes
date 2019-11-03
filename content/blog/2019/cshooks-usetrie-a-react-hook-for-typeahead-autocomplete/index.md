@@ -28,7 +28,7 @@ Here are some quick demo Sandboxes for the impatients.
 - [Simple demo add/remove texts](https://codesandbox.io/s/3jzy58wqq)
 - [String/object array & Reddit data demo](https://codesandbox.io/s/zz2mxlxzp)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/03/2019-03-23_13-44-52.gif)
+![](./images/2019-03-23_13-44-52.gif)
 
 Demos
 

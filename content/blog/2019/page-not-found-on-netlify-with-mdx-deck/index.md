@@ -15,7 +15,7 @@ _If you are having trouble with React Router, check out_ [_Page Not Found on Net
 > **Page Not Found**  
 > Looks like you’ve followed a broken link or entered a URL that doesn’t exist on this site.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/07/page-not-found.jpg)
+![](./images/page-not-found.jpg)
 
 ## How did the error occur?
 

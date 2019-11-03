@@ -15,13 +15,13 @@ Suppose that you have a component, `Post` that has to render a comment thread li
 
 _Reddit Post:_ [_What's a joke that's so stupid it's funny?_](https://www.reddit.com/r/AskReddit/comments/a26y06/whats_a_joke_thats_so_stupid_its_funny/)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/reddit-comments.jpg)
+![](./images/reddit-comments.jpg)
 
 Reddit Comments
 
 And the state tree would look like below.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/comment-tree.png)
+![](./images/comment-tree.png)
 
 Post state tree
 

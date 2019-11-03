@@ -30,7 +30,7 @@ When you navigate away from the component (to simulate unmounting), the interval
 
 Even worse, when you navigate back to `Greeting` component, another interval process starts! 😱
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/09/reproducing-issue.gif)
+![](./images/reproducing-issue.gif)
 
 Error Reproduced
 
@@ -54,7 +54,7 @@ The best place to do is right before the component unmounts ([componentWillUnmou
 
 You can see below that the interval doesn't run any more after canceled within `componentWillUmount`.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/09/setInterval-canceled.gif)
+![](./images/setInterval-canceled.gif)
 
 The interval canceled
 

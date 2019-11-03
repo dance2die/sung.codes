@@ -97,7 +97,7 @@ After installation has finished, restart Kubuntu (not the VM).
 
 Lastly, log into Kubuntu and start a console.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/09/08-start-Konsole.jpg)
+![](./images/08-start-Konsole.jpg)
 
 We are all ready to set up Dokku, finally!
 

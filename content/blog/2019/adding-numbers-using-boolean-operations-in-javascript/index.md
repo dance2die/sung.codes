@@ -24,7 +24,7 @@ And you can follow along on [CodeSandbox](https://codesandbox.io/s/3vnqknj0o1).
 
 Below is the truth table of all possible XOR & AND operations I will refer back to.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/truth-tables.jpg)
+![](./images/truth-tables.jpg)
 
 AND & XOR
 
@@ -32,7 +32,7 @@ AND & XOR
 
 When you add two one-bit numbers, you get either 0 or 1 for the sum and 0 or 1 for the carry.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/Adding-two-numbers.jpg)
+![](./images/Adding-two-numbers.jpg)
 
 Adding one bit numbers
 
@@ -40,7 +40,7 @@ Did you notice that, `carry` output looks the same as output of AND truth table,
 
 The operation can be represented using logical XOR & AND gates as shown here.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/Half_Adder.svg)
+![](./images/Half_Adder.svg)
 
 Half-adder
 
@@ -83,7 +83,7 @@ Simply put, you perform two operations. One for the current bit, and another wit
 
 Let's take a look at an example of adding 11 and 01 to get 100.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/full-adder-fixed.jpg)
+![](./images/full-adder-fixed.jpg)
 
 Result of 11 + 01 => 100
 

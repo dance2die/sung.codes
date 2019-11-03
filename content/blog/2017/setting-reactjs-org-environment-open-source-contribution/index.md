@@ -18,12 +18,12 @@ I'd like to show you how to get ReactJS.org page up and running on Windows 10.
 
 1. Create a fork of ReactJS.org on GitHub.
     1. Go to [ReactJS.org GitHub page](https://github.com/reactjs/reactjs.org/).
-    2. Create a new fork by clicking on the `Fork` button on the right.![](https://www.slightedgecoder.com/wp-content/uploads/2017/10/create-a-fork.png)
+    2. Create a new fork by clicking on the `Fork` button on the right.![](./images/create-a-fork.png)
 2. Go to newly created fork
     1. https://github.com/<<YOUR\_GITHUB\_ID>>/reactjs.org/
 3. Clone the fork
     1. by copying the repository path and,
-        1. ![](https://www.slightedgecoder.com/wp-content/uploads/2017/10/clone-with-https.png)
+        1. ![](./images/clone-with-https.png)
         2. and running `git clone` command - `git clone https://github.com/<<YOUR_GITHUB_ID>>/reactjs.org.git`
         3. Go to the cloned directory - `cd reactjs.org`
 4. Check out a branch - `git checkout -b <<branch name>>`
@@ -83,21 +83,21 @@ If everything went well, go to GitHub fork page and create a PR. If you are not
 
 After generating a PR, you will see a PR on ReactJS.org Pull requests tab.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/10/chrome_2017-10-08_20-03-06.png)Make sure to include a screenshot of what's changed in your PR if your change is cosmetic.
+![](./images/chrome_2017-10-08_20-03-06.png)Make sure to include a screenshot of what's changed in your PR if your change is cosmetic.
 
 Not long after your PR is created, a Facebook bot will ask you to sign a [Contributor License Agreement](https://code.facebook.com/cla).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/10/chrome_2017-10-15_17-27-16.png)
+![](./images/chrome_2017-10-15_17-27-16.png)
 
 After you sign the agreement, the bot will verify and leave another comment in about an hour.
 
 Once your change is accepted, it will be merged.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/10/chrome_2017-10-08_22-03-17.png)
+![](./images/chrome_2017-10-08_22-03-17.png)
 
 **Congratulations!** You've contributed to reactjs.org webpage! (I am not exactly sure how long it takes for the PR to go live, yet. Let me know if you know the cycle.)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/10/chrome_2017-10-15_17-32-25.png)
+![](./images/chrome_2017-10-15_17-32-25.png)
 
 ### Conclusion
 

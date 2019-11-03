@@ -4,7 +4,7 @@ date: "2017-02-25"
 coverImage: "featured-image.jpg"
 ---
 
-\[caption id="attachment\_287" align="alignright" width="300"\][![](https://www.slightedgecoder.com/wp-content/uploads/2017/02/HackerRank-Palindrome-Index-300x127.png)](https://www.hackerrank.com/challenges/palindrome-index) Palindrome Index\[/caption\]
+\[caption id="attachment\_287" align="alignright" width="300"\][![](./images/HackerRank-Palindrome-Index-300x127.png)](https://www.hackerrank.com/challenges/palindrome-index) Palindrome Index\[/caption\]
 
 I've been having a problem with an easy [HackerRank](https://www.hackerrank.com) problem, [Palindrome Index](https://www.hackerrank.com/notifications/page/1).
 
@@ -20,7 +20,7 @@ I reached the point where I couldn't think any more after only 4 tries. Then I l
 
 My eyes opened wide as soon as I profile the code. There it was! The bottleneck!
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/02/profile-result-1.png)The problem was that, I was unnecessarily creating a new object for each loop iteration. After moving the object creation out of the loop, the code ran within a second.
+![](./images/profile-result-1.png)The problem was that, I was unnecessarily creating a new object for each loop iteration. After moving the object creation out of the loop, the code ran within a second.
 
 The code was changed from
 

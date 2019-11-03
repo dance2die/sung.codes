@@ -12,7 +12,7 @@ I've forgotten most of the data structure concepts, especially a Tree structure.
 
 There are two search methods, depth-first, and breath-first. I will only talk about depth-first search methods operating on a binary tree. A binary search tree is where "left node < parent < right node" as shown below.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/03/Binary-Search-Tree.jpg)
+![](./images/Binary-Search-Tree.jpg)
 
 There are three depth-first search methods; In-order, Pre-order, and Post-order.
 

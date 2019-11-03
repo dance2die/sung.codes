@@ -38,7 +38,7 @@ I created a myriad of throwaway codes for each exercise.
 
 I showed one my exercises (GitHub clone) with fake data to one of my friends (Please overlook CSS issues...)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/09/GitHub-clone.jpg)
+![](./images/GitHub-clone.jpg)
 
  
 
@@ -70,7 +70,7 @@ He then asked me if I can use a real live news data. I thought, "Challenge Accep
 
 After creating so many throwaway codes, I was able to quickly create a prototype in about 30 minutes and shared it with [LocalTunnel](https://www.npmjs.com/package/localtunnel). (Please pardon my CSS skills, again...)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/09/CNN-localhost.jpg)
+![](./images/CNN-localhost.jpg)
 
  
 

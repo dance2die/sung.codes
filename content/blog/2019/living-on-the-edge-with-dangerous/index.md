@@ -36,7 +36,7 @@ But `dangerous` makes it easy to set an `innerHTML` value and returns a componen
 
 <a href="https://gist.github.com/dance2die/e219cafdc2ffb319c37aea2ee994470d">View this gist on GitHub</a>
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/01/demo.gif)
+![](./images/demo.gif)
 
 Result of DangerousApp.js
 
@@ -81,7 +81,7 @@ I also ended up bloating up the library size and had to learn how to fix it.
 
 _Fixed by marking react methods as external dependencies in tsconfig._
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/01/bundle-phobia-size-comparison.jpg)
+![](./images/bundle-phobia-size-comparison.jpg)
 
 Size comparison on BundlePhobia
 

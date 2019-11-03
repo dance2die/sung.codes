@@ -25,7 +25,7 @@ _Try it on_ [_CodeSandbox_](https://codesandbox.io/s/o2p0zpmyq)_._
 
 `message` value will always contain a number differ by 1 from `count`.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/2018-12-07_21-05-37.gif)
+![](./images/2018-12-07_21-05-37.gif)
 
 Count & message off by one
 

@@ -26,7 +26,7 @@ And then click on any item in the list and try to scroll with keyboard.
 
 _And you will see that it will move just once and stop responding._
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/05/2019-05-07_21-23-43.gif)
+![](./images/2019-05-07_21-23-43.gif)
 
 ## What happened?
 
@@ -50,7 +50,7 @@ _Unfortunately, keyboards will scroll this current page up/down thus you'd have 
 
 First you need to wrap the list within a container element such as `div/section/main` etc.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/05/chrome_2019-05-07_21-54-17.png)
+![](./images/chrome_2019-05-07_21-54-17.png)
 
 And then [add the tab index to capture the onKeyDown event](https://stackoverflow.com/a/44434971/4035).
 
@@ -70,7 +70,7 @@ Next, we need to refer to the list to scroll so create two (you can create one b
 
 You can refer to [the documentation](https://react-window.now.sh/#/api/FixedSizeList) on `inner/outerRef`s but found it a bit hard to grasp without looking at the code. So let's take a look at what those two references actually refer to in rendered HTML.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/05/explorer_2019-05-07_22-04-16-4.png)
+![](./images/explorer_2019-05-07_22-04-16-4.png)
 
 The `outerRef` is the element we need to use [scrollTo](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo) ([scroll is the same](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo#Notes))API with and the `innerRef` is the element we need to extract the maximum height from.
 
@@ -110,7 +110,7 @@ _**useLayoutEffect** documentation says "it fires synchronously after all DOM mu
   
 Would anyone let me know if it's a good approach? (because [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) still worked fine.)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/05/2019-05-07_22-33-23.gif)
+![](./images/2019-05-07_22-33-23.gif)
 
 Scrolling mutating the DOM
 
@@ -126,7 +126,7 @@ When the behavior is set to `smooth` it was gliding, which I am not sure how to 
 
 _Yet, again, I shameless ask why it's happening and how to get around the issue 🙏_
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/05/2019-05-07_22-40-13.gif)
+![](./images/2019-05-07_22-40-13.gif)
 
 Roulette?
 
@@ -134,7 +134,7 @@ Roulette?
 
 Now you can scroll using Page Up/Down, Home, and End keys.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/05/2019-05-07_22-43-18.gif)
+![](./images/2019-05-07_22-43-18.gif)
 
 Here is the link to the code again on CodeSandbox.
 

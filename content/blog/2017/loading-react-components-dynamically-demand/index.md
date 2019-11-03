@@ -50,7 +50,7 @@ I will use `import()` statement to dynamically load event component (Please refe
 
 Here is the demo code structure.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/React-Dynamic-Component-Code-Structure-Code_2017-12-03_17-40-48.png)
+![](./images/React-Dynamic-Component-Code-Structure-Code_2017-12-03_17-40-48.png)
 
  
 
@@ -102,7 +102,7 @@ As it was the case in the Case 1, we could simply create an GitHub event handler
 
 First, the code structure looks like this.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/ReactFactory-Tree-Structure-Code_2017-12-03_19-44-12.png)
+![](./images/ReactFactory-Tree-Structure-Code_2017-12-03_19-44-12.png)
 
  
 
@@ -141,7 +141,7 @@ gist:dance2die/87c20876004c92c90bb5e536f90d4873
 
 Here is the glorious result 🎉🎉🎉 (Please pardon the appearance...)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/firefox_2017-12-03_19-50-42.png)
+![](./images/firefox_2017-12-03_19-50-42.png)
 
 You can see that each event are rendered differently.
 
@@ -175,7 +175,7 @@ Suppose that given data, you can show it as a tabular form or as a graph.
 
 Code structure looks like this.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/React-Load-On-Demand-Tree-Structure-Code_2017-12-03_20-01-21.jpg)
+![](./images/React-Load-On-Demand-Tree-Structure-Code_2017-12-03_20-01-21.jpg)
 
  
 

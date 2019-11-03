@@ -52,7 +52,7 @@ Nothing fancy.
 
 Hand-drawn on a piece of paper 😝.
 
-\[caption id="attachment\_1028" align="alignleft" width="1024"\]![architecture](https://www.slightedgecoder.com/wp-content/uploads/2018/05/architecture.jpg) SHaNc architecture\[/caption\]
+\[caption id="attachment\_1028" align="alignleft" width="1024"\]![architecture](./images/architecture.jpg) SHaNc architecture\[/caption\]
 
 ### 🏃‍♂️ Parting Words
 

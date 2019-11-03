@@ -33,7 +33,7 @@ Fork Donavon's code
 
 Here is `forceUpdate` in action.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/11/2018-11-08_20-22-44.gif)
+![](./images/2018-11-08_20-22-44.gif)
 
 ## Question?
 

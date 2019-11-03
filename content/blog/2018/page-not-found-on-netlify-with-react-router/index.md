@@ -12,7 +12,7 @@ You might run into the following error after deploying a single page React site 
 > 
 > Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/page-not-found.jpg)
+![](./images/page-not-found.jpg)
 
 Error message on Netlify
 
@@ -33,7 +33,7 @@ Here is the simplest code using React Router.
 
 And the error occurring on Netlify when you go to `https://<netlify domain>/else` directly.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/page-not-found.gif)
+![](./images/page-not-found.gif)
 
 Page Not Found Demo
 
@@ -50,7 +50,7 @@ So to fix the issue, we need to create a file named `_redirects` to the root of 
 
 <a href="https://gist.github.com/dance2die/acf9a148ec8025364bf0b6cf37367294">View this gist on GitHub</a>
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/redirect-on-CodeSandbox.png)
+![](./images/redirect-on-CodeSandbox.png)
 
 \_redirect static file
 
@@ -58,7 +58,7 @@ _Change _`_index.html_`_ accordingly to match the SPA root._
 
 Here is the [working site](https://react-router-v4-to-deploy-to-netlify-with-redirects.netlify.com/else).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/page-found.gif)
+![](./images/page-found.gif)
 
 Netlify successfully redirected to the SPA root
 

@@ -4,7 +4,7 @@ date: "2017-01-28"
 coverImage: "feature-image-2017.01.23-pair-programming.jpg"
 ---
 
-I just finished reading Extreme Programming Explained Second Edition by Kent Beck.![](https://www.slightedgecoder.com/wp-content/uploads/2017/01/feature-image-2017.01.23-282x300.jpg)
+I just finished reading Extreme Programming Explained Second Edition by Kent Beck.![](./images/feature-image-2017.01.23-282x300.jpg)
 
 I'd like to do a bit of review and what I learned.
 

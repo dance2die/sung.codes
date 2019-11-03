@@ -18,7 +18,7 @@ In his book, [Soft Skills](http://simpleprogrammer.com/softskills) (4.5 stars by
 
 Then I ran into a problem on how to get started with one.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/04/Book-Cover.jpg)
+![](./images/Book-Cover.jpg)
 
 Thankfully, John has written a workbook, which shows how. It's called [How to Create a Blog that Boosts Your Career](https://simpleprogrammer.com/blog-course). After purchasing the book, John sends you a weekly email on how to better utilize the book and what steps to take to get the best out of it.
 

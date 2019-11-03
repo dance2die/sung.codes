@@ -24,13 +24,13 @@ This article with show you how to set up ASP.NET MVC 5 to enable ES6 javascript 
 
 **UPDATE**: 1/7/2018 Babel preset used changed from [babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/) to [babel-preset-env](https://babeljs.io/env/) according to Babel's recommendation.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/babel-preset-es2015-to-babel-preset-env.jpg)
+![](./images/babel-preset-es2015-to-babel-preset-env.jpg)
 
 **UPDATE**: 9/22/2017
 
 I created a 5-minute walkthrough [video](https://youtu.be/wbZnl93g_3I).
 
-https://youtu.be/wbZnl93g\_3I
+https://youtu.be/wbZnl93g_3I
 
 ## Step by Step Guide
 
@@ -54,7 +54,7 @@ Right click on Solution and then "Add -> New Project".
 
 Select an "Empty" template with "MVC" option.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/ASP.NET-Template.jpg)
+![](./images/ASP.NET-Template.jpg)
 
 ##### 2. Set up NPM configuration and packages
 
@@ -80,7 +80,7 @@ Now let's include `package.json` in VS Solution Explorer. Go to "Solution Explor
 
 Right click on "package.json" and include it in the project.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/Show-all-files.jpg)![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/include-in-project.jpg)
+![](./images/Show-all-files.jpg)![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/include-in-project.jpg)
 
 If you open up "package.json", you can see that "devDependencies" section has references to Babel and Webpack.
 
@@ -94,7 +94,7 @@ If you open up "package.json", you can see that "devDependencies" section has re
 
 ##### 4\. Create some ES6 javascript files
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/Script-folder.jpg)Let's create some javascript files to transpile for a test.
+![](./images/Script-folder.jpg)Let's create some javascript files to transpile for a test.
 
 Under project root, create a folder "Scripts" if one doesn't exist.
 
@@ -131,17 +131,17 @@ person.speak();
 
 Right click on "Controllers" folder, and create an empty controller named, "HomeController".
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/add-controller.jpg)
+![](./images/add-controller.jpg)
 
 Right click on "View()" and click on "Add View".
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/add-view.jpg)
+![](./images/add-view.jpg)
 
 Add a script tag in "Views/Shared/\_Layout.cshtml".
 
 <script src="~/Scripts/build/bundle.js"></script>
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/bundle.js-script-file.jpg)
+![](./images/bundle.js-script-file.jpg)
 
 ##### 6\. Configure Webpack
 
@@ -174,7 +174,7 @@ In the "Pre-build event command line:" enter following code snippet to run webpa
 
 npm run build --prefix \$(ProjectDir)
 
-##### ![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/build-events.jpg)
+##### ![](./images/build-events.jpg)
 
 ##### 7\. Configure Babel
 
@@ -194,7 +194,7 @@ Run the project by pressing "F5".
 
 If you see "Hi I'm David and 20 years old and I am awesome", then it's set up properly.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/running-result.jpg)
+![](./images/running-result.jpg)
 
 ##### 9\. Monitoring file changes with npm-watch
 
@@ -218,7 +218,7 @@ We need to add a configuration for the command installed in `package.json`.
 
 Now run `npm run watch` in the command line window after changing to the project directory where `package.json` is located (You can also run the command while the Visual Studio is in the debug/run mode).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/npm-run-watch.jpg)
+![](./images/npm-run-watch.jpg)
 
 The command will watch for the javascript file changes. Let's update the `speak()` method in  `person.js` file while the Visual Studio is in debug mode.
 
@@ -233,13 +233,13 @@ console.log(\`Hi I'm ${this.name} and ${this.age} years old and I love CodingBlo
 
 Refresh the browser and you will see that the content has changed without restarting Visual Studio.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/result-after-refreshing-browser.jpg) You can see that `npm-watch` monitored the javascript file change and ran the build/webpack command automatically.
+![](./images/result-after-refreshing-browser.jpg) You can see that `npm-watch` monitored the javascript file change and ran the build/webpack command automatically.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/npm-watch-updates-automatically.jpg)
+![](./images/npm-watch-updates-automatically.jpg)
 
 If you are using `npm-watch`, you can clear the "Pre-build event command line" command added in [step 6](#step6) (because `npm-watch` runs the `build` script, which calls `webpack` in turn).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/clear-pre-build-event-comamnd-line.jpg)
+![](./images/clear-pre-build-event-comamnd-line.jpg)
 
 ## Conclusion
 

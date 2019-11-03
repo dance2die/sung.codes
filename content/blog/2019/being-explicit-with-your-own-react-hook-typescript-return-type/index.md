@@ -22,7 +22,7 @@ But when I tried to use the new distrubution within a React + TypeScript project
 
 Error Message
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/typescript-error-with-bad-typing.jpg)
+![](./images/typescript-error-with-bad-typing.jpg)
 
 Error Message in VS Code
 
@@ -64,7 +64,7 @@ Good return type
 
 And TypeScript is happy (in VS Code).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/good.png)
+![](./images/good.png)
 
 TypeScript is now 🙂
 

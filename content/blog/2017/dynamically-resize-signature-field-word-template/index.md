@@ -23,7 +23,7 @@ That's basically all the prep work required for the dynamically resizing table i
 
 Now let's see the Word template.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/06/Word-Template.jpg)
+![](./images/Word-Template.jpg)
 
 It's a simple Word file with two bookmarks (two signature fields for comparisons).
 
@@ -32,9 +32,9 @@ It's a simple Word file with two bookmarks (two signature fields for comparisons
 
 There are two table properties that need to be changed/checked first.
 
-1. Right click on the table and select "Table Properties"![](https://www.slightedgecoder.com/wp-content/uploads/2017/06/Word-Template-Table-Properties.jpg)
-2. Select the "Option" button and check off the "Automatically resize to fit contents"![](https://www.slightedgecoder.com/wp-content/uploads/2017/06/Word-Template-table-options.jpg)
-3. Go to "Cells" tab, and click on "Option" and set following options![](https://www.slightedgecoder.com/wp-content/uploads/2017/06/Word-Template-cell-options.jpg)
+1. Right click on the table and select "Table Properties"![](./images/Word-Template-Table-Properties.jpg)
+2. Select the "Option" button and check off the "Automatically resize to fit contents"![](./images/Word-Template-table-options.jpg)
+3. Go to "Cells" tab, and click on "Option" and set following options![](./images/Word-Template-cell-options.jpg)
 
 Now let's dig into the code (At work, I used a library called [Aspose Word for .NET](https://www.aspose.com/products/words/net) to do the job, but since it's not free, I used Word Interop references in this demo).
 
@@ -84,7 +84,7 @@ public static void Main(string\[\] args)
 
 Now the moment of truth. The output Word file looks like the following.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/06/Word-Template-output.jpg)
+![](./images/Word-Template-output.jpg)
 
 You can see that the 2nd signature line moved to the left to make a room for the long signature while the first one overflowed into next line.
 

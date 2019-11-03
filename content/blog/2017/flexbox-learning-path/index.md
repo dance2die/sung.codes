@@ -6,7 +6,7 @@ coverImage: "featured-image-1.jpg"
 
 I was reading [Pure-React](https://daveceddia.com/pure-react/) by David Ceddia and I was working on an exercise to create an email component.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/08/Pure-react-email-component.jpg)
+![](./images/Pure-react-email-component.jpg)
 
 I remembered listening to the Cynical Developer ([James Studdart](http://cynicaldeveloper.com/About)) podcast episode 28, [Html 5 and Flexbox](http://cynicaldeveloper.com/podcast/28/), which reminded me to try out [Flexbox](https://www.w3.org/TR/css-flexbox-1/).
 
@@ -30,7 +30,7 @@ When you first use Flexbox, the hardest part is to get used to following propert
 
 What has helped me to understand those concepts, I played a game on [Flexbox Froggy](http://flexboxfroggy.com/) brought up by @robert from [Coding Blocks slack](https://www.codingblocks.net/slack/) channel.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/08/slack-learning_teaching-@robert.jpg)
+![](./images/slack-learning_teaching-@robert.jpg)
 
  
 

@@ -30,7 +30,7 @@ And also, [Jamie](https://www.gaprogman.com/) (@GaProgMan) has also given me adv
 
 Here is the conversation on **#books** channel (posted with a permission from Jamie)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/08/Coding-Blocks-books-GaProgMan.jpg)
+![](./images/Coding-Blocks-books-GaProgMan.jpg)
 
  
 

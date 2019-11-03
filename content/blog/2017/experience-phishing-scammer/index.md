@@ -45,7 +45,7 @@ And also, Troy generously has reached out to me on Twitter to pass on the detail
 
 **update**: [Shawn](http://swyx.io/) has brought up a very interesting point on [Coding Blocks Slack channel](https://www.codingblocks.net/slack/).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/08/swyx-comment.jpg)
+![](./images/swyx-comment.jpg)
 
  
 

@@ -46,7 +46,7 @@ Here is an example.
 - You can get around it by using a spread syntax.
 - And [].filter.call works as well.
 
-[document queryselctorall example](https://www.slightedgecoder.com/wp-content/uploads/2018/07/document-queryselctorall.jpg) document queryselctorall example
+[document queryselctorall example](./images/document-queryselctorall.jpg) document queryselctorall example
 
 ## 🐳 C# Analogy
 
@@ -58,7 +58,7 @@ Let's see two methods that accepts an iterable object of type string and prints 
 
 If you were to pass `wordArray` to `ListPrintWords`, it will fail to compile while `GenericPrintWords` is happy to work with it.
 
-[caption id="attachment_1076" align="aligncenter" width="697"]![Argument Error](https://www.slightedgecoder.com/wp-content/uploads/2018/07/error-wordArray.jpg) Argument Error[/caption]
+[caption id="attachment_1076" align="aligncenter" width="697"]![Argument Error](./images/error-wordArray.jpg) Argument Error[/caption]
 
 ## 😀 What did we learn?
 

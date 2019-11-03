@@ -3,7 +3,7 @@ title: What I learned from "Who Moved My Cheese"
 date: 2016-11-27
 ---
 
-Last week I read a book titled "[Who Moved My Cheese](https://www.amazon.com/Who-Moved-My-Cheese-Amazing/dp/0399144463/ref=sr_1_1?ie=UTF8&qid=1480022666&sr=8-1&keywords=who+moved+my+cheese)".![Who Moved My Cheese Cover](https://www.slightedgecoder.com/wp-content/uploads/2016/11/Who-Moved-My-Cheese-Cover-232x300.jpg)
+Last week I read a book titled "[Who Moved My Cheese](https://www.amazon.com/Who-Moved-My-Cheese-Amazing/dp/0399144463/ref=sr_1_1?ie=UTF8&qid=1480022666&sr=8-1&keywords=who+moved+my+cheese)".![Who Moved My Cheese Cover](./images/Who-Moved-My-Cheese-Cover-232x300.jpg)
 
 The book was published on 1998 and has been sold more than 10 million copies.
 

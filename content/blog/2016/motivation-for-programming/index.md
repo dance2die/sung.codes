@@ -5,7 +5,7 @@ date: "2016-12-25"
 
 I've coded for fun last year to learn how to make Web API calls using C#. The library access [MyAnimeList.net API](https://myanimelist.net/modules.php?go=api) and the project is called [MyAnimeListSharp](https://github.com/dance2die/MyAnimeListSharp), which I never thought anyone would use.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2016/12/MAL-300x277.jpg)As a background information, MyAnimeList is a well known community/website for searching Japanese Anime (animation) or Manga (cartoon) as well as maintaining your Manga/Anime viewing list.
+![](./images/MAL-300x277.jpg)As a background information, MyAnimeList is a well known community/website for searching Japanese Anime (animation) or Manga (cartoon) as well as maintaining your Manga/Anime viewing list.
 
  
 

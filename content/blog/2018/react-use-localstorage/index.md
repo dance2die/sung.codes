@@ -42,7 +42,7 @@ And use it in a "Functional Component".
 
 The demo shows that state is saved directly in local storage.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/10/2018-10-25_20-00-40.gif)
+![](./images/2018-10-25_20-00-40.gif)
 
 ## 💫Additional Context
 

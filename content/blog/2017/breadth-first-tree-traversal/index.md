@@ -14,7 +14,7 @@ As a spoiler, you don't have a use a recursion and it needs a familiar data stru
 
 I am going to use the same tree structure I used in the previous article.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/03/Binary-Search-Tree.jpg)Breadth-first traverse means going through each node from the root of the tree, then next level down and down until you reach the maximum height the tree.
+![](./images/Binary-Search-Tree.jpg)Breadth-first traverse means going through each node from the root of the tree, then next level down and down until you reach the maximum height the tree.
 
 When traversing a tree above, an algorithm needs to go from 4 2 6 1 3 5 7 from top down, left to right;4 is the root, next level down on the left, it's 2, then the node on the same depth, 6, and so on.
 

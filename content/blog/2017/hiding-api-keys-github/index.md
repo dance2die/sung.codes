@@ -72,7 +72,7 @@ First, create environment variables for your system (I am using Windows 10 as an
 
 I created `Project_MyAnimeList.Password` & `Project_MyAnimeList.UserName`.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/07/Environment-Variable.png)
+![](./images/Environment-Variable.png)
 
  
 

@@ -216,13 +216,13 @@ One of the return values, _predecessor_, contains information on how to traverse
 
 Let's use this weighted graph as an example (Example is from [this YouTube video](https://youtu.be/zXfDYaahsNA).)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/graph.jpg)
+![](./images/graph.jpg)
 
 The shortest path between "A" and "F" is "A->B->E->G->F".
 
 The _predecessor_ returned by the method, `GetPathInfoUsingBellmanFordAlgorithm` looks like this.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/predecessor.jpg)
+![](./images/predecessor.jpg)
 
 To find the shortest path, we need to traverse from the destination back to the source node.
 

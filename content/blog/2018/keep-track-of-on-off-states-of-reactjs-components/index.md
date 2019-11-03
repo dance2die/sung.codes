@@ -18,7 +18,7 @@ _If you want to know the answer you can cheat_ 😈_  by going directly to the 
 
 I will use a simple webpage that displays a list of texts wrapped in a component, `Child`.  
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/07/Sample-site-output-clicked.png)
+![](./images/Sample-site-output-clicked.png)
 
 Sample Code Output
 
@@ -91,7 +91,7 @@ And `!clicked[i]` will be `undefined` and negating it with `!` operator will tur
 
 [via GIPHY](https://giphy.com/gifs/emoticon-table-flip-nog-l0IpXP8BwnMXvcOze)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/07/negating-undefined.png)
+![](./images/negating-undefined.png)
 
 Negating undefined
 
@@ -105,13 +105,13 @@ This is to save previous memory as setting an empty array by index greater than 
   
 Suppose that we declared `state = { clicked: []}`, then setting a value above first item would populate the array with `undefined` as shown below.  
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/07/negating-wasted-space.png)
+![](./images/negating-wasted-space.png)
 
 Wasted memory
 
 I've set a value for the 4th item, `clicked[3] = !clicked[3];` and the array ended up adding the `!clicked[3]` value with `undefined` (<3 empty slots>) for first 3 items.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/07/sandbox-example-of-wasted-space.png)
+![](./images/sandbox-example-of-wasted-space.png)
 
 Array vs. Object
 

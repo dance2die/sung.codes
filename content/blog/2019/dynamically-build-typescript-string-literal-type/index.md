@@ -50,7 +50,7 @@ So you need to extract keys from the `doms` to restrict allowable values, using 
 
 DOMType declaration
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/assignment.gif)
+![](./images/assignment.gif)
 
 Example of leaving out "keyof".
 
@@ -86,7 +86,7 @@ In the demo below, you can see that \`printDOMType" accepts any string without a
 
 [![Edit TypeScript - Array to Literal - Doesn't work](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/qrrq24k7q)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/array-literal.png)
+![](./images/array-literal.png)
 
 "printDOMType" accepts any string
 

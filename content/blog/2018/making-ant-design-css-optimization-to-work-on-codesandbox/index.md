@@ -49,11 +49,11 @@ Ant Design CSS Working on CodeSandBox
 
 After deploying it on [Netlify](https://dynamicantdcssimport.netlify.com), you can see babel-plugin-import working via create-app-rewire with reduced CSS size.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/09/with-static-import.png)
+![](./images/with-static-import.png)
 
 Full Ant Design CSS
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/09/with-dynamic-import.png)
+![](./images/with-dynamic-import.png)
 
 CSS size reduced
 

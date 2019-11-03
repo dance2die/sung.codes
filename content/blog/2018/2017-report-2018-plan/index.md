@@ -22,7 +22,7 @@ I've lost **12.34lbs** from 1/1~12/31/2017.
 
 It was down **17lbs** at one point but gained **5lbs** during vacation as you can see in the graph.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/2017-Weight-Graph.jpg)
+![](./images/2017-Weight-Graph.jpg)
 
 The way I lost weight by lowering my calorie intake by [tracking what I ate](https://docs.google.com/spreadsheets/d/1kHgEYHW49Thk9VtOADGwSX0EfHjpdQ0RGqsZ8WyipIk/edit?usp=sharing).
 
@@ -34,7 +34,7 @@ This is about **40** books less compared to 2016, but it is because I started re
 
 I track books read on [GoodReads](https://www.goodreads.com/user/show/25927588-sung-kim) but half of books I read are in Korean, which are not found there so I have my own [GoogleSheet](https://docs.google.com/spreadsheets/d/106UBkKjFFPsHiorV_-eOmmvQce914lLn0flJYSNol2Q/edit?usp=sharing) to track them all.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/2017-Book-count.jpg)
+![](./images/2017-Book-count.jpg)
 
 #### this.Blog
 
@@ -42,7 +42,7 @@ I've been writing somewhat consistently over the year and was able to write 1 bl
 
 Monthly active user count increased from 5 to 500+.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/2017-Active-Users.jpg)
+![](./images/2017-Active-Users.jpg)
 
 # Going forward in 2018 - Plans
 

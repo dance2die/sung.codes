@@ -54,7 +54,7 @@ And here is the updated `*Event` components.
 
 Note that `NullEvent` is a dumb component that doesn't return anything using a [React.Fragment](https://reactjs.org/docs/fragments.html) shortcut `<></>`.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/10/case-1-demo.gif)
+![](./images/case-1-demo.gif)
 
 case1 in action
 
@@ -81,7 +81,7 @@ Here is are the event components for completeness.
 
 `*Event` components are the same as in the [previous post](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case2) and the difference is the `index.js`, which exports lazily loaded components to enable event name matching by key in `App.render()`.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/10/case-2-demo.gif)
+![](./images/case-2-demo.gif)
 
 case2 in action
 

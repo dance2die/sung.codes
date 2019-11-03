@@ -42,23 +42,23 @@ You can add the path as a system or user variable but I will show you how to add
 
 Click on Windows button then search with "environment" and click on "Edit the system environment variables".
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/windows-environment-search.jpg)
+![](./images/windows-environment-search.jpg)
 
 On "System Properties" dialog, click on "Environment Variables..." button.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/system-properties-environment-variable-button.jpg)
+![](./images/system-properties-environment-variable-button.jpg)
 
 Select "Path" and click on "Edit..." button.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/environment-variables-edit-button.jpg)
+![](./images/environment-variables-edit-button.jpg)
 
 Click on "New" button to add a new path to search.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/environment-variables-new-button.jpg)
+![](./images/environment-variables-new-button.jpg)
 
 Paste the yarn global binary path copied in [Step 1](#step1) and click "OK"  for all open dialog boxes to save the change.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/environment-variables-new-path-variable.jpg)
+![](./images/environment-variables-new-path-variable.jpg)
 
 **IMPORTANT NOTE**: You need to close all open command line interfaces or start a new instance for the PATH variable to take an effect.
 
@@ -68,7 +68,7 @@ I installed `parcel-bundler`, which failed to execute previously.
 
 Let's run `parcel` again on a new command window.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/12/parcel-runs.jpg)
+![](./images/parcel-runs.jpg)
 
 🎉 It works!!! 🎉
 

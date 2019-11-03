@@ -107,7 +107,7 @@ Basing the profiler on "commit" helps you focus on performance of React componen
 
 #### 🔹 Colors
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/11/profiler.png)
+![](./images/profiler.png)
 
 Profiler in action
 

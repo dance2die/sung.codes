@@ -49,7 +49,7 @@ gist:dance2die/039f61acb30978c45b9467a33d7cd4b4
 
 `every` is more flexible as the callback is also passed an index.
 
-![array#every syntax](https://www.slightedgecoder.com/wp-content/uploads/2018/04/arrayevery-syntax.jpg)
+![array#every syntax](./images/arrayevery-syntax.jpg)
 
 ##### 🔸 Contains
 

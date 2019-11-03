@@ -16,16 +16,16 @@ Let's go over how they are different.
 
 Within an editor (I am using a [Snippets](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) feature, which is like a scratchpad but works like an editor. You can try it in your favorite editor like, VS Code, Atom, or VIM), `await` does not work as it needs to be called within an async method.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/await-needs-to-be-wrapped-in-async-function.jpg)
+![](./images/await-needs-to-be-wrapped-in-async-function.jpg)
 
 To get around the issue, you can wrap it in an async method (an async [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) in this case).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/async-iife.gif)
+![](./images/async-iife.gif)
 
 This would be the normal behavior you are expecting but...  
 You can await in the console without wrapping the statement in an async method~
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/await-works-in-console.jpg)
+![](./images/await-works-in-console.jpg)
 
 It's Magic~~~
 
@@ -47,15 +47,15 @@ It needs to be wrapped inside an async method.
 The documentation says it's equivalent to calling [document.querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) but `$$` is differs  
 where `document.querySelectorAll()` returns a [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) object while `$$` returns an array.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/vs-qsa.png)
+![](./images/vs-qsa.png)
 
 `NodeList` is an [array-like object](http://speakingjs.com/es5/ch18.html#_pitfall_array_like_objects), whose prototype doesn't inherit from [Array.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype). That means, a `NodeList` object instance doesn't have access to methods such as [Array#map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) or [Array#reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/nodelist.map-fails.png)
+![](./images/nodelist.map-fails.png)
 
 Can't map over NodeList object
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/map.png)
+![](./images/map.png)
 
 While you can map over $$
 
@@ -63,7 +63,7 @@ This can cause a problem when you copy & paste code using `$$` selector and simp
 
 _You can easily convert a NodeList object to an array using a_ [_spread syntax_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) _or_ [_Array.from_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) _by the way._
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/04/workaround.png)
+![](./images/workaround.png)
 
 ## 👋 Parting Words
 

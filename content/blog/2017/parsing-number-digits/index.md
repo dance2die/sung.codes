@@ -23,7 +23,7 @@ private static List<int> GetDigitsUsingConversion(int val)
 }
 ```
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/03/conversion-cost-is-too-damn-high.jpg)
+![](./images/conversion-cost-is-too-damn-high.jpg)
 
 The cost of type conversion from an integer to a string, to an array, and then back to integer is too high.
 

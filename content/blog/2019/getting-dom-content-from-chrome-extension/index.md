@@ -16,11 +16,11 @@ Reference [Paul Seal](https://twitter.com/CodeSharePaul)'s blog - [How to keep y
 
 For forked GitHub page, GitHub page contains a meta tag named `octolytics-dimension-repository_parent_nwo` , which contains the parent repository the current repository is forked from.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/octolytics-dimension-repository_parent_nwo.png)
+![](./images/octolytics-dimension-repository_parent_nwo.png)
 
 But if the current page is not a fork repo page, then it doesn't have `octolytics-dimension-repository_parent_nwo` but have to use `go-import` meta value.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/go-import.png)
+![](./images/go-import.png)
 
 As a last resort, I needed to use `window.location.href`(or show a message that it's not a repo page in Chrome Extension popup).
 

@@ -46,7 +46,7 @@ I was able to browse Reddit much faster than I could have had than clicking on e
 
 There is already a Chrome plugin called [Reddit Enhancement Suite](http://redditenhancementsuite.com/) (RES), which was pointed out by "Aaron C" on Coding Blocks Slack Channel.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/06/slack_2017-06-25_09-15-15.png)
+![](./images/slack_2017-06-25_09-15-15.png)
 
  
 

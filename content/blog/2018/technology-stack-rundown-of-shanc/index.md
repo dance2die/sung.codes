@@ -17,7 +17,7 @@ I will talk about following technologies used.
 
 Here is a the recap of the architecture in the previous article.
 
-\[caption id="attachment\_1028" align="aligncenter" width="1024"\]![architecture](https://www.slightedgecoder.com/wp-content/uploads/2018/05/architecture.jpg) SHaNc architecture\[/caption\]
+\[caption id="attachment\_1028" align="aligncenter" width="1024"\]![architecture](./images/architecture.jpg) SHaNc architecture\[/caption\]
 
 Gatsby is used to generate a static page, which is then deployed to Netlify. And Azure Function causes Netlify to rebuild the static page via build webhook.
 

@@ -31,4 +31,4 @@ Mr. G. spending 10 minutes sharing his knowledge helped him free his time as wel
 
 **Credit**: Motivated by [Shawn Wang](http://swyx.io/) (@swyx) on [Coding Blocks Slack Channel](https://www.codingblocks.net/slack/) in _#blogging_ and decided to write something.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/07/swyx-motivation.jpg)
+![](./images/swyx-motivation.jpg)

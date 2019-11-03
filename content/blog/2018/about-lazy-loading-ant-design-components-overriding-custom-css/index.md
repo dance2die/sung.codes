@@ -29,7 +29,7 @@ And "Step" components (for Wizard) were lazily imported as shown below.
 
 <a href="https://gist.github.com/dance2die/ea0b127fd9a13a274f70b6a8b9afe952">View this gist on GitHub</a>
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/12/step-components.jpg)
+![](./images/step-components.jpg)
 
 Rendered Step Components
 

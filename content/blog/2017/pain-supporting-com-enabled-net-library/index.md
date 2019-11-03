@@ -16,11 +16,11 @@ I had much problem figuring out what went wrong and also learned much along the 
 
 I updated VB6 application with a new functionality and I need a developer to test it on his machine. The feature "worked on my machine", but it failed to work on other developer's machine.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/03/DebugView.jpg)
+![](./images/DebugView.jpg)
 
 Since VB6 application was using the library as COM dll, I had no way of figuring out what has gone wrong. I've added "Debug.Print" statements everywhere to find out where the error occurred. Along the way, I've found a great application from sysinternals called [DebugView](https://technet.microsoft.com/en-us/sysinternals/debugview.aspx).
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/03/Visual-Studio-2015-Post-build-event.jpg)
+![](./images/Visual-Studio-2015-Post-build-event.jpg)
 
 In the beginning, I compiled the DLLs and copied them over to VB6 environment manually. Deployment was taking about 30 seconds to a minute each time when done manually. I decided to become lazy and created a batch file, which copies all the DLLs to the VB6 environment. I added the batch file to be called in Post-build event section of visual studio. The result was that, after each build, all DLLs were deployed to the VB6 environment automatically saving me 30~60 seconds each time I had to test a new DLL.
 

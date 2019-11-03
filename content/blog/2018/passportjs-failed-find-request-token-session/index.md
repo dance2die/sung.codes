@@ -37,7 +37,7 @@ gist:dance2die/200ed52cac8bc807757fc0e6449378f1
 
 According to [Expression Session documentation](https://github.com/expressjs/session#cookiesecure) setting `cookie.secure` to `true` requires an _HTTPS enabled site_. But it's rarely the case that your development server is HTTPS enabled.
 
-You could set the `cookie.secure` value to `false` while developing and set it to true for production by [checking process.env.NODE\_ENV](https://github.com/dance2die/blog.passportjs_error/commit/91009e8845cb67a8538df2e07596ec541a8a0b4f#diff-0364f57fbff2fabbe941ed20c328ef1aR20).![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/process.env_.Node_ENV-check.jpg)
+You could set the `cookie.secure` value to `false` while developing and set it to true for production by [checking process.env.NODE\_ENV](https://github.com/dance2die/blog.passportjs_error/commit/91009e8845cb67a8538df2e07596ec541a8a0b4f#diff-0364f57fbff2fabbe941ed20c328ef1aR20).![](./images/process.env_.Node_ENV-check.jpg)
 
 But you can do better by setting `cookie.secure` value to a non-Boolean value, `auto`, which will automatically set to true or false depending on the security of current connection.
 
@@ -49,7 +49,7 @@ Let's update the `cookie.secure` value to `auto` and try again.
 
 https://youtu.be/Lz8GBhhqFC4
 
-And :awyeah: ![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/aw_yeah.gif),
+And :awyeah: ![](./images/aw_yeah.gif),
 
 it works 🎉
 

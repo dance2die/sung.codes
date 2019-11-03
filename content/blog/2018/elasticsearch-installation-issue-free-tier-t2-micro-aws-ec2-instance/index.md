@@ -30,7 +30,7 @@ By default Elasticsearch 6.x JVM Heap size set to use minimum 1Gig of memory.
 
 `t2.micro` has 1Gig of memory
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/aws-ec2-t2.micro_.jpg)
+![](./images/aws-ec2-t2.micro_.jpg)
 
 but Elasticsearch [documentation recommends](https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html) to set it to 50% of physical memory for kernel file system caches.
 
@@ -42,7 +42,7 @@ gist:dance2die/f54076253a6aa402d7fa2ebffa8d2d5d
 
 When you read the comment in `jvm.options`, you should set the minimum and maximum to the same value.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/default-jvm.option.jpg)
+![](./images/default-jvm.option.jpg)
 
 And you can see that the min and max JVM heap sizes are set to 1g on the bottom of above image.
 
@@ -52,7 +52,7 @@ And you can see that the min and max JVM heap sizes are set to 1g on the bottom 
 
 Now update the min and max values to 512m, save the file and exit.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/jvm-updated-to-512m.jpg)
+![](./images/jvm-updated-to-512m.jpg)
 
 ### Restart and Test
 
@@ -62,6 +62,6 @@ gist:dance2die/3db44a114a46b8dfa252027f4e1f9a11
 
 and run the cURL command again.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/good-curl-result.jpg)
+![](./images/good-curl-result.jpg)
 
 🎉Tada 🎉, Elasticsearch is now running on AWS EC2 t.micro instance.

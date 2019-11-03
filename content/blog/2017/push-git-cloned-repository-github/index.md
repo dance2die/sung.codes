@@ -43,11 +43,11 @@ gist:dance2die/04273b00df9a7345bf4e3ee461816ac5
 
 Then [create your own repository](https://help.github.com/articles/create-a-repo/) on GitHub.
 
-\[caption id="attachment\_2722" align="aligncenter" width="755"\]![create a new repository](https://www.slightedgecoder.com/wp-content/uploads/2017/10/create-a-new-repository.png) create a new repository\[/caption\]
+\[caption id="attachment\_2722" align="aligncenter" width="755"\]![create a new repository](./images/create-a-new-repository.png) create a new repository\[/caption\]
 
 After creating the repository, copy the repo URL.
 
-\[caption id="attachment\_2723" align="alignleft" width="1002"\]![copy the repo](https://www.slightedgecoder.com/wp-content/uploads/2017/10/copy-the-repo.png) copy the repo\[/caption\]
+\[caption id="attachment\_2723" align="alignleft" width="1002"\]![copy the repo](./images/copy-the-repo.png) copy the repo\[/caption\]
 
 Now, add the URL to your repo.
 
@@ -59,7 +59,7 @@ gist:dance2die/41dcb516ef61ba06ba75668923e54248
 
 Wolla! It's committed to your GitHub repository.
 
-\[caption id="attachment\_2724" align="alignleft" width="1014"\]![repo updated~](https://www.slightedgecoder.com/wp-content/uploads/2017/10/repo-updated.png) repo updated~\[/caption\]
+\[caption id="attachment\_2724" align="alignleft" width="1014"\]![repo updated~](./images/repo-updated.png) repo updated~\[/caption\]
 
 ### Alternative
 

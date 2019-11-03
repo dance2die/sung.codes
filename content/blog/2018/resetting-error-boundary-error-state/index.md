@@ -24,7 +24,7 @@ The following demo has a component that randomly throws an error and the error b
 
 **_Credit:_** _the demo program is created by [Brian Vaugn](https://twitter.com/brian_d_vaughn/) on [CodeSandBox](https://codesandbox.io/s/k9znx9kj9r)._
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/09/demo.gif)
+![](./images/demo.gif)
 
 Error Boundary Reset Demo
 

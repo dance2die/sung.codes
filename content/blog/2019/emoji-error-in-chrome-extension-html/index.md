@@ -10,7 +10,7 @@ I've had a problem where I was trying to display an Emoji in a Chrome Extension 
 
 But got the jumbled up characters instead.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/2019-02-16_23-00-15.png)
+![](./images/2019-02-16_23-00-15.png)
 
 Emoji displayed as gobbledygook
 
@@ -24,6 +24,6 @@ Character Set set to UTF-8
 
 This has fixed the issue and shows the cute 🐥 emoji correctly in the Chrome Extension popup.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2019/02/emoji-shown.jpg)
+![](./images/emoji-shown.jpg)
 
 You can now see the cute baby chick 🐥

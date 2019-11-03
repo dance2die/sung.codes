@@ -8,7 +8,7 @@ Featured Image - Photo by [Sai Kiran Anagani](https://unsplash.com/photos/5Ntkpx
 
 > Sorry, but there is no formatter for 'ejs'-files installed.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/no-vs-code-formatter-for-ejs.jpg)
+![](./images/no-vs-code-formatter-for-ejs.jpg)
 
 Luckily all you need to do is to add a user setting by associating `.ejs` extension to be handled with an HTML formatter.
 
@@ -18,13 +18,13 @@ Here are **3** steps to enable EJS files to be formatted with an HTML formatter.
 
 Go to "File -> Preferences -> Settings".
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/open-user-settings.jpg)
+![](./images/open-user-settings.jpg)
 
 #### Step 2 - Search for "files.associations" setting
 
 After searching for "files.assocations", copy `"files.assocations": {}` to clipboard for the next step.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/search-files.associations-setting.jpg)
+![](./images/search-files.associations-setting.jpg)
 
 #### Step 3 - Add a custom file association
 
@@ -32,11 +32,11 @@ On the right side under "user settings" tab, add
 
 gist:dance2die/f166bfa67e41fb91a8e051a013ac5550
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/Add-a-custom-user-setting-all.jpg)
+![](./images/Add-a-custom-user-setting-all.jpg)
 
 ---
 
-Now you can reformat with a keyboard shortcut without an error. The reformatted code looks like following. ![](https://www.slightedgecoder.com/wp-content/uploads/2018/01/reformatted.gif)
+Now you can reformat with a keyboard shortcut without an error. The reformatted code looks like following. ![](./images/reformatted.gif)
 
 ### Resource
 

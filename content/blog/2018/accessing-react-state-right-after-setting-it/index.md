@@ -21,7 +21,7 @@ Here is the code that shows accessing a state value (`clickCounts`) right after 
 
 And let's see the logical error.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/08/synchronous-call.gif)
+![](./images/synchronous-call.gif)
 
 `console.log` doesn't have access to updated state value even though the call is made after `setState`.
 
@@ -33,7 +33,7 @@ You might wait for a certain period to access the updated state using `setTimeou
 
 [View Gist on GitHub](https://gist.github.com/dance2die/9735e8714ab1796f41ec30dea6a2ea81)
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/08/setTimeout.gif)
+![](./images/setTimeout.gif)
 
 Tada 🎉. It works right?
 
@@ -66,7 +66,7 @@ Here is the updated code & the demo.
 
 <a href="https://gist.github.com/dance2die/8afe95dedfbe62e77de813ae2b41a2b0">View this gist on GitHub</a>
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/08/using-callback.gif)
+![](./images/using-callback.gif)
 
 ### 2\. Using `componentDidUpdate` life cycle method  
 
@@ -85,7 +85,7 @@ And this demo shows that `componentDidUpdate`
 1. has the access to the updated state value.
 2. is called before the setState's callback method.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/08/componentDidUpdate.gif)
+![](./images/componentDidUpdate.gif)
 
 ## 👋 Parting Words
 

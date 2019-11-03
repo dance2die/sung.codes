@@ -10,7 +10,7 @@ _Feature Image Credit - Image by [Sam Greenhalgh](https://www.flickr.com/photos/
 
 After a year of reading only 10 pages a day every day for a year, reading became sort of a new habit.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/01/tracking-link-300x143.jpg)I read **90+ books** last year alone (Click "Tracking" menu, which takes you to Google Sheet. Then click on "Books I read in 2016" worksheet.)
+![](./images/tracking-link-300x143.jpg)I read **90+ books** last year alone (Click "Tracking" menu, which takes you to Google Sheet. Then click on "Books I read in 2016" worksheet.)
 
 I decided to post a blog to set my goal in stone by **making it public**.
 

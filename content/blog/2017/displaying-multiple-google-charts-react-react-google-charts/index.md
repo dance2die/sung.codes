@@ -36,7 +36,7 @@ gist:dance2die/9c75c883cee40937db79593591f10eab
 
 But for some reason, it was populating one graph.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2017/09/chrome_2017-09-21_10-01-50-1.png)
+![](./images/chrome_2017-09-21_10-01-50-1.png)
 
  
 
@@ -44,7 +44,7 @@ But for some reason, it was populating one graph.
 
 After hours of researching and debugging, I found the problem.
 
-Here you see that each chart had the same `id="LineChart"`.![](https://www.slightedgecoder.com/wp-content/uploads/2017/09/chrome_2017-09-21_10-04-29.png)
+Here you see that each chart had the same `id="LineChart"`.![](./images/chrome_2017-09-21_10-04-29.png)
 
  
 

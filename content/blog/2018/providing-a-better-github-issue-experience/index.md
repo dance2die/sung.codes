@@ -12,7 +12,7 @@ Thankfully, GitHub provides a way to encourage users for a better issue report.
 
 ## 😱 An Issue with Unclear Context
 
-\[caption id="attachment\_1058" align="alignleft" width="817"\][![issue with unclear description](https://www.slightedgecoder.com/wp-content/uploads/2018/06/issue-with-unclear-description.jpg)](https://github.com/codingblocks/podcast-app/issues/120) issue with unclear description\[/caption\]
+\[caption id="attachment\_1058" align="alignleft" width="817"\][![issue with unclear description](./images/issue-with-unclear-description.jpg)](https://github.com/codingblocks/podcast-app/issues/120) issue with unclear description\[/caption\]
 
 The issue reported by [THEjoezack](https://twitter.com/thejoezack) above doesn't provide a context regarding the issue reported.
 
@@ -27,7 +27,7 @@ What I mean by "context" is
 
 Below is the issue created with the context mentioned above. When other developers see the issue, they can reproduce the error and how to fix it easier. _without having to ask the reporter back and forth for more info._
 
-\[caption id="attachment\_1059" align="alignleft" width="357"\][![Issue with better context](https://www.slightedgecoder.com/wp-content/uploads/2018/06/good-issue-357x1024.jpg)](https://github.com/codingblocks/podcast-app/issues/146) Issue with better context\[/caption\]
+\[caption id="attachment\_1059" align="alignleft" width="357"\][![Issue with better context](./images/good-issue-357x1024.jpg)](https://github.com/codingblocks/podcast-app/issues/146) Issue with better context\[/caption\]
 
  
 
@@ -93,7 +93,7 @@ I won't go into details as the GitHub documentation is easy to follow.
 
 You can add contexts in the template so that when a user creates a new issue, they are provided with pre-populated information about how to report an issue.
 
-\[caption id="attachment\_1060" align="alignleft" width="778"\]![Pre-filled issue template](https://www.slightedgecoder.com/wp-content/uploads/2018/06/bug-report.jpg) Pre-filled issue template\[/caption\]
+\[caption id="attachment\_1060" align="alignleft" width="778"\]![Pre-filled issue template](./images/bug-report.jpg) Pre-filled issue template\[/caption\]
 
 I reported [the issue](#better) after setting up the template providing better experience for both issue reporter and the developer.
 
@@ -109,7 +109,7 @@ I found about the issue template from [dotnet/cli](https://github.com/dotnet/cli
 
 [THEjoezack](https://github.com/THEjoezack) has create a feature request with a better context provided by the template. _And everyone's happy_ 😎
 
-\[caption id="attachment\_1061" align="aligncenter" width="794"\][![joes feature request](https://www.slightedgecoder.com/wp-content/uploads/2018/06/joes-feature-request.png)](https://github.com/codingblocks/podcast-app/issues/149) Joe's FOSSA feature request\[/caption\]
+\[caption id="attachment\_1061" align="aligncenter" width="794"\][![joes feature request](./images/joes-feature-request.png)](https://github.com/codingblocks/podcast-app/issues/149) Joe's FOSSA feature request\[/caption\]
 
  
 

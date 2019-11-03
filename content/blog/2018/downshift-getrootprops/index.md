@@ -36,7 +36,7 @@ For some reason, CodeSandbox shows the following error message.
 
 But when deployed on Netlify, no error message occurs as shown below.
 
-![](https://www.slightedgecoder.com/wp-content/uploads/2018/11/2018-11-06_18-29-38.gif)
+![](./images/2018-11-06_18-29-38.gif)
 
 No getRootProps error message
 

@@ -8,11 +8,11 @@ For years, I've been working to gather requirements and have done user acceptanc
 I've been keeping track of my own project status using three different tools.
 
 1. Mind Mapping software ([MindMeister.com](http://mindmeister.com))
-    1. ![](https://www.slightedgecoder.com/wp-content/uploads/2016/12/MindMeister-241x300.png)
+    1. ![](./images/MindMeister-241x300.png)
 2. Outlook Calendar
-    1. ![](https://www.slightedgecoder.com/wp-content/uploads/2016/12/Outlook-blurred-300x112.png)
+    1. ![](./images/Outlook-blurred-300x112.png)
 3. [Gemini Tracker](https://www.countersoft.com/) from [CounterSoft](https://www.countersoft.com/)
-    1. ![](https://www.slightedgecoder.com/wp-content/uploads/2016/12/Gemini-blurred-300x257.png)
+    1. ![](./images/Gemini-blurred-300x257.png)
 
 Every morning, I spend about 30 minutes to an hour to plan my day. Here are the steps.
 
