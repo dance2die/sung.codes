@@ -8,7 +8,7 @@ Featured Image - "[voynich](https://www.flickr.com/photos/figgenhoffer/239378106
 
 I've been solving [HackerRank](https://www.hackerrank.com) problems lately. HackerRank provides many coding problems.
 
-\[caption id="attachment_277" align="alignright" width="300"\]![](./images/HackerRank-Discussion-300x208.jpg) HackerRank Discussions\[/caption\]
+\[caption id="attachment_277" align="alignright" width="300"\]![](./images/HackerRank-Discussion.jpg) HackerRank Discussions\[/caption\]
 
 Each problem has a discussion forum to post algorithms and sometimes answers. After solving each question, I compare my answers with those of others.
 

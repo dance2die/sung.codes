@@ -4,7 +4,7 @@ date: "2017-01-28"
 coverImage: "feature-image-2017.01.23-pair-programming.jpg"
 ---
 
-I just finished reading Extreme Programming Explained Second Edition by Kent Beck.![](./images/feature-image-2017.01.23-282x300.jpg)
+I just finished reading Extreme Programming Explained Second Edition by Kent Beck.![](./images/feature-image-2017.01.23.jpg)
 
 I'd like to do a bit of review and what I learned.
 
@@ -13,19 +13,17 @@ I'd like to do a bit of review and what I learned.
 1. Exploring XP
 2. Philophy of XP
 
- Featured image by [**Damien Pollet**](https://www.flickr.com/photos/damienpollet/5048830734/in/photolist-8G9ztL-5HP2Lh-nZDNuv-7CyDbt-dYFeYi-okB3kk-dYFf3X-dYFeU2-dYFeHg-6vkpVp-mET1h8-nNH8Lb-bR3md4-4Wyyg-7UfM1w-yZ1hS-7Hxgmw-9S4fk3-7SxRJ1-7xuFqe-aRe2V2-7bfXSN-9S4fwL-9S1mk8-wJYJQ-3akWk1-dcy2Kp-djuyPj-pM7Uv1-4ejqfD-nZDX5o-fa5NyG-p7ueu-wJYJH-7LUYnb-oiUBc4-nQKH84-dgfsqd-nZF6pr-8KkdEL-wJYJT-p7uet-8YH4zm-8TYGza-wJYJU-wJYJX-6vkcr8-n9XZUA-oh6PTf-5U35Wi) 
-
- 
+Featured image by [**Damien Pollet**](https://www.flickr.com/photos/damienpollet/5048830734/in/photolist-8G9ztL-5HP2Lh-nZDNuv-7CyDbt-dYFeYi-okB3kk-dYFf3X-dYFeU2-dYFeHg-6vkpVp-mET1h8-nNH8Lb-bR3md4-4Wyyg-7UfM1w-yZ1hS-7Hxgmw-9S4fk3-7SxRJ1-7xuFqe-aRe2V2-7bfXSN-9S4fwL-9S1mk8-wJYJQ-3akWk1-dcy2Kp-djuyPj-pM7Uv1-4ejqfD-nZDX5o-fa5NyG-p7ueu-wJYJH-7LUYnb-oiUBc4-nQKH84-dgfsqd-nZF6pr-8KkdEL-wJYJT-p7uet-8YH4zm-8TYGza-wJYJU-wJYJX-6vkcr8-n9XZUA-oh6PTf-5U35Wi)
 
 Exploring XP talks about "Values, Principles, and Practices."
 
 - Values - This is your view of the world, a philosophy.
 - Practices - It's the "things you actually do" daily.
 - Principles.
-    - This is what **connects** XP values with practices, sort of like a bridge.
-    - It's a "domain-specific guidelines for life."
-    - Without principles, you wouldn't know **how to apply** your values to practices.
-    - Suppose that a situation arises, which is not mentioned in the book. Understanding XP principles would empower you to apply the values into the unforeseen situations.
+  - This is what **connects** XP values with practices, sort of like a bridge.
+  - It's a "domain-specific guidelines for life."
+  - Without principles, you wouldn't know **how to apply** your values to practices.
+  - Suppose that a situation arises, which is not mentioned in the book. Understanding XP principles would empower you to apply the values into the unforeseen situations.
 
 "Practices" is probably what most of people will be interested in since it talks about what comprises XP, such as pair programming, weekly/quarterly cycles, CI (Continuous Integration), Test-First Programming (TDD), and etc. as well as how XP team should be organized and what each member of the XP team should do.
 

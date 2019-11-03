@@ -24,7 +24,23 @@ module.exports = {
               includeDefaultCss: true,
             },
           },
+          { resolve: "gatsby-remark-copy-linked-files" },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              backgroundColor: "#fafafa",
+              maxWidth: 1035,
+            },
+          },
+          { resolve: "gatsby-remark-embedder" },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-remark-images",
+      options: {
+        backgroundColor: "#fafafa",
+        maxWidth: 1035,
       },
     },
     {

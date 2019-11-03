@@ -111,7 +111,7 @@ Wasted memory
 
 I've set a value for the 4th item, `clicked[3] = !clicked[3];` and the array ended up adding the `!clicked[3]` value with `undefined` (<3 empty slots>) for first 3 items.
 
-![](./images/sandbox-example-of-wasted-space.png)
+![](./images/sandbox.png)
 
 Array vs. Object
 

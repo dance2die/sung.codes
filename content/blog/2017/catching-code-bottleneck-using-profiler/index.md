@@ -4,7 +4,7 @@ date: "2017-02-25"
 coverImage: "featured-image.jpg"
 ---
 
-\[caption id="attachment\_287" align="alignright" width="300"\][![](./images/HackerRank-Palindrome-Index-300x127.png)](https://www.hackerrank.com/challenges/palindrome-index) Palindrome Index\[/caption\]
+\[caption id="attachment_287" align="alignright" width="300"\][![](./images/HackerRank-Palindrome-Index.png)](https://www.hackerrank.com/challenges/palindrome-index) Palindrome Index\[/caption\]
 
 I've been having a problem with an easy [HackerRank](https://www.hackerrank.com) problem, [Palindrome Index](https://www.hackerrank.com/notifications/page/1).
 
@@ -26,14 +26,13 @@ The code was changed from
 
 for (int i = 0; i < testCase.Length; i++)
 {
-	StringBuilder buffer = new StringBuilder(testCase);
-	
-	if (testCase\[i\] != testCase\[testCase.Length - i - 1\])
-	{
-		if (IsPalindrome2(buffer.Remove(i, 1)))
-			return i;
-		return testCase.Length - i - 1;
-	}
+StringBuilder buffer = new StringBuilder(testCase);
+if (testCase\[i\] != testCase\[testCase.Length - i - 1\])
+{
+if (IsPalindrome2(buffer.Remove(i, 1)))
+return i;
+return testCase.Length - i - 1;
+}
 }
 
 to
@@ -41,12 +40,12 @@ to
 StringBuilder buffer = new StringBuilder(testCase);
 for (int i = 0; i < testCase.Length; i++)
 {
-	if (testCase\[i\] != testCase\[testCase.Length - i - 1\])
-	{
-		if (IsPalindrome2(buffer.Remove(i, 1)))
-			return i;
-		return testCase.Length - i - 1;
-	}
+if (testCase\[i\] != testCase\[testCase.Length - i - 1\])
+{
+if (IsPalindrome2(buffer.Remove(i, 1)))
+return i;
+return testCase.Length - i - 1;
+}
 }
 
 `StringBuilder buffer = new StringBuilder(testCase)` was moved out of the for loop. It was that simple. I spent hours trying to come up with different algorithms without catching that simple error/bad coding.

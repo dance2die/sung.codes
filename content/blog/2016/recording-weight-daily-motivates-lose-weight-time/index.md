@@ -13,11 +13,11 @@ I started recording my weight as wells my daily intake on [Google Sheets](https:
 
 I started drinking smoothies for lunch and started doing crunches and push ups for a change. Between April and July of 2015, I lost about 8 lbs. It was a gradually change and didn't happen over night.
 
-![April~July 2015](./images/WeightGraph1-300x186.jpg)
+![April~July 2015](./images/WeightGraph1.jpg)
 
 I started getting lazy and started working out less, which resulted in gaining weight again as you can see here.
 
-![August~November 2015](./images/WeightGraph2-300x186.jpg)
+![August~November 2015](./images/WeightGraph2.jpg)
 
 Since then until May of 2016, the weight fluctuated between 205 ~ 210 lbs. On May of 2016, I've reached 216.4, which was only 3 lbs away from before I started working out even though I wasn't eating pizza every Sunday.
 
@@ -29,6 +29,6 @@ When I saw the graph pointing downward, it motivated me even more. I was able to
 
 Here is the graph since December of 2015 until Yesterday (11/19/2016)
 
-![Dec 2015~Nov 2016](./images/WeightGraph3-300x186.jpg)
+![Dec 2015~Nov 2016](./images/WeightGraph3.jpg)
 
 Being able to see the weight going down makes whole lotta difference.

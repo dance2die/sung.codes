@@ -44,7 +44,7 @@ The operation can be represented using logical XOR & AND gates as shown here.
 
 Half-adder
 
-A circuit formed that way is called [half-adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Half_adder).  
+A circuit formed that way is called [half-adder](<https://en.wikipedia.org/wiki/Adder_(electronics)#Half_adder>).  
 Armed with the knowledge and we can now implement the addition using XOR & AND.
 
 <script src="https://gist.github.com/dance2die/6a002c4d417703cc31c0c02f8bbfe067.js"></script>
@@ -54,7 +54,7 @@ Armed with the knowledge and we can now implement the addition using XOR & AND.
 - `xor` returns true (or 1) when both input are different.
 - `and` was used using built-in JavaScript `&&` operator.
 - `xorBit` & `andBit` return 1 or 0 depending on whether result is true or false.
-    - Think of `andBit` as an AND gate and `xorBit` as XOR gate in the Half-adder figure above.
+  - Think of `andBit` as an AND gate and `xorBit` as XOR gate in the Half-adder figure above.
 - "s" refers to "sum", while "c" means "carry".
 
 When we run the half adder on combination of one bit addition, the result looks like below.
@@ -71,7 +71,7 @@ Let's spice it up by adding two bits.
 We got the carry from the half-adder but to calculate the next bit we need to pass the carry to the next adder.  
 But the problem is that, half-adder accepts only two inputs and doesn't accept a carry.
 
-We can solve the problem by combining two half-adders, making it a [full-adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Full_adder).
+We can solve the problem by combining two half-adders, making it a [full-adder](<https://en.wikipedia.org/wiki/Adder_(electronics)#Full_adder>).
 
 Logic looks like following.
 
@@ -83,12 +83,12 @@ Simply put, you perform two operations. One for the current bit, and another wit
 
 Let's take a look at an example of adding 11 and 01 to get 100.
 
-![](./images/full-adder-fixed.jpg)
+![](./images/full-adder.jpg)
 
 Result of 11 + 01 => 100
 
 _I apologize for the 💩 illustration 😅._  
-_And thank you_ [_@MarkN\_LP_](https://www.reddit.com/user/MarkN_LP) _for_ [_catching the error_](https://www.reddit.com/r/javascript/comments/bd8tyi/adding_numbers_using_boolean_operations_in/eky2njd/)_._
+_And thank you_ [_@MarkN_LP_](https://www.reddit.com/user/MarkN_LP) _for_ [_catching the error_](https://www.reddit.com/r/javascript/comments/bd8tyi/adding_numbers_using_boolean_operations_in/eky2njd/)_._
 
 The diagram shows the result of first carry being fed into the 2nd half-adder, which is used to calculate sum.
 
@@ -150,17 +150,17 @@ I am also just learning about this thus the explanation might lack much.
 
 The source I am learning from is "[The Manga Guide to Microprocessors](https://nostarch.com/microprocessors)".
 
-_I still haven't finished the book but it has been delightful._  
+_I still haven't finished the book but it has been delightful._
 
 ## Resources
 
 If you want to dig deeper, check out following resources.
 
 - [The Manga Guide to Microprocessors](https://nostarch.com/microprocessors) - No Starch Press
-- [Adder](https://en.wikipedia.org/wiki/Adder_(electronics)) Wikipedia article
+- [Adder](<https://en.wikipedia.org/wiki/Adder_(electronics)>) Wikipedia article
 - Diagram & Truth tables for
-    - [Full-adder](http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/full.htm)
-    - [Half-adder](http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/half-add.htm)
+  - [Full-adder](http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/full.htm)
+  - [Half-adder](http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/half-add.htm)
 - Demo program is available on [CodeSandbox](https://codesandbox.io/s/3vnqknj0o1)
 - [Full-adder diagram on Google Slides](https://docs.google.com/presentation/d/1TSDLBj7Zc2Y1mpUaQAeRb3cHJ8RLnROPXwDHRowQ3YQ/edit#slide=id.g565ce1f6b6_0_53).
-- [Half-adder](https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Half_Adder.svg) on Wikipedia.
+- [Half-adder](<https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Half_Adder.svg>) on Wikipedia.

@@ -10,7 +10,7 @@ _Feature Image Credit - Image by [Sam Greenhalgh](https://www.flickr.com/photos/
 
 After a year of reading only 10 pages a day every day for a year, reading became sort of a new habit.
 
-![](./images/tracking-link-300x143.jpg)I read **90+ books** last year alone (Click "Tracking" menu, which takes you to Google Sheet. Then click on "Books I read in 2016" worksheet.)
+![](./images/tracking-link.jpg)I read **90+ books** last year alone (Click "Tracking" menu, which takes you to Google Sheet. Then click on "Books I read in 2016" worksheet.)
 
 I decided to post a blog to set my goal in stone by **making it public**.
 
@@ -67,7 +67,7 @@ There are only 4 books for programming because I started learning most of new ma
 3. [열한 계단](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4014511) (11 Steps (or Stairs?)) by 채사장 - Another book on Liberal Arts.
 4. [My Romantic Comedy SNAFU](http://www.bandibookus.com/front/product/detailProduct.do?prodId=3528085) (Japanese Light Novel) volume 1~5 - A comedy about a loner Japanese high school student having trouble with romantic relationship. There is an [anime](https://myanimelist.net/anime/14813/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru) based on this novel.
 5. [유녀전기](http://www.bandibookus.com/front/product/detailProduct.do?prodId=3824934) (Youjo Senki, Japanese Light Novel) volume 1~6 - A story about an elite salaryman reincarnated into a blonde girl fighting war in a world with magic. Found it after watching an [anime](https://myanimelist.net/anime/32615/Youjo_Senki) this season.
-6. [이 세계가 게임이란 사실은 나만이 알고 있다](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4012005) (literal translation - _Only_ I _Know_ That This _World Is a Game__,_ Japanese Light Novel) volume 6 - A comedy where a main character is stuck in a game and he is the only one who knows that others are just a part of an RPG game.
+6. [이 세계가 게임이란 사실은 나만이 알고 있다](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4012005) (literal translation - _Only_ I _Know_ That This *World Is a Game\_\_,* Japanese Light Novel) volume 6 - A comedy where a main character is stuck in a game and he is the only one who knows that others are just a part of an RPG game.
 7. [전생했더니 슬라임이었던 건에 대하여](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4020985) (Regarding Reincarnated to Slime, Japanese Light Novel) volume 8~8.5 - Another novel where a main character dies in real world and reincarnated in another world. Not as a human but as a slime!
 
 ### Conclusion

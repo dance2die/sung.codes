@@ -27,7 +27,7 @@ What I mean by "context" is
 
 Below is the issue created with the context mentioned above. When other developers see the issue, they can reproduce the error and how to fix it easier. _without having to ask the reporter back and forth for more info._
 
-\[caption id="attachment\_1059" align="alignleft" width="357"\][![Issue with better context](./images/good-issue-357x1024.jpg)](https://github.com/codingblocks/podcast-app/issues/146) Issue with better context\[/caption\]
+\[caption id="attachment\_1059" align="alignleft" width="357"\][![Issue with better context](./images/good-issue.jpg)](https://github.com/codingblocks/podcast-app/issues/146) Issue with better context\[/caption\]
 
  
 
