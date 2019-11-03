@@ -62,15 +62,19 @@ Open cmd and go to the root of the project.
 
 Create a new "package.json" configuration file for NPM by running following command.
 
+```bash
 npm init -y
+```
 
 "-y" option creates a new file without prompting the user.
 
-##### 3\. Install Webpack and Babel
+##### 3. Install Webpack and Babel
 
 Run the following command in cmd.
 
+```bash
 npm install --save-dev webpack babel-core babel-loader babel-polyfill babel-preset-env
+```
 
 Above command will install necessary packages for Babel and Webpack.
 
@@ -84,6 +88,7 @@ Right click on "package.json" and include it in the project.
 
 If you open up "package.json", you can see that "devDependencies" section has references to Babel and Webpack.
 
+```json
 "devDependencies": {
 "babel-core": "^6.26.0",
 "babel-loader": "^7.1.2",
@@ -91,8 +96,9 @@ If you open up "package.json", you can see that "devDependencies" section has re
 "babel-preset-env": "^1.6.1",
 "webpack": "^3.10.0"
 }
+```
 
-##### 4\. Create some ES6 javascript files
+##### 4. Create some ES6 javascript files
 
 ![](./images/Script-folder.jpg)Let's create some javascript files to transpile for a test.
 
@@ -109,23 +115,27 @@ Create two javascript files under "es6" folder.
 
 ```jsx
 export default class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
 
-    speak() {
-        console.log(\`Hi I'm ${this.name} and ${this.age} years old and I am awesome\`);
-    }
+  speak() {
+    console.log(
+      `Hi I'm ${this.name} and ${this.age} years old and I am awesome`
+    )
+  }
 }
 ```
 
 **main.js**
 
-import Person from './person';
+```javascript
+import Person from "./person"
 
-var person = new Person("David", 20);
-person.speak();
+var person = new Person("David", 20)
+person.speak()
+```
 
 ##### 5. Create an ASP.NET Controller and a View
 
@@ -137,13 +147,15 @@ Right click on "View()" and click on "Add View".
 
 ![](./images/add-view.jpg)
 
-Add a script tag in "Views/Shared/\_Layout.cshtml".
+Add a script tag in `Views/Shared/_Layout.cshtml`.
 
+```html
 <script src="~/Scripts/build/bundle.js"></script>
+```
 
 ![](./images/bundle.js-script-file.jpg)
 
-##### 6\. Configure Webpack
+##### 6. Configure Webpack
 
 Create `webpack.config.js` on project root. Add following configuration option in the file.
 
@@ -162,9 +174,11 @@ Now let's update "package.json" to instruct NPM to call webpack.
 
 Add a "scripts" section.
 
+```json
 "scripts": {
 "build": "webpack"
 },
+```
 
 We can configure Visual Studio to run `npm run build` during compile time.
 
@@ -172,23 +186,27 @@ Right-click on the project and select "properties" and go to "Build Events".
 
 In the "Pre-build event command line:" enter following code snippet to run webpack when you compile the project.
 
-npm run build --prefix \$(ProjectDir)
+```bash
+npm run build --prefix $(ProjectDir)
+```
 
 ##### ![](./images/build-events.jpg)
 
-##### 7\. Configure Babel
+##### 7. Configure Babel
 
 Open "package.json" and add Babel Preset.
 
+```json
 "babel": {
-"presets": \[ "env" \]
+    "presets": [ "env" ]
 },
+```
 
 Presets are basically a set of plugins so that you don't have to specify every plugin that are needed by Babel one by one. I will use ES2015 preset, which includes all Babel plugins listed here.
 
 You can find a list of all Official Babel Presets in this [link](https://babeljs.io/docs/plugins/#presets-official-presets).
 
-##### 8\. Run ASP.NET MVC
+##### 8. Run ASP.NET MVC
 
 Run the project by pressing "F5".
 
@@ -196,13 +214,15 @@ If you see "Hi I'm David and 20 years old and I am awesome", then it's set up pr
 
 ![](./images/running-result.jpg)
 
-##### 9\. Monitoring file changes with npm-watch
+##### 9. Monitoring file changes with npm-watch
 
 Everything up and running now but the problem is that when you make a file change and refresh the browser, the change would not take an effect.
 
 There are many ways to monitor files changes but I will show you how to install and configure [npm-watch](https://www.npmjs.com/package/npm-watch) to do so. Let's install the `npm-watch` via NPM command.
 
+```bash
 npm install --save-dev npm-watch
+```
 
 We need to add a configuration for the command installed in `package.json`.
 
@@ -225,9 +245,9 @@ The command will watch for the javascript file changes. Let's update the `speak(
 ```javascript
 export default class Person {
 //... constructor...
-speak() {
-console.log(\`Hi I'm ${this.name} and ${this.age} years old and I love CodingBlocks podcast!\`);
-}
+    speak() {
+    console.log(`Hi I'm ${this.name} and ${this.age} years old and I love CodingBlocks podcast!`);
+    }
 ...
 ```
 
