@@ -33,6 +33,16 @@ module.exports = {
             },
           },
           { resolve: "gatsby-remark-embedder" },
+          // https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/?=gatsby-remark-prismjs
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: null,
+              aliases: { sh: "bash", react: "jsx" },
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
         ],
       },
     },
