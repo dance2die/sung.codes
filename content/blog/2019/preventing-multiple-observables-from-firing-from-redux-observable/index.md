@@ -23,7 +23,7 @@ Below shows multiple "ping/pong" actions being dispatched as you click on "PING"
 
 The code that generated the mess above is shown below.
 
-<script src="https://gist.github.com/dance2die/dc5105212fb76aa64fb0c41cc3389eec.js"></script>
+``gist:dance2die/dc5105212fb76aa64fb0c41cc3389eec``
 
 <a href="https://gist.github.com/dance2die/dc5105212fb76aa64fb0c41cc3389eec">View this gist on GitHub</a>
 
@@ -31,7 +31,7 @@ For being a new RxJS (, which is a prerequisite for `redux-observable`) user, I 
 
 [Kevin Ghadyani](http://kevinghadyani.info/) generously spent time to review the code and provide a solution for the issue.
 
-<script src="https://gist.github.com/dance2die/236f83b3e9777089f51fdb88bee0a1a9.js"></script>
+``gist:dance2die/236f83b3e9777089f51fdb88bee0a1a9``
 
 <a href="https://gist.github.com/dance2die/236f83b3e9777089f51fdb88bee0a1a9">View this gist on GitHub</a>
 
@@ -43,6 +43,6 @@ https://codesandbox.io/s/basic-example-kgq57
 
 Kevin also shows how to accomplish the same task using [takeUntil](https://rxjs.dev/api/operators/takeUntil).
 
-<script src="https://gist.github.com/dance2die/3eecf3ac350c6470ab64078bb6b1e783.js"></script>
+``gist:dance2die/3eecf3ac350c6470ab64078bb6b1e783``
 
 <a href="https://gist.github.com/dance2die/3eecf3ac350c6470ab64078bb6b1e783">View this gist on GitHub</a>

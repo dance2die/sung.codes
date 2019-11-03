@@ -16,7 +16,7 @@ Emoji displayed as gobbledygook
 
 The problem was that I had to instruct Chrome that I am using a unicode by adding a charset meta tag.
 
-<script src="https://gist.github.com/dance2die/ab0741ac11b3116d0020075d7d87c8bc.js"></script>
+``gist:dance2die/ab0741ac11b3116d0020075d7d87c8bc``
 
 <a href="https://gist.github.com/dance2die/ab0741ac11b3116d0020075d7d87c8bc">View this gist on GitHub</a>
 

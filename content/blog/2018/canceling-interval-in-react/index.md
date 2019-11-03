@@ -16,7 +16,7 @@ I will talk about how to handle `setInterval` in React
 
 Let's create a very "contrived" example that prints "hello world" every second in console.
 
-<script src="https://gist.github.com/dance2die/e7108c9dc2d25e2a3d651b427965f425.js"></script>
+``gist:dance2die/e7108c9dc2d25e2a3d651b427965f425``
 
 <a href="https://gist.github.com/dance2die/e7108c9dc2d25e2a3d651b427965f425">View this gist on GitHub</a>
 
@@ -40,7 +40,7 @@ You need to save the interval ID when you call the `setInterval`.
 
 _Reference_: [WindowOrWorkerGlobalScope.setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval#Return_value)
 
-<script src="https://gist.github.com/dance2die/75fcb22f74c265cf545917a9441f0242.js"></script>
+``gist:dance2die/75fcb22f74c265cf545917a9441f0242``
 
 <a href="https://gist.github.com/dance2die/75fcb22f74c265cf545917a9441f0242">View this gist on GitHub</a>
 
@@ -48,7 +48,7 @@ To cancel `setInterval`, you need to call \`clearInterval\`, which require the i
 
 The best place to do is right before the component unmounts ([componentWillUnmount](http://componentWillUnmount())).
 
-<script src="https://gist.github.com/dance2die/da463930aa353665d8026d2225291c00.js"></script>
+``gist:dance2die/da463930aa353665d8026d2225291c00``
 
 <a href="https://gist.github.com/dance2die/da463930aa353665d8026d2225291c00">View this gist on GitHub</a>
 

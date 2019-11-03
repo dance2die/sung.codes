@@ -32,7 +32,7 @@ _I will show you why later why an array would not work._
 
 Suppose that you have an object with DOM as keys.
 
-<script src="https://gist.github.com/dance2die/6360ef553f47a015a38964bbacd329af.js"></script>
+``gist:dance2die/6360ef553f47a015a38964bbacd329af``
 
 <a href="https://gist.github.com/dance2die/6360ef553f47a015a38964bbacd329af">View this gist on GitHub</a>
 
@@ -44,7 +44,7 @@ _You don't want to restrict the value, not the property._
 
 So you need to extract keys from the `doms` to restrict allowable values, using `keyof` operator.
 
-<script src="https://gist.github.com/dance2die/f6f5a0cfd672f2940c895594faff7bff.js"></script>
+``gist:dance2die/f6f5a0cfd672f2940c895594faff7bff``
 
 <a href="https://gist.github.com/dance2die/f6f5a0cfd672f2940c895594faff7bff">View this gist on GitHub</a>
 
@@ -61,7 +61,7 @@ You can see that `a` has `a`, `div`, and `p` as properties while `b` is recogniz
 
 Suppose that you have a function that accepts a variable of type `DOMType`.
 
-<script src="https://gist.github.com/dance2die/e3b0dc753d6975d30ec328f41000cb74.js"></script>
+``gist:dance2die/e3b0dc753d6975d30ec328f41000cb74``
 
 <a href="https://gist.github.com/dance2die/e3b0dc753d6975d30ec328f41000cb74">View this gist on GitHub</a>
 
@@ -74,7 +74,7 @@ When you pass values other than `a`, `div`, `p`, you get an error message during
 
 You might have declared a list of values as an array.
 
-<script src="https://gist.github.com/dance2die/5ad09130defbd016a8b28afe00a5e030.js"></script>
+``gist:dance2die/5ad09130defbd016a8b28afe00a5e030``
 
 <a href="https://gist.github.com/dance2die/5ad09130defbd016a8b28afe00a5e030">View this gist on GitHub</a>
 

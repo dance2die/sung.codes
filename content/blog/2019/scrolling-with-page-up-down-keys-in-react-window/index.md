@@ -54,7 +54,7 @@ First you need to wrap the list within a container element such as `div/section/
 
 And then [add the tab index to capture the onKeyDown event](https://stackoverflow.com/a/44434971/4035).
 
-<script src="https://gist.github.com/dance2die/6a7e17fd60f77e2ba47ba4bb7fa599a5.js"></script>
+``gist:dance2die/6a7e17fd60f77e2ba47ba4bb7fa599a5``
 
 <a href="https://gist.github.com/dance2die/6a7e17fd60f77e2ba47ba4bb7fa599a5">View this gist on GitHub</a>
 
@@ -62,7 +62,7 @@ And then [add the tab index to capture the onKeyDown event](https://stackoverflo
 
 Next, we need to refer to the list to scroll so create two (you can create one but it's more readable with two, I will show you why later) references to the List.
 
-<script src="https://gist.github.com/dance2die/831038fd5f895b0685fcce7fd8bf3bd0.js"></script>
+``gist:dance2die/831038fd5f895b0685fcce7fd8bf3bd0``
 
 <a href="https://gist.github.com/dance2die/831038fd5f895b0685fcce7fd8bf3bd0">View this gist on GitHub</a>
 
@@ -80,7 +80,7 @@ _Without_ `_innerRef_`_, you refer to it as_ `_outerRef.current.firstElementChil
 
 Let's add the `onKeyDown` event handler, which is fired whenever you hold down any keys.
 
-<script src="https://gist.github.com/dance2die/a1306474efb3c85e0b4f129084442b2d.js"></script>
+``gist:dance2die/a1306474efb3c85e0b4f129084442b2d``
 
 <a href="https://gist.github.com/dance2die/a1306474efb3c85e0b4f129084442b2d">View this gist on GitHub</a>
 
@@ -116,7 +116,7 @@ Scrolling mutating the DOM
 
 _Refer to Kent C. Dodds' post_ [_useEffect vs useLayoutEffect_](https://kentcdodds.com/blog/useeffect-vs-uselayouteffect) _for difference between them._
 
-<script src="https://gist.github.com/dance2die/f4ec9b5c449e63deccdf42973d27942d.js"></script>
+``gist:dance2die/f4ec9b5c449e63deccdf42973d27942d``
 
 <a href="https://gist.github.com/dance2die/f4ec9b5c449e63deccdf42973d27942d">View this gist on GitHub</a>
 

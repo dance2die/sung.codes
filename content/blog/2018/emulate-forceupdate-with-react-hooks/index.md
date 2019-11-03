@@ -23,7 +23,7 @@ Donavon's twit on forceUpdate
 
 Here is the copy/pastable code snippet.
 
-<script src="https://gist.github.com/dance2die/59a29c7b9a6be44d59a3f2893dac5c1e.js"></script>
+``gist:dance2die/59a29c7b9a6be44d59a3f2893dac5c1e``
 
 <a href="https://gist.github.com/dance2die/59a29c7b9a6be44d59a3f2893dac5c1e">View this gist on GitHub</a>
 

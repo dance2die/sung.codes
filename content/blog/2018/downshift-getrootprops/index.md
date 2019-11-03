@@ -9,19 +9,19 @@ Self note while learning [Downshift](https://github.com/paypal/downshift) by [Ke
 
 Downshift requires you to have `div` as the root element.
 
-<script src="https://gist.github.com/dance2die/4f05ccbc6475189a3bc5468e586dd491.js"></script>
+``gist:dance2die/4f05ccbc6475189a3bc5468e586dd491``
 
 <a href="https://gist.github.com/dance2die/4f05ccbc6475189a3bc5468e586dd491">View this gist on GitHub</a>
 
 When Downshift's child is not a `div` (to extract the functionality into a different component) then [getRootProps](https://github.com/paypal/downshift#getrootprops) should be called.
 
-<script src="https://gist.github.com/dance2die/22913120840120043c2e13bad5b8c4f0.js"></script>
+``gist:dance2die/22913120840120043c2e13bad5b8c4f0``
 
 <a href="https://gist.github.com/dance2die/22913120840120043c2e13bad5b8c4f0">View this gist on GitHub</a>
 
 And make sure to set the inner component's root element `ref` to the `refKey` assigned in `getRootProps`.
 
-<script src="https://gist.github.com/dance2die/3226f4197ef59f8ed4a57c0fc3dbf28b.js"></script>
+``gist:dance2die/3226f4197ef59f8ed4a57c0fc3dbf28b``
 
 <a href="https://gist.github.com/dance2die/3226f4197ef59f8ed4a57c0fc3dbf28b">View this gist on GitHub</a>
 

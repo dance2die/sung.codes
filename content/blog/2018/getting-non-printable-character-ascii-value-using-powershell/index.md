@@ -19,7 +19,7 @@ But it wasn't showing the white text at the end of the text.
 
 So I asked him to him to copy the white space then fire up PowerShell as I needed to see if the white space is indeed `32` in ASCII value.
 
-<script src="https://gist.github.com/dance2die/e3b94fe298bcd67c8acdd482b826a3b0.js"></script>
+``gist:dance2die/e3b94fe298bcd67c8acdd482b826a3b0``
 
 <a href="https://gist.github.com/dance2die/e3b94fe298bcd67c8acdd482b826a3b0">View this gist on GitHub</a>
 

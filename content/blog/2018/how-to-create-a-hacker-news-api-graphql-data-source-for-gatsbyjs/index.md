@@ -53,15 +53,15 @@ Now let's see how one can turn Hacker News API into a GraphQL Source by wrapping
 
 Let's get all top level story IDs from HN API.
 
-gist:dance2die/342880490bd1d274625bcc928b6ca358
+`gist:dance2die/342880490bd1d274625bcc928b6ca358`
 
 There are duplicate stories in Top, New, and Best stories. So let's cache only distinct story IDs.
 
-gist:dance2die/cf9a6685c577b704a0317b9043dcc910
+`gist:dance2die/cf9a6685c577b704a0317b9043dcc910`
 
 Getting all stories is as simple as calling an endpoint with story ID as part of the URL.
 
-gist:dance2die/cb721d594a3c717569499f6239901710
+`gist:dance2die/cb721d594a3c717569499f6239901710`
 
 You are creating sources for "Top", "New", and "Best" stories where "data" contains arrays of story IDs that were fetched in previously.
 
@@ -71,11 +71,11 @@ We've now fetched all data, now let's create story nodes  to expose it for Gats
 
 We've retrieved `top/new/BestResults` from the previous step, and we now use them to create nodes as shown above.
 
-gist:dance2die/2751e37f89bba9cd2f963294df42a6d8
+`gist:dance2die/2751e37f89bba9cd2f963294df42a6d8`
 
 Let's take a look at the implementation of aptly named, `createStoryNodes` method.
 
-gist:dance2die/ba1a6630fcae0f7a9e7932334e9a1697
+`gist:dance2die/ba1a6630fcae0f7a9e7932334e9a1697`
 
 The shape is defined by `storyNode` between line 4~11. Let's go over each property.
 
@@ -97,13 +97,13 @@ The shape is defined by `storyNode` between line 4~11. Let's go over each proper
 
 Remember that we defined `getStories` function but never called? `items` is a map of all stories fetched using `getStories` as shown below.
 
-gist:dance2die/6ef5401930840c141464a2e2965af038
+`gist:dance2die/6ef5401930840c141464a2e2965af038`
 
 The code above fetches stories and caches them into a map, from which we can construct the stories with. _A new [Map object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) (**not** [Array#map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)) is used for a constant time ([O(1)](https://en.wikipedia.org/wiki/Time_complexity#Constant_time)) look up for an efficient data retrieval._
 
 [Content Digest](https://www.gatsbyjs.org/docs/bound-action-creators/#createNode) (scroll down to "Parameters") helps GatsbyJS track whether data has been changed or not enabling it to be more efficient. The implementation of `buildContentDigest` is shown below.
 
-gist:dance2die/dba912d6e2ad633b02e06f633015e502
+`gist:dance2die/dba912d6e2ad633b02e06f633015e502`
 
 It uses to serialize story into a hex representation using MD5 hashing algorithm. _Honestly again, I used the implementation in the documentation as I don't know much about GatsbyJS's internal details._
 
@@ -111,19 +111,19 @@ It uses to serialize story into a hex representation using MD5 hashing algorithm
 
 Now you export the stories source for GatsbyJS at the bottom of `gatsby-node.js` file.
 
-gist:dance2die/0b2c3858ed300836f2efebec8e34b655
+`gist:dance2die/0b2c3858ed300836f2efebec8e34b655`
 
 ##  📞 How to call (use the source)
 
 GatsbyJS automatically converts ``graphql`...` `` function [behind the scene](https://www.gatsbyjs.org/tutorial/part-four/#wait--where-did-the-graphql-tag-come-from), so all you have to do is to query the data source you created ([full source](https://github.com/dance2die/SHANc/blob/master/src/pages/index.js)).
 
-gist:dance2die/6d6b4234050801d4c90b05ea64fd5396
+`gist:dance2die/6d6b4234050801d4c90b05ea64fd5396`
 
 GatsbyJS passes a prop containing `data` property, which in turn contains actual data fetched using GraphQL.
 
 Here is the full source code of [gatsby-node.js](https://github.com/dance2die/SHANc/blob/master/gatsby-node.js).
 
-gist:dance2die/86b91a3e8544676d51f3a6f2cfe53d55
+`gist:dance2die/86b91a3e8544676d51f3a6f2cfe53d55`
 
 ## 👋 Parting Words
 

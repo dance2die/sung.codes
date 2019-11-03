@@ -159,7 +159,7 @@ Add a script tag in `Views/Shared/_Layout.cshtml`.
 
 Create `webpack.config.js` on project root. Add following configuration option in the file.
 
-gist:dance2die/7898ed6dbfc121e6844a12beec114ea6
+`gist:dance2die/7898ed6dbfc121e6844a12beec114ea6`
 
 - "entry" indicates files for webpack to work on.
 - "output" specifies which folder ("path") to write to while "filename" specifies what the result file name should be.

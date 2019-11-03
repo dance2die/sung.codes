@@ -30,7 +30,7 @@ After searching for "files.assocations", copy `"files.assocations": {}` to clipb
 
 On the right side under "user settings" tab, add
 
-gist:dance2die/f166bfa67e41fb91a8e051a013ac5550
+`gist:dance2die/f166bfa67e41fb91a8e051a013ac5550`
 
 ![](./images/Add-a-custom-user-setting-all.jpg)
 

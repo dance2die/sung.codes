@@ -31,7 +31,7 @@ So you can specify the same redirects rule as you would have done in \_redirects
 
 _Netlify TOML file contains an instruction for Netlify how to build & deploy your site_
 
-<script src="https://gist.github.com/dance2die/082d03441aa832ee65f80eb5e3c9f322.js"></script>
+``gist:dance2die/082d03441aa832ee65f80eb5e3c9f322``
 
 <a href="https://gist.github.com/dance2die/082d03441aa832ee65f80eb5e3c9f322">View this gist on GitHub</a>
 

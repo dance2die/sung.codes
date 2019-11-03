@@ -61,7 +61,7 @@ Both accepts an iterable object but
 
 Now let's take a look at existing/upcoming combinator methods.
 
-<script src="https://gist.github.com/dance2die/9d9f7531775efed3eca1ad70bfd17a73.js"></script>
+``gist:dance2die/9d9f7531775efed3eca1ad70bfd17a73``
 
 <a href="https://gist.github.com/dance2die/9d9f7531775efed3eca1ad70bfd17a73">View this gist on GitHub</a>
 
@@ -77,7 +77,7 @@ Now let's move on to learn more about each method.
 
 ### 🔆 Example
 
-<script src="https://gist.github.com/dance2die/9ba18d739224d408af8a8f239cde9a2b.js"></script>
+``gist:dance2die/9ba18d739224d408af8a8f239cde9a2b``
 
 <a href="https://gist.github.com/dance2die/9ba18d739224d408af8a8f239cde9a2b">View this gist on GitHub</a>
 
@@ -94,7 +94,7 @@ The latter example using `promisesWithOneReject` shows that one rejected promise
 
 ### 🔆 Example
 
-<script src="https://gist.github.com/dance2die/e6f491a82eb10a28f3743f68f5c9d4fe.js"></script>
+``gist:dance2die/e6f491a82eb10a28f3743f68f5c9d4fe``
 
 <a href="https://gist.github.com/dance2die/e6f491a82eb10a28f3743f68f5c9d4fe">View this gist on GitHub</a>
 
@@ -114,7 +114,7 @@ To differentiate if resolved values were successful, they are returned as an arr
 
 ### 🔆 Example
 
-<script src="https://gist.github.com/dance2die/e59a0f90b6a0ea585520b994652bfb55.js"></script>
+``gist:dance2die/e59a0f90b6a0ea585520b994652bfb55``
 
 <a href="https://gist.github.com/dance2die/e59a0f90b6a0ea585520b994652bfb55">View this gist on GitHub</a>
 
@@ -136,7 +136,7 @@ From these examples, you can see that the first settled state (fulfilled or reje
 
 ### 🔆 Example
 
-<script src="https://gist.github.com/dance2die/992a1157c191eca2b277e1380b323e8b.js"></script>
+``gist:dance2die/992a1157c191eca2b277e1380b323e8b``
 
 <a href="https://gist.github.com/dance2die/992a1157c191eca2b277e1380b323e8b">View this gist on GitHub</a>
 

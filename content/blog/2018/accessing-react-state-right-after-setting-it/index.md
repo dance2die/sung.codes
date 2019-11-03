@@ -62,7 +62,7 @@ The callback is called after the state has updated using `updater` method thus t
 
 Here is the updated code & the demo.  
 
-<script src="https://gist.github.com/dance2die/8afe95dedfbe62e77de813ae2b41a2b0.js"></script>
+``gist:dance2die/8afe95dedfbe62e77de813ae2b41a2b0``
 
 <a href="https://gist.github.com/dance2die/8afe95dedfbe62e77de813ae2b41a2b0">View this gist on GitHub</a>
 
@@ -76,7 +76,7 @@ _I haven't been able to find the reason for it, but my guess is because `compone
 
 Here is the code using `componentDidUpdate`.
 
-<script src="https://gist.github.com/dance2die/a728b6f1819ede5e1beefeedd64f2e24.js"></script>
+``gist:dance2die/a728b6f1819ede5e1beefeedd64f2e24``
 
 <a href="https://gist.github.com/dance2die/a728b6f1819ede5e1beefeedd64f2e24">View this gist on GitHub</a>
 

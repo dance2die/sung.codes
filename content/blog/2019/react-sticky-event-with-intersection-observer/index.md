@@ -68,7 +68,7 @@ Here is the how one might use the component to observe un/stuck events.
 
 <a href="undefined">View this gist on GitHub</a>
 
-<script src="https://gist.github.com/dance2die/a39355c83f23f5e8c66747eb612c7c3a.js"></script>
+``gist:dance2die/a39355c83f23f5e8c66747eb612c7c3a``
 
 <a href="https://gist.github.com/dance2die/a39355c83f23f5e8c66747eb612c7c3a">View this gist on GitHub</a>
 
@@ -92,7 +92,7 @@ _I wasn't even sure if it'd work but that's how I wanted the components to work.
 
 Let's take a look at how it's implemented.
 
-<script src="https://gist.github.com/dance2die/d2c410470a75b612ec38e94af3011126.js"></script>
+``gist:dance2die/d2c410470a75b612ec38e94af3011126``
 
 <a href="https://gist.github.com/dance2die/d2c410470a75b612ec38e94af3011126">View this gist on GitHub</a>
 
@@ -118,7 +118,7 @@ The difference in `StickyProvider` is that, instead of exposing raw `dispatch` f
 
 _I'd recommend reading Kent's article before moving on._
 
-<script src="https://gist.github.com/dance2die/07659aef6b54ed1305bb67f7fe88498d.js"></script>
+``gist:dance2die/07659aef6b54ed1305bb67f7fe88498d``
 
 <a href="https://gist.github.com/dance2die/07659aef6b54ed1305bb67f7fe88498d">View this gist on GitHub</a>
 
@@ -141,7 +141,7 @@ Now we have enough context with state & actions, let's move on and see implement
 
 The outline of `StickyBoundary` looks as below.
 
-<script src="https://gist.github.com/dance2die/c494a38b8923f83f1e4ee4963817d14e.js"></script>
+``gist:dance2die/c494a38b8923f83f1e4ee4963817d14e``
 
 <a href="https://gist.github.com/dance2die/c494a38b8923f83f1e4ee4963817d14e">View this gist on GitHub</a>
 
@@ -159,7 +159,7 @@ Now let's implement hooks.
 
 #### 🎣 useSentinelOffsets
 
-<script src="https://gist.github.com/dance2die/b334739cabccfc716d1b177f303af947.js"></script>
+``gist:dance2die/b334739cabccfc716d1b177f303af947``
 
 <a href="https://gist.github.com/dance2die/b334739cabccfc716d1b177f303af947">View this gist on GitHub</a>
 
@@ -172,7 +172,7 @@ Now let's implement hooks.
 
 #### 🎣 useObserveTopSentinels
 
-<script src="https://gist.github.com/dance2die/f26f7b64094d635ae8de5498c3ac4cb1.js"></script>
+``gist:dance2die/f26f7b64094d635ae8de5498c3ac4cb1``
 
 <a href="https://gist.github.com/dance2die/f26f7b64094d635ae8de5498c3ac4cb1">View this gist on GitHub</a>
 
@@ -193,7 +193,7 @@ The structure is about the same as `useObserveTopSentinels` so will be skipping 
 
 The only difference is the logic to calculate when to fire the un/stuck event depending on the position of BOTTOM sentinel, which was discussed in the Google doc.
 
-<script src="https://gist.github.com/dance2die/f813bd90dcf680bf67fdde163dca3a89.js"></script>
+``gist:dance2die/f813bd90dcf680bf67fdde163dca3a89``
 
 <a href="https://gist.github.com/dance2die/f813bd90dcf680bf67fdde163dca3a89">View this gist on GitHub</a>
 
@@ -201,7 +201,7 @@ Now time for the last component, `Sticky`, which will "stick" the child componen
 
 ### ⚛ Sticky
 
-<script src="https://gist.github.com/dance2die/4483589c5ff5ed9cc9a6fc9ecd2588be.js"></script>
+``gist:dance2die/4483589c5ff5ed9cc9a6fc9ecd2588be``
 
 <a href="https://gist.github.com/dance2die/4483589c5ff5ed9cc9a6fc9ecd2588be">View this gist on GitHub</a>
 

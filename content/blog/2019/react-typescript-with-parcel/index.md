@@ -14,7 +14,7 @@ Parcel Documentation has a whole (short but complete) section on how to use Type
 
 Just include TypeScript file (either `.ts` or `.tsx` for React components) in an HTML file, and Parcel will know what to do with it.
 
-<script src="https://gist.github.com/dance2die/18a5d6e192c3bab736b79f8abd437f7d.js"></script>
+``gist:dance2die/18a5d6e192c3bab736b79f8abd437f7d``
 
 <a href="https://gist.github.com/dance2die/18a5d6e192c3bab736b79f8abd437f7d">View this gist on GitHub</a>
 
@@ -22,7 +22,7 @@ including TypeScript file
 
 One caveat is that you need to set a `jsx` option in `tsconfig.json` to `react` for it to work.
 
-<script src="https://gist.github.com/dance2die/d3e4b01bbf49c09c82103be4137d31f2.js"></script>
+``gist:dance2die/d3e4b01bbf49c09c82103be4137d31f2``
 
 <a href="https://gist.github.com/dance2die/d3e4b01bbf49c09c82103be4137d31f2">View this gist on GitHub</a>
 

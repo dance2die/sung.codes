@@ -6,7 +6,7 @@ coverImage: "featured-image.jpg"
 
 As I was chatting, someone from [Coding Blocks slack channel](https://www.codingblocks.net/slack/) (#javascript) has asked a question regarding a code snippet
 
-gist:dance2die/1c0f3799d371c2c4bdaf1603ed32f228
+`gist:dance2die/1c0f3799d371c2c4bdaf1603ed32f228`
 
 His question was "Kinda lost in the `[].filter.call` , etc part."
 

@@ -18,7 +18,7 @@ As mentioned, the first problem is that, I had to manually click each link on a 
 
 So I wrote a simple JavaScript to open links in Chrome developer console.
 
-gist:dance2die/82ecc246b6def6233d94bd9acb5bad2b
+`gist:dance2die/82ecc246b6def6233d94bd9acb5bad2b`
 
 But [Chrome prevents JavaScript from opening multiple tabs](https://stackoverflow.com/a/16757736/4035). So I used Internet Explorer, which allows JavaScript to open multiple tabs. 
 

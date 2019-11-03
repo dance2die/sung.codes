@@ -146,7 +146,7 @@ This combination also solves [waterfall issue](https://www.quora.com/What-is-wat
 
 Siblings of a single Suspense run in parallel.
 
-<script src="https://gist.github.com/dance2die/a2ea846b6e5e89e157e6655854362993.js"></script>
+``gist:dance2die/a2ea846b6e5e89e157e6655854362993``
 
 <a href="https://gist.github.com/dance2die/a2ea846b6e5e89e157e6655854362993">View this gist on GitHub</a>
 

@@ -29,29 +29,29 @@ Here is an example of how you can use a Singleton pattern with a Null object pat
 
 Suppose that there is a simple factory (PaymentStrategyFactory) that returns a strategy object instance for processing a payment given a provider name.
 
-gist:dance2die/aad6b604536afeb10f71771cc42e3853
+`gist:dance2die/aad6b604536afeb10f71771cc42e3853`
 
 PayPal & ApplePay strategies return "Successful" or "Failed" process status at random.
 
-gist:dance2die/8d0f0f6f47f01a516f1657a7e500dd7b
+`gist:dance2die/8d0f0f6f47f01a516f1657a7e500dd7b`
 
-gist:dance2die/496655cf6ec63b4dd74da93c4e6e180b
+`gist:dance2die/496655cf6ec63b4dd74da93c4e6e180b`
 
 If a provider name is not supported, the `PaymentStrategyFactory` simply returns an object of type `NullPaymentStrategy`, which implements `IPaymentStrategy`.
 
 Singleton instance is achieved with a private constructor and a static `Instance` property.
 
-gist:dance2die/8ae2a62261d3784c713a44b6eed24b56
+`gist:dance2die/8ae2a62261d3784c713a44b6eed24b56`
 
-gist:dance2die/dee349d007060c5701652fadfcbc4009
+`gist:dance2die/dee349d007060c5701652fadfcbc4009`
 
 Let's put them together and process payments.
 
-gist:dance2die/5897ad07ed0411dfec9cc2c22b0d3fbc
+`gist:dance2die/5897ad07ed0411dfec9cc2c22b0d3fbc`
 
 Results of `ProcessPayments()`.
 
-gist:dance2die/1c76839c8c7f358018c2df0fa27ee2a0
+`gist:dance2die/1c76839c8c7f358018c2df0fa27ee2a0`
 
 ### Conclusion
 

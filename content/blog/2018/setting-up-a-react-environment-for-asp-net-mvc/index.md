@@ -55,7 +55,7 @@ npm Configuration File
 
 And add a script section. And `package.json` would initially look like the following.
 
-<script src="https://gist.github.com/dance2die/b41670c22bef4553e197e3efcb43c664.js"></script>
+``gist:dance2die/b41670c22bef4553e197e3efcb43c664``
 
 <a href="https://gist.github.com/dance2die/b41670c22bef4553e197e3efcb43c664">View this gist on GitHub</a>
 
@@ -65,7 +65,7 @@ Add a new file named `.babelrc` in the same directory as `package.json` file cre
 
 And add following babel options.
 
-<script src="https://gist.github.com/dance2die/a33a0590d930276754ca9b814707fba7.js"></script>
+``gist:dance2die/a33a0590d930276754ca9b814707fba7``
 
 <a href="https://gist.github.com/dance2die/a33a0590d930276754ca9b814707fba7">View this gist on GitHub</a>
 
@@ -77,13 +77,13 @@ And add following babel options.
 
 Create a file named `webpack.config.js` in the project root (same location as `package.json` & `.babelrc`) & configure it as shown below.
 
-<script src="https://gist.github.com/dance2die/ce43a01f962ef07c7ad89a19d92428e5.js"></script>
+``gist:dance2die/ce43a01f962ef07c7ad89a19d92428e5``
 
 <a href="https://gist.github.com/dance2die/ce43a01f962ef07c7ad89a19d92428e5">View this gist on GitHub</a>
 
 Webpack outputs a bundle as `./Scripts/dist/Home/react/bundle.js` so let's add the script in `View\Home\Index.cshtml` razor file.
 
-<script src="https://gist.github.com/dance2die/ef395768773057d1c45d6fe54a51f344.js"></script>
+``gist:dance2die/ef395768773057d1c45d6fe54a51f344``
 
 <a href="https://gist.github.com/dance2die/ef395768773057d1c45d6fe54a51f344">View this gist on GitHub</a>
 
@@ -95,7 +95,7 @@ Bundle Script Tag
 
 Now let's install NPM packages to enable latest JavaScript and React syntax.
 
-<script src="https://gist.github.com/dance2die/502546db05519ce16c768da263c90bfd.js"></script>
+``gist:dance2die/502546db05519ce16c768da263c90bfd``
 
 <a href="https://gist.github.com/dance2die/502546db05519ce16c768da263c90bfd">View this gist on GitHub</a>
 
@@ -123,7 +123,7 @@ Let's add an entry point for React in `Views\Home\Index.cshtml` file by  deleti
 
 Now we have an entry point, let's write a simple React file `index.js` under `Scripts\Home\react` directory.
 
-<script src="https://gist.github.com/dance2die/f368f1116bbc34886334d3294817cb7c.js"></script>
+``gist:dance2die/f368f1116bbc34886334d3294817cb7c``
 
 <a href="https://gist.github.com/dance2die/f368f1116bbc34886334d3294817cb7c">View this gist on GitHub</a>
 

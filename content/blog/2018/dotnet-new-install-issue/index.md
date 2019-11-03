@@ -8,7 +8,7 @@ Photo by [Matt Lamers](https://unsplash.com/photos/R6uybPo0Lv0?utm_source=unspla
 
 .NET CLI has made it easy to create a new template. Sometimes you might get a following error message while creating a SPA template.
 
-gist:dance2die/8b718a44aa893504105337808287b21d
+`gist:dance2die/8b718a44aa893504105337808287b21d`
 
 I will show you what has caused it and how to get around it.
 

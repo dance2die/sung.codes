@@ -49,7 +49,7 @@ And then Håkon followed up with how and why `img` uses `src`.
 
 `img.src` was [proposed](http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html) by [Marc Andreessen](https://twitter.com/pmarca) and [Sir Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) (inventor of World Wide Web) favored using an anchor tag with `href`!
 
-<script src="https://gist.github.com/dance2die/7c9f90350985fbb2e2a2ba4405ce632f.js"></script>
+``gist:dance2die/7c9f90350985fbb2e2a2ba4405ce632f``
 
 <a href="https://gist.github.com/dance2die/7c9f90350985fbb2e2a2ba4405ce632f">View this gist on GitHub</a>
 

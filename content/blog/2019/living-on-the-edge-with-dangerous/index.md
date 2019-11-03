@@ -42,7 +42,7 @@ Result of DangerousApp.js
 
 As you can with SC, you can pass a component or an HTML tag to the `dangerous` like or even wrap SC component and vice versa.
 
-<script src="https://gist.github.com/dance2die/ec603aaec1fe0bf7b735762ac58b9472.js"></script>
+``gist:dance2die/ec603aaec1fe0bf7b735762ac58b9472``
 
 <a href="https://gist.github.com/dance2die/ec603aaec1fe0bf7b735762ac58b9472">View this gist on GitHub</a>
 

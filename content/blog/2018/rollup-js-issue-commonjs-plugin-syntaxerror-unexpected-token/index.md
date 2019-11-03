@@ -8,7 +8,7 @@ I have an NPM library, [calendar-dates](https://www.npmjs.com/package/calendar-d
 
 > \[!\] (commonjs plugin) SyntaxError: Unexpected token
 
-gist:dance2die/475dcb2ce42e908ea5cf94eb488654df
+`gist:dance2die/475dcb2ce42e908ea5cf94eb488654df`
 
 I'll show you what I did and how I fixed the error. (I will assume that you are familiar with static class properties in ES6 and RollUp)
 
@@ -16,19 +16,19 @@ I'll show you what I did and how I fixed the error. (I will assume that you are 
 
 My main class `CalendarDates` is declared with the static property, `monthTypes`, which caused the error in the introduction.
 
-gist:dance2die/1a7f2bb3a09335cbb196d49cd06158ea
+`gist:dance2die/1a7f2bb3a09335cbb196d49cd06158ea`
 
 I installed the Class properties transform Babel plugin to the project as a devdependency.
 
-gist:dance2die/1486b7edfa11770bafe99a35e63b080a
+`gist:dance2die/1486b7edfa11770bafe99a35e63b080a`
 
 And added `transform-class-properties` plugin in `.babelrc` file.
 
-gist:dance2die/5505066d00e500a09c1fa160aa74f4a4
+`gist:dance2die/5505066d00e500a09c1fa160aa74f4a4`
 
 Below was my original `rollup.config.js` file.
 
-gist:dance2die/7141177812ed6f382e24804614766a66
+`gist:dance2die/7141177812ed6f382e24804614766a66`
 
 The configuration takes `src/index.js` file as an input then
 
@@ -50,13 +50,13 @@ It turns out that my logic was half-right.
 
 What I had to do  was to transpile (with Babel) before piping the code into `commonjs()`.
 
-gist:dance2die/835d1fbb8b013d6f7be4fd63d08554f4
+`gist:dance2die/835d1fbb8b013d6f7be4fd63d08554f4`
 
 Basically Babel converts ES6 code into ES5 and then `commonjs()` converts that ES5 back to ES6 so that the library can be `import`'ed in ES6 code. The order of how plugins are added matters!
 
 Here is the result after the change.
 
-gist:dance2die/fb20a6e91439c9521ad46f97338e371d
+`gist:dance2die/fb20a6e91439c9521ad46f97338e371d`
 
 I hope you were making 😁 if you were having a similar issue.
 

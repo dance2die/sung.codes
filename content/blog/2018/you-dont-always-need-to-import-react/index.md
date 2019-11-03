@@ -31,7 +31,7 @@ No. not unless you use React object for your component.
 
 You can create a [**"function"** component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) that returns value(s) of a simple JavaScript primitives, such as string or number.
 
-<script src="https://gist.github.com/dance2die/9202791c070d40ac3274731ab762e587.js"></script>
+``gist:dance2die/9202791c070d40ac3274731ab762e587``
 
 <a href="https://gist.github.com/dance2die/9202791c070d40ac3274731ab762e587">View this gist on GitHub</a>
 
@@ -43,7 +43,7 @@ In this case, `React` object is not used anywhere so you can leave out the impor
 
 And then you can import `App.js` just like any React component (Line #4).
 
-<script src="https://gist.github.com/dance2die/833e1c1977ef11b10ce59fbbb3ea1bb8.js"></script>
+``gist:dance2die/833e1c1977ef11b10ce59fbbb3ea1bb8``
 
 <a href="https://gist.github.com/dance2die/833e1c1977ef11b10ce59fbbb3ea1bb8">View this gist on GitHub</a>
 

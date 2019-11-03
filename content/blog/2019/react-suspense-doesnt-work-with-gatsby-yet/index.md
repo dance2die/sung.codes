@@ -31,7 +31,7 @@ Gatsby [uses ReactDOMServer in the build process](https://github.com/gatsbyjs/ga
 
 Below is the offending code using React.lazy causing the issue.
 
-<script src="https://gist.github.com/dance2die/57aef9fb69e78008c8e693b9487a0998.js"></script>
+``gist:dance2die/57aef9fb69e78008c8e693b9487a0998``
 
 <a href="https://gist.github.com/dance2die/57aef9fb69e78008c8e693b9487a0998">View this gist on GitHub</a>
 
@@ -47,7 +47,7 @@ We need to keep the components loaded in a state, so let's use [useState](https:
 
 _If you want to use Class Components, refer to case #1 of my other post,_ [_Loading React Components Dynamically on Demand_](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case1), which was written when Hooks weren't available
 
-<script src="https://gist.github.com/dance2die/93bb446d110045552177025bf9f9412d.js"></script>
+``gist:dance2die/93bb446d110045552177025bf9f9412d``
 
 <a href="https://gist.github.com/dance2die/93bb446d110045552177025bf9f9412d">View this gist on GitHub</a>
 

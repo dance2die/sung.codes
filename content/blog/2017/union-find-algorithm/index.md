@@ -22,7 +22,7 @@ Union-Find made me realize the flaw in my approach that I was just busy finding 
 
 Here is the C# version of Union-Find converted from Java (using Improved algorithm, which tracks sizes)
 
-gist:dance2die/27b1c7f81bbc459c4dd7f85892f4b84e
+`gist:dance2die/27b1c7f81bbc459c4dd7f85892f4b84e`
 
 I was able to solve the problem with this code without any timeouts. Learning a new algorithm will make your day as well!
 

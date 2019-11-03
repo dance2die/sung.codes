@@ -11,7 +11,7 @@ Today I implemented "K closest points to the origin" problem in C#.
 
 ## Full Implementation
 
-<script src="https://gist.github.com/dance2die/d8d1e851c6e26236eefe90dfa93a8830.js"></script>
+``gist:dance2die/d8d1e851c6e26236eefe90dfa93a8830``
 
 <a href="https://gist.github.com/dance2die/d8d1e851c6e26236eefe90dfa93a8830">View this gist on GitHub</a>
 

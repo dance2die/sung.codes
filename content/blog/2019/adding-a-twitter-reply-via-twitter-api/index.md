@@ -18,7 +18,7 @@ The [documentation for](https://developer.twitter.com/en/docs/tweets/post-and-en
 
 Even though it says that it should be "mentioned within the status text", but it doesn't sound 100% correct as passing `username` mentioned in the following sentence was enough to trigger the reply thread.
 
-<script src="https://gist.github.com/dance2die/c4e463b8fa949d1fe7ae5761dd7ed3f9.js"></script>
+``gist:dance2die/c4e463b8fa949d1fe7ae5761dd7ed3f9``
 
 <a href="https://gist.github.com/dance2die/c4e463b8fa949d1fe7ae5761dd7ed3f9">View this gist on GitHub</a>
 

@@ -16,7 +16,7 @@ I followed TheAifam5's instruction to generate a type file and distributed it.
 
 But when I tried to use the new distrubution within a React + TypeScript project, I was getting the following error.
 
-<script src="https://gist.github.com/dance2die/2cb920c9166637535e0b44e867152042.js"></script>
+``gist:dance2die/2cb920c9166637535e0b44e867152042``
 
 <a href="https://gist.github.com/dance2die/2cb920c9166637535e0b44e867152042">View this gist on GitHub</a>
 
@@ -28,7 +28,7 @@ Error Message in VS Code
 
 Below is the full source code for `useLocalStorage`.
 
-<script src="https://gist.github.com/dance2die/004c227bd94d574c313cde52868e9cf5.js"></script>
+``gist:dance2die/004c227bd94d574c313cde52868e9cf5``
 
 <a href="https://gist.github.com/dance2die/004c227bd94d574c313cde52868e9cf5">View this gist on GitHub</a>
 
@@ -38,7 +38,7 @@ As you can see, `useLocalStorage` returns an array of `[item, setItem]`.
 
 When auto-generating a type file using `tsc`, TypeScript generates following [definition code](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/implicit_return_typing/dist/index.d.ts).
 
-<script src="https://gist.github.com/dance2die/9597d9483267c0a1df837f2119bdbd60.js"></script>
+``gist:dance2die/9597d9483267c0a1df837f2119bdbd60``
 
 <a href="https://gist.github.com/dance2die/9597d9483267c0a1df837f2119bdbd60">View this gist on GitHub</a>
 
@@ -48,7 +48,7 @@ TypeScript inferred the return type as `(string | ((item: string) => void))[]` w
 
 So to fix it you need to explicitly declare the return type of `useLocalStorage` to generate a correct type definition.
 
-<script src="https://gist.github.com/dance2die/eb06fd7002fe75ce7f948fdcc754df44.js"></script>
+``gist:dance2die/eb06fd7002fe75ce7f948fdcc754df44``
 
 <a href="https://gist.github.com/dance2die/eb06fd7002fe75ce7f948fdcc754df44">View this gist on GitHub</a>
 
@@ -56,7 +56,7 @@ Return type specified explicitly
 
 You can now see that TypeScript has generated the definition correctly.
 
-<script src="https://gist.github.com/dance2die/92efeaee3c5be12a6bea18033fd09e2d.js"></script>
+``gist:dance2die/92efeaee3c5be12a6bea18033fd09e2d``
 
 <a href="https://gist.github.com/dance2die/92efeaee3c5be12a6bea18033fd09e2d">View this gist on GitHub</a>
 

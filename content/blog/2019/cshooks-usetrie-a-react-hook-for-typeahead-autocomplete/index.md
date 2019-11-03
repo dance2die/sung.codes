@@ -36,7 +36,7 @@ Demos
 
 I've created this initially for academic purposes to learn Trie data structure so `Trie` class is imperative and `useTrie` hook was forced to fit to work with declarative nature of React as shown below, which is not ideal.
 
-<script src="https://gist.github.com/dance2die/168fcb4c7e85fbe8573c160b32520250.js"></script>
+``gist:dance2die/168fcb4c7e85fbe8573c160b32520250``
 
 <a href="https://gist.github.com/dance2die/168fcb4c7e85fbe8573c160b32520250">View this gist on GitHub</a>
 

@@ -37,7 +37,7 @@ So let's see how to make CSS work locally & on CodeSandBox.
 
 The trick is to [dynamically import](https://developers.google.com/web/updates/2017/11/dynamic-import) the CSS file by checking if it's running in production or development mode.
 
-<script src="https://gist.github.com/dance2die/3e16f2eefd8615cc81ada678f7b440b0.js"></script>
+``gist:dance2die/3e16f2eefd8615cc81ada678f7b440b0``
 
 <a href="https://gist.github.com/dance2die/3e16f2eefd8615cc81ada678f7b440b0">View this gist on GitHub</a>
 

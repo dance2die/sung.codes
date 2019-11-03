@@ -16,7 +16,7 @@ How can we get around the issue?
 
 Here is the code for the first attempt.
 
-gist:dance2die/251e12bf0bb6f27c955d9f93ca50cf19
+`gist:dance2die/251e12bf0bb6f27c955d9f93ca50cf19`
 
 Above code returns following error message.
 
@@ -34,9 +34,9 @@ Instead of setting up your own proxy server, you can use Yahoo's [YQL](https://
 
 The following code snippet wraps a GoodReads URL using `[YqlAjax](https://github.com/dance2die/Blog.Javascript.GoodReadsAPI/blob/master/js/yql_ajax.js)`, which does an AJAX request and returns a promise. `secondAttempt` runs without an issue and returns a record from GoodReads.
 
-gist:dance2die/2ab0c052994b8f500501589917d7f202
+`gist:dance2die/2ab0c052994b8f500501589917d7f202`
 
-gist:dance2die/e1f033ab2a6180929cdeb71e8da5f00b
+`gist:dance2die/e1f033ab2a6180929cdeb71e8da5f00b`
 
 #### 3rd Hurdle
 
@@ -44,7 +44,7 @@ The last problem is that it's quite a pain to generate a YQL URL and is error pr
 
 There is an NPM package called [proxify-url](https://www.npmjs.com/package/proxify-url), which returns a new YQL URL given any URL. Now the code becomes simpler and you have one less file to create/maintain.
 
-gist:dance2die/f4e3fb47fe75fac1fb65cebc13f88acc
+`gist:dance2die/f4e3fb47fe75fac1fb65cebc13f88acc`
 
 One thing to note is that GoodReads API returns data in XML format instead of JSON. So you need to pass `{ inputFormat: 'xml' }` as an option to `proxyfy` method.
 

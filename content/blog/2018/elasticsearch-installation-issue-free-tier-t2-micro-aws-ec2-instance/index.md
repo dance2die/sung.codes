@@ -8,7 +8,7 @@ I installed Elasticsearch **6**.x on a free tier AWS EC2 instance type, `t2.micr
 
 Adnan used a [cURL](https://en.wikipedia.org/wiki/CURL) command to check if Elasticsearch is running or not.
 
-gist:dance2die/3dff7c0c45c8fb6e18f3b73a4dbcd316
+`gist:dance2die/3dff7c0c45c8fb6e18f3b73a4dbcd316`
 
 But then the command returned the following error message.
 
@@ -20,7 +20,7 @@ What happened?
 
 Let's see the status of Elasticsearch by running `systemctl` comamnd.
 
-gist:dance2die/b7e815a3a4e3be3f46dbc92299e7d1c7
+`gist:dance2die/b7e815a3a4e3be3f46dbc92299e7d1c7`
 
 On line #9, you can see the warning "OpenJDK 64-Bit Server VM warning" and the line #10 shows that the Elasticsearch service main process has existed right away.
 
@@ -38,7 +38,7 @@ We know the problem, so let's change the Elasticsearch JVM heap size.
 
 Open `/etc/elasticsearch/jvm.option` using an editor of your choice (I promise that I will learn either vi or emacs... 😞).
 
-gist:dance2die/f54076253a6aa402d7fa2ebffa8d2d5d
+`gist:dance2die/f54076253a6aa402d7fa2ebffa8d2d5d`
 
 When you read the comment in `jvm.options`, you should set the minimum and maximum to the same value.
 
@@ -58,7 +58,7 @@ Now update the min and max values to 512m, save the file and exit.
 
 Restart Elasticsearch service,
 
-gist:dance2die/3db44a114a46b8dfa252027f4e1f9a11
+`gist:dance2die/3db44a114a46b8dfa252027f4e1f9a11`
 
 and run the cURL command again.
 

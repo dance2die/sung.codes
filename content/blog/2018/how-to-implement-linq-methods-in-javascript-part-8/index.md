@@ -27,11 +27,11 @@ The sample collections used in this part are shown as below.
 
 ###### C#
 
-gist:dance2die/c934450e3adda0e006aab02bfcec9061
+`gist:dance2die/c934450e3adda0e006aab02bfcec9061`
 
 ###### JavaScript
 
-gist:dance2die/0f9c491d8f84f4b41084da4528df0cbb
+`gist:dance2die/0f9c491d8f84f4b41084da4528df0cbb`
 
 ### 🔴 Examples
 
@@ -39,13 +39,13 @@ gist:dance2die/0f9c491d8f84f4b41084da4528df0cbb
 
 JavaScript has a method called [Array#every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every), which works the same way as [All](https://msdn.microsoft.com/en-us/library/bb548541(v=vs.110).aspx) does.
 
-gist:dance2die/00a33b12253b93fa4c6dfbfdb6559422
+`gist:dance2die/00a33b12253b93fa4c6dfbfdb6559422`
 
-gist:dance2die/3c24269621d3314d4693c9ad3b642ce2
+`gist:dance2die/3c24269621d3314d4693c9ad3b642ce2`
 
 ###### Results
 
-gist:dance2die/039f61acb30978c45b9467a33d7cd4b4
+`gist:dance2die/039f61acb30978c45b9467a33d7cd4b4`
 
 `every` is more flexible as the callback is also passed an index.
 
@@ -55,13 +55,13 @@ gist:dance2die/039f61acb30978c45b9467a33d7cd4b4
 
 There are so many ways implement contains but i used [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) as it short circuits (returns as soon as a condition is met).
 
-gist:dance2die/b82e2d97127a6e7a0597249ef843a14e
+`gist:dance2die/b82e2d97127a6e7a0597249ef843a14e`
 
-gist:dance2die/b976e3f0bc110529b4affcd9826e8015
+`gist:dance2die/b976e3f0bc110529b4affcd9826e8015`
 
 ###### Results
 
-gist:dance2die/939db3606e183efd3f4e697e2d1ad811
+`gist:dance2die/939db3606e183efd3f4e697e2d1ad811`
 
 `OrderEqualityComparer` object instance simply checks if two objects are the same by an ID. JavaScript version simply passes a callback which does the same.
 
@@ -69,13 +69,13 @@ gist:dance2die/939db3606e183efd3f4e697e2d1ad811
 
 You can use `every` here to check if two sequences are the same as every passes an index of current element to the callback.
 
-gist:dance2die/d45973925cdf7753abef3d209c7b6ef9
+`gist:dance2die/d45973925cdf7753abef3d209c7b6ef9`
 
-gist:dance2die/80b52df7f322e4281969c08494a8c26c
+`gist:dance2die/80b52df7f322e4281969c08494a8c26c`
 
 ###### Results
 
-gist:dance2die/0640e85a90be6d3b9e55cf8381c08850
+`gist:dance2die/0640e85a90be6d3b9e55cf8381c08850`
 
 ### 🔴 Closing Remark
 

@@ -25,11 +25,11 @@ The sample collections used in this part are shown as below. (`Orders` is same a
 
 ###### C
 
-gist:dance2die/970ab56eb3e4f8bafdbb8c7efd87ab66
+`gist:dance2die/970ab56eb3e4f8bafdbb8c7efd87ab66`
 
 ###### JavaScript
 
-gist:dance2die/df3097d46a30783bcd5948384137f4c8
+`gist:dance2die/df3097d46a30783bcd5948384137f4c8`
 
 ### 🔴 Examples
 
@@ -37,13 +37,13 @@ gist:dance2die/df3097d46a30783bcd5948384137f4c8
 
 [Union](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.union(v=vs.110).aspx>) combines two sequences (of type [`IEnumerable<T>`](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>)) into one without duplicates.
 
-gist:dance2die/9bbfd498df8aff4386c2ef90eb9b476b
+`gist:dance2die/9bbfd498df8aff4386c2ef90eb9b476b`
 
-gist:dance2die/c314cca86619171bdd1f9c43f73ed4ff
+`gist:dance2die/c314cca86619171bdd1f9c43f73ed4ff`
 
 ###### Results
 
-gist:dance2die/5c9fd4d6b744e1456c431474d4d8b0f5
+`gist:dance2die/5c9fd4d6b744e1456c431474d4d8b0f5`
 
 I've extended the Array prototype to make the JavaScript version look similar to the LINQ version. 📝**NOTE**: "Union" in Lodash is named [\_.union](https://lodash.com/docs/4.17.5#union).
 
@@ -53,13 +53,13 @@ I've extended the Array prototype to make the JavaScript version look similar to
 
 How do you check for the "commonness"? [Intersect](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect(v=vs.110).aspx>) in LINQ provides an overload that lets you specify how to compare each value in two sequences by passing an object of type implementing [`IEqualityComparer<T>`](<https://msdn.microsoft.com/en-us/library/ms132151(v=vs.110).aspx>) interface.
 
-gist:dance2die/8391d61650a16a3c9c25800e305ac6e6
+`gist:dance2die/8391d61650a16a3c9c25800e305ac6e6`
 
-gist:dance2die/ace99d382339e96a75da8ac08dea8df9
+`gist:dance2die/ace99d382339e96a75da8ac08dea8df9`
 
 ###### Results
 
-gist:dance2die/a6db6ac8f6a8976e180d1d905fb4a19e
+`gist:dance2die/a6db6ac8f6a8976e180d1d905fb4a19e`
 
 Our contrived `order` array contains objects with a property called `id` so I passed a callback (`idSelector`) to let `Array.prototype.intersect` to use it to make a comparison for each value in two sequences.
 
@@ -69,13 +69,13 @@ Our contrived `order` array contains objects with a property called `id` so I pa
 
 "Except" compares two sequences and return a new sequence with values that exists in the caller but not in the compared.
 
-gist:dance2die/00b325ab6c05f3fb40f4085720c177fb
+`gist:dance2die/00b325ab6c05f3fb40f4085720c177fb`
 
-gist:dance2die/ee35c21462154dfaa9881bf81934c5d1
+`gist:dance2die/ee35c21462154dfaa9881bf81934c5d1`
 
 ###### Results
 
-gist:dance2die/61816659a4be8fd961b86c2dfdccaf78
+`gist:dance2die/61816659a4be8fd961b86c2dfdccaf78`
 
 The implementation of `Array.prototype.except` is almost same as [intersect](#intersect).
 
@@ -83,7 +83,7 @@ The only difference between `Array.prototype.intersect` and `Array.prototype.exc
 
 Take a close look at callback in `filter` method.
 
-gist:dance2die/b0d97fd31fd6eb533e9e9b81812944f5
+`gist:dance2die/b0d97fd31fd6eb533e9e9b81812944f5`
 
 📝**NOTE**: While [Except](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.except(v=vs.110).aspx>) in LINQ is similar to[ \_.differenceWith](https://lodash.com/docs/4.17.5#differenceWith) in Lodash, JavaScript version is roughly equivalent to [\_.differenceBy](https://lodash.com/docs/4.17.5#differenceBy).
 

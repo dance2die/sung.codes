@@ -23,7 +23,7 @@ You can follow along, [source code](https://github.com/dance2die/blog.passportjs
 
 This is the full error message returned while trying to authenticate with Meetup.
 
-gist:dance2die/91ffa2df32739d522abbaf25c4591e7e
+`gist:dance2die/91ffa2df32739d522abbaf25c4591e7e`
 
 Here is the video of error generated
 
@@ -33,7 +33,7 @@ https://www.youtube.com/watch?v=n70UQ9fSa7k&feature=youtu.be
 
 The error occurred due to Expression Session `cookie.secure` value.
 
-gist:dance2die/200ed52cac8bc807757fc0e6449378f1
+`gist:dance2die/200ed52cac8bc807757fc0e6449378f1`
 
 According to [Expression Session documentation](https://github.com/expressjs/session#cookiesecure) setting `cookie.secure` to `true` requires an _HTTPS enabled site_. But it's rarely the case that your development server is HTTPS enabled.
 
@@ -41,7 +41,7 @@ You could set the `cookie.secure` value to `false` while developing and set it t
 
 But you can do better by setting `cookie.secure` value to a non-Boolean value, `auto`, which will automatically set to true or false depending on the security of current connection.
 
-gist:dance2die/1f214f773f0661f8e3ac6f5a4327400d
+`gist:dance2die/1f214f773f0661f8e3ac6f5a4327400d`
 
 ### Running the updated code
 

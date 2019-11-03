@@ -28,7 +28,7 @@ I'd like to show you how to get ReactJS.org page up and running on Windows 10.
         3. Go to the cloned directory - `cd reactjs.org`
 4. Check out a branch - `git checkout -b <<branch name>>`
 
-gist:dance2die/bf779008e0f845c455cef456b1922bf7
+`gist:dance2die/bf779008e0f845c455cef456b1922bf7`
 
 ### Node-Gyp NPM package installation issue
 
@@ -36,7 +36,7 @@ Now you got the source, let's install NPM packages using `yarn`.
 
 But it will fail due to [node-gyp](https://github.com/nodejs/node-gyp) issue.
 
-gist:dance2die/4485bcc2f0843bf542df262cc1b2b35c
+`gist:dance2die/4485bcc2f0843bf542df262cc1b2b35c`
 
 (In my case, I was missing Python 2.7)
 
@@ -49,7 +49,7 @@ I recommend using NPM command since it's easier.
 
 After successfully installing "node-gyp", run `yarn` again and it will install packages without an issue.
 
-gist:dance2die/ddee3b8f2647026f755584d3dad1feff
+`gist:dance2die/ddee3b8f2647026f755584d3dad1feff`
 
 ### Verify that the site works
 
@@ -57,7 +57,7 @@ Now to verify you need to run `yarn check-all`, which you need to run after maki
 
 But let's run it to make sure that the site is working.
 
-gist:dance2die/a0581e3fc9a2fa9a0732b706b39b9da0
+`gist:dance2die/a0581e3fc9a2fa9a0732b706b39b9da0`
 
  
 
@@ -69,13 +69,13 @@ A [Pull Request (PR)](https://yangsu.github.io/pull-request-tutorial/) is a way 
 
 After a code change, stage it and commit it.
 
-gist:dance2die/f5b297ff26fe50e64ef0af1036f77e7f
+`gist:dance2die/f5b297ff26fe50e64ef0af1036f77e7f`
 
 Be as descriptive for the commit message by adding URL and what's fixed as well as issue # you were working on.
 
 Now, push the change to your fork.
 
-gist:dance2die/894a2e9cdf4dc367219c21f044da3fbe
+`gist:dance2die/894a2e9cdf4dc367219c21f044da3fbe`
 
 Push steps are [documented](https://github.com/reactjs/reactjs.org/#push-it) on ReactJS.org page.
 

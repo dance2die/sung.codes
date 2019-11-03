@@ -20,11 +20,11 @@ In a previous blog post, [Hiding API Keys on GitHub](https://www.slightedgecoder
 
 Suppose that your node app access a key via an environment variable, `process.env.GITHUB_DEVELOPER_KEY`
 
-gist:dance2die/bad081a2b6087d35308b0296a2e43dea
+`gist:dance2die/bad081a2b6087d35308b0296a2e43dea`
 
 In Windows, you can set the environment variable as follows
 
-gist:dance2die/a980d158b15283e67bd0a66aaa491267
+`gist:dance2die/a980d158b15283e67bd0a66aaa491267`
 
 But the problem is that, `GITHUB_DEVELOPER_KEY` is available only in your local machine and won't be available after publishing to Heroku.
 
@@ -38,7 +38,7 @@ The command is `heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>` and the documen
 
 After deploying the node application, just set the configuration variable as shown below.
 
-gist:dance2die/51d26b65d120668ffd881c5f73941fe3
+`gist:dance2die/51d26b65d120668ffd881c5f73941fe3`
 
 - `heroku config:set` lets you set an environment variable on Heroku application, while
 - `heroku config:get` retrieves the environment variable value.

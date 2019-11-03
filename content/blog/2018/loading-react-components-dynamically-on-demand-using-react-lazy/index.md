@@ -23,13 +23,13 @@ _You can follow along in_ [_CodeSandbox_](https://codesandbox.io/s/k5m609qn3o) _
 
 In the previous version, I've loaded components in `componentDidMount` inside `App.js` and stored components in a state called `components`.
 
-<script src="https://gist.github.com/dance2die/95259efdf4f883f1ceae62ca1346734a.js"></script>
+``gist:dance2die/95259efdf4f883f1ceae62ca1346734a``
 
 <a href="https://gist.github.com/dance2die/95259efdf4f883f1ceae62ca1346734a">View this gist on GitHub</a>
 
 But there is no need to store the components in the state as you can simply use lazily loaded component in render with smaller code.
 
-<script src="https://gist.github.com/dance2die/3303287eff873ce3220a4f33d99a60f2.js"></script>
+``gist:dance2die/3303287eff873ce3220a4f33d99a60f2``
 
 <a href="https://gist.github.com/dance2die/3303287eff873ce3220a4f33d99a60f2">View this gist on GitHub</a>
 
@@ -46,7 +46,7 @@ _Refer to_ [_Dan Abramov's tweet_](https://twitter.com/dan_abramov/status/105529
 
 And here is the updated `*Event` components.
 
-<script src="https://gist.github.com/dance2die/848fb851b1b6e101f5a76ecb82fb9440.js"></script>
+``gist:dance2die/848fb851b1b6e101f5a76ecb82fb9440``
 
 <a href="https://gist.github.com/dance2die/848fb851b1b6e101f5a76ecb82fb9440">View this gist on GitHub</a>
 
@@ -64,7 +64,7 @@ _You can follow along in [CodeSandbox](https://codesandbox.io/s/0pkzrwk79l) & ch
 
 This patterns now looks almost the same as the first case.
 
-<script src="https://gist.github.com/dance2die/e6497b267559a71745b86940da620037.js"></script>
+``gist:dance2die/e6497b267559a71745b86940da620037``
 
 <a href="https://gist.github.com/dance2die/e6497b267559a71745b86940da620037">View this gist on GitHub</a>
 
@@ -75,7 +75,7 @@ If a matching GitHub event component is found load it or else load a `NullEvent`
 
 Here is are the event components for completeness.
 
-<script src="https://gist.github.com/dance2die/e971b6b74ee9d215824007dfc90a67dd.js"></script>
+``gist:dance2die/e971b6b74ee9d215824007dfc90a67dd``
 
 <a href="https://gist.github.com/dance2die/e971b6b74ee9d215824007dfc90a67dd">View this gist on GitHub</a>
 
@@ -99,13 +99,13 @@ Instead of loading a `NullView` in a `catch` statement, it's now checked against
 
 From this,
 
-<script src="https://gist.github.com/dance2die/38b39a57eecb9efd86ec8220bda5081b.js"></script>
+``gist:dance2die/38b39a57eecb9efd86ec8220bda5081b``
 
 <a href="https://gist.github.com/dance2die/38b39a57eecb9efd86ec8220bda5081b">View this gist on GitHub</a>
 
 To this.
 
-<script src="https://gist.github.com/dance2die/4c18f793f5153a75a7770efe6c3ad31e.js"></script>
+``gist:dance2die/4c18f793f5153a75a7770efe6c3ad31e``
 
 <a href="https://gist.github.com/dance2die/4c18f793f5153a75a7770efe6c3ad31e">View this gist on GitHub</a>
 
@@ -113,13 +113,13 @@ To this.
 
 `render` is also changed to wrap dynamically loaded components with `<Suspense />`.
 
-<script src="https://gist.github.com/dance2die/72d4552555a9837f0cbdbfe34bb27f77.js"></script>
+``gist:dance2die/72d4552555a9837f0cbdbfe34bb27f77``
 
 <a href="https://gist.github.com/dance2die/72d4552555a9837f0cbdbfe34bb27f77">View this gist on GitHub</a>
 
 All `*View` components are the same so I will only show `components/views/index.js`.
 
-<script src="https://gist.github.com/dance2die/753134d0908c10e22b1ffe6b3e7f7aa2.js"></script>
+``gist:dance2die/753134d0908c10e22b1ffe6b3e7f7aa2``
 
 <a href="https://gist.github.com/dance2die/753134d0908c10e22b1ffe6b3e7f7aa2">View this gist on GitHub</a>
 

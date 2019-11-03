@@ -105,7 +105,7 @@ We are all ready to set up Dokku, finally!
 
 Let's take a look at the [Dokku installation instructions](http://dokku.viewdocs.io/dokku/#install-apt) for `apt`. (It's a bit more involved than it looks).
 
-<script src="https://gist.github.com/dance2die/949189aeda689828203ab9b256d3c829.js"></script>
+``gist:dance2die/949189aeda689828203ab9b256d3c829``
 
 <a href="https://gist.github.com/dance2die/949189aeda689828203ab9b256d3c829">View this gist on GitHub</a>
 
@@ -174,7 +174,7 @@ Dokku is compatible with Heroku and works similiarly. That means the deployment 
 
 So let's add a remote git repo to deploy to.
 
-<script src="https://gist.github.com/dance2die/d79734e714a5dee8aef0684c506b8233.js"></script>
+``gist:dance2die/d79734e714a5dee8aef0684c506b8233``
 
 <a href="https://gist.github.com/dance2die/d79734e714a5dee8aef0684c506b8233">View this gist on GitHub</a>
 
@@ -189,7 +189,7 @@ When you try to deploy the Node app to Dokku by pushing it to remote `dokku` rep
 
 We need to install SSH server & client as well as opening the port 22 (using [ufw](https://help.ubuntu.com/community/UFW), "Uncomplicated Firewall"). Let's push it again while at it.
 
-<script src="https://gist.github.com/dance2die/a90d9f00caa4179421ee3ce8e87c3990.js"></script>
+``gist:dance2die/a90d9f00caa4179421ee3ce8e87c3990``
 
 <a href="https://gist.github.com/dance2die/a90d9f00caa4179421ee3ce8e87c3990">View this gist on GitHub</a>
 
@@ -199,7 +199,7 @@ _I am not familiar with this concept so had to google and found [this reply](htt
 
 If you are attempting to push the second time, you will be prompted to enter the password you entered when generating the SSH key. The result of deploy looks like following.
 
-<script src="https://gist.github.com/dance2die/41cda5218a98e00b2e11719f64e0a3d5.js"></script>
+``gist:dance2die/41cda5218a98e00b2e11719f64e0a3d5``
 
 <a href="https://gist.github.com/dance2die/41cda5218a98e00b2e11719f64e0a3d5">View this gist on GitHub</a>
 

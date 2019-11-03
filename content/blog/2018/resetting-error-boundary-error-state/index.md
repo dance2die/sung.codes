@@ -37,7 +37,7 @@ Error Boundary Reset Demo
 
 [Following](https://github.com/bvaughn/react-error-boundary/blob/master/src/ErrorBoundary.js#L46) is how `ErrorBoundary.render` is implemented.
 
-<script src="https://gist.github.com/dance2die/b2af474fc9b7398b0f5f33f8ae35dfb2.js"></script>
+``gist:dance2die/b2af474fc9b7398b0f5f33f8ae35dfb2``
 
 <a href="https://gist.github.com/dance2die/b2af474fc9b7398b0f5f33f8ae35dfb2">View this gist on GitHub</a>
 
@@ -47,7 +47,7 @@ So my first attempt was to create a reference (`this.errorBoundary`) and directl
 
 _Yes, stupid of me to even attempt to directly manipulate the state even without using `setState`..._
 
-<script src="https://gist.github.com/dance2die/602254e2f6389e2a9f06f6c7d4185334.js"></script>
+``gist:dance2die/602254e2f6389e2a9f06f6c7d4185334``
 
 <a href="https://gist.github.com/dance2die/602254e2f6389e2a9f06f6c7d4185334">View this gist on GitHub</a>
 
@@ -61,7 +61,7 @@ And Brian has replied with a [proper React-way of resetting error boundary](http
 
 <a href="undefined">View this gist on GitHub</a>
 
-<script src="https://gist.github.com/dance2die/ebff548c1c4253f5c14349b3d6004a72.js"></script>
+``gist:dance2die/ebff548c1c4253f5c14349b3d6004a72``
 
 <a href="https://gist.github.com/dance2die/ebff548c1c4253f5c14349b3d6004a72">View this gist on GitHub</a>
 

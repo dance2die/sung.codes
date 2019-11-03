@@ -14,7 +14,7 @@ I will show you how to resolve that issue.
 
 Here is the example of yarn global installed package ([Parcel JS](https://parceljs.org/)) not found.
 
-gist:dance2die/6a0d1d5064451234a231d25eceac150a
+`gist:dance2die/6a0d1d5064451234a231d25eceac150a`
 
 **NOTE**: The package name is `parcel-bundler` but the command is `parcel` according to the [Parcel JS documentation](https://parceljs.org/getting_started.html).
 
@@ -28,7 +28,7 @@ Let's fix this.
 
 Let's find out where `yarn` stores globally installed binary files with `yarn global bin` command.
 
-gist:dance2die/f4254c7ee51bd55e4dea0fe3fbce7a7e
+`gist:dance2die/f4254c7ee51bd55e4dea0fe3fbce7a7e`
 
 On my local machine, `yarn global add <package>` will save files under **_C:\\Users\\dance2die\\AppData\\Roaming\\npm\\bin_**.
 

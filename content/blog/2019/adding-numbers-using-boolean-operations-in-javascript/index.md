@@ -47,7 +47,7 @@ Half-adder
 A circuit formed that way is called [half-adder](<https://en.wikipedia.org/wiki/Adder_(electronics)#Half_adder>).  
 Armed with the knowledge and we can now implement the addition using XOR & AND.
 
-<script src="https://gist.github.com/dance2die/6a002c4d417703cc31c0c02f8bbfe067.js"></script>
+``gist:dance2die/6a002c4d417703cc31c0c02f8bbfe067``
 
 <a href="https://gist.github.com/dance2die/6a002c4d417703cc31c0c02f8bbfe067">View this gist on GitHub</a>
 
@@ -59,7 +59,7 @@ Armed with the knowledge and we can now implement the addition using XOR & AND.
 
 When we run the half adder on combination of one bit addition, the result looks like below.
 
-<script src="https://gist.github.com/dance2die/562a0e63f8451de351ec3d3a4eb5c494.js"></script>
+``gist:dance2die/562a0e63f8451de351ec3d3a4eb5c494``
 
 <a href="https://gist.github.com/dance2die/562a0e63f8451de351ec3d3a4eb5c494">View this gist on GitHub</a>
 
@@ -94,7 +94,7 @@ The diagram shows the result of first carry being fed into the 2nd half-adder, w
 
 Let's implement the full-adder & add two bit numbers.
 
-<script src="https://gist.github.com/dance2die/cee0a284dcf0be414a2974f567140e7d.js"></script>
+``gist:dance2die/cee0a284dcf0be414a2974f567140e7d``
 
 <a href="https://gist.github.com/dance2die/cee0a284dcf0be414a2974f567140e7d">View this gist on GitHub</a>
 
@@ -116,7 +116,7 @@ So for N-bit addition, you need 1 half-adder & N-1 full-adders.
 
 I could've shown 3-bit operation but decided to share a method that works on any N-bits instead (unlike how microprocessors are physically constrained).
 
-<script src="https://gist.github.com/dance2die/3f11e90723410431aae22f18fb4b0124.js"></script>
+``gist:dance2die/3f11e90723410431aae22f18fb4b0124``
 
 <a href="https://gist.github.com/dance2die/3f11e90723410431aae22f18fb4b0124">View this gist on GitHub</a>
 
@@ -137,7 +137,7 @@ I got excited after reading "_[_Mastering JavaScript’s && and || logical opera
 
 Let's check out the demo result.
 
-<script src="https://gist.github.com/dance2die/0d9666493c1d634547d070419103721b.js"></script>
+``gist:dance2die/0d9666493c1d634547d070419103721b``
 
 <a href="https://gist.github.com/dance2die/0d9666493c1d634547d070419103721b">View this gist on GitHub</a>
 

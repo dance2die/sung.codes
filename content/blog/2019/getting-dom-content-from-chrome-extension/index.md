@@ -28,7 +28,7 @@ When using `document.getElementBy*` or `document.querySelector*` within Chrome E
 
 So to retrieve DOM content, one need to [execute](https://developer.chrome.com/extensions/tabs#method-executeScript) a script within a tab by sending a query (`document.querySelector*` or `document.getElement*`) like following.
 
-<script src="https://gist.github.com/dance2die/7c79a1e09b334da6d723bd07e2bb7682.js"></script>
+``gist:dance2die/7c79a1e09b334da6d723bd07e2bb7682``
 
 <a href="https://gist.github.com/dance2die/7c79a1e09b334da6d723bd07e2bb7682">View this gist on GitHub</a>
 
@@ -40,7 +40,7 @@ You can see above that, you pass a `code` to query DOM elements and extract URLs
 
 You can add a [tabs permission](https://developer.chrome.com/extensions/tabs) to `execute` the script but it can be too detrimental thus you can simply add URLs to allow script executions.
 
-<script src="https://gist.github.com/dance2die/ff058d7fbc01103b1c3e8df4caae74dc.js"></script>
+``gist:dance2die/ff058d7fbc01103b1c3e8df4caae74dc``
 
 <a href="https://gist.github.com/dance2die/ff058d7fbc01103b1c3e8df4caae74dc">View this gist on GitHub</a>
 

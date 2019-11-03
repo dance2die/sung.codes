@@ -27,7 +27,7 @@ Error Code & Demo
 
 Here is the simplest code using React Router.
 
-<script src="https://gist.github.com/dance2die/fae8d963496b66dc2d23f5605d478976.js"></script>
+``gist:dance2die/fae8d963496b66dc2d23f5605d478976``
 
 <a href="https://gist.github.com/dance2die/fae8d963496b66dc2d23f5605d478976">View this gist on GitHub</a>
 
@@ -46,7 +46,7 @@ _Netlify documentation has a section,_ [_History Pushstate and Single Page Apps_
 
 So to fix the issue, we need to create a file named `_redirects` to the root of your site with following content.
 
-<script src="https://gist.github.com/dance2die/acf9a148ec8025364bf0b6cf37367294.js"></script>
+``gist:dance2die/acf9a148ec8025364bf0b6cf37367294``
 
 <a href="https://gist.github.com/dance2die/acf9a148ec8025364bf0b6cf37367294">View this gist on GitHub</a>
 

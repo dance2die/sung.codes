@@ -38,7 +38,7 @@ When you open an Amazon page, the CLI queries Amazon's [Product Advertising API]
 
 PAA requires a developer to sign up for Amazon Affiliate Program. Thus the Amazon link returned adds a finger print with my affiliate info. I've added a flag(`--strip-amazon-affiliate` or `-s`) in `open` command to strip it out in case you do not want that info in the link.
 
-gist:dance2die/9ee9df6afe17cb10e5e2acb3e75be95c
+`gist:dance2die/9ee9df6afe17cb10e5e2acb3e75be95c`
 
 (Please don't be mean to me 😞 )
 

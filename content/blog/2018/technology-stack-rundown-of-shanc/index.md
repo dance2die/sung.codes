@@ -64,7 +64,7 @@ Another benefit I found is that I could name the container making the code reada
 
 You can see that `storiesComponents` is consisted of a story with rank, content, which contains body and meta data.
 
-gist:dance2die/56d863a786182fc7a853084d5005a159
+`gist:dance2die/56d863a786182fc7a853084d5005a159`
 
 ##### How? 🔨
 
@@ -112,11 +112,11 @@ It runs every hour doing a HTTPS POST request to the Netlify's Build WebHook (Us
 
 Full implementation (I mean really)
 
-gist:dance2die/970999b7fb5ba0e62001766ce55af9f7
+`gist:dance2die/970999b7fb5ba0e62001766ce55af9f7`
 
 Azure Functions Schedule (runs every 60 minutes on the hour)
 
-gist:dance2die/b6d16c2b10cfbb7a635a02485dd6108c
+`gist:dance2die/b6d16c2b10cfbb7a635a02485dd6108c`
 
 ### 👋 Parting Words
 

@@ -28,13 +28,13 @@ You can follow along on [CodeSandbox](https://codesandbox.io/s/09xj95vxl).
 
 First, install the package, react-use-localstorage.
 
-<script src="https://gist.github.com/dance2die/0f4e5b5493593d2a903ac8dc7cda4088.js"></script>
+``gist:dance2die/0f4e5b5493593d2a903ac8dc7cda4088``
 
 <a href="https://gist.github.com/dance2die/0f4e5b5493593d2a903ac8dc7cda4088">View this gist on GitHub</a>
 
 And use it in a "Functional Component".
 
-<script src="https://gist.github.com/dance2die/b98da9374585f1df9325bb279ce973f0.js"></script>
+``gist:dance2die/b98da9374585f1df9325bb279ce973f0``
 
 <a href="https://gist.github.com/dance2die/b98da9374585f1df9325bb279ce973f0">View this gist on GitHub</a>
 
