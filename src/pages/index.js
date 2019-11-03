@@ -1,15 +1,36 @@
 import React from "react"
-
-export default () => <h1>Home!</h1>
-
-// import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 // import styled from "styled-components"
 
-// import Layout from "../layouts"
+import Layout from "../layouts"
 // // import Dangerous from "dangerous-components"
 // // import PostIcons from "../components/post-icon"
 // import { rhythm } from "../utils/typography"
 // import ExternalLink from "../utils/ExternalLink"
+
+export default ({
+  data: {
+    site: {
+      siteMetadata: { description, title },
+    },
+  },
+}) => (
+  <Layout>
+    <h1>Welcome to {title}</h1>
+    <p>{description}</p>
+  </Layout>
+)
+
+export const pageQuery = graphql`
+  {
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+  }
+`
 
 // const HomeContainer = styled.main`
 //   display: flex;
@@ -90,25 +111,6 @@ export default () => <h1>Home!</h1>
 // // export const pageQuery = graphql`
 // //   query {
 // //     allWordpressPost(sort: { fields: [date], order: DESC }) {
-// //       edges {
-// //         node {
-// //           title
-// //           excerpt
-// //           slug
-// //           ...PostIcons
-// //         }
-// //       }
-// //     }
-// //   }
-// // `
-
-// // export const pageQuery = graphql`
-// //   query blogListQuery($skip: Int!, $limit: Int!) {
-// //     allWordpressPost(
-// //       sort: { fields: [date], order: DESC }
-// //       limit: $limit
-// //       skip: $skip
-// //     ) {
 // //       edges {
 // //         node {
 // //           title

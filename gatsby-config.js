@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sung.Codes`,
-    description: `Static Site (Gatsby) version of SlightEdgeCoder.com`,
+    description: `Sung M. Kim (aka dance2die)'s Home Page`,
     author: `Sung M. Kim`,
   },
   plugins: [
