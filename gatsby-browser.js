@@ -4,4 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/?=prismjs#include-css
+// https://github.com/PrismJS/prism/tree/1d5047df37aacc900f8270b1c6215028f6988eb1/themes
+require("prismjs/themes/prism-okaidia.css")
