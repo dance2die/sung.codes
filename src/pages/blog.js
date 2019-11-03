@@ -27,10 +27,6 @@ export default () => {
 
   const postYears = buildPostYears(data.allDirectory.nodes)
 
-  useEffect(() => {
-    console.info(`postYears=>`, postYears)
-  }, [postYears])
-
   return (
     <Layout>
       <h1>blog home page</h1>

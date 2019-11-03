@@ -30,8 +30,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-// https://www.gatsbyjs.org/docs/mdx/programmatically-creating-pages/#make-a-template-for-your-posts
-const createPages = async ({ graphql, actions, reporter }) => {
+const createPosts = async ({ graphql, actions }) => {
   // Destructure the createPage function from the actions object
   const result = await graphql(`
     query {
@@ -55,19 +54,22 @@ const createPages = async ({ graphql, actions, reporter }) => {
   // Create blog post pages.
   const posts = result.data.allMdx.edges
   const { createPage } = actions
-  // you'll call `createPage` for each result
+
   posts.forEach(({ node }, index) => {
     createPage({
-      // This is the slug you created before
-      // (or `node.frontmatter.slug`)
       path: node.fields.slug,
-      // This component will wrap our MDX content
       component: path.resolve(`./src/templates/posts-page-layout.js`),
-      // You can use the values in this context in
-      // our page layout component
       context: { id: node.id },
     })
   })
+}
+
+const createBlogYearPages = async ({ graphql, actions }) => {}
+
+// https://www.gatsbyjs.org/docs/mdx/programmatically-creating-pages/#make-a-template-for-your-posts
+const createPages = async ({ graphql, actions, reporter }) => {
+  await createBlogYearPages({ graphql, actions })
+  await createPosts({ graphql, actions })
 }
 
 module.exports = { onCreateNode, createPages }
