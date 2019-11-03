@@ -19,25 +19,22 @@ which you want to make it immutable by returning a new object using syntax sprea
 
 <a href="https://gist.github.com/dance2die/3107d7b0a3d3eeeb0dcad5886f5b1bf9">View this gist on GitHub</a>
 
-  
 Printing out `trie` object instance returned from `useTrie` won't show `has` and an empty method is printed.
 
 <script src="https://gist.github.com/dance2die/4192b1bab9e70e046515b456c147baf8.js"></script>
 
 <a href="https://gist.github.com/dance2die/4192b1bab9e70e046515b456c147baf8">View this gist on GitHub</a>
 
-  
 Let's see why and how to solve the issue.
 
 ## 🔬 Analysis
 
-To understand the problem, let's see how the class is [transpiled using TypeScript compiler](https://www.typescriptlang.org/play/index.html#src=class%20Trie%20%7B%0D%0A%20%20has(word)%20%7B%20return%20true%3B%20%7D%0D%0A%7D%0D%0A%0D%0Aclass%20Trie2%20%7B%0D%0A%20%20has%20%3D%20(word)%20%3D%3E%20true%3B%0D%0A%7D%0D%0A) (the transpiled babel code does the same but verbose so using TypeScript compiler here).
+To understand the problem, let's see how the class is [transpiled using TypeScript compiler](<https://www.typescriptlang.org/play/index.html#src=class%20Trie%20%7B%0D%0A%20%20has(word)%20%7B%20return%20true%3B%20%7D%0D%0A%7D%0D%0A%0D%0Aclass%20Trie2%20%7B%0D%0A%20%20has%20%3D%20(word)%20%3D%3E%20true%3B%0D%0A%7D%0D%0A>) (the transpiled babel code does the same but verbose so using TypeScript compiler here).
 
 <script src="https://gist.github.com/dance2die/7419342babb86cafb72aaae443cff2c2.js"></script>
 
 <a href="https://gist.github.com/dance2die/7419342babb86cafb72aaae443cff2c2">View this gist on GitHub</a>
 
-  
 `has` method was added to the prototype, not to an instance of `Trie` class.  
 So `has` is still available when you do `const t = new Trie(); t.has(); // true`.
 
@@ -61,21 +58,18 @@ You can explicitly bind `this` to the method in the constructor.
 
 <a href="https://gist.github.com/dance2die/0e123ece5776d334bf5e7fe39d88410b">View this gist on GitHub</a>
 
-  
 , which is TypeScript-transpiled as
 
 <script src="https://gist.github.com/dance2die/8e5597304ea3246396d1c40506169736.js"></script>
 
 <a href="https://gist.github.com/dance2die/8e5597304ea3246396d1c40506169736">View this gist on GitHub</a>
 
-  
 And printing the `trie` instance returned from `useTrie` will now show `.has` method.
 
 <script src="https://gist.github.com/dance2die/95b8a2bbf71316895673148e56441f18.js"></script>
 
 <a href="https://gist.github.com/dance2die/95b8a2bbf71316895673148e56441f18">View this gist on GitHub</a>
 
-  
 `has` is still added to the `prototype`, which might not be what you want and it's increasing the file size.
 
 So this brings us to,
@@ -88,7 +82,6 @@ When you declare the \`has\` method using an arrow syntax, it's transpiled by Tr
 
 <a href="https://gist.github.com/dance2die/5c1a5a0252c3851fc22bb95f3da0b117">View this gist on GitHub</a>
 
-  
 You can see that it's [same](https://gist.github.com/dance2die/8e5597304ea3246396d1c40506169736#file-transpiled-bound-trie-js) without `has` being assigned to the `prototype`.  
 And the console log will still show `has` as part of the `trie` instance returned from `useTrieUsingArrow`.
 
@@ -96,7 +89,8 @@ And the console log will still show `has` as part of the `trie` instance returne
 
 <a href="https://gist.github.com/dance2die/0d5a69a187ab07e9234bad36dbe72cad">View this gist on GitHub</a>
 
-##   
+##
+
 🤦‍♂️ Why? Why? Why?
 
 I recently released a new package [@cshooks/usetrie](https://www.npmjs.com/package/@cshooks/usetrie) and [Nick Taylor](https://www.iamdeveloper.com/) generously provided an educational & thorough PR on how the code-base can be improved.
@@ -107,21 +101,19 @@ But not having a deep knowledge of TypeScript & Javascript, the [following chang
 
 <a href="https://gist.github.com/dance2die/13306ec6ab90419382e933434a131ad5">View this gist on GitHub</a>
 
-  
 FYI - `[useTrie](https://github.com/cshooks/hooks/blob/master/packages/useTrie/src/index.ts#L218)` is implemented as shown below.
 
 <script src="https://gist.github.com/dance2die/043283084a0ae76b7a8bef2c86799fb6.js"></script>
 
 <a href="https://gist.github.com/dance2die/043283084a0ae76b7a8bef2c86799fb6">View this gist on GitHub</a>
 
-  
 I was retro-fitting a mutable data structure and exposing it as a hook.
 
-_But it's not a good way as you can see between_ [_Paul Gray_](https://twitter.com/PaulGrizzay) _&_ [_Dan Abramov_](https://twitter.com/dan_abramov)_'s tweets._
+_But it's not a good way as you can see between [Paul Gray](https://twitter.com/PaulGrizzay) & [Dan Abramov](https://twitter.com/dan_abramov)'s tweets._
 
 https://twitter.com/PaulGrizzay/status/1105941010344038401
 
-https://twitter.com/dan\_abramov/status/1105946933955301377
+https://twitter.com/dan_abramov/status/1105946933955301377
 
 So be aware of the issue discussed above when you are extracting an imperative logic out of React.
 
@@ -130,5 +122,5 @@ So be aware of the issue discussed above when you are extracting an imperative l
 I've paid handsomely for not following React way of doing things.  
 I hope you the gotcha & the workaround helped you understand what's going on behind the scenes.
 
-You can play around with the TypeScript transpiler on the [Playground page](https://www.typescriptlang.org/play/index.html#src=class%20Trie%20%7B%0D%0A%20%20has(word)%20%7B%20return%20true%3B%20%7D%0D%0A%7D%0D%0A%0D%0Aclass%20Trie2%20%7B%0D%0A%20%20has%20%3D%20(word)%20%3D%3E%20true%3B%0D%0A%7D%0D%0A).  
+You can play around with the TypeScript transpiler on the [Playground page](<https://www.typescriptlang.org/play/index.html#src=class%20Trie%20%7B%0D%0A%20%20has(word)%20%7B%20return%20true%3B%20%7D%0D%0A%7D%0D%0A%0D%0Aclass%20Trie2%20%7B%0D%0A%20%20has%20%3D%20(word)%20%3D%3E%20true%3B%0D%0A%7D%0D%0A>).  
 & the console log results in the [Sandbox](https://codesandbox.io/s/xjm96w0wmp).

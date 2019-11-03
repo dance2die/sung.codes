@@ -30,9 +30,9 @@ https://twitter.com/BrendanEich/status/1151323779131305984
 
 https://twitter.com/BrendanEich/status/1151326755749163008
 
-But as for CSS, he agreed that `href` for CSS "[seems[ed] inconsistent](https://twitter.com/BrendanEich/status/1151324101157347328)".
+But as for CSS, he agreed that `href` for CSS "[seems(ed) inconsistent](https://twitter.com/BrendanEich/status/1151324101157347328)".
 
-## **<link href>**
+## **link href**
 
 Håkon Wium Lie kindly provided the history (how) and the rationale (why) behind it.
 
@@ -40,10 +40,10 @@ The rationale was because the "HTML2 specification said so".
 
 https://twitter.com/wiumlie/status/1151458530567831553
 
-_"_[_There we have it, HTML2 spec._](https://twitter.com/vuildco/status/1151462988798464002)_" (Vuild took words out of my mouth_ 😀*).*  
-_Note that [it's the HTML2 spec not XHTML2](https://twitter.com/wiumlie/status/1151576065934012422)._
+_"[There we have it, HTML2 spec.](https://twitter.com/vuildco/status/1151462988798464002)" (Vuild took words out of my mouth 😀*).*  
+Note that [it's the HTML2 spec not XHTML2](https://twitter.com/wiumlie/status/1151576065934012422)._
 
-## **<img src>**
+## **img src**
 
 And then Håkon followed up with how and why `img` uses `src`.
 

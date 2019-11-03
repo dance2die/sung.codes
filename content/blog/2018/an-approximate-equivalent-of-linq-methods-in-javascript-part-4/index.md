@@ -35,7 +35,7 @@ gist:dance2die/df3097d46a30783bcd5948384137f4c8
 
 ##### 🔸 Union
 
-[Union](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.union(v=vs.110).aspx>) combines two sequences (of type [IEnumerable<T>](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>)) into one without duplicates.
+[Union](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.union(v=vs.110).aspx>) combines two sequences (of type [`IEnumerable<T>`](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>)) into one without duplicates.
 
 gist:dance2die/9bbfd498df8aff4386c2ef90eb9b476b
 
@@ -51,7 +51,7 @@ I've extended the Array prototype to make the JavaScript version look similar to
 
 "Intersect" compares two sequences and return another sequence with a "common" value.
 
-How do you check for the "commonness"? [Intersect](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect(v=vs.110).aspx>) in LINQ provides an overload that lets you specify how to compare each value in two sequences by passing an object of type implementing [IEqualityComparer<T>](<https://msdn.microsoft.com/en-us/library/ms132151(v=vs.110).aspx>) interface.
+How do you check for the "commonness"? [Intersect](<https://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect(v=vs.110).aspx>) in LINQ provides an overload that lets you specify how to compare each value in two sequences by passing an object of type implementing [`IEqualityComparer<T>`](<https://msdn.microsoft.com/en-us/library/ms132151(v=vs.110).aspx>) interface.
 
 gist:dance2die/8391d61650a16a3c9c25800e305ac6e6
 

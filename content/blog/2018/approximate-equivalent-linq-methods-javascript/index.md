@@ -87,7 +87,7 @@ Now here is where it gets tricky.
 
 While there are two methods for ordering (ascending/descending) in LINQ, there is only one method in Javascript, `sort`, which can handle both scenarios.
 
-`sort` is more roughly equivalent to .NET's [Array.Sort](https://msdn.microsoft.com/en-us/library/bzw8611x%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396) method which accepts an object instance of type [IComparer<T>](<https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx>), which works the same as a callback in `sort`.
+`sort` is more roughly equivalent to .NET's [Array.Sort](https://msdn.microsoft.com/en-us/library/bzw8611x%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396) method which accepts an object instance of type [`IComparer<T>`](<https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx>), which works the same as a callback in `sort`.
 
 In the examples below, if the callback, which requires two arguments, returns a value less than 0, then the left value comes before right value, and vice versa. For 0, the order is not changed.
 

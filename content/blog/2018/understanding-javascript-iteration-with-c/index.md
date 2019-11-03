@@ -50,7 +50,7 @@ Here is an example.
 
 ## 🐳 C# Analogy
 
-If you use C#, you might have run into [IEnumerable<T>](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>). It's an interface, which enables implementing class to be iterable.
+If you use C#, you might have run into [`IEnumerable<T>`](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>). It's an interface, which enables implementing class to be iterable.
 
 Let's see two methods that accepts an iterable object of type string and prints each element.
 
@@ -64,7 +64,7 @@ If you were to pass `wordArray` to `ListPrintWords`, it will fail to compile whi
 
 So `[].filter.call` can be used to deal with any iterable objects that do not inherit Array prototypes.
 
-And it's roughly equivalent to dealing with objects implementing [IEnumerable<T>](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>) interface in .NET, thus enabling methods accept any kind of generic iterable sequences.
+And it's roughly equivalent to dealing with objects implementing [`IEnumerable<T>`](<https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx>) interface in .NET, thus enabling methods accept any kind of generic iterable sequences.
 
 ## 👋 Parting Words
 
