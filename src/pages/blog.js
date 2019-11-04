@@ -3,11 +3,21 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../layouts"
 
-const buildPostYears = nodes =>
+const getYearCounts = nodes =>
   nodes.reduce((acc, { year }) => {
     acc[year] = ++acc[year] || 1
     return acc
   }, {})
+
+const byYearDescending = ([year1], [year2]) => year2 - year1
+const toPost = ([year, count]) => (
+  <Link key={year} to={`/blog/${year}`}>
+    <article className="posts__year">
+      <h3>{year}</h3>
+      <p>{count}</p>
+    </article>
+  </Link>
+)
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -25,7 +35,7 @@ export default () => {
     }
   `)
 
-  const postYears = buildPostYears(data.allDirectory.nodes)
+  const yearCounts = getYearCounts(data.allDirectory.nodes)
 
   return (
     <Layout>
@@ -35,17 +45,9 @@ export default () => {
           <h2>Posts?</h2>
         </header>
         <main className="posts__body">
-          {Object.entries(postYears)
-            // Show newer years first
-            .sort(([year1], [year2]) => year2 - year1)
-            .map(([year, count]) => (
-              <Link to={`/blog/${year}`}>
-                <article key={year} className="posts__year">
-                  <h3>{year}</h3>
-                  <p>{count}</p>
-                </article>
-              </Link>
-            ))}
+          {Object.entries(yearCounts)
+            .sort(byYearDescending)
+            .map(toPost)}
         </main>
       </section>
     </Layout>
