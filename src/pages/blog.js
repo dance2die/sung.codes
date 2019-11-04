@@ -35,14 +35,17 @@ export default () => {
           <h2>Posts?</h2>
         </header>
         <main className="posts__body">
-          {Object.entries(postYears).map(([year, count]) => (
-            <Link to={`/blog/${year}`}>
-              <article key={year} className="posts__year">
-                <h3>{year}</h3>
-                <p>{count}</p>
-              </article>
-            </Link>
-          ))}
+          {Object.entries(postYears)
+            // Show newer years first
+            .sort(([year1], [year2]) => year2 - year1)
+            .map(([year, count]) => (
+              <Link to={`/blog/${year}`}>
+                <article key={year} className="posts__year">
+                  <h3>{year}</h3>
+                  <p>{count}</p>
+                </article>
+              </Link>
+            ))}
         </main>
       </section>
     </Layout>
