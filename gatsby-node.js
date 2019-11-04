@@ -19,7 +19,10 @@ const onCreateNode = ({ node, actions, getNode }) => {
       .split("-")
 
     const parentNode = getNode(node.parent)
-    const slug = `/blog/${year}/${month}/${day}/${parentNode.relativeDirectory}/`
+    // drop extra-year in the slug.
+    // "2019/netlify-not-found" => "netlify-not-found"
+    const folderName = parentNode.relativeDirectory.replace(`${year}/`, "")
+    const slug = `/blog/${year}/${month}/${day}/${folderName}/`
 
     const { createNodeField } = actions
     createNodeField({ node, name: "slug", value: slug })
