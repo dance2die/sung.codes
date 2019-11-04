@@ -3,8 +3,10 @@ import { graphql } from "gatsby"
 import Layout from "../layouts"
 
 export default ({ data }) => {
+  console.info(`data`, data)
+
   const posts = data.allMdx.edges.map(
-    ({ frontmatter, fields, id, excerpt }) => (
+    ({ node: { frontmatter, fields, id, excerpt } }) => (
       <>
         <h2>{frontmatter.title}</h2>
         <p>{excerpt}</p>
