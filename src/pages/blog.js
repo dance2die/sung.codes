@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../layouts"
 
@@ -36,10 +36,12 @@ export default () => {
         </header>
         <main className="posts__body">
           {Object.entries(postYears).map(([year, count]) => (
-            <article key={year} className="posts__year">
-              <h3>{year}</h3>
-              <p>{count}</p>
-            </article>
+            <Link to={`/blog/${year}`}>
+              <article key={year} className="posts__year">
+                <h3>{year}</h3>
+                <p>{count}</p>
+              </article>
+            </Link>
           ))}
         </main>
       </section>

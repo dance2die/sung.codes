@@ -6,10 +6,17 @@ export default ({ data }) => {
   console.info(`data`, data)
 
   const posts = data.allMdx.edges.map(
-    ({ node: { frontmatter, fields, id, excerpt } }) => (
+    ({
+      node: {
+        frontmatter: { title, date },
+        fields: { slug, year },
+        id,
+        excerpt,
+      },
+    }) => (
       <>
-        <h2>{frontmatter.title}</h2>
-        <b>{frontmatter.date}</b>
+        <h2>{title}</h2>
+        <b>{date}</b>
         <p>{excerpt}</p>
       </>
     )
