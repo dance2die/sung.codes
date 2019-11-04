@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../layouts"
 
 export default ({ data }) => {
@@ -15,7 +15,9 @@ export default ({ data }) => {
       },
     }) => (
       <>
-        <h2>{title}</h2>
+        <h2>
+          <Link to={slug}>{title}</Link>
+        </h2>
         <b>{date}</b>
         <p>{excerpt}</p>
       </>
