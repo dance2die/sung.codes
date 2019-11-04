@@ -35,8 +35,7 @@ export default () => {
     }
   `)
 
-  const yearCounts = getYearCounts(data.allDirectory.nodes)
-  const postBlocks = Object.entries(yearCounts)
+  const postBlocks = Object.entries(getYearCounts(data.allDirectory.nodes))
     .sort(byYearDescending)
     .map(toPost)
 
