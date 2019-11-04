@@ -36,6 +36,9 @@ export default () => {
   `)
 
   const yearCounts = getYearCounts(data.allDirectory.nodes)
+  const postBlocks = Object.entries(yearCounts)
+    .sort(byYearDescending)
+    .map(toPost)
 
   return (
     <Layout>
@@ -44,11 +47,7 @@ export default () => {
         <header className="posts__header">
           <h2>Posts?</h2>
         </header>
-        <main className="posts__body">
-          {Object.entries(yearCounts)
-            .sort(byYearDescending)
-            .map(toPost)}
-        </main>
+        <main className="posts__body">{postBlocks}</main>
       </section>
     </Layout>
   )
