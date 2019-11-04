@@ -8,29 +8,31 @@ import Layout from "../layouts"
 // import { rhythm } from "../utils/typography"
 // import ExternalLink from "../utils/ExternalLink"
 
-export default ({
-  data: {
+export default () => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          description
+          title
+        }
+      }
+    }
+  `)
+
+  const {
     site: {
       siteMetadata: { description, title },
     },
-  },
-}) => (
-  <Layout>
-    <h1>Welcome to {title}</h1>
-    <p>{description}</p>
-  </Layout>
-)
+  } = data
 
-export const pageQuery = graphql`
-  {
-    site {
-      siteMetadata {
-        description
-        title
-      }
-    }
-  }
-`
+  return (
+    <Layout>
+      <h1>Welcome to {title}</h1>
+      <p>{description}</p>
+    </Layout>
+  )
+}
 
 // const HomeContainer = styled.main`
 //   display: flex;

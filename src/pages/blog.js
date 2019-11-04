@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../layouts"
 
