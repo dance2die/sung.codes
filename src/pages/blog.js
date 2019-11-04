@@ -14,7 +14,9 @@ const toPost = ([year, count]) => (
   <Link key={year} to={`/blog/${year}`}>
     <article className="posts__year">
       <h3>{year}</h3>
-      <p>{count}</p>
+      <p>
+        {count} post{count > 1 ? "s" : ""}
+      </p>
     </article>
   </Link>
 )
