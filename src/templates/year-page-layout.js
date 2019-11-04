@@ -9,6 +9,7 @@ export default ({ data }) => {
     ({ node: { frontmatter, fields, id, excerpt } }) => (
       <>
         <h2>{frontmatter.title}</h2>
+        <b>{frontmatter.date}</b>
         <p>{excerpt}</p>
       </>
     )
@@ -19,10 +20,14 @@ export default ({ data }) => {
 
 export const query = graphql`
   query getMdx($year: Date!) {
-    allMdx(filter: { fields: { year: { eq: $year } } }) {
+    allMdx(
+      filter: { fields: { year: { eq: $year } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       edges {
         node {
           frontmatter {
+            date
             posted: date(fromNow: true)
             title
             coverImage
