@@ -87,7 +87,7 @@ const createBlogYearPages = async ({ graphql, actions, reporter }) => {
   const years = query.data.allDirectory.nodes
   const { createPage } = actions
 
-  years.forEach(year => {
+  years.forEach(({ year }) => {
     createPage({
       path: `/blog/${year}`,
       component: path.resolve(`./src/templates/year-page-layout.js`),

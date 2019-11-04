@@ -58,7 +58,7 @@
   "license": "MIT",
   "scripts": {
     "prestart": "gatsby clean",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "dev": "gatsby develop",
     "build": "gatsby build",
     "format": "prettier --write src/**/*.{js,jsx}",
