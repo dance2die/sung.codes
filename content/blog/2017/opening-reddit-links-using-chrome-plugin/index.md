@@ -1,7 +1,10 @@
 ---
-title: "Opening Reddit Links using Chrome Plugin"
-date: "2017-06-25"
-coverImage: "featured-image-2.jpg"
+title: Opening Reddit Links using Chrome Plugin
+date: '2017-06-25'
+coverImage: featured-image-2.jpg
+published_at: '2017-06-25T15:00:56.000Z'
+tags: 'blogentry, programming, todayilearned, automation'
+author: Sung M. Kim
 ---
 
 It was Saturday night. I had a lot of time on my hands so I decided to browse [Reddit](https://www.reddit.com/).
@@ -55,3 +58,4 @@ There is already a Chrome plugin called [Reddit Enhancement Suite](http://reddit
  
 
 This is a real handy plugin, which toggles all images in the main feed.
+

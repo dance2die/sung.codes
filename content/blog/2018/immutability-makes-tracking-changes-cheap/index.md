@@ -1,6 +1,9 @@
 ---
-title: "Immutability makes tracking changes cheap"
-date: "2018-12-02"
+title: Immutability makes tracking changes cheap
+date: '2018-12-02'
+published_at: '2018-12-02T17:02:57.000Z'
+tags: 'react, selfnote, todayilearned'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Joeri Römer_](https://unsplash.com/photos/Xne1N4yZuOY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/boulder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -50,3 +53,4 @@ You can still override [shouldComponentUpdate](https://reactjs.org/docs/react-co
 - [Immutable User Interface](https://vimeo.com/album/3953264/video/166790294) - Lee Byron in Render 2018
     - Haven't finished watching it, yet
     - Just found it from [Dan's tweet](https://twitter.com/dan_abramov/status/735530699231531008).
+

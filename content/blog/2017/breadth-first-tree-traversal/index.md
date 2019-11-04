@@ -1,7 +1,10 @@
 ---
-title: "BREADTH-FIRST TREE TRAVERSAL"
-date: "2017-04-08"
-coverImage: "featured-image-2017.04.08.jpg"
+title: BREADTH-FIRST TREE TRAVERSAL
+date: '2017-04-08'
+coverImage: featured-image-2017.04.08.jpg
+published_at: '2017-04-08T11:41:59.000Z'
+tags: 'blogentry, programming, breadthfirst, traversal'
+author: Sung M. Kim
 ---
 
 Featured Image - "[Trees](https://www.flickr.com/photos/rbh/14431865903/in/photolist-nZi5Wc-iPaKKA-5vsbCi-7T27xW-qwXZNW-cA254b-v7KBR-cGHLy5-eYcLS9-5nwc5b-7ZddkJ-S4PqiP-rwhx6n-b2x1Fz-k9T9qu-7WdxCi-5v6DBH-69THJB-9a83Tc-qLj55Z-dR7NWS-9YF3Su-bUurhS-9ierJ3-b2x5TV-howvfr-4rawjf-9xwTPZ-rkhaxS-5DC811-7eKKLj-RLksUu-9qrnoZ-9B2Lor-doRPFa-pebv7p-2193x-m2Afgp-9GU4BC-bVnUAS-e712bc-cXskaJ-8hhqUP-RPEM3-hBt2TR-njFjSY-d8udC9-9tXNXQ-h17NPK-oZHbQr)" by [RichardBH](https://www.flickr.com/photos/rbh/), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
@@ -71,3 +74,4 @@ The working source is available on [GitHub](https://github.com/dance2die/Demo.Le
 I've covered bothDepth-first and Breadth-first traversals in two entries.
 
 Breadth-first traversal is less intuitive to implement than depth-first traversals but still easy to do so using a queue abstract data structure.
+

@@ -1,7 +1,10 @@
 ---
-title: "Deploying Existing Create-React-App on GitHub to Netlify"
-date: "2017-12-09"
-coverImage: "featured-image-1.jpg"
+title: Deploying Existing Create-React-App on GitHub to Netlify
+date: '2017-12-09'
+coverImage: featured-image-1.jpg
+published_at: '2017-12-09T16:06:53.000Z'
+tags: 'programming, quicktip, createreactapp, frontend'
+author: Sung M. Kim
 ---
 
 Featured Image - Photo by [Artem Sapegin](https://unsplash.com/photos/b18TRXc8UPQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -66,3 +69,4 @@ OK, you just deployed a site on Netlify 🎉🎉🎉
 1. [Netlify Home Page](https://www.netlify.com/)
 2. [Deploy React Apps in less than 30 Seconds](https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/) - This short tutorial shows how to deploy directly from command line without going through GitHub.
 3. [Netlify Official Documentation](https://www.netlify.com/docs/)
+

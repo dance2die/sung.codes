@@ -1,7 +1,10 @@
 ---
-title: "Parsing a number into digits - Reprise"
-date: "2017-05-28"
-coverImage: "featured-image-numbers.jpg"
+title: Parsing a number into digits - Reprise
+date: '2017-05-27'
+coverImage: featured-image-numbers.jpg
+published_at: '2017-05-28T00:09:17.000Z'
+tags: 'blogentry, programming, c, digits'
+author: Sung M. Kim
 ---
 
 Featured Image - "[Numbers](https://www.flickr.com/photos/pagedooley/33012371924/in/photolist-Sic33h-axZ5BR-fmHjf2-ftyZh-cdkHVG-bVYosr-cdkHUd-bVYomR-cdkJaU-cdkJ9W-bVYooZ-cdkJ3L-bVYoo4-cdkJ33-cdkJ4A-cdkHWU-7XEruh-6aoKMB-58TTn-7pMfPC-5BCf-6cJTod-7mVfDM-bVYopD-DNnYH-7Dpz8d-jWGuhC-7ixpfM-pnNLmy-9A6rSx-pEgSWu-pnMNrB-oHqqL6-eoTrMt-6Smdj9-fYfgZq-6358Sy-a1DxLo-9mqFmA-m3CPo-mTjBQ-6q7D14-5pf3JR-9v4CfC-buw58e-qJyamo-9tM3Lx-9tQ1qE-iQhVK-kwYL7)" by [Kevin Dooley](https://www.flickr.com/photos/pagedooley/ "Go to Kevin Dooley's photostream"), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
@@ -65,3 +68,4 @@ A contrived benchmarking result came out as follows.
 > Implementation using Stack: 00:00:04.0093535 Implementation using int.parse: 00:00:22.2908904 Implementation using ordinal number: 00:00:08.3212206
 
 The source for this test is on [GitHub](https://github.com/dance2die/Demo.LearnByDoing/blob/66cb2da206d195f9989124bd160045890ca57276/Demo.LearnByDoing.General/ConvertIntegerToArrayProgram.cs).
+

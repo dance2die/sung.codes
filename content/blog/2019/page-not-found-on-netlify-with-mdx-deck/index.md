@@ -1,7 +1,10 @@
 ---
-title: "Page Not Found on Netlify with MDX-Deck"
-date: "2019-07-26"
-coverImage: "featured-image-1.jpg"
+title: Page Not Found on Netlify with MDX-Deck
+date: '2019-07-25'
+coverImage: featured-image-1.jpg
+published_at: '2019-07-26T01:04:03.000Z'
+tags: 'mdx, netlify, tips'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Sora Sagano_](https://unsplash.com/@s_sagano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/deck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -57,3 +60,4 @@ Now when you go to any of following links, you won't be faced with "Page Not Fou
 - [Learning MDX Deck: Deploy To Netlify](https://davefollett.io/2019/05/20/mdx-deck-deploy-to-netlify/) by [Dave Follett](https://twitter.com/davefollett)
 - [MDX-Deck](https://github.com/jxnblk/mdx-deck)
 - MDX-deck [source code](https://github.com/dance2die/demo.mdx-error-on-windows10) published to Netlify as demo.
+

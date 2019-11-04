@@ -1,7 +1,10 @@
 ---
-title: "Dynamically Resize Signature Field in Word Template (Like a Web Developer)"
-date: "2017-06-04"
-coverImage: "Featured-Image.jpg"
+title: Dynamically Resize Signature Field in Word Template (Like a Web Developer)
+date: '2017-06-04'
+coverImage: Featured-Image.jpg
+published_at: '2017-06-04T13:41:25.000Z'
+tags: 'blogentry, programming, c, interop'
+author: Sung M. Kim
 ---
 
 Suppose that you were working on merging client data with a Microsoft Word template and everything went well. And then **boom**, a week later, you are notified from a user that there was an issue with the generated Word file.
@@ -97,3 +100,4 @@ The full source (the template file is included in the source as part of the solu
 The Word template hack was no difference from the Front-End solution. If you ever have a trouble dealing with Word templates, put your front-end knowledge into work.
 
 The steps involved for this seems a bit cumbersome so I'd appreciate it if anyone can suggest me a lazier way to do this.
+

@@ -1,7 +1,10 @@
 ---
-title: "Setting up an ES6 Environment for ASP.NET MVC 5"
-date: "2017-05-22"
-coverImage: "featured-image.jpg"
+title: Setting up an ES6 Environment for ASP.NET MVC 5
+date: '2017-05-22'
+coverImage: featured-image.jpg
+published_at: '2017-05-22T11:09:11.000Z'
+tags: 'blogentry, programming, aspnetmvc, aspnetmvc5'
+author: Sung M. Kim
 ---
 
 **UPDATE**: October 13th, 2018
@@ -266,3 +269,4 @@ If you are using `npm-watch`, you can clear the "Pre-build event command line" c
 I described how to set up ASP.NET MVC 5 web application for ES6 using Webpack and Babel. The "ceremony" seems too much of trouble. If you are ready to move on to ASP.NET Core, it'd be easier to do so (even though most of the steps would be the same) and you can find much more resources on how to do so.
 
 The full source for this demo is avaialble on [GitHub](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/BlogDemo). The new source using `babel-preset-env` is on the same repository but in different folder [AspNetMvc5_BabelPresetEnv.](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/AspNetMvc5_BabelPresetEnv)
+

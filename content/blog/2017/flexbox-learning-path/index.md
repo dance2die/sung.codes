@@ -1,7 +1,10 @@
 ---
-title: "Flexbox Learning Path"
-date: "2017-08-13"
-coverImage: "featured-image-1.jpg"
+title: Flexbox Learning Path
+date: '2017-08-13'
+coverImage: featured-image-1.jpg
+published_at: '2017-08-13T18:51:27.000Z'
+tags: 'blogentry, programming, css, flexbox'
+author: Sung M. Kim
 ---
 
 I was reading [Pure-React](https://daveceddia.com/pure-react/) by David Ceddia and I was working on an exercise to create an email component.
@@ -59,3 +62,4 @@ Here is the summary of Flexbox Learning Path.
 3. Play around with [Froggy ](http://flexboxfroggy.com/)until you can solve all questions without reading instructions.
 4. Watch Flexbox.io videos again.
 5. Review the [summary](https://gist.github.com/sw-yx/cdd85db3e92f070d5ba164cf05cfd428).
+

@@ -1,7 +1,10 @@
 ---
-title: "Solving an XML Entity Deserialization Issue"
-date: "2016-12-31"
-coverImage: "featured-image-2016.12.31.png"
+title: Solving an XML Entity Deserialization Issue
+date: '2016-12-31'
+coverImage: featured-image-2016.12.31.png
+published_at: '2016-12-31T16:49:12.000Z'
+tags: 'blogentry, programming, c, deserialization'
+author: Sung M. Kim
 ---
 
 I've recently released a new version of [MyAnimeListSharp](https://github.com/dance2die/MyAnimeListSharp) and I'd like to talk about a challenge I faced while implementing it.
@@ -77,3 +80,4 @@ private static void DisableUndeclaredEntityCheck(XmlReader xmlReader)
 `XmlReader` does not expose a property `DisableUndeclaredEntityCheck` publicly so it needs to be turned on using reflection. The property name is aptly named since you can guess what it does from the name.
 
 I've never hacked my code this bad by having to set an internal property in .NET library. What I've learned from this challenge was that this experience has broadened my horizon that learning the internal of a framework can be useful in certain scenarios even though messing around with internal details is not a good idea most of time.
+

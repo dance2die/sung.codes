@@ -1,7 +1,10 @@
 ---
-title: "Union-Find Algorithm"
-date: "2017-05-13"
-coverImage: "Featured-Image-Union-St.-Street-Sign-in-Bodie.jpg"
+title: Union-Find Algorithm
+date: '2017-05-13'
+coverImage: Featured-Image-Union-St.-Street-Sign-in-Bodie.jpg
+published_at: '2017-05-13T13:37:30.000Z'
+tags: 'blogentry, programming, todayilearned, algorithm'
+author: Sung M. Kim
 ---
 
  Featured Image - "[Union St. Street Sign in Bodie](https://www.flickr.com/photos/39908901@N06/14815502318/in/photolist-ozcjF9-nrKv69-a3tpyD-3fSBwq-a4wb5c-aLmjVz-pfSRLp-9qyvtR-myYQ7T-nA4G5s-ptfmGt-dh5bf2-gtf6dZ-db4Vqo-9YYbF1-a7d8AL-8FA6cF-freTSE-oLyZYY-coggGb-bT6Mkk-9QJjyk-2Si9ig-aNmeLa-7oSdMS-9yXosF-nGqW7x-cvdzP1-oRpHsX-dH3t8z-aou2qc-svQKHc-9kTby1-eeUcL8-83Fd5K-LFGHJ-4hdkBZ-aEvL7W-8PAyxv-iHZ35u-e8iHdf-agAMsy-9xsrSf-bji9xB-dd2kHq-ae26nH-wQRgYr-dfTsmM-dknx5Z-qHMjuV)" by [m01229](https://www.flickr.com/photos/39908901@N06/), used under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) (Medium sized image)
@@ -33,3 +36,4 @@ The full source for the Maximal Tourism answer is posted on [GitHub](https://git
 Check out Union-Find and see how you can integrate it into your existing code base.
 
 You can find Union-Find algorithm applications in the [last video](https://www.coursera.org/learn/algorithms-part1/lecture/OLXM8/union-find-applications) in the course.
+

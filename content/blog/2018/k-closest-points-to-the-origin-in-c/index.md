@@ -1,6 +1,9 @@
 ---
-title: "K closest points to the origin in C#"
-date: "2018-11-15"
+title: 'K closest points to the origin in C#'
+date: '2018-11-14'
+published_at: '2018-11-15T02:38:31.000Z'
+tags: 'problemsolving, programming, selfnote, algorithm'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Rick Mason_](https://unsplash.com/photos/2FaCKyEEtis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/heap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -42,3 +45,4 @@ Max/MinHeap is very underused IMO.
 - Source code of [KClosePointsToOriginTest.cs](https://gist.github.com/dance2die/d8d1e851c6e26236eefe90dfa93a8830) on GitHub.
 - [Amazon Coding Interview Question - K Closest Points to the Origin](https://www.youtube.com/watch?v=eaYX0Ee0Kcg)
 - [Data Structures: Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) by [Gayle Laakmann McDowell](http://www.gayle.com/)
+

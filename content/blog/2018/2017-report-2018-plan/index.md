@@ -1,7 +1,10 @@
 ---
-title: "2017 Report & 2018 Plan"
-date: "2018-01-06"
-coverImage: "featured-image.jpg"
+title: 2017 Report & 2018 Plan
+date: '2018-01-06'
+coverImage: featured-image.jpg
+published_at: '2018-01-06T19:04:45.000Z'
+tags: 'blogentry, slightedge, todayilearned, 2017'
+author: Sung M. Kim
 ---
 
 Featured Image -Photo by [Joshua Earle](https://unsplash.com/photos/-87JyMb9ZfU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -85,3 +88,4 @@ It's time to spread good habit (weight tracking) into other areas (I forgot whic
 One thing I learned in 2017 was that being consistent (blog) and tracking (weight) pays off.
 
 I will focus on **tracking everything** this year and constantly reflect on my progresses and enjoy the process.
+

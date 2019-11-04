@@ -1,7 +1,10 @@
 ---
-title: "Passing an API Key to Heroku Node Application"
-date: "2017-09-09"
-coverImage: "featured-image.jpg"
+title: Passing an API Key to Heroku Node Application
+date: '2017-09-09'
+coverImage: featured-image.jpg
+published_at: '2017-09-09T19:57:04.000Z'
+tags: 'blogentry, programming, apikey, deployment'
+author: Sung M. Kim
 ---
 
 I was learning [how to publish a node app](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction), [GitHub Traffic View](https://github-traffic-dance2die.herokuapp.com/?user=dance2die)(source on [GitHub](https://github.com/dance2die/github-traffic-views)), which requires a GitHub API key to be passed to Heroku application.
@@ -51,3 +54,4 @@ Now your node app will use that config var value set on Heroku application.
 I just showed you one of the ways to use Heroku config vars, which is to hide an API key.
 
 You can use it to configure your app differently or pass other sensitive information such as database connection string.
+

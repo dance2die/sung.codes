@@ -1,7 +1,10 @@
 ---
-title: "Being explicit with your own React Hook + TypeScript return type"
-date: "2019-02-10"
-coverImage: "featured-image-3.jpg"
+title: Being explicit with your own React Hook + TypeScript return type
+date: '2019-02-10'
+coverImage: featured-image-3.jpg
+published_at: '2019-02-10T20:40:17.000Z'
+tags: 'blogentry, programming, react, typescript'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Rafaela Biazi_](https://unsplash.com/photos/4pJ9gO6NTAw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/typewriter-hooks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -92,3 +95,4 @@ The gist is that, TypeScript does not infer tuple type variable because there is
 - react-use-localstorage
     - [Source Code](https://github.com/dance2die/react-use-localstorage)
     - [NPM registry](https://www.npmjs.com/package/react-use-localstorage)
+

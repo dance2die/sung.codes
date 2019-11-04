@@ -1,6 +1,9 @@
 ---
-title: "Getting Non-Printable Character ASCII Value Using PowerShell"
-date: "2018-11-08"
+title: Getting Non-Printable Character ASCII Value Using PowerShell
+date: '2018-11-07'
+published_at: '2018-11-08T00:54:45.000Z'
+tags: 'problemsolving, programming, selfnote, powershell'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Stéphan Valentin_](https://unsplash.com/photos/-iXjUZlCsd0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/power-shell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -26,3 +29,4 @@ So I asked him to him to copy the white space then fire up PowerShell as I neede
 It turns out it was 160 meaning not a regular space thus can't be trimmed using `ltrim` or `rtrim`, which only trims white space of value 32.
 
 So the fix was to  `replace(column, char(160), '')`, which took care of the issue.
+

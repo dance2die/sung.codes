@@ -1,6 +1,9 @@
 ---
-title: "Canceling setInterval in React"
-date: "2018-09-15"
+title: Canceling setInterval in React
+date: '2018-09-15'
+published_at: '2018-09-15T19:35:58.000Z'
+tags: 'react, javascript'
+author: Sung M. Kim
 ---
 
 _Photo by [Icons8](https://unsplash.com/photos/dhZtNlvNE8M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) team on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
@@ -63,3 +66,4 @@ The interval canceled
 Try it for yourself
 
 ](https://codesandbox.io/s/w7mnz4w0pk?autoresize=1&expanddevtools=1&moduleview=1&view=preview)
+

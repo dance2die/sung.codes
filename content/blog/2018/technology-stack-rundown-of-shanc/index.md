@@ -1,7 +1,10 @@
 ---
-title: "Technology Stack Rundown of SHaNc"
-date: "2018-06-02"
-coverImage: "featured-image.jpg"
+title: Technology Stack Rundown of SHaNc
+date: '2018-06-02'
+coverImage: featured-image.jpg
+published_at: '2018-06-02T18:16:06.000Z'
+tags: webdev
+author: Sung M. Kim
 ---
 
 In the [previous article](https://www.slightedgecoder.com/2018/05/26/introducing-shanc-a-static-hacker-news-clone/), I introduced [SHaNc](http://shanc.netlify.com/), a Static Hacker News clone. I will go into details of tech stack I used and why.
@@ -127,3 +130,4 @@ In following posts, I will go more into details _(e.g. How to implement a custom
 Leave a feedback on [GitHub](https://github.com/dance2die/SHANc/issues).
 
 Say hi on Twitter [@SlightEdgeCoder](https://twitter.com/slightedgecoder).
+

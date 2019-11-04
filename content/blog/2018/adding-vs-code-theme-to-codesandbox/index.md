@@ -1,7 +1,10 @@
 ---
-title: "Adding VS Code Theme to CodeSandBox"
-date: "2018-07-18"
-coverImage: "featured.gif"
+title: Adding VS Code Theme to CodeSandBox
+date: '2018-07-17'
+coverImage: featured.gif
+published_at: '2018-07-18T02:44:52.000Z'
+tags: 'vscode, codesandbox'
+author: Sung M. Kim
 ---
 
 Have you ever wanted to match your [CodeSandBox](https://codesandbox.io) Editor Theme to match your [Visual Studio Code](https://code.visualstudio.com/) Color Theme? _Well, you can._
@@ -64,3 +67,4 @@ https://youtu.be/HhaOuFMl9zI
 Note that the change is global. _That means, all previous SandBoxes (that's what CodeSandBox calls each project) will be affected as well._
 
 But I am sure that the default behavior is probably what you want, anyways 😛.
+

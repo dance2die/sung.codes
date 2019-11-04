@@ -1,7 +1,10 @@
 ---
-title: "Filtering out a stray number in an array"
-date: "2017-10-07"
-coverImage: "Featured-Image-TransmissionCmosXORGate.jpg"
+title: Filtering out a stray number in an array
+date: '2017-10-07'
+coverImage: Featured-Image-TransmissionCmosXORGate.jpg
+published_at: '2017-10-07T19:11:33.000Z'
+tags: 'javascript, csharp'
+author: Sung M. Kim
 ---
 
 I solved a [CodeWars](https://www.codewars.com) (programming challenge site) question and compared my answer to other solutions.
@@ -74,3 +77,4 @@ But be aware that the one-liner was clever but it might cause too much cognitive
 **P.S.**
 
 Would you share any other use cases that you have found for XOR or boolean/bitwise operations?
+

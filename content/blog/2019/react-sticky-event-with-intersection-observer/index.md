@@ -1,7 +1,10 @@
 ---
-title: "React Sticky Event with Intersection Observer"
-date: "2019-08-24"
-coverImage: "featured-image.jpg"
+title: React Sticky Event with Intersection Observer
+date: '2019-08-24'
+coverImage: featured-image.jpg
+published_at: '2019-08-24T20:55:35.000Z'
+tags: 'react, css'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Kelly Sikkema_](https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/sticky-notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -224,3 +227,4 @@ Let's take a look at the working demo one more time.
     - [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)
     - IntersectionObserver [root](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root) option
 - [Sandbox](https://codesandbox.io/s/react-sticky-javascript-refactored-w8otj)
+

@@ -1,7 +1,10 @@
 ---
-title: "'href' vs. 'src' in HTML"
-date: "2019-07-18"
-coverImage: "featured-image.jpg"
+title: '''href'' vs. ''src'' in HTML'
+date: '2019-07-17'
+coverImage: featured-image.jpg
+published_at: '2019-07-18T01:45:53.000Z'
+tags: 'html, css, javascript'
+author: Sung M. Kim
 ---
 
 Last night, I vented out my frustration on `<link>` requiring `href` to point to a CSS stylesheet instead of `src`.
@@ -72,3 +75,4 @@ Many thanks to [Vuild](https://vuild.com/), [Brendan Eich](https://brendaneich.c
 It was a great experience as they spared their time to teach and share the experience.
 
 You can check out [the original thread](https://twitter.com/dance2die/status/1151286723122466816) (but be warned, it has many branches and thus could be hard to follow 😉).
+

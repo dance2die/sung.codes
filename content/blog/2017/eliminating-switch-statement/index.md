@@ -1,7 +1,10 @@
 ---
-title: "Eliminating a Switch statement"
-date: "2017-10-28"
-coverImage: "featured-image-2.jpg"
+title: Eliminating a Switch statement
+date: '2017-10-28'
+coverImage: featured-image-2.jpg
+published_at: '2017-10-28T15:20:31.000Z'
+tags: 'problemsolving, programming'
+author: Sung M. Kim
 ---
 
 I was solving [Make the Deadfish Swim](https://www.codewars.com/kata/make-the-deadfish-swim/) on [CodeWars](https://www.codewars.com), which seemed to require many if or switch (conditional) statements.
@@ -80,3 +83,4 @@ I am just getting started with FP way of writing programs in C# and started usin
 Still wrapping my head around on FP so I'd appreciate it if you can provide me pointers on how to go further with FP.
 
 The source code is available on [GitHub](https://github.com/dance2die/Demo.LearnByDoing/blob/master/Demo.LearnByDoing.Tests/CodeWars/Kyu6/MakeTheDeadFishSwimTest.cs).
+

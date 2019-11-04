@@ -1,7 +1,10 @@
 ---
-title: "React + TypeScript with Parcel"
-date: "2019-01-23"
-coverImage: "featured-image.jpg"
+title: React + TypeScript with Parcel
+date: '2019-01-22'
+coverImage: featured-image.jpg
+published_at: '2019-01-23T03:46:32.000Z'
+tags: 'programming, quicktip, react, selfnote'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Kira auf der Heide_](https://unsplash.com/photos/IPx7J1n_xUc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/parcel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -32,3 +35,4 @@ jsx option in tsconfig.json
 
 - [Parcel Documentation on TypeScript](https://parceljs.org/typeScript.html)
 - [React + TypeScript with Parcel repo](https://github.com/dance2die/demo.typescript-mobx-parcel)
+

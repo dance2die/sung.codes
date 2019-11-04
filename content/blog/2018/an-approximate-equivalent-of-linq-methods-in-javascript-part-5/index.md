@@ -1,7 +1,10 @@
 ---
-title: "How to Implement LINQ methods in JavaScript - Part 5"
-date: "2018-03-31"
-coverImage: "featured-image-4.jpg"
+title: How to Implement LINQ methods in JavaScript - Part 5
+date: '2018-03-31'
+coverImage: featured-image-4.jpg
+published_at: '2018-03-31T19:28:57.000Z'
+tags: 'blogentry, programming, quicktip, series'
+author: Sung M. Kim
 ---
 
 Photo by [Jonas Vincent](https://unsplash.com/photos/xulIYVIbYIc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/high-five?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -95,3 +98,4 @@ The full source code and instructions on how to run them are on GitHub.
 
 - [C# source](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo)
 - [JavaScript source](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo)
+

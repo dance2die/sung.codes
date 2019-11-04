@@ -1,6 +1,9 @@
 ---
-title: "react-use-localstorage"
-date: "2018-10-26"
+title: react-use-localstorage
+date: '2018-10-25'
+published_at: '2018-10-26T01:23:19.000Z'
+tags: 'react, localstorage'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Chris Scott_](https://unsplash.com/photos/NEc3YEN1FFw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/hooks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -47,3 +50,4 @@ The demo shows that state is saved directly in local storage.
 ## 💫Additional Context
 
 The source code is available on [GitHub](https://github.com/dance2die/react-use-localstorage) with MIT license.
+

@@ -1,6 +1,9 @@
 ---
-title: "Hacktoberfest is over but..."
-date: "2018-11-18"
+title: Hacktoberfest is over but...
+date: '2018-11-18'
+published_at: '2018-11-18T19:53:08.000Z'
+tags: 'selfnote, hacktoberfest, todayilearned'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Neil Thomas_](https://unsplash.com/photos/SmFBUCgcTn0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/digital-ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) _(Digital Camera + Ocean)_.
@@ -18,3 +21,4 @@ I now see what [Digital Ocean](https://www.digitalocean.com/) (DO) was trying to
 Not only were DO trying to giving back to the developer community, DO was trying to help us developers to get used to the **process** and contribute more, which helps others as well.
 
 취지가 정말로 좋은것 같습니다. (_better expressed in Korean_).
+

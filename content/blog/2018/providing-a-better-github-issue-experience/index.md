@@ -1,7 +1,10 @@
 ---
-title: "Providing a Better GitHub Issue Experience"
-date: "2018-06-24"
-coverImage: "featured-image-2.jpg"
+title: Providing a Better GitHub Issue Experience
+date: '2018-06-23'
+coverImage: featured-image-2.jpg
+published_at: '2018-06-24T04:15:03.000Z'
+tags: 'github, opensource'
+author: Sung M. Kim
 ---
 
 I recently started contributing to an open source project, [qit](https://qit.cloud/), which "[let programmers find and listen to podcasts by topic](https://github.com/codingblocks/podcast-app#qit-listen-to-programming-podcasts-by-topic)".
@@ -120,3 +123,4 @@ I found about the issue template from [dotnet/cli](https://github.com/dotnet/cli
 We are trying [many fun things](https://github.com/codingblocks/podcast-app/issues?utf8=%E2%9C%93&q=cypress) and [failing](https://github.com/codingblocks/podcast-app/pull/139) along the way. If you want to have fun developing a PWA, please join us on [Coding Blocks Slack community](https://www.codingblocks.net/slack/) (#qit).
 
 If you have any questions, leave a comment (or please holla me on [Twitter](https://twitter.com/slightedgecoder)).
+

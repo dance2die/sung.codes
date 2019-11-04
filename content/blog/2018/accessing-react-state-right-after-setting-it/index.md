@@ -1,6 +1,9 @@
 ---
-title: "Accessing React State right after setting it"
-date: "2018-08-25"
+title: Accessing React State right after setting it
+date: '2018-08-25'
+published_at: '2018-08-25T22:17:51.000Z'
+tags: 'react, javascript'
+author: Sung M. Kim
 ---
 
 _Photo by [Celso](https://unsplash.com/photos/4RZx2k4sDj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/sequence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
@@ -92,3 +95,4 @@ And this demo shows that `componentDidUpdate`
 Frankly speaking, I've only used the callback to access updated value because I only found out about the recommended way of using `componentDidUpdate` while writing this blog 😝.
 
 And you can play around with the demo on [CodeSandBox](https://codesandbox.io/s/6lzp0v0mlw).
+

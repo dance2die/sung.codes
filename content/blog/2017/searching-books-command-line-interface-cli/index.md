@@ -1,7 +1,10 @@
 ---
-title: "Searching for Books in Command Line Interface (CLI)"
-date: "2017-11-26"
-coverImage: "featured-image-redd-angelo-12845.jpg"
+title: Searching for Books in Command Line Interface (CLI)
+date: '2017-11-26'
+coverImage: featured-image-redd-angelo-12845.jpg
+published_at: '2017-11-26T22:39:11.000Z'
+tags: 'announcement, blogentry, programming'
+author: Sung M. Kim
 ---
 
 Featured Image Credit -Photo by [Redd Angelo](https://unsplash.com/photos/9o8YdYGTT64?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -49,3 +52,4 @@ PAA requires a developer to sign up for Amazon Affiliate Program. Thus the Amazo
 I will write another entry on technical challenges I had as well as the architecture (and lack thereof).
 
 WARNING: By the way, the source is very sloppy since it was built from a throwaway code while learning ES6 😊
+

@@ -1,7 +1,10 @@
 ---
-title: "How Refactoring Helps Dealing with Legacy Code"
-date: "2017-06-11"
-coverImage: "featured-image.jpg"
+title: How Refactoring Helps Dealing with Legacy Code
+date: '2017-06-11'
+coverImage: featured-image.jpg
+published_at: '2017-06-11T13:36:50.000Z'
+tags: 'blogentry, programming, beyondlegacycode, book'
+author: Sung M. Kim
 ---
 
 You are writing code either professionally or for fun. A lot of times, we think that our code will never change.
@@ -216,3 +219,4 @@ I hope you can now see why refactoring helps improving legacy code.
 If you want to know more about refactoring, check out Martin Fowler's book, [Refactoring Improving the Design of Existing Code](https://martinfowler.com/books/refactoring.html).
 
 The code is available on [GitHub](https://github.com/dance2die/Blog.RefactorDemo).
+

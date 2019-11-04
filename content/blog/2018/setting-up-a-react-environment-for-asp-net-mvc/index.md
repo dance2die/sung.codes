@@ -1,6 +1,9 @@
 ---
-title: "Setting up a React Environment for ASP.NET MVC"
-date: "2018-10-13"
+title: Setting up a React Environment for ASP.NET MVC
+date: '2018-10-13'
+published_at: '2018-10-13T21:05:54.000Z'
+tags: 'react, aspnet, webpack, babel'
+author: Sung M. Kim
 ---
 
 _Photo by [Zoltan Tasi](https://unsplash.com/photos/6vEqcR8Icbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/atom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
@@ -174,3 +177,4 @@ In this post I've assumed that you know the basics of NPM & Webpack so skipped m
 Please refer to documentations linked in-line in the post if you want to understand how each step works and to troubleshoot should you run into an issue.
 
 Source code is available on [GitHub](https://github.com/dance2die/blog.AspNetReact).
+

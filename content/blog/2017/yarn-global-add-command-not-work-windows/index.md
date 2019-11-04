@@ -1,7 +1,10 @@
 ---
-title: "'yarn global add' command does not work on Windows"
-date: "2017-12-31"
-coverImage: "featured-image-2.jpg"
+title: '''yarn global add'' command does not work on Windows'
+date: '2017-12-30'
+coverImage: featured-image-2.jpg
+published_at: '2017-12-31T04:34:47.000Z'
+tags: 'programming, quicktip, cmd, cmdexe'
+author: Sung M. Kim
 ---
 
 Featured Image -Photo by [Olliss](https://unsplash.com/photos/P6-S4QZtAvA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -83,3 +86,4 @@ I got a hint after seeing this [answer on GitHub ](https://github.com/yarnpkg/y
 I was initially frustrated that `create-react-app` didn't work with `yarn global add` so stopped pursuing further but this time (3~4 months later), I decided to do something about it so that I can use `yarn` all the time.
 
 I hope you can benefit from this post if you are working on front-end projects on Windows as I am.
+

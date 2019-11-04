@@ -1,7 +1,10 @@
 ---
-title: "Setting up ReactJS.org Environment for Open Source Contribution"
-date: "2017-10-15"
-coverImage: "featured-image-1.jpg"
+title: Setting up ReactJS.org Environment for Open Source Contribution
+date: '2017-10-15'
+coverImage: featured-image-1.jpg
+published_at: '2017-10-15T21:51:45.000Z'
+tags: 'programming, git, github, opensource'
+author: Sung M. Kim
 ---
 
 I wanted to contribute to [ReactJS.org](https://reactjs.org/) website, (which is a new React JS documentation site announced on [Twitter](https://twitter.com/reactjs/status/913797391307833344).) as a happy new React user.
@@ -110,3 +113,4 @@ This post is based on the [feedback](https://github.com/reactjs/reactjs.org/issu
 update on 10/16/2017
 
 `yarn check-all` now [works on Windows](https://github.com/reactjs/reactjs.org/pull/166), so that part of the post is removed, thus easier to set up now.
+

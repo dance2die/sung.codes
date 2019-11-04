@@ -1,6 +1,9 @@
 ---
-title: "About Lazy loading Ant Design Components overriding custom CSS"
-date: "2018-12-01"
+title: About Lazy loading Ant Design Components overriding custom CSS
+date: '2018-12-01'
+published_at: '2018-12-01T20:02:35.000Z'
+tags: 'problemsolving, programming, react, selfnote'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Vlad Tchompalov_](https://unsplash.com/photos/dQkXoqQLn40?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -52,3 +55,4 @@ So the workaround I adopted was to move `styles.css` to a static file location (
 ``gist:dance2die/7a47a15b719a3cf2b2a7979306b04ded``
 
 <a href="https://gist.github.com/dance2die/7a47a15b719a3cf2b2a7979306b04ded">View this gist on GitHub</a>
+

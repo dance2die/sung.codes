@@ -1,6 +1,9 @@
 ---
-title: "How recording my weight daily motivates me to lose weight over time"
-date: "2016-11-21"
+title: How recording my weight daily motivates me to lose weight over time
+date: '2016-11-20'
+published_at: '2016-11-21T01:19:31.000Z'
+tags: 'blogentry, slightedge, googlesheets, progress'
+author: Sung M. Kim
 ---
 
 I used to weigh 219.6 lbs (my height is 5\`7") in April of 2015 and now I am 25 lbs less since then.
@@ -32,3 +35,4 @@ Here is the graph since December of 2015 until Yesterday (11/19/2016)
 ![Dec 2015~Nov 2016](./images/WeightGraph3.jpg)
 
 Being able to see the weight going down makes whole lotta difference.
+

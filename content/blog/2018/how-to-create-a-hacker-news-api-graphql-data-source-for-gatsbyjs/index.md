@@ -1,7 +1,10 @@
 ---
-title: "How to create a Hacker News API GraphQL data source for GatsbyJS"
-date: "2018-06-16"
-coverImage: "featured-image-1.jpg"
+title: How to create a Hacker News API GraphQL data source for GatsbyJS
+date: '2018-06-16'
+coverImage: featured-image-1.jpg
+published_at: '2018-06-16T18:20:50.000Z'
+tags: 'gatsby, webdev, javascript'
+author: Sung M. Kim
 ---
 
 In the [previous post](https://www.slightedgecoder.com/2018/06/02/technology-stack-rundown-of-shanc/), I introduced a tech stack for [SHaNc](http://shanc.netlify.com/).
@@ -132,3 +135,4 @@ The code might not be optimal at fetching data, but static site generator will c
 _But I'd love to see if you have any suggestions on how to improve it :)_
 
 You can create an issue on [GitHub](https://github.com/dance2die/SHANc/issues) or send me a [tweet](https://twitter.com/slightedgecoder). Full source for `gatsby-node.js` can be found [here](https://github.com/dance2die/SHANc/blob/master/gatsby-node.js).
+

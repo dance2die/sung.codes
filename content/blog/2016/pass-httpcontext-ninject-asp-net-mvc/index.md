@@ -1,6 +1,9 @@
 ---
-title: "How to Pass HttpContext to Ninject in ASP.NET MVC"
-date: "2016-12-04"
+title: How to Pass HttpContext to Ninject in ASP.NET MVC
+date: '2016-12-04'
+published_at: '2016-12-04T05:00:19.000Z'
+tags: 'blogentry, programming, aspnetmvc, httpcontext'
+author: Sung M. Kim
 ---
 
 I've been working with ASP.NET MVC websites that creates a connection string based on a query string value.
@@ -115,3 +118,4 @@ You will see the connection string on the web page as shown below (this is for "
 I've found the [answer](http://stackoverflow.com/a/3617961/4035) via StackOverflow answered by "[Ruben Bartelink](http://stackoverflow.com/users/11635/ruben-bartelink)". One line of code Ruben posted saved me hours of headache.
 
 The working source code is available on [GitHub](https://github.com/dance2die/Blog.SlightEdgeCoder.NinjectHttpContext).
+

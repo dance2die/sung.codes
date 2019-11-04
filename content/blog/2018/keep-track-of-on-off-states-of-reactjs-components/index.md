@@ -1,6 +1,9 @@
 ---
-title: "Keeping track of on/off states of React components"
-date: "2018-07-28"
+title: Keeping track of on/off states of React components
+date: '2018-07-28'
+published_at: '2018-07-28T20:54:58.000Z'
+tags: 'react, javascript'
+author: Sung M. Kim
 ---
 
 [Adokiye Iruene](https://stackoverflow.com/users/9561595/adokiye-iruene) asked a question on StackOverflow regarding applying a style on a clicked component not all the sibling components.  
@@ -131,3 +134,4 @@ The gist is that, keep a track of each component state in an object and toggle i
 * * *
 
 👋
+

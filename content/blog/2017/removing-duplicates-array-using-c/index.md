@@ -1,7 +1,10 @@
 ---
-title: "Removing Duplicates from an Array (Using C#)"
-date: "2017-03-18"
-coverImage: "featured-image-removed-by-Don-Crowley.jpg"
+title: 'Removing Duplicates from an Array (Using C#)'
+date: '2017-03-18'
+coverImage: featured-image-removed-by-Don-Crowley.jpg
+published_at: '2017-03-18T18:36:28.000Z'
+tags: 'csharp, tutorial'
+author: Sung M. Kim
 ---
 
 Featured Image - "[removed.jpg](https://www.flickr.com/photos/doncrowley/2194796278/in/photolist-4kWUt9-7nJpV8-7t4XtP-8yCe1C-5iFzwq-8yCd2u-247GL-2hZHyH-247Er-j7z7T-b5fzx-4vqboo-h8DgpC-4WH8Lw-Re2ChR-jnfYUr-4WHaDw-4ZRqzt-247GT-247GS-4Ky6xK-247GN-247Gz-247GK-arm2re-6Vb9QA-5XRyEq-b3d2BD-G9oA9n-e4VTdH-dvgarU-dkRhkT-bsfoE5-8ZmUAd-5bWCeC-6aAXSt-jKr7zA-baHzmc-4WCR5x-syW9C5-jnfXcD-dg8w16-4WCVQp-4WCUsF-4ZRqex-4WHbmu-nN3hSJ-6icUnS-SSCTUz-8jAAex)" by [Don Crowley](https://www.flickr.com/photos/doncrowley/), used under [BY SA](https://creativecommons.org/licenses/by-sa/2.0/)
@@ -93,3 +96,4 @@ RemoveDuplicatesBySortingFirst(a)
 Above function returns {1, 2, 3, 8}, not {8, 1, 3, 2}.
 
 Full working source code can be found on [GitHub](https://github.com/dance2die/Demo.LearnByDoing/blob/master/Demo.LearnByDoing.General/RemoveDuplicatesProgram.cs).
+

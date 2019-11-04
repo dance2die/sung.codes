@@ -1,7 +1,10 @@
 ---
-title: "Getting DOM content from Chrome Extension"
-date: "2019-02-10"
-coverImage: "featured-image-2.jpg"
+title: Getting DOM content from Chrome Extension
+date: '2019-02-10'
+coverImage: featured-image-2.jpg
+published_at: '2019-02-10T19:51:39.000Z'
+tags: 'programming, selfnote, chromeplugin'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Sai Kiran Anagani_](https://unsplash.com/photos/5Ntkpxqt54Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/execute-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -47,3 +50,4 @@ You can add a [tabs permission](https://developer.chrome.com/extensions/tabs) to
 "permissions" section in Chrome Extension manifest.json
 
 _Reference - Stack Overflow -_ [_chrome.tabs.executeScript not working?_](https://stackoverflow.com/a/45601794/4035)
+

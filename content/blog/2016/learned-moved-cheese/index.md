@@ -1,6 +1,9 @@
 ---
 title: What I learned from "Who Moved My Cheese"
-date: 2016-11-27
+date: '2016-11-27'
+published_at: '2016-11-27T05:00:55.000Z'
+tags: bookreview
+author: Sung M. Kim
 ---
 
 Last week I read a book titled "[Who Moved My Cheese](https://www.amazon.com/Who-Moved-My-Cheese-Amazing/dp/0399144463/ref=sr_1_1?ie=UTF8&qid=1480022666&sr=8-1&keywords=who+moved+my+cheese)".![Who Moved My Cheese Cover](./images/Who-Moved-My-Cheese-Cover.jpg)
@@ -32,3 +35,4 @@ I applied the lessons learned in three different areas.
 I am applying what I've learned in three different areas. Depending on number of perspective I discover, I will be able to apply the concept in other areas.
 
 "Who Moved My Cheese" helped me to understand my current situation and what needs to be done as well as to realize the changes around me.
+

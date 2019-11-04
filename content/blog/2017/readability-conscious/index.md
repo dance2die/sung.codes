@@ -1,7 +1,10 @@
 ---
-title: "Readability Conscious"
-date: "2017-02-19"
-coverImage: "featured-image-voynich-manuscript.jpg"
+title: Readability Conscious
+date: '2017-02-19'
+coverImage: featured-image-voynich-manuscript.jpg
+published_at: '2017-02-19T19:28:56.000Z'
+tags: 'blogentry, programming, todayilearned, c'
+author: Sung M. Kim
 ---
 
 Featured Image - "[voynich](https://www.flickr.com/photos/figgenhoffer/2393781060/in/photolist-4DwKHf-6bPEf-5cD6N1-5cyPXP-5cD6W1-5cyQvi-5cD6YW-5cD75h-5cD6Sj-5cyQqv-yY54S-yY54V-87DHYs-mrZ7WV-eSstSZ-5cD7h1-6iiRn5-4pHvoE-cCqgiU-szWvt-c6niF5-c6nkQd-szSmU-c6mgyY-c6mTe1-c6nesd-yUjFT-c6maY1-c6mY3w-9tdawJ-c6mrm3-c6mxf1-c6nbMw-c6mnih-c6npwY-c6nx9U-c6mM1q-59qPmR-c6mBb9-c6n5FE-c6mFMN-c6n7CL-2fhmqn-4Vc476-6bLgg-5cT71Z-59v3Es-6bLcc-59v3Rb-6bL7S)" by [D.C.Atty](https://www.flickr.com/photos/figgenhoffer/), used under [CC BY](http://creativecommons.org/licenses/by/2.0/) / Dropped Quality to 60% from original - It's a featured image since nobody can figure out what's written in Voynich Manuscript. ;)
@@ -106,3 +109,4 @@ I approached the Balanced Bracket problem the same way. I wrote the "Main" code 
 ### Conclusion
 
 Solving coding questions and writing readable code helps me understand the question better and let me find an error in the code much easier. I will improve my programming skill so that other people can understand it by helping them read it like a book.
+

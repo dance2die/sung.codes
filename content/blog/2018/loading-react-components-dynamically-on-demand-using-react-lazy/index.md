@@ -1,6 +1,9 @@
 ---
-title: "Loading React Components Dynamically on Demand using React.lazy"
-date: "2018-10-28"
+title: Loading React Components Dynamically on Demand using React.lazy
+date: '2018-10-28'
+published_at: '2018-10-28T19:28:16.000Z'
+tags: 'react, javascript'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Holger Link_](https://unsplash.com/photos/K7yZ-CsDvRU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/lazy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -146,3 +149,4 @@ Case 2 – Handling Different Data Types
 Case 3 – Loading Components on Demand  
 \- [CodeSandbox](https://codesandbox.io/s/qv743wwrr4)  
 \- [Demo](https://reactlazy3.netlify.com/)
+

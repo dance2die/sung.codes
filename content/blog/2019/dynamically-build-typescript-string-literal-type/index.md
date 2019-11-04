@@ -1,7 +1,10 @@
 ---
-title: "Dynamically build TypeScript string literal type"
-date: "2019-02-02"
-coverImage: "featured-image-1.jpg"
+title: Dynamically build TypeScript string literal type
+date: '2019-02-02'
+coverImage: featured-image-1.jpg
+published_at: '2019-02-02T19:02:55.000Z'
+tags: typescript
+author: Sung M. Kim
 ---
 
 _Photo by _[_Kevin Jarrett_](https://unsplash.com/photos/t3d22GqvUqs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/type-build?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -111,3 +114,4 @@ I hope you don't go thru the same trouble with this issue.
 - [Four days of self-note](https://spectrum.chat/typescript/general/solved-is-there-a-way-to-create-type-from-an-array~2317e93b-0c66-4088-a4a6-9d6ebbd257ea) in Spectrum
 - [CodeSandbox Demo](https://codesandbox.io/s/vj4w899q55)
 - Stack Overflow Question - [array to strin](https://stackoverflow.com/a/54061487/4035)[g](https://stackoverflow.com/a/54061487/4035) [literal type](https://stackoverflow.com/a/54061487/4035)
+

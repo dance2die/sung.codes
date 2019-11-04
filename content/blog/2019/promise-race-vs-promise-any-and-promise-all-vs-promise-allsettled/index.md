@@ -1,7 +1,10 @@
 ---
-title: "Promise.race vs. Promise.any And Promise.all vs. Promise.allSettled"
-date: "2019-05-18"
-coverImage: "featured-image-1.jpg"
+title: Promise.race vs. Promise.any And Promise.all vs. Promise.allSettled
+date: '2019-05-18'
+coverImage: featured-image-1.jpg
+published_at: '2019-05-18T21:32:46.000Z'
+tags: javascript
+author: Sung M. Kim
 ---
 
 _Photo by _[_Ryan Franco_](https://unsplash.com/photos/C6YVD4keMJY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/pinky-promise?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -156,3 +159,4 @@ How I understood was that the new `Promise.allSettled/any` are introduced for Pr
 
 I'd love to hear where you would (have) use(d) each method to solve a problem.  
 And would you please kindly let me know if you find any mistakes and/or how I can improve the example?
+

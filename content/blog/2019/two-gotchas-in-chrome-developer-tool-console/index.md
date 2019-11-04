@@ -1,7 +1,10 @@
 ---
-title: "Two gotchas in Chrome Developer Tool Console"
-date: "2019-04-20"
-coverImage: "featured-image-1.jpg"
+title: Two gotchas in Chrome Developer Tool Console
+date: '2019-04-19'
+coverImage: featured-image-1.jpg
+published_at: '2019-04-20T04:29:25.000Z'
+tags: 'javascript, chrome, devtools'
+author: Sung M. Kim
 ---
 
 _Photo by_ [_Jason Leung_](https://unsplash.com/photos/ZV7lnfyQLmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/console?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -70,3 +73,4 @@ _You can easily convert a NodeList object to an array using a_ [_spread syntax_]
 The console can save you a lot of keystrokes but you might want to double check before copying & pasting the code from console to the editor.
 
 If you have more gotchas please let me know 🙂
+

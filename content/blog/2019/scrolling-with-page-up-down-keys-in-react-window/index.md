@@ -1,7 +1,10 @@
 ---
-title: "Scrolling with Page Up/Down Keys in React-Window"
-date: "2019-05-08"
-coverImage: "featured-image.jpg"
+title: Scrolling with Page Up/Down Keys in React-Window
+date: '2019-05-07'
+coverImage: featured-image.jpg
+published_at: '2019-05-08T03:01:02.000Z'
+tags: react
+author: Sung M. Kim
 ---
 
 _Photo by_ [_Ruthie_](https://unsplash.com/photos/a6mfMjCFkII?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/paper-roll?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -145,3 +148,4 @@ Here is the link to the code again on CodeSandbox.
 I've had the problem implementing it for [one of the pet projects](https://github.com/dance2die/undraw/blob/master/src/components/Images/Images.js) and that [GitHub issue](https://github.com/dance2die/undraw/blob/master/src/components/Images/Images.js) and seemingly simple but yet helpful [reply by Brian](https://github.com/bvaughn/react-window/issues/46#issuecomment-416073707) saved the day. So I give thanks to Steve & Brian.
 
 I'd appreciate it if anyone can provide me with feedbacks for questions I've asked above 🙂
+

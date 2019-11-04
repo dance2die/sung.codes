@@ -1,7 +1,10 @@
 ---
-title: "Implementation of Bellman-Ford Algorithm"
-date: "2017-05-07"
-coverImage: "Bellman-Ford_worst-case_example.jpg"
+title: Implementation of Bellman-Ford Algorithm
+date: '2017-05-07'
+coverImage: Bellman-Ford_worst-case_example.jpg
+published_at: '2017-05-07T20:06:01.000Z'
+tags: 'blogentry, programming, bellmanford, c'
+author: Sung M. Kim
 ---
 
 I've already [implemented Dijkstra's algorithm](https://www.slightedgecoder.com/2017/04/20/my-journey-on-implementing-dijkstras-algorithm/) and was looking for another way to find the shortest path between two nodes in a graph. I found a simpler algorithm based on relaxation called "Bellman-Ford" algorithm.
@@ -267,3 +270,4 @@ I can't stress enough that the code is not production ready because it's just a 
 ### Conclusion
 
 I've described how Bellman-Ford algorithm is implemented in C#.  I am planning to refactor it to be more readable and structure the code properly and will push the updated code on GitHub.
+

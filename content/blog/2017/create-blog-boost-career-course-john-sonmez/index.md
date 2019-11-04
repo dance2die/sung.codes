@@ -1,7 +1,10 @@
 ---
 title: On "Create a Blog to Boost Your Career Course" (by John Sonmez)"
-date: "2017-04-29"
-coverImage: "Featured-Image-Boost.jpg"
+date: '2017-04-29'
+coverImage: Featured-Image-Boost.jpg
+published_at: '2017-04-29T14:10:04.000Z'
+tags: 'blogentry, bookreview, blog, boost'
+author: Sung M. Kim
 ---
 
 Featured Image - "[DSCOVR Liftoff](https://www.flickr.com/photos/gsfc/16495356966/in/photolist-r8D1Wj-QQCfPt-fWFARy-S5AWz4-o1LYsg-qphFtm-pWgcvR-53jKW-oeo6Tu-53jKR-RbLeSU-QQCg5i-53jLg-ab1kba-RH57Sf-o4T16c-U6SM7x-rzpin-S5AXMe-sisaCm-dm1R1s-edDxyS-dSzo2A-hG4EHb-T2DJDV-RDSvmS-SSLyjx-S5AXjR-S5BhLr-aRv9fK-qsyGca-bGoWje-8JpmiE-TT6qEt-bAY1qT-T4Cvxn-dz6NsH-U34w9D-SNzaYZ-jxEio4-SNz6Sc-S5B68M-av1gT2-aagrq6-b9MkvB-fBzq1-c4BB4f-oqYeJC-brcoqV-RKv6k3)" by [NASA Goddard Space Flight Center](https://www.flickr.com/photos/gsfc/), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
@@ -27,3 +30,4 @@ I'd like to learn at a consistent pace as my blog theme (Making Progressive Enh
 ### Conclusion
 
 If you need a reason to get started with a blog, check out Soft Skills. If you are sold, try out  *How to Create a Blog that Boosts Your Career*.
+

@@ -1,7 +1,10 @@
 ---
-title: "React.Suspense doesn't work with Gatsby (yet)"
-date: "2019-08-01"
-coverImage: "featured-image-2.jpg"
+title: React.Suspense doesn't work with Gatsby (yet)
+date: '2019-07-31'
+coverImage: featured-image-2.jpg
+published_at: '2019-08-01T01:41:23.000Z'
+tags: 'react, gatsby'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Егор Камелев_](https://unsplash.com/@ekamelev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/spider?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)  
@@ -69,3 +72,4 @@ If you have a trouble with converting it into using Function Components with hoo
 
 - [Loading React Components Dynamically on Demand](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/)
 - [Loading React Components Dynamically on Demand using React.lazy](https://www.slightedgecoder.com/2018/10/28/loading-react-components-dynamically-on-demand-using-react-lazy/)
+

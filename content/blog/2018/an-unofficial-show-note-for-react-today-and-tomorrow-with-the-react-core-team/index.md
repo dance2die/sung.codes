@@ -1,6 +1,9 @@
 ---
-title: "An unofficial show note for React Today and Tomorrow with the React Core Team"
-date: "2018-11-03"
+title: An unofficial show note for React Today and Tomorrow with the React Core Team
+date: '2018-11-03'
+published_at: '2018-11-03T22:06:29.000Z'
+tags: 'react, podcast, shownote'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Sharon McCutcheon_](https://unsplash.com/photos/rItGZ4vquWk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/show-note?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -185,3 +188,4 @@ I've tried to compile the show note as grouped as possible while writing notes o
 If you liked the show note, would you let me know should you find anything missing, wrong, or require an update?
 
 Lastly subscribe to React podcast, and follow React core team on twitter (which you can find in the official React podcast [show note](https://reactpodcast.simplecast.fm/27)) as they are very active on it.
+

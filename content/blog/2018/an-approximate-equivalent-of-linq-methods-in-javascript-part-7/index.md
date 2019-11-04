@@ -1,7 +1,10 @@
 ---
-title: "How to Implement LINQ methods in JavaScript - Part 7"
-date: "2018-04-21"
-coverImage: "featured-image-1.jpg"
+title: How to Implement LINQ methods in JavaScript - Part 7
+date: '2018-04-21'
+coverImage: featured-image-1.jpg
+published_at: '2018-04-21T22:07:52.000Z'
+tags: 'blogentry, programming, quicktip, series'
+author: Sung M. Kim
 ---
 
 Photo by [rawpixel.com](https://unsplash.com/photos/_2uxSN-8f9A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/lucky-seven?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) I will cover LINQ methods for initializing a sequence.
@@ -79,3 +82,4 @@ Please let me know should you find any errors or improvements I can make to the 
 
 - [C# source](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo)
 - [JavaScript source](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo)
+

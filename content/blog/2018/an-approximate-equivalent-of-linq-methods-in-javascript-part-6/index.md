@@ -1,7 +1,10 @@
 ---
-title: "How to Implement LINQ methods in JavaScript - Part 6"
-date: "2018-04-15"
-coverImage: "featured-image.jpg"
+title: How to Implement LINQ methods in JavaScript - Part 6
+date: '2018-04-14'
+coverImage: featured-image.jpg
+published_at: '2018-04-15T01:59:34.000Z'
+tags: 'blogentry, programming, quicktip, series'
+author: Sung M. Kim
 ---
 
 Photo by [Baher Khairy](https://unsplash.com/photos/Q3a0FHRS4BU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/six?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) I will cover methods for getting subset of sequence.
@@ -106,3 +109,4 @@ The full source code and instructions on how to run them are on GitHub.
 
 - [C# source](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo)
 - [JavaScript source](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo)
+

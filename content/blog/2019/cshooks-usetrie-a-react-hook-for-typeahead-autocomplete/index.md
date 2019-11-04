@@ -1,7 +1,10 @@
 ---
-title: "@cshooks/usetrie, A React Hook for Typeahead/Autocomplete"
-date: "2019-03-23"
-coverImage: "featured-image.jpg"
+title: '@cshooks/usetrie, A React Hook for Typeahead/Autocomplete'
+date: '2019-03-23'
+coverImage: featured-image.jpg
+published_at: '2019-03-23T19:09:37.000Z'
+tags: 'react, javascript, npm, opensource'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Jamie Street_](https://unsplash.com/photos/MoDcnVRN5JU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/retriever?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) _- "trie" is from "[Retrieval](https://en.wikipedia.org/wiki/Trie#History_and_etymology)" thus the cute_ 🐶 _"Retriever"_
@@ -55,3 +58,4 @@ And I plan to add other hooks returning [Min/Max heaps](https://github.com/cshoo
 - NPM - [@cshooks/usetrie](https://www.npmjs.com/package/@cshooks/usetrie)
 - [Source Code](https://github.com/cshooks/hooks/tree/master/packages/useTrie) on GitHub
 - License - [MIT](https://github.com/cshooks/hooks/blob/master/packages/useTrie/LICENSE)
+

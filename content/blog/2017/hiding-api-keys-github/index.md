@@ -1,7 +1,10 @@
 ---
-title: "Hiding API Keys on GitHub"
-date: "2017-07-08"
-coverImage: "featured-image-2017.07.08.jpg"
+title: Hiding API Keys on GitHub
+date: '2017-07-08'
+coverImage: featured-image-2017.07.08.jpg
+published_at: '2017-07-08T23:52:58.000Z'
+tags: 'blogentry, programming, ignore, backend'
+author: Sung M. Kim
 ---
 
 You have come up with a cool idea, decided to make an open source project, and share it on [GitHub](https://github.com/).
@@ -119,3 +122,4 @@ Check out this Microsoft Documentation, [Safe storage of app secrets during dev
 ### Takeaway
 
 There is no one method that's better than the other. Choose a different method of hiding API keys depending on your current situation.
+

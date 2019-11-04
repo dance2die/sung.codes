@@ -1,7 +1,10 @@
 ---
-title: "Explaining OOP keywords to CSO"
-date: "2017-04-01"
-coverImage: "featured-image-thought.jpg"
+title: Explaining OOP keywords to CSO
+date: '2017-04-01'
+coverImage: featured-image-thought.jpg
+published_at: '2017-04-01T18:02:29.000Z'
+tags: 'blogentry, todayilearned, cso, explanation'
+author: Sung M. Kim
 ---
 
  Featured Image - "[thought](https://www.flickr.com/photos/fresh_photo/3479598520/in/photolist-6itRpW-8YV4K5-cbFuP-6nB9e7-pese9F-fZq5k-boP9f-33uSN8-36dp5A-CvkE9i-eqgjAZ-9xFSCY-5pGeQz-oW7kV-2qiyY-5ohott-7MqMb9-8Cty3b-wuTaa-9kSzg-5Qxk7D-S9cyEx-LkM3u-5xgQBY-Qwyaau-4PuREH-EvADN-51BgCF-7twbdi-y3FRQ-66HNpY-mSzh2-2RUC4-h4S9Jo-RxT8e9-7biKoj-oyHheo-4DC4Af-b5wD6k-38oAT-oVFdt1-9bMCiU-82STq-3X3G8G-dMtDHi-5QqfY2-RhZgsm-2TC9gp-8JD5NQ-68Jnd5)" by [Henadz Freshphoto.ru](https://www.flickr.com/photos/fresh_photo/), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) / Dropped Quality to 60
@@ -31,3 +34,4 @@ He finally gave me an OK and let me go.
 I've reached a deeper understanding of those keywords after a short meeting.
 
 The CSO probably called to teach me how to think and reach to an understanding, not to learn about C# keywords.
+

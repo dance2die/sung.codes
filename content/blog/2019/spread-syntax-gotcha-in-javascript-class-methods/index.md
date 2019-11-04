@@ -1,7 +1,10 @@
 ---
-title: "Spread syntax gotcha in JavaScript class methods"
-date: "2019-03-30"
-coverImage: "featured-image-1.jpg"
+title: Spread syntax gotcha in JavaScript class methods
+date: '2019-03-30'
+coverImage: featured-image-1.jpg
+published_at: '2019-03-30T22:02:02.000Z'
+tags: 'javascript, typescript, react, hooks'
+author: Sung M. Kim
 ---
 
 _Photo by_ [_Jay_](https://unsplash.com/photos/dkFJST9zZZo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/pokeball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) _- Don't get caught_
@@ -124,3 +127,4 @@ I hope you the gotcha & the workaround helped you understand what's going on beh
 
 You can play around with the TypeScript transpiler on the [Playground page](<https://www.typescriptlang.org/play/index.html#src=class%20Trie%20%7B%0D%0A%20%20has(word)%20%7B%20return%20true%3B%20%7D%0D%0A%7D%0D%0A%0D%0Aclass%20Trie2%20%7B%0D%0A%20%20has%20%3D%20(word)%20%3D%3E%20true%3B%0D%0A%7D%0D%0A>).  
 & the console log results in the [Sandbox](https://codesandbox.io/s/xjm96w0wmp).
+

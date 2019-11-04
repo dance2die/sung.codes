@@ -1,6 +1,9 @@
 ---
-title: "Setting React Hooks states in a sync-like manner?"
-date: "2018-12-08"
+title: Setting React Hooks states in a sync-like manner?
+date: '2018-12-07'
+published_at: '2018-12-08T02:29:29.000Z'
+tags: 'problemsolving, programming, react, selfnote'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Martino Pietropoli_](https://unsplash.com/photos/H8zix6ErdXg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/serial?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -66,3 +69,4 @@ _Try it on_ [_CodeSandbox_](https://codesandbox.io/s/8y05v1vx3j)_._
 I am using a promise, not accepting a callback as it makes code clunky possibly causing a callback hell.
 
 And also with a setter promise, you can also use `async/await` syntax.
+

@@ -1,7 +1,10 @@
 ---
 title: Thoughts on "Dealing With Lack Of Confidence As A Developer"
-date: "2017-01-07"
-coverImage: "featured-image-2017.01.13.png"
+date: '2017-01-07'
+coverImage: featured-image-2017.01.13.png
+published_at: '2017-01-07T22:47:45.000Z'
+tags: 'blogentry, johnsonmez, review, simpleprogrammer'
+author: Sung M. Kim
 ---
 
 I've been in a slump where I feel like I've been doing the same thing 3 times last 9 years at the same job, thus feeling like having only 3 years of experience.
@@ -21,3 +24,4 @@ Then, John says something that made me feel guilty." At [3:35](https://youtu.be/
 He ends his video mentioning that if you aim for your goal and you will achieve it.
 
 I will shoot the moon, and hit the moon.
+

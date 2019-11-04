@@ -1,7 +1,11 @@
 ---
-title: "Summary of Clean Architecture Part II "Starting with the Bricks: Programming Paradigms"
-date: "2017-11-05"
-coverImage: "featured-image.jpg"
+title: 'Summary of Clean Architecture Part II '
+Starting with the Bricks: Programming Paradigms"
+date: '2017-11-05'
+coverImage: featured-image.jpg
+published_at: '2017-11-05T20:35:28.000Z'
+tags: 'blogentry, bookreview, programming, book'
+author: Sung M. Kim
 ---
 
 After reading Clean Architecture, I've had a trouble understanding differences of each programming paradigm;
@@ -66,3 +70,4 @@ So as an example, write low-level methods with SP principles, and separate immut
 1. Each paradigm tells a programmer what NOT to do.
 2. [Clean Architecture](https://www.goodreads.com/book/show/18043011-clean-architecture) is a book written by Robert C. Martin, aka Uncle "Bob".
 3. [Coding Blocks](https://www.codingblocks.net/) guys talk about it in more detail in [Episode 69 – Clean Architecture – Programming Paradigms](https://www.codingblocks.net/podcast/clean-architecture-programming-paradigms/).
+

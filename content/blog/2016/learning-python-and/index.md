@@ -1,6 +1,9 @@
 ---
-title: "Learning Python and..."
-date: "2016-12-11"
+title: Learning Python and...
+date: '2016-12-11'
+published_at: '2016-12-11T05:00:38.000Z'
+tags: 'blogentry, python, todayilearned'
+author: Sung M. Kim
 ---
 
 I've started learning Python recently and fell in love with expressiveness of the language. There were sometimes too many ways to get the same job done, which made me feel uneasy since it'd mean there could be many different patterns of code people could be writing.
@@ -24,3 +27,4 @@ I am just trying to get a simple library installation but ended up spending 3+ h
 I believe this is because I still don't see how Python works as a whole.
 
 This is part of the learning curve and I gladly accept it.
+

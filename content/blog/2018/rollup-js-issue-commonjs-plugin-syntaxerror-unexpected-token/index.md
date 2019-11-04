@@ -1,7 +1,10 @@
 ---
-title: "Rollup Class Properties Transform Babel Plugin Issue"
-date: "2018-05-16"
-coverImage: "featured-image-1.jpg"
+title: Rollup Class Properties Transform Babel Plugin Issue
+date: '2018-05-15'
+coverImage: featured-image-1.jpg
+published_at: '2018-05-16T02:23:24.000Z'
+tags: 'blogentry, quicktip, babel, es6'
+author: Sung M. Kim
 ---
 
 I have an NPM library, [calendar-dates](https://www.npmjs.com/package/calendar-dates) built with [RollUp.JS](https://www.rollupjs.org/) ("RollUp" hereafter). As I was using an experimental JavaScript feature, [Class properties transform](https://babeljs.io/docs/plugins/transform-class-properties/) (to declare a static property in an ES6 class) with RollUp, I ran into the following error 🙅.
@@ -67,3 +70,4 @@ Yeah, it was as simple as just moving plugin methods around. Learned something n
 I only guessed to change the order around as I was used to using middlewares in ASP.NET Core, and Express. It seems like many programming concepts can be found in many places and can be used.
 
 Here is the link to the updated [rollup.config.js](https://github.com/dance2die/calendar-dates/blob/add_date_metadata/rollup.config.js).
+

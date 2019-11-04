@@ -1,7 +1,10 @@
 ---
-title: "Elasticsearch installation issue on a free tier (t2.micro) AWS EC2 instance"
-date: "2018-01-26"
-coverImage: "featured-image-2.jpg"
+title: Elasticsearch installation issue on a free tier (t2.micro) AWS EC2 instance
+date: '2018-01-25'
+coverImage: featured-image-2.jpg
+published_at: '2018-01-26T02:31:29.000Z'
+tags: 'aws, elasticsearch, troubleshooting'
+author: Sung M. Kim
 ---
 
 I installed Elasticsearch **6**.x on a free tier AWS EC2 instance type, `t2.micro` by following [installation instruction](https://medium.com/@adnanxteam/how-to-install-elasticsearch-5-and-kibana-on-homestead-vagrant-60ea757ff8c7) (for Elasticsearch **5**) by [Adnan Sabanovic](https://medium.com/@adnanxteam) on medium.
@@ -65,3 +68,4 @@ and run the cURL command again.
 ![](./images/good-curl-result.jpg)
 
 🎉Tada 🎉, Elasticsearch is now running on AWS EC2 t.micro instance.
+

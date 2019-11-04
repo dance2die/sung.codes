@@ -1,7 +1,10 @@
 ---
-title: "Blaming Windows 10 for My Own Mess Up"
-date: "2017-01-13"
-coverImage: "windows-10-logo-windows-91-640x353.jpg"
+title: Blaming Windows 10 for My Own Mess Up
+date: '2017-01-12'
+coverImage: windows-10-logo-windows-91-640x353.jpg
+published_at: '2017-01-13T01:22:39.000Z'
+tags: 'blogentry, blame, messup, todayilearned'
+author: Sung M. Kim
 ---
 
 I had to reset my Windows 10 PC last night (1/11/2017). The problem was that my computer lost power during windows update. Mouse and keyboard weren't being recognized on Login Screen.
@@ -17,3 +20,4 @@ It worked like a charm but felt stupid to jump to a conclusion that it was a goo
 ### Conclusion
 
 I jumped the gun without trying all alternatives. My windows is reset but can't cry over spilled milk. I've learned that there is always a way even though it seems like you ran out of choice. And also, I am sorry Microsoft for blaming my mess up as Windows 10 problem when I was the one who couldn't maintain the power on the PC during Windows Update installation...
+

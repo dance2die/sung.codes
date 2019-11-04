@@ -1,7 +1,10 @@
 ---
-title: "Inspirational Posters"
-date: "2017-01-21"
-coverImage: "7-small.jpg"
+title: Inspirational Posters
+date: '2017-01-21'
+coverImage: 7-small.jpg
+published_at: '2017-01-21T18:21:07.000Z'
+tags: blogentry
+author: Sung M. Kim
 ---
 
 I just purchased two posters from [JoeyRoth.com](http://joeyroth.com/posters/), "Charlatan, Martyr, Hustler", and "Grind/Dream".
@@ -27,3 +30,4 @@ When you grind away, you can reach your goal much easily in the end. Dreamers c
 ### Conclusion
 
 I am now constantly reminded of the way I should live by.
+

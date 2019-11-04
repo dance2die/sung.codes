@@ -1,6 +1,9 @@
 ---
-title: "TIL - While Reading the Phoenix Project"
-date: "2017-07-22"
+title: TIL - While Reading the Phoenix Project
+date: '2017-07-22'
+published_at: '2017-07-22T13:19:38.000Z'
+tags: todayilearned
+author: Sung M. Kim
 ---
 
 **Warning**: This is just going to be a random blog entry written with whatever is coming out of my mind.
@@ -32,3 +35,4 @@ Mr. G. spending 10 minutes sharing his knowledge helped him free his time as wel
 **Credit**: Motivated by [Shawn Wang](http://swyx.io/) (@swyx) on [Coding Blocks Slack Channel](https://www.codingblocks.net/slack/) in _#blogging_ and decided to write something.
 
 ![](./images/swyx-motivation.jpg)
+

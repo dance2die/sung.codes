@@ -1,6 +1,9 @@
 ---
-title: "Resetting Error Boundary Error State"
-date: "2018-09-29"
+title: Resetting Error Boundary Error State
+date: '2018-09-29'
+published_at: '2018-09-29T22:03:38.000Z'
+tags: 'react, javascript'
+author: Sung M. Kim
 ---
 
 For [bunpkg](https://bunpkg.com), I use a Wizard component to display a series of steps to generate [UNPKG](https://unpkg.com) links.
@@ -81,3 +84,4 @@ Many thanks to [Brian](https://twitter.com/brian_d_vaughn/) for [react-error-bou
 I hope the post help you should you run into the situation where an error boundary need to be reset & not go through the same bad practice/failures I mentioned above.
 
 Lastly,  [Bunpkg](https://bunpkg.com) uses the [workaround](https://github.com/dance2die/bunpkg-client/blob/master/src/container/Wizard.js#L133) suggested.
+

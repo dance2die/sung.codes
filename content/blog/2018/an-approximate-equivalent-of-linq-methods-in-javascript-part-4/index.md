@@ -1,7 +1,10 @@
 ---
-title: "How to Implement LINQ methods in JavaScript - Part 4"
-date: "2018-03-22"
-coverImage: "featured-image-2.jpg"
+title: How to Implement LINQ methods in JavaScript - Part 4
+date: '2018-03-21'
+coverImage: featured-image-2.jpg
+published_at: '2018-03-22T02:01:04.000Z'
+tags: 'blogentry, programming, quicktip, series'
+author: Sung M. Kim
 ---
 
 Photo by [Chris Lawton](https://unsplash.com/photos/yRf7ABVDddM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/mapping?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) This is the 4th part of the series and I will cover common [Set operations](https://www.probabilitycourse.com/chapter1/1_2_2_set_operations.php) in this article.
@@ -99,3 +102,4 @@ The full source code and instructions on how to run them are on GitHub.
 
 - [C# source](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo)
 - [JavaScript source](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo)
+

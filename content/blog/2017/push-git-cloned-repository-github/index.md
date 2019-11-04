@@ -1,7 +1,10 @@
 ---
-title: "Push git cloned repository to your own on GitHub"
-date: "2017-10-01"
-coverImage: "featured-image.jpg"
+title: Push git cloned repository to your own on GitHub
+date: '2017-10-01'
+coverImage: featured-image.jpg
+published_at: '2017-10-01T15:26:40.000Z'
+tags: 'git, github'
+author: Sung M. Kim
 ---
 
  **UPDATE**: April 21, 2019 
@@ -76,3 +79,4 @@ You can simply download a zip version of the repository, `git init`, then add t
 ### Help me improve this~
 
 Git command is very flexible that there might be other ways to do it much easier. Please let me know if there is a way to do it without going through all these troubles :)
+

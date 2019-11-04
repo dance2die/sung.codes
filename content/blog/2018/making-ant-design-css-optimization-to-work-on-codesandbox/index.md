@@ -1,6 +1,9 @@
 ---
-title: "Making Ant Design CSS Optimization to Work on CodeSandBox"
-date: "2018-09-16"
+title: Making Ant Design CSS Optimization to Work on CodeSandBox
+date: '2018-09-16'
+published_at: '2018-09-16T21:08:36.000Z'
+tags: 'react, css, antd, codesandbox'
+author: Sung M. Kim
 ---
 
 _Photo by [Guillaume de Germain](https://unsplash.com/photos/mrL7QWWkciE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/ant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
@@ -62,3 +65,4 @@ CSS size reduced
 I was building [Bunpkg](https://bunpkg.com) mostly on [CodeSandBox](https://codesandbox.io/s/m5yvz1y3kx) and that was how I got around with the issue.
 
 This might not be the optimal solution so I'd love it if you could provide me any easier way 🙏.
+

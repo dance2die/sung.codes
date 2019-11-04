@@ -1,7 +1,10 @@
 ---
-title: "Review of Extreme Programming Explained Second Edition"
-date: "2017-01-28"
-coverImage: "feature-image-2017.01.23-pair-programming.jpg"
+title: Review of Extreme Programming Explained Second Edition
+date: '2017-01-28'
+coverImage: feature-image-2017.01.23-pair-programming.jpg
+published_at: '2017-01-28T23:30:14.000Z'
+tags: 'bookreview, book, review'
+author: Sung M. Kim
 ---
 
 I just finished reading Extreme Programming Explained Second Edition by Kent Beck.![](./images/feature-image-2017.01.23.jpg)
@@ -38,3 +41,4 @@ There was one part that many people have trouble digesting, **Pair Programming**
 "Extreme Programming Explained" deals with solid philosophies on how development should be done and Kent Beck backs up his ideas with real world experiences.
 
 I found something very surprising about XP. It's like Slight Edge principles translated into Software Development!
+

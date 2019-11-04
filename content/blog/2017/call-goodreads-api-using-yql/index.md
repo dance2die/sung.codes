@@ -1,7 +1,10 @@
 ---
-title: "How to call GoodReads API using YQL"
-date: "2017-06-20"
-coverImage: "featured-image-1.jpg"
+title: How to call GoodReads API using YQL
+date: '2017-06-20'
+coverImage: featured-image-1.jpg
+published_at: '2017-06-20T23:53:58.000Z'
+tags: 'blogentry, programming, todayilearned, es6'
+author: Sung M. Kim
 ---
 
 Featured Image - "[Reading](https://www.flickr.com/photos/zapthedingbat/3591108120)" by [Sam Greenhalgh](https://www.flickr.com/photos/zapthedingbat/), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
@@ -55,3 +58,4 @@ The code is now much more readable using existing library.
 Using Yahoo Proxy with YQL, we can circumvent CORS restriction and query GoodReads API.
 
 You can find the source code on [here](https://github.com/dance2die/Blog.Javascript.GoodReadsAPI). Refer to the [README.md](https://github.com/dance2die/Blog.Javascript.GoodReadsAPI/blob/master/README.md) file on how to set up the project and run it.
+

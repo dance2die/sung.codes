@@ -1,7 +1,10 @@
 ---
-title: "Reading List for 2017"
-date: "2017-01-25"
-coverImage: "feature-image2-Sam-Greenhalgh.jpg"
+title: Reading List for 2017
+date: '2017-01-24'
+coverImage: feature-image2-Sam-Greenhalgh.jpg
+published_at: '2017-01-25T00:38:20.000Z'
+tags: 'blogentry, books, fiction, japaneselightnovel'
+author: Sung M. Kim
 ---
 
 _Feature Image Credit - Image by [Sam Greenhalgh](https://www.flickr.com/photos/zapthedingbat/)_
@@ -73,3 +76,4 @@ There are only 4 books for programming because I started learning most of new ma
 ### Conclusion
 
 I WILL read all 40 books by the end of 2017. It's much less than the number of books I read last year. The reason is because I randomly pick up books (either in English or in Korean) on a whim whenever I think a certain knowledge is required or just want to have fun reading. And also, I read many Korean books online on a site called Munpia where authors write a chapter or two every day.
+

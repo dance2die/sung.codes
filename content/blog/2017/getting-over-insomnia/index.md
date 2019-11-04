@@ -1,7 +1,10 @@
 ---
-title: "Getting over Insomnia"
-date: "2017-07-29"
-coverImage: "featured-image.jpg"
+title: Getting over Insomnia
+date: '2017-07-29'
+coverImage: featured-image.jpg
+published_at: '2017-07-29T17:22:35.000Z'
+tags: 'todayilearned, diary, insomnia, reflection'
+author: Sung M. Kim
 ---
 
  Featured Image - "[not asleep - not awake](https://www.flickr.com/photos/evill1/31534763/in/photolist-3MCbP-858FCF-4y4tQS-4JUkjn-4JUkfD-aSacvX-69RAH-9K6bru-W1weV9-UXiN5q-7Qm8vA-2NU2Ay-G7KcM-98jATK-6ZrURC-d7Ru6L-4YQyao-4V9MqY-4v1UcX-9ysdXL-8fij1j-5EqZMx-8SpcDq-6ZHubB-5xB8Sn-7RULBk-7jRAXm-rykK7H-9iYvE9-52Jr54-2i4CK-584ju8-4Y1yQQ-4EZ49J-b5hQr-6KHt8e-62qmeZ-3g8ZPU-6ttCwZ-cWhHJS-sauRw-8nEJi6-a7ta7C-5ZgWDW-BnTty-7mMwe-7wk11Y-kW2v3A-4dG2yZ-axrJS6)" by [Aaron Edwards](https://www.flickr.com/photos/evill1/), used under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/).
@@ -23,3 +26,4 @@ But then I learned from this post that, writing down on a piece of paper actuall
 ### Conclusion
 
 So if you have trouble sleeping, why don't you giving "reflection" or "writing down" your worries/thoughts" on a piece of paper before hitting the sack? Or you can probably keep a diary or meditate before bed.
+

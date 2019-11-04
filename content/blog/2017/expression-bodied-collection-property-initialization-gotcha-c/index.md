@@ -1,7 +1,10 @@
 ---
-title: "Expression Bodied Collection Property Initialization Gotcha in C#"
-date: "2017-09-16"
-coverImage: "featured-image-1.jpg"
+title: 'Expression Bodied Collection Property Initialization Gotcha in C#'
+date: '2017-09-16'
+coverImage: featured-image-1.jpg
+published_at: '2017-09-16T15:54:21.000Z'
+tags: 'csharp, datastructures, computerscience'
+author: Sung M. Kim
 ---
 
 I was implementing a [trie,](https://en.wikipedia.org/wiki/Trie) which is a tree data structure, usually for storing strings for searching. Since it's a tree, it has a "Children" for holding child nodes.
@@ -75,3 +78,4 @@ That was all it took to make me a happy camper ?.
 ### ▬ Takeaway ▬
 
 Auto Property initialization creates a backing field while Expression Bodied property one does not.
+

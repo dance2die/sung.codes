@@ -1,7 +1,10 @@
 ---
-title: "Tips on running React page with Node backend"
-date: "2017-11-12"
-coverImage: "featured-image-1.jpg"
+title: Tips on running React page with Node backend
+date: '2017-11-12'
+coverImage: featured-image-1.jpg
+published_at: '2017-11-12T20:40:32.000Z'
+tags: 'blogentry, problemsolving, programming, backend'
+author: Sung M. Kim
 ---
 
 As I was learning React, I've run into a situation where I needed to use node as a backend. I found this wonderful article [Create React App with an Express Backend](https://daveceddia.com/create-react-app-express-backend/) by Dave Ceddia.
@@ -113,3 +116,4 @@ I've blabbered a lot but it's basically a two-step process.
 2. Start servers using \`concurrently\` by adding the \`concurrently\` command to package.json: `npm run startall` or `yarn startall`
 
 I hope these two **extra** steps save you time and money.
+

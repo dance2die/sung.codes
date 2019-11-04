@@ -1,7 +1,10 @@
 ---
-title: "Throwaway Code: Don't recycle, throw it away!"
-date: "2017-09-05"
-coverImage: "featured-image-2017.09.05.jpg"
+title: 'Throwaway Code: Don''t recycle, throw it away!'
+date: '2017-09-05'
+coverImage: featured-image-2017.09.05.jpg
+published_at: '2017-09-05T13:00:17.000Z'
+tags: 'blogentry, programming, slightedge, todayilearned'
+author: Sung M. Kim
 ---
 
 OK, you are working on a side programming project, and it's not progressing.
@@ -101,3 +104,4 @@ The friend? Blown away.
 When having a coding problem, practice as many time as possible with throwaway codes.
 
 You just learn the concept and throw it away.
+

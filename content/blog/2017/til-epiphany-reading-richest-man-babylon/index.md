@@ -1,7 +1,10 @@
 ---
-title: "TIL - An Epiphany while reading The Richest Man in Babylon"
-date: "2017-08-05"
-coverImage: "featured-image.jpg"
+title: TIL - An Epiphany while reading The Richest Man in Babylon
+date: '2017-08-05'
+coverImage: featured-image.jpg
+published_at: '2017-08-05T16:51:01.000Z'
+tags: 'todayilearned, book, epiphany, therichestmaninb'
+author: Sung M. Kim
 ---
 
 I started reading [The Richest Man in Babylon](https://en.wikipedia.org/wiki/The_Richest_Man_in_Babylon_(book)) a few days ago.
@@ -41,3 +44,4 @@ Here is the conversation on **#books** channel (posted with a permission from Ja
 I should set aside self-development time of my own.
 
 Doing so would not only help me relax and also improve my work/life balance
+

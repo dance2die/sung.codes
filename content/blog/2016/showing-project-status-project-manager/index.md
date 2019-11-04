@@ -1,6 +1,9 @@
 ---
-title: "Showing Project Status to Project Manager"
-date: "2016-12-18"
+title: Showing Project Status to Project Manager
+date: '2016-12-18'
+published_at: '2016-12-18T05:00:25.000Z'
+tags: 'blogentry, project, projectmanagement, projectstatus'
+author: Sung M. Kim
 ---
 
 For years, I've been working to gather requirements and have done user acceptance testing directly with my business partners (end users). Less than a month ago, the company I work for has hired a business analyst/project manager. Now I am faced with a challenge as to how to show my project progress to the project manager.
@@ -29,3 +32,4 @@ Outlook Calendar items shows exactly what I am working on and have worked on as 
 The project manager was very impressed with what he was seeing and I am able to do my job without him interrupting me every day or report to him since he is able to see the progress anywhere on his phone on Outlook Calendar (this was shared for the project manager to see).
 
 With this habit, I was able to satisfy the needs of the project manager. The added benefit is that I am able to negotiate the deadline by showing how much work needs to be done or what features need to be cut out.
+

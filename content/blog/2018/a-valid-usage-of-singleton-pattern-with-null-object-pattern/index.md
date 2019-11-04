@@ -1,7 +1,10 @@
 ---
-title: "A valid usage of Singleton Pattern (with Null object Pattern)"
-date: "2018-03-26"
-coverImage: "featured-image-3.jpg"
+title: A valid usage of Singleton Pattern (with Null object Pattern)
+date: '2018-03-25'
+coverImage: featured-image-3.jpg
+published_at: '2018-03-26T02:30:33.000Z'
+tags: 'programming, oop, tips'
+author: Sung M. Kim
 ---
 
 Photo by [Chetan Menaria](https://unsplash.com/photos/oxVjCyH_ldQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/loneliness?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -60,3 +63,4 @@ Googling [Singleton Anti Pattern](https://www.google.com/search?q=singleton+anti
 But when used judiciously, it can improve your code quality/memory/speed.
 
 Source code is available on [GitHub](https://github.com/dance2die/blog.NullObjectSingletonPatterns).
+

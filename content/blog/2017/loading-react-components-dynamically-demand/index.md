@@ -1,7 +1,10 @@
 ---
-title: "Loading React Components Dynamically on Demand"
-date: "2017-12-04"
-coverImage: "featured-image.jpg"
+title: Loading React Components Dynamically on Demand
+date: '2017-12-03'
+coverImage: featured-image.jpg
+published_at: '2017-12-04T02:37:32.000Z'
+tags: 'react, javascript'
+author: Sung M. Kim
 ---
 
 ### **UPDATE** - October 28, 2018
@@ -247,3 +250,4 @@ I've discussed three cases.
 3. [Loading Components on Demand](#case3) - [Demo](https://hardcore-fermi-db1121.netlify.com/) - [Source Code](https://github.com/dance2die/Demo.React.ReactLoadOnDemand)
 
 I'd appreciate it if you can point out any optimizations or improvements I can make.
+

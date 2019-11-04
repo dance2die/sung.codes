@@ -1,7 +1,10 @@
 ---
-title: "How to Implement LINQ methods in JavaScript - Part 1"
-date: "2018-02-25"
-coverImage: "featured-image-600x400.jpg"
+title: How to Implement LINQ methods in JavaScript - Part 1
+date: '2018-02-24'
+coverImage: featured-image-600x400.jpg
+published_at: '2018-02-25T03:54:59.000Z'
+tags: 'blogentry, programming, quicktip, series'
+author: Sung M. Kim
 ---
 
 Photo by [Simon Migaj](https://unsplash.com/photos/sa7KClvDBpo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) LINQ has been around [since 2007](https://msdn.microsoft.com/en-us/library/bb308959.aspx?f=255&MSPPError=-2147217396). It made the code more readable as you specify what you do with a collection not how to process it.JavaScript is the de facto standard so you should be working with it often if you are doing web development.
@@ -127,3 +130,4 @@ The full source code and instructions on how to run them are on GitHub.
 
 - [C# source](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo)
 - [JavaScript source](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo)
+

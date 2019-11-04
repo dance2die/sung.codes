@@ -1,7 +1,10 @@
 ---
-title: "How to Implement LINQ methods in JavaScript - Part 8"
-date: "2018-04-28"
-coverImage: "featured-image-2.jpg"
+title: How to Implement LINQ methods in JavaScript - Part 8
+date: '2018-04-28'
+coverImage: featured-image-2.jpg
+published_at: '2018-04-28T22:30:19.000Z'
+tags: 'blogentry, programming, quicktip, series'
+author: Sung M. Kim
 ---
 
 Photo by [Pau Casals](https://unsplash.com/photos/kU-WKSyTcp4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) LINQ methods (All, Contains, SequenceEqual) in this article  are somehow related in a way that they are predicates (returns true or false).
@@ -85,3 +88,4 @@ Please let me know should you find any errors or improvements I can make to the 
 
 - [C# source](https://github.com/dance2die/blog.LinqAndJavascript.CSharpDemo)
 - [JavaScript source](https://github.com/dance2die/blog.LinqAndJavascript.JavascriptDemo)
+

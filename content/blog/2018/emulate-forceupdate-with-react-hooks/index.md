@@ -1,6 +1,9 @@
 ---
-title: "Emulate forceUpdate with React Hooks"
-date: "2018-11-09"
+title: Emulate forceUpdate with React Hooks
+date: '2018-11-08'
+published_at: '2018-11-09T01:41:45.000Z'
+tags: 'programming, react, selfnote, todayilearned'
+author: Sung M. Kim
 ---
 
 _Photo by _[_freestocks.org_](https://unsplash.com/photos/CH6-cfiY2Yo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/force?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -73,3 +76,4 @@ Confirmation & additional remark
 
 - [Didact: a DIY guide to build your own React](https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5) by [Rodrigo Pombo](https://engineering.hexacta.com/@pomber?source=post_header_lockup)
 - [Build Your Own React](https://hackernoon.com/build-your-own-react-48edb8ed350d) by [Ofir Dagan](https://hackernoon.com/@ofirdagan?source=post_header_lockup)
+

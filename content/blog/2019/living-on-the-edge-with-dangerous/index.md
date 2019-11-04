@@ -1,7 +1,10 @@
 ---
 title: Living on the edge with "dangerous"
-date: "2019-01-13"
-coverImage: "dangerous-logo.jpg"
+date: '2019-01-13'
+coverImage: dangerous-logo.jpg
+published_at: '2019-01-13T22:31:38.000Z'
+tags: 'react, showdev'
+author: Sung M. Kim
 ---
 
 As I've been using [Styled Components](https://www.styled-components.com/) (SC hereafter) and been wondering about the magic behind it.
@@ -108,3 +111,4 @@ Please don't hesitate to give me [any feedback](https://github.com/dance2die/dan
   - [NPM](https://www.npmjs.com/package/dangerous)
 - [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml)
 - [Styled Components](https://www.styled-components.com/)
+

@@ -1,7 +1,10 @@
 ---
-title: "My journey on Implementing Dijkstra's algorithm"
-date: "2017-04-20"
-coverImage: "Featured-Image-Edsger-W.-Dijkstra.jpg"
+title: My journey on Implementing Dijkstra's algorithm
+date: '2017-04-20'
+coverImage: Featured-Image-Edsger-W.-Dijkstra.jpg
+published_at: '2017-04-20T15:40:02.000Z'
+tags: 'blogentry, programming, algorithm, dijkstrasalgorithm'
+author: Sung M. Kim
 ---
 
 Featured Image of Edsger Wybe Dijkstra from [Wikipedia](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra#/media/File:Edsger_Wybe_Dijkstra.jpg), used under [CC BY 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
@@ -246,3 +249,4 @@ Also, check out [Max Burstein](https://github.com/mburst)'s [C# implementation
 ### Conclusion
 
 The journey was tough but was quite worth it. It has given me more confidence as a developer.
+

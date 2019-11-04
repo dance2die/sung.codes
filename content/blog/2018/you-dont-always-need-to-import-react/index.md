@@ -1,6 +1,9 @@
 ---
-title: "You don't always need to import React"
-date: "2018-11-26"
+title: You don't always need to import React
+date: '2018-11-26'
+published_at: '2018-11-26T19:38:56.000Z'
+tags: react
+author: Sung M. Kim
 ---
 
 [r/reactjs](https://www.reddit.com/r/reactjs/) has a Weekend Reads, which is a "'book club' type thing where we read something every weekend".
@@ -60,3 +63,4 @@ I hope this has solved for the need to import React for components.
 - [JSX in Depth](https://reactjs.org/docs/jsx-in-depth.html)
 - See how [BabelJS transpiles JSX](https://babeljs.io/repl) - Just paste your React code in it.
 - [Demo Sandbox](https://codesandbox.io/s/71wv195okj)
+

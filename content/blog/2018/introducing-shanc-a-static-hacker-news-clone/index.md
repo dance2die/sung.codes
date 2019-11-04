@@ -1,7 +1,10 @@
 ---
-title: "Introducing SHanC - A Static Hacker News Clone"
-date: "2018-05-26"
-coverImage: "featured-image-2.jpg"
+title: Introducing SHanC - A Static Hacker News Clone
+date: '2018-05-26'
+coverImage: featured-image-2.jpg
+published_at: '2018-05-26T18:33:11.000Z'
+tags: showdev
+author: Sung M. Kim
 ---
 
 I read [Hacker News](https://news.ycombinator.com/) (HN hereafter) daily. The way I read is that, I _**skim through**_ titles and open 5~10 stories and actually read 2~5.
@@ -59,3 +62,4 @@ Hand-drawn on a piece of paper 😝.
 If you have a similar HN reading style, I hope [SHaNc](https://shanc.netlify.com/) can help to address your problems.
 
 Please leave a feedback, issues, suggestion on [GitHub page](https://github.com/dance2die/SHANc/issues) (MIT licensed).
+

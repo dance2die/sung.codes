@@ -1,6 +1,9 @@
 ---
-title: "Downshift getRootProps"
-date: "2018-11-07"
+title: Downshift getRootProps
+date: '2018-11-06'
+published_at: '2018-11-07T00:09:37.000Z'
+tags: 'react, selfnote, downshift'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Tim Carey_](https://unsplash.com/photos/rKXPPKiiNJo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/f1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -48,3 +51,4 @@ No getRootProps error message
 
 - [onBlur-tests.js](https://github.com/paypal/downshift/blob/3fb0ed21278c5f1d0a077ed9b1d0dfd55a75c71b/other/react-native/__tests__/onBlur-tests.js)
 - [onChange-tests.js](https://github.com/paypal/downshift/blob/a510c9db12a0019b5ce3d0b45732b27206c3a530/other/react-native/__tests__/onChange-tests.js)
+

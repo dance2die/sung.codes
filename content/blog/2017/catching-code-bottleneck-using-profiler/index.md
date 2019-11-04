@@ -1,7 +1,10 @@
 ---
-title: "Catching a code bottleneck using a profiler"
-date: "2017-02-25"
-coverImage: "featured-image.jpg"
+title: Catching a code bottleneck using a profiler
+date: '2017-02-25'
+coverImage: featured-image.jpg
+published_at: '2017-02-25T20:03:26.000Z'
+tags: 'blogentry, programming, todayilearned'
+author: Sung M. Kim
 ---
 
 ![](./images/HackerRank-Palindrome-Index.png)](https://www.hackerrank.com/challenges/palindrome-index) Palindrome Index
@@ -57,3 +60,4 @@ I learned 4 different ways of failures, which I'd get around next time.
 I am glad to have run into this issue while solving a coding question instead of during writing a production code at work.
 
 And also I learned to appreciate all the tools at disposal.
+

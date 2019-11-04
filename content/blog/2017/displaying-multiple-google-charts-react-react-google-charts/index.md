@@ -1,7 +1,10 @@
 ---
-title: "Displaying Multiple Google Charts in React (react-google-charts)"
-date: "2017-09-21"
-coverImage: "featured-image-2.jpg"
+title: Displaying Multiple Google Charts in React (react-google-charts)
+date: '2017-09-21'
+coverImage: featured-image-2.jpg
+published_at: '2017-09-21T15:19:34.000Z'
+tags: 'problemsolving, programming'
+author: Sung M. Kim
 ---
 
 I was working on displaying multiple GitHub traffic charts using a Google Chart NPM package for React, [react-google-charts](https://www.npmjs.com/package/react-google-charts).
@@ -79,3 +82,4 @@ Each `chart_id` needs to be unique.
 I hope you don't struggle to populate multiple Google Chart graphs.
 
 You can find the [commit detail](https://github.com/dance2die/github-traffic-views/commit/ec52a1849445268f2fca78310c54648436f85cf1#diff-f36f57d6970b0b90b039d04da7cda2f8L52) on GitHub in my code.
+

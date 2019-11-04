@@ -1,7 +1,10 @@
 ---
-title: "Understanding JavaScript Iteration with C#"
-date: "2018-07-04"
-coverImage: "featured-image.jpg"
+title: 'Understanding JavaScript Iteration with C#'
+date: '2018-07-04'
+coverImage: featured-image.jpg
+published_at: '2018-07-04T16:01:20.000Z'
+tags: 'javascript, csharp'
+author: Sung M. Kim
 ---
 
 As I was chatting, someone from [Coding Blocks slack channel](https://www.codingblocks.net/slack/) (#javascript) has asked a question regarding a code snippet
@@ -73,3 +76,4 @@ I've had hard time understanding the WHY of such a method initially. I am able t
 Functional Programming (FP) in JavaScript is being adopted nowadays ([Redux](https://redux.js.org/), [Functional Light JS](https://github.com/getify/Functional-Light-JS) by Kyle Simpson), thus started learning [Elixir](https://elixir-lang.org/) to see WHY JavaScript community is raving about FP.
 
 I'd love your feedback/errata. So leave a comment below or send me a [twit](https://twitter.com/slightedgecoder) :)
+

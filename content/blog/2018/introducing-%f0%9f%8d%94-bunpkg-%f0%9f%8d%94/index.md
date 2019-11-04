@@ -1,6 +1,9 @@
 ---
-title: "Introducing 🍔 Bunpkg 🍔"
-date: "2018-09-13"
+title: "Introducing \U0001F354 Bunpkg \U0001F354"
+date: '2018-09-12'
+published_at: '2018-09-13T01:16:14.000Z'
+tags: 'announcement, bunpkg, opensource'
+author: Sung M. Kim
 ---
 
 Michael Jackson on [React Podcast Episode 19](https://reactpodcast.simplecast.fm/19) shared his professional experiences.
@@ -44,3 +47,4 @@ Before I go, here are the links to the source code on GitHub.
     - [https://github.com/unpkg](https://github.com/unpkg)
 - **BundlePhobia**
     - [https://github.com/pastelsky/bundlephobia](https://github.com/pastelsky/bundlephobia)
+

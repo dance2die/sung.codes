@@ -1,6 +1,9 @@
 ---
 title: Sketchnotes for 'Getting Started with Redux'
-date: "2018-09-21"
+date: '2018-09-21'
+published_at: '2018-09-21T22:31:30.000Z'
+tags: 'blogentry, react, sketchnotes'
+author: Sung M. Kim
 ---
 
 Recently read [The Sketchnote Handbook](https://www.goodreads.com/book/show/15858089-the-sketchnote-handbook) by [Mike Rohde](http://rohdesign.com).
@@ -34,3 +37,4 @@ I need more practice on writing & drawing, which requires a continuous effort.
 I'd not recommend if you are an auditory learner (but great for visual or kinetic learners).
 
 _but it wouldn't hurt._
+

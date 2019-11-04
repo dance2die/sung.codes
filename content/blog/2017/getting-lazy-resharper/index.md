@@ -1,7 +1,10 @@
 ---
-title: "Getting lazy with Resharper"
-date: "2017-02-04"
-coverImage: "Featured-Image-by-Martin-Cron.jpg"
+title: Getting lazy with Resharper
+date: '2017-02-04'
+coverImage: Featured-Image-by-Martin-Cron.jpg
+published_at: '2017-02-04T23:00:20.000Z'
+tags: 'blogentry, jetbrains, laziness, lazy'
+author: Sung M. Kim
 ---
 
 Featured Image by [Martin Cron](https://www.flickr.com/photos/martincron/4127880673/in/photolist-5Uz3so-2s5eGW-2rZNMD-7hLt7r-5xjUSF-uB4au9-uBbC6n-64Qkeb-9EcyP-7VF6zc-9Tym55-9TvuTM)
@@ -35,3 +38,4 @@ The transition to motivate other developers to use R# was tough since R# increas
 By the way Bill Gates said it the best regarding being lazy.
 
 > I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it
+

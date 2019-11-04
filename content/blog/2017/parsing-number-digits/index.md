@@ -1,7 +1,10 @@
 ---
-title: "Parsing a number into digits"
-date: "2017-03-11"
-coverImage: "featured-image-2017.03.11-parse.jpg"
+title: Parsing a number into digits
+date: '2017-03-11'
+coverImage: featured-image-2017.03.11-parse.jpg
+published_at: '2017-03-11T17:00:43.000Z'
+tags: 'blogentry, programming'
+author: Sung M. Kim
 ---
 
 Featured Image - "[Miss South Carolina Powerset Parse](https://www.flickr.com/photos/powerset/1287236163/in/photolist-2XKqsX-92tLtK-83awUM-74vSFm-7uWvED-7oGauR-2m1HqN-6H8tfZ-6zV2qz-cX55Hb-5s8uxu-6YD2sU-9Ckr5z-rkAHXL-8dE8fG-gpH3Nw-i1Tfc-ifzWGW-aWh9jr-fKg1cH-7YJRQz-a78NC6-hCHGeB-k7M1Az-cnwmV7-7mCDZp-fq5rFC-8bd4ez-ifzZnA-kFQUjG-ifAqcT-4qwvGw-a7bFGA-679Fqh-huZnpg-36Kp9w-7vMS1s-5x36nq-4BbU8N-pkmtPi-r4exaS-5aHJVB-8f5q6X-5fwSs7-7iJCNf-9szExx-dpsK2Y-39C2hH-JXPcEf-BCo4q)" by [official_powerset](https://www.flickr.com/photos/powerset/), used under [BY SA](https://creativecommons.org/licenses/by-sa/2.0/) / Dropped Quality to 80% from original
@@ -104,3 +107,4 @@ The source code is available on [GitHub](https://github.com/dance2die/Demo.Learn
 By using simple math, you can extract digits from a number.
 
 It requires no type conversion thus saving run time.
+

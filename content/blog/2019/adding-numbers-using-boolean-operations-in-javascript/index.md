@@ -1,7 +1,10 @@
 ---
-title: "Adding numbers using Boolean operations in JavaScript"
-date: "2019-04-14"
-coverImage: "featured-image.jpg"
+title: Adding numbers using Boolean operations in JavaScript
+date: '2019-04-14'
+coverImage: featured-image.jpg
+published_at: '2019-04-14T22:39:47.000Z'
+tags: 'javascript, microprocessors'
+author: Sung M. Kim
 ---
 
 _Photo by_ [_Crissy Jarvis_](https://unsplash.com/photos/gdL-UZfnD3I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/abacus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -164,3 +167,4 @@ If you want to dig deeper, check out following resources.
 - Demo program is available on [CodeSandbox](https://codesandbox.io/s/3vnqknj0o1)
 - [Full-adder diagram on Google Slides](https://docs.google.com/presentation/d/1TSDLBj7Zc2Y1mpUaQAeRb3cHJ8RLnROPXwDHRowQ3YQ/edit#slide=id.g565ce1f6b6_0_53).
 - [Half-adder](<https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Half_Adder.svg>) on Wikipedia.
+

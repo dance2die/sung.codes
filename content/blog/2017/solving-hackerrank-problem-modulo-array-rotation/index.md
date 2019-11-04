@@ -1,7 +1,10 @@
 ---
-title: "Solving a HackerRank Problem with Modulo Array Rotation"
-date: "2017-01-14"
-coverImage: "featured-image-2017.01.13.jpg"
+title: Solving a HackerRank Problem with Modulo Array Rotation
+date: '2017-01-13'
+coverImage: featured-image-2017.01.13.jpg
+published_at: '2017-01-14T01:00:56.000Z'
+tags: 'blogentry, programming, application, apply'
+author: Sung M. Kim
 ---
 
 On December 25th of 2016, I wrote about [AWESOMENESS OF % (MODULO OPERATOR)](https://www.slightedgecoder.com/2016/12/25/awesomeness-modulo-operator/). I was able to apply the knowledge I learned to solve a [HackerRank](http://hackerrank.com/) warm-up question, [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation).
@@ -58,3 +61,4 @@ Full source is available on [GitHub](https://github.com/dance2die/Problems.Hacke
 ### Conclusion
 
 Being able to apply what I've learned recently and wrote about seems to make a long last memory. I will have to change my approach on learning;I'd learn new things as if I will have to apply it in short or long term.
+

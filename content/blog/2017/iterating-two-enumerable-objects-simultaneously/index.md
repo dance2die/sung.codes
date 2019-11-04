@@ -1,7 +1,10 @@
 ---
-title: "Iterating two enumerable objects simultaneously"
-date: "2017-01-09"
-coverImage: "Featured-Image-1.jpg"
+title: Iterating two enumerable objects simultaneously
+date: '2017-01-09'
+coverImage: Featured-Image-1.jpg
+published_at: '2017-01-09T05:00:33.000Z'
+tags: 'blogentry, programming, c, crackingthecoding'
+author: Sung M. Kim
 ---
 
 I was solving a question on Cracking the Coding Interview Edition 6 question 4.1
@@ -83,3 +86,4 @@ Full source for above codes is available on [GitHub](https://github.com/dance2di
 ### Conclusion
 
 It's not possible to iterate multiple enumerators using "foreach" but can use "GetEnumerator". I've been quite conscious about writing optimized code and this one just rocked since I never knew about this trick.
+

@@ -1,6 +1,9 @@
 ---
-title: "Move files around until it feels right"
-date: "2018-11-18"
+title: Move files around until it feels right
+date: '2018-11-18'
+published_at: '2018-11-18T20:32:03.000Z'
+tags: 'selfnote, productivity, react'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Jaime Casap_](https://unsplash.com/photos/cXqBxWB4upA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/feels-right?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -36,3 +39,4 @@ Move files around initially and after gaining experience, stick to what you know
 And keep experimenting the rest of the time (10~20%).
 
 That 10~20% will help you adopt the changes required in your project or even come up with a "blockbuster" process, which would work for many.
+

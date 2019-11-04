@@ -1,7 +1,10 @@
 ---
-title: "Background image loading from SVG to Full Image"
-date: "2018-02-17"
-coverImage: "featured-image.jpg"
+title: Background image loading from SVG to Full Image
+date: '2018-02-17'
+coverImage: featured-image.jpg
+published_at: '2018-02-17T19:38:31.000Z'
+tags: 'blogentry, problemsolving, programming, codepen'
+author: Sung M. Kim
 ---
 
 Photo by [Vaughn Wright](https://unsplash.com/photos/okyXCkrhHHg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/around?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) resized to 600x480
@@ -43,3 +46,4 @@ https://youtu.be/dlp-foryr0o
 I am just getting used to the front-end development and this issue has taken me 2 days to test many of Google results and failures.
 
 I'd appreciate it if anyone can suggest me another workaround and/or how I can improve my current code base, which is available on [GitHub](https://github.com/dance2die/dance2die.github.io).
+

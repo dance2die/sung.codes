@@ -1,7 +1,10 @@
 ---
-title: "Installing Dokku on Kubuntu"
-date: "2019-09-29"
-coverImage: "featured-image.jpg"
+title: Installing Dokku on Kubuntu
+date: '2019-09-28'
+coverImage: featured-image.jpg
+published_at: '2019-09-29T02:55:42.000Z'
+tags: 'dokku, ubuntu, kubuntu, node'
+author: Sung M. Kim
 ---
 
 _Image by_ [_StockSnap_](https://pixabay.com/users/StockSnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=923554) _from_ [_Pixabay_](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=923554)
@@ -235,3 +238,4 @@ Below are resources mentioned in this post.
 - [How to Set Up SSH Keys on Ubuntu 18.04 - Step 1 — Create the RSA Key Pair](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-1-%E2%80%94-create-the-rsa-key-pair)
 - [KVM](https://www.linux-kvm.org/page/Main_Page)
 - [Virtual Box](https://www.virtualbox.org/wiki/Linux_Downloads)
+

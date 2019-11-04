@@ -1,7 +1,10 @@
 ---
-title: "PassportJS - Failed to find request token in session"
-date: "2018-01-29"
-coverImage: "featured-image-3.jpg"
+title: PassportJS - Failed to find request token in session
+date: '2018-01-29'
+coverImage: featured-image-3.jpg
+published_at: ''
+tags: ''
+author: Sung M. Kim
 ---
 
 I was working with [PassportJS](http://www.passportjs.org/) to authenticate to Meetup using [Meetup strategy](https://github.com/jaredhanson/passport-meetup). But this error drove me insane for hours.
@@ -58,3 +61,4 @@ it works 🎉
 I've only discussed one possible cause for "Error: Failed to find request token in session" error message.
 
 There are literally dozens of causes and fixes available when you [Google it](https://www.google.com/search?q=passportjs+Error%3A+Failed+to+find+request+token+in+session&ie=utf-8&oe=utf-8&client=firefox-b-1-ab).
+

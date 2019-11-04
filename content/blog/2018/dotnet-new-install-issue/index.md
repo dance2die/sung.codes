@@ -1,7 +1,10 @@
 ---
-title: "dotnet new install issue - Error: Value cannot be null"
-date: "2018-04-08"
-coverImage: "matt-lamers-399809-unsplash.jpg"
+title: 'dotnet new install issue - Error: Value cannot be null'
+date: '2018-04-08'
+coverImage: matt-lamers-399809-unsplash.jpg
+published_at: '2018-04-08T19:34:56.056Z'
+tags: 'dotnet, template, core, cli'
+author: Sung M. Kim
 ---
 
 Photo by [Matt Lamers](https://unsplash.com/photos/R6uybPo0Lv0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/installation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -31,3 +34,4 @@ I've reported [the issue](https://github.com/dotnet/templating/issues/1498) on G
 This issue was found while creating a new SPA template for [ASP.NET Core with React.js with ES6](https://www.nuget.org/packages/ReactES6.Web/) because the default template uses TypeScript.
 
 You can find more about how to use it on [dev.to](https://dev.to/dance2die/aspnet-core-2-reactjs-template-with-es6-not-typescript-f71) site 😉.
+

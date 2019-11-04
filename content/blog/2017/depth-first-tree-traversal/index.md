@@ -1,7 +1,10 @@
 ---
-title: "Depth-First Tree Traversal"
-date: "2017-03-26"
-coverImage: "Featured-Image-Tree-2017.03.25.jpg"
+title: Depth-First Tree Traversal
+date: '2017-03-26'
+coverImage: Featured-Image-Tree-2017.03.25.jpg
+published_at: '2017-03-26T11:45:29.000Z'
+tags: 'blogentry, programming, inorder, postorder'
+author: Sung M. Kim
 ---
 
 Featured Image - "[tree](https://www.flickr.com/photos/kenorwig/33051659145/in/photolist-SmEoLa-8ayiD4-dqarfG-5DC811-7eKKLj-9qrnoZ-9B2Lor-84hd8L-doRPFa-qGa6NE-m2Afgp-2193x-9GU4BC-bVnUAS-8iFmBG-e712bc-pebv7p-69THJB-cXskaJ-oncXE-8hhqUP-RPEM3-njFjSY-hBt2TR-4VoKTV-iPayWm-ciKgxW-d8udC9-9tXNXQ-efxZPy-Ek8Wh-h17NPK-oZHbQr-m9qs9-4G8yY4-5Rnvwp-AKZmA-RAs4FJ-qiAzi8-g2u2y-5eyFVz-bbh1ZT-ntNFQF-4FLXz1-hU7rUY-pUbruw-SZqaFe-9z2uWL-93SbqU-hjce93)" by [AmishHomo](https://www.flickr.com/photos/powerset/), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
@@ -88,3 +91,4 @@ Typical use cases for
 3. **Post-Order:** You'd typically use this when you need to access leaves first.
    1. A use case is when you process a post-fix notation equation.
    2. You can also use this to delete references in, say, dependency injection tree. You need to delete child references and then their parents so that no memory would be leaked.
+

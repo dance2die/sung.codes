@@ -1,7 +1,10 @@
 ---
-title: "Awesomeness of % (Modulo Operator)"
-date: "2016-12-25"
-coverImage: "featured-image-2016.12.25.jpg"
+title: Awesomeness of % (Modulo Operator)
+date: '2016-12-25'
+coverImage: featured-image-2016.12.25.jpg
+published_at: '2016-12-25T14:30:06.000Z'
+tags: 'blogentry, programming, modulo, motivation'
+author: Sung M. Kim
 ---
 
 One day, I was solving a coding question, for which, I had to shift each element in an array to the right. It is an easy task to do but I wanted to know if there was more "elegant way". After doing some Googling, I found one entry on [StackOverflow](http://www.stackoverflow.com), which blew my mind and I'd like to share it.
@@ -22,3 +25,4 @@ The code snippet above is an [answer](http://stackoverflow.com/a/21385230/4035) 
 When I looked at the code, it broadened my view of how I can use modulo and thought that I can use other operators in more clever way like that. The code isn't clever enough so that it'd need more than a minute to understand but it makes the shifting look dead simple.
 
 I've learned a new trick today and just knowing one such application of an operator broadened my horizon.
+

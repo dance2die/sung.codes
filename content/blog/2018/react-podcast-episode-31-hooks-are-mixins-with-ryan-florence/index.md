@@ -1,6 +1,9 @@
 ---
-title: "React Podcast Episode 31 – “Hooks are Mixins” with Ryan Florence"
-date: "2018-12-09"
+title: React Podcast Episode 31 – “Hooks are Mixins” with Ryan Florence
+date: '2018-12-09'
+published_at: '2018-12-09T21:40:06.000Z'
+tags: 'react, shownote, podcast'
+author: Sung M. Kim
 ---
 
 _Photo by _[_Jakub Kapusnak_](https://unsplash.com/photos/4f4YZfDMLeU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/bibimbap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -169,3 +172,4 @@ Subscribe to Chantastic's [React Holiday](https://react.holiday/) where he will 
 - React Podcast [Episode #29](https://reactpodcast.simplecast.fm/29).
 - [Official Hooks Documentation](https://reactjs.org/hooks)
 - [90% Cleaner React](https://youtu.be/wXLf18DsV-I) by Ryan Florence
+

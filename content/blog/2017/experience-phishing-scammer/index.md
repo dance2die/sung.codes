@@ -1,6 +1,9 @@
 ---
-title: "An Experience with a Phishing Scammer"
-date: "2017-08-26"
+title: An Experience with a Phishing Scammer
+date: '2017-08-26'
+published_at: '2017-08-26T21:18:48.000Z'
+tags: 'blogentry, uncategorized, experience, phisher'
+author: Sung M. Kim
 ---
 
 Last Tuesday (8/22/2017) I got a call from unrecognized number at work.
@@ -58,3 +61,4 @@ I need to compile the list of where phone # has been leaked.
 ### Takeaway
 
 If you receive a call asking for your personal info, don't give it away!
+

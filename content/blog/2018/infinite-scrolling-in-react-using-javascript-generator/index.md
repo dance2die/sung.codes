@@ -1,7 +1,10 @@
 ---
-title: "Infinite Scrolling in React using JavaScript Generator"
-date: "2018-08-11"
-coverImage: "featured-image.jpg"
+title: Infinite Scrolling in React using JavaScript Generator
+date: '2018-08-11'
+coverImage: featured-image.jpg
+published_at: '2018-08-11T16:47:20.000Z'
+tags: 'react, javascript, generator, tutorial'
+author: Sung M. Kim
 ---
 
 While reading [A Quick, Practical Use Case for ES6 Generators: Building an Infinitely Repeating Array](https://dev.to/sreisner/a-quick-practical-use-case-for-es6-generators-building-an-infinitely-repeating-array-1onk), I happened to be checking out [Reddit API](https://www.reddit.com/dev/api/).
@@ -170,3 +173,4 @@ And make sure you either throttle or debounce windows scroll & resize events as 
 Here is the link to the SandBox again.
 
 I've also created a GitHub [repository](https://github.com/dance2die/throwaway.react.window_bottom_check) so you can clone it and play around with it locally.
+

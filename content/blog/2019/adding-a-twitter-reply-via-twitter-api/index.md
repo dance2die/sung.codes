@@ -1,7 +1,10 @@
 ---
-title: "Adding a Twitter Reply via Twitter API"
-date: "2019-07-28"
-coverImage: "featured-image.gif"
+title: Adding a Twitter Reply via Twitter API
+date: '2019-07-28'
+coverImage: featured-image.gif
+published_at: '2019-07-28T22:45:07.000Z'
+tags: 'blogentry, javascript, programming, selfnote'
+author: Sung M. Kim
 ---
 
 A quick note to self regarding adding a reply on Twitter using [Twitter NPM library](https://www.npmjs.com/package/twitter).
@@ -27,3 +30,4 @@ On line #17, username is passed and that's sufficient to make `in_reply_to_statu
 ![](https://i2.wp.com/www.slightedgecoder.com/wp-content/uploads/2019/07/brave_cVXnc4x2aJ.png?fit=1024%2C837&ssl=1)
 
 [https://mobile.twitter.com/dance2die/status/1155604901558456321](https://mobile.twitter.com/dance2die/status/1155604901558456321)
+
