@@ -18,6 +18,9 @@ const onCreateNode = ({ node, actions, getNode }) => {
       .substring(0, 10)
       .split("-")
 
+    // [m, d, y] = new Date('2018-12-19T02:14:23.000Z').toLocaleDateString().split("/")
+    // const [year, month, day] = new Date(node.frontmatter.date).toLocaleDateString().split("/")
+
     const parentNode = getNode(node.parent)
     // drop extra-year in the slug.
     // "2019/netlify-not-found" => "netlify-not-found"
