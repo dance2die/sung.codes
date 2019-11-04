@@ -3,24 +3,24 @@ import { graphql, Link } from "gatsby"
 import Layout from "../layouts"
 
 export default ({ data }) => {
-  console.info(`data`, data)
-
   const posts = data.allMdx.edges.map(
     ({
       node: {
-        frontmatter: { title, date },
-        fields: { slug, year },
+        frontmatter: { title, date, posted },
+        fields: { slug },
         id,
         excerpt,
       },
     }) => (
-      <>
+      <React.Fragment key={id}>
         <h2>
           <Link to={slug}>{title}</Link>
         </h2>
-        <b>{date}</b>
+        <b>
+          {date} - {posted}
+        </b>
         <p>{excerpt}</p>
-      </>
+      </React.Fragment>
     )
   )
 
@@ -43,7 +43,6 @@ export const query = graphql`
           }
           fields {
             slug
-            year
           }
           id
           excerpt
