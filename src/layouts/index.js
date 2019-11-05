@@ -1,8 +1,15 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
 
-import { Layout as ThemeLayout, Main, Header, Container, h1 } from "theme-ui"
-// import theme from "../theme"
+import {
+  Layout as ThemeLayout,
+  Main,
+  Header,
+  Container,
+  h1,
+  ThemeProvider,
+} from "theme-ui"
+import theme from "../theme"
 // import theme from "../gatsby-plugin-theme-ui"
 
 // import { StaticQuery } from "gatsby"
@@ -26,14 +33,16 @@ function Layout({ children }) {
   // return <>{children}</>
 
   return (
-    <ThemeLayout>
-      <Header>
-        <h1>Sung.codes Layout</h1>
-      </Header>
-      <Main>
-        <Container>{children}</Container>
-      </Main>
-    </ThemeLayout>
+    <ThemeProvider theme={theme}>
+      <ThemeLayout>
+        <Header>
+          <h1>Sung.codes Layout</h1>
+        </Header>
+        <Main>
+          <Container>{children}</Container>
+        </Main>
+      </ThemeLayout>
+    </ThemeProvider>
   )
 }
 
