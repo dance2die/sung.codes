@@ -9,7 +9,6 @@ export default ({ data }) => {
         frontmatter: { title, date, posted },
         fields: { slug },
         id,
-        excerpt,
       },
     }) => (
       <React.Fragment key={id}>
@@ -19,7 +18,6 @@ export default ({ data }) => {
         <b>
           {date} - {posted}
         </b>
-        <p>{excerpt}</p>
       </React.Fragment>
     )
   )
@@ -45,7 +43,6 @@ export const query = graphql`
             slug
           }
           id
-          excerpt
         }
       }
     }

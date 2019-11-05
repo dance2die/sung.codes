@@ -1,6 +1,6 @@
 // https://theme-ui.com/theming#example
 const heading = {
-  fontFamily: `"Ropa Sans", sans-serif`,
+  fontFamily: "heading",
   lineHeight: "heading",
   fontWeight: "heading",
 }
@@ -39,13 +39,13 @@ export const theme = {
     monospace: "Menlo, monospace",
   },
   styles: {
-    Layout: { fontFamily: "body" },
-    Header: { fontFamily: "heading" },
     root: {
       fontFamily: "body",
       lineHeight: "body",
       fontWeight: "body",
     },
+    Layout: { fontFamily: "body" },
+    Header: { fontFamily: "heading" },
     h1: {
       ...heading,
       fontSize: 5,
