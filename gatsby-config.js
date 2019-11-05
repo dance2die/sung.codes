@@ -93,16 +93,9 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      // refer to following documentation for options
-      // https://www.styled-components.com/docs/tooling#babel-plugin
-      options: {
-        fileName: false,
-        pure: true,
-        transpileTemplateLiterals: true,
-      },
-    },
+    // https://www.gatsbyjs.org/docs/emotion/
+    // to use Theme-UI https://theme-ui.com/getting-started
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

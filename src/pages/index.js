@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-// import styled from "styled-components"
 
 import Layout from "../layouts"
 // // import Dangerous from "dangerous-components"
