@@ -11,15 +11,15 @@ When you trying to get a DOM content in Chrome tab from an extension using `docu
 Suppose that you have a following default popup (specified as `page_action -> default_popup` in `manifest.json`).  
 And select the `h1` content in `popup.js` referenced in `page_option.html`.
 
-``gist:dance2die/23f4b80ad83768e1ff073293d64d9bdc``
+`gist:dance2die/23f4b80ad83768e1ff073293d64d9bdc`
 
 <a href="https://gist.github.com/dance2die/23f4b80ad83768e1ff073293d64d9bdc">View this gist on GitHub</a>
 
-page\_option.html
+page_option.html
 
 Then instead of getting the current DOM content displayed in the Chrome tab, it returns the DOM of the `page_option.html` instead.
 
-``gist:dance2die/65173f48ef0893ba6ce0126d7c42444d``
+`gist:dance2die/65173f48ef0893ba6ce0126d7c42444d`
 
 <a href="https://gist.github.com/dance2die/65173f48ef0893ba6ce0126d7c42444d">View this gist on GitHub</a>
 
@@ -29,7 +29,7 @@ What's returned
 
 So what you need to do is to request Chrome to [execute](https://developer.chrome.com/extensions/tabs#method-executeScript) a document query command on your behalf.
 
-``gist:dance2die/d05924be83c6be1b20ba94206ff2beb0``
+`gist:dance2die/d05924be83c6be1b20ba94206ff2beb0`
 
 <a href="https://gist.github.com/dance2die/d05924be83c6be1b20ba94206ff2beb0">View this gist on GitHub</a>
 
@@ -43,14 +43,13 @@ Then you execute a code on the current tab (line #9). and the callback gives you
 
 If you want need to execute multiple queries, just put them in an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE).
 
-``gist:dance2die/bfbb7085d70fa3b6212a72c0ca8a11e1``
+`gist:dance2die/bfbb7085d70fa3b6212a72c0ca8a11e1`
 
 <a href="https://gist.github.com/dance2die/bfbb7085d70fa3b6212a72c0ca8a11e1">View this gist on GitHub</a>
 
 Using IIFE to run multiple queries
 
-##   
-Parting Words
+## Parting Words
 
 I've learned about it recently while writing a Chrome extension, [Easy GitHub](https://github.com/dance2die/easy-github) (work-in-progress).
 

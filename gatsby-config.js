@@ -108,14 +108,14 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Playfair Display`,
-            subsets: [`latin`],
-            variants: [`400`],
+            family: "Ropa Sans",
+            subsets: ["latin"],
+            variants: ["400"],
           },
           {
-            family: `Hind Madurai`,
-            subsets: [`latin`],
-            variants: [`400`],
+            family: "Open Sans",
+            subsets: ["latin"],
+            variants: ["400", "600", "700", "800"],
           },
         ],
       },

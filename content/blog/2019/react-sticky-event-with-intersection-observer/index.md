@@ -1,9 +1,9 @@
 ---
 title: React Sticky Event with Intersection Observer
-date: '2019-08-24'
+date: "2019-08-24"
 coverImage: featured-image.jpg
-published_at: '2019-08-24T20:55:35.000Z'
-tags: 'react, css'
+published_at: "2019-08-24T20:55:35.000Z"
+tags: "react, css"
 author: Sung M. Kim
 ---
 
@@ -19,16 +19,16 @@ I will show how to create React components to emulate the same behavior.
 
 - [Prerequisite](#prerequisite)
 - [What we are building](#building)
-    - [Here is the working Sandbox](#sandbox)
+  - [Here is the working Sandbox](#sandbox)
 - [Using sticky event components](#usage)
 - [Implementing Sticky Components](#implementation)
-    - [StickyViewport](#stickyviewport)
-    - [StickyProvier](#stickyprovider)
-    - [StickyBoundary](#stickyboundary)
-        - [useSentinelOffsets](#useSentinelOffsets)
-        - [useObserveTopSentinels](#useObserveTopSentinels)
-        - [useObserveBottomSentinels](#useObserveBottomSentinels)
-    - [Sticky](#sticky)
+  - [StickyViewport](#stickyviewport)
+  - [StickyProvier](#stickyprovider)
+  - [StickyBoundary](#stickyboundary)
+    - [useSentinelOffsets](#useSentinelOffsets)
+    - [useObserveTopSentinels](#useObserveTopSentinels)
+    - [useObserveBottomSentinels](#useObserveBottomSentinels)
+  - [Sticky](#sticky)
 - [Resources](#resources)
 
 ## Prerequisite
@@ -53,8 +53,7 @@ https://youtu.be/Mq-g7bSEQvg
 
 Sticky headers styles are changed as they stick and unstick without listening to [scroll event](https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event), which can cause site performance issue if not handled correctly.
 
-###   
-Here is the working Sandbox.
+### Here is the working Sandbox.
 
 <iframe src="https://codesandbox.io/embed/react-sticky-javascript-refactored-w8otj?fontsize=14&amp;view=preview" title="react-sticky-javascript-refactored" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
@@ -71,7 +70,7 @@ Here is the how one might use the component to observe un/stuck events.
 
 <a href="undefined">View this gist on GitHub</a>
 
-``gist:dance2die/a39355c83f23f5e8c66747eb612c7c3a``
+`gist:dance2die/a39355c83f23f5e8c66747eb612c7c3a`
 
 <a href="https://gist.github.com/dance2die/a39355c83f23f5e8c66747eb612c7c3a">View this gist on GitHub</a>
 
@@ -95,7 +94,7 @@ _I wasn't even sure if it'd work but that's how I wanted the components to work.
 
 Let's take a look at how it's implemented.
 
-``gist:dance2die/d2c410470a75b612ec38e94af3011126``
+`gist:dance2die/d2c410470a75b612ec38e94af3011126`
 
 <a href="https://gist.github.com/dance2die/d2c410470a75b612ec38e94af3011126">View this gist on GitHub</a>
 
@@ -105,7 +104,7 @@ Let's take a look at how it's implemented.
 
 1. It's basically a container to provide a context to be used within the Sticky component tree ("the tree" hereafter).
 2. The real implementation is within `StickyRoot`, which is not used (or made available via module export) in the usage above.
-    - While `StickyViewport` makes context available within the tree without rendering any element, `StickyRoot` is the actual "[root](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root)" (of IntersectionObserver option).
+   - While `StickyViewport` makes context available within the tree without rendering any element, `StickyRoot` is the actual "[root](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root)" (of IntersectionObserver option).
 3. To make the container ref available down in the tree, action dispatcher is retrieved from the custom hook, `useStickyActions` (,which is a `dispatch` from `useReducer`) in the provider implementation.
 4. Using the `dispatcher.setContainerRef`, we make the reference available in the tree for the child components.
 
@@ -121,22 +120,21 @@ The difference in `StickyProvider` is that, instead of exposing raw `dispatch` f
 
 _I'd recommend reading Kent's article before moving on._
 
-``gist:dance2die/07659aef6b54ed1305bb67f7fe88498d``
+`gist:dance2die/07659aef6b54ed1305bb67f7fe88498d`
 
 <a href="https://gist.github.com/dance2die/07659aef6b54ed1305bb67f7fe88498d">View this gist on GitHub</a>
 
 1. `containerRef` refers to the ref in `StickyRoot`, which is passed to the IntersectionObserver as the `root` option while `stickyRefs` refers to all `<Sticky />` elements, which is the "target" passed to event handlers.
 2. `setContainerRef` is called in the `StickyRoot` to pass to `StickyBoundary` while `addStickyRef` associates TOP & BOTTOM sentinels with `<Sticky />` element.  
-    We are observing TOP & BOTTOM sentinels so when `<StickyBoundary />` fires events, we can correctly retrieve the target sticky element.
+   We are observing TOP & BOTTOM sentinels so when `<StickyBoundary />` fires events, we can correctly retrieve the target sticky element.
 3. I am not returning a new reference but updating the existing "state" using `Object.assign(state,...)`, not `Object.assign({}, state, ...)`.  
-    Returning a new state would infinitely run the effects, so only `stickRefs` are updated as updating the state reference would cause `containerRef` to be of a new reference, causing a cascading effect (an infinite loop).
+   Returning a new state would infinitely run the effects, so only `stickRefs` are updated as updating the state reference would cause `containerRef` to be of a new reference, causing a cascading effect (an infinite loop).
 4. `StickyProvider` simply provides states raw, and
 5. creates "actions" out of dispatch, which makes only allowable actions to be called.
 6. and
 7. are hooks for accessing state and actions (I decided not to provide a "Consumer", which would cause a false hierarchy as render prop would.).
-8. `StickySectionContext` is just another context to pass down TOP & BOTTOM sentinels down to `Sticky` component, with which we can associate the sticky `target` to pass to the event handlers for `onChange, onUn/Stuck` events.  
-      
-    It was necessary because we are observing TOP & BOTTOM sentinels and during the declaration, we don't know which sticky element we are monitoring.
+8. `StickySectionContext` is just another context to pass down TOP & BOTTOM sentinels down to `Sticky` component, with which we can associate the sticky `target` to pass to the event handlers for `onChange, onUn/Stuck` events.
+   It was necessary because we are observing TOP & BOTTOM sentinels and during the declaration, we don't know which sticky element we are monitoring.
 
 Now we have enough context with state & actions, let's move on and see implementations of child components, `StickyBoundary`, and `Sticky`.
 
@@ -144,7 +142,7 @@ Now we have enough context with state & actions, let's move on and see implement
 
 The outline of `StickyBoundary` looks as below.
 
-``gist:dance2die/c494a38b8923f83f1e4ee4963817d14e``
+`gist:dance2die/c494a38b8923f83f1e4ee4963817d14e`
 
 <a href="https://gist.github.com/dance2die/c494a38b8923f83f1e4ee4963817d14e">View this gist on GitHub</a>
 
@@ -162,7 +160,7 @@ Now let's implement hooks.
 
 #### 🎣 useSentinelOffsets
 
-``gist:dance2die/b334739cabccfc716d1b177f303af947``
+`gist:dance2die/b334739cabccfc716d1b177f303af947`
 
 <a href="https://gist.github.com/dance2die/b334739cabccfc716d1b177f303af947">View this gist on GitHub</a>
 
@@ -175,7 +173,7 @@ Now let's implement hooks.
 
 #### 🎣 useObserveTopSentinels
 
-``gist:dance2die/f26f7b64094d635ae8de5498c3ac4cb1``
+`gist:dance2die/f26f7b64094d635ae8de5498c3ac4cb1`
 
 <a href="https://gist.github.com/dance2die/f26f7b64094d635ae8de5498c3ac4cb1">View this gist on GitHub</a>
 
@@ -196,7 +194,7 @@ The structure is about the same as `useObserveTopSentinels` so will be skipping 
 
 The only difference is the logic to calculate when to fire the un/stuck event depending on the position of BOTTOM sentinel, which was discussed in the Google doc.
 
-``gist:dance2die/f813bd90dcf680bf67fdde163dca3a89``
+`gist:dance2die/f813bd90dcf680bf67fdde163dca3a89`
 
 <a href="https://gist.github.com/dance2die/f813bd90dcf680bf67fdde163dca3a89">View this gist on GitHub</a>
 
@@ -204,7 +202,7 @@ Now time for the last component, `Sticky`, which will "stick" the child componen
 
 ### ⚛ Sticky
 
-``gist:dance2die/4483589c5ff5ed9cc9a6fc9ecd2588be``
+`gist:dance2die/4483589c5ff5ed9cc9a6fc9ecd2588be`
 
 <a href="https://gist.github.com/dance2die/4483589c5ff5ed9cc9a6fc9ecd2588be">View this gist on GitHub</a>
 
@@ -219,12 +217,11 @@ Let's take a look at the working demo one more time.
 ## Resources
 
 - Google Documentation
-    - [An event for CSS position:sticky](https://developers.google.com/web/updates/2017/09/sticky-headers)
-        - [Demo](https://ebidel.github.io/demos/sticky-position-event.html)
-        - [Source Code](https://github.com/ebidel/demos/blob/master/sticky-position-event.html)
-    - [IntersectionObserver’s Coming into View](https://developers.google.com/web/updates/2016/04/intersectionobserver)
+  - [An event for CSS position:sticky](https://developers.google.com/web/updates/2017/09/sticky-headers)
+    - [Demo](https://ebidel.github.io/demos/sticky-position-event.html)
+    - [Source Code](https://github.com/ebidel/demos/blob/master/sticky-position-event.html)
+  - [IntersectionObserver’s Coming into View](https://developers.google.com/web/updates/2016/04/intersectionobserver)
 - MDN
-    - [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)
-    - IntersectionObserver [root](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root) option
+  - [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)
+  - IntersectionObserver [root](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root) option
 - [Sandbox](https://codesandbox.io/s/react-sticky-javascript-refactored-w8otj)
-

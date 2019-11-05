@@ -1,9 +1,9 @@
 ---
 title: Being explicit with your own React Hook + TypeScript return type
-date: '2019-02-10'
+date: "2019-02-10"
 coverImage: featured-image-3.jpg
-published_at: '2019-02-10T20:40:17.000Z'
-tags: 'blogentry, programming, react, typescript'
+published_at: "2019-02-10T20:40:17.000Z"
+tags: "blogentry, programming, react, typescript"
 author: Sung M. Kim
 ---
 
@@ -19,7 +19,7 @@ I followed TheAifam5's instruction to generate a type file and distributed it.
 
 But when I tried to use the new distrubution within a React + TypeScript project, I was getting the following error.
 
-``gist:dance2die/2cb920c9166637535e0b44e867152042``
+`gist:dance2die/2cb920c9166637535e0b44e867152042`
 
 <a href="https://gist.github.com/dance2die/2cb920c9166637535e0b44e867152042">View this gist on GitHub</a>
 
@@ -31,7 +31,7 @@ Error Message in VS Code
 
 Below is the full source code for `useLocalStorage`.
 
-``gist:dance2die/004c227bd94d574c313cde52868e9cf5``
+`gist:dance2die/004c227bd94d574c313cde52868e9cf5`
 
 <a href="https://gist.github.com/dance2die/004c227bd94d574c313cde52868e9cf5">View this gist on GitHub</a>
 
@@ -41,7 +41,7 @@ As you can see, `useLocalStorage` returns an array of `[item, setItem]`.
 
 When auto-generating a type file using `tsc`, TypeScript generates following [definition code](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/implicit_return_typing/dist/index.d.ts).
 
-``gist:dance2die/9597d9483267c0a1df837f2119bdbd60``
+`gist:dance2die/9597d9483267c0a1df837f2119bdbd60`
 
 <a href="https://gist.github.com/dance2die/9597d9483267c0a1df837f2119bdbd60">View this gist on GitHub</a>
 
@@ -51,7 +51,7 @@ TypeScript inferred the return type as `(string | ((item: string) => void))[]` w
 
 So to fix it you need to explicitly declare the return type of `useLocalStorage` to generate a correct type definition.
 
-``gist:dance2die/eb06fd7002fe75ce7f948fdcc754df44``
+`gist:dance2die/eb06fd7002fe75ce7f948fdcc754df44`
 
 <a href="https://gist.github.com/dance2die/eb06fd7002fe75ce7f948fdcc754df44">View this gist on GitHub</a>
 
@@ -59,7 +59,7 @@ Return type specified explicitly
 
 You can now see that TypeScript has generated the definition correctly.
 
-``gist:dance2die/92efeaee3c5be12a6bea18033fd09e2d``
+`gist:dance2die/92efeaee3c5be12a6bea18033fd09e2d`
 
 <a href="https://gist.github.com/dance2die/92efeaee3c5be12a6bea18033fd09e2d">View this gist on GitHub</a>
 
@@ -71,12 +71,11 @@ And TypeScript is happy (in VS Code).
 
 TypeScript is now 🙂
 
-##   
-🤔 Question to readers
+## 🤔 Question to readers
 
 Does anyone know why TypeScript wasn't able to infer the return type correctly?
 
- **UPDATE**: 2019-02-12 
+**UPDATE**: 2019-02-12
 
 [pgrizzay](https://www.reddit.com/user/pgrizzay) & [AngularBeginner](https://www.reddit.com/user/AngularBeginner) have generously answered the question above in Reddit.
 
@@ -85,14 +84,12 @@ Does anyone know why TypeScript wasn't able to infer the return type correctly?
 
 The gist is that, TypeScript does not infer tuple type variable because there isn't enough information.
 
-##   
-🏔 Resources
+## 🏔 Resources
 
 - GitHub Issue - [Package does not contains typings for Typescript development](https://github.com/dance2die/react-use-localstorage/issues/9)
 - Demo Codes
-    - [useLocalStorage with explicit return type](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/master/src/index.ts) & (good) [declaration file](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/master/dist/index.d.ts)
-    - [useLocalStorage with implicit return type](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/implicit_return_typing/src/index.ts) & (bad) [declaration file](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/implicit_return_typing/dist/index.d.ts)
+  - [useLocalStorage with explicit return type](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/master/src/index.ts) & (good) [declaration file](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/master/dist/index.d.ts)
+  - [useLocalStorage with implicit return type](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/implicit_return_typing/src/index.ts) & (bad) [declaration file](https://github.com/dance2die/blog.typescript-typing-for-react-hooks/blob/implicit_return_typing/dist/index.d.ts)
 - react-use-localstorage
-    - [Source Code](https://github.com/dance2die/react-use-localstorage)
-    - [NPM registry](https://www.npmjs.com/package/react-use-localstorage)
-
+  - [Source Code](https://github.com/dance2die/react-use-localstorage)
+  - [NPM registry](https://www.npmjs.com/package/react-use-localstorage)
