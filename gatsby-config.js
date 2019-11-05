@@ -5,6 +5,8 @@ module.exports = {
     author: `Sung M. Kim`,
   },
   plugins: [
+    `gatsby-plugin-theme-ui`,
+
     `gatsby-plugin-react-helmet`,
     // https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/?=mdx
     {
@@ -93,7 +95,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-theme-ui`,
     // https://www.gatsbyjs.org/docs/emotion/
     // to use Theme-UI https://theme-ui.com/getting-started
     `gatsby-plugin-emotion`,

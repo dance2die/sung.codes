@@ -1,8 +1,9 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
 
-import { ThemeProvider } from "theme-ui"
-import theme from "../theme"
+import { Layout as ThemeLayout, Main, Header, Container } from "theme-ui"
+// import theme from "../theme"
+// import theme from "../gatsby-plugin-theme-ui"
 
 // import { StaticQuery } from "gatsby"
 // import YearsTabs from "../components/YearsTabs"
@@ -21,7 +22,19 @@ import theme from "../theme"
 // }
 
 function Layout({ children }) {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  // return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  // return <>{children}</>
+
+  return (
+    <ThemeLayout>
+      <Header>
+        <h1>Sung.codes Layout</h1>
+      </Header>
+      <Main>
+        <Container>{children}</Container>
+      </Main>
+    </ThemeLayout>
+  )
 }
 
 // const containerStyle = {
