@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../layouts"
 
@@ -9,15 +10,25 @@ const getYearCounts = nodes =>
     return acc
   }, {})
 
+const Header = styled.header``
+const Body = styled.main`
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1.5rem;
+`
+const Block = styled.article`
+  padding: 2rem;
+`
+
 const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (
   <Link key={year} to={`/blog/${year}`}>
-    <article className="posts__year">
+    <Block>
       <h3>{year}</h3>
       <p>
         {count} post{count > 1 ? "s" : ""}
       </p>
-    </article>
+    </Block>
   </Link>
 )
 
@@ -43,13 +54,10 @@ export default () => {
 
   return (
     <Layout>
-      <h1>blog home page</h1>
-      <section className="posts">
-        <header className="posts__header">
-          <h2>Posts?</h2>
-        </header>
-        <main className="posts__body">{postBlocks}</main>
-      </section>
+      <Header>
+        <h2>Welcome to Sung's Blog~</h2>
+      </Header>
+      <Body>{postBlocks}</Body>
     </Layout>
   )
 }
