@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Header, Main, h3 } from "theme-ui"
+
 import Layout from "../layouts"
 
 export default ({ data }) => {
@@ -12,12 +14,12 @@ export default ({ data }) => {
       },
     }) => (
       <React.Fragment key={id}>
-        <h2>
+        <h3>
           <Link to={slug}>{title}</Link>
-        </h2>
-        <b>
+        </h3>
+        <Main>
           {date} - {posted}
-        </b>
+        </Main>
       </React.Fragment>
     )
   )

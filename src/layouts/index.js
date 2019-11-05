@@ -1,7 +1,7 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
 
-import { Layout as ThemeLayout, Main, Header, Container } from "theme-ui"
+import { Layout as ThemeLayout, Main, Header, Container, h1 } from "theme-ui"
 // import theme from "../theme"
 // import theme from "../gatsby-plugin-theme-ui"
 

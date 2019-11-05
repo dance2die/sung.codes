@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
+import { Header, h2, h3 } from "theme-ui"
 
 import Layout from "../layouts"
 
@@ -10,7 +11,6 @@ const getYearCounts = nodes =>
     return acc
   }, {})
 
-const Header = styled.header``
 const Body = styled.main`
   display: flex;
   flex-flow: row wrap;
