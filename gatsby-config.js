@@ -73,12 +73,12 @@ module.exports = {
         includePaths: ["src/styles/*.scss"],
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -93,6 +93,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-theme-ui`,
     // https://www.gatsbyjs.org/docs/emotion/
     // to use Theme-UI https://theme-ui.com/getting-started
     `gatsby-plugin-emotion`,

@@ -1,30 +1,34 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
-import { StaticQuery } from "gatsby"
-import YearsTabs from "../components/YearsTabs"
-import Header from "../components/header"
-import Footer from "../components/Footer"
 
-import { rhythm } from "../utils/typography"
+import { ThemeProvider } from "theme-ui"
+import theme from "../theme"
 
-import background from "../images/background.svg"
+// import { StaticQuery } from "gatsby"
+// import YearsTabs from "../components/YearsTabs"
+// import Header from "../components/header"
+// import Footer from "../components/Footer"
+
+// import { rhythm } from "../utils/typography"
+
+// import background from "../images/background.svg"
+
 // https://www.gatsbyjs.org/docs/global-css/
-import "./index.scss"
+// import "./index.scss"
 
-const containerStyle = {
-  maxWidth: 750,
-  margin: `0 auto`,
-  padding: rhythm(3 / 4),
-}
-
-function getYears(edges) {
-  return Array.from(new Set(edges.map(({ node }) => node.year)))
-}
+// function getYears(edges) {
+//   return Array.from(new Set(edges.map(({ node }) => node.year)))
+// }
 
 function Layout({ children }) {
-  return <>{children}</>
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
 
+// const containerStyle = {
+//   maxWidth: 750,
+//   margin: `0 auto`,
+//   padding: rhythm(3 / 4),
+// }
 // function Layout(props) {
 //   return (
 //     <StaticQuery
