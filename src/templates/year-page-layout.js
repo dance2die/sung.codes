@@ -7,7 +7,7 @@ import { Main, Container } from "theme-ui"
 import Layout from "../layouts"
 import { Heading, Box } from "@theme-ui/components"
 
-export default ({ data }) => {
+export default ({ data, navigate }) => {
   const posts = data.allMdx.edges.map(
     ({
       node: {
@@ -41,6 +41,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <Link to="/blog">&larr; Go Back</Link>
+      {/* <Link onClick={() => navigate(-1)}>&larr; Go Back</Link> */}
       <Container>{posts}</Container>
     </Layout>
   )
