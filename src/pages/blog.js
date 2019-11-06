@@ -42,7 +42,13 @@ const Block = styled(Link)(({ theme }) => ({
 
 const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (
-  <Block key={year} to={`/blog/${year}`} width={["90vw", "50vw", "50vw"]}>
+  <Block
+    key={year}
+    to={`/blog/${year}`}
+    sx={{
+      width: ["90%", "50%", "30%", "20%"],
+    }}
+  >
     <Heading
       as="h3"
       sx={{

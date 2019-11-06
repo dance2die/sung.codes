@@ -29,7 +29,13 @@ function Layout({ children }) {
           }}
         >
           <Nav />
-          <Main>{children} </Main>
+          <Container
+            sx={{
+              padding: [1, 2, 3, 4],
+            }}
+          >
+            <Main>{children} </Main>
+          </Container>
         </Container>
       </ThemeLayout>
     </>
