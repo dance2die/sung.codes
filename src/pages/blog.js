@@ -21,8 +21,8 @@ const Body = styled.main`
 const Block = styled(Link)(({ theme }) => ({
   padding: `3rem 2rem`,
   margin: `.5rem`,
-  width: `20vw`,
-  minWidth: `20vw`,
+  width: `21vw`,
+  minWidth: `21vw`,
   maxWidth: `25vw`,
   border: `1px solid ${theme.colors.gray[1]}`,
 
