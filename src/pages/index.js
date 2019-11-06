@@ -1,7 +1,10 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+// import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../layouts"
+import { Heading, Text } from "@theme-ui/components"
 // // import Dangerous from "dangerous-components"
 // // import PostIcons from "../components/post-icon"
 // import { rhythm } from "../utils/typography"
@@ -27,8 +30,8 @@ export default () => {
 
   return (
     <Layout>
-      <h1>Welcome to {title}</h1>
-      <p>{description}</p>
+      <Heading>Welcome to {title}</Heading>
+      <Text>{description}</Text>
     </Layout>
   )
 }
