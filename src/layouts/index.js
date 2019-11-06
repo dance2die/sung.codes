@@ -1,7 +1,9 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
 
-import { Layout as ThemeLayout, Main, Header, Container } from "theme-ui"
+import { Layout as ThemeLayout, Main, Header } from "theme-ui"
+import { Heading } from "@theme-ui/components"
+
 import { Global, css } from "@emotion/core"
 
 function Layout({ children }) {
@@ -20,7 +22,7 @@ function Layout({ children }) {
 
       <ThemeLayout>
         <Header>
-          <h1>Sung.codes Layout</h1>
+          <Heading as="h1">Sung.codes Layout</Heading>
         </Header>
         <Main>{children} </Main>
       </ThemeLayout>

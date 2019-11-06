@@ -1,8 +1,6 @@
 // https://theme-ui.com/theming#example
 const heading = {
   fontFamily: "heading",
-  lineHeight: "heading",
-  fontWeight: "heading",
 }
 
 export const theme = {
@@ -46,8 +44,8 @@ export const theme = {
     Layout: { fontFamily: "body" },
     Header: { fontFamily: "heading" },
     h1: {
-      ...heading,
-      fontSize: 5,
+      fontFamily: "heading",
+      fontSize: 8,
     },
     h2: {
       ...heading,
