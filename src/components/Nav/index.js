@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Container } from "theme-ui"
 import { Link as RawLink } from "gatsby"
-import { Heading, Flex, Box } from "@theme-ui/components"
+import { Heading, Flex, Box, Text } from "@theme-ui/components"
 import styled from "@emotion/styled"
 
 const Title = () => (
@@ -34,7 +34,7 @@ const Links = () => (
 
 const Year = () => (
   <Box>
-    <Heading as="sub">2019</Heading>
+    <Text>2019</Text>
   </Box>
 )
 
