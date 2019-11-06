@@ -34,7 +34,7 @@ const Links = () => (
 
 const Year = () => (
   <Box>
-    <Text>2019</Text>
+    <Text>{new Date().getFullYear()}</Text>
   </Box>
 )
 
