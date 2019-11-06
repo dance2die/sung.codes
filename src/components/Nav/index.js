@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Heading, Flex, Box, Text } from "@theme-ui/components"
+import { Link as RawLink } from "gatsby"
+import { Heading, Flex, Box } from "@theme-ui/components"
+import styled from "@emotion/styled"
 
 const Title = () => (
   <Flex
@@ -15,7 +17,21 @@ const Title = () => (
   </Flex>
 )
 
-const Links = () => <Box>links?</Box>
+const Link = styled(RawLink)`
+  text-decoration: none;
+`
+
+const Links = () => (
+  <Flex>
+    <Box pr={3}>
+      <Link to="/">Home</Link>
+    </Box>
+    <Box pr={3}>
+      <Link to="/blog">Blog</Link>
+    </Box>
+  </Flex>
+)
+
 const Year = () => (
   <Box>
     <Heading as="sub">2019</Heading>
