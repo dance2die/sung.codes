@@ -31,8 +31,12 @@ const Block = styled(Link)(({ theme }) => ({
   justifyContent: `center`,
   alignItems: `center`,
 
+  textDecoration: `none`,
+  color: theme.colors.gray[3],
+
   "&:hover": {
     backgroundColor: theme.colors.gray[0],
+    textDecoration: "underline",
   },
 }))
 
@@ -47,7 +51,7 @@ const toPost = ([year, count]) => (
     >
       {year}
     </Heading>
-    <Text>
+    <Text sx={{ fontSize: theme => theme.fontSizes[3] }}>
       {count} post{count > 1 ? "s" : ""}
     </Text>
   </Block>

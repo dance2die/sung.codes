@@ -1,6 +1,7 @@
 // https://theme-ui.com/theming#example
 const heading = {
   fontFamily: "heading",
+  lineHeight: "heading",
 }
 
 export const theme = {
