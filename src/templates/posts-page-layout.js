@@ -9,12 +9,6 @@ import { Heading, Box } from "@theme-ui/components"
 export default ({ data: { mdx } }) => {
   return (
     <Layout>
-      {/* <Box
-        sx={{
-          pb: 3,
-        }}
-      >
-      </Box> */}
       <Link to={`/blog/${mdx.fields.year}`}>&larr; Go Back</Link>
       <link
         rel="stylesheet"
