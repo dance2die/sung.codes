@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui"
+import { jsx } from "theme-ui"
 import { Heading, Text, Box } from "@theme-ui/components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
@@ -14,16 +14,15 @@ const getYearCounts = nodes =>
 
 const Body = styled.main`
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
-  padding: 1.5rem;
+  padding: 3rem 0;
 `
 
 const Block = styled(Link)(({ theme }) => ({
   padding: `3rem 2rem`,
   margin: `.5rem`,
-  // width: `21vw`,
-  // minWidth: `21vw`,
-  // maxWidth: `25vw`,
   border: `1px solid ${theme.colors.gray[1]}`,
 
   display: `flex`,
@@ -46,7 +45,7 @@ const toPost = ([year, count]) => (
     key={year}
     to={`/blog/${year}`}
     sx={{
-      width: ["90%", "50%", "30%", "20%"],
+      width: ["90%", "50%", "30%", "35%"],
     }}
   >
     <Heading
