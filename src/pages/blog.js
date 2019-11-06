@@ -20,6 +20,9 @@ const Body = styled.main`
 `
 const Block = styled.article`
   padding: 2rem;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.gray[0]};
+  }
 `
 
 const byYearDescending = ([year1], [year2]) => year2 - year1
