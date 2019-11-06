@@ -10,6 +10,8 @@ export default ({ data: { mdx } }) => {
   return (
     <Layout>
       <Link to={`/blog/${mdx.fields.year}`}>&larr; Go Back</Link>
+
+      {/* This "link" is for styling gists. */}
       <link
         rel="stylesheet"
         href="https://github.githubassets.com/assets/gist-embed-123720f37c57ce9a8f29de081c38ed61.css"
