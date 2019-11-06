@@ -6,41 +6,39 @@ import {
   Main,
   Header,
   Container,
-  h1,
   ThemeProvider,
 } from "theme-ui"
-import theme from "../theme"
-// import theme from "../gatsby-plugin-theme-ui"
 
-// import { StaticQuery } from "gatsby"
-// import YearsTabs from "../components/YearsTabs"
-// import Header from "../components/header"
-// import Footer from "../components/Footer"
+import { Global, css } from "@emotion/core"
 
-// import { rhythm } from "../utils/typography"
-
-// import background from "../images/background.svg"
-
-// https://www.gatsbyjs.org/docs/global-css/
-// import "./index.scss"
-
-// function getYears(edges) {
-//   return Array.from(new Set(edges.map(({ node }) => node.year)))
-// }
+import { theme } from "../theme"
 
 function Layout({ children }) {
-  // return <ThemeProvider theme={theme}>{children}</ThemeProvider>
-  // return <>{children}</>
-
   return (
-    <ThemeLayout>
-      <Header>
-        <h1>Sung.codes Layout</h1>
-      </Header>
-      <Main>
-        <Container>{children}</Container>
-      </Main>
-    </ThemeLayout>
+    <>
+      {/* prettier-ignore */}
+      <Global
+        styles={css`
+          *,
+          *::after,
+          *::before {
+            margin: 0;
+            padding: 0;
+          }
+        `}
+      />
+
+      <ThemeProvider theme={theme}>
+        <ThemeLayout>
+          <Header>
+            <h1>Sung.codes Layout</h1>
+          </Header>
+          <Main>
+            <Container>{children}</Container>
+          </Main>
+        </ThemeLayout>
+      </ThemeProvider>
+    </>
   )
 }
 

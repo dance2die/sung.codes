@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 // import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
-import { Header, h2, h3 } from "theme-ui"
+import { Header } from "theme-ui"
 
 import Layout from "../layouts"
 
@@ -18,12 +18,30 @@ const Body = styled.main`
   flex-flow: row wrap;
   padding: 1.5rem;
 `
-const Block = styled.article`
-  padding: 2rem;
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.gray[0]};
-  }
-`
+
+const Block = styled.article(({ theme }) => ({
+  padding: `2rem`,
+  marginLeft: `1rem`,
+  width: `25vw`,
+  border: `1px solid ${theme.colors.gray[1]}`,
+
+  display: `flex`,
+  flexDirection: `column`,
+  justifyContent: `center`,
+  alignItems: `center`,
+
+  "&:hover": {
+    backgroundColor: theme.colors.gray[0],
+  },
+}))
+
+// const Block = styled.article`
+//   padding: 2rem;
+
+//   &:hover {
+//     background-color: ${({ theme }) => theme.colors.gray[0]};
+//   }
+// `
 
 const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (
