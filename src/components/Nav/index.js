@@ -3,7 +3,13 @@ import { jsx } from "theme-ui"
 import { Heading, Flex, Box, Text } from "@theme-ui/components"
 
 const Title = () => (
-  <Flex>
+  <Flex
+    sx={{
+      display: "flex",
+      alignItems: "center",
+      "& > *": { paddingRight: "0.5rem" },
+    }}
+  >
     <Heading as="h1">{"{ sung.codes }"}</Heading>
     <Heading as="sup">by dance2die</Heading>
   </Flex>
@@ -12,7 +18,7 @@ const Title = () => (
 const Links = () => <Box>links?</Box>
 const Year = () => (
   <Box>
-    <Text>2019</Text>
+    <Heading as="sub">2019</Heading>
   </Box>
 )
 
@@ -25,6 +31,7 @@ export default () => {
         backgroundColor: theme => theme.colors.background,
         flexDirection: "row",
         justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
       <Title />
