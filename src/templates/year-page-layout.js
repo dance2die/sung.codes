@@ -1,10 +1,11 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
-// import { jsx } from "theme-ui"
-import { Main } from "theme-ui"
 import { graphql, Link } from "gatsby"
 
+import { Main, Container } from "theme-ui"
 import Layout from "../layouts"
-import { Heading } from "@theme-ui/components"
+import { Heading, Box } from "@theme-ui/components"
 
 export default ({ data }) => {
   const posts = data.allMdx.edges.map(
@@ -15,21 +16,32 @@ export default ({ data }) => {
         id,
       },
     }) => (
-      <React.Fragment key={id}>
+      <Box
+        key={id}
+        sx={{
+          pb: 3,
+          lineHeight: "1.8rem",
+        }}
+      >
         <Heading as="h3">
           <Link to={slug}>{title}</Link>
         </Heading>
-        <Main>
-          {date} - {posted}
+        <Main
+          sx={{
+            color: theme => theme.colors.gray[2],
+            fontSize: "0.9rem",
+          }}
+        >
+          {date}
         </Main>
-      </React.Fragment>
+      </Box>
     )
   )
 
   return (
     <Layout>
       <Link to="/blog">&larr; Go Back</Link>
-      {posts}
+      <Container>{posts}</Container>
     </Layout>
   )
 }
