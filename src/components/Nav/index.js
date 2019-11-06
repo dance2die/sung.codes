@@ -44,6 +44,7 @@ export default () => {
       sx={{
         position: "sticky",
         top: 0,
+        backgroundColor: theme => theme.colors.background,
       }}
     >
       <Flex
