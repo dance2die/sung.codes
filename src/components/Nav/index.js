@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui"
-import { Link as RawLink } from "gatsby"
+import { jsx } from "theme-ui"
 import { Heading, Flex, Box, Text } from "@theme-ui/components"
+import { Link as RawLink } from "gatsby"
 import styled from "@emotion/styled"
 
 const Title = () => (
@@ -40,12 +40,10 @@ const Year = () => (
 
 export default () => {
   return (
-    <Container
+    <Box
       sx={{
         position: "sticky",
         top: 0,
-        backgroundColor: theme => theme.colors.background,
-        padding: theme => theme.space[3],
       }}
     >
       <Flex
@@ -59,6 +57,6 @@ export default () => {
         <Links />
         <Year />
       </Flex>
-    </Container>
+    </Box>
   )
 }

@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Heading, Text } from "@theme-ui/components"
+import { jsx, Container } from "theme-ui"
+import { Heading, Text, Box } from "@theme-ui/components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
 
@@ -21,9 +21,9 @@ const Body = styled.main`
 const Block = styled(Link)(({ theme }) => ({
   padding: `3rem 2rem`,
   margin: `.5rem`,
-  width: `21vw`,
-  minWidth: `21vw`,
-  maxWidth: `25vw`,
+  // width: `21vw`,
+  // minWidth: `21vw`,
+  // maxWidth: `25vw`,
   border: `1px solid ${theme.colors.gray[1]}`,
 
   display: `flex`,
@@ -42,7 +42,7 @@ const Block = styled(Link)(({ theme }) => ({
 
 const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (
-  <Block key={year} to={`/blog/${year}`}>
+  <Block key={year} to={`/blog/${year}`} width={["90vw", "50vw", "50vw"]}>
     <Heading
       as="h3"
       sx={{
@@ -80,6 +80,12 @@ export default () => {
   return (
     <Layout>
       <Heading>Welcome to Sung's Blog~</Heading>
+      <Box
+        sx={{
+          width: ["100%", "50%", "25%"],
+          backgroundColor: theme => theme.colors.background,
+        }}
+      ></Box>
       <Body>{postBlocks}</Body>
     </Layout>
   )
