@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Container } from "theme-ui"
 import { Link as RawLink } from "gatsby"
 import { Heading, Flex, Box } from "@theme-ui/components"
 import styled from "@emotion/styled"
@@ -40,19 +40,25 @@ const Year = () => (
 
 export default () => {
   return (
-    <Flex
+    <Container
       sx={{
         position: "sticky",
         top: 0,
         backgroundColor: theme => theme.colors.background,
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
+        padding: theme => theme.space[3],
       }}
     >
-      <Title />
-      <Links />
-      <Year />
-    </Flex>
+      <Flex
+        sx={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Title />
+        <Links />
+        <Year />
+      </Flex>
+    </Container>
   )
 }
