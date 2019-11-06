@@ -24,11 +24,7 @@ function Layout({ children }) {
 
       <ThemeLayout>
         <Container
-          // p={[1, 2, 3]}
           sx={{
-            // backgroundColor: theme => theme.colors.background,
-            // backgroundColor: "tomato",
-            // padding: theme => theme.space[0],
             padding: [1, 3, 4, 5],
           }}
         >
