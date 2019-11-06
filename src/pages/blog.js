@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-// import React from "react"
+import { Heading } from "@theme-ui/components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
 
@@ -38,7 +38,7 @@ const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (
   <Link key={year} to={`/blog/${year}`}>
     <Block>
-      <h3>{year}</h3>
+      <Heading as="h3">{year}</Heading>
       <p>
         {count} post{count > 1 ? "s" : ""}
       </p>
@@ -68,9 +68,7 @@ export default () => {
 
   return (
     <Layout>
-      <h2 sx={{ fontFamily: theme => theme.fonts.heading }}>
-        Welcome to Sung's Blog~
-      </h2>
+      <Heading>Welcome to Sung's Blog~</Heading>
       <Body>{postBlocks}</Body>
     </Layout>
   )
