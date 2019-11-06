@@ -22,7 +22,8 @@ function Layout({ children }) {
 
       <ThemeLayout>
         <Header>
-          <Heading as="h1">{"{ sung.codes }"} by dance2die</Heading>
+          <Heading as="h1">{"{ sung.codes }"}</Heading>
+          <Heading as="sup">by dance2die</Heading>
         </Header>
         <Main>{children} </Main>
       </ThemeLayout>
