@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Header } from "theme-ui"
-import { Heading, Flex } from "@theme-ui/components"
+import { Heading, Flex, Box, Text } from "@theme-ui/components"
 
 const Title = () => (
   <Flex>
@@ -10,10 +9,27 @@ const Title = () => (
   </Flex>
 )
 
+const Links = () => <Box>links?</Box>
+const Year = () => (
+  <Box>
+    <Text>2019</Text>
+  </Box>
+)
+
 export default () => {
   return (
-    <Header>
+    <Flex
+      sx={{
+        position: "sticky",
+        top: 0,
+        backgroundColor: theme => theme.colors.background,
+        flexDirection: "row",
+        justifyContent: "space-between",
+      }}
+    >
       <Title />
-    </Header>
+      <Links />
+      <Year />
+    </Flex>
   )
 }
