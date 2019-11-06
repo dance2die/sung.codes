@@ -1,8 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+// import { jsx } from "theme-ui"
 import { Main } from "theme-ui"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../layouts"
+import { Heading } from "@theme-ui/components"
 
 export default ({ data }) => {
   const posts = data.allMdx.edges.map(
@@ -14,9 +16,9 @@ export default ({ data }) => {
       },
     }) => (
       <React.Fragment key={id}>
-        <h3>
+        <Heading as="h3">
           <Link to={slug}>{title}</Link>
-        </h3>
+        </Heading>
         <Main>
           {date} - {posted}
         </Main>
@@ -24,7 +26,12 @@ export default ({ data }) => {
     )
   )
 
-  return <Layout>{posts}</Layout>
+  return (
+    <Layout>
+      <Link to="/blog">&larr; Go Back</Link>
+      {posts}
+    </Layout>
+  )
 }
 
 export const query = graphql`
