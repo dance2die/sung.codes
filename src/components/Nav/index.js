@@ -5,16 +5,19 @@ import { Heading, Flex, Box } from "@theme-ui/components"
 import styled from "@emotion/styled"
 
 const Title = () => (
-  <Flex
-    sx={{
-      display: "flex",
-      alignItems: "center",
-      "& > *": { paddingRight: "0.5rem" },
-    }}
-  >
-    <Heading as="h1">{"{ sung.codes }"}</Heading>
-    <Heading as="sup">by dance2die</Heading>
-  </Flex>
+  <Link to="/">
+    <Flex
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        color: theme => theme.colors.gray[3],
+        "& > *": { paddingRight: "0.5rem" },
+      }}
+    >
+      <Heading as="h1">{"{ sung.codes }"}</Heading>
+      <Heading as="sup">by dance2die</Heading>
+    </Flex>
+  </Link>
 )
 
 const Link = styled(RawLink)`
@@ -23,9 +26,6 @@ const Link = styled(RawLink)`
 
 const Links = () => (
   <Flex>
-    <Box pr={3}>
-      <Link to="/">Home</Link>
-    </Box>
     <Box pr={3}>
       <Link to="/blog">Blog</Link>
     </Box>
