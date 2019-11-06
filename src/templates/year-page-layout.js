@@ -11,7 +11,7 @@ export default ({ data }) => {
   const posts = data.allMdx.edges.map(
     ({
       node: {
-        frontmatter: { title, date, posted },
+        frontmatter: { title, date },
         fields: { slug },
         id,
       },
@@ -56,7 +56,6 @@ export const query = graphql`
         node {
           frontmatter {
             date
-            posted: date(fromNow: true)
             title
             coverImage
           }
