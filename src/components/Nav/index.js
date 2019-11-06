@@ -45,6 +45,7 @@ export default () => {
         position: "sticky",
         top: 0,
         backgroundColor: theme => theme.colors.background,
+        zIndex: 100,
       }}
     >
       <Flex
