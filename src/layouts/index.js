@@ -22,7 +22,7 @@ function Layout({ children }) {
 
       <ThemeLayout>
         <Header>
-          <Heading as="h1">Sung.codes Layout</Heading>
+          <Heading as="h1">{"{sung.codes}"} by dance2die</Heading>
         </Header>
         <Main>{children} </Main>
       </ThemeLayout>
