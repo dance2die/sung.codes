@@ -2,9 +2,9 @@
 import React from "react"
 
 import { Layout as ThemeLayout, Main, Header } from "theme-ui"
-import { Heading } from "@theme-ui/components"
-
 import { Global, css } from "@emotion/core"
+
+import Nav from "../components/Nav"
 
 function Layout({ children }) {
   return (
@@ -22,8 +22,7 @@ function Layout({ children }) {
 
       <ThemeLayout>
         <Header>
-          <Heading as="h1">{"{ sung.codes }"}</Heading>
-          <Heading as="sup">by dance2die</Heading>
+          <Nav />
         </Header>
         <Main>{children} </Main>
       </ThemeLayout>
