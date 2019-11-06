@@ -1,22 +1,12 @@
 // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
 import React from "react"
 
-import {
-  Layout as ThemeLayout,
-  Main,
-  Header,
-  Container,
-  ThemeProvider,
-} from "theme-ui"
-
+import { Layout as ThemeLayout, Main, Header, Container } from "theme-ui"
 import { Global, css } from "@emotion/core"
-
-import { theme } from "../theme"
 
 function Layout({ children }) {
   return (
     <>
-      {/* prettier-ignore */}
       <Global
         styles={css`
           *,
@@ -28,16 +18,14 @@ function Layout({ children }) {
         `}
       />
 
-      <ThemeProvider theme={theme}>
-        <ThemeLayout>
-          <Header>
-            <h1>Sung.codes Layout</h1>
-          </Header>
-          <Main>
-            <Container>{children}</Container>
-          </Main>
-        </ThemeLayout>
-      </ThemeProvider>
+      <ThemeLayout>
+        <Header>
+          <h1>Sung.codes Layout</h1>
+        </Header>
+        <Main>
+          <Container>{children}</Container>
+        </Main>
+      </ThemeLayout>
     </>
   )
 }

@@ -3,7 +3,6 @@ import { jsx } from "theme-ui"
 // import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
-import { Header } from "theme-ui"
 
 import Layout from "../layouts"
 

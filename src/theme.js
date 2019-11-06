@@ -12,7 +12,6 @@ export const theme = {
     background: "#fff",
     primary: "#33e",
     gray: ["#efefef", "#ddd", "#333", "#111"],
-    primary: "rebecaapurple",
 
     modes: {
       dark: {

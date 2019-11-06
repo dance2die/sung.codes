@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { Header, Main, h3 } from "theme-ui"
+import { Main } from "theme-ui"
 
 import Layout from "../layouts"
 
