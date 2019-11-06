@@ -19,9 +19,9 @@ const Body = styled.main`
 `
 
 const Block = styled.article(({ theme }) => ({
-  padding: `2rem`,
-  marginLeft: `1rem`,
-  width: `25vw`,
+  padding: `3rem 2rem`,
+  margin: `.5rem`,
+  width: `20vw`,
   border: `1px solid ${theme.colors.gray[1]}`,
 
   display: `flex`,
@@ -33,14 +33,6 @@ const Block = styled.article(({ theme }) => ({
     backgroundColor: theme.colors.gray[0],
   },
 }))
-
-// const Block = styled.article`
-//   padding: 2rem;
-
-//   &:hover {
-//     background-color: ${({ theme }) => theme.colors.gray[0]};
-//   }
-// `
 
 const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (

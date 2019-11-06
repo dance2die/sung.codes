@@ -22,9 +22,7 @@ function Layout({ children }) {
         <Header>
           <h1>Sung.codes Layout</h1>
         </Header>
-        <Main>
-          <Container>{children}</Container>
-        </Main>
+        <Main>{children} </Main>
       </ThemeLayout>
     </>
   )
