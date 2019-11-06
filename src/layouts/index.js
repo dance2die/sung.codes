@@ -33,16 +33,14 @@ function Layout({ children }) {
   // return <>{children}</>
 
   return (
-    <ThemeProvider theme={theme}>
-      <ThemeLayout>
-        <Header>
-          <h1>Sung.codes Layout</h1>
-        </Header>
-        <Main>
-          <Container>{children}</Container>
-        </Main>
-      </ThemeLayout>
-    </ThemeProvider>
+    <ThemeLayout>
+      <Header>
+        <h1>Sung.codes Layout</h1>
+      </Header>
+      <Main>
+        <Container>{children}</Container>
+      </Main>
+    </ThemeLayout>
   )
 }
 

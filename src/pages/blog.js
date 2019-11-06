@@ -1,4 +1,6 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+// import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
 import { Header, h2, h3 } from "theme-ui"
@@ -54,9 +56,9 @@ export default () => {
 
   return (
     <Layout>
-      <Header>
-        <h2>Welcome to Sung's Blog~</h2>
-      </Header>
+      <h2 sx={{ fontFamily: theme => theme.fonts.heading }}>
+        Welcome to Sung's Blog~
+      </h2>
       <Body>{postBlocks}</Body>
     </Layout>
   )
