@@ -92,12 +92,6 @@ export default () => {
   return (
     <Layout>
       <Heading>Welcome to Sung's Blog~</Heading>
-      <Box
-        sx={{
-          width: ["100%", "50%", "25%"],
-          backgroundColor: theme => theme.colors.background,
-        }}
-      ></Box>
       <Body>{postBlocks}</Body>
     </Layout>
   )
