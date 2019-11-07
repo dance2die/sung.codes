@@ -68,9 +68,10 @@ export default () => {
       allDirectory(
         filter: {
           sourceInstanceName: { eq: "blog" }
-          relativeDirectory: { regex: "/^\\\\d{4}$/gi" }
+          relativeDirectory: { regex: "/^\\\\d{4}$/" }
         }
       ) {
+        totalCount
         nodes {
           year: relativeDirectory
         }
