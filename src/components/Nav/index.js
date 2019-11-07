@@ -46,6 +46,7 @@ export default () => {
         top: 0,
         backgroundColor: theme => theme.colors.background,
         zIndex: 100,
+        padding: theme => `${theme.space[3]}px 0 ${theme.space[3]}px`,
       }}
     >
       <Flex
