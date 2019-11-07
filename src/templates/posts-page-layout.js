@@ -7,8 +7,11 @@ import { Heading } from "@theme-ui/components"
 import Layout from "../layouts"
 
 const postStyle = {
-  "h1, h2": {
+  h1: {
     paddingBottom: theme => theme.space[3],
+  },
+  h2: {
+    padding: theme => `${theme.space[2]} 0`,
   },
   "ul, ol": {
     paddingLeft: theme => theme.space[4],
