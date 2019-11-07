@@ -22,10 +22,18 @@ const postStyle = {
   lineHeight: "2.5rem",
 }
 
-export default ({ data: { mdx } }) => {
+export default ({
+  data: {
+    mdx: {
+      body,
+      frontmatter: { title, coverImage },
+      fields: { year },
+    },
+  },
+}) => {
   return (
     <Layout>
-      <Link to={`/blog/${mdx.fields.year}`}>&larr; Go Back</Link>
+      <Link to={`/blog/${year}`}>&larr; Go Back</Link>
 
       {/* This "link" is for styling gists. */}
       <link
@@ -33,8 +41,8 @@ export default ({ data: { mdx } }) => {
         href="https://github.githubassets.com/assets/gist-embed-123720f37c57ce9a8f29de081c38ed61.css"
       ></link>
       <Container sx={postStyle}>
-        <Heading as="h1">{mdx.frontmatter.title}</Heading>
-        <MDXRenderer>{mdx.body}</MDXRenderer>
+        <Heading as="h1">{title}</Heading>
+        <MDXRenderer>{body}</MDXRenderer>
       </Container>
     </Layout>
   )
@@ -43,10 +51,10 @@ export default ({ data: { mdx } }) => {
 export const pageQuery = graphql`
   query BlogPostQuery($id: String) {
     mdx(id: { eq: $id }) {
-      id
       body
       frontmatter {
         title
+        coverImage
       }
       fields {
         year
