@@ -28,13 +28,11 @@ export default ({
   data: {
     mdx: {
       body,
-      frontmatter,
+      frontmatter: { title, banner },
       fields: { year },
     },
   },
 }) => {
-  console.info(`frontmatter ==>`, frontmatter)
-
   return (
     <Layout>
       <Link to={`/blog/${year}`}>&larr; Go Back</Link>
@@ -45,8 +43,8 @@ export default ({
         href="https://github.githubassets.com/assets/gist-embed-123720f37c57ce9a8f29de081c38ed61.css"
       ></link>
       <Container sx={postStyle}>
-        <Heading as="h1">{frontmatter.title}</Heading>
-        <Img fluid={frontmatter.banner.childImageSharp.fluid} />
+        <Heading as="h1">{title}</Heading>
+        {banner && <Img fluid={banner.childImageSharp.fluid} />}
         <MDXRenderer>{body}</MDXRenderer>
       </Container>
     </Layout>
