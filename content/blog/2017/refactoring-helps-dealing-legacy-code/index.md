@@ -1,7 +1,7 @@
 ---
 title: How Refactoring Helps Dealing with Legacy Code
 date: '2017-06-11'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-06-11T13:36:50.000Z'
 tags: 'blogentry, programming, beyondlegacycode, book'
 author: Sung M. Kim

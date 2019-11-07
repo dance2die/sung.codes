@@ -1,7 +1,7 @@
 ---
 title: React Sticky Event with Intersection Observer
 date: "2019-08-24"
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: "2019-08-24T20:55:35.000Z"
 tags: "react, css"
 author: Sung M. Kim

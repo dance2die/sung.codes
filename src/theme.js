@@ -38,7 +38,7 @@ export const theme = {
     monospace: "Menlo, monospace",
   },
   images: {
-    coverImage: {
+    banner: {
       width: 600,
       height: 400,
     },

@@ -1,7 +1,7 @@
 ---
 title: On "Create a Blog to Boost Your Career Course" (by John Sonmez)"
 date: '2017-04-29'
-coverImage: Featured-Image-Boost.jpg
+banner: ./images/Featured-Image-Boost.jpg
 published_at: '2017-04-29T14:10:04.000Z'
 tags: 'blogentry, bookreview, blog, boost'
 author: Sung M. Kim

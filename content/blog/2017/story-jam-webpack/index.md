@@ -1,7 +1,7 @@
 ---
 title: The Story of JAM – How they dealt with multiple JavaScript files
 date: '2017-12-24'
-coverImage: featured-image-jam-preparations-jars-fruit-48817.jpg
+banner: ./images/featured-image-jam-preparations-jars-fruit-48817.jpg
 published_at: '2017-12-24T21:40:14.000Z'
 tags: 'blogentry, story, babel, es6'
 author: Sung M. Kim

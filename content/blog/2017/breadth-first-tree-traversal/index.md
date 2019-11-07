@@ -1,7 +1,7 @@
 ---
 title: BREADTH-FIRST TREE TRAVERSAL
 date: '2017-04-08'
-coverImage: featured-image-2017.04.08.jpg
+banner: ./images/featured-image-2017.04.08.jpg
 published_at: '2017-04-08T11:41:59.000Z'
 tags: 'blogentry, programming, breadthfirst, traversal'
 author: Sung M. Kim

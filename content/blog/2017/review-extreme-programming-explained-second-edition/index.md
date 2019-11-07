@@ -1,7 +1,7 @@
 ---
 title: Review of Extreme Programming Explained Second Edition
 date: '2017-01-28'
-coverImage: feature-image-2017.01.23-pair-programming.jpg
+banner: ./images/feature-image-2017.01.23-pair-programming.jpg
 published_at: '2017-01-28T23:30:14.000Z'
 tags: 'bookreview, book, review'
 author: Sung M. Kim

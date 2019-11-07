@@ -1,7 +1,7 @@
 ---
 title: 2017 Report & 2018 Plan
 date: '2018-01-06'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2018-01-06T19:04:45.000Z'
 tags: 'blogentry, slightedge, todayilearned, 2017'
 author: Sung M. Kim

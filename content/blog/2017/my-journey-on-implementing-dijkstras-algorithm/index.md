@@ -1,7 +1,7 @@
 ---
 title: My journey on Implementing Dijkstra's algorithm
 date: '2017-04-20'
-coverImage: Featured-Image-Edsger-W.-Dijkstra.jpg
+banner: ./images/Featured-Image-Edsger-W.-Dijkstra.jpg
 published_at: '2017-04-20T15:40:02.000Z'
 tags: 'blogentry, programming, algorithm, dijkstrasalgorithm'
 author: Sung M. Kim

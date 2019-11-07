@@ -1,7 +1,7 @@
 ---
 title: Living on the edge with "dangerous"
 date: '2019-01-13'
-coverImage: dangerous-logo.jpg
+banner: ./images/dangerous-logo.jpg
 published_at: '2019-01-13T22:31:38.000Z'
 tags: 'react, showdev'
 author: Sung M. Kim

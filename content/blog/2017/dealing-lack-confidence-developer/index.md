@@ -1,7 +1,7 @@
 ---
 title: Thoughts on "Dealing With Lack Of Confidence As A Developer"
 date: '2017-01-07'
-coverImage: featured-image-2017.01.13.png
+banner: ./images/featured-image-2017.01.13.png
 published_at: '2017-01-07T22:47:45.000Z'
 tags: 'blogentry, johnsonmez, review, simpleprogrammer'
 author: Sung M. Kim

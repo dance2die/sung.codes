@@ -1,7 +1,7 @@
 ---
 title: Promise.race vs. Promise.any And Promise.all vs. Promise.allSettled
 date: '2019-05-18'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2019-05-18T21:32:46.000Z'
 tags: javascript
 author: Sung M. Kim

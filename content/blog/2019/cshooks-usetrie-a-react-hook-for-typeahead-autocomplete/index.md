@@ -1,7 +1,7 @@
 ---
 title: '@cshooks/usetrie, A React Hook for Typeahead/Autocomplete'
 date: '2019-03-23'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-03-23T19:09:37.000Z'
 tags: 'react, javascript, npm, opensource'
 author: Sung M. Kim

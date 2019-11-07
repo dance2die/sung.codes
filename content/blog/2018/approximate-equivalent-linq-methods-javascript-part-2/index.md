@@ -1,7 +1,7 @@
 ---
 title: How to Implement LINQ methods in JavaScript - Part 2
 date: '2018-03-03'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2018-03-04T03:48:33.000Z'
 tags: 'blogentry, programming, quicktip, series'
 author: Sung M. Kim

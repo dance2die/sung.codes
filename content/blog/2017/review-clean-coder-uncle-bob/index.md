@@ -1,7 +1,7 @@
 ---
 title: Review of the Clean Coder (by Uncle Bob)
 date: '2017-04-24'
-coverImage: Featured-Image-the-Clean-Coder.jpg
+banner: ./images/Featured-Image-the-Clean-Coder.jpg
 published_at: '2017-04-24T16:40:26.000Z'
 tags: 'blogentry, bookreview, extremeprogramming, kentbeck'
 author: Sung M. Kim

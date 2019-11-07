@@ -1,7 +1,7 @@
 ---
 title: Displaying Multiple Google Charts in React (react-google-charts)
 date: '2017-09-21'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2017-09-21T15:19:34.000Z'
 tags: 'problemsolving, programming'
 author: Sung M. Kim

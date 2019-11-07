@@ -1,7 +1,7 @@
 ---
 title: Blaming Windows 10 for My Own Mess Up
 date: '2017-01-12'
-coverImage: windows-10-logo-windows-91-640x353.jpg
+banner: ./images/windows-10-logo-windows-91-640x353.jpg
 published_at: '2017-01-13T01:22:39.000Z'
 tags: 'blogentry, blame, messup, todayilearned'
 author: Sung M. Kim

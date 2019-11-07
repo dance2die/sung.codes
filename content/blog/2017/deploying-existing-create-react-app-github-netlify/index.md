@@ -1,7 +1,7 @@
 ---
 title: Deploying Existing Create-React-App on GitHub to Netlify
 date: '2017-12-09'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2017-12-09T16:06:53.000Z'
 tags: 'programming, quicktip, createreactapp, frontend'
 author: Sung M. Kim

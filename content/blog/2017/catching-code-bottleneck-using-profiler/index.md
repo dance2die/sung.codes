@@ -1,7 +1,7 @@
 ---
 title: Catching a code bottleneck using a profiler
 date: '2017-02-25'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-02-25T20:03:26.000Z'
 tags: 'blogentry, programming, todayilearned'
 author: Sung M. Kim

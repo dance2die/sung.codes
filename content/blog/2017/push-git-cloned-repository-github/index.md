@@ -1,7 +1,7 @@
 ---
 title: Push git cloned repository to your own on GitHub
 date: '2017-10-01'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-10-01T15:26:40.000Z'
 tags: 'git, github'
 author: Sung M. Kim

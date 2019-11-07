@@ -1,7 +1,7 @@
 ---
 title: Parsing a number into digits - Reprise
 date: '2017-05-27'
-coverImage: featured-image-numbers.jpg
+banner: ./images/featured-image-numbers.jpg
 published_at: '2017-05-28T00:09:17.000Z'
 tags: 'blogentry, programming, c, digits'
 author: Sung M. Kim

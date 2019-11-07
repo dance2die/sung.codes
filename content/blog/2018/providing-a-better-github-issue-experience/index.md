@@ -1,7 +1,7 @@
 ---
 title: Providing a Better GitHub Issue Experience
 date: '2018-06-23'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2018-06-24T04:15:03.000Z'
 tags: 'github, opensource'
 author: Sung M. Kim

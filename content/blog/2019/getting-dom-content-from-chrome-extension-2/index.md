@@ -1,7 +1,7 @@
 ---
 title: "Getting DOM content from Chrome Extension"
 date: "2019-02-17"
-coverImage: "featured-image-4.jpg"
+banner: ./images/"featured-image-4.jpg"
 ---
 
 _Photo by _[_James Barnett_](https://unsplash.com/photos/kkaxqEPoF10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/execute-script?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

@@ -1,7 +1,7 @@
 ---
 title: Background image loading from SVG to Full Image
 date: '2018-02-17'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2018-02-17T19:38:31.000Z'
 tags: 'blogentry, problemsolving, programming, codepen'
 author: Sung M. Kim

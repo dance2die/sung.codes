@@ -1,7 +1,7 @@
 ---
 title: Getting lazy with Resharper
 date: '2017-02-04'
-coverImage: Featured-Image-by-Martin-Cron.jpg
+banner: ./images/Featured-Image-by-Martin-Cron.jpg
 published_at: '2017-02-04T23:00:20.000Z'
 tags: 'blogentry, jetbrains, laziness, lazy'
 author: Sung M. Kim

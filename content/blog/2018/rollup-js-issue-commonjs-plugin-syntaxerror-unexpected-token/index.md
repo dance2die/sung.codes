@@ -1,7 +1,7 @@
 ---
 title: Rollup Class Properties Transform Babel Plugin Issue
 date: '2018-05-15'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2018-05-16T02:23:24.000Z'
 tags: 'blogentry, quicktip, babel, es6'
 author: Sung M. Kim

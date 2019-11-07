@@ -1,7 +1,7 @@
 ---
 title: Searching for Books in Command Line Interface (CLI)
 date: '2017-11-26'
-coverImage: featured-image-redd-angelo-12845.jpg
+banner: ./images/featured-image-redd-angelo-12845.jpg
 published_at: '2017-11-26T22:39:11.000Z'
 tags: 'announcement, blogentry, programming'
 author: Sung M. Kim

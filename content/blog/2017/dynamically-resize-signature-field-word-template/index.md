@@ -1,7 +1,7 @@
 ---
 title: Dynamically Resize Signature Field in Word Template (Like a Web Developer)
 date: '2017-06-04'
-coverImage: Featured-Image.jpg
+banner: ./images/Featured-Image.jpg
 published_at: '2017-06-04T13:41:25.000Z'
 tags: 'blogentry, programming, c, interop'
 author: Sung M. Kim

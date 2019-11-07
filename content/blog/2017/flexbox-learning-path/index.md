@@ -1,7 +1,7 @@
 ---
 title: Flexbox Learning Path
 date: '2017-08-13'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2017-08-13T18:51:27.000Z'
 tags: 'blogentry, programming, css, flexbox'
 author: Sung M. Kim

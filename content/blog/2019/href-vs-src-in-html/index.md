@@ -1,7 +1,7 @@
 ---
 title: '''href'' vs. ''src'' in HTML'
 date: '2019-07-17'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-07-18T01:45:53.000Z'
 tags: 'html, css, javascript'
 author: Sung M. Kim

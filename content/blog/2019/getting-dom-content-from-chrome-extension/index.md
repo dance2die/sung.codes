@@ -1,7 +1,7 @@
 ---
 title: Getting DOM content from Chrome Extension
 date: '2019-02-10'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2019-02-10T19:51:39.000Z'
 tags: 'programming, selfnote, chromeplugin'
 author: Sung M. Kim

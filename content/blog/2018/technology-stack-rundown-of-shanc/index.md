@@ -1,7 +1,7 @@
 ---
 title: Technology Stack Rundown of SHaNc
 date: '2018-06-02'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2018-06-02T18:16:06.000Z'
 tags: webdev
 author: Sung M. Kim

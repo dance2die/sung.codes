@@ -1,7 +1,7 @@
 ---
 title: 'Throwaway Code: Don''t recycle, throw it away!'
 date: '2017-09-05'
-coverImage: featured-image-2017.09.05.jpg
+banner: ./images/featured-image-2017.09.05.jpg
 published_at: '2017-09-05T13:00:17.000Z'
 tags: 'blogentry, programming, slightedge, todayilearned'
 author: Sung M. Kim

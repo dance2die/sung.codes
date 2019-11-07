@@ -1,7 +1,7 @@
 ---
 title: Page Not Found on Netlify with React Router
 date: '2018-12-18'
-coverImage: featured-image-4.jpg
+banner: ./images/featured-image-4.jpg
 published_at: '2018-12-19T02:14:23.000Z'
 tags: 'react, netlify'
 author: Sung M. Kim

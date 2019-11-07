@@ -1,7 +1,7 @@
 ---
 title: Hiding API Keys on GitHub
 date: '2017-07-08'
-coverImage: featured-image-2017.07.08.jpg
+banner: ./images/featured-image-2017.07.08.jpg
 published_at: '2017-07-08T23:52:58.000Z'
 tags: 'blogentry, programming, ignore, backend'
 author: Sung M. Kim

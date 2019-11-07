@@ -1,7 +1,7 @@
 ---
 title: Introducing SHanC - A Static Hacker News Clone
 date: '2018-05-26'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2018-05-26T18:33:11.000Z'
 tags: showdev
 author: Sung M. Kim

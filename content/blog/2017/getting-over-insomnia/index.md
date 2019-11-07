@@ -1,7 +1,7 @@
 ---
 title: Getting over Insomnia
 date: '2017-07-29'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-07-29T17:22:35.000Z'
 tags: 'todayilearned, diary, insomnia, reflection'
 author: Sung M. Kim

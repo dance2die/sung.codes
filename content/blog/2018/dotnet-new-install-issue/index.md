@@ -1,7 +1,7 @@
 ---
 title: 'dotnet new install issue - Error: Value cannot be null'
 date: '2018-04-08'
-coverImage: matt-lamers-399809-unsplash.jpg
+banner: ./images/matt-lamers-399809-unsplash.jpg
 published_at: '2018-04-08T19:34:56.056Z'
 tags: 'dotnet, template, core, cli'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: TIL - An Epiphany while reading The Richest Man in Babylon
 date: '2017-08-05'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-08-05T16:51:01.000Z'
 tags: 'todayilearned, book, epiphany, therichestmaninb'
 author: Sung M. Kim

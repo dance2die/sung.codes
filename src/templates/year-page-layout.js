@@ -56,7 +56,6 @@ export const query = graphql`
           frontmatter {
             date
             title
-            coverImage
           }
           fields {
             slug

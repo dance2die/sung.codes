@@ -1,7 +1,7 @@
 ---
 title: Tips on running React page with Node backend
 date: '2017-11-12'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2017-11-12T20:40:32.000Z'
 tags: 'blogentry, problemsolving, programming, backend'
 author: Sung M. Kim

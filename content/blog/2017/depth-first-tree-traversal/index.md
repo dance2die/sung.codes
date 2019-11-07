@@ -1,7 +1,7 @@
 ---
 title: Depth-First Tree Traversal
 date: '2017-03-26'
-coverImage: Featured-Image-Tree-2017.03.25.jpg
+banner: ./images/Featured-Image-Tree-2017.03.25.jpg
 published_at: '2017-03-26T11:45:29.000Z'
 tags: 'blogentry, programming, inorder, postorder'
 author: Sung M. Kim

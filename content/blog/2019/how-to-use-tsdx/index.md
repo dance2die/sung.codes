@@ -1,7 +1,7 @@
 ---
 title: How to use TSDX
 date: '2019-06-16'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-06-17T01:32:32.000Z'
 tags: 'tsdx, react, typescript'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: React.Suspense doesn't work with Gatsby (yet)
 date: '2019-07-31'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2019-08-01T01:41:23.000Z'
 tags: 'react, gatsby'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: Adding VS Code Theme to CodeSandBox
 date: '2018-07-17'
-coverImage: featured.gif
+banner: ./images/featured.gif
 published_at: '2018-07-18T02:44:52.000Z'
 tags: 'vscode, codesandbox'
 author: Sung M. Kim

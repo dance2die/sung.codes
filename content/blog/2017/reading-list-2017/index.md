@@ -1,7 +1,7 @@
 ---
 title: Reading List for 2017
 date: '2017-01-24'
-coverImage: feature-image2-Sam-Greenhalgh.jpg
+banner: ./images/feature-image2-Sam-Greenhalgh.jpg
 published_at: '2017-01-25T00:38:20.000Z'
 tags: 'blogentry, books, fiction, japaneselightnovel'
 author: Sung M. Kim

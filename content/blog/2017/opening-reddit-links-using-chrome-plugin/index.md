@@ -1,7 +1,7 @@
 ---
 title: Opening Reddit Links using Chrome Plugin
 date: '2017-06-25'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2017-06-25T15:00:56.000Z'
 tags: 'blogentry, programming, todayilearned, automation'
 author: Sung M. Kim

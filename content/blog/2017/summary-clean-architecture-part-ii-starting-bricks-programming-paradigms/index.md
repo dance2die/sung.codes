@@ -2,7 +2,7 @@
 title: 'Summary of Clean Architecture Part II '
 Starting with the Bricks: Programming Paradigms"
 date: '2017-11-05'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-11-05T20:35:28.000Z'
 tags: 'blogentry, bookreview, programming, book'
 author: Sung M. Kim

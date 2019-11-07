@@ -1,7 +1,7 @@
 ---
 title: Preventing multiple observables from firing from Redux-Observable
 date: '2019-10-18'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: ''
 tags: 'blogentry, javascript, selfnote, todayilearned'
 author: Sung M. Kim

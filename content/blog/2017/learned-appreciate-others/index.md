@@ -1,7 +1,7 @@
 ---
 title: How I learned to appreciate others
 date: '2017-02-11'
-coverImage: Featured-Image-by-Edd-Turtle-Appreciation.jpg
+banner: ./images/Featured-Image-by-Edd-Turtle-Appreciation.jpg
 published_at: '2017-02-11T17:54:30.000Z'
 tags: 'blogentry, todayilearned, appreciation, praise'
 author: Sung M. Kim

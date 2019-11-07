@@ -1,7 +1,7 @@
 ---
 title: Being explicit with your own React Hook + TypeScript return type
 date: "2019-02-10"
-coverImage: featured-image-3.jpg
+banner: ./images/featured-image-3.jpg
 published_at: "2019-02-10T20:40:17.000Z"
 tags: "blogentry, programming, react, typescript"
 author: Sung M. Kim

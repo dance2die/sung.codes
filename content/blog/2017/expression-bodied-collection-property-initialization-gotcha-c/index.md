@@ -1,7 +1,7 @@
 ---
 title: 'Expression Bodied Collection Property Initialization Gotcha in C#'
 date: '2017-09-16'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2017-09-16T15:54:21.000Z'
 tags: 'csharp, datastructures, computerscience'
 author: Sung M. Kim

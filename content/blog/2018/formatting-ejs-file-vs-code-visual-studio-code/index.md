@@ -1,7 +1,7 @@
 ---
 title: Formatting '.ejs' file in VS Code (Visual Studio Code)
 date: '2018-01-18'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2018-01-19T02:42:33.000Z'
 tags: 'blogentry, programming, quicktip, ejs'
 author: Sung M. Kim

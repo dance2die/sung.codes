@@ -1,7 +1,7 @@
 ---
 title: Readability Conscious
 date: '2017-02-19'
-coverImage: featured-image-voynich-manuscript.jpg
+banner: ./images/featured-image-voynich-manuscript.jpg
 published_at: '2017-02-19T19:28:56.000Z'
 tags: 'blogentry, programming, todayilearned, c'
 author: Sung M. Kim

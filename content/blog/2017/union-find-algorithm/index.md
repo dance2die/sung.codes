@@ -1,7 +1,7 @@
 ---
 title: Union-Find Algorithm
 date: '2017-05-13'
-coverImage: Featured-Image-Union-St.-Street-Sign-in-Bodie.jpg
+banner: ./images/Featured-Image-Union-St.-Street-Sign-in-Bodie.jpg
 published_at: '2017-05-13T13:37:30.000Z'
 tags: 'blogentry, programming, todayilearned, algorithm'
 author: Sung M. Kim

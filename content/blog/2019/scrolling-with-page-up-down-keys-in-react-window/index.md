@@ -1,7 +1,7 @@
 ---
 title: Scrolling with Page Up/Down Keys in React-Window
 date: '2019-05-07'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-05-08T03:01:02.000Z'
 tags: react
 author: Sung M. Kim

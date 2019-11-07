@@ -1,7 +1,7 @@
 ---
 title: PassportJS - Failed to find request token in session
 date: '2018-01-29'
-coverImage: featured-image-3.jpg
+banner: ./images/featured-image-3.jpg
 published_at: ''
 tags: ''
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: Inspirational Posters
 date: '2017-01-21'
-coverImage: 7-small.jpg
+banner: ./images/7-small.jpg
 published_at: '2017-01-21T18:21:07.000Z'
 tags: blogentry
 author: Sung M. Kim

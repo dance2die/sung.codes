@@ -1,7 +1,7 @@
 ---
 title: '''yarn global add'' command does not work on Windows'
 date: '2017-12-30'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2017-12-31T04:34:47.000Z'
 tags: 'programming, quicktip, cmd, cmdexe'
 author: Sung M. Kim

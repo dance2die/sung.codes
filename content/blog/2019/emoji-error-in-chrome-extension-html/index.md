@@ -1,7 +1,7 @@
 ---
 title: Emoji Error in Chrome Extension HTML
 date: '2019-02-17'
-coverImage: featured-image-5.jpg
+banner: ./images/featured-image-5.jpg
 published_at: '2019-02-17T06:08:13.000Z'
 tags: 'html, unicode, emoji'
 author: Sung M. Kim

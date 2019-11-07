@@ -1,7 +1,7 @@
 ---
 title: Two gotchas in Chrome Developer Tool Console
 date: '2019-04-19'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2019-04-20T04:29:25.000Z'
 tags: 'javascript, chrome, devtools'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: Iterating two enumerable objects simultaneously
 date: '2017-01-09'
-coverImage: Featured-Image-1.jpg
+banner: ./images/Featured-Image-1.jpg
 published_at: '2017-01-09T05:00:33.000Z'
 tags: 'blogentry, programming, c, crackingthecoding'
 author: Sung M. Kim

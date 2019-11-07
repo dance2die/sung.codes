@@ -1,7 +1,7 @@
 ---
 title: How to create a Hacker News API GraphQL data source for GatsbyJS
 date: '2018-06-16'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2018-06-16T18:20:50.000Z'
 tags: 'gatsby, webdev, javascript'
 author: Sung M. Kim

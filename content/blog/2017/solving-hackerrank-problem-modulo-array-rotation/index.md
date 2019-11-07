@@ -1,7 +1,7 @@
 ---
 title: Solving a HackerRank Problem with Modulo Array Rotation
 date: '2017-01-13'
-coverImage: featured-image-2017.01.13.jpg
+banner: ./images/featured-image-2017.01.13.jpg
 published_at: '2017-01-14T01:00:56.000Z'
 tags: 'blogentry, programming, application, apply'
 author: Sung M. Kim

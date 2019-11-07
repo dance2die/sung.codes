@@ -1,7 +1,7 @@
 ---
 title: Passing an API Key to Heroku Node Application
 date: '2017-09-09'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-09-09T19:57:04.000Z'
 tags: 'blogentry, programming, apikey, deployment'
 author: Sung M. Kim

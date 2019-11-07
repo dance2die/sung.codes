@@ -1,7 +1,7 @@
 ---
 title: Dynamically build TypeScript string literal type
 date: "2019-02-02"
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: "2019-02-02T19:02:55.000Z"
 tags: typescript
 author: Sung M. Kim

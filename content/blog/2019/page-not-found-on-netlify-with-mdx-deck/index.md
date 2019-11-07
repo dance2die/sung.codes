@@ -1,7 +1,7 @@
 ---
 title: Page Not Found on Netlify with MDX-Deck
 date: '2019-07-25'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2019-07-26T01:04:03.000Z'
 tags: 'mdx, netlify, tips'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: Loading React Components Dynamically on Demand
 date: '2017-12-03'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-12-04T02:37:32.000Z'
 tags: 'react, javascript'
 author: Sung M. Kim

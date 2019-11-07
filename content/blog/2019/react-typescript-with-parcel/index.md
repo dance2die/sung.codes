@@ -1,7 +1,7 @@
 ---
 title: React + TypeScript with Parcel
 date: '2019-01-22'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-01-23T03:46:32.000Z'
 tags: 'programming, quicktip, react, selfnote'
 author: Sung M. Kim

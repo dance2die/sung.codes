@@ -1,7 +1,7 @@
 ---
 title: How to call GoodReads API using YQL
 date: '2017-06-20'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2017-06-20T23:53:58.000Z'
 tags: 'blogentry, programming, todayilearned, es6'
 author: Sung M. Kim

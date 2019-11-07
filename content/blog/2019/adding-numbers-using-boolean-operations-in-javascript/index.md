@@ -1,7 +1,7 @@
 ---
 title: Adding numbers using Boolean operations in JavaScript
 date: '2019-04-14'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-04-14T22:39:47.000Z'
 tags: 'javascript, microprocessors'
 author: Sung M. Kim

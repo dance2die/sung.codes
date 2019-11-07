@@ -1,7 +1,7 @@
 ---
 title: Infinite Scrolling in React using JavaScript Generator
 date: '2018-08-11'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2018-08-11T16:47:20.000Z'
 tags: 'react, javascript, generator, tutorial'
 author: Sung M. Kim

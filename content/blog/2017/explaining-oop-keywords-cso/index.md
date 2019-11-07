@@ -1,7 +1,7 @@
 ---
 title: Explaining OOP keywords to CSO
 date: '2017-04-01'
-coverImage: featured-image-thought.jpg
+banner: ./images/featured-image-thought.jpg
 published_at: '2017-04-01T18:02:29.000Z'
 tags: 'blogentry, todayilearned, cso, explanation'
 author: Sung M. Kim

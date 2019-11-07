@@ -1,7 +1,7 @@
 ---
 title: Adding a Twitter Reply via Twitter API
 date: '2019-07-28'
-coverImage: featured-image.gif
+banner: ./images/featured-image.gif
 published_at: '2019-07-28T22:45:07.000Z'
 tags: 'blogentry, javascript, programming, selfnote'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: Installing Dokku on Kubuntu
 date: '2019-09-28'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2019-09-29T02:55:42.000Z'
 tags: 'dokku, ubuntu, kubuntu, node'
 author: Sung M. Kim

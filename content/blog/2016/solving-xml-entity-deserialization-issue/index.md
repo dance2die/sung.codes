@@ -1,7 +1,7 @@
 ---
 title: Solving an XML Entity Deserialization Issue
 date: '2016-12-31'
-coverImage: featured-image-2016.12.31.png
+banner: ./images/featured-image-2016.12.31.png
 published_at: '2016-12-31T16:49:12.000Z'
 tags: 'blogentry, programming, c, deserialization'
 author: Sung M. Kim

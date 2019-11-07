@@ -1,7 +1,7 @@
 ---
 title: A valid usage of Singleton Pattern (with Null object Pattern)
 date: '2018-03-25'
-coverImage: featured-image-3.jpg
+banner: ./images/featured-image-3.jpg
 published_at: '2018-03-26T02:30:33.000Z'
 tags: 'programming, oop, tips'
 author: Sung M. Kim

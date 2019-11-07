@@ -1,7 +1,7 @@
 ---
 title: 'Removing Duplicates from an Array (Using C#)'
 date: '2017-03-18'
-coverImage: featured-image-removed-by-Don-Crowley.jpg
+banner: ./images/featured-image-removed-by-Don-Crowley.jpg
 published_at: '2017-03-18T18:36:28.000Z'
 tags: 'csharp, tutorial'
 author: Sung M. Kim

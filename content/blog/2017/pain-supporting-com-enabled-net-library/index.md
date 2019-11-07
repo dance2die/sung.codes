@@ -1,7 +1,7 @@
 ---
 title: Pain of supporting COM enabled .NET library
 date: '2017-03-04'
-coverImage: featured-image-Wojtek-Gurak.jpg
+banner: ./images/featured-image-Wojtek-Gurak.jpg
 published_at: '2017-03-04T17:25:18.000Z'
 tags: 'blogentry, programming, todayilearned'
 author: Sung M. Kim

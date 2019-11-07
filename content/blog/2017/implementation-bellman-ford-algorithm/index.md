@@ -1,7 +1,7 @@
 ---
 title: Implementation of Bellman-Ford Algorithm
 date: '2017-05-07'
-coverImage: Bellman-Ford_worst-case_example.jpg
+banner: ./images/Bellman-Ford_worst-case_example.jpg
 published_at: '2017-05-07T20:06:01.000Z'
 tags: 'blogentry, programming, bellmanford, c'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: 'Default Class Access Modifier Differences between TypeScript & C#'
 date: '2019-01-24'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2019-01-25T01:14:23.000Z'
 tags: 'selfnote, todayilearned, c, class'
 author: Sung M. Kim

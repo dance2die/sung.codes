@@ -1,7 +1,7 @@
 ---
 title: Spread syntax gotcha in JavaScript class methods
 date: '2019-03-30'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2019-03-30T22:02:02.000Z'
 tags: 'javascript, typescript, react, hooks'
 author: Sung M. Kim

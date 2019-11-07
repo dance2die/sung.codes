@@ -1,7 +1,7 @@
 ---
 title: Elasticsearch installation issue on a free tier (t2.micro) AWS EC2 instance
 date: '2018-01-25'
-coverImage: featured-image-2.jpg
+banner: ./images/featured-image-2.jpg
 published_at: '2018-01-26T02:31:29.000Z'
 tags: 'aws, elasticsearch, troubleshooting'
 author: Sung M. Kim

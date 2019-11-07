@@ -1,7 +1,7 @@
 ---
 title: Filtering out a stray number in an array
 date: '2017-10-07'
-coverImage: Featured-Image-TransmissionCmosXORGate.jpg
+banner: ./images/Featured-Image-TransmissionCmosXORGate.jpg
 published_at: '2017-10-07T19:11:33.000Z'
 tags: 'javascript, csharp'
 author: Sung M. Kim

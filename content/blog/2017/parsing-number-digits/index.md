@@ -1,7 +1,7 @@
 ---
 title: Parsing a number into digits
 date: '2017-03-11'
-coverImage: featured-image-2017.03.11-parse.jpg
+banner: ./images/featured-image-2017.03.11-parse.jpg
 published_at: '2017-03-11T17:00:43.000Z'
 tags: 'blogentry, programming'
 author: Sung M. Kim

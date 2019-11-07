@@ -1,7 +1,7 @@
 ---
 title: Setting up an ES6 Environment for ASP.NET MVC 5
 date: '2017-05-22'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2017-05-22T11:09:11.000Z'
 tags: 'blogentry, programming, aspnetmvc, aspnetmvc5'
 author: Sung M. Kim

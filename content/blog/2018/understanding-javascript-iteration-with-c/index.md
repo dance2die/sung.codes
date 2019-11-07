@@ -1,7 +1,7 @@
 ---
 title: 'Understanding JavaScript Iteration with C#'
 date: '2018-07-04'
-coverImage: featured-image.jpg
+banner: ./images/featured-image.jpg
 published_at: '2018-07-04T16:01:20.000Z'
 tags: 'javascript, csharp'
 author: Sung M. Kim

@@ -1,7 +1,7 @@
 ---
 title: Setting up ReactJS.org Environment for Open Source Contribution
 date: '2017-10-15'
-coverImage: featured-image-1.jpg
+banner: ./images/featured-image-1.jpg
 published_at: '2017-10-15T21:51:45.000Z'
 tags: 'programming, git, github, opensource'
 author: Sung M. Kim

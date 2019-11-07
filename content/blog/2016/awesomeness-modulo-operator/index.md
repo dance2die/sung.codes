@@ -1,7 +1,7 @@
 ---
 title: Awesomeness of % (Modulo Operator)
 date: '2016-12-25'
-coverImage: featured-image-2016.12.25.jpg
+banner: ./images/featured-image-2016.12.25.jpg
 published_at: '2016-12-25T14:30:06.000Z'
 tags: 'blogentry, programming, modulo, motivation'
 author: Sung M. Kim
