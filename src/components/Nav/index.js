@@ -15,6 +15,7 @@ const Title = () => (
         alignItems: "center",
         color: theme => theme.colors.gray[3],
         "& > *": { paddingRight: "0.5rem" },
+        "&:hover": { textDecoration: "underline" },
       }}
     >
       <Heading as="h1" sx={headingStyle}>
