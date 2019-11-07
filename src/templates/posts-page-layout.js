@@ -6,6 +6,13 @@ import { Heading } from "@theme-ui/components"
 
 import Layout from "../layouts"
 
+const postStyle = {
+  img: {
+    width: "100%",
+  },
+  lineHeight: "2.5rem",
+}
+
 export default ({ data: { mdx } }) => {
   return (
     <Layout>
@@ -16,13 +23,7 @@ export default ({ data: { mdx } }) => {
         rel="stylesheet"
         href="https://github.githubassets.com/assets/gist-embed-123720f37c57ce9a8f29de081c38ed61.css"
       ></link>
-      <Container
-        sx={{
-          img: {
-            width: "100%",
-          },
-        }}
-      >
+      <Container sx={postStyle}>
         <Heading as="h1">{mdx.frontmatter.title}</Heading>
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </Container>
