@@ -6,6 +6,22 @@ import styled from "@emotion/styled"
 
 const headingStyle = { fontSize: [3, 4, 6, 7] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
+const underlineStyle = {
+  textDecoration: "none",
+  "&:hover": { textDecoration: "underline" },
+}
+
+// const linkStyle = {
+//   textDecoration: "none",
+//   color: theme => theme.colors.text,
+//   ...underlineStyle,
+// }
+
+const Link = styled(RawLink)(({ theme }) => ({
+  textDecoration: "none",
+  color: theme => theme.colors.text,
+  ...underlineStyle,
+}))
 
 const Title = () => (
   <Link to="/">
@@ -15,7 +31,7 @@ const Title = () => (
         alignItems: "center",
         color: theme => theme.colors.gray[3],
         "& > *": { paddingRight: "0.5rem" },
-        "&:hover": { textDecoration: "underline" },
+        ...underlineStyle,
       }}
     >
       <Heading as="h1" sx={headingStyle}>
@@ -28,14 +44,12 @@ const Title = () => (
   </Link>
 )
 
-const Link = styled(RawLink)`
-  text-decoration: none;
-`
-
 const Links = () => (
   <Flex>
     <Box pr={3}>
-      <Link to="/blog">Blog</Link>
+      <Link to="/blog" sx={{ color: theme => theme.colors.gray[3] }}>
+        Blog
+      </Link>
     </Box>
   </Flex>
 )
