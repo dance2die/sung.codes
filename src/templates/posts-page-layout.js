@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Container } from "theme-ui"
-import { Heading, Image } from "@theme-ui/components"
+import { Heading } from "@theme-ui/components"
 
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
@@ -44,7 +44,9 @@ export default ({
       ></link>
       <Container sx={postStyle}>
         <Heading as="h1">{title}</Heading>
-        {banner && <Img fluid={banner.childImageSharp.fluid} />}
+        {banner && banner.childImageSharp && banner.childImageSharp.fluid && (
+          <Img fluid={banner.childImageSharp.fluid} />
+        )}
         <MDXRenderer>{body}</MDXRenderer>
       </Container>
     </Layout>
