@@ -37,6 +37,12 @@ export const theme = {
     body: `"Open Sans", sans-serif`,
     monospace: "Menlo, monospace",
   },
+  images: {
+    coverImage: {
+      width: 600,
+      height: 400,
+    },
+  },
   styles: {
     root: {
       fontFamily: "body",

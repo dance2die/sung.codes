@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx, Container } from "theme-ui"
+import { Heading, Image } from "@theme-ui/components"
+
 import { graphql, Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Heading } from "@theme-ui/components"
 
 import Layout from "../layouts"
 
@@ -42,6 +43,7 @@ export default ({
       ></link>
       <Container sx={postStyle}>
         <Heading as="h1">{title}</Heading>
+        <Image src={coverImage} variant="coverImage" />
         <MDXRenderer>{body}</MDXRenderer>
       </Container>
     </Layout>
