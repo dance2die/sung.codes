@@ -11,7 +11,7 @@ const postStyle = {
     paddingBottom: theme => theme.space[3],
   },
   h2: {
-    padding: theme => `${theme.space[2]} 0`,
+    padding: theme => `${theme.space[3]}px 0 ${theme.space[2]}px`,
   },
   "ul, ol": {
     paddingLeft: theme => theme.space[4],
