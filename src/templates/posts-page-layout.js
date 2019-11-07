@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, Container } from "theme-ui"
-// import React from "react"
 import { graphql, Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { Heading } from "@theme-ui/components"
+
 import Layout from "../layouts"
-import { Heading, Box } from "@theme-ui/components"
 
 export default ({ data: { mdx } }) => {
   return (
