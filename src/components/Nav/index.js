@@ -4,7 +4,7 @@ import { Heading, Flex, Box, Text } from "@theme-ui/components"
 
 import Link from "../TextLink"
 
-const headingStyle = { fontSize: [3, 4, 6, 7] }
+const headingStyle = { fontSize: [3, 5, 6, 6, 7] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
 
 const Title = () => (
