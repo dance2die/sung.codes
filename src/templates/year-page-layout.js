@@ -1,10 +1,12 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import { Main, Container } from "theme-ui"
 import Layout from "../layouts"
 import { Heading, Box } from "@theme-ui/components"
+
+import Link from "../components/TextLink"
 
 export default ({ data }) => {
   const posts = data.allMdx.edges.map(
