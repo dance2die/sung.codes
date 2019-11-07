@@ -4,6 +4,9 @@ import { Heading, Flex, Box, Text } from "@theme-ui/components"
 import { Link as RawLink } from "gatsby"
 import styled from "@emotion/styled"
 
+const headingStyle = { fontSize: [3, 4, 6, 7] }
+const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
+
 const Title = () => (
   <Link to="/">
     <Flex
@@ -14,8 +17,12 @@ const Title = () => (
         "& > *": { paddingRight: "0.5rem" },
       }}
     >
-      <Heading as="h1">{"{ sung.codes }"}</Heading>
-      <Heading as="sup">by dance2die</Heading>
+      <Heading as="h1" sx={headingStyle}>
+        {"{ sung.codes }"}
+      </Heading>
+      <Heading as="sup" sx={subHeadingStyle}>
+        by dance2die
+      </Heading>
     </Flex>
   </Link>
 )
