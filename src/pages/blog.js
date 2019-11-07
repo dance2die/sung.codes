@@ -49,8 +49,10 @@ const toPost = ([year, count]) => (
       // copied from https://purereact.com/?coupon=pure_friends&ck_subscriber_id=117326074
       boxShadow:
         "0 12px 24px -10px rgba(0,0,0,0.06), 0 16px 40px -5px rgba(0,0,0,0.1)",
+
       "&:hover": {
         transform: "scale(1.05)",
+        borderBottom: theme => `6px solid ${theme.colors.primary}`,
       },
     }}
   >
