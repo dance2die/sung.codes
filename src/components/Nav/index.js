@@ -5,7 +5,7 @@ import { Heading, Flex, Box, Text } from "@theme-ui/components"
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
 
-const headingStyle = { fontSize: [3, 5, 6, 6] }
+const headingStyle = { fontSize: [3, 4, 6, 6] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
 const linkStyle = {
   marginLeft: [1, 2, 4, 4],

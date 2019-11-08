@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../layouts"
-import { Heading, Text } from "@theme-ui/components"
+import { Heading, Flex } from "@theme-ui/components"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -25,8 +25,27 @@ export default () => {
 
   return (
     <Layout>
-      <Heading>Welcome to {title}</Heading>
-      <Text>{description}</Text>
+      <Flex
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Heading
+          sx={{
+            fontWeight: "normal",
+            // fontSize: "5.250em",
+            fontSize: [7, 8, 8, 8],
+          }}
+        >
+          {"Hi, I'm "}
+          <span>
+            <b>Sung M. Kim</b>
+            {" a.k.a. "}
+          </span>
+          <b>dance2die</b>
+        </Heading>
+      </Flex>
     </Layout>
   )
 }
