@@ -6,7 +6,7 @@ import { Main, Container } from "theme-ui"
 import Layout from "../layouts"
 import { Heading, Box } from "@theme-ui/components"
 
-import Link from "../components/TextLink"
+import Link from "../components/Link/TextLink"
 
 export default ({ data }) => {
   const posts = data.allMdx.edges.map(

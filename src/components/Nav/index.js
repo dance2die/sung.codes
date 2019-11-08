@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Heading, Flex, Box, Text } from "@theme-ui/components"
 
-import Link from "../TextLink"
+import Link from "../Link/TextLink"
 
 const headingStyle = { fontSize: [3, 5, 6, 6, 7] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
@@ -30,17 +30,9 @@ const Title = () => (
 const Links = () => (
   <Flex>
     <Box pr={3}>
-      <Link to="/blog" sx={{ color: theme => theme.colors.gray[3] }}>
-        Blog
-      </Link>
+      <Link to="/blog">Blog</Link>
     </Box>
   </Flex>
-)
-
-const Year = () => (
-  <Box>
-    <Text>{new Date().getFullYear()}</Text>
-  </Box>
 )
 
 export default () => {
@@ -63,7 +55,6 @@ export default () => {
       >
         <Title />
         <Links />
-        <Year />
       </Flex>
     </Box>
   )
