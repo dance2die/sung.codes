@@ -5,8 +5,23 @@ module.exports = {
     author: `Sung M. Kim`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "#src": "src",
+          "#components": "src/components",
+          "#images": "src/images",
+          "#layouts": "src/layouts",
+          "#lib": "src/lib",
+          "#pages": "src/pages",
+          "#templates": "src/templates",
+          "#utils": "src/utils",
+        },
+        extensions: ["js", "jsx", "css", "sass"],
+      },
+    },
     `gatsby-plugin-theme-ui`,
-
     `gatsby-plugin-react-helmet`,
     // https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/?=mdx
     {

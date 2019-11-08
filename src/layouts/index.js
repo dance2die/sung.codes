@@ -6,7 +6,8 @@ import React from "react"
 import { Container, Layout as ThemeLayout, Main } from "theme-ui"
 import { Global, css } from "@emotion/core"
 
-import Nav from "../components/Nav"
+// import Nav from "../components/Nav"
+import Nav from "#components/Nav"
 
 function Layout({ children }) {
   return (
