@@ -5,8 +5,12 @@ import { Heading, Flex, Box, Text } from "@theme-ui/components"
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
 
-const headingStyle = { fontSize: [3, 5, 6, 6, 7] }
+const headingStyle = { fontSize: [3, 5, 6, 7] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
+const linkStyle = {
+  marginLeft: [1, 2, 3, 4],
+  fontSize: [1, 1, 2, 2],
+}
 
 const Title = () => (
   <Link to="/">
@@ -30,14 +34,14 @@ const Title = () => (
 
 const Links = () => (
   <Flex>
-    <Box pr={3}>
+    <Box sx={linkStyle}>
       <Link to="/blog">Blog</Link>
     </Box>
-    <Box pr={3}>
-      <GitHub />
-    </Box>
-    <Box pr={3}>
+    <Box sx={linkStyle}>
       <Twitter />
+    </Box>
+    <Box sx={linkStyle}>
+      <GitHub />
     </Box>
   </Flex>
 )

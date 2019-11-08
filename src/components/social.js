@@ -7,16 +7,15 @@ import { css } from "@emotion/core"
 import config from "../../config/website"
 
 export const Twitter = ({
-  color = `rgba(255,255,255,0.7)`,
+  color = `rgba(0, 0, 0, 0.7)`,
   url = `${config.twitter}`,
 }) => (
   <Link
     to={url}
     css={css`
       color: ${color};
-      margin-left: 20px;
       :hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
       }
     `}
     aria-label="Visit my Twitter"
@@ -37,16 +36,15 @@ export const Twitter = ({
 )
 
 export const GitHub = ({
-  color = `rgba(255,255,255,0.7)`,
+  color = `rgba(0, 0, 0, 0.7)`,
   url = `${config.github}`,
 }) => (
   <Link
     to={url}
     css={css`
-      margin-left: 20px;
       color: ${color};
       :hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
       }
     `}
     aria-label="Visit my GitHub"
@@ -67,16 +65,15 @@ export const GitHub = ({
 )
 
 export const RSS = ({
-  color = `rgba(255,255,255,0.7)`,
+  color = `rgba(0, 0, 0, 0.7)`,
   url = `${config.rss}`,
 }) => (
   <Link
     to={url}
     css={css`
-      margin-left: 20px;
       color: ${color};
       :hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
       }
     `}
     aria-label="Subscribe to my RSS Feed"
