@@ -2,7 +2,8 @@
 import { jsx } from "theme-ui"
 import { Heading, Flex, Box, Text } from "@theme-ui/components"
 
-import Link from "../Link/TextLink"
+import Link from "#components/Link/TextLink"
+import { GitHub, Twitter } from "#components/social"
 
 const headingStyle = { fontSize: [3, 5, 6, 6, 7] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
@@ -31,6 +32,12 @@ const Links = () => (
   <Flex>
     <Box pr={3}>
       <Link to="/blog">Blog</Link>
+    </Box>
+    <Box pr={3}>
+      <GitHub />
+    </Box>
+    <Box pr={3}>
+      <Twitter />
     </Box>
   </Flex>
 )

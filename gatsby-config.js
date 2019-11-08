@@ -1,8 +1,10 @@
+const config = require("./config/website")
+
 module.exports = {
   siteMetadata: {
-    title: `Sung.Codes`,
-    description: `Sung M. Kim (aka dance2die)'s Home Page`,
-    author: `Sung M. Kim`,
+    title: config.siteTitle,
+    description: config.siteTitleAlt,
+    author: config.author,
   },
   plugins: [
     {
@@ -35,7 +37,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-embed-gist",
             options: {
-              username: "dance2die",
+              username: config.nickname,
               includeDefaultCss: true,
             },
           },
@@ -90,12 +92,6 @@ module.exports = {
         includePaths: ["src/styles/*.scss"],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -133,7 +129,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "UA-87712355-1",
+        // trackingId: "UA-87712355-1",
+        trackingId: config.googleAnalyticsID,
         // Puts tracking script in the head instead of the body
         head: false,
         anonymize: true,
