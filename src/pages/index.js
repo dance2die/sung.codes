@@ -1,28 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../layouts"
 import { Heading, Flex } from "@theme-ui/components"
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          description
-          title
-        }
-      }
-    }
-  `)
-
-  const {
-    site: {
-      siteMetadata: { description, title },
-    },
-  } = data
-
   return (
     <Layout>
       <Flex
@@ -34,8 +16,7 @@ export default () => {
         <Heading
           sx={{
             fontWeight: "normal",
-            // fontSize: "5.250em",
-            fontSize: [7, 8, 8, 8],
+            fontSize: "5.250em",
           }}
         >
           {"Hi, I'm "}
