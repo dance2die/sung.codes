@@ -18,6 +18,7 @@ export default () => {
           sx={{
             fontWeight: "normal",
             fontSize: "5.550em",
+            letterSpacing: "0.5rem",
           }}
         >
           {"Hi, I'm "}
