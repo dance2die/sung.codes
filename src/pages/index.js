@@ -9,6 +9,7 @@ export default () => {
     <Layout>
       <Flex
         sx={{
+          paddingTop: "15%",
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -16,7 +17,7 @@ export default () => {
         <Heading
           sx={{
             fontWeight: "normal",
-            fontSize: "5.250em",
+            fontSize: "5.550em",
           }}
         >
           {"Hi, I'm "}
