@@ -9,4 +9,6 @@ const TextLink = styled(Link)(({ theme }) => ({
   color: theme.colors.text,
 }))
 
-export default TextLink
+export default ({ activeClassName = "active", ...rest }) => (
+  <TextLink activeClassName={activeClassName} {...rest} />
+)

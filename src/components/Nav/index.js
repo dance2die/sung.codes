@@ -35,7 +35,16 @@ const Title = () => (
 const Links = () => (
   <Flex>
     <Box sx={linkStyle}>
-      <Link to="/blog">Blog</Link>
+      <Link
+        to="/blog"
+        sx={{
+          "&.active": {
+            textDecoration: "underline",
+          },
+        }}
+      >
+        Blog
+      </Link>
     </Box>
     <Box sx={linkStyle}>
       <Twitter />
