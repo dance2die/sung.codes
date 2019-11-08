@@ -93,7 +93,7 @@ export default () => {
 
   return (
     <Layout>
-      <Heading>Welcome to Sung's Blog~</Heading>
+      <Heading>Blogs by year</Heading>
       <Body>{postBlocks}</Body>
     </Layout>
   )
