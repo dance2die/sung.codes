@@ -1,9 +1,9 @@
 ---
 title: Page Not Found on Netlify with React Router
-date: '2018-12-18'
+date: "2018-12-18"
 banner: ./images/featured-image-4.jpg
-published_at: '2018-12-19T02:14:23.000Z'
-tags: 'react, netlify'
+published_at: "2018-12-19T02:14:23.000Z"
+tags: "react, netlify"
 author: Sung M. Kim
 ---
 
@@ -19,16 +19,12 @@ You might run into the following error after deploying a single page React site 
 
 Error message on Netlify
 
-##
-
-How did the error occur?
+## How did the error occur?
 
 React Router handles routing on the client side (browser) so when you visit non-root page (e.g. `https://yoursite.netlify.com/else`), Netlify (server-side) does not know how to handle the route.  
 _(As your routes are set up in the root level)._
 
-##
-
-Error Code & Demo
+## Error Code & Demo
 
 Here is the simplest code using React Router.
 
@@ -42,9 +38,7 @@ And the error occurring on Netlify when you go to `https://<netlify domain>/els
 
 Page Not Found Demo
 
-##
-
-How can we fix it?
+## How can we fix it?
 
 Netlify offers a special file, [\_redirects](https://www.netlify.com/docs/redirects/), which you can add to your code base and let Netlify handle how to handle the URL that is not handled on the client-side.
 
@@ -70,9 +64,7 @@ Netlify successfully redirected to the SPA root
 
 _For more ways & restrictions for redirect, check out_ [_the official Netlify documentation_](https://www.netlify.com/docs/redirects/)_._
 
-##
-
-Resources
+## Resources
 
 - Where I found out the answer - [How do you handle frontend routing with Netlify and React Router v4?](https://www.reddit.com/r/Frontend/comments/6h34h0/how_do_you_handle_frontend_routing_with_netlify/) on Reddit.
 - [\_redirects Netlify documentation](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps) for SPA.
@@ -80,4 +72,3 @@ Resources
 - [Source code](https://codesandbox.io/s/w2p29jj0jl) with**out** `_redirects` file.
 - [Netlify site](https://react-router-v4-to-deploy-to-netlify-with-redirects.netlify.com/else) with \_redirects file.
 - [Netlify site](https://react-router-v4-to-deploy-to-netlify-without-redirects.netlify.com/) with**out** \_redirects file.
-

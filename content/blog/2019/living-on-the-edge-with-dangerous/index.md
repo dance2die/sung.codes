@@ -1,9 +1,9 @@
 ---
 title: Living on the edge with "dangerous"
-date: '2019-01-13'
+date: "2019-01-13"
 banner: ./images/dangerous-logo.jpg
-published_at: '2019-01-13T22:31:38.000Z'
-tags: 'react, showdev'
+published_at: "2019-01-13T22:31:38.000Z"
+tags: "react, showdev"
 author: Sung M. Kim
 ---
 
@@ -19,15 +19,11 @@ At the end of article, Max finished the article with following sentence.
 
 So I created [dangerous](https://www.npmjs.com/package/dangerous), a tagged template literal function, which accepts a dangerous text (such as malicious user input) and sets inner HTML of a component in SC like style.
 
-##
-
-Prerequisite
+## Prerequisite
 
 I will skip on what tagged template literal is or how it works as Max has [explained quite wel](https://mxstbr.blog/2016/11/styled-components-magic-explained/)l.
 
-##
-
-☢ What is "dangerous"?
+## ☢ What is "dangerous"?
 
 When you pass a string to component, they are encoded to prevent malicious user input/scripts.
 
@@ -45,7 +41,7 @@ Result of DangerousApp.js
 
 As you can with SC, you can pass a component or an HTML tag to the `dangerous` like or even wrap SC component and vice versa.
 
-``gist:dance2die/ec603aaec1fe0bf7b735762ac58b9472``
+`gist:dance2die/ec603aaec1fe0bf7b735762ac58b9472`
 
 <a href="https://gist.github.com/dance2die/ec603aaec1fe0bf7b735762ac58b9472">View this gist on GitHub</a>
 
@@ -53,9 +49,7 @@ As you can with SC, you can pass a component or an HTML tag to the `dangerous` l
 
 So if you need to style the dangerous component, either pass a SC component or wrap the dangerous component in SC component.
 
-##
-
-🤔 Why did you create it then?
+## 🤔 Why did you create it then?
 
 I will be frank. It's quite useless in practice and promotes bad behavior.
 
@@ -63,9 +57,7 @@ It was mostly an academic project to learn how tagged template literal works & g
 
 And a plan to migrate to TypeScript for React, and learn how to test it.
 
-##
-
-💀 Failures?
+## 💀 Failures?
 
 I've implemented it on [CodeSandbox](https://codesandbox.io/s/o85m91j8z) using vanilla JavaScript but wanted to try TypeScript.
 
@@ -92,9 +84,7 @@ I remember making the same mistake while first learning React, trying to learn R
 
 But learning from these failures (try to use Rollup for simple libraries, don't use new language \[typescript\] without understanding how it works first, etc) was a great lesson.
 
-##
-
-👋 Parting Words
+## 👋 Parting Words
 
 Many thanks to Max Stoiber to his [blog](https://mxstbr.blog/2016/11/styled-components-magic-explained/) & [Styled Components](https://github.com/styled-components/styled-components) for sharing his knowledge and code in public.
 
@@ -111,4 +101,3 @@ Please don't hesitate to give me [any feedback](https://github.com/dance2die/dan
   - [NPM](https://www.npmjs.com/package/dangerous)
 - [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml)
 - [Styled Components](https://www.styled-components.com/)
-
