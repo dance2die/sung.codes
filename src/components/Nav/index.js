@@ -40,6 +40,7 @@ const Links = () => (
         sx={{
           "&.active": {
             textDecoration: "underline",
+            fontWeight: "bold",
           },
         }}
       >
