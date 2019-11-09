@@ -5,8 +5,10 @@ import { Heading } from "@theme-ui/components"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { Location } from "@reach/router"
 
-import Layout from "../layouts"
+import Layout from "#layouts"
+import ExternalLink from "#components/Link/ExternalLink"
 
 const postStyle = {
   h1: {
@@ -40,19 +42,30 @@ export default ({
   return (
     <Layout>
       <Link to={`/blog/${year}`}>&larr; Go Back</Link>
-
       {/* This "link" is for styling gists. */}
       <link
         rel="stylesheet"
         href="https://github.githubassets.com/assets/gist-embed-123720f37c57ce9a8f29de081c38ed61.css"
       ></link>
-      <Box sx={postStyle}>
-        <Heading as="h1">{title}</Heading>
-        {banner && banner.childImageSharp && banner.childImageSharp.fluid && (
-          <Img fluid={banner.childImageSharp.fluid} />
+      <Location>
+        {({ location }) => (
+          <Box sx={postStyle}>
+            <Heading as="h1">{title}</Heading>
+            {banner &&
+              banner.childImageSharp &&
+              banner.childImageSharp.fluid && (
+                <Img fluid={banner.childImageSharp.fluid} />
+              )}
+            Broken Post?{" → "}
+            <ExternalLink
+              to={`https://twitter.com/intent/tweet?text=@dance2die%20${location.href} is broken!`}
+            >
+              Let me know
+            </ExternalLink>{" "}
+            <MDXRenderer>{body}</MDXRenderer>
+          </Box>
         )}
-        <MDXRenderer>{body}</MDXRenderer>
-      </Box>
+      </Location>
     </Layout>
   )
 }
