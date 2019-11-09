@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Heading, Text } from "@theme-ui/components"
+import { Heading, Text, Box } from "@theme-ui/components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
 
@@ -32,42 +32,49 @@ const Block = styled(Link)(({ theme }) => ({
 
   textDecoration: `none`,
   color: theme.colors.gray[3],
+  backgroundColor: theme.colors.background,
 
   "&:hover": {
-    backgroundColor: theme.colors.gray[0],
+    // backgroundColor: theme.colors.gray[0],
+    transform: "scale(1.035)",
     textDecoration: "underline",
+    borderBottom: theme => `6px solid ${theme.colors.primary}`,
   },
 }))
 
 const byYearDescending = ([year1], [year2]) => year2 - year1
 const toPost = ([year, count]) => (
-  <Block
-    key={year}
-    to={`/blog/${year}`}
+  <Box
     sx={{
-      width: ["90%", "50%", "30%", "35%"],
-      // copied from https://purereact.com/?coupon=pure_friends&ck_subscriber_id=117326074
-      boxShadow:
-        "0 12px 24px -10px rgba(0,0,0,0.06), 0 16px 40px -5px rgba(0,0,0,0.1)",
-
+      width: ["95%", "50%", "30%", "35%"],
+      // https://css-tricks.com/gradient-borders-in-css/
       "&:hover": {
-        transform: "scale(1.05)",
-        borderBottom: theme => `6px solid ${theme.colors.primary}`,
+        background: theme =>
+          `linear-gradient(to bottom left, ${theme.colors.background}, ${theme.colors.primary})`,
       },
     }}
   >
-    <Heading
-      as="h3"
+    <Block
+      key={year}
+      to={`/blog/${year}`}
       sx={{
-        fontSize: theme => theme.fontSizes[5],
+        boxShadow:
+          "0 12px 24px -10px rgba(0,0,0,0.06), 0 16px 40px -5px rgba(0,0,0,0.1)",
       }}
     >
-      {year}
-    </Heading>
-    <Text sx={{ fontSize: theme => theme.fontSizes[3] }}>
-      {count} post{count > 1 ? "s" : ""}
-    </Text>
-  </Block>
+      <Heading
+        as="h3"
+        sx={{
+          fontSize: theme => theme.fontSizes[5],
+        }}
+      >
+        {year}
+      </Heading>
+      <Text sx={{ fontSize: theme => theme.fontSizes[3] }}>
+        {count} post{count > 1 ? "s" : ""}
+      </Text>
+    </Block>
+  </Box>
 )
 
 export default () => {
