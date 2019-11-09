@@ -33,16 +33,22 @@ const postStyle = {
 
 export default ({
   data: {
+    site: {
+      siteMetadata: { siteUrl },
+    },
     mdx: {
       body,
       frontmatter,
-      fields: { year },
+      fields: { year, slug },
     },
   },
 }) => {
   return (
     <Layout>
-      <SEO frontmatter={frontmatter} />
+      <SEO
+        frontmatter={frontmatter}
+        url={new URL(slug, siteUrl).href || siteUrl}
+      />
       <Link to={`/blog/${year}`}>&larr; Go Back</Link>
       {/* This "link" is for styling gists. */}
       <link
@@ -74,6 +80,11 @@ export default ({
 
 export const pageQuery = graphql`
   query BlogPostQuery($id: String) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     mdx(id: { eq: $id }) {
       body
       frontmatter {
@@ -84,6 +95,7 @@ export const pageQuery = graphql`
       }
       fields {
         year
+        slug
       }
     }
   }
