@@ -4,7 +4,7 @@ module.exports = {
   siteTitleShort: "sungmkim",
   siteUrl: process.env.ROOT_URL || "https://sung.codes",
   siteLanguage: "en",
-  siteLogo: "images/logo.png",
+  siteLogo: "images/logo.jpg",
   siteDescription:
     "Come check out how Sung M. Kim can help you level up your career as a software engineer.",
   minibio: ``,
@@ -17,8 +17,9 @@ module.exports = {
   ogLanguage: "en_US",
   googleAnalyticsID: "UA-87712355-1",
 
-  themeColor: "#4147DC",
-  backgroundColor: "#231C42",
+  themeColor: "#FFC600",
+  // themeColor: "rebeccapurple",
+  backgroundColor: "#fff",
 
   twitter: "https://twitter.com/dance2die/",
   twitterHandle: "@dance2die",

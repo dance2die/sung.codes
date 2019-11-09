@@ -1,3 +1,5 @@
+import { themeColor, backgroundColor } from "../config/website"
+
 // https://theme-ui.com/theming#example
 const heading = {
   fontFamily: "heading",
@@ -7,9 +9,8 @@ export const theme = {
   initialColorMode: "light",
   colors: {
     text: "#000",
-    background: "#fff",
-    // primary: "#33e",
-    primary: "#FFC600",
+    background: backgroundColor,
+    primary: themeColor,
     gray: ["#efefef", "#ddd", "#333", "#111"],
 
     modes: {
