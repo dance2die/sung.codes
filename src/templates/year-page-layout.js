@@ -42,7 +42,13 @@ export default ({ data }) => {
   return (
     <Layout>
       <Link to="/blog">&larr; Go Back</Link>
-      <Container>{posts}</Container>
+      <Box
+        sx={{
+          paddingTop: [3, 3, 4, 4],
+        }}
+      >
+        {posts}
+      </Box>
     </Layout>
   )
 }
