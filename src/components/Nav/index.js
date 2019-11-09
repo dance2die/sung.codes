@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Heading, Flex, Box, Text } from "@theme-ui/components"
+import { Heading, Flex, Box } from "@theme-ui/components"
 
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"

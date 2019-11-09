@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 // // https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/layouts/index.js
+// eslint-disable-next-line
 import React from "react"
 
 import { Container, Layout as ThemeLayout, Main } from "theme-ui"
