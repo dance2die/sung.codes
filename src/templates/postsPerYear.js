@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import { Main } from "theme-ui"
 import Layout from "../layouts"
 import { Heading, Box } from "@theme-ui/components"
+import { URL } from "universal-url"
 
 import Link from "#components/Link/TextLink"
 import SEO from "#components/seo"

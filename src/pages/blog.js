@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 import { Heading, Text, Box } from "@theme-ui/components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
+import { URL } from "universal-url"
 
 import Layout from "#layouts"
 import SEO from "#components/seo"

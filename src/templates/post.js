@@ -6,6 +6,7 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Location } from "@reach/router"
+import { URL } from "universal-url"
 
 import Layout from "#layouts"
 import ExternalLink from "#components/Link/ExternalLink"
