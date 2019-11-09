@@ -36,7 +36,7 @@ const Links = () => (
   <Flex
     sx={{
       width: "100%",
-      maxWidth: ["30vw", "30vw", "35vw", "33%"],
+      maxWidth: ["28vw", "28vw", "35vw", "33%"],
       justifyContent: "space-around",
     }}
   >
