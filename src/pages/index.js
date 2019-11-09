@@ -5,6 +5,7 @@ import Layout from "../layouts"
 import { Heading, Flex, Text, Box } from "@theme-ui/components"
 
 import HeadshotImage from "#components/HeadshotImage"
+import ExternalLink from "#utils/ExternalLink"
 
 const Introduction = () => (
   <Flex
@@ -57,9 +58,19 @@ const Bio = () => (
     }}
   >
     <HeadshotImage />
-    <Text>I am a software engineer from New York City,</Text>
-    <Text>Sharing stuff on my blog, moderating on DEV</Text>
-    <Text>&amp; translating All Contributors in Korean.</Text>
+    <Box
+      as="article"
+      py={3}
+      px={1}
+      sx={{
+        fontSize: [1, 4, 6, 7],
+        "& > p": { paddingBottom: 3 },
+      }}
+    >
+      <Text as="p">I am a software engineer from New York City,</Text>
+      <Text as="p">Sharing stuff on my blog, moderating on DEV</Text>
+      <Text as="p">&amp; translating All Contributors in Korean.</Text>
+    </Box>
   </Flex>
 )
 
