@@ -7,13 +7,14 @@ import Layout from "../layouts"
 import { Heading, Box } from "@theme-ui/components"
 
 import Link from "#components/Link/TextLink"
+import SEO from "#components/seo"
 
 export default ({ data }) => {
   const posts = data.allMdx.edges.map(
     ({
       node: {
         frontmatter: { title, date },
-        fields: { slug },
+        fields: { slug, year },
         id,
       },
     }) => (
@@ -39,8 +40,11 @@ export default ({ data }) => {
     )
   )
 
+  const { year } = data.mdx.fields
+
   return (
     <Layout>
+      <SEO description={`Blog posts for year ${year}`} />
       <Link to="/blog">&larr; Go Back</Link>
       <Box
         sx={{
@@ -70,6 +74,11 @@ export const query = graphql`
           }
           id
         }
+      }
+    }
+    mdx(fields: { year: { eq: $year } }) {
+      fields {
+        year
       }
     }
   }
