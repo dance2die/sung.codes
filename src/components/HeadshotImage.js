@@ -33,6 +33,14 @@ const HeadshotImage = () => (
         sx={{
           width: "100%",
           height: "100%",
+          webkitFilter: "grayscale(.45)",
+          filter: "grayscale(.45)",
+          transition: "filter .2s ease-in-out",
+
+          "&:hover": {
+            webkitFilter: "grayscale(0%)",
+            filter: "grayscale(0%)",
+          },
         }}
       />
     )}
