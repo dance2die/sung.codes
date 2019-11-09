@@ -7,7 +7,7 @@ tags: "blogentry, programming, modulo, motivation"
 author: Sung M. Kim
 ---
 
-One day, I was solving a coding question, for which, I had to shift each element in an array to the right. It is an easy task to do but I wanted to know if there was more "elegant way". After doing some Googling, I found one entry on [StackOverflow](http://www.stackoverflow.com), which blew my mind and I'd like to share it.
+One day, I was solving a coding question, for which, I had to shift each element in an array to the right. It is an easy task to do but I wanted to know if there was more "elegant way". After doing some Googling, I found one entry on [StackOverflow](https://stackoverflow.com), which blew my mind and I'd like to share it.
 
 I've never much utilized an operator for modulo except when I had to check for "even" or "odd" numbers.
 
