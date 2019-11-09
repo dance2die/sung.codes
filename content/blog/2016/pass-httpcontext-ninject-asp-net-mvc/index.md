@@ -81,7 +81,7 @@ public class QueryArgParser
 
 I've installed following Ninject Nuget Packages.
 
-![](http://i.imgur.com/X27wuyC.jpg)
+![](https://i.imgur.com/X27wuyC.jpg)
 
 Installing "Ninject.MVC3" will add a file called "NinjectWebCommon" under "App_Start" folder.
 
@@ -109,11 +109,11 @@ What's important here is the line 12~13, which is the callback within "WithConst
 
 Now set the web start page to "?db=prod", "?db=stage", or "?db=dev"
 
-![](http://i.imgur.com/p4JDvMc.png)
+![](https://i.imgur.com/p4JDvMc.png)
 
 You will see the connection string on the web page as shown below (this is for "?db=prod")
 
-![](http://i.imgur.com/5Xy3fI0.png)
+![](https://i.imgur.com/5Xy3fI0.png)
 
 I've found the [answer](https://stackoverflow.com/a/3617961/4035) via StackOverflow answered by "[Ruben Bartelink](https://stackoverflow.com/users/11635/ruben-bartelink)". One line of code Ruben posted saved me hours of headache.
 
