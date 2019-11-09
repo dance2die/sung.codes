@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui"
+import { jsx, Box } from "theme-ui"
 import { Heading } from "@theme-ui/components"
 
 import { graphql, Link } from "gatsby"
@@ -25,6 +25,7 @@ const postStyle = {
   p: {
     paddingBottom: "1.1rem",
   },
+  paddingTop: [3, 3, 4, 4],
 }
 
 export default ({
@@ -45,13 +46,13 @@ export default ({
         rel="stylesheet"
         href="https://github.githubassets.com/assets/gist-embed-123720f37c57ce9a8f29de081c38ed61.css"
       ></link>
-      <Container sx={postStyle}>
+      <Box sx={postStyle}>
         <Heading as="h1">{title}</Heading>
         {banner && banner.childImageSharp && banner.childImageSharp.fluid && (
           <Img fluid={banner.childImageSharp.fluid} />
         )}
         <MDXRenderer>{body}</MDXRenderer>
-      </Container>
+      </Box>
     </Layout>
   )
 }
