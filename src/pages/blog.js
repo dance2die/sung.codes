@@ -4,7 +4,8 @@ import { Heading, Text, Box } from "@theme-ui/components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "@emotion/styled"
 
-import Layout from "../layouts"
+import Layout from "#layouts"
+import SEO from "#components/seo"
 
 const getYearCounts = nodes =>
   nodes.reduce((acc, { year }) => {
@@ -100,6 +101,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO />
       <Heading>Blogs by year</Heading>
       <Body>{postBlocks}</Body>
     </Layout>
