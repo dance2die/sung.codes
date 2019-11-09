@@ -41,10 +41,14 @@ export default ({ data }) => {
   )
 
   const { year } = data.mdx.fields
+  const { siteUrl } = data.site.siteMetadata
 
   return (
     <Layout>
-      <SEO description={`Blog posts for year ${year}`} />
+      <SEO
+        description={`Blog posts for year ${year}`}
+        url={new URL(`/${year}`, siteUrl)}
+      />
       <Link to="/blog">&larr; Go Back</Link>
       <Box
         sx={{
@@ -59,6 +63,11 @@ export default ({ data }) => {
 
 export const query = graphql`
   query getMdx($year: Date!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     allMdx(
       filter: { fields: { year: { eq: $year } } }
       sort: { fields: frontmatter___date, order: DESC }

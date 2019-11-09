@@ -81,6 +81,11 @@ const toPost = ([year, count]) => (
 export default () => {
   const data = useStaticQuery(graphql`
     {
+      site {
+        siteMetadata {
+          siteUrl
+        }
+      }
       allDirectory(
         filter: {
           sourceInstanceName: { eq: "blog" }
@@ -99,9 +104,11 @@ export default () => {
     .sort(byYearDescending)
     .map(toPost)
 
+  const { siteUrl } = data.site.siteMetadata
+
   return (
     <Layout>
-      <SEO />
+      <SEO url={new URL(`/blog`, siteUrl)} />
       <Heading>Blogs by year</Heading>
       <Body>{postBlocks}</Body>
     </Layout>
