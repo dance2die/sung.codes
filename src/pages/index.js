@@ -61,7 +61,7 @@ const Bio = () => (
     as="section"
     sx={{
       height: "auto",
-      flexDirection: "column",
+      flexDirection: ["column", "column", "column", "row"],
       justifyContent: "center",
       alignItems: "center",
     }}
@@ -69,10 +69,11 @@ const Bio = () => (
     <HeadshotImage />
     <Box
       as="article"
-      py={3}
-      px={1}
+      py={[3, 3, 3, 0]}
+      px={[1, 1, 1, 0]}
+      pl={[0, 0, 0, 5]}
       sx={{
-        fontSize: [1, 4, 6, 7],
+        fontSize: [1, 5, 6, "40px"],
         "& > p": { paddingBottom: 3 },
       }}
     >
