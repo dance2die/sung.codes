@@ -9,6 +9,7 @@ import { Location } from "@reach/router"
 
 import Layout from "#layouts"
 import ExternalLink from "#components/Link/ExternalLink"
+import SEO from "#components/seo"
 
 const postStyle = {
   h1: {
@@ -34,13 +35,14 @@ export default ({
   data: {
     mdx: {
       body,
-      frontmatter: { title, banner },
+      frontmatter,
       fields: { year },
     },
   },
 }) => {
   return (
     <Layout>
+      <SEO frontmatter={frontmatter} />
       <Link to={`/blog/${year}`}>&larr; Go Back</Link>
       {/* This "link" is for styling gists. */}
       <link
@@ -50,11 +52,11 @@ export default ({
       <Location>
         {({ location }) => (
           <Box sx={postStyle}>
-            <Heading as="h1">{title}</Heading>
-            {banner &&
-              banner.childImageSharp &&
-              banner.childImageSharp.fluid && (
-                <Img fluid={banner.childImageSharp.fluid} />
+            <Heading as="h1">{frontmatter.title}</Heading>
+            {frontmatter.banner &&
+              frontmatter.banner.childImageSharp &&
+              frontmatter.banner.childImageSharp.fluid && (
+                <Img fluid={frontmatter.banner.childImageSharp.fluid} />
               )}
             Broken Post?{" → "}
             <ExternalLink
