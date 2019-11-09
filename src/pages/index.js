@@ -2,12 +2,13 @@
 import { jsx } from "theme-ui"
 
 import Layout from "../layouts"
-import { Heading, Flex } from "@theme-ui/components"
+import { Heading, Flex, Text, Box } from "@theme-ui/components"
 
 import HeadshotImage from "#components/HeadshotImage"
 
 const Introduction = () => (
   <Flex
+    as="section"
     sx={{
       flexDirection: "column",
       justifyContent: "center",
@@ -46,10 +47,20 @@ const Introduction = () => (
 )
 
 const Bio = () => (
-  <Heading>
-    Bio
+  <Flex
+    as="section"
+    sx={{
+      height: "auto",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
     <HeadshotImage />
-  </Heading>
+    <Text>I am a software engineer from New York City,</Text>
+    <Text>Sharing stuff on my blog, moderating on DEV</Text>
+    <Text>&amp; translating All Contributors in Korean.</Text>
+  </Flex>
 )
 
 export default () => {

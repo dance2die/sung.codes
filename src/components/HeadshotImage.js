@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -26,7 +27,15 @@ const HeadshotImage = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.headshotImage.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        fluid={data.headshotImage.childImageSharp.fluid}
+        sx={{
+          width: "100%",
+          height: "100%",
+        }}
+      />
+    )}
   />
 )
 export default HeadshotImage
