@@ -1,9 +1,9 @@
 ---
 title: Iterating two enumerable objects simultaneously
-date: '2017-01-09'
+date: "2017-01-09"
 banner: ./images/Featured-Image-1.jpg
-published_at: '2017-01-09T05:00:33.000Z'
-tags: 'blogentry, programming, c, crackingthecoding'
+published_at: "2017-01-09T05:00:33.000Z"
+tags: "blogentry, programming, c, crackingthecoding"
 author: Sung M. Kim
 ---
 
@@ -77,7 +77,7 @@ public bool HasRouteUsingDfs2(Node<int> node1, Node<int> node2)
 }
 ```
 
-Now the function terminates as soon as a common node between the two nodes is found, which runs much faster for four of my test cases.  I've found simultaneous iteration code from StackOverflow as usual from [this question](http://stackoverflow.com/questions/18395943/using-foreach-to-iterate-simultaneously-through-multiple-lists-syntax-sugar) answered by [Eren Ersönmez](http://stackoverflow.com/users/201088/eren-ers%C3%B6nmez) (Answer is [here](http://stackoverflow.com/a/18396163/4035); Eren also created a generic "ZipAll" function that accepts any number of IEnumerables in the answer.)
+Now the function terminates as soon as a common node between the two nodes is found, which runs much faster for four of my test cases.  I've found simultaneous iteration code from StackOverflow as usual from [this question](https://stackoverflow.com/questions/18395943/using-foreach-to-iterate-simultaneously-through-multiple-lists-syntax-sugar) answered by [Eren Ersönmez](https://stackoverflow.com/users/201088/eren-ers%C3%B6nmez) (Answer is [here](https://stackoverflow.com/a/18396163/4035); Eren also created a generic "ZipAll" function that accepts any number of IEnumerables in the answer.)
 
 While four tests using HasRouteUsingDfs ran for 0.06 seconds, optimized version using HasRouteUsingDfs2 ran within 0.001 seconds.
 
@@ -86,4 +86,3 @@ Full source for above codes is available on [GitHub](https://github.com/dance2di
 ### Conclusion
 
 It's not possible to iterate multiple enumerators using "foreach" but can use "GetEnumerator". I've been quite conscious about writing optimized code and this one just rocked since I never knew about this trick.
-

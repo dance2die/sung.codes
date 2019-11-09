@@ -1,8 +1,8 @@
 ---
 title: How to Pass HttpContext to Ninject in ASP.NET MVC
-date: '2016-12-04'
-published_at: '2016-12-04T05:00:19.000Z'
-tags: 'blogentry, programming, aspnetmvc, httpcontext'
+date: "2016-12-04"
+published_at: "2016-12-04T05:00:19.000Z"
+tags: "blogentry, programming, aspnetmvc, httpcontext"
 author: Sung M. Kim
 ---
 
@@ -115,7 +115,6 @@ You will see the connection string on the web page as shown below (this is for "
 
 ![](http://i.imgur.com/5Xy3fI0.png)
 
-I've found the [answer](http://stackoverflow.com/a/3617961/4035) via StackOverflow answered by "[Ruben Bartelink](http://stackoverflow.com/users/11635/ruben-bartelink)". One line of code Ruben posted saved me hours of headache.
+I've found the [answer](https://stackoverflow.com/a/3617961/4035) via StackOverflow answered by "[Ruben Bartelink](https://stackoverflow.com/users/11635/ruben-bartelink)". One line of code Ruben posted saved me hours of headache.
 
 The working source code is available on [GitHub](https://github.com/dance2die/Blog.SlightEdgeCoder.NinjectHttpContext).
-

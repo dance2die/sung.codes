@@ -1,9 +1,9 @@
 ---
 title: Solving an XML Entity Deserialization Issue
-date: '2016-12-31'
+date: "2016-12-31"
 banner: ./images/featured-image-2016.12.31.png
-published_at: '2016-12-31T16:49:12.000Z'
-tags: 'blogentry, programming, c, deserialization'
+published_at: "2016-12-31T16:49:12.000Z"
+tags: "blogentry, programming, c, deserialization"
 author: Sung M. Kim
 ---
 
@@ -66,7 +66,7 @@ Here is the run-down of [`SearchResponseDeserializer.Deserialize`](https://githu
 
 The part I was having trouble figuring out was #2, disabling undeclared entity check. There is a limit to replacing all entities as an empty string and that solution is just not optimal since one never knows when XML response will change to return other unknown XML entities.
 
-I looked for an alternative in .NET documentation. There were no properties to set or functions to call to disable the entity check. But I've found a way in one of StackOverflow [answer](http://stackoverflow.com/questions/3504227/prevent-xmltextreader-from-expanding-entities/22787825#22787825) (by [Sam Harwell](http://stackoverflow.com/users/138304/sam-harwell) who is a Microsoft MVP in .NET), which discusses how to use reflection to set an internal variable to bypass entity check.
+I looked for an alternative in .NET documentation. There were no properties to set or functions to call to disable the entity check. But I've found a way in one of StackOverflow [answer](https://stackoverflow.com/questions/3504227/prevent-xmltextreader-from-expanding-entities/22787825#22787825) (by [Sam Harwell](https://stackoverflow.com/users/138304/sam-harwell) who is a Microsoft MVP in .NET), which discusses how to use reflection to set an internal variable to bypass entity check.
 
 ```csharp
 private static void DisableUndeclaredEntityCheck(XmlReader xmlReader)
@@ -80,4 +80,3 @@ private static void DisableUndeclaredEntityCheck(XmlReader xmlReader)
 `XmlReader` does not expose a property `DisableUndeclaredEntityCheck` publicly so it needs to be turned on using reflection. The property name is aptly named since you can guess what it does from the name.
 
 I've never hacked my code this bad by having to set an internal property in .NET library. What I've learned from this challenge was that this experience has broadened my horizon that learning the internal of a framework can be useful in certain scenarios even though messing around with internal details is not a good idea most of time.
-
