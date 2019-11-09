@@ -1,10 +1,36 @@
 const config = require("./config/website")
 
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = config.siteUrl,
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === "production"
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
 module.exports = {
   siteMetadata: {
-    title: config.siteTitle,
-    description: config.siteTitleAlt,
-    author: config.author,
+    siteUrl,
+    title: config.siteTitleAlt,
+    twitterHandle: config.twitterHandle,
+    description: config.siteDescription,
+    keywords: ["Software Engineer", "React", "JavaScript"],
+    canonicalUrl: siteUrl,
+    image: config.siteLogo,
+    author: {
+      name: config.author,
+      minibio: config.minibio,
+    },
+    organization: {
+      name: config.organization,
+      url: siteUrl,
+      logo: config.siteLogo,
+    },
+    social: {
+      twitter: config.twitterHandle,
+      fbAppID: "",
+    },
   },
   plugins: [
     {
