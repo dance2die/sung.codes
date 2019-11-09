@@ -10,6 +10,7 @@ import styled from "@emotion/styled"
 
 const InLink = styled(TextLink)(({ theme }) => ({
   color: theme.colors.primary,
+  textDecoration: "underline",
 }))
 
 const OutLink = styled(ExternalLink)(({ theme }) => ({
