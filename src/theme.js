@@ -8,7 +8,8 @@ export const theme = {
   colors: {
     text: "#000",
     background: "#fff",
-    primary: "#33e",
+    // primary: "#33e",
+    primary: "#FFC600",
     gray: ["#efefef", "#ddd", "#333", "#111"],
 
     modes: {
