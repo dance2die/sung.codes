@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 
-import { Main, Container } from "theme-ui"
+import { Main } from "theme-ui"
 import Layout from "../layouts"
 import { Heading, Box } from "@theme-ui/components"
 

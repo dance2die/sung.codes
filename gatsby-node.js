@@ -63,7 +63,7 @@ const createPosts = async ({ graphql, actions, reporter }) => {
   posts.forEach(({ node }, index) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/posts-page-layout.js`),
+      component: path.resolve(`./src/templates/post.js`),
       context: { id: node.id },
     })
   })
@@ -96,7 +96,7 @@ const createBlogYearPages = async ({ graphql, actions, reporter }) => {
   years.forEach(({ year }) => {
     createPage({
       path: `/blog/${year}`,
-      component: path.resolve(`./src/templates/year-page-layout.js`),
+      component: path.resolve(`./src/templates/postsPerYear.js`),
       context: { year },
     })
   })
