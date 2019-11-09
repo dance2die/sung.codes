@@ -6,7 +6,7 @@ tags: 'blogentry, react, sketchnotes'
 author: Sung M. Kim
 ---
 
-Recently read [The Sketchnote Handbook](https://www.goodreads.com/book/show/15858089-the-sketchnote-handbook) by [Mike Rohde](http://rohdesign.com).
+Recently read [The Sketchnote Handbook](https://www.goodreads.com/book/show/15858089-the-sketchnote-handbook) by [Mike Rohde](https://rohdesign.com).
 
 One of the benefits is to retain knowledge longer by helping you convert abstract knowledge into visual representations.
 

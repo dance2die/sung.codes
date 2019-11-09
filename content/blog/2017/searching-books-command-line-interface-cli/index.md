@@ -37,7 +37,7 @@ Here is the [README](https://github.com/dance2die/google-book-shell/blob/master/
 
 ### Notes on Open command
 
-When you open an Amazon page, the CLI queries Amazon's [Product Advertising API](http://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html) (PAA) via Azure Functions. I didn't want to expose my Amazon Product Key and Secret so I moved the PAA query functionality to Azure Functions (after failed attempt to use AWS Lambda...). Azure Functions sleeps after 5 minutes of inactivity so opening an Amazon page for the first time could take 10~30 seconds unfortunately for I have used a pay-per-use plan.
+When you open an Amazon page, the CLI queries Amazon's [Product Advertising API](https://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html) (PAA) via Azure Functions. I didn't want to expose my Amazon Product Key and Secret so I moved the PAA query functionality to Azure Functions (after failed attempt to use AWS Lambda...). Azure Functions sleeps after 5 minutes of inactivity so opening an Amazon page for the first time could take 10~30 seconds unfortunately for I have used a pay-per-use plan.
 
 PAA requires a developer to sign up for Amazon Affiliate Program. Thus the Amazon link returned adds a finger print with my affiliate info. I've added a flag(`--strip-amazon-affiliate` or `-s`) in `open` command to strip it out in case you do not want that info in the link.
 

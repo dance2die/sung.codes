@@ -25,7 +25,7 @@ Books are listed in no particular order. I usually read whatever I feel like rea
 
 \[gallery columns="2" ids="175,174"\]
 
-1. [Stories of Your LIfe](https://www.amazon.com/Stories-Your-Life-Others-Chiang/dp/1101972122/ref=sr_1_1?s=books&ie=UTF8&qid=1484875560&sr=1-1&keywords=Stories+of+Your+LIfe) by Ted Chang - The movie, [Arrival](http://www.imdb.com/title/tt2543164/?ref_=fn_al_tt_1), is based on one of the stories in this book. I haven't watched the movie but I'd like to read the book first.
+1. [Stories of Your LIfe](https://www.amazon.com/Stories-Your-Life-Others-Chiang/dp/1101972122/ref=sr_1_1?s=books&ie=UTF8&qid=1484875560&sr=1-1&keywords=Stories+of+Your+LIfe) by Ted Chang - The movie, [Arrival](https://www.imdb.com/title/tt2543164/?ref_=fn_al_tt_1), is based on one of the stories in this book. I haven't watched the movie but I'd like to read the book first.
 2. [Seveneves](https://www.amazon.com/Seveneves-Neal-Stephenson/dp/0062334514/ref=sr_1_1?s=books&ie=UTF8&qid=1484875566&sr=1-1&keywords=SevenEves) by Neal Stephenson - Bill Gates wrote a [review](https://www.gatesnotes.com/Books/Seveneves) so I was interested.
 
 **Programming**
@@ -65,13 +65,13 @@ There are only 4 books for programming because I started learning most of new ma
 
 \[gallery columns="4" ids="219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234"\]
 
-1. [플루언트](http://www.bandibookus.com/front/product/detailProduct.do?prodId=3996433) (Fluent) by 조승연 ([Seungyeon Cho](https://twitter.com/totalintelli?lang=ko)) - Liberal Arts book on English.
-2. [손자병법](http://www.bandibookus.com/front/product/detailProduct.do?prodId=3991270) (The Art of War) by 손자 (Sun Tzu) - Korean Translation. Wanted to read after watching a short video on BusinessInsider, '[The Art Of War' holds the keys to success on Wall Street](http://www.businessinsider.com/art-of-war-wall-street-psychology-2015-10).
-3. [열한 계단](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4014511) (11 Steps (or Stairs?)) by 채사장 - Another book on Liberal Arts.
-4. [My Romantic Comedy SNAFU](http://www.bandibookus.com/front/product/detailProduct.do?prodId=3528085) (Japanese Light Novel) volume 1~5 - A comedy about a loner Japanese high school student having trouble with romantic relationship. There is an [anime](https://myanimelist.net/anime/14813/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru) based on this novel.
-5. [유녀전기](http://www.bandibookus.com/front/product/detailProduct.do?prodId=3824934) (Youjo Senki, Japanese Light Novel) volume 1~6 - A story about an elite salaryman reincarnated into a blonde girl fighting war in a world with magic. Found it after watching an [anime](https://myanimelist.net/anime/32615/Youjo_Senki) this season.
-6. [이 세계가 게임이란 사실은 나만이 알고 있다](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4012005) (literal translation - _Only_ I _Know_ That This *World Is a Game\_\_,* Japanese Light Novel) volume 6 - A comedy where a main character is stuck in a game and he is the only one who knows that others are just a part of an RPG game.
-7. [전생했더니 슬라임이었던 건에 대하여](http://www.bandibookus.com/front/product/detailProduct.do?prodId=4020985) (Regarding Reincarnated to Slime, Japanese Light Novel) volume 8~8.5 - Another novel where a main character dies in real world and reincarnated in another world. Not as a human but as a slime!
+1. [플루언트](https://www.bandibookus.com/front/product/detailProduct.do?prodId=3996433) (Fluent) by 조승연 ([Seungyeon Cho](https://twitter.com/totalintelli?lang=ko)) - Liberal Arts book on English.
+2. [손자병법](https://www.bandibookus.com/front/product/detailProduct.do?prodId=3991270) (The Art of War) by 손자 (Sun Tzu) - Korean Translation. Wanted to read after watching a short video on BusinessInsider, '[The Art Of War' holds the keys to success on Wall Street](https://www.businessinsider.com/art-of-war-wall-street-psychology-2015-10).
+3. [열한 계단](https://www.bandibookus.com/front/product/detailProduct.do?prodId=4014511) (11 Steps (or Stairs?)) by 채사장 - Another book on Liberal Arts.
+4. [My Romantic Comedy SNAFU](https://www.bandibookus.com/front/product/detailProduct.do?prodId=3528085) (Japanese Light Novel) volume 1~5 - A comedy about a loner Japanese high school student having trouble with romantic relationship. There is an [anime](https://myanimelist.net/anime/14813/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru) based on this novel.
+5. [유녀전기](https://www.bandibookus.com/front/product/detailProduct.do?prodId=3824934) (Youjo Senki, Japanese Light Novel) volume 1~6 - A story about an elite salaryman reincarnated into a blonde girl fighting war in a world with magic. Found it after watching an [anime](https://myanimelist.net/anime/32615/Youjo_Senki) this season.
+6. [이 세계가 게임이란 사실은 나만이 알고 있다](https://www.bandibookus.com/front/product/detailProduct.do?prodId=4012005) (literal translation - _Only_ I _Know_ That This *World Is a Game\_\_,* Japanese Light Novel) volume 6 - A comedy where a main character is stuck in a game and he is the only one who knows that others are just a part of an RPG game.
+7. [전생했더니 슬라임이었던 건에 대하여](https://www.bandibookus.com/front/product/detailProduct.do?prodId=4020985) (Regarding Reincarnated to Slime, Japanese Light Novel) volume 8~8.5 - Another novel where a main character dies in real world and reincarnated in another world. Not as a human but as a slime!
 
 ### Conclusion
 

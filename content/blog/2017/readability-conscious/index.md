@@ -7,7 +7,7 @@ tags: 'blogentry, programming, todayilearned, c'
 author: Sung M. Kim
 ---
 
-Featured Image - "[voynich](https://www.flickr.com/photos/figgenhoffer/2393781060/in/photolist-4DwKHf-6bPEf-5cD6N1-5cyPXP-5cD6W1-5cyQvi-5cD6YW-5cD75h-5cD6Sj-5cyQqv-yY54S-yY54V-87DHYs-mrZ7WV-eSstSZ-5cD7h1-6iiRn5-4pHvoE-cCqgiU-szWvt-c6niF5-c6nkQd-szSmU-c6mgyY-c6mTe1-c6nesd-yUjFT-c6maY1-c6mY3w-9tdawJ-c6mrm3-c6mxf1-c6nbMw-c6mnih-c6npwY-c6nx9U-c6mM1q-59qPmR-c6mBb9-c6n5FE-c6mFMN-c6n7CL-2fhmqn-4Vc476-6bLgg-5cT71Z-59v3Es-6bLcc-59v3Rb-6bL7S)" by [D.C.Atty](https://www.flickr.com/photos/figgenhoffer/), used under [CC BY](http://creativecommons.org/licenses/by/2.0/) / Dropped Quality to 60% from original - It's a featured image since nobody can figure out what's written in Voynich Manuscript. ;)
+Featured Image - "[voynich](https://www.flickr.com/photos/figgenhoffer/2393781060/in/photolist-4DwKHf-6bPEf-5cD6N1-5cyPXP-5cD6W1-5cyQvi-5cD6YW-5cD75h-5cD6Sj-5cyQqv-yY54S-yY54V-87DHYs-mrZ7WV-eSstSZ-5cD7h1-6iiRn5-4pHvoE-cCqgiU-szWvt-c6niF5-c6nkQd-szSmU-c6mgyY-c6mTe1-c6nesd-yUjFT-c6maY1-c6mY3w-9tdawJ-c6mrm3-c6mxf1-c6nbMw-c6mnih-c6npwY-c6nx9U-c6mM1q-59qPmR-c6mBb9-c6n5FE-c6mFMN-c6n7CL-2fhmqn-4Vc476-6bLgg-5cT71Z-59v3Es-6bLcc-59v3Rb-6bL7S)" by [D.C.Atty](https://www.flickr.com/photos/figgenhoffer/), used under [CC BY](https://creativecommons.org/licenses/by/2.0/) / Dropped Quality to 60% from original - It's a featured image since nobody can figure out what's written in Voynich Manuscript. ;)
 
 I've been solving [HackerRank](https://www.hackerrank.com) problems lately. HackerRank provides many coding problems.
 
@@ -15,7 +15,7 @@ I've been solving [HackerRank](https://www.hackerrank.com) problems lately. Hac
 
 Each problem has a discussion forum to post algorithms and sometimes answers. After solving each question, I compare my answers with those of others.
 
-After reading [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) by Uncle Bob, and listening to [Coding blocks podcasts](http://www.codingblocks.net/) with titles that begin with "Clean Code - ", I decided to write a more readable code even for solving a simple question.
+After reading [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) by Uncle Bob, and listening to [Coding blocks podcasts](https://www.codingblocks.net/) with titles that begin with "Clean Code - ", I decided to write a more readable code even for solving a simple question.
 
 I noticed that many people ask in discussion what the code does.  Why would I have to write a code, which would require an explanation? Could I write more readable code that anyone can understand?
 

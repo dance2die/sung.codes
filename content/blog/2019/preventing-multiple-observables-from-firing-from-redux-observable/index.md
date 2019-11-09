@@ -32,7 +32,7 @@ The code that generated the mess above is shown below.
 
 For being a new RxJS (, which is a prerequisite for `redux-observable`) user, I couldn't figure it after hours of reading documentation and playing around.
 
-[Kevin Ghadyani](http://kevinghadyani.info/) generously spent time to review the code and provide a solution for the issue.
+[Kevin Ghadyani](https://kevinghadyani.info/) generously spent time to review the code and provide a solution for the issue.
 
 ``gist:dance2die/236f83b3e9777089f51fdb88bee0a1a9``
 

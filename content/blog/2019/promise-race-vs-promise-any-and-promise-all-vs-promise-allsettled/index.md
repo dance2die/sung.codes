@@ -155,7 +155,7 @@ How I understood was that the new `Promise.allSettled/any` are introduced for Pr
 
 `Promise.all` & `Promise.race` has been available in modern browsers (this exclude IE ;p) and `Promise.allSettled` will be available in Chrome 76.
 
-`Promise.any` is still in [stage 1](https://tc39.github.io/proposal-promise-any/) and not available in any browsers (but available in [Bluebird](http://bluebirdjs.com/docs/api/promise.any.html) or using polyfills - for the demo I used [promise-any](https://www.npmjs.com/package/promise-any) NPM library for demo.)
+`Promise.any` is still in [stage 1](https://tc39.github.io/proposal-promise-any/) and not available in any browsers (but available in [Bluebird](https://bluebirdjs.com/docs/api/promise.any.html) or using polyfills - for the demo I used [promise-any](https://www.npmjs.com/package/promise-any) NPM library for demo.)
 
 I'd love to hear where you would (have) use(d) each method to solve a problem.  
 And would you please kindly let me know if you find any mistakes and/or how I can improve the example?

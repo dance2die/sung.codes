@@ -13,7 +13,7 @@ Both [Eugene Karataev](https://dev.to/karataev) & [Noah Pederson](https://dev
 
 Check'em out on the [dev.to post](https://dev.to/dance2die/push-git-cloned-repository-to-your-own-on-github-1ili) thread.
 
-- [Eugene Karataev](http://postepenno.com/):  [https://dev.to/karataev/comment/a906](https://dev.to/karataev/comment/a906)
+- [Eugene Karataev](https://postepenno.com/):  [https://dev.to/karataev/comment/a906](https://dev.to/karataev/comment/a906)
 - [Noah Pederson](https://packetlostandfound.us/): [https://dev.to/chiefnoah/comment/a904](https://dev.to/chiefnoah/comment/a904)
 
 * * *

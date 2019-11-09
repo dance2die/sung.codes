@@ -162,8 +162,8 @@ If you want to dig deeper, check out following resources.
 - [The Manga Guide to Microprocessors](https://nostarch.com/microprocessors) - No Starch Press
 - [Adder](<https://en.wikipedia.org/wiki/Adder_(electronics)>) Wikipedia article
 - Diagram & Truth tables for
-  - [Full-adder](http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/full.htm)
-  - [Half-adder](http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/half-add.htm)
+  - [Full-adder](https://isweb.redwoods.edu/instruct/calderwoodd/diglogic/full.htm)
+  - [Half-adder](https://isweb.redwoods.edu/instruct/calderwoodd/diglogic/half-add.htm)
 - Demo program is available on [CodeSandbox](https://codesandbox.io/s/3vnqknj0o1)
 - [Full-adder diagram on Google Slides](https://docs.google.com/presentation/d/1TSDLBj7Zc2Y1mpUaQAeRb3cHJ8RLnROPXwDHRowQ3YQ/edit#slide=id.g565ce1f6b6_0_53).
 - [Half-adder](<https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Half_Adder.svg>) on Wikipedia.

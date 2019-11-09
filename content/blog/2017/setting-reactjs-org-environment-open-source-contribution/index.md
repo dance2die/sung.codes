@@ -106,7 +106,7 @@ Once your change is accepted, it will be merged.
 
 Sorry to scare you in the beginning of the post. But it's actually as easy as forking a repository, install NPM packages, make a change, and create a PR.
 
-This post is based on the [feedback](https://github.com/reactjs/reactjs.org/issues/70#issuecomment-335047497) I left on GitHub after being asked by [Brian Vaughn](http://www.briandavidvaughn.com/).
+This post is based on the [feedback](https://github.com/reactjs/reactjs.org/issues/70#issuecomment-335047497) I left on GitHub after being asked by [Brian Vaughn](https://www.briandavidvaughn.com/).
 
  
 

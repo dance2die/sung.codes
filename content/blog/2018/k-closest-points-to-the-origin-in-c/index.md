@@ -44,5 +44,5 @@ Max/MinHeap is very underused IMO.
 
 - Source code of [KClosePointsToOriginTest.cs](https://gist.github.com/dance2die/d8d1e851c6e26236eefe90dfa93a8830) on GitHub.
 - [Amazon Coding Interview Question - K Closest Points to the Origin](https://www.youtube.com/watch?v=eaYX0Ee0Kcg)
-- [Data Structures: Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) by [Gayle Laakmann McDowell](http://www.gayle.com/)
+- [Data Structures: Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) by [Gayle Laakmann McDowell](https://www.gayle.com/)
 

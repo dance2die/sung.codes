@@ -37,7 +37,7 @@ popup.js
 
 First you get the currently active Tab's ID (`tabId`).
 
-_Refer to_ [_Chrome extension tutorial – access active page dom_](http://infoheap.com/chrome-extension-tutorial-access-dom/) _on how that works._
+_Refer to_ [_Chrome extension tutorial – access active page dom_](https://infoheap.com/chrome-extension-tutorial-access-dom/) _on how that works._
 
 Then you execute a code on the current tab (line #9). and the callback gives you `result` which is the result of `document.querySelector`.
 

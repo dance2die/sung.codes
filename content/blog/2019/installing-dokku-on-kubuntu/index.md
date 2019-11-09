@@ -11,7 +11,7 @@ _Image by_ [_StockSnap_](https://pixabay.com/users/StockSnap-894430/?utm_source=
 
 As I was looking for ways to deploy a node & react site for intranet, I was looking for a self-hosted PaaS (Platform as a Service) I can deploy internally.
 
-I was reading thru "[Heroku vs self-hosted PaaS](https://dev.to/mskog/heroku-vs-self-hosted-paas-2bk1)", I decided to go with [Dokku](http://dokku.viewdocs.io/dokku/) (even though [CapRover](https://github.com/caprover/caprover) looked quite appealing as well) because I don't need to scale up to multiple servers for intranet pages.
+I was reading thru "[Heroku vs self-hosted PaaS](https://dev.to/mskog/heroku-vs-self-hosted-paas-2bk1)", I decided to go with [Dokku](https://dokku.viewdocs.io/dokku/) (even though [CapRover](https://github.com/caprover/caprover) looked quite appealing as well) because I don't need to scale up to multiple servers for intranet pages.
 
 I will show you how to install Dokku on [Kubuntu](https://kubuntu.org) (Ubuntu but with [KDE Plasma](https://kde.org/plasma-desktop) Desktop Environment instead of Gnome) running on Windows Hyper-V.
 
@@ -54,13 +54,13 @@ Emphasis on "64-bit" because
 
 > Dokku supports "A fresh installation of Ubuntu x64 - Any currently supported release, Debian 8.2 x64 or CentOS 7 x64 (experimental) with the FQDN set \[1\]" so you'd need 64-bit image.
 > 
-> http://dokku.viewdocs.io/dokku/getting-started/installation/#what-is-dokku
+> https://dokku.viewdocs.io/dokku/getting-started/installation/#what-is-dokku
 
 #### ◼ **Create a VM**
 
 You can create a VM manually or using a Wizard ("Quick Create") but as it's a prerequisite, let's create it using a Wizard. (At work, I will delegate this task to a ops manager as I am not so familiar with this frankly 😅).
 
-![01-Hyper-V-create-options-1](http://www.slightedgecoder.com/wp-content/uploads/2019/09/01-Hyper-V-create-options-1-1024x439.jpg)
+![01-Hyper-V-create-options-1](https://www.slightedgecoder.com/wp-content/uploads/2019/09/01-Hyper-V-create-options-1-1024x439.jpg)
 
 This pops up a modal and select the Kubuntu ISO downloaded from the previous step. (If you are familiar with regular Ubuntu, you don't have to download Kubuntu at all...).
 
@@ -68,25 +68,25 @@ This pops up a modal and select the Kubuntu ISO downloaded from the previous ste
 
 Lastly "Create Virtual Machine" and you are done.
 
-![02-Hyper-V-setup](http://www.slightedgecoder.com/wp-content/uploads/2019/09/02-Hyper-V-setup-1024x604.gif)
+![02-Hyper-V-setup](https://www.slightedgecoder.com/wp-content/uploads/2019/09/02-Hyper-V-setup-1024x604.gif)
 
 By default the VM name is"New Virtual Machine". (I renamed it to "Kubuntu 18.04 LTS x64 for Dokku" by right clicking on it and choose "rename").
 
-![rename VM](http://www.slightedgecoder.com/wp-content/uploads/2019/09/03-Hyper-V-rename-1024x736.jpg)
+![rename VM](https://www.slightedgecoder.com/wp-content/uploads/2019/09/03-Hyper-V-rename-1024x736.jpg)
 
 You'd need to start the VM as it's off by default as well.
 
-![Connect and start VM](http://www.slightedgecoder.com/wp-content/uploads/2019/09/04-Hyper-V-start.jpg)
+![Connect and start VM](https://www.slightedgecoder.com/wp-content/uploads/2019/09/04-Hyper-V-start.jpg)
 
 #### ◼ Install Kubuntu
 
 On connecting to VM, click on "start" to fire up a Kubuntu installation wizard (by default, the VM is in "Off" state as shown in the previous image).
 
-![Connect and start](http://www.slightedgecoder.com/wp-content/uploads/2019/09/05-Hyper-V-connect-and-start-1024x539.gif)
+![Connect and start](https://www.slightedgecoder.com/wp-content/uploads/2019/09/05-Hyper-V-connect-and-start-1024x539.gif)
 
 Click on "Installation Kubuntu" to start the process.
 
-![Install Kubuntu](http://www.slightedgecoder.com/wp-content/uploads/2019/09/06-Install-Kubuntu-1024x854.jpg)
+![Install Kubuntu](https://www.slightedgecoder.com/wp-content/uploads/2019/09/06-Install-Kubuntu-1024x854.jpg)
 
 Set up the language, keyboard, timezone, etc and the user account (clicking next, next, next...).
 
@@ -96,7 +96,7 @@ _It might take a while, so let's go and grab a cup of coffee ☕ and come back..
 
 After installation has finished, restart Kubuntu (not the VM).
 
-![Restart Kubuntu](http://www.slightedgecoder.com/wp-content/uploads/2019/09/07-restart-Kubuntu.jpg)
+![Restart Kubuntu](https://www.slightedgecoder.com/wp-content/uploads/2019/09/07-restart-Kubuntu.jpg)
 
 Lastly, log into Kubuntu and start a console.
 
@@ -106,7 +106,7 @@ We are all ready to set up Dokku, finally!
 
 ## 🚀 Install Dokku
 
-Let's take a look at the [Dokku installation instructions](http://dokku.viewdocs.io/dokku/#install-apt) for `apt`. (It's a bit more involved than it looks).
+Let's take a look at the [Dokku installation instructions](https://dokku.viewdocs.io/dokku/#install-apt) for `apt`. (It's a bit more involved than it looks).
 
 ``gist:dance2die/949189aeda689828203ab9b256d3c829``
 
@@ -117,27 +117,27 @@ _The instruction is straight-forward (other than using sudo) I will leave out th
 
 After you are done with the last instruction, `sudo dokku plugin:install-dependencies --core`, you will be greeted with a message whether to enable web-based configuration. Click "yes".
 
-![Enable web-based configuration](http://www.slightedgecoder.com/wp-content/uploads/2019/09/09-Enable-Web-Config.jpg)
+![Enable web-based configuration](https://www.slightedgecoder.com/wp-content/uploads/2019/09/09-Enable-Web-Config.jpg)
 
 The last part of the instruction, `# go to your server's IP and follow the web installer` shows to open a web page to continue the installation.
 
 You can get the current machine's name with `hostname` and open the web page on FireFox (installed even with Minimal Installation).
 
-Fire up FireFox and go to `http://<<your host name>`.
+Fire up FireFox and go to `https://<<your host name>`.
 
-In my case, `hostname` was set up as `dokku`, so `http://dokku` shows the following set up page.
+In my case, `hostname` was set up as `dokku`, so `https://dokku` shows the following set up page.
 
-![Dokku Web Installation](http://www.slightedgecoder.com/wp-content/uploads/2019/09/10-web-installation-1024x854.jpg)
+![Dokku Web Installation](https://www.slightedgecoder.com/wp-content/uploads/2019/09/10-web-installation-1024x854.jpg)
 
 I am not well-versed with Linux administration so I went and generated one by following Digital Ocean's article, "[How to Set Up SSH Keys on Ubuntu 18.04 - Step 1 — Create the RSA Key Pair](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-1-%E2%80%94-create-the-rsa-key-pair)".
 
 Open the public key (I used \`Kate\`, which is like "notepad" on Windows) by typing `kate ~/.ssh/id_rsa.pub` (".pub" for "public") and copy the public key.
 
-![Copy public SSH key from Kate](http://www.slightedgecoder.com/wp-content/uploads/2019/09/11-Copy-SSH-Public-key-1024x473.jpg)
+![Copy public SSH key from Kate](https://www.slightedgecoder.com/wp-content/uploads/2019/09/11-Copy-SSH-Public-key-1024x473.jpg)
 
 Paste the public key on the web configuration.
 
-![Paste SSH public key](http://www.slightedgecoder.com/wp-content/uploads/2019/09/12-Paste-SSH-Public-Key-1024x552.jpg)
+![Paste SSH public key](https://www.slightedgecoder.com/wp-content/uploads/2019/09/12-Paste-SSH-Public-Key-1024x552.jpg)
 
 Set the host name to the one returned by `hostname` command from Konsole.
 
@@ -147,9 +147,9 @@ I will leave the "Use virtualhost naming for apps" turned **off** as turning it 
 
 _Check out the output when checked off. (leave this off though)_
 
-![Use virtualhost name](http://www.slightedgecoder.com/wp-content/uploads/2019/09/14-Use-virtual-naming-1024x655.jpg)
+![Use virtualhost name](https://www.slightedgecoder.com/wp-content/uploads/2019/09/14-Use-virtual-naming-1024x655.jpg)
 
-When you click "Finish Setup", you will be directed to "[Deploying to Dokku](http://dokku.viewdocs.io/dokku~v0.18.3/deployment/application-deployment/)" page.
+When you click "Finish Setup", you will be directed to "[Deploying to Dokku](https://dokku.viewdocs.io/dokku~v0.18.3/deployment/application-deployment/)" page.
 
 ## 🚀 Deploy a Node app
 
@@ -171,7 +171,7 @@ _You will be asked to enter the root password._
 
 Then a message will be shown that an app has been created successfully.
 
-![Dokku app created](http://www.slightedgecoder.com/wp-content/uploads/2019/09/15-create-dokku-app-1024x129.jpg)
+![Dokku app created](https://www.slightedgecoder.com/wp-content/uploads/2019/09/15-create-dokku-app-1024x129.jpg)
 
 Dokku is compatible with Heroku and works similiarly. That means the deployment can be done via `git`.
 
@@ -210,9 +210,9 @@ If you are attempting to push the second time, you will be prompted to enter the
 
 At the bottom of the deployment log, you will see the deployment URL.
 
-![Deploy URL](http://www.slightedgecoder.com/wp-content/uploads/2019/09/19-Deploy-url-1024x226.jpg)
+![Deploy URL](https://www.slightedgecoder.com/wp-content/uploads/2019/09/19-Deploy-url-1024x226.jpg)
 
-I am not sure how to expose VM hostname outside, so browser inside VM uses `http://dokku:PORT` to access while outside VM, it is using the IP.
+I am not sure how to expose VM hostname outside, so browser inside VM uses `https://dokku:PORT` to access while outside VM, it is using the IP.
 
 ![](https://i2.wp.com/www.slightedgecoder.com/wp-content/uploads/2019/09/20-accessing-outside-VM-1.jpg?fit=1024%2C576&ssl=1)
 
@@ -231,8 +231,8 @@ Please let me know how I can improve the process or leave comment on what is jus
 Below are resources mentioned in this post.
 
 - [Heroku vs self-hosted PaaS](https://dev.to/mskog/heroku-vs-self-hosted-paas-2bk1) post by [Magnus Skog](https://dev.to/mskog)
-- [Dokku](http://dokku.viewdocs.io/dokku/) & [CapRover](https://github.com/caprover/caprover)
-- [Dokku apt installation instruction](http://dokku.viewdocs.io/dokku/#install-apt)
+- [Dokku](https://dokku.viewdocs.io/dokku/) & [CapRover](https://github.com/caprover/caprover)
+- [Dokku apt installation instruction](https://dokku.viewdocs.io/dokku/#install-apt)
 - [Kubuntu](https://kubuntu.org/)
 - [KDE Plasma](https://kde.org/plasma-desktop)
 - [How to Set Up SSH Keys on Ubuntu 18.04 - Step 1 — Create the RSA Key Pair](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-1-%E2%80%94-create-the-rsa-key-pair)

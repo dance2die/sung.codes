@@ -16,7 +16,7 @@ Two problems I have with HN.
 
 _And I don't need real-time updates of the story._
 
-So I created [SHaNc](http://shanc.netlify.com/), a Static page Hacker News clone.
+So I created [SHaNc](https://shanc.netlify.com/), a Static page Hacker News clone.
 
 I will only introduce you SHaNc in this article. Details on how it was built and problems faced while building it will be discussed in the next post.
 

@@ -7,7 +7,7 @@ tags: 'blogentry, programming, quicktip, ejs'
 author: Sung M. Kim
 ---
 
-Featured Image - Photo by [Sai Kiran Anagani](https://unsplash.com/photos/5Ntkpxqt54Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/visual-studio-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) When you use [ExpressJS](https://expressjs.com/) using [EJS](http://ejs.co/) as a view engine in Visual Studio Code (VS Code hereafter), you might run into the following error message when trying to format an EJS page with [a keyboard shortcut](https://stackoverflow.com/a/29973358/4035) (Windows: Shift + Alt + F, MacOS: Shift + Option + F, Ubuntu Ctrl + Shift + I).
+Featured Image - Photo by [Sai Kiran Anagani](https://unsplash.com/photos/5Ntkpxqt54Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/visual-studio-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) When you use [ExpressJS](https://expressjs.com/) using [EJS](https://ejs.co/) as a view engine in Visual Studio Code (VS Code hereafter), you might run into the following error message when trying to format an EJS page with [a keyboard shortcut](https://stackoverflow.com/a/29973358/4035) (Windows: Shift + Alt + F, MacOS: Shift + Option + F, Ubuntu Ctrl + Shift + I).
 
 > Sorry, but there is no formatter for 'ejs'-files installed.
 

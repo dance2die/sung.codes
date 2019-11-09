@@ -24,7 +24,7 @@ It is a programming _**discipline**_, used to decide which form of programming s
 
 Each paradigm places a constraint on a programmer.
 
-**NOTE**: "Paradigm" is pronounced as [par\-uh\-dahym](http://www.dictionary.com/browse/paradigm) **NOT** as [par-uh-dig-uhms](https://www.codingblocks.net/podcast/clean-architecture-programming-paradigms/).
+**NOTE**: "Paradigm" is pronounced as [par\-uh\-dahym](https://www.dictionary.com/browse/paradigm) **NOT** as [par-uh-dig-uhms](https://www.codingblocks.net/podcast/clean-architecture-programming-paradigms/).
 
 ### Disciplines imposed by each paradigm
 

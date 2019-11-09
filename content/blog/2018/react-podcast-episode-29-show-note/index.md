@@ -53,7 +53,7 @@ Less code is required
 ### 🔹 Other Benefits
 
 - You can use plain function syntax without transpiling.
-- Read [Hooks documentation](http://reactjs.org/hooks) top to bottom without skipping
+- Read [Hooks documentation](https://reactjs.org/hooks) top to bottom without skipping
 
 ### 🔹 Possible drawback
 

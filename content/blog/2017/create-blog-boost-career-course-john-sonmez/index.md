@@ -17,7 +17,7 @@ He has been consistently posting quality blog posts and YouTube videos answering
 
 As I learned to mimic what successful people do in the beginning (but you need to develop your own ways afterward), I decided to do what John did to become a great developer.
 
-In his book, [Soft Skills](http://simpleprogrammer.com/softskills) (4.5 stars by 200+ people on Amazon), John mentions that developers need a blog. I was wondering why but he makes good arguments backed up with his experience. I've already had some positive effects after starting a blog. I've started learning more to come up with more writing materials and writing helped me to retain what I've learned.
+In his book, [Soft Skills](https://simpleprogrammer.com/softskills) (4.5 stars by 200+ people on Amazon), John mentions that developers need a blog. I was wondering why but he makes good arguments backed up with his experience. I've already had some positive effects after starting a blog. I've started learning more to come up with more writing materials and writing helped me to retain what I've learned.
 
 Then I ran into a problem on how to get started with one.
 

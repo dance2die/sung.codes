@@ -16,7 +16,7 @@ A user [u/iKenshu](https://www.reddit.com/user/iKenshu/) asked following questi
 >
 > u/iKenshu
 
-And `u/timmonsjg` [responded](https://www.reddit.com/r/reactjs/comments/9t5sic/beginners_thread_easy_questions_november_2018/e9aof1l/) with [Dan Abramov's site](http://react-file-structure.surge.sh/), which reads,
+And `u/timmonsjg` [responded](https://www.reddit.com/r/reactjs/comments/9t5sic/beginners_thread_easy_questions_november_2018/e9aof1l/) with [Dan Abramov's site](https://react-file-structure.surge.sh/), which reads,
 
 > move files around until it feels right
 >

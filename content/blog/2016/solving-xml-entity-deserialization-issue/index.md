@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 I've recently released a new version of [MyAnimeListSharp](https://github.com/dance2die/MyAnimeListSharp) and I'd like to talk about a challenge I faced while implementing it.
 
-[MAL (MyAnimeList.net) API](http://myanimelist.net/modules.php?go=api) returns search responses in an XML format instead of in JSON. To make library users' lives easier, I decided to deserialize the XML response into an object (either as [AnimeSearchResponse](https://github.com/dance2die/MyAnimeListSharp/blob/master/Project.MyAnimeList/Project.MyAnimeList/Core/AnimeSearchResponse.cs) or [MangaSearchResponse](https://github.com/dance2die/MyAnimeListSharp/blob/master/Project.MyAnimeList/Project.MyAnimeList/Core/MangaSearchResponse.cs)) for easier processing. Then Alas, I run into a problem. For some reason, I am not able to deserialize XML into an object due to undeclared XML entities such as `—`(&mdash;), `<` (&lt;) or  `>`(&gt;), etc...
+[MAL (MyAnimeList.net) API](https://myanimelist.net/modules.php?go=api) returns search responses in an XML format instead of in JSON. To make library users' lives easier, I decided to deserialize the XML response into an object (either as [AnimeSearchResponse](https://github.com/dance2die/MyAnimeListSharp/blob/master/Project.MyAnimeList/Project.MyAnimeList/Core/AnimeSearchResponse.cs) or [MangaSearchResponse](https://github.com/dance2die/MyAnimeListSharp/blob/master/Project.MyAnimeList/Project.MyAnimeList/Core/MangaSearchResponse.cs)) for easier processing. Then Alas, I run into a problem. For some reason, I am not able to deserialize XML into an object due to undeclared XML entities such as `—`(&mdash;), `<` (&lt;) or  `>`(&gt;), etc...
 
 Here is the edited sample response from MAL API for an anime search ("synopsys" section usually contains undeclared XML entities)
 
@@ -20,13 +20,13 @@ Here is the edited sample response from MAL API for an anime search ("synopsys" 
     <id>71</id>
 	...
     <synopsis>Sousuke Sagara, ... on the battlefield.&lt;br /&gt; &lt;br /&gt;(Source: ANN, edited)</synopsis>
-    <image>http://cdn.myanimelist.net/images/anime/2/75259.jpg</image>
+    <image>https://cdn.myanimelist.net/images/anime/2/75259.jpg</image>
   </entry>
   <entry>
     <id>72</id>
 	...
     <synopsis>It's ... Kaname's classmate.&lt;br /&gt;&lt;br /&gt;(Source: ANN)</synopsis>
-    <image>http://cdn.myanimelist.net/images/anime/4/75260.jpg</image>
+    <image>https://cdn.myanimelist.net/images/anime/4/75260.jpg</image>
   </entry>
 </anime>
 ```

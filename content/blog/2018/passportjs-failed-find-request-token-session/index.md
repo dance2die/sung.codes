@@ -7,7 +7,7 @@ tags: ''
 author: Sung M. Kim
 ---
 
-I was working with [PassportJS](http://www.passportjs.org/) to authenticate to Meetup using [Meetup strategy](https://github.com/jaredhanson/passport-meetup). But this error drove me insane for hours.
+I was working with [PassportJS](https://www.passportjs.org/) to authenticate to Meetup using [Meetup strategy](https://github.com/jaredhanson/passport-meetup). But this error drove me insane for hours.
 
 > Error: Failed to find request token in session
 

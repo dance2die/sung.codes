@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 You have come up with a cool idea, decided to make an open source project, and share it on [GitHub](https://github.com/).
 
-The most popular language on GitHub nowadays is [JavaScript](http://githut.info/), and many of those who use JavaScript access Web API.
+The most popular language on GitHub nowadays is [JavaScript](https://githut.info/), and many of those who use JavaScript access Web API.
 
 Most of Web APIs nowadays require developer API key, but your "Open Source" project source is made public as the name suggests.
 

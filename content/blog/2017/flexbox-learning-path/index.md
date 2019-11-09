@@ -11,7 +11,7 @@ I was reading [Pure-React](https://daveceddia.com/pure-react/) by David Ceddia a
 
 ![](./images/Pure-react-email-component.jpg)
 
-I remembered listening to the Cynical Developer ([James Studdart](http://cynicaldeveloper.com/About)) podcast episode 28, [Html 5 and Flexbox](http://cynicaldeveloper.com/podcast/28/), which reminded me to try out [Flexbox](https://www.w3.org/TR/css-flexbox-1/).
+I remembered listening to the Cynical Developer ([James Studdart](https://cynicaldeveloper.com/About)) podcast episode 28, [Html 5 and Flexbox](https://cynicaldeveloper.com/podcast/28/), which reminded me to try out [Flexbox](https://www.w3.org/TR/css-flexbox-1/).
 
 But I was having a hard time with Flexbox after reading a few articles online before diving into using it.
 
@@ -19,7 +19,7 @@ So I will share a learning path that has worked for me.
 
 ##### Flexbox.io by Wes Bos
 
-As a [visual learner](https://en.wikipedia.org/wiki/Visual_learning), I researched and found [Flexbox.io](https://flexbox.io/) by [Wes Bos](http://wesbos.com/). He has created a tutorial for free for the course and he has used many different scenarios on how one might use Flexbox.
+As a [visual learner](https://en.wikipedia.org/wiki/Visual_learning), I researched and found [Flexbox.io](https://flexbox.io/) by [Wes Bos](https://wesbos.com/). He has created a tutorial for free for the course and he has used many different scenarios on how one might use Flexbox.
 
 I watched all the videos and tried to implement the email component in React using Flexbox. But it was tougher than I had anticipated. The main reason was due to inconsistent naming conventions used.
 
@@ -31,7 +31,7 @@ When you first use Flexbox, the hardest part is to get used to following propert
 
 ##### Having fun with Flexbox Froggy
 
-What has helped me to understand those concepts, I played a game on [Flexbox Froggy](http://flexboxfroggy.com/) brought up by @robert from [Coding Blocks slack](https://www.codingblocks.net/slack/) channel.
+What has helped me to understand those concepts, I played a game on [Flexbox Froggy](https://flexboxfroggy.com/) brought up by @robert from [Coding Blocks slack](https://www.codingblocks.net/slack/) channel.
 
 ![](./images/slack-learning_teaching-@robert.jpg)
 
@@ -51,15 +51,15 @@ After getting more confidence, I watched Wes' course one more time. I was able t
 
 ##### Video Summary
 
-Lastly, I went through a [summary](https://gist.github.com/sw-yx/cdd85db3e92f070d5ba164cf05cfd428) on Flexbox.io courses written by [Shawn](http://swyx.io/) on Github.
+Lastly, I went through a [summary](https://gist.github.com/sw-yx/cdd85db3e92f070d5ba164cf05cfd428) on Flexbox.io courses written by [Shawn](https://swyx.io/) on Github.
 
 ### Takeaway
 
 Here is the summary of Flexbox Learning Path.
 
-1. Listen to the Cynical Developer podcast Episode 28, [Html5 and Flexbox](http://cynicaldeveloper.com/podcast/28/).
+1. Listen to the Cynical Developer podcast Episode 28, [Html5 and Flexbox](https://cynicaldeveloper.com/podcast/28/).
 2. Watch [Flexbox.io](https://flexbox.io/) videos.
-3. Play around with [Froggy ](http://flexboxfroggy.com/)until you can solve all questions without reading instructions.
+3. Play around with [Froggy ](https://flexboxfroggy.com/)until you can solve all questions without reading instructions.
 4. Watch Flexbox.io videos again.
 5. Review the [summary](https://gist.github.com/sw-yx/cdd85db3e92f070d5ba164cf05cfd428).
 

@@ -7,7 +7,7 @@ tags: 'gatsby, webdev, javascript'
 author: Sung M. Kim
 ---
 
-In the [previous post](https://www.slightedgecoder.com/2018/06/02/technology-stack-rundown-of-shanc/), I introduced a tech stack for [SHaNc](http://shanc.netlify.com/).
+In the [previous post](https://www.slightedgecoder.com/2018/06/02/technology-stack-rundown-of-shanc/), I introduced a tech stack for [SHaNc](https://shanc.netlify.com/).
 
 I will go into more details on how to create a Hacker News [GraphQL](https://graphql.org/) data source for [GatsbyJS](https://www.gatsbyjs.org/).
 

@@ -29,7 +29,7 @@ In the beginning, I compiled the DLLs and copied them over to VB6 environment ma
 
 After half day of debugging and tracing, I've finally figured out the problem. When the library was written, there was a dependency on .NET 2.0 DLLs. But someone recompiled the DLLs to .NET framework 4.0 so that they needed to be GACed to .NET 4.0 GAC location (_C:\\Windows\\Microsoft.NET\\assembly_), which is different from .NET 2.0 GAC folder (_C:\\windows\\assembly_).
 
-Then another problem occurred. The DLLs deployed to is an XP machine. It didn't have GACUtil installed on it. What did I do? I naively copied GACUtil.exe to the XP machine and try to GAC 4.0 DLLs there. GACUtil ran but DLLs weren't added to the GAC. After some research, I found out that I had to copy [two additional files](http://blog.janjonas.net/2013-09-15/net4-gacutil_exe-does-nothing-copying-gacutil_exe-machine-server) (gacutil.exe.config, gacutlrc.dll).
+Then another problem occurred. The DLLs deployed to is an XP machine. It didn't have GACUtil installed on it. What did I do? I naively copied GACUtil.exe to the XP machine and try to GAC 4.0 DLLs there. GACUtil ran but DLLs weren't added to the GAC. After some research, I found out that I had to copy [two additional files](https://blog.janjonas.net/2013-09-15/net4-gacutil_exe-does-nothing-copying-gacutil_exe-machine-server) (gacutil.exe.config, gacutlrc.dll).
 
 Now new DLLs were GACed successfully in XP machine and the new VB6 functionality worked fine.
 

@@ -47,7 +47,7 @@ Now I can open all links with a keyboard shortcut, `Ctrl+Alt+F`.
 
 I was able to browse Reddit much faster than I could have had than clicking on each link manually.
 
-There is already a Chrome plugin called [Reddit Enhancement Suite](http://redditenhancementsuite.com/) (RES), which was pointed out by "Aaron C" on Coding Blocks Slack Channel.
+There is already a Chrome plugin called [Reddit Enhancement Suite](https://redditenhancementsuite.com/) (RES), which was pointed out by "Aaron C" on Coding Blocks Slack Channel.
 
 ![](./images/slack_2017-06-25_09-15-15.png)
 

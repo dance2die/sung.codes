@@ -33,7 +33,7 @@ The way I lost weight by lowering my calorie intake by [tracking what I ate](htt
 
 I read **87** books.
 
-This is about **40** books less compared to 2016, but it is because I started reading online Korean novels ([Munpia](http://www.munpia.com/)) heavily and don't track it.
+This is about **40** books less compared to 2016, but it is because I started reading online Korean novels ([Munpia](https://www.munpia.com/)) heavily and don't track it.
 
 I track books read on [GoodReads](https://www.goodreads.com/user/show/25927588-sung-kim) but half of books I read are in Korean, which are not found there so I have my own [GoogleSheet](https://docs.google.com/spreadsheets/d/106UBkKjFFPsHiorV_-eOmmvQce914lLn0flJYSNol2Q/edit?usp=sharing) to track them all.
 

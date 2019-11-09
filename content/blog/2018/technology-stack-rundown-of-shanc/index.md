@@ -7,7 +7,7 @@ tags: webdev
 author: Sung M. Kim
 ---
 
-In the [previous article](https://www.slightedgecoder.com/2018/05/26/introducing-shanc-a-static-hacker-news-clone/), I introduced [SHaNc](http://shanc.netlify.com/), a Static Hacker News clone. I will go into details of tech stack I used and why.
+In the [previous article](https://www.slightedgecoder.com/2018/05/26/introducing-shanc-a-static-hacker-news-clone/), I introduced [SHaNc](https://shanc.netlify.com/), a Static Hacker News clone. I will go into details of tech stack I used and why.
 
 I will talk about following technologies used.
 
@@ -123,7 +123,7 @@ Azure Functions Schedule (runs every 60 minutes on the hour)
 
 ### 👋 Parting Words
 
-In this article, I've shown you tech stack used to build [SHaNc](http://shanc.netlify.com/). Most of the decisions are based on familiarity and ease of use.
+In this article, I've shown you tech stack used to build [SHaNc](https://shanc.netlify.com/). Most of the decisions are based on familiarity and ease of use.
 
 In following posts, I will go more into details _(e.g. How to implement a custom GraphQL data source for GatsbyJS)._
 

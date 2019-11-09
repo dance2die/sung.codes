@@ -49,7 +49,7 @@ _Reference_: [WindowOrWorkerGlobalScope.setInterval()](https://developer.mozilla
 
 To cancel `setInterval`, you need to call \`clearInterval\`, which require the interval ID returned when you called `setInterval`.
 
-The best place to do is right before the component unmounts ([componentWillUnmount](http://componentWillUnmount())).
+The best place to do is right before the component unmounts ([componentWillUnmount](https://componentWillUnmount())).
 
 ``gist:dance2die/da463930aa353665d8026d2225291c00``
 

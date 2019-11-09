@@ -198,7 +198,7 @@ public class IndexIterator
 	}
 }
 
-You can either mock out ITextSearch object instance in a test using a mock or pass an instance using a [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) using a framework like [Ninject](http://www.ninject.org/).
+You can either mock out ITextSearch object instance in a test using a mock or pass an instance using a [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) using a framework like [Ninject](https://www.ninject.org/).
 
 After reaching the final step, `GetIndexAfterFoundWord` is
 

@@ -52,7 +52,7 @@ where `document.querySelectorAll()` returns a [NodeList](https://developer.mozil
 
 ![](./images/vs-qsa.png)
 
-`NodeList` is an [array-like object](http://speakingjs.com/es5/ch18.html#_pitfall_array_like_objects), whose prototype doesn't inherit from [Array.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype). That means, a `NodeList` object instance doesn't have access to methods such as [Array#map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) or [Array#reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+`NodeList` is an [array-like object](https://speakingjs.com/es5/ch18.html#_pitfall_array_like_objects), whose prototype doesn't inherit from [Array.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype). That means, a `NodeList` object instance doesn't have access to methods such as [Array#map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) or [Array#reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
 ![](./images/nodelist.map-fails.png)
 

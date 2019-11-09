@@ -13,7 +13,7 @@ HI Guys,
 
 I had a lot of fun creating landing page today (9/17/2017) using [GitHub Pages](https://pages.github.com/).
 
-I added a custom domain, [sungkim.co](http://www.sungkim.co/) to the page.
+I added a custom domain, [sungkim.co](https://www.sungkim.co/) to the page.
 
  
 

@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 Photo by [Vaughn Wright](https://unsplash.com/photos/okyXCkrhHHg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/around?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) resized to 600x480
 
-My [landing page](http://www.sungkim.co/) background from [Unsplash](https://unsplash.com/) has been loading slowly because it's a fairly big file and was loading from different domain.
+My [landing page](https://www.sungkim.co/) background from [Unsplash](https://unsplash.com/) has been loading slowly because it's a fairly big file and was loading from different domain.
 
 After reading this great article [Using SVG as placeholders — More Image Loading Techniques](https://jmperezperez.com/svg-placeholders/) by José M. Pérez , I decided to show a lightweight SVG background and then load a full background image.
 

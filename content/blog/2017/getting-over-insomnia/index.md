@@ -19,7 +19,7 @@ One day I was thinking why it takes so long to fall asleep before going to bed.�
 
 So for about three weeks, I decided to reflect on my thoughts and worries before physically lying down on my bed. My mind became tired and was able to fall asleep quicker more often.
 
-But then I learned from this post that, writing down on a piece of paper actually clears your mind. Refer to this blog article [How Writing Things Down Can Change Your Life.](http://www.lifehack.org/articles/lifestyle/how-writing-things-down-can-change-your-life.html) So I decided to write down whatever was flowing in my mind in my journal. My mind somehow was cleared and stop thinking/worrying about things I wrote down. Might be a placebo effect but it seemed to work for me.
+But then I learned from this post that, writing down on a piece of paper actually clears your mind. Refer to this blog article [How Writing Things Down Can Change Your Life.](https://www.lifehack.org/articles/lifestyle/how-writing-things-down-can-change-your-life.html) So I decided to write down whatever was flowing in my mind in my journal. My mind somehow was cleared and stop thinking/worrying about things I wrote down. Might be a placebo effect but it seemed to work for me.
 
 (Sorry, I can't share what I wrote before bed since they are a bit too personal...)
 

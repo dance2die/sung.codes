@@ -7,7 +7,7 @@ tags: 'blogentry, bookreview, extremeprogramming, kentbeck'
 author: Sung M. Kim
 ---
 
-_**The Clean Coder**_ by [Robert C. Martin](http://www.cleancoder.com) (aka [Uncle Bob](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)) is a book about how a professional should conduct or what one needs to do to become one. The book consists of 14 chapters.
+_**The Clean Coder**_ by [Robert C. Martin](https://www.cleancoder.com) (aka [Uncle Bob](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)) is a book about how a professional should conduct or what one needs to do to become one. The book consists of 14 chapters.
 
 There are some technical bits here and there but the majority of the content deals with what one needs to do to become a "professional" (the word Uncle Bob stressed a lot in the book as the subtitle of the book is "A Code of Conduct for Professional Developers") developer.
 

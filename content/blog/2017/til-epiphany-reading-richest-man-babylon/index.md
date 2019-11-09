@@ -23,7 +23,7 @@ The **epiphany** was that, _**I could apply the same concept of building wealth 
 
 After coming back from work, I used to always feel exhausted and had low motivation to learn anything new.
 
-It's quite funny that I ran into this podcast [episode #35 - Working Hours](http://cynicaldeveloper.com/podcast/35/) by James Studdart, [the Cynical Developer](http://cynicaldeveloper.com/) (check out this awesome developer podcast) after the epiphany.
+It's quite funny that I ran into this podcast [episode #35 - Working Hours](https://cynicaldeveloper.com/podcast/35/) by James Studdart, [the Cynical Developer](https://cynicaldeveloper.com/) (check out this awesome developer podcast) after the epiphany.
 
 To rephrase James,
 

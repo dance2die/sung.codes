@@ -25,7 +25,7 @@ I will use a simple webpage that displays a list of texts wrapped in a component
 
 Sample Code Output
 
-http://www.youtube.com/watch?v=d5OM-cuPWPo&hd=1
+https://www.youtube.com/watch?v=d5OM-cuPWPo&hd=1
 
 How it works
 
@@ -74,7 +74,7 @@ _using an [object spread syntax](https://developer.mozilla.org/en-US/docs/Web/Ja
 
 Lastly, set the `clicked` state to the updated one.  
 `return { clicked }; // same as return { clicked: clicked };  
-`_Note that if the property name is same as the object key, you can [shorten it](http://www.benmvp.com/learning-es6-enhanced-object-literals/)._  
+`_Note that if the property name is same as the object key, you can [shorten it](https://www.benmvp.com/learning-es6-enhanced-object-literals/)._  
 
 Now the question is, there is no property in the first place to set to in `clicked[i] = !clicked[i]`???
 

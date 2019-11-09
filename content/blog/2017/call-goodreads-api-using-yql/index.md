@@ -23,7 +23,7 @@ Here is the code for the first attempt.
 
 Above code returns following error message.
 
-> XMLHttpRequest cannot load https://www.goodreads.com/shelf/list.xml?key=SECRET_KEY&user_id=25927588&page=1&format=json. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8080' is therefore not allowed access.
+> XMLHttpRequest cannot load https://www.goodreads.com/shelf/list.xml?key=SECRET_KEY&user_id=25927588&page=1&format=json. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https://localhost:8080' is therefore not allowed access.
 
 This GoodReads Developer [forum post](https://www.goodreads.com/topic/show/17893514-cors-access-control-allow-origin) shows that other people are having the same issue.
 

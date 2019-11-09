@@ -11,7 +11,7 @@ I've been in a slump where I feel like I've been doing the same thing 3 times la
 
 I've been having a lack of confidence as a developer trying to keep up with all these new technologies, especially in front-end area where there is a deluge of JavaScript technologies (refer to this [Hackernoon](https://hackernoon.com/) post on "[How it feels to learn JavaScript in 2016](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.t7dg2iuk2)".)
 
-I found this YouTube video by John Sonmez ([Simple Programmer](http://simpleprogrammer.com)) and I'd like to share what I've learned to do.
+I found this YouTube video by John Sonmez ([Simple Programmer](https://simpleprogrammer.com)) and I'd like to share what I've learned to do.
 
 In this video, "[Dealing With Lack Of Confidence As A Developer](https://youtu.be/KmimOJIR0zE)", John talks about what you should do to deal with your lack of confidence and also narrates his experience.
 
