@@ -4,6 +4,8 @@ import { jsx } from "theme-ui"
 import Layout from "../layouts"
 import { Heading, Flex } from "@theme-ui/components"
 
+import HeadshotImage from "#components/HeadshotImage"
+
 const Introduction = () => (
   <Flex
     sx={{
@@ -43,7 +45,12 @@ const Introduction = () => (
   </Flex>
 )
 
-const Bio = () => <Heading>Bio</Heading>
+const Bio = () => (
+  <Heading>
+    Bio
+    <HeadshotImage />
+  </Heading>
+)
 
 export default () => {
   return (
