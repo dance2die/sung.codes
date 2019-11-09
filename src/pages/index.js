@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 
 import Layout from "../layouts"
-import { Heading, Flex } from "@theme-ui/components"
+import { Heading, Flex, Text } from "@theme-ui/components"
 
 export default () => {
   return (
@@ -18,13 +18,13 @@ export default () => {
           sx={{
             fontWeight: "normal",
             fontSize: "5.550em",
-            letterSpacing: "0.5rem",
+            letterSpacing: "0.4rem",
           }}
         >
-          {"Hi, I'm "}
+          <span className="normal">{"Hi, I'm "}</span>
           <span>
             <b>Sung M. Kim</b>
-            {" a.k.a. "}
+            <span className="normal">{" a.k.a. "}</span>
           </span>
           <b>dance2die</b>
         </Heading>
