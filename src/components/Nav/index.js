@@ -8,8 +8,8 @@ import { GitHub, Twitter } from "#components/social"
 const headingStyle = { fontSize: [3, 4, 6, 6] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
 const linkStyle = {
-  marginLeft: [1, 2, 4, 4],
-  fontSize: [1, 1, 2, 2],
+  marginLeft: [1, "calc(8px + 3.3vw)", 5, 5],
+  fontSize: [1, 1, 4, 4],
 }
 
 const Title = () => (
@@ -33,7 +33,13 @@ const Title = () => (
 )
 
 const Links = () => (
-  <Flex>
+  <Flex
+    sx={{
+      width: "100%",
+      maxWidth: ["30vw", "30vw", "35vw", "33%"],
+      justifyContent: "space-around",
+    }}
+  >
     <Box sx={linkStyle}>
       <Link
         to="/blog"

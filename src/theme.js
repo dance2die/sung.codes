@@ -26,8 +26,11 @@ export const theme = {
   // breakpoints: ["40em", "52em", "64em"],
   breakpoints: ["375px", "768px", "1024px"],
 
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  // prettier-ignore
+  //          0   1   2   3   4   5   6    7    8
+  space:     [0,  4,  8,  16, 32, 64, 128, 256, 512],
+  // prettier-ignore
+  fontSizes: [12, 14, 16, 20, 24, 32, 48,  64,  96],
   fontWeights: {
     body: 400,
     heading: 700,
