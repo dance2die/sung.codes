@@ -1,11 +1,20 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-
-import Layout from "../layouts"
 import { Heading, Flex, Text, Box } from "@theme-ui/components"
 
+import Layout from "#layouts"
 import HeadshotImage from "#components/HeadshotImage"
-import ExternalLink from "#utils/ExternalLink"
+import ExternalLink from "#components/Link/ExternalLink"
+import TextLink from "#components/Link/TextLink"
+import styled from "@emotion/styled"
+
+const InLink = styled(TextLink)(({ theme }) => ({
+  color: theme.colors.primary,
+}))
+
+const OutLink = styled(ExternalLink)(({ theme }) => ({
+  color: theme.colors.primary,
+}))
 
 const Introduction = () => (
   <Flex
@@ -68,8 +77,17 @@ const Bio = () => (
       }}
     >
       <Text as="p">I am a software engineer from New York City,</Text>
-      <Text as="p">Sharing stuff on my blog, moderating on DEV</Text>
-      <Text as="p">&amp; translating All Contributors in Korean.</Text>
+      <Text as="p">
+        Sharing stuff on my <InLink to="/blog">blog</InLink>, moderating on{" "}
+        <OutLink to="https://dev.to/dance2die">DEV</OutLink>
+      </Text>
+      <Text as="p">
+        &amp; translating{" "}
+        <OutLink to="https://allcontributors.org/">
+          All Contributors Project
+        </OutLink>{" "}
+        in Korean.
+      </Text>
     </Box>
   </Flex>
 )
