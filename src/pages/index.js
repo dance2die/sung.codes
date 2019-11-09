@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Heading, Flex, Text, Box } from "@theme-ui/components"
+import styled from "@emotion/styled"
 
+import SEO from "#components/seo"
 import Layout from "#layouts"
 import HeadshotImage from "#components/HeadshotImage"
 import ExternalLink from "#components/Link/ExternalLink"
 import TextLink from "#components/Link/TextLink"
-import styled from "@emotion/styled"
 
 const InLink = styled(TextLink)(({ theme }) => ({
   color: theme.colors.primary,
@@ -97,6 +98,7 @@ const Bio = () => (
 export default () => {
   return (
     <Layout>
+      <SEO />
       <Introduction />
       <Bio />
     </Layout>

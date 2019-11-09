@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import SchemaOrg from "./schema-org"
 import config from "../../../config/website"
+import defaultMetaImage from "../../../static/images/logo.jpg"
 
 function SEO({
   siteMetadata: seo,
@@ -22,7 +23,7 @@ function SEO({
   description = postMeta.plainTextDescription ||
     postMeta.description ||
     seo.description,
-  image = `${seo.canonicalUrl}${metaImage}`,
+  image = `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
   url = postMeta.slug
     ? `${seo.canonicalUrl}${path.sep}${postMeta.slug}`
     : seo.canonicalUrl,
