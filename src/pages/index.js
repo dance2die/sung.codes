@@ -13,27 +13,30 @@ const Introduction = () => (
 
       height: ["auto", "60vh"],
       padding: [6, "0"],
-      margin: [5, "0 auto 30vh"],
+      margin: [
+        "50px auto 100px",
+        "50px auto 100px",
+        "0 auto 30vh",
+        "0 auto 30vh",
+      ],
     }}
   >
     <Heading
       sx={{
         fontWeight: "normal",
-        fontSize: ["22vw", "15vw", "5.550em", "5.550em"],
+        fontSize: ["20vw", "15vw", "5.550em", "5.550em"],
         letterSpacing: "0.4rem",
       }}
     >
       <span className="normal">{"Hi, I'm "}</span>
-      <span>
-        <b>Sung M. Kim</b>
-        <span
-          sx={{
-            textDecoration: "line-through",
-            textDecorationColor: "gold",
-          }}
-        >
-          {" a.k.a. "}
-        </span>
+      <b>Sung M. Kim</b>
+      <span
+        sx={{
+          textDecoration: "line-through",
+          textDecorationColor: "gold",
+        }}
+      >
+        {" a.k.a. "}
       </span>
       <b>dance2die</b>
     </Heading>
