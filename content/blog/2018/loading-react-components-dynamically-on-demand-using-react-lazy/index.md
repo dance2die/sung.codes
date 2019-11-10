@@ -139,14 +139,17 @@ I tried not to make changes in dynamically loaded components not to confuse if y
 
 ## 🛠 Resources
 
-Case 1 – Loading React Components Dynamically  
-\- [CodeSandbox](https://codesandbox.io/s/k5m609qn3o)  
-\- [Demo](https://reactlazy1.netlify.com/)
+Case 1 – Loading React Components Dynamically
 
-Case 2 – Handling Different Data Types  
-\- [CodeSandbox](https://codesandbox.io/s/0pkzrwk79l)  
-\- [Demo](https://reactlazy2.netlify.com/)
+- [CodeSandbox](https://codesandbox.io/s/k5m609qn3o)
+- [Demo](https://reactlazy1.netlify.com/)
 
-Case 3 – Loading Components on Demand  
-\- [CodeSandbox](https://codesandbox.io/s/qv743wwrr4)  
-\- [Demo](https://reactlazy3.netlify.com/)
+Case 2 – Handling Different Data Types
+
+- [CodeSandbox](https://codesandbox.io/s/0pkzrwk79l)
+- [Demo](https://reactlazy2.netlify.com/)
+
+Case 3 – Loading Components on Demand
+
+- [CodeSandbox](https://codesandbox.io/s/qv743wwrr4)
+- [Demo](https://reactlazy3.netlify.com/)
