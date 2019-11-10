@@ -1,11 +1,15 @@
 ---
 title: The Great Gatsby Migration
 date: "2019-11-10"
-banner: ./images/featured-image.jpg
 tags: gatsby, wordpress, migration
 author: Sung M. Kim
 published: true
+mindmap: https://www.mindmeister.com/1364191205
+banner: ./images/featured-image.jpg
+bannerCredit: "Photo by [Ray Hennessy](https://unsplash.com/@rayhennessy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/migration?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
+
+_Photo by [Ray Hennessy](https://unsplash.com/@rayhennessy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/migration?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 I finished migrating a WordPress blog, SlightEdgeCoder.com to Gatsby yesterday (2019-11-10).
 
@@ -13,27 +17,26 @@ I will provide a "rough" list to describe what's done, as there is no one specif
 
 For a specific way to create a Gatsby blog, I will add links in the Resources section.
 
-# TL;DR of Rough List
-
-# Why migrate?
+## Why migrate?
 
 Because
 
-1. Pricing - I couldn't justify \$170/year cost as the site isn't for profit.
-
-1. Slowness - As the site was running on a shared plan, the site was slow and a myriad of plugins made it even slower.
-1. The domain name sucked
+1. **Pricing**
+   - I couldn't justify \$170/year cost as the site isn't for profit.
+1. **Slowness**
+   - As the site was running on a shared plan, the site was slow and a myriad of plugins made it even slower.
+1. **The domain name sucked**
    - SlightEdgeCoder.com was purchased years ago as it was cheap and not taken, and also based off on one of my favorite books, The Slight Edge.
    - But it's really a bad name, as it's hard to remember, type, long, and not memorable.
    - Sung.codes is short, memorable, and describes the site purpose.
 
-# Why Gatsby?
+## Why Gatsby?
 
 I've been working with React and that's what I know. There are other SSG or SSR frameworks, but the documentations and ecosystem made me choose it as the migration needed happen quickly. (I started migration after the site went offline).
 
-# Rough list
+## Rough list
 
-## Export WordPress file
+### Export WordPress file
 
 Follow steps here up to Move content from one [WordPress site to another -> Export from Site A][export wordpress]
 
@@ -43,7 +46,7 @@ I've tried [Jekyll Exporter][jekyll exporter] but it exported associated images 
 
 _I found it didn't co-located related files (content files and media) thus decided not to use this approach._
 
-## Export WordPress to Markdown
+### Export WordPress to Markdown
 
 I used [lonekorean/wordpress-export-to-markdown][lonekorean/wordpress-export-to-markdown] to convert exported WordPress file from previous step into Markdown files and download media thereof.
 
@@ -53,7 +56,7 @@ It's a node application with useful flags for options such as exporting grouped 
 
 Note that it won't import images in the body unless [--contentimages][--contentimages] flag is set.
 
-## Optional - Add more frontmatters
+### Optional - Add more frontmatters
 
 I had all content imported on [DEV][dev]. DEV has a nice feature to export your content as JSON.
 
@@ -65,7 +68,7 @@ Previous step exports markdown but many [frontmatters][frontmatters] (such as ta
 
 So I created a small node script, [dance2die/fix-sungcodes-markdown-frontmatters][dance2die/fix-sungcodes-markdown-frontmatters] to merge missing frontmatters from DEV json file.
 
-## Create or branch existing Gatsby site
+### Create or branch existing Gatsby site
 
 Gatsby requires some learning curve so I will refer to you to the [Gatsby tutorial][gatsby tutorial].
 
@@ -78,7 +81,7 @@ After familiarizing with Gatsby, you can pursue further with following articles 
 
 Or, you can do what I did, standing on the shoulders of giants
 
-## Optional - Following Kent C. Dodds blog source
+### Optional - Following Kent C. Dodds blog source
 
 I knew that Kent C. Dodds (KCD, hereafter) migrated from Medium to Gatsby recently (and took very small part finding issues/typos during migration).
 
@@ -97,7 +100,7 @@ _References_:
 I've taken most of his configuration and SEO as well as blog post banner display codes.
 Doing so made it easy to provide OpenGraph data for SEO and get the consistent configuration data throughout the whole site.
 
-## Optional - Redirect traffic
+### Optional - Redirect traffic
 
 I decided to abandon SlightEdgeCoder.com in favor of sung.codes.  
 [Firat Özcan][firat özcan] helped me learn a way to 301 redirect easily with [CloudFlare][cloudflare], which is what I did.
@@ -106,19 +109,21 @@ _Reference_: [Configuring URL forwarding or redirects with Cloudflare Page Rules
 
 If you need to keep your existing URL, **rewrite** your URL, instead of redirecting.
 
-# To Dos
+## To Dos
 
-There are still a lot of styling [issues][sung.codes issues] for blog posts.
+1. There are still a lot of styling [issues][sung.codes issues] for blog posts.
 
-To report an issue, I added a tweet link per post, but will make it work for GitHub (after creating a template).
+1. To report an issue, I added a tweet link per post, but will make it work for GitHub (after creating a template).
 
-Also the biggest issue is a lack of CMS (Current I've created this blog markdown manually.)
+1. Also the biggest issue is a lack of CMS (Current I've created this blog markdown manually.)
 
-- I decided to go with NetlifyCMS because of its `git` based workflow, and the site being hosted on [Netlify][netlify].
+   - I decided to go with NetlifyCMS because of its `git` based workflow, and the site being hosted on [Netlify][netlify].
 
-# Misc.
+1. RSS feed is not yet implemented. Need a manual copy & paste to share on DEV.
 
-## Issues
+## Misc.
+
+### Issues
 
 Here are the some issues that I've encountered.
 
@@ -138,20 +143,20 @@ Here are the some issues that I've encountered.
    - But whenever I write my blogs, I store them on OneDrive, so able to recover'em all (but one by one).
 
 1. Might be none issue.
-   - I've exported markdown in "content/<year>/blog" structure while KCD had a flat "/content/blog".
+   - I've exported markdown in "content/`<year>`/blog" structure while KCD had a flat "/content/blog".
    - But it wasn't much of an issue because slug is generated dynamically within [gatsby-node.js](https://github.com/dance2die/sung.codes/blob/master/gatsby-node.js#L28).
 
-## Theme
+### Theme
 
 To provide a consistent UI, I used [Theme-UI][theme-ui] as gatsby plugin, [gatsby-plugin-theme-ui][gatsby-plugin-theme-ui].
 
-## Gist workaround
+### Gist workaround
 
 "gists" are shown as raw link, thus I used [gatsby-remark-embed-gist][gatsby-remark-embed-gist] but [hacked][hacked] by embedding gist CSS for blog post component.
 
 `gist:dance2die/23777b26f792f696237f03b9cbf6e050`
 
-# Resources
+## Resources
 
 - [How to move from one WordPress site to another?][export wordpress]:
 - [Jekyll Exporter][jekyll exporter]
@@ -209,3 +214,5 @@ To provide a consistent UI, I used [Theme-UI][theme-ui] as gatsby plugin, [gatsb
 [theme-ui]: https://theme-ui.com/
 [gatsby-remark-embed-gist]: https://www.gatsbyjs.org/packages/gatsby-remark-embed-gist/
 [hacked]: https://github.com/dance2die/sung.codes/blob/master/src/templates/post.js#L55
+[ray hennessy]: https://unsplash.com/@rayhennessy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+[unsplash]: https://unsplash.com/s/photos/migration?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
