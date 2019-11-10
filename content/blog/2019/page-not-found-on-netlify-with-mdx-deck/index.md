@@ -13,7 +13,7 @@ You might run into the following error after deploying an [MDX-Deck](https://git
 
 _Please refer to my friend, [Dave Follett](https://twitter.com/davefollett)'s post on_ [_how to deploy to Netlify_](https://davefollett.io/2019/05/20/mdx-deck-deploy-to-netlify/)_._
 
-_If you are having trouble with React Router, check out_ [_Page Not Found on Netlify with React Router_](https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/)_, instead._
+_If you are having trouble with React Router, check out_ [_Page Not Found on Netlify with React Router_](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/)_, instead._
 
 > **Page Not Found**  
 > Looks like you’ve followed a broken link or entered a URL that doesn’t exist on this site.
@@ -40,7 +40,7 @@ _Netlify TOML file contains an instruction for Netlify how to build & deploy you
 
 `[build]` contains instruction on how to deploy your site (found in Dave's post above).
 
-`[[redirect]]` has the same instruction that [you would have done for React Router](https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/) but in [TOML](https://github.com/toml-lang/toml) format.  
+`[[redirect]]` has the same instruction that [you would have done for React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/) but in [TOML](https://github.com/toml-lang/toml) format.  
 You are instructing Netlify to redirect all requests to `/index.html`, from which client-side router takes over.
 
 Now when you go to any of following links, you won't be faced with "Page Not Found" error page.

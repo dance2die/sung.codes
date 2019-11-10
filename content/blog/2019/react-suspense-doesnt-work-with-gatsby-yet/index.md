@@ -48,7 +48,7 @@ So to remove `Suspense`, get rid of `React.lazy` and replace it with a regular [
 
 We need to keep the components loaded in a state, so let's use [useState](https://reactjs.org/docs/hooks-reference.html#usestate) and load it in the [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) hook.
 
-_If you want to use Class Components, refer to case #1 of my other post,_ [_Loading React Components Dynamically on Demand_](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case1), which was written when Hooks weren't available
+_If you want to use Class Components, refer to case #1 of my other post,_ [_Loading React Components Dynamically on Demand_](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/#case1), which was written when Hooks weren't available
 
 ``gist:dance2die/93bb446d110045552177025bf9f9412d``
 
@@ -70,6 +70,6 @@ I am going to keep the "fix" part short as it's already written about in the pre
 
 If you have a trouble with converting it into using Function Components with hooks, let me know~
 
-- [Loading React Components Dynamically on Demand](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/)
-- [Loading React Components Dynamically on Demand using React.lazy](https://www.slightedgecoder.com/2018/10/28/loading-react-components-dynamically-on-demand-using-react-lazy/)
+- [Loading React Components Dynamically on Demand](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/)
+- [Loading React Components Dynamically on Demand using React.lazy](https://sung.codes/blog/2018/10/28/loading-react-components-dynamically-on-demand-using-react-lazy/)
 

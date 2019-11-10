@@ -11,7 +11,7 @@ _Photo by [Zoltan Tasi](https://unsplash.com/photos/6vEqcR8Icbs?utm_source=unspl
 
 I had a chance to update a legacy ASP.NET MVC website using AngularJS (yes, the first version) to use Webpack & Babel 7 (which used to import AngularJS files using script tags).
 
-Previous post [Setting up an ES6 Environment for ASP.NET MVC 5](https://www.slightedgecoder.com/2017/05/22/setting-es6-environment-asp-net-mvc-5/) was a bit outdated as it was using older version of babel and webpack, so I decided write more concise post to get started with the newest libraries.
+Previous post [Setting up an ES6 Environment for ASP.NET MVC 5](https://sung.codes/blog/2017/05/22/setting-es6-environment-asp-net-mvc-5/) was a bit outdated as it was using older version of babel and webpack, so I decided write more concise post to get started with the newest libraries.
 
 As I have moved onto React, I will show you how to set up React environment for ASP.NET MVC 5.
 

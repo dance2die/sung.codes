@@ -11,7 +11,7 @@ author: Sung M. Kim
 
 Following post uses Babel 7 & Webpack 4.
 
-https://www.slightedgecoder.com/2018/10/13/setting-up-a-react-environment-for-asp-net-mvc/
+https://sung.codes/blog/2018/10/13/setting-up-a-react-environment-for-asp-net-mvc/
 
 ---
 
@@ -21,7 +21,7 @@ Unfortunately, all the articles I've run into dealt with ASP.NET Core and had to
 
 This article with show you how to set up ASP.NET MVC 5 to enable ES6 javascript development using [Webpack](https://webpack.github.io/) and [Babel](https://babeljs.io/).
 
-**UPDATE**: 6/13/2018 [Works for Webpack 4](https://www.slightedgecoder.com/2017/05/22/setting-es6-environment-asp-net-mvc-5/#comment-3943320423) - Thank you, [Brent Labasan](https://disqus.com/by/brentlabasan/)😁
+**UPDATE**: 6/13/2018 [Works for Webpack 4](https://sung.codes/blog/2017/05/22/setting-es6-environment-asp-net-mvc-5/#comment-3943320423) - Thank you, [Brent Labasan](https://disqus.com/by/brentlabasan/)😁
 
 **UPDATE**: 1/13/2018 Added `npm-watch` to make the refreshing easier (Thank you, [digiface](https://disqus.com/by/disqus_IDFdu7rgFV/) & [Frank Nguyen](https://disqus.com/by/disqus_udhcEu1mWd/) for the feedback 👍)
 
@@ -87,7 +87,7 @@ Now let's include `package.json` in VS Solution Explorer. Go to "Solution Explor
 
 Right click on "package.json" and include it in the project.
 
-![](./images/Show-all-files.jpg)![](https://www.slightedgecoder.com/wp-content/uploads/2017/05/include-in-project.jpg)
+![](./images/Show-all-files.jpg)![](https://sung.codes/blog/wp-content/uploads/2017/05/include-in-project.jpg)
 
 If you open up "package.json", you can see that "devDependencies" section has references to Babel and Webpack.
 

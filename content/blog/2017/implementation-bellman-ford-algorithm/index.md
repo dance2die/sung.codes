@@ -7,7 +7,7 @@ tags: 'blogentry, programming, bellmanford, c'
 author: Sung M. Kim
 ---
 
-I've already [implemented Dijkstra's algorithm](https://www.slightedgecoder.com/2017/04/20/my-journey-on-implementing-dijkstras-algorithm/) and was looking for another way to find the shortest path between two nodes in a graph. I found a simpler algorithm based on relaxation called "Bellman-Ford" algorithm.
+I've already [implemented Dijkstra's algorithm](https://sung.codes/blog/2017/04/20/my-journey-on-implementing-dijkstras-algorithm/) and was looking for another way to find the shortest path between two nodes in a graph. I found a simpler algorithm based on relaxation called "Bellman-Ford" algorithm.
 
 I just implemented the algorithm in C# and would like to share it.
 

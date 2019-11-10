@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 Featured Image - "[Numbers](https://www.flickr.com/photos/pagedooley/33012371924/in/photolist-Sic33h-axZ5BR-fmHjf2-ftyZh-cdkHVG-bVYosr-cdkHUd-bVYomR-cdkJaU-cdkJ9W-bVYooZ-cdkJ3L-bVYoo4-cdkJ33-cdkJ4A-cdkHWU-7XEruh-6aoKMB-58TTn-7pMfPC-5BCf-6cJTod-7mVfDM-bVYopD-DNnYH-7Dpz8d-jWGuhC-7ixpfM-pnNLmy-9A6rSx-pEgSWu-pnMNrB-oHqqL6-eoTrMt-6Smdj9-fYfgZq-6358Sy-a1DxLo-9mqFmA-m3CPo-mTjBQ-6q7D14-5pf3JR-9v4CfC-buw58e-qJyamo-9tM3Lx-9tQ1qE-iQhVK-kwYL7)" by [Kevin Dooley](https://www.flickr.com/photos/pagedooley/ "Go to Kevin Dooley's photostream"), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
-On 3/11/2017, I wrote a blog entry [Parsing a Number into Digits](https://www.slightedgecoder.com/2017/03/11/parsing-number-digits/). While it's not hard to implement the method to parse a number into digits, I wanted a simpler way for quick tests.
+On 3/11/2017, I wrote a blog entry [Parsing a Number into Digits](https://sung.codes/blog/2017/03/11/parsing-number-digits/). While it's not hard to implement the method to parse a number into digits, I wanted a simpler way for quick tests.
 
 After solving a problem, [Recursive Digit Sum](https://www.hackerrank.com/challenges/recursive-digit-sum), I fiddled around with a few different ways.
 

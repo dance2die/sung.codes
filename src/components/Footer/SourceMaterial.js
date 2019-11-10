@@ -5,7 +5,7 @@ function SourceMaterial() {
   return (
     <p>
       Originally published on{" "}
-      <ExternalLink url={"https://www.slightedgecoder.com/"}>
+      <ExternalLink url={"https://sung.codes/blog/"}>
         SlightEdgeCoder.com
       </ExternalLink>
     </p>

@@ -10,7 +10,7 @@ _Photo by _[_freestocks.org_](https://unsplash.com/photos/CH6-cfiY2Yo?utm_sourc
 
  UPDATE: 2019-02-12 
 
-This post would not work any more starting v16.8.0 as [pointed out](https://www.slightedgecoder.com/2018/11/08/emulate-forceupdate-with-react-hooks/?preview_id=1931&preview_nonce=5e2a9a7f1b&preview=true&_thumbnail_id=1949#comment-4333911452) by **[Dimitar Nestorov](https://disqus.com/by/dimitarnestorov/)** in the comment section.
+This post would not work any more starting v16.8.0 as [pointed out](https://sung.codes/blog/2018/11/08/emulate-forceupdate-with-react-hooks/?preview_id=1931&preview_nonce=5e2a9a7f1b&preview=true&_thumbnail_id=1949#comment-4333911452) by **[Dimitar Nestorov](https://disqus.com/by/dimitarnestorov/)** in the comment section.
 
 The official React Documentation [Is there something like forceUpdate?](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-forceupdate) discourages use of `forceUpdate`.
 

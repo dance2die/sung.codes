@@ -7,11 +7,11 @@ tags: 'blogentry, programming, application, apply'
 author: Sung M. Kim
 ---
 
-On December 25th of 2016, I wrote about [AWESOMENESS OF % (MODULO OPERATOR)](https://www.slightedgecoder.com/2016/12/25/awesomeness-modulo-operator/). I was able to apply the knowledge I learned to solve a [HackerRank](https://hackerrank.com/) warm-up question, [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation).
+On December 25th of 2016, I wrote about [AWESOMENESS OF % (MODULO OPERATOR)](https://sung.codes/blog/2016/12/25/awesomeness-modulo-operator/). I was able to apply the knowledge I learned to solve a [HackerRank](https://hackerrank.com/) warm-up question, [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation).
 
 The gist of the question is to rotate an array multiple times, given the data from console and then print the output.
 
-It was exactly the situation where I can apply the concept I wrote about in [AWESOMENESS OF % (MODULO OPERATOR)](https://www.slightedgecoder.com/2016/12/25/awesomeness-modulo-operator/).
+It was exactly the situation where I can apply the concept I wrote about in [AWESOMENESS OF % (MODULO OPERATOR)](https://sung.codes/blog/2016/12/25/awesomeness-modulo-operator/).
 
 I tried to solve it by rotating it the number of times entered by the user, but the tests were failing for very large input data. Here is the initial implementation.
 

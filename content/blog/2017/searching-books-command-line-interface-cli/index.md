@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 Featured Image Credit -Photo by [Redd Angelo](https://unsplash.com/photos/9o8YdYGTT64?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-I'd like to show you a Node CLI (Command Line Interface), [Google-Book-Shell](https://www.npmjs.com/package/google-book-shell) I created from a [throwaway code](https://www.slightedgecoder.com/2017/09/05/throwaway-code-dont-recycle-throw-away/).
+I'd like to show you a Node CLI (Command Line Interface), [Google-Book-Shell](https://www.npmjs.com/package/google-book-shell) I created from a [throwaway code](https://sung.codes/blog/2017/09/05/throwaway-code-dont-recycle-throw-away/).
 
 Here are the three things you can do with it.
 

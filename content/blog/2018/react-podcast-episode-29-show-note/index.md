@@ -2,10 +2,11 @@
 title: >-
   React Podcast Episode 29 -  'Don't Rewrite Your App for Hooks and Suspense'
   with Jared Palmer
-date: '2018-11-21'
-published_at: '2018-11-22T02:09:06.000Z'
-tags: 'react, shownote, podcast'
+date: "2018-11-21"
+published_at: "2018-11-22T02:09:06.000Z"
+tags: "react, shownote, podcast"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by _[_Kai Pilger_](https://unsplash.com/photos/1k3vsv7iIIc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -151,7 +152,7 @@ This combination also solves [waterfall issue](https://www.quora.com/What-is-wat
 
 Siblings of a single Suspense run in parallel.
 
-``gist:dance2die/a2ea846b6e5e89e157e6655854362993``
+`gist:dance2die/a2ea846b6e5e89e157e6655854362993`
 
 <a href="https://gist.github.com/dance2die/a2ea846b6e5e89e157e6655854362993">View this gist on GitHub</a>
 
@@ -248,4 +249,3 @@ Jared has stressed this 4 times at
 - [Chantastic](https://twitter.com/chantastic)
 - [Jared Palmer](https://palmer.net/)
 - [fresh-concurrent-react](https://github.com/sw-yx/fresh-concurrent-react) - Up-to-date Concurrent React documentation by [Swyx](https://twitter.com/swyx). (Not an official documentation but Swyx keeps it "fresh" 🍅.
-

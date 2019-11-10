@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 Featured Image - "[Trees](https://www.flickr.com/photos/rbh/14431865903/in/photolist-nZi5Wc-iPaKKA-5vsbCi-7T27xW-qwXZNW-cA254b-v7KBR-cGHLy5-eYcLS9-5nwc5b-7ZddkJ-S4PqiP-rwhx6n-b2x1Fz-k9T9qu-7WdxCi-5v6DBH-69THJB-9a83Tc-qLj55Z-dR7NWS-9YF3Su-bUurhS-9ierJ3-b2x5TV-howvfr-4rawjf-9xwTPZ-rkhaxS-5DC811-7eKKLj-RLksUu-9qrnoZ-9B2Lor-doRPFa-pebv7p-2193x-m2Afgp-9GU4BC-bVnUAS-e712bc-cXskaJ-8hhqUP-RPEM3-hBt2TR-njFjSY-d8udC9-9tXNXQ-h17NPK-oZHbQr)" by [RichardBH](https://www.flickr.com/photos/rbh/), used under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
-In the previous article, [Depth-First Tree Traversal](https://www.slightedgecoder.com/2017/03/26/depth-first-tree-traversal/), I wrote about how to traverse trees with Depth-first approaches;In-Order, Pre-Order, and Post-Order traversals.
+In the previous article, [Depth-First Tree Traversal](https://sung.codes/blog/2017/03/26/depth-first-tree-traversal/), I wrote about how to traverse trees with Depth-first approaches;In-Order, Pre-Order, and Post-Order traversals.
 
 In this article, I will talk about the algorithm and an implementation for a breadth-first version.
 

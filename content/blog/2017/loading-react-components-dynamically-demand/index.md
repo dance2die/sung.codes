@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 ### **UPDATE** - October 28, 2018
 
-Refer to the updated post, [Loading React Components Dynamically on Demand using React.lazy](https://www.slightedgecoder.com/2018/10/28/loading-react-components-dynamically-on-demand-using-react-lazy/) if you are using `v16.6.0+`.
+Refer to the updated post, [Loading React Components Dynamically on Demand using React.lazy](https://sung.codes/blog/2018/10/28/loading-react-components-dynamically-on-demand-using-react-lazy/) if you are using `v16.6.0+`.
 
 * * *
 

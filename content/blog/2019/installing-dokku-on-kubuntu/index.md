@@ -60,7 +60,7 @@ Emphasis on "64-bit" because
 
 You can create a VM manually or using a Wizard ("Quick Create") but as it's a prerequisite, let's create it using a Wizard. (At work, I will delegate this task to a ops manager as I am not so familiar with this frankly 😅).
 
-![01-Hyper-V-create-options-1](https://www.slightedgecoder.com/wp-content/uploads/2019/09/01-Hyper-V-create-options-1-1024x439.jpg)
+![01-Hyper-V-create-options-1](https://sung.codes/blog/wp-content/uploads/2019/09/01-Hyper-V-create-options-1-1024x439.jpg)
 
 This pops up a modal and select the Kubuntu ISO downloaded from the previous step. (If you are familiar with regular Ubuntu, you don't have to download Kubuntu at all...).
 
@@ -68,25 +68,25 @@ This pops up a modal and select the Kubuntu ISO downloaded from the previous ste
 
 Lastly "Create Virtual Machine" and you are done.
 
-![02-Hyper-V-setup](https://www.slightedgecoder.com/wp-content/uploads/2019/09/02-Hyper-V-setup-1024x604.gif)
+![02-Hyper-V-setup](https://sung.codes/blog/wp-content/uploads/2019/09/02-Hyper-V-setup-1024x604.gif)
 
 By default the VM name is"New Virtual Machine". (I renamed it to "Kubuntu 18.04 LTS x64 for Dokku" by right clicking on it and choose "rename").
 
-![rename VM](https://www.slightedgecoder.com/wp-content/uploads/2019/09/03-Hyper-V-rename-1024x736.jpg)
+![rename VM](https://sung.codes/blog/wp-content/uploads/2019/09/03-Hyper-V-rename-1024x736.jpg)
 
 You'd need to start the VM as it's off by default as well.
 
-![Connect and start VM](https://www.slightedgecoder.com/wp-content/uploads/2019/09/04-Hyper-V-start.jpg)
+![Connect and start VM](https://sung.codes/blog/wp-content/uploads/2019/09/04-Hyper-V-start.jpg)
 
 #### ◼ Install Kubuntu
 
 On connecting to VM, click on "start" to fire up a Kubuntu installation wizard (by default, the VM is in "Off" state as shown in the previous image).
 
-![Connect and start](https://www.slightedgecoder.com/wp-content/uploads/2019/09/05-Hyper-V-connect-and-start-1024x539.gif)
+![Connect and start](https://sung.codes/blog/wp-content/uploads/2019/09/05-Hyper-V-connect-and-start-1024x539.gif)
 
 Click on "Installation Kubuntu" to start the process.
 
-![Install Kubuntu](https://www.slightedgecoder.com/wp-content/uploads/2019/09/06-Install-Kubuntu-1024x854.jpg)
+![Install Kubuntu](https://sung.codes/blog/wp-content/uploads/2019/09/06-Install-Kubuntu-1024x854.jpg)
 
 Set up the language, keyboard, timezone, etc and the user account (clicking next, next, next...).
 
@@ -96,7 +96,7 @@ _It might take a while, so let's go and grab a cup of coffee ☕ and come back..
 
 After installation has finished, restart Kubuntu (not the VM).
 
-![Restart Kubuntu](https://www.slightedgecoder.com/wp-content/uploads/2019/09/07-restart-Kubuntu.jpg)
+![Restart Kubuntu](https://sung.codes/blog/wp-content/uploads/2019/09/07-restart-Kubuntu.jpg)
 
 Lastly, log into Kubuntu and start a console.
 
@@ -117,7 +117,7 @@ _The instruction is straight-forward (other than using sudo) I will leave out th
 
 After you are done with the last instruction, `sudo dokku plugin:install-dependencies --core`, you will be greeted with a message whether to enable web-based configuration. Click "yes".
 
-![Enable web-based configuration](https://www.slightedgecoder.com/wp-content/uploads/2019/09/09-Enable-Web-Config.jpg)
+![Enable web-based configuration](https://sung.codes/blog/wp-content/uploads/2019/09/09-Enable-Web-Config.jpg)
 
 The last part of the instruction, `# go to your server's IP and follow the web installer` shows to open a web page to continue the installation.
 
@@ -127,17 +127,17 @@ Fire up FireFox and go to `https://<<your host name>`.
 
 In my case, `hostname` was set up as `dokku`, so `https://dokku` shows the following set up page.
 
-![Dokku Web Installation](https://www.slightedgecoder.com/wp-content/uploads/2019/09/10-web-installation-1024x854.jpg)
+![Dokku Web Installation](https://sung.codes/blog/wp-content/uploads/2019/09/10-web-installation-1024x854.jpg)
 
 I am not well-versed with Linux administration so I went and generated one by following Digital Ocean's article, "[How to Set Up SSH Keys on Ubuntu 18.04 - Step 1 — Create the RSA Key Pair](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804#step-1-%E2%80%94-create-the-rsa-key-pair)".
 
 Open the public key (I used \`Kate\`, which is like "notepad" on Windows) by typing `kate ~/.ssh/id_rsa.pub` (".pub" for "public") and copy the public key.
 
-![Copy public SSH key from Kate](https://www.slightedgecoder.com/wp-content/uploads/2019/09/11-Copy-SSH-Public-key-1024x473.jpg)
+![Copy public SSH key from Kate](https://sung.codes/blog/wp-content/uploads/2019/09/11-Copy-SSH-Public-key-1024x473.jpg)
 
 Paste the public key on the web configuration.
 
-![Paste SSH public key](https://www.slightedgecoder.com/wp-content/uploads/2019/09/12-Paste-SSH-Public-Key-1024x552.jpg)
+![Paste SSH public key](https://sung.codes/blog/wp-content/uploads/2019/09/12-Paste-SSH-Public-Key-1024x552.jpg)
 
 Set the host name to the one returned by `hostname` command from Konsole.
 
@@ -147,7 +147,7 @@ I will leave the "Use virtualhost naming for apps" turned **off** as turning it 
 
 _Check out the output when checked off. (leave this off though)_
 
-![Use virtualhost name](https://www.slightedgecoder.com/wp-content/uploads/2019/09/14-Use-virtual-naming-1024x655.jpg)
+![Use virtualhost name](https://sung.codes/blog/wp-content/uploads/2019/09/14-Use-virtual-naming-1024x655.jpg)
 
 When you click "Finish Setup", you will be directed to "[Deploying to Dokku](https://dokku.viewdocs.io/dokku~v0.18.3/deployment/application-deployment/)" page.
 
@@ -171,7 +171,7 @@ _You will be asked to enter the root password._
 
 Then a message will be shown that an app has been created successfully.
 
-![Dokku app created](https://www.slightedgecoder.com/wp-content/uploads/2019/09/15-create-dokku-app-1024x129.jpg)
+![Dokku app created](https://sung.codes/blog/wp-content/uploads/2019/09/15-create-dokku-app-1024x129.jpg)
 
 Dokku is compatible with Heroku and works similiarly. That means the deployment can be done via `git`.
 
@@ -210,7 +210,7 @@ If you are attempting to push the second time, you will be prompted to enter the
 
 At the bottom of the deployment log, you will see the deployment URL.
 
-![Deploy URL](https://www.slightedgecoder.com/wp-content/uploads/2019/09/19-Deploy-url-1024x226.jpg)
+![Deploy URL](https://sung.codes/blog/wp-content/uploads/2019/09/19-Deploy-url-1024x226.jpg)
 
 I am not sure how to expose VM hostname outside, so browser inside VM uses `https://dokku:PORT` to access while outside VM, it is using the IP.
 

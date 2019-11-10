@@ -19,7 +19,7 @@ So the alternative is to use an environment variable and make it available on He
 
 ### Recap of Accessing API key locally
 
-In a previous blog post, [Hiding API Keys on GitHub](https://www.slightedgecoder.com/2017/07/08/hiding-api-keys-github/), I wrote about how to hide an API using an environment variable.
+In a previous blog post, [Hiding API Keys on GitHub](https://sung.codes/blog/2017/07/08/hiding-api-keys-github/), I wrote about how to hide an API using an environment variable.
 
 Suppose that your node app access a key via an environment variable, `process.env.GITHUB_DEVELOPER_KEY`
 

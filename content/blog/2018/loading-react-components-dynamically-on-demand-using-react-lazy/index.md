@@ -11,7 +11,7 @@ _Photo by [Holger Link](https://unsplash.com/photos/K7yZ-CsDvRU?utm_source=unsp
 
 React v16.6.0 introduced [React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy) for code splitting.
 
-Previous post, [Loading React Components Dynamically on Demand](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/) showed how to load components dynamically enabling code splitting using `import()`.
+Previous post, [Loading React Components Dynamically on Demand](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/) showed how to load components dynamically enabling code splitting using `import()`.
 
 This is an updated post to show how to load components dynamically using `React.lazy`, which wraps around `import()` and retrieves a default component.
 
@@ -83,7 +83,7 @@ Here is are the event components for completeness.
 
 <a href="https://gist.github.com/dance2die/e971b6b74ee9d215824007dfc90a67dd">View this gist on GitHub</a>
 
-`*Event` components are the same as in the [previous post](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case2) and the difference is the `index.js`, which exports lazily loaded components to enable event name matching by key in `App.render()`.
+`*Event` components are the same as in the [previous post](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/#case2) and the difference is the `index.js`, which exports lazily loaded components to enable event name matching by key in `App.render()`.
 
 ![](./images/case-2-demo.gif)
 
@@ -135,7 +135,7 @@ This is just an updated post as the previous version still works.
 
 The differences are I've added `index.js` to export lazily loaded components and use them to look up by a key to decide whether to load a matching component or a null component.
 
-I tried not to make changes in dynamically loaded components not to confuse if you already read the [previous post](https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case3).
+I tried not to make changes in dynamically loaded components not to confuse if you already read the [previous post](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/#case3).
 
 ## 🛠 Resources
 

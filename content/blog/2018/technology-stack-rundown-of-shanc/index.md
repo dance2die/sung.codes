@@ -7,7 +7,7 @@ tags: webdev
 author: Sung M. Kim
 ---
 
-In the [previous article](https://www.slightedgecoder.com/2018/05/26/introducing-shanc-a-static-hacker-news-clone/), I introduced [SHaNc](https://shanc.netlify.com/), a Static Hacker News clone. I will go into details of tech stack I used and why.
+In the [previous article](https://sung.codes/blog/2018/05/26/introducing-shanc-a-static-hacker-news-clone/), I introduced [SHaNc](https://shanc.netlify.com/), a Static Hacker News clone. I will go into details of tech stack I used and why.
 
 I will talk about following technologies used.
 
@@ -89,7 +89,7 @@ I used it because Netlify's [Build WebHook](https://www.netlify.com/docs/webhook
 
 ##### How? 🔨
 
-I deployed GitHub repo using similar steps I blogged about. _(Refer to my previous post [Deploying Existing Create-React-App on GitHub to Netlify](https://www.slightedgecoder.com/2017/12/09/deploying-existing-create-react-app-github-netlify/))_
+I deployed GitHub repo using similar steps I blogged about. _(Refer to my previous post [Deploying Existing Create-React-App on GitHub to Netlify](https://sung.codes/blog/2017/12/09/deploying-existing-create-react-app-github-netlify/))_
 
 Netlify is aware that a project is a Gatsby site thus filling out many values for you (what command to run and what folder to deploy to production)
 
