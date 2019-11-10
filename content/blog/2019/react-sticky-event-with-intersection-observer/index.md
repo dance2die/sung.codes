@@ -43,7 +43,7 @@ Left is the terms used in the linked article above and the right is correspondin
 - Headers -> `<Sticky />`
 - Sticky Sections -> `<StickyBoundary />`
 
-![](https://i2.wp.com/www.slightedgecoder.com/wp-content/uploads/2019/08/Sticky-Component-Overview.png?fit=1024%2C760&ssl=1)
+![](./images/Sticky-Component-Overview.png)
 
 ## What we are building
 
