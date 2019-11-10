@@ -4,7 +4,7 @@ date: "2018-09-15"
 published_at: "2018-09-15T19:35:58.000Z"
 tags: "react, javascript"
 author: Sung M. Kim
-banner: ./images/featured.jpg
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by [Icons8](https://unsplash.com/photos/dhZtNlvNE8M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) team on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
