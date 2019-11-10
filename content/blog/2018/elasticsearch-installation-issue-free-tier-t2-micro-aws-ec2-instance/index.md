@@ -1,9 +1,9 @@
 ---
 title: Elasticsearch installation issue on a free tier (t2.micro) AWS EC2 instance
-date: '2018-01-25'
+date: "2018-01-25"
 banner: ./images/featured-image-2.jpg
-published_at: '2018-01-26T02:31:29.000Z'
-tags: 'aws, elasticsearch, troubleshooting'
+published_at: "2018-01-26T02:31:29.000Z"
+tags: "aws, elasticsearch, troubleshooting"
 author: Sung M. Kim
 ---
 
@@ -49,9 +49,9 @@ When you read the comment in `jvm.options`, you should set the minimum and maxim
 
 And you can see that the min and max JVM heap sizes are set to 1g on the bottom of above image.
 
-> \-Xms1g
-> 
-> \-Xmx1g
+> -Xms1g
+>
+> -Xmx1g
 
 Now update the min and max values to 512m, save the file and exit.
 
@@ -68,4 +68,3 @@ and run the cURL command again.
 ![](./images/good-curl-result.jpg)
 
 🎉Tada 🎉, Elasticsearch is now running on AWS EC2 t.micro instance.
-

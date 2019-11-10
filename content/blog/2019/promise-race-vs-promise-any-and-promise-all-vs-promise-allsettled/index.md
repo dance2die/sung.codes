@@ -1,8 +1,8 @@
 ---
 title: Promise.race vs. Promise.any And Promise.all vs. Promise.allSettled
-date: '2019-05-18'
+date: "2019-05-18"
 banner: ./images/featured-image-1.jpg
-published_at: '2019-05-18T21:32:46.000Z'
+published_at: "2019-05-18T21:32:46.000Z"
 tags: javascript
 author: Sung M. Kim
 ---
@@ -32,10 +32,10 @@ For more info, refer to following documentations.
 
 ### 🔆 Promise State Definitions
 
-- **Fulfilled** \- When a promise is resolved successfully.
-- **Rejected** \- When a promise failed.
-- **Pending** \- When a promise is "[neither fulfilled nor rejected](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)".
-- **Settled** \- Not really a state but an _umbrella term_ to describe that a promise is either fulfilled or rejected.
+- **Fulfilled** - When a promise is resolved successfully.
+- **Rejected** - When a promise failed.
+- **Pending** - When a promise is "[neither fulfilled nor rejected](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)".
+- **Settled** - Not really a state but an _umbrella term_ to describe that a promise is either fulfilled or rejected.
   - This term will be used to describe characteristics of new methods later.
 
 For more detailed explanation of states & fates, please refer to [States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).
@@ -64,7 +64,7 @@ Both accepts an iterable object but
 
 Now let's take a look at existing/upcoming combinator methods.
 
-``gist:dance2die/9d9f7531775efed3eca1ad70bfd17a73``
+`gist:dance2die/9d9f7531775efed3eca1ad70bfd17a73`
 
 <a href="https://gist.github.com/dance2die/9d9f7531775efed3eca1ad70bfd17a73">View this gist on GitHub</a>
 
@@ -80,7 +80,7 @@ Now let's move on to learn more about each method.
 
 ### 🔆 Example
 
-``gist:dance2die/9ba18d739224d408af8a8f239cde9a2b``
+`gist:dance2die/9ba18d739224d408af8a8f239cde9a2b`
 
 <a href="https://gist.github.com/dance2die/9ba18d739224d408af8a8f239cde9a2b">View this gist on GitHub</a>
 
@@ -97,7 +97,7 @@ The latter example using `promisesWithOneReject` shows that one rejected promise
 
 ### 🔆 Example
 
-``gist:dance2die/e6f491a82eb10a28f3743f68f5c9d4fe``
+`gist:dance2die/e6f491a82eb10a28f3743f68f5c9d4fe`
 
 <a href="https://gist.github.com/dance2die/e6f491a82eb10a28f3743f68f5c9d4fe">View this gist on GitHub</a>
 
@@ -117,7 +117,7 @@ To differentiate if resolved values were successful, they are returned as an arr
 
 ### 🔆 Example
 
-``gist:dance2die/e59a0f90b6a0ea585520b994652bfb55``
+`gist:dance2die/e59a0f90b6a0ea585520b994652bfb55`
 
 <a href="https://gist.github.com/dance2die/e59a0f90b6a0ea585520b994652bfb55">View this gist on GitHub</a>
 
@@ -139,7 +139,7 @@ From these examples, you can see that the first settled state (fulfilled or reje
 
 ### 🔆 Example
 
-``gist:dance2die/992a1157c191eca2b277e1380b323e8b``
+`gist:dance2die/992a1157c191eca2b277e1380b323e8b`
 
 <a href="https://gist.github.com/dance2die/992a1157c191eca2b277e1380b323e8b">View this gist on GitHub</a>
 
@@ -159,4 +159,3 @@ How I understood was that the new `Promise.allSettled/any` are introduced for Pr
 
 I'd love to hear where you would (have) use(d) each method to solve a problem.  
 And would you please kindly let me know if you find any mistakes and/or how I can improve the example?
-

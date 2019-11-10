@@ -83,14 +83,14 @@ _Same advice given by Jared Palmer in Ep 29, "_[_Don't Rewrite Your App for Hook
 
 #### 🔹 Types of Hooks
 
-- [useState](https://reactjs.org/docs/hooks-reference.html#usestate) \- replaces setState
-- [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) \- replaces most of life cycle methods such as cDM, cDU, cWU.
+- [useState](https://reactjs.org/docs/hooks-reference.html#usestate) - replaces setState
+- [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) - replaces most of life cycle methods such as cDM, cDU, cWU.
   - _`getSnapshotBeforeUpdate` and `componentDidCatch` [not yet supported](https://reactjs.org/docs/hooks-faq.html#do-hooks-cover-all-use-cases-for-classes)._
-- [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) \- to memoize value (data, components, etc).
-- [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) \- to manage state with reducers by dispatching.
-- [useLayoutEffect](https://reactjs.org/docs/hooks-reference.html#uselayouteffect) \- for some edge cases
+- [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) - to memoize value (data, components, etc).
+- [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) - to manage state with reducers by dispatching.
+- [useLayoutEffect](https://reactjs.org/docs/hooks-reference.html#uselayouteffect) - for some edge cases
   - _`useMutationEffect` was also mentioned [but later removed](https://github.com/facebook/react/pull/14336)._
-- [useRef](https://reactjs.org/docs/hooks-reference.html#useref) \- replaces [React.createRef](https://reactjs.org/docs/react-api.html#reactcreateref).
+- [useRef](https://reactjs.org/docs/hooks-reference.html#useref) - replaces [React.createRef](https://reactjs.org/docs/react-api.html#reactcreateref).
 
 With hooks, there is no need for an instance variable & use just local variables.
 

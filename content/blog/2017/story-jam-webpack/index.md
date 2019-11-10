@@ -1,9 +1,9 @@
 ---
 title: The Story of JAM – How they dealt with multiple JavaScript files
-date: '2017-12-24'
+date: "2017-12-24"
 banner: ./images/featured-image-jam-preparations-jars-fruit-48817.jpg
-published_at: '2017-12-24T21:40:14.000Z'
-tags: 'blogentry, story, babel, es6'
+published_at: "2017-12-24T21:40:14.000Z"
+tags: "blogentry, story, babel, es6"
 author: Sung M. Kim
 ---
 
@@ -53,5 +53,4 @@ JAM was having a lunch together the following week.
 
 “I usually create small to medium sized websites and Webpack seems to be an overkill since you need to configure everything.” Joe shared his thoughts. “There’s gotta be a way to bundle our files without all those nitty gritty configuration details.” Allen agreed. Shawn, a developer from another team walks by overhearing the conversation and jumps in. “You know what guys?”
 
-\- To be cont’d.
-
+- To be cont’d.
