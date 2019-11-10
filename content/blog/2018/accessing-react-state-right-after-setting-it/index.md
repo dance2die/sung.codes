@@ -1,12 +1,11 @@
 ---
 title: Accessing React State right after setting it
-date: '2018-08-25'
-published_at: '2018-08-25T22:17:51.000Z'
-tags: 'react, javascript'
+date: "2018-08-25"
+banner: ./images/featured.gif
+published_at: "2018-08-25T22:17:51.000Z"
+tags: react, javascript
 author: Sung M. Kim
 ---
-
-_Photo by [Celso](https://unsplash.com/photos/4RZx2k4sDj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/sequence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 As I have been browsing Stack Overflow questions, I've noticed that many bugs are due to trying to access a state value after setting it.
 
@@ -50,8 +49,8 @@ _Refer to [Event Pooling](https://reactjs.org/docs/events.html#event-pooling) fo
 
 There are **two** ways as mentioned in the official React documentation.
 
-1.  Using a callback passed to `setState`.
-2. Using `componentDidUpdate` life cycle method
+1.  Using a callback passed to `setState`.
+2.  Using `componentDidUpdate` life cycle method
 
 Let's go over them both.
 
@@ -63,15 +62,15 @@ Let's go over them both.
 
 The callback is called after the state has updated using `updater` method thus the callback has access to the updated `this.state`.
 
-Here is the updated code & the demo.  
+Here is the updated code & the demo.
 
-``gist:dance2die/8afe95dedfbe62e77de813ae2b41a2b0``
+`gist:dance2die/8afe95dedfbe62e77de813ae2b41a2b0`
 
 <a href="https://gist.github.com/dance2die/8afe95dedfbe62e77de813ae2b41a2b0">View this gist on GitHub</a>
 
 ![](./images/using-callback.gif)
 
-### 2\. Using `componentDidUpdate` life cycle method  
+### 2\. Using `componentDidUpdate` life cycle method
 
 React documentation "[generally recommends](https://reactjs.org/docs/react-component.html#setstate)" using `componentDidUpdate`.
 
@@ -79,11 +78,11 @@ _I haven't been able to find the reason for it, but my guess is because `compone
 
 Here is the code using `componentDidUpdate`.
 
-``gist:dance2die/a728b6f1819ede5e1beefeedd64f2e24``
+`gist:dance2die/a728b6f1819ede5e1beefeedd64f2e24`
 
 <a href="https://gist.github.com/dance2die/a728b6f1819ede5e1beefeedd64f2e24">View this gist on GitHub</a>
 
-And this demo shows that `componentDidUpdate`  
+And this demo shows that `componentDidUpdate`
 
 1. has the access to the updated state value.
 2. is called before the setState's callback method.
@@ -95,4 +94,3 @@ And this demo shows that `componentDidUpdate`
 Frankly speaking, I've only used the callback to access updated value because I only found out about the recommended way of using `componentDidUpdate` while writing this blog 😝.
 
 And you can play around with the demo on [CodeSandBox](https://codesandbox.io/s/6lzp0v0mlw).
-
