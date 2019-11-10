@@ -1,9 +1,10 @@
 ---
 title: You don't always need to import React
-date: '2018-11-26'
-published_at: '2018-11-26T19:38:56.000Z'
+date: "2018-11-26"
+published_at: "2018-11-26T19:38:56.000Z"
 tags: react
 author: Sung M. Kim
+banner: ./images/devto.jpg
 ---
 
 [r/reactjs](https://www.reddit.com/r/reactjs/) has a Weekend Reads, which is a "'book club' type thing where we read something every weekend".
@@ -34,7 +35,7 @@ No. not unless you use React object for your component.
 
 You can create a [**"function"** component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) that returns value(s) of a simple JavaScript primitives, such as string or number.
 
-``gist:dance2die/9202791c070d40ac3274731ab762e587``
+`gist:dance2die/9202791c070d40ac3274731ab762e587`
 
 <a href="https://gist.github.com/dance2die/9202791c070d40ac3274731ab762e587">View this gist on GitHub</a>
 
@@ -42,11 +43,11 @@ That is the full source for `App.js`.
 
 In this case, `React` object is not used anywhere so you can leave out the import statement (but still is a valid component).
 
-📒 _Note: If you are creating a **class** component, you need to import React as it needs to extend_ `_React.Component_`_._
+📒 *Note: If you are creating a **class** component, you need to import React as it needs to extend* `_React.Component_`_._
 
 And then you can import `App.js` just like any React component (Line #4).
 
-``gist:dance2die/833e1c1977ef11b10ce59fbbb3ea1bb8``
+`gist:dance2die/833e1c1977ef11b10ce59fbbb3ea1bb8`
 
 <a href="https://gist.github.com/dance2die/833e1c1977ef11b10ce59fbbb3ea1bb8">View this gist on GitHub</a>
 
@@ -63,4 +64,3 @@ I hope this has solved for the need to import React for components.
 - [JSX in Depth](https://reactjs.org/docs/jsx-in-depth.html)
 - See how [BabelJS transpiles JSX](https://babeljs.io/repl) - Just paste your React code in it.
 - [Demo Sandbox](https://codesandbox.io/s/71wv195okj)
-
