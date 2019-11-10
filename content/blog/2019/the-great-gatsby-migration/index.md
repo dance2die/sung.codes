@@ -90,7 +90,7 @@ _Reference_: [kentcdodds/kentcdodds.com][kentcdodds/kentcdodds.com]
 KCD has generously made the code open source with MIT, I decided to follow his steps and learn from it as well. You know, he is Kent C. Dodds.
 
 KCD has create a global configuration, which made it easy to apply to the whole site.  
-_ It was crucial as the common configurations can be used for site content, SEO, or styling for a consistency and traffic._
+_It was crucial as the common configurations can be used for site content, SEO, or styling for a consistency and traffic._
 
 _References_:
 
