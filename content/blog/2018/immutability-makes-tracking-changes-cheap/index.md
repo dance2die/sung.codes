@@ -1,9 +1,10 @@
 ---
 title: Immutability makes tracking changes cheap
-date: '2018-12-02'
-published_at: '2018-12-02T17:02:57.000Z'
-tags: 'react, selfnote, todayilearned'
+date: "2018-12-02"
+published_at: "2018-12-02T17:02:57.000Z"
+tags: "react, selfnote, todayilearned"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by _[_Joeri Römer_](https://unsplash.com/photos/Xne1N4yZuOY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/boulder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -30,7 +31,7 @@ Post state tree
 
 When JavaScript compares two values, primitive type (number, string, boolean, etc) comparisons shown in the state tree, such as `id`, `date`, `author`, are cheap.
 
-When you have to compare object type states, a comparison is done _**by reference**_. 
+When you have to compare object type states, a comparison is done _**by reference**_.
 
 So if someone has modified one of the items in `comments` array, you have to traverse every item in the comment to find out if anything has changed.
 
@@ -51,6 +52,5 @@ You can still override [shouldComponentUpdate](https://reactjs.org/docs/react-co
 - [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html) - Official React Documentation
 - [\[Weekend Reads\] React Docs on Optimizing Performance](https://www.reddit.com/r/reactjs/comments/a1y5ej/weekend_reads_react_docs_on_optimizing_performance/)
 - [Immutable User Interface](https://vimeo.com/album/3953264/video/166790294) - Lee Byron in Render 2018
-    - Haven't finished watching it, yet
-    - Just found it from [Dan's tweet](https://twitter.com/dan_abramov/status/735530699231531008).
-
+  - Haven't finished watching it, yet
+  - Just found it from [Dan's tweet](https://twitter.com/dan_abramov/status/735530699231531008).
