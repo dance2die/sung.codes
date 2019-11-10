@@ -1,9 +1,10 @@
 ---
 title: Canceling setInterval in React
-date: '2018-09-15'
-published_at: '2018-09-15T19:35:58.000Z'
-tags: 'react, javascript'
+date: "2018-09-15"
+published_at: "2018-09-15T19:35:58.000Z"
+tags: "react, javascript"
 author: Sung M. Kim
+banner: ./images/featured.jpg
 ---
 
 _Photo by [Icons8](https://unsplash.com/photos/dhZtNlvNE8M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) team on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
@@ -19,7 +20,7 @@ I will talk about how to handle `setInterval` in React
 
 Let's create a very "contrived" example that prints "hello world" every second in console.
 
-``gist:dance2die/e7108c9dc2d25e2a3d651b427965f425``
+`gist:dance2die/e7108c9dc2d25e2a3d651b427965f425`
 
 <a href="https://gist.github.com/dance2die/e7108c9dc2d25e2a3d651b427965f425">View this gist on GitHub</a>
 
@@ -37,21 +38,21 @@ Even worse, when you navigate back to `Greeting` component, another interval pro
 
 Error Reproduced
 
-## 🔧 How to Fix the Issue  
+## 🔧 How to Fix the Issue
 
 You need to save the interval ID when you call the `setInterval`.
 
 _Reference_: [WindowOrWorkerGlobalScope.setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval#Return_value)
 
-``gist:dance2die/75fcb22f74c265cf545917a9441f0242``
+`gist:dance2die/75fcb22f74c265cf545917a9441f0242`
 
 <a href="https://gist.github.com/dance2die/75fcb22f74c265cf545917a9441f0242">View this gist on GitHub</a>
 
 To cancel `setInterval`, you need to call \`clearInterval\`, which require the interval ID returned when you called `setInterval`.
 
-The best place to do is right before the component unmounts ([componentWillUnmount](https://componentWillUnmount())).
+The best place to do is right before the component unmounts ([componentWillUnmount](<https://componentWillUnmount()>)).
 
-``gist:dance2die/da463930aa353665d8026d2225291c00``
+`gist:dance2die/da463930aa353665d8026d2225291c00`
 
 <a href="https://gist.github.com/dance2die/da463930aa353665d8026d2225291c00">View this gist on GitHub</a>
 
@@ -66,4 +67,3 @@ The interval canceled
 Try it for yourself
 
 ](https://codesandbox.io/s/w7mnz4w0pk?autoresize=1&expanddevtools=1&moduleview=1&view=preview)
-
