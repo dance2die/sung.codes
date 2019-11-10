@@ -4,6 +4,7 @@ date: "2018-12-09"
 published_at: "2018-12-09T21:40:06.000Z"
 tags: "react, shownote, podcast"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by _[_Jakub Kapusnak_](https://unsplash.com/photos/4f4YZfDMLeU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/bibimbap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
