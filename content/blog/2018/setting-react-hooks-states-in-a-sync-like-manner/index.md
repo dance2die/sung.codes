@@ -4,6 +4,7 @@ date: "2018-12-07"
 published_at: "2018-12-08T02:29:29.000Z"
 tags: "problemsolving, programming, react, selfnote"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by _[_Martino Pietropoli_](https://unsplash.com/photos/H8zix6ErdXg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/serial?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
