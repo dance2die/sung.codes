@@ -1,12 +1,13 @@
 ---
 title: Loading React Components Dynamically on Demand using React.lazy
-date: '2018-10-28'
-published_at: '2018-10-28T19:28:16.000Z'
-tags: 'react, javascript'
+date: "2018-10-28"
+published_at: "2018-10-28T19:28:16.000Z"
+tags: "react, javascript"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
-_Photo by _[_Holger Link_](https://unsplash.com/photos/K7yZ-CsDvRU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/lazy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+_Photo by [Holger Link](https://unsplash.com/photos/K7yZ-CsDvRU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/lazy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 React v16.6.0 introduced [React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy) for code splitting.
 
@@ -26,13 +27,13 @@ _You can follow along in_ [_CodeSandbox_](https://codesandbox.io/s/k5m609qn3o) _
 
 In the previous version, I've loaded components in `componentDidMount` inside `App.js` and stored components in a state called `components`.
 
-``gist:dance2die/95259efdf4f883f1ceae62ca1346734a``
+`gist:dance2die/95259efdf4f883f1ceae62ca1346734a`
 
 <a href="https://gist.github.com/dance2die/95259efdf4f883f1ceae62ca1346734a">View this gist on GitHub</a>
 
 But there is no need to store the components in the state as you can simply use lazily loaded component in render with smaller code.
 
-``gist:dance2die/3303287eff873ce3220a4f33d99a60f2``
+`gist:dance2die/3303287eff873ce3220a4f33d99a60f2`
 
 <a href="https://gist.github.com/dance2die/3303287eff873ce3220a4f33d99a60f2">View this gist on GitHub</a>
 
@@ -49,7 +50,7 @@ _Refer to_ [_Dan Abramov's tweet_](https://twitter.com/dan_abramov/status/105529
 
 And here is the updated `*Event` components.
 
-``gist:dance2die/848fb851b1b6e101f5a76ecb82fb9440``
+`gist:dance2die/848fb851b1b6e101f5a76ecb82fb9440`
 
 <a href="https://gist.github.com/dance2die/848fb851b1b6e101f5a76ecb82fb9440">View this gist on GitHub</a>
 
@@ -67,7 +68,7 @@ _You can follow along in [CodeSandbox](https://codesandbox.io/s/0pkzrwk79l) & ch
 
 This patterns now looks almost the same as the first case.
 
-``gist:dance2die/e6497b267559a71745b86940da620037``
+`gist:dance2die/e6497b267559a71745b86940da620037`
 
 <a href="https://gist.github.com/dance2die/e6497b267559a71745b86940da620037">View this gist on GitHub</a>
 
@@ -78,7 +79,7 @@ If a matching GitHub event component is found load it or else load a `NullEvent`
 
 Here is are the event components for completeness.
 
-``gist:dance2die/e971b6b74ee9d215824007dfc90a67dd``
+`gist:dance2die/e971b6b74ee9d215824007dfc90a67dd`
 
 <a href="https://gist.github.com/dance2die/e971b6b74ee9d215824007dfc90a67dd">View this gist on GitHub</a>
 
@@ -102,13 +103,13 @@ Instead of loading a `NullView` in a `catch` statement, it's now checked against
 
 From this,
 
-``gist:dance2die/38b39a57eecb9efd86ec8220bda5081b``
+`gist:dance2die/38b39a57eecb9efd86ec8220bda5081b`
 
 <a href="https://gist.github.com/dance2die/38b39a57eecb9efd86ec8220bda5081b">View this gist on GitHub</a>
 
 To this.
 
-``gist:dance2die/4c18f793f5153a75a7770efe6c3ad31e``
+`gist:dance2die/4c18f793f5153a75a7770efe6c3ad31e`
 
 <a href="https://gist.github.com/dance2die/4c18f793f5153a75a7770efe6c3ad31e">View this gist on GitHub</a>
 
@@ -116,13 +117,13 @@ To this.
 
 `render` is also changed to wrap dynamically loaded components with `<Suspense />`.
 
-``gist:dance2die/72d4552555a9837f0cbdbfe34bb27f77``
+`gist:dance2die/72d4552555a9837f0cbdbfe34bb27f77`
 
 <a href="https://gist.github.com/dance2die/72d4552555a9837f0cbdbfe34bb27f77">View this gist on GitHub</a>
 
 All `*View` components are the same so I will only show `components/views/index.js`.
 
-``gist:dance2die/753134d0908c10e22b1ffe6b3e7f7aa2``
+`gist:dance2die/753134d0908c10e22b1ffe6b3e7f7aa2`
 
 <a href="https://gist.github.com/dance2die/753134d0908c10e22b1ffe6b3e7f7aa2">View this gist on GitHub</a>
 
@@ -149,4 +150,3 @@ Case 2 – Handling Different Data Types
 Case 3 – Loading Components on Demand  
 \- [CodeSandbox](https://codesandbox.io/s/qv743wwrr4)  
 \- [Demo](https://reactlazy3.netlify.com/)
-
