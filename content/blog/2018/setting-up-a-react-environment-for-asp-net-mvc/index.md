@@ -1,9 +1,10 @@
 ---
 title: Setting up a React Environment for ASP.NET MVC
-date: '2018-10-13'
-published_at: '2018-10-13T21:05:54.000Z'
-tags: 'react, aspnet, webpack, babel'
+date: "2018-10-13"
+published_at: "2018-10-13T21:05:54.000Z"
+tags: "react, aspnet, webpack, babel"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by [Zoltan Tasi](https://unsplash.com/photos/6vEqcR8Icbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/atom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
@@ -58,7 +59,7 @@ npm Configuration File
 
 And add a script section. And `package.json` would initially look like the following.
 
-``gist:dance2die/b41670c22bef4553e197e3efcb43c664``
+`gist:dance2die/b41670c22bef4553e197e3efcb43c664`
 
 <a href="https://gist.github.com/dance2die/b41670c22bef4553e197e3efcb43c664">View this gist on GitHub</a>
 
@@ -68,7 +69,7 @@ Add a new file named `.babelrc` in the same directory as `package.json` file cre
 
 And add following babel options.
 
-``gist:dance2die/a33a0590d930276754ca9b814707fba7``
+`gist:dance2die/a33a0590d930276754ca9b814707fba7`
 
 <a href="https://gist.github.com/dance2die/a33a0590d930276754ca9b814707fba7">View this gist on GitHub</a>
 
@@ -80,13 +81,13 @@ And add following babel options.
 
 Create a file named `webpack.config.js` in the project root (same location as `package.json` & `.babelrc`) & configure it as shown below.
 
-``gist:dance2die/ce43a01f962ef07c7ad89a19d92428e5``
+`gist:dance2die/ce43a01f962ef07c7ad89a19d92428e5`
 
 <a href="https://gist.github.com/dance2die/ce43a01f962ef07c7ad89a19d92428e5">View this gist on GitHub</a>
 
 Webpack outputs a bundle as `./Scripts/dist/Home/react/bundle.js` so let's add the script in `View\Home\Index.cshtml` razor file.
 
-``gist:dance2die/ef395768773057d1c45d6fe54a51f344``
+`gist:dance2die/ef395768773057d1c45d6fe54a51f344`
 
 <a href="https://gist.github.com/dance2die/ef395768773057d1c45d6fe54a51f344">View this gist on GitHub</a>
 
@@ -98,7 +99,7 @@ Bundle Script Tag
 
 Now let's install NPM packages to enable latest JavaScript and React syntax.
 
-``gist:dance2die/502546db05519ce16c768da263c90bfd``
+`gist:dance2die/502546db05519ce16c768da263c90bfd`
 
 <a href="https://gist.github.com/dance2die/502546db05519ce16c768da263c90bfd">View this gist on GitHub</a>
 
@@ -126,7 +127,7 @@ Let's add an entry point for React in `Views\Home\Index.cshtml` file by  deleti
 
 Now we have an entry point, let's write a simple React file `index.js` under `Scripts\Home\react` directory.
 
-``gist:dance2die/f368f1116bbc34886334d3294817cb7c``
+`gist:dance2die/f368f1116bbc34886334d3294817cb7c`
 
 <a href="https://gist.github.com/dance2die/f368f1116bbc34886334d3294817cb7c">View this gist on GitHub</a>
 
@@ -177,4 +178,3 @@ In this post I've assumed that you know the basics of NPM & Webpack so skipped m
 Please refer to documentations linked in-line in the post if you want to understand how each step works and to troubleshoot should you run into an issue.
 
 Source code is available on [GitHub](https://github.com/dance2die/blog.AspNetReact).
-
