@@ -4,11 +4,12 @@ date: "2018-12-01"
 published_at: "2018-12-01T20:02:35.000Z"
 tags: "problemsolving, programming, react, selfnote"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
 ---
 
 _Photo by _[_Vlad Tchompalov_](https://unsplash.com/photos/dQkXoqQLn40?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-🎵 ***Note to self...***
+🎵 **_Note to self..._**
 
 Upgraded [Bunpkg](https://bunpkg.com/) React version to v16.6.x (actually v16.7.0-alpha2 to play around with [React Hooks](https://reactjs.org/hooks) ⚓ as well 😀), which enables support for [React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy).
 
