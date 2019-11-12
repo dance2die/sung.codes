@@ -51,6 +51,7 @@ module.exports = {
     },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-twitter`,
     // https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/?=mdx
     {
       resolve: `gatsby-plugin-mdx`,
@@ -77,7 +78,6 @@ module.exports = {
               maxWidth: 1035,
             },
           },
-          { resolve: "gatsby-remark-embedder" },
           // https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/?=gatsby-remark-prismjs
           {
             resolve: `gatsby-remark-prismjs`,
