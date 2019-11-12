@@ -30,7 +30,7 @@ const postStyle = {
     marginBottom: 2,
   },
   "ul, ol": {
-    paddingLeft: theme => theme.space[4],
+    paddingLeft: "1.1rem",
   },
   img: {
     width: "100%",

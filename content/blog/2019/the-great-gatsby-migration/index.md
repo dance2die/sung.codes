@@ -112,13 +112,9 @@ If you need to keep your existing URL, **rewrite** your URL, instead of redirect
 ## To Dos
 
 1. There are still a lot of styling [issues][sung.codes issues] for blog posts.
-
 1. To report an issue, I added a tweet link per post, but will make it work for GitHub (after creating a template).
-
 1. Also the biggest issue is a lack of CMS (Current I've created this blog markdown manually.)
-
    - I decided to go with NetlifyCMS because of its `git` based workflow, and the site being hosted on [Netlify][netlify].
-
 1. RSS feed is not yet implemented. Need a manual copy & paste to share on DEV.
 
 ## Misc.
@@ -128,20 +124,14 @@ If you need to keep your existing URL, **rewrite** your URL, instead of redirect
 Here are the some issues that I've encountered.
 
 1. After "Export WordPress to Markdown", the frontmatter date didn't match by a day for some posts with WordPress slug, which used published dates.
-
    - It was due to WordPress using my local EST time to publish, while `lonekorean/wordpress-export-to-markdown` used UTC to parse dates and add it as "date" frontmatter metadata.
    - The fix was done during the "Optional - Add more frontmatters" step.
    - It was a sorta critical as I needed to do 301 redirect, and the off-by-one day wasn't able to properly forward to the new domain.
-
 1. I had no idea how KCD's `banner` code worked.
-
    - I've shared the experience on reddit, [Fragments are global in Gatsby · gatsbyjs/gatsby · GitHub Issue #11638][fragments are global in gatsby · gatsbyjs/gatsby · github issue #11638], which you can find out more about it.
-
 1. Not all banner images or body images are exported/imported.
-
    - As there are 100+ posts, I wasn't able to check missing media for each.
    - But whenever I write my blogs, I store them on OneDrive, so able to recover'em all (but one by one).
-
 1. Might be none issue.
    - I've exported markdown in "content/`<year>`/blog" structure while KCD had a flat "/content/blog".
    - But it wasn't much of an issue because slug is generated dynamically within [gatsby-node.js](https://github.com/dance2die/sung.codes/blob/master/gatsby-node.js#L28).
