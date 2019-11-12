@@ -1,9 +1,9 @@
 ---
 title: Setting up an ES6 Environment for ASP.NET MVC 5
-date: '2017-05-22'
+date: "2017-05-22"
 banner: ./images/featured-image.jpg
-published_at: '2017-05-22T11:09:11.000Z'
-tags: 'blogentry, programming, aspnetmvc, aspnetmvc5'
+published_at: "2017-05-22T11:09:11.000Z"
+tags: "blogentry, programming, aspnetmvc, aspnetmvc5"
 author: Sung M. Kim
 ---
 
@@ -47,7 +47,7 @@ https://youtu.be/wbZnl93g_3I
 8. [Run ASP.NET MVC](#step8)
 9. [Monitoring file changes with](#step9) [npm-watch](https://www.npmjs.com/package/npm-watch)
 
-##### 1. Set up ASP.NET MVC 5
+### 1. Set up ASP.NET MVC 5
 
 Create a new solution in Visual Studio. I am using VS 2015 Professional.
 
@@ -59,7 +59,7 @@ Select an "Empty" template with "MVC" option.
 
 ![](./images/ASP.NET-Template.jpg)
 
-##### 2. Set up NPM configuration and packages
+### 2. Set up NPM configuration and packages
 
 Open cmd and go to the root of the project.
 
@@ -71,7 +71,7 @@ npm init -y
 
 "-y" option creates a new file without prompting the user.
 
-##### 3. Install Webpack and Babel
+### 3. Install Webpack and Babel
 
 Run the following command in cmd.
 
@@ -101,7 +101,7 @@ If you open up "package.json", you can see that "devDependencies" section has re
 }
 ```
 
-##### 4. Create some ES6 javascript files
+### 4. Create some ES6 javascript files
 
 ![](./images/Script-folder.jpg)Let's create some javascript files to transpile for a test.
 
@@ -140,7 +140,7 @@ var person = new Person("David", 20)
 person.speak()
 ```
 
-##### 5. Create an ASP.NET Controller and a View
+### 5. Create an ASP.NET Controller and a View
 
 Right click on "Controllers" folder, and create an empty controller named, "HomeController".
 
@@ -158,7 +158,7 @@ Add a script tag in `Views/Shared/_Layout.cshtml`.
 
 ![](./images/bundle.js-script-file.jpg)
 
-##### 6. Configure Webpack
+### 6. Configure Webpack
 
 Create `webpack.config.js` on project root. Add following configuration option in the file.
 
@@ -193,9 +193,9 @@ In the "Pre-build event command line:" enter following code snippet to run webpa
 npm run build --prefix $(ProjectDir)
 ```
 
-##### ![](./images/build-events.jpg)
+### ![](./images/build-events.jpg)
 
-##### 7. Configure Babel
+### 7. Configure Babel
 
 Open "package.json" and add Babel Preset.
 
@@ -209,7 +209,7 @@ Presets are basically a set of plugins so that you don't have to specify every p
 
 You can find a list of all Official Babel Presets in this [link](https://babeljs.io/docs/plugins/#presets-official-presets).
 
-##### 8. Run ASP.NET MVC
+### 8. Run ASP.NET MVC
 
 Run the project by pressing "F5".
 
@@ -217,7 +217,7 @@ If you see "Hi I'm David and 20 years old and I am awesome", then it's set up pr
 
 ![](./images/running-result.jpg)
 
-##### 9. Monitoring file changes with npm-watch
+### 9. Monitoring file changes with npm-watch
 
 Everything up and running now but the problem is that when you make a file change and refresh the browser, the change would not take an effect.
 
@@ -269,4 +269,3 @@ If you are using `npm-watch`, you can clear the "Pre-build event command line" c
 I described how to set up ASP.NET MVC 5 web application for ES6 using Webpack and Babel. The "ceremony" seems too much of trouble. If you are ready to move on to ASP.NET Core, it'd be easier to do so (even though most of the steps would be the same) and you can find much more resources on how to do so.
 
 The full source for this demo is avaialble on [GitHub](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/BlogDemo). The new source using `babel-preset-env` is on the same repository but in different folder [AspNetMvc5_BabelPresetEnv.](https://github.com/dance2die/Blog.SlightEdgeCoder.AspNet.WebPackES6/tree/master/AspNetMvc5_BabelPresetEnv)
-

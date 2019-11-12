@@ -22,10 +22,16 @@ function Layout({ children }) {
             box-sizing: border-box;
           }
 
+          /* Override in-line code snippet styling 
+          https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#optional-add-line-highlighting-styles */
           :not(pre) > code[class*="language-"] {
             padding: 0.15rem 0.4rem;
             border-radius: 0.3em;
             white-space: normal;
+          }
+
+          hr: {
+            margin: 1rem 0;
           }
         `}
       />
