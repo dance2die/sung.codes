@@ -27,7 +27,7 @@ const postStyle = {
   },
   lineHeight: "2",
   p: {
-    paddingBottom: "1.1rem",
+    paddingBottom: "1rem",
   },
   paddingTop: [3, 3, 4, 4],
 }
