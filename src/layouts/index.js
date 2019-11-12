@@ -21,6 +21,12 @@ function Layout({ children }) {
             padding: 0;
             box-sizing: border-box;
           }
+
+          :not(pre) > code[class*="language-"] {
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.3em;
+            white-space: normal;
+          }
         `}
       />
 
