@@ -87,7 +87,7 @@ Now let's include `package.json` in VS Solution Explorer. Go to "Solution Explor
 
 Right click on "package.json" and include it in the project.
 
-![](./images/Show-all-files.jpg)![](https://sung.codes/blog/wp-content/uploads/2017/05/include-in-project.jpg)
+![](./images/Show-all-files.jpg)![](./images/include-in-project.jpg)
 
 If you open up "package.json", you can see that "devDependencies" section has references to Babel and Webpack.
 
