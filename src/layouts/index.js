@@ -30,26 +30,7 @@ function Layout({ children }) {
             white-space: normal;
           }
 
-          .command-line-prompt > span:before {
-            color: #999;
-            content: " ";
-            display: block;
-            padding-right: 0.8em;
-          }
-
-          /* .command-line-prompt > span[data-user]:before {
-            content: "[" attr(data-user) "@" attr(data-host) "] $";
-          }
-
-          .command-line-prompt > span[data-user="root"]:before {
-            content: "[" attr(data-user) "@" attr(data-host) "] #";
-          }
-
-          .command-line-prompt > span[data-prompt]:before {
-            content: attr(data-prompt);
-          }
-          */
-          hr: {
+          hr {
             margin: 1rem 0;
           }
         `}
