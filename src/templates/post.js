@@ -13,11 +13,21 @@ import ExternalLink from "#components/Link/ExternalLink"
 import SEO from "#components/seo"
 
 const postStyle = {
+  // h1: {
+  //   paddingBottom: theme => theme.space[3],
+  // },
+  // h2: {
+  //   padding: theme => `${theme.space[3]}px 0 ${theme.space[2]}px`,
+  // },
   h1: {
-    paddingBottom: theme => theme.space[3],
+    marginBottom: 3,
   },
   h2: {
-    padding: theme => `${theme.space[3]}px 0 ${theme.space[2]}px`,
+    marginTop: 1,
+    marginBottom: 2,
+  },
+  "h2, h3, h4, h5, h6": {
+    marginBottom: 2,
   },
   "ul, ol": {
     paddingLeft: theme => theme.space[4],
@@ -27,7 +37,7 @@ const postStyle = {
   },
   lineHeight: "2",
   p: {
-    paddingBottom: "1rem",
+    paddingBottom: ".5rem",
   },
   paddingTop: [3, 3, 4, 4],
 }
