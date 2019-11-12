@@ -25,7 +25,7 @@ const postStyle = {
   img: {
     width: "100%",
   },
-  lineHeight: "1.8rem",
+  lineHeight: "2",
   p: {
     paddingBottom: "1.1rem",
   },

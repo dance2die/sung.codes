@@ -23,7 +23,7 @@ export default ({ data }) => {
         key={id}
         sx={{
           pb: 3,
-          lineHeight: "1.8rem",
+          lineHeight: "2",
         }}
       >
         <Heading as="h3">
