@@ -34,6 +34,7 @@ const HeadshotImage = () => (
           width: "100%",
           height: "100%",
           transition: "filter .2s ease-in-out",
+          borderRadius: "0.4rem",
 
           webkitFilter: ["", "", "", "grayscale(.45)"],
           filter: ["", "", "", "grayscale(.45)"],
