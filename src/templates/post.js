@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box } from "theme-ui"
+import { jsx, Box, Styled } from "theme-ui"
 import { Heading } from "@theme-ui/components"
 
 import { graphql, Link } from "gatsby"
@@ -13,12 +13,6 @@ import ExternalLink from "#components/Link/ExternalLink"
 import SEO from "#components/seo"
 
 const postStyle = {
-  // h1: {
-  //   paddingBottom: theme => theme.space[3],
-  // },
-  // h2: {
-  //   padding: theme => `${theme.space[3]}px 0 ${theme.space[2]}px`,
-  // },
   h1: {
     marginBottom: 3,
   },
@@ -81,7 +75,9 @@ export default ({
             >
               Let me know
             </ExternalLink>{" "}
-            <MDXRenderer>{body}</MDXRenderer>
+            <Styled.root>
+              <MDXRenderer>{body}</MDXRenderer>
+            </Styled.root>
           </Box>
         )}
       </Location>
