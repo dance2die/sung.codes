@@ -16,6 +16,7 @@ export const theme = {
     background: backgroundColor,
     primary: themeColor,
     gray: ["#efefef", "#ddd", "#333", "#111"],
+    highlight: "#ffd",
 
     modes: {
       dark: {
@@ -93,6 +94,14 @@ export const theme = {
       fontSize: 0,
       marginBottom: 2,
     },
+
+    blockquote: {
+      padding: "16px",
+      backgroundColor: "highlight",
+      borderRadius: "4px",
+      borderLeft: t => `8px solid ${t.colors.primary}`,
+    },
+
     ul: { ...lists },
     ol: { ...lists },
     img: {
