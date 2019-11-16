@@ -5,6 +5,11 @@ const heading = {
   fontFamily: "heading",
 }
 
+const lists = {
+  paddingLeft: "1.1rem",
+  // paddingBottom: 3,
+}
+
 export const theme = {
   initialColorMode: "light",
   colors: {
@@ -21,10 +26,7 @@ export const theme = {
     },
   },
 
-  sizes: {
-    default: "100vw",
-  },
-  // breakpoints: ["40em", "52em", "64em"],
+  sizes: { default: "100vw" },
   breakpoints: ["375px", "768px", "1024px"],
 
   // prettier-ignore
@@ -48,6 +50,10 @@ export const theme = {
       height: 400,
     },
   },
+  lineHeights: {
+    body: "1.5rem",
+  },
+
   styles: {
     root: {
       fontFamily: "body",
@@ -57,29 +63,46 @@ export const theme = {
     Layout: { fontFamily: "body" },
     Header: { fontFamily: "heading" },
     h1: {
-      fontFamily: "heading",
+      ...heading,
       fontSize: 8,
+      marginBottom: 3,
     },
     h2: {
       ...heading,
       fontSize: 4,
+      marginTop: 3,
+      marginBottom: 2,
     },
     h3: {
       ...heading,
       fontSize: 3,
+      marginTop: 2,
+      marginBottom: 2,
     },
     h4: {
       ...heading,
       fontSize: 2,
+      marginBottom: 2,
     },
     h5: {
       ...heading,
       fontSize: 1,
+      marginBottom: 2,
     },
     h6: {
       ...heading,
       fontSize: 0,
+      marginBottom: 2,
     },
+    ul: { ...lists },
+    ol: { ...lists },
+    img: {
+      width: "100%",
+    },
+    p: {
+      paddingBottom: 3,
+    },
+    paddingTop: [3, 3, 4, 4],
     pre: {
       fontFamily: "monospace",
       overflowX: "auto",
