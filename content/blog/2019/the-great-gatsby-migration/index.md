@@ -19,7 +19,7 @@ For a specific way to create a Gatsby blog, I will add links in the Resources se
 
 ## Why migrate?
 
-Because
+Because of
 
 1. **Pricing**
    - I couldn't justify \$170/year cost as the site isn't for profit.
