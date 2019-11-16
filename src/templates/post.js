@@ -13,32 +13,9 @@ import ExternalLink from "#components/Link/ExternalLink"
 import SEO from "#components/seo"
 
 const postStyle = {
-  // h1: {
-  //   paddingBottom: theme => theme.space[3],
-  // },
-  // h2: {
-  //   padding: theme => `${theme.space[3]}px 0 ${theme.space[2]}px`,
-  // },
   h1: {
     marginBottom: 3,
   },
-  // h2: {
-  //   marginTop: 1,
-  //   marginBottom: 2,
-  // },
-  // "h2, h3, h4, h5, h6": {
-  //   marginBottom: 2,
-  // },
-  // "ul, ol": {
-  //   paddingLeft: "1.1rem",
-  // },
-  // img: {
-  //   width: "100%",
-  // },
-  // lineHeight: "2",
-  // p: {
-  //   paddingBottom: ".5rem",
-  // },
   paddingTop: [3, 3, 4, 4],
 }
 
@@ -75,12 +52,20 @@ export default ({
               frontmatter.banner.childImageSharp.fluid && (
                 <Img fluid={frontmatter.banner.childImageSharp.fluid} />
               )}
-            Broken Post?{" → "}
-            <ExternalLink
-              to={`https://twitter.com/intent/tweet?text=@dance2die%20${location.href} is broken!`}
+            <Box
+              sx={{
+                padding: t => `${t.space[4]}px 0`,
+                textAlign: "center",
+                fontWeight: "heading",
+              }}
             >
-              Let me know
-            </ExternalLink>{" "}
+              Broken Post?{" → "}
+              <ExternalLink
+                to={`https://twitter.com/intent/tweet?text=@dance2die%20${location.href} is broken!`}
+              >
+                Let me know
+              </ExternalLink>{" "}
+            </Box>
             <Styled.root>
               <MDXRenderer>{body}</MDXRenderer>
             </Styled.root>

@@ -7,7 +7,6 @@ const heading = {
 
 const lists = {
   paddingLeft: "1.1rem",
-  // paddingBottom: 3,
 }
 
 export const theme = {
@@ -51,7 +50,7 @@ export const theme = {
     },
   },
   lineHeights: {
-    body: "1.5rem",
+    body: "1.7rem",
   },
 
   styles: {
