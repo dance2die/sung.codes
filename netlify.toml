@@ -1,0 +1,21 @@
+[build]
+publish = "public/"
+command = "gatsby build"
+
+[build.processing]
+skip_processing = true
+
+[build.processing.css]
+bundle = true
+minify = true
+
+[build.processing.js]
+bundle = true
+minify = true
+
+[build.processing.images]
+optimize = true
+compress = false
+
+[build.processing.html]
+pretty_urls = true
