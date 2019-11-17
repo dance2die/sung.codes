@@ -29,9 +29,9 @@ Here is the copy/pastable code snippet.
 
 <a href="https://gist.github.com/dance2die/59a29c7b9a6be44d59a3f2893dac5c1e">View this gist on GitHub</a>
 
-[![Edit React Hooks: useForceUpdate](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/2jq559vq3r)
-
 Fork Donavon's code
+
+https://codesandbox.io/s/2jq559vq3r
 
 Here is `forceUpdate` in action.
 
@@ -51,25 +51,17 @@ I tried to go thru the code in Chrome devtool but would require understanding Re
 
 ## Update
 
-Asked the question in Reddit,
-
-https://www.reddit.com/r/reactjs/comments/9vgaso/
-
-/r/reactjs
-
+Asked the question in Reddit, https://www.reddit.com/r/reactjs/comments/9vgaso/  
 And [/u/acemarke](https://www.reddit.com/u/acemarke) has kindly provided with an explanation.
 
-https://www.reddit.com/r/reactjs/comments/9vgaso/how\_does\_2nd\_value\_in\_react\_hooks\_usestates\_able/e9by088/
-
 Reply by /u/acemarke
-
-https://www.reddit.com/r/reactjs/comments/9vgaso/how\_does\_2nd\_value\_in\_react\_hooks\_usestates\_able/e9c261e/
+https://www.reddit.com/r/reactjs/comments/9vgaso/how_does_2nd_value_in_react_hooks_usestates_able/e9by088/
 
 Request for confirmation by rephrase
-
-https://www.reddit.com/r/reactjs/comments/9vgaso/how\_does\_2nd\_value\_in\_react\_hooks\_usestates\_able/e9c6c27/
+https://www.reddit.com/r/reactjs/comments/9vgaso/how_does_2nd_value_in_react_hooks_usestates_able/e9c261e/
 
 Confirmation & additional remark
+https://www.reddit.com/r/reactjs/comments/9vgaso/how_does_2nd_value_in_react_hooks_usestates_able/e9c6c27/
 
 ## Articles to read
 
