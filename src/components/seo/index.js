@@ -33,8 +33,6 @@ function SEO({
     : seo.canonicalUrl,
   datePublished = isBlogPost ? postMeta.datePublished : false,
 }) {
-  console.info(`title=${title}`, `image=${image}`, postMeta)
-
   return (
     <>
       <Helmet>
