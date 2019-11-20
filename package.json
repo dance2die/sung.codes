@@ -72,7 +72,7 @@
     "build": "gatsby build",
     "format": "prettier --write src/**/*.{js,jsx}",
     "serve": "gatsby serve",
-    "deploy:netlify:prod": "netlify deploy --dir=public --prod",
+    "deploy:netlify:prod": "npm run build && netlify deploy --dir=public --prod",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
