@@ -131,3 +131,5 @@ main 'for await of' num=3
 The behavior is the same as using `asyncForEach` wrapper, just imperative.
 
 <iframe height="400px" width="100%" src="https://repl.it/@dance2die/03-for-await-of?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+Image by <a href="https://pixabay.com/users/PublicDomainPictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2277">PublicDomainPictures</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2277">Pixabay</a>
