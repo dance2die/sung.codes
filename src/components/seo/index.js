@@ -23,12 +23,18 @@ function SEO({
   description = postMeta.plainTextDescription ||
     postMeta.description ||
     seo.description,
-  image = `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
+  bannerImage = postMeta.banner &&
+    postMeta.banner.childImageSharp &&
+    postMeta.banner.childImageSharp.fluid &&
+    postMeta.banner.childImageSharp.fluid.src,
+  image = `${seo.canonicalUrl}${bannerImage || metaImage || defaultMetaImage}`,
   url = postMeta.slug
     ? `${seo.canonicalUrl}${path.sep}${postMeta.slug}`
     : seo.canonicalUrl,
   datePublished = isBlogPost ? postMeta.datePublished : false,
 }) {
+  console.info(`title=${title}`, `image=${image}`, postMeta)
+
   return (
     <>
       <Helmet>

@@ -38,6 +38,12 @@ export default ({
         frontmatter={frontmatter}
         url={new URL(slug, siteUrl).href || siteUrl}
         description={excerpt}
+        image={
+          frontmatter.banner &&
+          frontmatter.banner.childImageSharp &&
+          frontmatter.banner.childImageSharp.fluid &&
+          frontmatter.banner.childImageSharp.fluid.originalImg
+        }
       />
       <Link to={`/blog/${year}`}>&larr; Go Back</Link>
       {/* This "link" is for styling gists. */}
