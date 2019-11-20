@@ -27,6 +27,7 @@ export default ({
     mdx: {
       body,
       frontmatter,
+      excerpt,
       fields: { year, slug },
     },
   },
@@ -36,6 +37,7 @@ export default ({
       <SEO
         frontmatter={frontmatter}
         url={new URL(slug, siteUrl).href || siteUrl}
+        description={excerpt}
       />
       <Link to={`/blog/${year}`}>&larr; Go Back</Link>
       {/* This "link" is for styling gists. */}
@@ -91,6 +93,7 @@ export const pageQuery = graphql`
           ...bannerImage640
         }
       }
+      excerpt
       fields {
         year
         slug
