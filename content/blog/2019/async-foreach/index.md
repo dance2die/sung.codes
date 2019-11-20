@@ -132,4 +132,39 @@ The behavior is the same as using `asyncForEach` wrapper, just imperative.
 
 <iframe height="400px" width="100%" src="https://repl.it/@dance2die/03-for-await-of?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+## Bonus
+
+Jack extended `Array` prototype as
+
+```javascript
+Array.prototype.asyncForEach = async function(callback) {
+  let k = 0
+  while (k < this.length) {
+    if (!this[k]) return
+    let element = this[k]
+    // This will pause the execution of the code
+    await callback(element, k, this)
+    k += 1
+  }
+}
+```
+
+and my friend, [Nicolas Marcora](https://twitter.com/nicolasmarcora) helped me to understand the simplified implementation.
+
+```javascript
+Array.prototype.asyncForEach = async function(callback) {
+  for (const index in this) {
+    const element = this[index]
+    // This will pause the execution of the code
+    await callback(element, index, this)
+  }
+}
+```
+
+`for...in` would return an index of the `this` array, and you can get an element of each, which you can await on.
+
+<iframe height="400px" width="100%" src="https://repl.it/@dance2die/04-bonus-array-prototype-asyncforeach?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+---
+
 Image by <a href="https://pixabay.com/users/PublicDomainPictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2277">PublicDomainPictures</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2277">Pixabay</a>
