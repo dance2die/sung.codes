@@ -58,6 +58,7 @@
     "universal-url": "^2.0.0"
   },
   "devDependencies": {
+    "netlify-cli": "^2.21.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -71,6 +72,7 @@
     "build": "gatsby build",
     "format": "prettier --write src/**/*.{js,jsx}",
     "serve": "gatsby serve",
+    "deploy:netlify:prod": "netlify deploy --dir=public --prod",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
