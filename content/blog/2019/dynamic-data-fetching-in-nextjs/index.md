@@ -109,6 +109,12 @@ Index.getInitialProps = async function() {
 
 https://codesandbox.io/s/nextjs-fetch-jsonplaceholder-posts-dynamic-users-hr34q?fontsize=14&hidenavigation=1&module=%2Fpages%2Findex.js&theme=dark
 
+## Unrelated but just a thought.
+
+I just ran across "App Shell model", for which Next.js can be used to provdie the "shell" and do dynamic data fetching after the load.
+
+https://developers.google.com/web/fundamentals/architecture/app-shell
+
 ---
 
 Image by [Gerd Altmann](https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1647341) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1647341)
