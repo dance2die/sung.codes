@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Location } from "@reach/router"
 import { URL } from "universal-url"
+import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 
 import Layout from "#layouts"
 import ExternalLink from "#components/Link/ExternalLink"
@@ -25,6 +26,7 @@ export default ({
       siteMetadata: { siteUrl },
     },
     mdx: {
+      id,
       body,
       frontmatter,
       excerpt,
@@ -32,11 +34,19 @@ export default ({
     },
   },
 }) => {
+  const url = new URL(slug, siteUrl).href || siteUrl
+
+  let disqusConfig = {
+    url,
+    identifier: id,
+    title: frontmatter.title,
+  }
+
   return (
     <Layout>
       <SEO
         frontmatter={frontmatter}
-        url={new URL(slug, siteUrl).href || siteUrl}
+        url={url}
         description={excerpt}
         image={
           frontmatter.banner &&
@@ -77,6 +87,11 @@ export default ({
             <Styled.root>
               <MDXRenderer>{body}</MDXRenderer>
             </Styled.root>
+
+            {/* <Box sx={{ padding: t => `${t.space[5]}px` }}> */}
+            <Box sx={{ padding: [1, 2, 3, 5] }}>
+              <Disqus config={disqusConfig} />
+            </Box>
           </Box>
         )}
       </Location>
@@ -92,6 +107,7 @@ export const pageQuery = graphql`
       }
     }
     mdx(id: { eq: $id }) {
+      id
       body
       frontmatter {
         title
