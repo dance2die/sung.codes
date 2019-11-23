@@ -20,6 +20,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://twitter.com/dance2die"><img src="https://avatars1.githubusercontent.com/u/8465237?v=4" width="100px;" alt="Sung M. Kim"/><br /><sub><b>Sung M. Kim</b></sub></a><br /><a href="https://github.com/dance2die/sung.codes/commits?author=dance2die" title="Code">💻</a> <a href="#design-dance2die" title="Design">🎨</a> <a href="#blog-dance2die" title="Blogposts">📝</a> <a href="#ideas-dance2die" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/muescha"><img src="https://avatars3.githubusercontent.com/u/184316?v=4" width="100px;" alt="Michael"/><br /><sub><b>Michael</b></sub></a><br /><a href="https://github.com/dance2die/sung.codes/commits?author=muescha" title="Documentation">📖</a></td>
   </tr>
 </table>
 
