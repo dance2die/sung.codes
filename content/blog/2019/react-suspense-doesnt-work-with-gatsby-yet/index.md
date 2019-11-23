@@ -18,7 +18,7 @@ _Actually I found out while deploying it on Netlify first 😅 (then ran_ `_gats
 
 > WebpackError: Invariant Violation: Minified React error #294; visit https://reactjs.org/docs/error-decoder.html?invariant=294 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
 
-![](https://i0.wp.com/www.slightedgecoder.com/wp-content/uploads/2019/07/build-error-1.jpg?fit=1024%2C396&ssl=1)
+![build error screenshot](./images/build-error-1.jpg)
 
 Fonts look broken on local machine too by the way
 
