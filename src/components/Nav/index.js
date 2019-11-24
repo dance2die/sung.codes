@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, useColorMode } from "theme-ui"
+import { useEffect } from "react"
 import { Heading, Flex, Box } from "@theme-ui/components"
 
 import Link from "#components/Link/TextLink"
@@ -65,18 +66,22 @@ const Links = () => (
 const ThemeSwitch = () => {
   const [colorMode, setColorMode] = useColorMode()
 
+  useEffect(() => {
+    console.info(`colorMode`, colorMode)
+  })
+
   return (
     <Link
       onClick={e => {
         e.preventDefault()
-        setColorMode(colorMode === "default" ? "dark" : "default")
+        setColorMode(colorMode === "dark" ? "default" : "dark")
       }}
       sx={{
         fontSize: [1, 2, 3, 4],
         "&:hover": { textDecoration: "none" },
       }}
     >
-      {colorMode === "default" ? "🌞" : "🌙"}
+      {colorMode === "dark" ? "🌙" : "🌞"}
     </Link>
   )
 }
