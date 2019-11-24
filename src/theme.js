@@ -65,9 +65,6 @@ export const theme = {
       lineHeight: "body",
       fontWeight: "body",
     },
-    a: {
-      color: t => t.colors.primary,
-    },
 
     Layout: { fontFamily: "body" },
     Header: { fontFamily: "heading" },

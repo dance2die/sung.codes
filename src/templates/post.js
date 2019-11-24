@@ -18,6 +18,9 @@ const postStyle = {
     marginBottom: 3,
   },
   paddingTop: [3, 3, 4, 4],
+  a: {
+    color: t => t.colors.primary,
+  },
 }
 
 export default ({
