@@ -68,6 +68,7 @@ const ThemeSwitch = () => {
   return (
     <Link
       onClick={e => {
+        e.preventDefault()
         setColorMode(colorMode === "default" ? "dark" : "default")
       }}
       sx={{
