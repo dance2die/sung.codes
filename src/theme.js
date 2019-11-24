@@ -22,7 +22,9 @@ export const theme = {
     modes: {
       dark: {
         text: "#ffffffe0",
-        background: "#000",
+        // from overreacted.io
+        background: "#282c35",
+        // background: "#222",
         // Used https://pinetools.com/invert-color
         gray: ["#101010", "#222222", "#cccccc", "#eeeeee"],
       },
