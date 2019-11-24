@@ -72,6 +72,7 @@ const ThemeSwitch = () => {
         setColorMode(colorMode === "default" ? "dark" : "default")
       }}
       sx={{
+        fontSize: [1, 2, 3, 4],
         "&:hover": { textDecoration: "none" },
       }}
     >
