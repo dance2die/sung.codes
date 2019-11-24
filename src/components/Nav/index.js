@@ -66,13 +66,16 @@ const ThemeSwitch = () => {
   const [colorMode, setColorMode] = useColorMode()
 
   return (
-    <button
+    <Link
       onClick={e => {
         setColorMode(colorMode === "default" ? "dark" : "default")
       }}
+      sx={{
+        "&:hover": { textDecoration: "none" },
+      }}
     >
-      {colorMode === "default" ? "Dark" : "Light"}
-    </button>
+      {colorMode === "default" ? "🌞" : "🌙"}
+    </Link>
   )
 }
 
