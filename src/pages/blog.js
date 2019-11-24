@@ -25,7 +25,6 @@ const Body = styled.main`
 `
 
 const Block = styled(Link)(({ theme }) => {
-  console.log(`Bloc theme`, theme)
   return {
     padding: `3rem 2rem`,
     margin: `.5rem`,
