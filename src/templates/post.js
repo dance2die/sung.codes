@@ -88,7 +88,6 @@ export default ({
               <MDXRenderer>{body}</MDXRenderer>
             </Styled.root>
 
-            {/* <Box sx={{ padding: t => `${t.space[5]}px` }}> */}
             <Box sx={{ padding: [1, 2, 3, 5] }}>
               <Disqus config={disqusConfig} />
             </Box>
