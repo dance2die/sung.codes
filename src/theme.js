@@ -18,10 +18,12 @@ export const theme = {
     primary: themeColor,
     gray: ["#efefef", "#ddd", "#333", "#111"],
     highlight: "#ffd",
+    accent: "#000",
 
     modes: {
       dark: {
         text: "#ffffffe0",
+        accent: "#000",
         // from overreacted.io
         background: "#282c35",
         // background: "#222",
@@ -106,6 +108,7 @@ export const theme = {
       backgroundColor: "highlight",
       borderRadius: "4px",
       borderLeft: t => `8px solid ${t.colors.primary}`,
+      color: t => t.colors.accent,
     },
 
     ul: { ...lists },
