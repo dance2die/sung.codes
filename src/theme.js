@@ -21,7 +21,7 @@ export const theme = {
 
     modes: {
       dark: {
-        text: "#eee",
+        text: "#ffffffe0",
         background: "#000",
         // Used https://pinetools.com/invert-color
         gray: ["#101010", "#222222", "#cccccc", "#eeeeee"],
