@@ -19,7 +19,7 @@ const Title = () => (
         display: "flex",
         alignItems: "center",
         color: theme => theme.colors.gray[3],
-        "& > *": { paddingRight: "0.5rem" },
+        "& > *": { paddingRight: "0.3rem" },
       }}
     >
       <Heading as="h1" sx={headingStyle}>

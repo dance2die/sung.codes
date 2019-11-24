@@ -39,7 +39,7 @@ function Layout({ children }) {
       <ThemeLayout>
         <Container
           sx={{
-            padding: [1, 3, 4, 5],
+            padding: [1, 2, 4, 5],
           }}
         >
           <Nav />
