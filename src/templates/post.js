@@ -58,7 +58,14 @@ export default ({
           frontmatter.banner.childImageSharp.fluid.originalImg
         }
       />
-      <Link to={`/blog/${year}`}>&larr; Go Back</Link>
+      <Link
+        to={`/blog/${year}`}
+        sx={{
+          color: t => t.colors.primary,
+        }}
+      >
+        &larr; Go Back
+      </Link>
       {/* This "link" is for styling gists. */}
       <link
         rel="stylesheet"
