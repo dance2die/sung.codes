@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, useColorMode } from "theme-ui"
 import { Heading, Flex, Box } from "@theme-ui/components"
 
 import Link from "#components/Link/TextLink"
@@ -62,6 +62,20 @@ const Links = () => (
   </Flex>
 )
 
+const ThemeSwitch = () => {
+  const [colorMode, setColorMode] = useColorMode()
+
+  return (
+    <button
+      onClick={e => {
+        setColorMode(colorMode === "default" ? "dark" : "default")
+      }}
+    >
+      {colorMode === "default" ? "Dark" : "Light"}
+    </button>
+  )
+}
+
 export default () => {
   return (
     <Box
@@ -81,6 +95,7 @@ export default () => {
         }}
       >
         <Title />
+        <ThemeSwitch />
         <Links />
       </Flex>
     </Box>

@@ -11,6 +11,7 @@ const lists = {
 
 export const theme = {
   initialColorMode: "light",
+
   colors: {
     text: "#000",
     background: backgroundColor,
@@ -20,8 +21,10 @@ export const theme = {
 
     modes: {
       dark: {
-        text: "#fff",
+        text: "#eee",
         background: "#000",
+        // Used https://pinetools.com/invert-color
+        gray: ["#101010", "#222222", "#cccccc", "#eeeeee"],
       },
     },
   },
