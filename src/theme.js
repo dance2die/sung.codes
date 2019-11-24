@@ -78,8 +78,8 @@ export const theme = {
     h2: {
       ...heading,
       fontSize: 4,
-      marginTop: 3,
-      marginBottom: 2,
+      marginTop: 4,
+      marginBottom: 3,
     },
     h3: {
       ...heading,
@@ -104,9 +104,10 @@ export const theme = {
     },
 
     blockquote: {
-      padding: "16px",
+      padding: 3,
+      marginBottom: 3,
       backgroundColor: "highlight",
-      borderRadius: "4px",
+      borderRadius: 1,
       borderLeft: t => `8px solid ${t.colors.primary}`,
       color: t => t.colors.accent,
     },
