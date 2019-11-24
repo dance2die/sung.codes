@@ -27,10 +27,6 @@ export const theme = {
         // background: "#222",
         // Used https://pinetools.com/invert-color
         gray: ["#101010", "#222222", "#cccccc", "#eeeeee"],
-
-        blockquote: {
-          color: "red",
-        },
       },
     },
   },
@@ -70,7 +66,7 @@ export const theme = {
       fontWeight: "body",
     },
     a: {
-      textDecorationColor: "primary",
+      color: t => t.colors.primary,
     },
 
     Layout: { fontFamily: "body" },
