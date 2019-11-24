@@ -5,8 +5,6 @@ import { jsx, useColorMode } from "theme-ui"
 import { lighten, darken } from "@theme-ui/color"
 
 import Link from "#components/Link/ExternalLink"
-import { css } from "@emotion/core"
-
 import config from "../../config/website"
 
 const getHoverColor = isDefault =>

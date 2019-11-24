@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Location } from "@reach/router"
 import { URL } from "universal-url"
-import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+import { Disqus } from "gatsby-plugin-disqus"
 
 import Layout from "#layouts"
 import ExternalLink from "#components/Link/ExternalLink"
