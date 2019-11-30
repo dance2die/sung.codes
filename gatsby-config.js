@@ -70,7 +70,7 @@ module.exports = {
           },
           `gatsby-remark-embedder`,
           `gatsby-remark-liquid-tags`,
-          { resolve: "gatsby-remark-copy-linked-files" },
+          `gatsby-remark-copy-linked-files`,
           {
             resolve: "gatsby-remark-images",
             options: {
