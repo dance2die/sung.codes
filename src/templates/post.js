@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Styled } from "theme-ui"
+import { jsx, Box, Styled, useColorMode } from "theme-ui"
 import { Heading } from "@theme-ui/components"
 
 import { graphql, Link } from "gatsby"
@@ -12,6 +12,7 @@ import { Disqus } from "gatsby-plugin-disqus"
 import Layout from "#layouts"
 import ExternalLink from "#components/Link/ExternalLink"
 import SEO from "#components/seo"
+import { useState, useEffect, useRef } from "react"
 
 const postStyle = {
   h1: {
@@ -21,6 +22,24 @@ const postStyle = {
   a: {
     color: t => t.colors.primary,
   },
+}
+
+/**
+ * Reload Disqus on theme change because Disqus is within `iframe`
+ * and the theme color changes by Disqus automatically
+ */
+const useReloadDisqusOnThemeChange = () => {
+  const [colorMode] = useColorMode()
+  const previousColorMode = useRef(undefined)
+  const [shouldReloadDisqus, setShouldReloadDisqus] = useState(true)
+
+  useEffect(() => {
+    setShouldReloadDisqus(colorMode !== previousColorMode.current)
+
+    previousColorMode.current = colorMode
+  }, [colorMode])
+
+  return shouldReloadDisqus
 }
 
 export default ({
@@ -38,6 +57,7 @@ export default ({
   },
 }) => {
   const url = new URL(slug, siteUrl).href || siteUrl
+  const shouldReloadDisqus = useReloadDisqusOnThemeChange()
 
   let disqusConfig = {
     url,
@@ -99,7 +119,7 @@ export default ({
             </Styled.root>
 
             <Box sx={{ padding: [1, 2, 3, 5] }}>
-              <Disqus config={disqusConfig} />
+              {shouldReloadDisqus && <Disqus config={disqusConfig} />}
             </Box>
           </Box>
         )}
