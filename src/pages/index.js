@@ -82,7 +82,8 @@ const Bio = () => (
       <Text as="p">I am a software engineer from New York City,</Text>
       <Text as="p">
         Sharing stuff on my <InLink to="/blog">blog</InLink>, moderating on{" "}
-        <OutLink to="https://dev.to/dance2die">DEV</OutLink>
+        <OutLink to="https://dev.to/dance2die">DEV</OutLink> &amp;{" "}
+        <OutLink to="https://www.reddit.com/r/reactjs">r/reactjs</OutLink>
       </Text>
       <Text as="p">
         &amp; translating{" "}
