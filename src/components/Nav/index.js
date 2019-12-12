@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, useColorMode } from "theme-ui"
 import { useEffect } from "react"
-import { Heading, Flex, Box } from "@theme-ui/components"
+import { Heading, Flex, Box, h1 } from "@theme-ui/components"
+import { useResponsiveValue, useBreakpointIndex } from "@theme-ui/match-media"
 
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
@@ -66,10 +67,6 @@ const Links = () => (
 const ThemeSwitch = () => {
   const [colorMode, setColorMode] = useColorMode()
 
-  useEffect(() => {
-    console.info(`colorMode`, colorMode)
-  })
-
   return (
     <Link
       onClick={e => {
@@ -87,6 +84,13 @@ const ThemeSwitch = () => {
 }
 
 export default () => {
+  const Menu = useResponsiveValue([Link, Link, Link])
+  const index = useBreakpointIndex()
+
+  useEffect(() => {
+    console.info(`breakpoint index=${index}`)
+  })
+
   return (
     <Box
       sx={{
@@ -107,8 +111,7 @@ export default () => {
         <Title />
         <ThemeSwitch />
 
-        <Links />
-        <section sx={{ width: ["100%", "100%", "0"] }}>"Mobile!"</section>
+        <Menu>Mobile!</Menu>
       </Flex>
     </Box>
   )
