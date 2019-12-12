@@ -2418,6 +2418,11 @@
     "@styled-system/should-forward-prop" "^5.1.2"
     "@styled-system/space" "^5.1.2"
 
+"@theme-ui/match-media@^0.2.49":
+  version "0.2.49"
+  resolved "https://registry.yarnpkg.com/@theme-ui/match-media/-/match-media-0.2.49.tgz#3119a9070e5cf55a9e840dfae9484f07f99202c1"
+  integrity sha512-zlXg3x2Didzavu+9rwuN6cWTYc1snXr0NpzKJIQSY2fLQ2Ob0ZEbKkqSkewPTtr7DginWrdSy9/ybGDUDMW6vg==
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"

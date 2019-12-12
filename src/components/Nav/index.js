@@ -106,7 +106,9 @@ export default () => {
       >
         <Title />
         <ThemeSwitch />
+
         <Links />
+        <section sx={{ width: ["100%", "100%", "0"] }}>"Mobile!"</section>
       </Flex>
     </Box>
   )
