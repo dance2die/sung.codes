@@ -37,24 +37,24 @@ const NavModal = styled.section`
   justify-content: space-between;
 `
 
-const Logo = styled.header`
-  display: flex;
-  flex-direction: column;
-`
+const MainLogo = () => (
+  <h1
+    sx={{
+      fontSize: "170%",
+      fontWeight: "bold",
+    }}
+  >{`{sung.codes}`}</h1>
+)
+const SubLogo = () => (
+  <h2
+    sx={{
+      fontSize: "1rem",
+    }}
+  >
+    by dance2die
+  </h2>
+)
 
-const StyledMainLogo = styled.h1`
-  font-size: 170%;
-  font-weight: bold;
-`
-const StyledSubLogo = styled.h2`
-  font-size: 1rem;
-`
-const MainLogo = () => <StyledMainLogo>{`{sung.codes}`}</StyledMainLogo>
-const SubLogo = () => <StyledSubLogo>by dance2die</StyledSubLogo>
-
-const LinkList = styled.ul`
-  line-height: 5rem;
-`
 const LinkItem = styled.li`
   font-size: 1.5rem;
 
@@ -69,7 +69,14 @@ const LinkItem = styled.li`
   }
 `
 const Links = () => (
-  <LinkList>
+  <ul
+    sx={{
+      width: "100%",
+      lineHeight: "5rem",
+      listStyle: "none",
+      textAlign: "center",
+    }}
+  >
     <LinkItem>
       <Link to="/">Home</Link>
     </LinkItem>
@@ -79,23 +86,22 @@ const Links = () => (
     <LinkItem>
       <Link to="/blog">Blog</Link>
     </LinkItem>
-  </LinkList>
+  </ul>
 )
 
-const SocialContainer = styled.section`
-  & a {
-    padding: 1rem;
-  }
-`
-const SubTitle = styled.h3``
 const Social = () => (
-  <SocialContainer>
-    <SubTitle>Follow Me</SubTitle>
+  <section
+    sx={{
+      "& a": { padding: "1rem" },
+      lineHeight: "3rem",
+    }}
+  >
+    <h3>Follow Me</h3>
     <section>
       <Twitter />
       <GitHub />
     </section>
-  </SocialContainer>
+  </section>
 )
 
 export default () => {
@@ -111,21 +117,26 @@ export default () => {
       {isClicked && (
         <nav
           sx={{
+            "& a": { color: t => t.colors.text },
             background: t => t.colors.background,
             position: "absolute",
             top: "0",
 
             padding: "3.75rem",
 
-            width: "100vw",
-            height: "100vh",
+            width: "100%",
+            height: "99vh",
           }}
         >
           <NavModal>
-            <Logo>
+            <header
+              sx={{
+                textAlign: "center",
+              }}
+            >
               <MainLogo />
               <SubLogo />
-            </Logo>
+            </header>
             <Links />
             <Social />
           </NavModal>
