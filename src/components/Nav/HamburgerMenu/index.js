@@ -7,22 +7,6 @@ import { useState } from "react"
 import { GitHub, Twitter } from "#components/social"
 import Link from "#components/Link/TextLink"
 
-const Hamburger = ({ onClick }) => (
-  <a
-    onClick={onClick}
-    sx={{
-      height: "2.75rem",
-      width: "2.75rem",
-      background: theme => theme.colors.primary,
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    }}
-  >
-    🍔
-  </a>
-)
-
 const NavModal = styled.section`
   text-transform: uppercase;
   border: 1px solid #cacaca;
@@ -113,7 +97,20 @@ export default () => {
 
   return (
     <Fragment>
-      <Hamburger onClick={toggleClicked} />
+      <a
+        onClick={toggleClicked}
+        sx={{
+          zIndex: "99",
+          height: "2.75rem",
+          width: "2.75rem",
+          background: theme => theme.colors.primary,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        🍔
+      </a>
       {isClicked && (
         <nav
           sx={{
@@ -122,7 +119,7 @@ export default () => {
             position: "absolute",
             top: "0",
 
-            padding: "3.75rem",
+            padding: "3.75rem 2.75rem 3.75rem",
 
             width: "100%",
             height: "99vh",
