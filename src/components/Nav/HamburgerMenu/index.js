@@ -4,6 +4,9 @@ import { Fragment } from "react"
 import styled from "@emotion/styled"
 import { useState } from "react"
 
+import { GitHub, Twitter } from "#components/social"
+import Link from "#components/Link/TextLink"
+
 const Hamburger = ({ onClick }) => (
   <a
     onClick={onClick}
@@ -19,16 +22,6 @@ const Hamburger = ({ onClick }) => (
     🍔
   </a>
 )
-
-const NavContainer = styled.nav`
-  position: absolute;
-  top: 0;
-
-  padding: 2.75rem;
-
-  width: 100vw;
-  height: 100vh;
-`
 
 const NavModal = styled.section`
   text-transform: uppercase;
@@ -78,13 +71,13 @@ const LinkItem = styled.li`
 const Links = () => (
   <LinkList>
     <LinkItem>
-      <a href="/">Home</a>
+      <Link to="/">Home</Link>
     </LinkItem>
     <LinkItem>
-      <a href="/about">About</a>
+      <Link to="/about">About</Link>
     </LinkItem>
     <LinkItem>
-      <a href="/blog">Blog</a>
+      <Link to="/blog">Blog</Link>
     </LinkItem>
   </LinkList>
 )
@@ -99,12 +92,8 @@ const Social = () => (
   <SocialContainer>
     <SubTitle>Follow Me</SubTitle>
     <section>
-      <a href="https://twitter.com/dance2die">Twitter</a>
-      <a href="https://github.com/dance2die">GitHub</a>
-    </section>
-    <section>
-      <a href="https://dev.to/dance2die">DEV</a>
-      <a href="https://stackoverflow.com/users/4035/dance2die">StackOverflow</a>
+      <Twitter />
+      <GitHub />
     </section>
   </SocialContainer>
 )
@@ -120,7 +109,18 @@ export default () => {
     <Fragment>
       <Hamburger onClick={toggleClicked} />
       {isClicked && (
-        <NavContainer>
+        <nav
+          sx={{
+            background: t => t.colors.background,
+            position: "absolute",
+            top: "0",
+
+            padding: "3.75rem",
+
+            width: "100vw",
+            height: "100vh",
+          }}
+        >
           <NavModal>
             <Logo>
               <MainLogo />
@@ -129,7 +129,7 @@ export default () => {
             <Links />
             <Social />
           </NavModal>
-        </NavContainer>
+        </nav>
       )}
     </Fragment>
   )
