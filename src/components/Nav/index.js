@@ -6,6 +6,7 @@ import { useResponsiveValue, useBreakpointIndex } from "@theme-ui/match-media"
 
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
+import HamburgerMenu from "#components/Nav/HamburgerMenu"
 
 const headingStyle = { fontSize: [3, 4, 6, 6] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
@@ -84,11 +85,12 @@ const ThemeSwitch = () => {
 }
 
 export default () => {
-  const Menu = useResponsiveValue([Link, Link, Link])
-  const index = useBreakpointIndex()
+  const Menu = useResponsiveValue([HamburgerMenu, HamburgerMenu, Links])
+  const breakpointIndex = useBreakpointIndex()
+  const isMobile = breakpointIndex => breakpointIndex <= 1
 
   useEffect(() => {
-    console.info(`breakpoint index=${index}`)
+    console.info(`breakpoint breakpointIndex=${breakpointIndex}`)
   })
 
   return (
@@ -111,7 +113,9 @@ export default () => {
         <Title />
         <ThemeSwitch />
 
-        <Menu>Mobile!</Menu>
+        {/* {isMobile(breakpointIndex) && "Mobile!"}
+        {!isMobile(breakpointIndex) && <Link />} */}
+        <Menu />
       </Flex>
     </Box>
   )
