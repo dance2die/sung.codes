@@ -106,7 +106,7 @@ export default () => {
           alignItems: "center",
         }}
       >
-        🍔
+        {isClicked ? "❌" : "🍔"}
       </a>
       {isClicked && (
         <nav
