@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { useEffect } from "react"
 import { Heading, Flex, Box } from "@theme-ui/components"
-import { useResponsiveValue, useBreakpointIndex } from "@theme-ui/match-media"
+import { useResponsiveValue } from "@theme-ui/match-media"
 
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
@@ -68,12 +67,6 @@ const Links = () => (
 
 export default () => {
   const Menu = useResponsiveValue([HamburgerMenu, HamburgerMenu, Links])
-  const breakpointIndex = useBreakpointIndex()
-  const isMobile = breakpointIndex => breakpointIndex <= 1
-
-  useEffect(() => {
-    console.info(`breakpoint breakpointIndex=${breakpointIndex}`)
-  })
 
   return (
     <Box
@@ -94,9 +87,6 @@ export default () => {
       >
         <Title />
         <ThemeSwitch />
-
-        {/* {isMobile(breakpointIndex) && "Mobile!"}
-        {!isMobile(breakpointIndex) && <Link />} */}
         <Menu />
       </Flex>
     </Box>

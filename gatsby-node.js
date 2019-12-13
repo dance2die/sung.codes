@@ -7,6 +7,25 @@
 
 const path = require("path")
 
+// // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
+// // @theme-ui/match-media => useResponsiveValue fails due to '"window" is not available during server side rendering" error!
+// const onCreateWebpackConfig = ({ stage, loaders, actions, reporter }) => {
+//   if (stage === "build-html") {
+//     console.log("👉👉👉 onCreateWebpackConfig build-html", actions)
+
+//     actions.setWebpackConfig({
+//       module: {
+//         rules: [
+//           {
+//             test: /match-media\/dist\/index\.esm\.js/,
+//             use: loaders.null(),
+//           },
+//         ],
+//       },
+//     })
+//   }
+// }
+
 const onCreateNode = ({ node, actions, getNode }) => {
   // console.info(`node.internal.type ==>`, node.internal.type)
   if (node.internal.type === "Mdx") {
@@ -108,4 +127,4 @@ const createPages = async ({ graphql, actions, reporter }) => {
   await createPosts({ graphql, actions, reporter })
 }
 
-module.exports = { onCreateNode, createPages }
+module.exports = { onCreateNode, createPages, onCreateWebpackConfig }
