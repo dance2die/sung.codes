@@ -127,4 +127,4 @@ const createPages = async ({ graphql, actions, reporter }) => {
   await createPosts({ graphql, actions, reporter })
 }
 
-module.exports = { onCreateNode, createPages, onCreateWebpackConfig }
+module.exports = { onCreateNode, createPages }

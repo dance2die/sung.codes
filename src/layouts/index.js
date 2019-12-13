@@ -42,7 +42,7 @@ function Layout({ children }) {
             padding: [1, 2, 4, 5],
           }}
         >
-          <Nav />
+          {typeof window !== "undefined" && <Nav />}
           <Container
             sx={{
               padding: [1, 2, 3, 4],
