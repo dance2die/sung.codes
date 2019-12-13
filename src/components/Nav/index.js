@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Heading, Flex, Box } from "@theme-ui/components"
-import { useResponsiveValue } from "@theme-ui/match-media"
+import { useResponsiveValue, useBreakpointIndex } from "@theme-ui/match-media"
 
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
@@ -67,6 +67,7 @@ const Links = () => (
 
 export default () => {
   const Menu = useResponsiveValue([HamburgerMenu, HamburgerMenu, Links])
+  const breakPointIndex = useBreakpointIndex()
 
   return (
     <Box
@@ -86,7 +87,7 @@ export default () => {
         }}
       >
         <Title />
-        <ThemeSwitch />
+        {breakPointIndex >= 2 && <ThemeSwitch />}
         <Menu />
       </Flex>
     </Box>
