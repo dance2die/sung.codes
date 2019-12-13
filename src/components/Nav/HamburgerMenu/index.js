@@ -6,6 +6,7 @@ import { useState } from "react"
 
 import { GitHub, Twitter } from "#components/social"
 import Link from "#components/Link/TextLink"
+import ThemeSwitch from "../ThemeSwitch"
 
 const NavModal = styled.section`
   text-transform: uppercase;
@@ -75,6 +76,9 @@ const Links = () => (
       textAlign: "center",
     }}
   >
+    <LinkItem>
+      <ThemeSwitch />
+    </LinkItem>
     <LinkItem>
       <HamburgerMenuLink to="/">Home</HamburgerMenuLink>
     </LinkItem>
