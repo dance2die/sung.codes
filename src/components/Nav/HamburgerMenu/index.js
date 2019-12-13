@@ -59,6 +59,7 @@ const Links = () => (
       lineHeight: "5rem",
       listStyle: "none",
       textAlign: "center",
+      "& a": { color: t => t.colors.text },
     }}
   >
     <LinkItem>
@@ -111,7 +112,6 @@ export default () => {
       {isClicked && (
         <nav
           sx={{
-            "& a": { color: t => t.colors.text },
             background: t => t.colors.background,
             position: "absolute",
             top: "0",
