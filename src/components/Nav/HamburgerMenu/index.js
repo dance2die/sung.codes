@@ -66,9 +66,6 @@ const Links = () => (
       <Link to="/">Home</Link>
     </LinkItem>
     <LinkItem>
-      <Link to="/about">About</Link>
-    </LinkItem>
-    <LinkItem>
       <Link to="/blog">Blog</Link>
     </LinkItem>
   </ul>
