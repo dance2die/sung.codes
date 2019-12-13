@@ -45,13 +45,13 @@ const LinkItem = styled.li`
   & {
     a {
       text-decoration: none;
-      color: black;
     }
     a:hover {
       text-decoration: underline;
     }
   }
 `
+
 const Links = () => (
   <ul
     sx={{
@@ -59,7 +59,7 @@ const Links = () => (
       lineHeight: "5rem",
       listStyle: "none",
       textAlign: "center",
-      "& a": { color: t => t.colors.text },
+      "& a": { color: theme => theme.colors.text },
     }}
   >
     <LinkItem>
