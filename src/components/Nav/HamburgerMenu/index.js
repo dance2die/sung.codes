@@ -52,6 +52,20 @@ const LinkItem = styled.li`
   }
 `
 
+const HamburgerMenuLink = ({ to, children }) => (
+  <Link
+    sx={{
+      "&.active": {
+        textDecoration: "underline",
+        fontWeight: "bold",
+      },
+    }}
+    to={to}
+  >
+    {children}
+  </Link>
+)
+
 const Links = () => (
   <ul
     sx={{
@@ -59,14 +73,13 @@ const Links = () => (
       lineHeight: "5rem",
       listStyle: "none",
       textAlign: "center",
-      "& a": { color: theme => theme.colors.text },
     }}
   >
     <LinkItem>
-      <Link to="/">Home</Link>
+      <HamburgerMenuLink to="/">Home</HamburgerMenuLink>
     </LinkItem>
     <LinkItem>
-      <Link to="/blog">Blog</Link>
+      <HamburgerMenuLink to="/blog">Blog</HamburgerMenuLink>
     </LinkItem>
   </ul>
 )

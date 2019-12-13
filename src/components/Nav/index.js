@@ -1,12 +1,13 @@
 /** @jsx jsx */
-import { jsx, useColorMode } from "theme-ui"
+import { jsx } from "theme-ui"
 import { useEffect } from "react"
-import { Heading, Flex, Box, h1 } from "@theme-ui/components"
+import { Heading, Flex, Box } from "@theme-ui/components"
 import { useResponsiveValue, useBreakpointIndex } from "@theme-ui/match-media"
 
 import Link from "#components/Link/TextLink"
 import { GitHub, Twitter } from "#components/social"
 import HamburgerMenu from "#components/Nav/HamburgerMenu"
+import ThemeSwitch from "./ThemeSwitch"
 
 const headingStyle = { fontSize: [3, 4, 6, 6] }
 const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
@@ -64,25 +65,6 @@ const Links = () => (
     </Box>
   </Flex>
 )
-
-const ThemeSwitch = () => {
-  const [colorMode, setColorMode] = useColorMode()
-
-  return (
-    <Link
-      onClick={e => {
-        e.preventDefault()
-        setColorMode(colorMode === "dark" ? "default" : "dark")
-      }}
-      sx={{
-        fontSize: [1, 2, 3, 4],
-        "&:hover": { textDecoration: "none" },
-      }}
-    >
-      {colorMode === "dark" ? "🌙" : "🌞"}
-    </Link>
-  )
-}
 
 export default () => {
   const Menu = useResponsiveValue([HamburgerMenu, HamburgerMenu, Links])
