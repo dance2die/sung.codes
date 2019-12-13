@@ -39,7 +39,7 @@ const LinkItem = styled.li`
   }
 `
 
-const HamburgerMenuLink = ({ to, children }) => (
+const HamburgerMenuLink = ({ onClick = () => {}, to, children }) => (
   <Link
     sx={{
       "&.active": {
@@ -48,12 +48,13 @@ const HamburgerMenuLink = ({ to, children }) => (
       },
     }}
     to={to}
+    onClick={onClick}
   >
     {children}
   </Link>
 )
 
-const Links = () => (
+const Links = ({ onClick }) => (
   <ul
     sx={{
       width: "100%",
@@ -66,10 +67,14 @@ const Links = () => (
       <ThemeSwitch />
     </LinkItem>
     <LinkItem>
-      <HamburgerMenuLink to="/">Home</HamburgerMenuLink>
+      <HamburgerMenuLink onClick={onClick} to="/">
+        Home
+      </HamburgerMenuLink>
     </LinkItem>
     <LinkItem>
-      <HamburgerMenuLink to="/blog">Blog</HamburgerMenuLink>
+      <HamburgerMenuLink onClick={onClick} to="/blog">
+        Blog
+      </HamburgerMenuLink>
     </LinkItem>
   </ul>
 )
@@ -144,7 +149,7 @@ export default () => {
               <MainLogo />
               <SubLogo />
             </header>
-            <Links />
+            <Links onClick={toggleClicked} />
             <Social />
           </section>
         </nav>
