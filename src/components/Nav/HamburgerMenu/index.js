@@ -90,10 +90,7 @@ const Social = () => (
 
 export default () => {
   const [isClicked, setIsClicked] = useState(false)
-  const toggleClicked = () => {
-    console.info("clicked!", isClicked)
-    setIsClicked(clicked => !clicked)
-  }
+  const toggleClicked = () => setIsClicked(clicked => !clicked)
 
   return (
     <Fragment>
