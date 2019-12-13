@@ -8,20 +8,6 @@ import { GitHub, Twitter } from "#components/social"
 import Link from "#components/Link/TextLink"
 import ThemeSwitch from "../ThemeSwitch"
 
-const NavModal = styled.section`
-  text-transform: uppercase;
-  border: 1px solid #cacaca;
-  padding: 3rem;
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: space-between;
-`
-
 const MainLogo = () => (
   <h1
     sx={{
@@ -137,7 +123,19 @@ export default () => {
             height: "99vh",
           }}
         >
-          <NavModal>
+          <section
+            sx={{
+              textTransform: "uppercase",
+              border: "1px solid #cacaca",
+              padding: "3rem",
+              height: "100%",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
             <header
               sx={{
                 textAlign: "center",
@@ -148,7 +146,7 @@ export default () => {
             </header>
             <Links />
             <Social />
-          </NavModal>
+          </section>
         </nav>
       )}
     </Fragment>
