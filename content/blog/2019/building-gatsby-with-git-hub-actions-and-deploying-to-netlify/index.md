@@ -1,9 +1,10 @@
 ---
 title: Building Gatsby with GitHub Actions and deploying to Netlify
 date: "2019-12-25"
-banner: ./images/featured-image.gif
 tags: "gatsby, github, actions, netlify, deployment, ci"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
+bannerCredit: "Image by [Web Donut](https://pixabay.com/users/WebDonut-322038/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=384921) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=384921)"
 ---
 
 Netlify introduced [build minutes](https://www.netlify.com/pricing/faq/) (300 minutes for the free tier, 1000 for the pro account), which limits build time on their site.
@@ -152,3 +153,7 @@ jobs:
 ```
 
 Check out [About workflow events](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#about-workflow-events) for more triggers.
+
+---
+
+Image by <a href="https://pixabay.com/users/WebDonut-322038/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=384921">Web Donut</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=384921">Pixabay</a>
