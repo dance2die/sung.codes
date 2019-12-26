@@ -110,7 +110,7 @@ GitHub Actions's YAML editor complains that you can't pass an array to the `secr
 
 ## Workflow Result
 
-After commiting the workflow file, you can see that the Gatsby file was build and deployed to Netlify successfully in the log.
+After commiting the workflow file, you can see that the Gatsby was built and deployed to Netlify successfully in the log.
 
 ![secrets](./images/log.png)
 
