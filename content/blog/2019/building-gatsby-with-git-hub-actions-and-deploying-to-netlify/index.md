@@ -133,7 +133,7 @@ Here is a comparison between liked and unlinked sites.
 
 ## Manual Workflow Trigger
 
-There is [no way to manually trigger workflow](https://github.community/t5/GitHub-Actions/GitHub-Actions-Manual-Trigger-Approvals/td-p/31504), so I made the workflow to run on code "push" initially before making it run on schedule.
+There is [no way to manually trigger workflows](https://github.community/t5/GitHub-Actions/GitHub-Actions-Manual-Trigger-Approvals/td-p/31504), so I made the workflow to run on code "push" initially before making it run on schedule.
 
 ```yaml
 name: Build and Deploy to Gatsby every hour
