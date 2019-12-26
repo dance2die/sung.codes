@@ -106,7 +106,7 @@ action "Publish" {
 }
 ```
 
-GitHub Actions's YAML editor complains that you can't pass an array to the `secret`, so you need to turn it into a string.
+GitHub Actions's YAML editor [complains](https://github.com/dance2die/SHANc/commit/75ef850d988dc57de7c6838eb77aecf46a7672fe/checks?check_suite_id=374139490) that you can't pass an array to the `secret`, so you need to turn it into a string.
 
 ## Workflow Result
 
