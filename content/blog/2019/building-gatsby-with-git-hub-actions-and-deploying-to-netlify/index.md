@@ -17,8 +17,8 @@ You can shave off the build time by delegating the build minutes to GitHub Actio
 
 ## Preface
 
-I am writing this while learning about GitHub Actions, so let me know should you find any errors :)
-so will refer you to the [GitHub Actions documentation](https://help.github.com/en/actions).
+I am writing this while learning about GitHub Actions, so let me know should you find any errors. :)  
+If you want to know more about GitHub Actions, check out the official [GitHub Actions documentation](https://help.github.com/en/actions).
 
 ## Creating a Workflow file
 
