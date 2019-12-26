@@ -70,11 +70,11 @@ jobs:
 
 ## Secret Environment Variables
 
-To publish to Netlify, you need to supply a [personal access token](https://docs.netlify.com/cli/get-started/#obtain-a-token-in-the-netlify-ui), `NETLIFY_AUTH_TOKEN` to the Netlify CLI (and an [optional site ID](https://docs.netlify.com/cli/get-started/#link-with-an-environment-variable), `NETLIFY_SITE_ID`).
+Deploying to Netlify with Netlify CLI requires a [personal access token](https://docs.netlify.com/cli/get-started/#obtain-a-token-in-the-netlify-ui), `NETLIFY_AUTH_TOKEN` (and an [optional site ID](https://docs.netlify.com/cli/get-started/#link-with-an-environment-variable), `NETLIFY_SITE_ID`).
 
 _But You should never expose your API keys, ever, period._
 
-Thankfully, GitHub provides a way to [create secret environment variable](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets), which you can pass to the workflow definition.
+Thankfully, GitHub provides a way to [create secret environment variables](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets), which you can pass to the workflow definition.
 
 ![secrets](./images/secrets.jpg)
 
