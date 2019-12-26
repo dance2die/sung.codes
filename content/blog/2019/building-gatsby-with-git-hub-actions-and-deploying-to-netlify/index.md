@@ -124,9 +124,12 @@ When your Netlify site is linked to your GitHub repository, any source code comm
 
 But [You can't unlink GitHub repository from Netlify UI](https://community.netlify.com/t/common-issue-how-can-i-optimize-my-netlify-build-time/3907), to prevent an auto-build (unless you create a new site without linking to a repository first).
 
-So you need to go to [Netlify community support](https://community.netlify.com/c/Netlify-support/48) and request to unlink your site(s).
-
+So you need to go to [Netlify community support](https://community.netlify.com/c/Netlify-support/48) and request to unlink your site(s).  
 As an exmaple here is [the request for SHANc](https://community.netlify.com/t/request-for-github-repository-unlink/6606/1), which was handled quickly on X-Mas! (🙂👍)
+
+Here is a comparison between liked and unlinked sites.
+
+![linked vs. unlinked sites](./images/linked-unlinkned-comparison.jpg)
 
 ## Manual Workflow Trigger
 
