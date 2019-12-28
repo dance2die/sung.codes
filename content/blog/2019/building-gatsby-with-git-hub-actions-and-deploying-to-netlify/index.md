@@ -94,6 +94,8 @@ You now need to declare the environment variables, and pass it to the CLI.
 1. `args` is what's passed to the Netlify CLI,
 1. `secrets` are the environment variables for Netlify CLI.
 
+_Refer to the `deploy` command on [Netlify CLI documentation](https://github.com/netlify/cli/blob/master/docs/commands/deploy.md#deploy)._
+
 so the configuration above would look like following in command line.
 
 **In powershell,**
