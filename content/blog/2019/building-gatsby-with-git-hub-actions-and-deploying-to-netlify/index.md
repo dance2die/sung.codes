@@ -91,6 +91,23 @@ You now need to declare the environment variables, and pass it to the CLI.
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
 ```
 
+1. `args` is what's passed to the Netlify CLI,
+1. `secrets` are the environment variables for Netlify CLI.
+
+so the configuration above would look like following in command line.
+
+**In powershell,**
+
+```powershell
+$env:NETLIFY_AUTH_TOKEN='secret'; $env:NETLIFY_SITE_ID='site id'; netlify deploy --dir=public --prod
+```
+
+**In bash,**
+
+```bash
+NETLIFY_AUTH_TOKEN='secret' NETLIFY_SITE_ID='site id' && netlify deploy --dir=public --prod
+```
+
 I wasn't aware of [an alternative syntax](https://github.com/netlify/actions/blob/master/cli/README.md#example) to declare the workflow, and had hard time with passing the secrets.
 
 ```
@@ -106,7 +123,14 @@ action "Publish" {
 }
 ```
 
-GitHub Actions's YAML editor [complains](https://github.com/dance2die/SHANc/commit/75ef850d988dc57de7c6838eb77aecf46a7672fe/checks?check_suite_id=374139490) that you can't pass an array to the `secret`, so you need to turn it into a string.
+GitHub Actions's YAML editor [complains](https://github.com/dance2die/SHANc/commit/75ef850d988dc57de7c6838eb77aecf46a7672fe/checks?check_suite_id=374139490) that you can't pass an array to the `secret`, so you need to turn it into a string,
+
+```yaml
+#       👇 secrets is a string                    👇
+secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+# not as an array.
+secrets: ["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]
+```
 
 ## Workflow Result
 
