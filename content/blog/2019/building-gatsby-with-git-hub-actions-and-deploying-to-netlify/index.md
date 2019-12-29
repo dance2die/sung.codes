@@ -130,7 +130,7 @@ GitHub Actions's YAML editor [complains](https://github.com/dance2die/SHANc/comm
 ```yaml
 #       👇 secrets is a string                    👇
 secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
-# not as an array.
+# not an array.
 secrets: ["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]
 ```
 
