@@ -90,7 +90,7 @@ const Bio = () => (
         <OutLink to="https://allcontributors.org/">
           All Contributors Project
         </OutLink>{" "}
-        in Korean.
+        into Korean.
       </Text>
     </Box>
   </Flex>
