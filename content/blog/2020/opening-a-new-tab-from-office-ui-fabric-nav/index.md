@@ -2,9 +2,10 @@
 title: Opening a new tab from Office UI Fabric Nav
 date: "2020-01-23"
 published: true
-tags: react, ui fabric, office ui fabric, selfnote
-banner: ./images/featured-image.jpg
+tags: "react, ui fabric, office ui fabric, selfnote"
 author: Sung M. Kim
+banner: ./images/featured-image.jpg
+bannerCredit: "Image by [Oberholster Venita](https://pixabay.com/users/ArtsyBee-462611/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1047275) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1047275)"
 ---
 
 I was working with [Office UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web) React library.  
@@ -71,3 +72,7 @@ Opening a new link with `target="__blaink"` needs `rel="noopener noreferrer"` be
 Nav is to [add "rel" automatically for external links](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/packages/office-ui-fabric-react/src/components/Nav/Nav.base.tsx#L105) with target specified but it didn't.
 
 I've filed an [issue](https://github.com/OfficeDev/office-ui-fabric-react/issues/11785) to notify.
+
+---
+
+Image by <a href="https://pixabay.com/users/ArtsyBee-462611/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1047275">Oberholster Venita</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1047275">Pixabay</a>
