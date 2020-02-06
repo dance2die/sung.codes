@@ -49,3 +49,7 @@ module.exports = {
 You can specify the height like `50vh` (refer to `screen/2`) or calculate with `calc` (for `screen/2~5`).
 
 ![target not found](./images/demo.jpg)
+
+## Source Code
+
+https://github.com/dance2die/blog.extending-tailwind-css-screen-height-utility
