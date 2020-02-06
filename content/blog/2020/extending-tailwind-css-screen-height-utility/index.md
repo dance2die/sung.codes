@@ -5,7 +5,7 @@ published: true
 tags: "tailwindcss, css, react, selfnote"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Oberholster Venita](https://pixabay.com/users/ArtsyBee-462611/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1047275) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1047275)"
+bannerCredit: "Image by [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1209185) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1209185)"
 ---
 
 Let's extend Tailwind CSS's height (`h-`) utility for `50vh`, `33.33333vh`, `25vh`, and `20vh`.
@@ -26,7 +26,7 @@ The only way to do is to add a custom configuration.
 ## Updating Tailwind Configuration
 
 You can extend the `h-` utility by updating your `tailwind.config.js` file.  
-The important part is to wrap your new utility with [`extend`](https://tailwindcss.com/docs/theme/#extending-the-default-theme).
+The important part is to wrap your new utility with [extend](https://tailwindcss.com/docs/theme/#extending-the-default-theme).
 
 ```javascript
 module.exports = {
@@ -53,3 +53,7 @@ You can specify the height like `50vh` (refer to `screen/2`) or calculate with `
 ## Source Code
 
 https://github.com/dance2die/blog.extending-tailwind-css-screen-height-utility
+
+---
+
+Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1209185">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1209185">Pixabay</a>
