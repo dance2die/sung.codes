@@ -67,7 +67,7 @@ So all you have to do is to add `target` property with `__blank`.
 
 ## Security Concerns
 
-Opening a new link with `target="__blaink"` needs `rel="noopener noreferrer"` because [Links to cross-origin destinations are unsafe](https://developers.google.com/web/tools/lighthouse/audits/noopener).
+Opening a new link with `target="__blank"` needs `rel="noopener noreferrer"` because [Links to cross-origin destinations are unsafe](https://developers.google.com/web/tools/lighthouse/audits/noopener).
 
 Nav is to [add "rel" automatically for external links](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/packages/office-ui-fabric-react/src/components/Nav/Nav.base.tsx#L105) with target specified but it didn't.
 
