@@ -7,11 +7,17 @@ author: Sung M. Kim
 banner: ./images/featured-image.jpg
 ---
 
-_Photo by [Holger Link](https://unsplash.com/photos/K7yZ-CsDvRU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/lazy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+### **Update** - February 13, 2020
+
+Here is the version using React Hooks.
+
+https://alligator.io/react/loading-components-dynamically-hooks/
+
+---
 
 React v16.6.0 introduced [React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy) for code splitting.
 
-Previous post, [Loading React Components Dynamically on Demand](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/) showed how to load components dynamically enabling code splitting using `import()`.
+In the previous post, [Loading React Components Dynamically on Demand](https://sung.codes/blog/2017/12/03/loading-react-components-dynamically-demand/) showed how to load components dynamically enabling code splitting using `import()`.
 
 This is an updated post to show how to load components dynamically using `React.lazy`, which wraps around `import()` and retrieves a default component.
 
@@ -153,3 +159,7 @@ Case 3 – Loading Components on Demand
 
 - [CodeSandbox](https://codesandbox.io/s/qv743wwrr4)
 - [Demo](https://reactlazy3.netlify.com/)
+
+---
+
+_Photo by [Holger Link](https://unsplash.com/photos/K7yZ-CsDvRU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/lazy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_

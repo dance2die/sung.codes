@@ -1,17 +1,23 @@
 ---
 title: Loading React Components Dynamically on Demand
-date: '2017-12-03'
+date: "2017-12-03"
 banner: ./images/featured-image.jpg
-published_at: '2017-12-04T02:37:32.000Z'
-tags: 'react, javascript'
+published_at: "2017-12-04T02:37:32.000Z"
+tags: "react, javascript"
 author: Sung M. Kim
 ---
+
+### **Update** - February 13, 2020
+
+Here is the version using React Hooks.
+
+https://alligator.io/react/loading-components-dynamically-hooks/
 
 ### **UPDATE** - October 28, 2018
 
 Refer to the updated post, [Loading React Components Dynamically on Demand using React.lazy](https://sung.codes/blog/2018/10/28/loading-react-components-dynamically-on-demand-using-react-lazy/) if you are using `v16.6.0+`.
 
-* * *
+---
 
 I was looking for implementations for a [Factory Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) in JavaScript to get rid of a `switch` statement when displaying React components.
 
@@ -54,12 +60,6 @@ I will use `import()` statement to dynamically load event component (Please refe
 Here is the demo code structure.
 
 ![](./images/React-Dynamic-Component-Code-Structure-Code_2017-12-03_17-40-48.png)
-
- 
-
- 
-
- 
 
 Here is the method to add a component by type name ("PushEvent", "ReleaseEvent", and "StatusEvent").
 
@@ -107,22 +107,6 @@ First, the code structure looks like this.
 
 ![](./images/ReactFactory-Tree-Structure-Code_2017-12-03_19-44-12.png)
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 We pass the JSON response to `GitHubEventApp` like following.
 
 `gist:dance2die/8fc8e6e8d0b85392bfd6e8bf8d9bbbb5`
@@ -168,8 +152,6 @@ Component codes are listed here for the sake of completeness.
 
 `gist:dance2die/4fcdd430a41103986adfc616ce666f31`
 
- 
-
 ### Case 3 - Loading Components on Demand
 
 The last case is when we want to display different views for the same input.
@@ -180,22 +162,6 @@ Code structure looks like this.
 
 ![](./images/React-Load-On-Demand-Tree-Structure-Code_2017-12-03_20-01-21.jpg)
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 Here is the shared data we want to display in **tabular** and/or **graph** representations.
 
 `gist:dance2die/b5662196399a477f53e8f8c18d4ed76a`
@@ -203,8 +169,6 @@ Here is the shared data we want to display in **tabular** and/or **graph** repre
 Here is how the result looks before digging into the implementation (Please pardon my CSS skills _again_).
 
 https://www.youtube.com/watch?v=aereCCBwn1o&feature=youtu.be
-
- 
 
 [Live Demo](https://hardcore-fermi-db1121.netlify.com/) on Netlify
 
@@ -250,4 +214,3 @@ I've discussed three cases.
 3. [Loading Components on Demand](#case3) - [Demo](https://hardcore-fermi-db1121.netlify.com/) - [Source Code](https://github.com/dance2die/Demo.React.ReactLoadOnDemand)
 
 I'd appreciate it if you can point out any optimizations or improvements I can make.
-
