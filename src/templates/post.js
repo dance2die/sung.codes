@@ -12,6 +12,7 @@ import { Disqus } from "gatsby-plugin-disqus"
 import Layout from "#layouts"
 import ExternalLink from "#components/Link/ExternalLink"
 import SEO from "#components/seo"
+import Webmention from "#components/Webmention"
 import { useState, useEffect, useRef } from "react"
 
 const postStyle = {
@@ -117,6 +118,10 @@ export default ({
             <Styled.root>
               <MDXRenderer>{body}</MDXRenderer>
             </Styled.root>
+
+            <Box sx={{ padding: [1, 2, 3, 5] }}>
+              <Webmention target={url} />
+            </Box>
 
             <Box sx={{ padding: [1, 2, 3, 5] }}>
               {shouldReloadDisqus && <Disqus config={disqusConfig} />}
