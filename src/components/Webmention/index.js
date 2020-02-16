@@ -62,15 +62,24 @@ function WebmentionCount({ target }) {
   )
 }
 
+function WebmentionReplies({ target }) {
+  return (
+    <>
+      <h1>Replies</h1>
+    </>
+  )
+}
+
 function Webmention({ target }) {
   const [replies, setReplies] = useState()
 
   return (
     <>
-      <Heading as="h3" mb={[2, 2, 3, 3]}>
+      <Heading as="h2" mb={[2, 2, 3, 3]}>
         Webmentions
       </Heading>
       <WebmentionCount target={target} />
+      <WebmentionReplies target={target} />
     </>
   )
 }
