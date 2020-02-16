@@ -117,7 +117,7 @@ function WebmentionReplies({ target }) {
       // `https://webmention.io/api/mentions?page=${page}&per-page=20&sort-by=published&target=${target}`,
       // `https://webmention.io/api/mentions?page=${page}&per-page=50&target=${target}/` // trailing slash impt
       // `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=https://www.swyx.io/writing/clientside-webmentions/`
-      `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}/`
+      `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}`
     )
       .then(response => response.json())
       .then(json => json.links.filter(x => x.activity.type !== "like"))
