@@ -16,6 +16,7 @@ export const Twitter = ({ url = `${config.twitter}` }) => {
   return (
     <Link
       to={url}
+      rel="me"
       sx={{
         "aria-label": "Visit my Twitter",
         color: theme => theme.colors.gray[3],
