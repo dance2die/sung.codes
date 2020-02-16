@@ -13,9 +13,8 @@ const initialCounts = {
   },
 }
 
-function Webmention({ target }) {
+function WebmentionCount({ target }) {
   const [counts, setCounts] = useState(initialCounts)
-  const [webmentions, setWebmentions] = useState()
 
   useEffect(() => {
     async function getCounts() {
@@ -58,6 +57,16 @@ function Webmention({ target }) {
           {counts.type.mention + counts.type.reply || 0}
         </p>
       )}
+    </>
+  )
+}
+
+function Webmention({ target }) {
+  const [webmentions, setWebmentions] = useState()
+
+  return (
+    <>
+      <WebmentionCount target={target} />
     </>
   )
 }
