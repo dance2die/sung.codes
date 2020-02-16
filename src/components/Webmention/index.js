@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+// eslint-disable-next-line
 import React from "react"
 import { useEffect, useState } from "react"
 
@@ -45,7 +46,7 @@ function WebmentionCount({ target }) {
     }
 
     getCounts()
-  }, [])
+  }, [target])
 
   return (
     <>
@@ -62,7 +63,7 @@ function WebmentionCount({ target }) {
 }
 
 function Webmention({ target }) {
-  const [webmentions, setWebmentions] = useState()
+  const [replies, setReplies] = useState()
 
   return (
     <>
