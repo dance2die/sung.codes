@@ -21,8 +21,8 @@ module.exports = {
   // themeColor: "rebeccapurple",
   backgroundColor: "#fff",
 
-  twitter: "https://twitter.com/dance2die/",
+  twitter: "https://twitter.com/dance2die",
   twitterHandle: "@dance2die",
-  github: "https://github.com/dance2die/",
+  github: "https://github.com/dance2die",
   rss: "https://sung.codes/blog/rss.xml",
 }
