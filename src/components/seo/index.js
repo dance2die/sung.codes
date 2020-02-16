@@ -57,6 +57,15 @@ function SEO({
         <meta name="twitter:image" content={image} />
 
         <link href={seo.social.twitter} rel="me"></link>
+
+        <link
+          rel="webmention"
+          href={`https://webmention.io/${seo.hostname}/webmention`}
+        />
+        <link
+          rel="pingback"
+          href={`https://webmention.io/${seo.hostname}/xmlrpc`}
+        />
       </Helmet>
       <SchemaOrg
         isBlogPost={isBlogPost}
@@ -81,6 +90,7 @@ function SEOWithQuery(props) {
     {
       site {
         siteMetadata {
+          hostname
           title
           description
           canonicalUrl

@@ -1,8 +1,11 @@
+const hostname = "sung.codes"
+
 module.exports = {
   siteTitle: "Sung M. Kim",
   siteTitleAlt: "The personal website of Sung M. Kim",
   siteTitleShort: "sungmkim",
-  siteUrl: process.env.ROOT_URL || "https://sung.codes",
+  siteUrl: process.env.ROOT_URL || `https://${hostname}`,
+  hostname,
   siteLanguage: "en",
   siteLogo: "images/logo.jpg",
   siteDescription:

@@ -12,6 +12,7 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 module.exports = {
   siteMetadata: {
     siteUrl,
+    hostname: config.hostname,
     title: config.siteTitleAlt,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
