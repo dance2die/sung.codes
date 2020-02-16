@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { Heading } from "@theme-ui/components"
 // eslint-disable-next-line
-import React from "react"
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 
 const initialCounts = {
   count: 0,
@@ -67,6 +67,9 @@ function Webmention({ target }) {
 
   return (
     <>
+      <Heading as="h3" mb={[2, 2, 3, 3]}>
+        Webmentions
+      </Heading>
       <WebmentionCount target={target} />
     </>
   )
