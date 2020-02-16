@@ -51,10 +51,12 @@ function SEO({
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content={seo.social.twitter} />
+        <meta name="twitter:creator" content={seo.social.twitterHandle} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+
+        <link href={seo.social.twitter} rel="me"></link>
       </Helmet>
       <SchemaOrg
         isBlogPost={isBlogPost}
@@ -93,6 +95,7 @@ function SEOWithQuery(props) {
           }
           social {
             twitter
+            twitterHandle
             fbAppID
           }
         }
