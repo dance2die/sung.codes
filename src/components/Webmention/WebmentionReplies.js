@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Button, Text, Box, Flex, Image } from "@theme-ui/components"
 // eslint-disable-next-line
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useReducer } from "react"
 import Dangerous from "dangerous-components"
 
 import ExternalLink from "#components/Link/ExternalLink"
@@ -52,7 +52,14 @@ function Replies({ replies }) {
 function WebmentionReplies({ target }) {
   const [page, setPage] = useState(0)
   const [fetchState, setFetchState] = useState("fetching")
-  const [replies, setReplies] = useState([])
+  const mergeReplies = (oldReplies, newReplies) => [
+    ...oldReplies,
+    ...newReplies,
+  ]
+  const initialReplies = []
+  // "The ‘useReducer’ Hook" - https://leewarrick.com/blog/a-guide-to-usestate-and-usereducer/
+  // Instead of "useState", you can simply pass a merge logic as a reducer
+  const [replies, setReplies] = useReducer(mergeReplies, initialReplies)
   const perPage = 30
 
   const getMentions = () =>
@@ -65,17 +72,12 @@ function WebmentionReplies({ target }) {
       .then(response => response.json())
       .then(json => [...json.links])
 
-  const mergeReplies = newReplies => oldReplies => [
-    ...oldReplies,
-    ...newReplies,
-  ]
-
   const incrementPage = () => setPage(previousPage => previousPage + 1)
   const fetchMore = () =>
     getMentions()
       .then(newReplies => {
         if (newReplies.length) {
-          setReplies(mergeReplies(newReplies))
+          setReplies(newReplies)
         } else {
           setFetchState("nomore")
         }
@@ -85,7 +87,7 @@ function WebmentionReplies({ target }) {
   useEffect(() => {
     getMentions()
       .then(newReplies => {
-        setReplies(mergeReplies(newReplies))
+        setReplies(newReplies)
         setFetchState("done")
       })
       .then(incrementPage)
