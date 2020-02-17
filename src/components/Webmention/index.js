@@ -1,16 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Heading, Button, Text, Box, Flex, Image } from "@theme-ui/components"
-// eslint-disable-next-line
-import React, { useEffect, useState } from "react"
-import Dangerous from "dangerous-components"
+import { Heading, Text, Box } from "@theme-ui/components"
 import ErrorBoundary from "react-error-boundary"
 
-import ExternalLink from "#components/Link/ExternalLink"
-import AvatarPlaceholder from "../../images/avatar-placeholder.jpg"
 import WebmentionCount from "./WebmentionCount"
 import WebmentionReplies from "./WebmentionReplies"
 
+/**
+ * This displays an error message when Webmention fails to load
+ */
 const WebmentionFallbackComponent = ({ componentStack, error }) => (
   <Box>
     <Text>
