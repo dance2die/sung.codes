@@ -5,7 +5,7 @@ published: true
 tags: "indieweb, webmention, gatsby, react"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Alexas_Fotos](https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1649299) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1649299)"
+bannerCredit: "Image by [Gerd Altmann](https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2944064) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2944064)"
 ---
 
 [Webmention](https://indieweb.org/Webmention) is [not new](https://twitter.com/swyx/status/1227459356586803206) and I liked the idea after reading [@swyx](https://twitter.com/swyx)'s post, [Clientside Webmentions - Joining the IndieWeb with Svelte](https://www.swyx.io/writing/clientside-webmentions).
@@ -357,5 +357,11 @@ The full source for the components above is listed below.
 
 ## Parting Words
 
+I am considering to remove "Disqus" at the bottom when "webmention" is all set up properly
+
 That's all folks. If there are any mentions for this post, you can see it 👇  
 If not scroll down to in [this post](https://sung.codes/blog/2019/12/25/building-gatsby-with-git-hub-actions-and-deploying-to-netlify/) to see webmentions.
+
+---
+
+Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2944064">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2944064">Pixabay</a>
