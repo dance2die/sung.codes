@@ -2,7 +2,7 @@
 import { jsx, Avatar } from "theme-ui"
 import { Heading, Button, Text, Box, Flex, Image } from "@theme-ui/components"
 // eslint-disable-next-line
-import React, { useEffect, useState, useCallback } from "react"
+import React, { useEffect, useState } from "react"
 import Dangerous from "dangerous-components"
 import ErrorBoundary from "react-error-boundary"
 
@@ -52,10 +52,6 @@ function WebmentionCount({ target }) {
 
     getCounts()
   }, [target])
-
-  useEffect(() => {
-    console.info(`counts???`, counts)
-  }, [counts])
 
   return (
     <>
@@ -134,21 +130,11 @@ function WebmentionReplies({ target }) {
     getMentions()
       .then(returnedReplies => {
         if (returnedReplies.length) {
-          console.info(
-            `fetchMore    page=${page} => returnedReplies???`,
-            replies,
-            returnedReplies
-          )
           setReplies(previousReplies => [
             ...previousReplies,
             ...returnedReplies,
           ])
         } else {
-          console.info(
-            `fetchMore   ELSE... page=${page} => returnedReplies???`,
-            replies,
-            returnedReplies
-          )
           setFetchState("nomore")
         }
       })
@@ -157,11 +143,6 @@ function WebmentionReplies({ target }) {
   useEffect(() => {
     getMentions()
       .then(returnedReplies => {
-        console.info(
-          `useEffect     page=${page} => returnedReplies???`,
-          replies,
-          returnedReplies
-        )
         setReplies(previousReplies => [...previousReplies, ...returnedReplies])
         setFetchState("done")
       })
