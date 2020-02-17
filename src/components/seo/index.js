@@ -60,11 +60,11 @@ function SEO({
 
         <link
           rel="webmention"
-          href={`https://webmention.io/${seo.hostname}/webmention`}
+          href={`https://webmention.io/www.${seo.hostname}/webmention`}
         />
         <link
           rel="pingback"
-          href={`https://webmention.io/${seo.hostname}/xmlrpc`}
+          href={`https://webmention.io/www.${seo.hostname}/xmlrpc`}
         />
       </Helmet>
       <SchemaOrg
