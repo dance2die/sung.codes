@@ -1,14 +1,12 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Heading, Button, Text, Box, Flex, Image } from "@theme-ui/components"
+import { Button, Text, Box, Flex, Image } from "@theme-ui/components"
 // eslint-disable-next-line
 import React, { useEffect, useState } from "react"
 import Dangerous from "dangerous-components"
-import ErrorBoundary from "react-error-boundary"
 
 import ExternalLink from "#components/Link/ExternalLink"
 import AvatarPlaceholder from "../../images/avatar-placeholder.jpg"
-import WebmentionCount from "./WebmentionCount"
 
 function Replies({ replies }) {
   const replyElements = replies.map(link => (
@@ -65,7 +63,6 @@ function WebmentionReplies({ target }) {
       `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}`
     )
       .then(response => response.json())
-      // .then(json => json.links.filter(x => x.activity.type !== "like"))
       .then(json => [...json.links])
 
   const incrementPage = () => setPage(previousPage => previousPage + 1)
