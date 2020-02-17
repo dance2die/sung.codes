@@ -42,7 +42,13 @@ function WebmentionCount({ target }) {
       {counts === undefined && <p>Failed to load counts...</p>}
       {counts && (
         <div>
-          ❤️ {counts.type.like + counts.type.repost || 0} 💬{" "}
+          <span role="img" aria-label="emoji">
+            ❤️
+          </span>{" "}
+          {counts.type.like + counts.type.repost || 0}{" "}
+          <span role="img" aria-label="emoji">
+            💬
+          </span>{" "}
           {counts.type.mention + counts.type.reply || 0}
         </div>
       )}
