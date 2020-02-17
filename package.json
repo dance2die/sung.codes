@@ -52,6 +52,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-error-boundary": "^1.2.5",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
     "react-typography": "^0.16.19",
