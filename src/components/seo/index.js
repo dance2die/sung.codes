@@ -57,15 +57,11 @@ function SEO({
         <meta name="twitter:image" content={image} />
 
         <link href={seo.social.twitter} rel="me"></link>
+        <link href={seo.social.github} rel="me"></link>
 
-        <link
-          rel="webmention"
-          href={`https://webmention.io/www.${seo.hostname}/webmention`}
-        />
-        <link
-          rel="pingback"
-          href={`https://webmention.io/www.${seo.hostname}/xmlrpc`}
-        />
+        {/* prettier-ignore */}
+        <link rel="webmention" href="https://webmention.io/sung.codes/webmention" />
+        <link rel="pingback" href="https://webmention.io/sung.codes/xmlrpc" />
       </Helmet>
       <SchemaOrg
         isBlogPost={isBlogPost}
@@ -106,6 +102,7 @@ function SEOWithQuery(props) {
           social {
             twitter
             twitterHandle
+            github
             fbAppID
           }
         }

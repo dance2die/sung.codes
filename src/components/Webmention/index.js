@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Heading, Button, Text, Box, Flex, Image } from "@theme-ui/components"
 // eslint-disable-next-line
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useCallback } from "react"
 import Dangerous from "dangerous-components"
 
 import ExternalLink from "#components/Link/ExternalLink"
@@ -112,28 +112,34 @@ function WebmentionReplies({ target }) {
   const [replies, setReplies] = useState([])
   const perPage = 30
 
-  const getMentions = () =>
-    fetch(
-      // `https://webmention.io/api/mentions?page=${page}&per-page=20&sort-by=published&target=${target}`,
-      // `https://webmention.io/api/mentions?page=${page}&per-page=50&target=${target}/` // trailing slash impt
-      // `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=https://www.swyx.io/writing/clientside-webmentions/`
-      `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}`
-    )
-      .then(response => response.json())
-      .then(json => json.links.filter(x => x.activity.type !== "like"))
+  const getMentions = useCallback(
+    () =>
+      fetch(
+        // `https://webmention.io/api/mentions?page=${page}&per-page=20&sort-by=published&target=${target}`,
+        // `https://webmention.io/api/mentions?page=${page}&per-page=50&target=${target}/` // trailing slash impt
+        // `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=https://www.swyx.io/writing/clientside-webmentions/`
+        `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}`
+      )
+        .then(response => response.json())
+        .then(json => json.links.filter(x => x.activity.type !== "like")),
+    [page, target]
+  )
 
   const incrementPage = () => setPage(previousPage => previousPage + 1)
-  const fetchMore = () => {
+  const fetchMore = useCallback(() => {
     getMentions()
       .then(returnedReplies => {
         if (returnedReplies.length) {
-          setReplies([...replies, ...returnedReplies])
+          setReplies(previousReplies => [
+            ...previousReplies,
+            ...returnedReplies,
+          ])
         } else {
           setFetchState("nomore")
         }
       })
       .then(incrementPage)
-  }
+  }, [getMentions])
 
   useEffect(() => {
     getMentions().then(returnedReplies => {
@@ -141,7 +147,7 @@ function WebmentionReplies({ target }) {
       setReplies(returnedReplies)
       setFetchState("done")
     })
-  }, [target])
+  }, [target, getMentions, page])
 
   return (
     <>

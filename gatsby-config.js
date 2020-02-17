@@ -31,6 +31,8 @@ module.exports = {
     social: {
       twitterHandle: config.twitterHandle,
       twitter: config.twitter,
+      github: config.github,
+      rss: config.rss,
       fbAppID: "",
     },
   },
