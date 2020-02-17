@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Avatar } from "theme-ui"
 import { Heading, Button, Text, Box, Flex, Image } from "@theme-ui/components"
 // eslint-disable-next-line
 import React, { useEffect, useState, useCallback } from "react"
@@ -56,10 +56,10 @@ function WebmentionCount({ target }) {
       {counts === initialCounts && <p>Loading counts...</p>}
       {counts === undefined && <p>Failed to load counts...</p>}
       {counts && (
-        <p>
+        <div>
           ❤️ {counts.type.like + counts.type.repost || 0} 💬{" "}
           {counts.type.mention + counts.type.reply || 0}
-        </p>
+        </div>
       )}
     </>
   )
@@ -67,12 +67,13 @@ function WebmentionCount({ target }) {
 
 function Replies({ replies }) {
   const replyElements = replies.map(link => (
-    <li sx={{ margin: "1.6rem 0" }}>
+    <li key={link.id} sx={{ margin: "1.6rem 0" }}>
       <Flex direcition="row">
         <ExternalLink
           to={link.data.author.url}
           sx={{ flexShrink: 0, cursor: "pointer" }}
         >
+          {/* <Avatar src={link.data.author.photo} /> */}
           <Image
             sx={{ borderRadius: "50%" }}
             width={40}
@@ -112,42 +113,55 @@ function WebmentionReplies({ target }) {
   const [replies, setReplies] = useState([])
   const perPage = 30
 
-  const getMentions = useCallback(
-    () =>
-      fetch(
-        // `https://webmention.io/api/mentions?page=${page}&per-page=20&sort-by=published&target=${target}`,
-        // `https://webmention.io/api/mentions?page=${page}&per-page=50&target=${target}/` // trailing slash impt
-        // `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=https://www.swyx.io/writing/clientside-webmentions/`
-        `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}`
-      )
-        .then(response => response.json())
-        .then(json => json.links.filter(x => x.activity.type !== "like")),
-    [page, target]
-  )
+  const getMentions = () =>
+    fetch(
+      // `https://webmention.io/api/mentions?page=${page}&per-page=20&sort-by=published&target=${target}`,
+      // `https://webmention.io/api/mentions?page=${page}&per-page=50&target=${target}/` // trailing slash impt
+      // `https://webmention.io/api/mentions?page=${page}&per-page=${3}&target=https://www.swyx.io/writing/clientside-webmentions/`
+      `https://webmention.io/api/mentions?page=${page}&per-page=${perPage}&target=${target}`
+    )
+      .then(response => response.json())
+      // .then(json => json.links.filter(x => x.activity.type !== "like"))
+      .then(json => [...json.links])
 
   const incrementPage = () => setPage(previousPage => previousPage + 1)
-  const fetchMore = useCallback(() => {
+  const fetchMore = () =>
     getMentions()
       .then(returnedReplies => {
         if (returnedReplies.length) {
+          console.info(
+            `fetchMore    page=${page} => returnedReplies???`,
+            replies,
+            returnedReplies
+          )
           setReplies(previousReplies => [
             ...previousReplies,
             ...returnedReplies,
           ])
         } else {
+          console.info(
+            `fetchMore   ELSE... page=${page} => returnedReplies???`,
+            replies,
+            returnedReplies
+          )
           setFetchState("nomore")
         }
       })
       .then(incrementPage)
-  }, [getMentions])
 
   useEffect(() => {
-    getMentions().then(returnedReplies => {
-      console.info(`page=${page} => returnedReplies???`, returnedReplies)
-      setReplies(returnedReplies)
-      setFetchState("done")
-    })
-  }, [target, getMentions, page])
+    getMentions()
+      .then(returnedReplies => {
+        console.info(
+          `useEffect     page=${page} => returnedReplies???`,
+          replies,
+          returnedReplies
+        )
+        setReplies(previousReplies => [...previousReplies, ...returnedReplies])
+        setFetchState("done")
+      })
+      .then(incrementPage)
+  }, [])
 
   return (
     <>
