@@ -65,15 +65,17 @@ function WebmentionReplies({ target }) {
       .then(response => response.json())
       .then(json => [...json.links])
 
+  const mergeReplies = newReplies => oldReplies => [
+    ...oldReplies,
+    ...newReplies,
+  ]
+
   const incrementPage = () => setPage(previousPage => previousPage + 1)
   const fetchMore = () =>
     getMentions()
-      .then(returnedReplies => {
-        if (returnedReplies.length) {
-          setReplies(previousReplies => [
-            ...previousReplies,
-            ...returnedReplies,
-          ])
+      .then(newReplies => {
+        if (newReplies.length) {
+          setReplies(mergeReplies(newReplies))
         } else {
           setFetchState("nomore")
         }
@@ -82,8 +84,8 @@ function WebmentionReplies({ target }) {
 
   useEffect(() => {
     getMentions()
-      .then(returnedReplies => {
-        setReplies(previousReplies => [...previousReplies, ...returnedReplies])
+      .then(newReplies => {
+        setReplies(mergeReplies(newReplies))
         setFetchState("done")
       })
       .then(incrementPage)

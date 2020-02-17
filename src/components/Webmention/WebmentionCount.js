@@ -19,17 +19,6 @@ function WebmentionCount({ target }) {
   useEffect(() => {
     async function getCounts() {
       const url = `https://webmention.io/api/count.json?target=${target}`
-      // returned value shape
-      // {
-      //   "count": 1062,
-      //   "type": {
-      //     "like": 638,
-      //     "mention": 154,
-      //     "reply": 51,
-      //     "repost": 219
-      //   }
-      // }
-      // ⚠ "type" is an empty object if there is no mention
       const responseCounts = await fetch(url).then(response => response.json())
 
       setCounts(previousCounts => {
