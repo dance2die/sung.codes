@@ -35,13 +35,7 @@ function Replies({ replies }) {
   return (
     <Box my={[2, 2, 3, 3]}>
       {replies && replies.length ? (
-        <ul
-          sx={{
-            listStyle: "none",
-          }}
-        >
-          {replyElements}
-        </ul>
+        <ul sx={{ listStyle: "none" }}>{replyElements}</ul>
       ) : (
         <Text>There is no reply...</Text>
       )}
