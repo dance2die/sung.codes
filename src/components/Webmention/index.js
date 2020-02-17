@@ -7,6 +7,7 @@ import Dangerous from "dangerous-components"
 import ErrorBoundary from "react-error-boundary"
 
 import ExternalLink from "#components/Link/ExternalLink"
+import AvatarPlaceholder from "../../images/avatar-placeholder.jpg"
 
 const initialCounts = {
   count: 0,
@@ -74,11 +75,10 @@ function Replies({ replies }) {
           to={link.data.author.url}
           sx={{ flexShrink: 0, cursor: "pointer" }}
         >
-          {/* <Avatar src={link.data.author.photo} /> */}
           <Image
             sx={{ borderRadius: "50%" }}
             width={40}
-            src={link.data.author.photo}
+            src={link.data.author.photo || AvatarPlaceholder}
             alt={`avatar of ${link.data.author.name}`}
           />
         </ExternalLink>
