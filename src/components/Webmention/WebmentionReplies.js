@@ -78,6 +78,7 @@ function WebmentionReplies({ target }) {
       })
       .then(incrementPage)
 
+  // Load initial comments once
   useEffect(() => {
     getMentions()
       .then(newReplies => {
@@ -85,6 +86,7 @@ function WebmentionReplies({ target }) {
         setFetchState("done")
       })
       .then(incrementPage)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
