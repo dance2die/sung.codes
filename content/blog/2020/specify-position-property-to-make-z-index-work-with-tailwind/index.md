@@ -5,7 +5,7 @@ published: true
 tags: "tailwind, tailwindcss, css, z-index selfnote"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printing Machines](https://www.si.edu/object/nmah_998909)"
+bannerCredit: "Image Credit: [Commercial Trochus, Commercial Top Shell, Commercial Trochus, Commercial Top Shell](https://www.si.edu/object/nmnheducation_10008427)"
 ---
 
 Just sharing what I learned today.
@@ -65,3 +65,7 @@ Now the button show up on the top.
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
+
+---
+
+Image Credit: [Commercial Trochus, Commercial Top Shell, Commercial Trochus, Commercial Top Shell](https://www.si.edu/object/nmnheducation_10008427)
