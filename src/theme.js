@@ -1,4 +1,4 @@
-import { themeColor, backgroundColor } from "../config/website"
+import { themeColor, themeColorDark, backgroundColor } from "../config/website"
 
 // https://theme-ui.com/theming#example
 const heading = {
@@ -22,10 +22,12 @@ export const theme = {
 
     modes: {
       dark: {
+        primary: themeColorDark,
         text: "#ffffffe0",
         accent: "#000",
         // from overreacted.io
         background: "#282c35",
+        highlight: "#737c9933",
         // background: "#222",
         // Used https://pinetools.com/invert-color
         gray: ["#101010", "#222222", "#cccccc", "#eeeeee"],
@@ -109,7 +111,8 @@ export const theme = {
       backgroundColor: "highlight",
       borderRadius: 1,
       borderLeft: t => `8px solid ${t.colors.primary}`,
-      color: t => t.colors.accent,
+      // color: t => t.colors.accent,
+      color: "text",
     },
 
     ul: { ...lists },
