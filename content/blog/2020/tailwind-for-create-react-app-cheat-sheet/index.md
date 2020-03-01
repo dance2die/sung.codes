@@ -1,11 +1,19 @@
 ---
 title: Tailwind for Create-React-App Cheat Sheet
 date: "2020-02-26"
+modified_date: "2020-02-29"
 published: true
 tags: "tailwind, tailwindcss, css, cheatsheet"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
 bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printing Machines](https://www.si.edu/object/nmah_998909)"
+---
+
+## **Updated on 2020-02-29**
+
+1. Replaced `concurrently` with [npm-run-all](https://www.npmjs.com/package/npm-run-all)
+2. Fixed initial empty page load - Added `sleep 5` in package.json.
+
 ---
 
 Based on https://github.com/billimarie/simple-react-tailwind-tutorial
@@ -23,9 +31,9 @@ Based on https://github.com/billimarie/simple-react-tailwind-tutorial
 
 ```bash
 # yarn
-yarn add -D @fullhuman/postcss-purgecss autoprefixer concurrently cross-env cssnano postcss-cli purgecss tailwindcss
+yarn add -D @fullhuman/postcss-purgecss autoprefixer npm-run-all cross-env cssnano postcss-cli purgecss tailwindcss
 # npm
-npm i -D @fullhuman/postcss-purgecss autoprefixer concurrently cross-env cssnano postcss-cli purgecss tailwindcss
+npm i -D @fullhuman/postcss-purgecss autoprefixer npm-run-all cross-env cssnano postcss-cli purgecss tailwindcss
 ```
 
 ## 2. Create Tailwind configuration file
@@ -92,19 +100,26 @@ Add following Tailwind utilities
 `package.json` scripts.
 
 1. `build:css` - converts Tailwind to CSS
-2. `watch:css` - Watch Tailwind changes and writes CSS
-3. `start` - Watches Tailwind changes and starts CRA
-4. `build` - Build Tailwind and production version of CRA site
+1. `watch:css` - Watch Tailwind changes and writes CSS
+1. `env:dev/prod` - Sets an environment variable for development or production mode
+1. `react-scripts:start`: Starts 5 seconds later to prevent an initial empty page
+1. `react-scripts:build`: Creates a production-ready bundle
+1. `start` - Watches Tailwind changes and starts CRA
+1. `build` - Build Tailwind and production version of CRA site
 
 ```json
-  "scripts": {
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css --watch",
-    "start": "cross-env NODE_ENV=development concurrently \"npm run watch:css\" \"react-scripts start\"",
-    "build": "cross-env NODE_ENV=production concurrently \"npm run build:css\" \"react-scripts build\"",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+"scripts": {
+  "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
+  "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css --watch",
+  "env:dev": "cross-env NODE_ENV=development",
+  "env:prod": "cross-env NODE_ENV=production",
+  "react-scripts:start": "sleep 5 && react-scripts start",
+  "react-scripts:build": "react-scripts build",
+  "start": "run-p env:dev watch:css react-scripts:start",
+  "build": "run-s env:prod build:css react-scripts:build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
 ```
 
 ## 6. Import Tailwind CSS Output
@@ -115,6 +130,13 @@ Add following Tailwind utilities
 [@fullhuman/postcss-purgecss]: https://github.com/FullHuman/postcss-purgecss
 [autoprefixer]: https://autoprefixer.github.io/
 [cssnano]: https://cssnano.co/
+
+## Resources
+
+1. Demo repository - https://github.com/dance2die/template.tailwind.cra
+   - Created by following this post
+2. CodeSandbox template - https://codesandbox.io/s/create-react-app-tailwind-oqvyu
+   - You can fork and play around with Tailwind + React with this one :)
 
 ---
 
