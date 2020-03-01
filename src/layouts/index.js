@@ -28,6 +28,12 @@ function Layout({ children }) {
             padding: 0.15rem 0.4rem;
             border-radius: 0.3em;
             white-space: normal;
+            /* background-color: #404237; */
+          }
+
+          :not(pre) > code[class*="language-"],
+          pre[class*="language-"] {
+            background-color: #404237;
           }
 
           hr {
