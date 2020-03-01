@@ -20,7 +20,8 @@ module.exports = {
   ogLanguage: "en_US",
   googleAnalyticsID: "UA-87712355-1",
 
-  themeColor: "#FFC600",
+  themeColor: "#e6173f",
+  // themeColor: "#FFC600",
   // themeColor: "rebeccapurple",
   backgroundColor: "#fff",
 
