@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, useThemeUI } from "theme-ui"
 import { Heading, Flex, Text, Box } from "@theme-ui/components"
 import styled from "@emotion/styled"
 
@@ -18,45 +18,49 @@ const OutLink = styled(ExternalLink)(({ theme }) => ({
   color: theme.colors.primary,
 }))
 
-const Introduction = () => (
-  <Flex
-    as="section"
-    sx={{
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
+const Introduction = () => {
+  const { theme } = useThemeUI()
 
-      height: ["auto", "60vh"],
-      padding: [6, "0"],
-      margin: [
-        "50px auto 100px",
-        "50px auto 100px",
-        "0 auto 30vh",
-        "0 auto 30vh",
-      ],
-    }}
-  >
-    <Heading
+  return (
+    <Flex
+      as="section"
       sx={{
-        fontWeight: "normal",
-        fontSize: ["20vw", "15vw", "5.550em", "5.550em"],
-        letterSpacing: "0.4rem",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+
+        height: ["auto", "60vh"],
+        padding: [6, "0"],
+        margin: [
+          "50px auto 100px",
+          "50px auto 100px",
+          "0 auto 30vh",
+          "0 auto 30vh",
+        ],
       }}
     >
-      <span className="normal">{"Hi, I'm "}</span>
-      <b>Sung M. Kim</b>
-      <span
+      <Heading
         sx={{
-          textDecoration: "line-through",
-          textDecorationColor: "gold",
+          fontWeight: "normal",
+          fontSize: ["20vw", "15vw", "5.550em", "5.550em"],
+          letterSpacing: "0.4rem",
         }}
       >
-        {" a.k.a. "}
-      </span>
-      <b>dance2die</b>
-    </Heading>
-  </Flex>
-)
+        <span className="normal">{"Hi, I'm "}</span>
+        <b>Sung M. Kim</b>
+        <span
+          sx={{
+            textDecoration: "line-through",
+            textDecorationColor: theme.colors.primary,
+          }}
+        >
+          {" a.k.a. "}
+        </span>
+        <b>dance2die</b>
+      </Heading>
+    </Flex>
+  )
+}
 
 const Bio = () => (
   <Flex
