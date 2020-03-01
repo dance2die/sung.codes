@@ -28,9 +28,6 @@ const Title = () => (
       <Heading as="h1" sx={headingStyle}>
         {"{ sung.codes }"}
       </Heading>
-      <Heading as="sup" sx={subHeadingStyle}>
-        by dance2die
-      </Heading>
     </Flex>
   </Link>
 )
