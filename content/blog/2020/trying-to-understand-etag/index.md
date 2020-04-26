@@ -52,7 +52,7 @@ etag: W/"3121lasjd"
 ### A Strong ETag
 
 This matches etag value for a "byte-to-byte" equivalence of resource on the server.  
-This is similar to a digital finger print and can be generated using MD5 hash.
+This is a digital finger print and can be generated using MD5 hash.
 
 There is no prefix required unlike the weak version, just a string value.
 
@@ -65,7 +65,8 @@ etag: "12343hdhjkakiek"
 
 Etag solves two issues.
 
-1. Mid-air collision detection ("Optimistic Concurrency")
+1. Mid-air collision detection ("Optimistic concurrency control
+")
 2. Unchanged Resource caching
 
 ### 1. Mid-air collision detection
@@ -79,6 +80,8 @@ If the client #2 tries to write to the same resource, the server will reject as 
 
 In detail, clients will include `If-Match: <EtagValue>` request header to make sure to update only "if matching" etag exists (meaning, resource hasn't changed).
 
+In database term, it's called [Optimistic concurrency control](https://en.wikipedia.org/wiki/Optimistic_concurrency_control).
+
 You can see the flow in the drawing below.
 
 ![if-match](./images/if-match.jpg)
@@ -91,7 +94,7 @@ Etag also tries to solve the issue of loading resources from cache when the reso
 Youtube Data API has a quota for API calls and you can  
 
   1. Increase a resource load time if it hasn't changed.
-  2. Optionally, save on a quota cost.  
+  2. Save on a quota cost.  
 
   
 When a resource hasn't changed, the server implementing Etag returns the HTTP Status code, 304 (Not Modified), thus a client can load data from cache.  
