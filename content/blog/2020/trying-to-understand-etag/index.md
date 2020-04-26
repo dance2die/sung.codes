@@ -5,7 +5,7 @@ published: true
 tags: "etag, til, summary, selfnote"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Peter H](https://pixabay.com/users/Tama66-1032521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2439189) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2439189)"
+bannerCredit: "Image by [BRRT](https://pixabay.com/users/BRRT-122519/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3150731) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3150731)"
 ---
 
 ## Intro
@@ -103,3 +103,7 @@ If it has changed, then the server would return an updated resource.
 A client would include a request header, `If-None-Match: <EtagValue>` when making a request. The server checks if the specified etag value exists. The server would return a new resource "if none matching" etag is found.
 
 ![if-none-match](./images/if-none-match.jpg)
+
+---
+
+Image by <a href="https://pixabay.com/users/BRRT-122519/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3150731">BRRT</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3150731">Pixabay</a>
