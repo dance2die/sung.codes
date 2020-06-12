@@ -9,14 +9,14 @@ banner: ./images/featured-image.jpg
 bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printing Machines](https://www.si.edu/object/nmah_998909)"
 ---
 
-## **Updated on 2020-06-12**
+## **2020-06-12 Updates**
 
 1. Replaced `autoprefixer` with [postcss-preset-env](https://github.com/csstools/postcss-preset-env#autoprefixer), which supports `autopprefixer` and more. Set up instruction can be found in [the official documentation](https://tailwindcss.com/docs/using-with-preprocessors/#future-css-features) too.
 1. Tailwind CSS version 1.4.4 supports purge css natively. Installation for `purgecss` & `@fullhuman/postcss-purgecss` are removed.
 
 ---
 
-## **Updated on 2020-02-29**
+## **2020-02-29 Updates**
 
 1. Replaced `concurrently` with [npm-run-all](https://www.npmjs.com/package/npm-run-all)
 2. Fixed initial empty page load - Added `sleep 5` in package.json.
