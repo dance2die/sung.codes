@@ -9,6 +9,13 @@ banner: ./images/featured-image.jpg
 bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printing Machines](https://www.si.edu/object/nmah_998909)"
 ---
 
+## **Updated on 2020-06-12**
+
+1. Replaced `autoprefixer` with [postcss-preset-env](https://github.com/csstools/postcss-preset-env#autoprefixer), which supports `autopprefixer` and more. Set up instruction can be found in [the official documentation](https://tailwindcss.com/docs/using-with-preprocessors/#future-css-features) too.
+1.  Tailwind CSS version 1.4.4 supports purge css natively. Installation for `purgecss` & `@fullhuman/postcss-purgecss` are removed.
+
+---
+
 ## **Updated on 2020-02-29**
 
 1. Replaced `concurrently` with [npm-run-all](https://www.npmjs.com/package/npm-run-all)
@@ -31,9 +38,9 @@ Based on https://github.com/billimarie/simple-react-tailwind-tutorial
 
 ```bash
 # yarn
-yarn add -D @fullhuman/postcss-purgecss autoprefixer npm-run-all cross-env cssnano postcss-cli purgecss tailwindcss
+yarn add -D npm-run-all cross-env cssnano postcss-cli purgecss tailwindcss postcss-preset-env
 # npm
-npm i -D @fullhuman/postcss-purgecss autoprefixer npm-run-all cross-env cssnano postcss-cli purgecss tailwindcss
+npm i -D npm-run-all cross-env cssnano postcss-cli purgecss tailwindcss postcss-preset-env
 ```
 
 ## 2. Create Tailwind configuration file
@@ -53,27 +60,18 @@ touch postcss.config.js
 new-item postcss.config.js
 ```
 
-2. Configure Post CSS to work with Tailwind
-   1. [@fullhuman/postcss-purgecss][@fullhuman/postcss-purgecss] - Tree-shake unused CSS with "purgecss"
+2. Configure Post CSS to work with Tailwind  
+   ~~1. [@fullhuman/postcss-purgecss][@fullhuman/postcss-purgecss] - Tree-shake unused CSS with "purgecss"~~
    1. [autoprefixer][autoprefixer] - Add browser specific prefixes such as `-webkit/-o/-moz`
    1. [cssnano][cssnano] - Minify CSS to reduce bundle size
 
 ```js
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./public/**/*.html"],
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-})
-
 module.exports = {
   plugins: [
-    require("tailwindcss"),
-    require("autoprefixer"),
-    // Purge and minify CSS only production builds only
-    ...(process.env.NODE_ENV === "production"
-      ? [purgecss, require("cssnano")]
-      : []),
+    require('tailwindcss'),
+    require('postcss-preset-env'),
   ],
-}
+};
 ```
 
 ## 4. Create a Tailwind file
