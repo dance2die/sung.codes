@@ -12,7 +12,7 @@ bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printin
 ## **Updated on 2020-06-12**
 
 1. Replaced `autoprefixer` with [postcss-preset-env](https://github.com/csstools/postcss-preset-env#autoprefixer), which supports `autopprefixer` and more. Set up instruction can be found in [the official documentation](https://tailwindcss.com/docs/using-with-preprocessors/#future-css-features) too.
-1.  Tailwind CSS version 1.4.4 supports purge css natively. Installation for `purgecss` & `@fullhuman/postcss-purgecss` are removed.
+1. Tailwind CSS version 1.4.4 supports purge css natively. Installation for `purgecss` & `@fullhuman/postcss-purgecss` are removed.
 
 ---
 
@@ -24,6 +24,10 @@ bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printin
 ---
 
 Based on https://github.com/billimarie/simple-react-tailwind-tutorial
+
+## Assumption
+
+I will assume that you know how to create a new React site using [Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html) and created a site.
 
 ## Table of Contents
 
@@ -60,18 +64,17 @@ touch postcss.config.js
 new-item postcss.config.js
 ```
 
-2. Configure Post CSS to work with Tailwind  
-   ~~1. [@fullhuman/postcss-purgecss][@fullhuman/postcss-purgecss] - Tree-shake unused CSS with "purgecss"~~
+2. Configure Post CSS to work with Tailwind
    1. [autoprefixer][autoprefixer] - Add browser specific prefixes such as `-webkit/-o/-moz`
    1. [cssnano][cssnano] - Minify CSS to reduce bundle size
 
 ```js
 module.exports = {
   plugins: [
-    require('tailwindcss'),
-    require('postcss-preset-env'),
-  ],
-};
+    require("tailwindcss"), 
+    require("postcss-preset-env")
+  ]
+}
 ```
 
 ## 4. Create a Tailwind file
@@ -107,14 +110,12 @@ Add following Tailwind utilities
 
 ```json
 "scripts": {
-  "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
-  "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css --watch",
-  "env:dev": "cross-env NODE_ENV=development",
-  "env:prod": "cross-env NODE_ENV=production",
+  "build:css": "cross-env NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/index.css",
+  "watch:css": "cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/index.css --watch",
   "react-scripts:start": "sleep 5 && react-scripts start",
   "react-scripts:build": "react-scripts build",
-  "start": "run-p env:dev watch:css react-scripts:start",
-  "build": "run-s env:prod build:css react-scripts:build",
+  "start": "run-p watch:css react-scripts:start",
+  "build": "run-s build:css react-scripts:build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 },
@@ -125,15 +126,17 @@ Add following Tailwind utilities
 1. Go to `./src/index.js`
 1. Replace `import './index.css';` with `import './styles/index.css';`
 
-[@fullhuman/postcss-purgecss]: https://github.com/FullHuman/postcss-purgecss
 [autoprefixer]: https://autoprefixer.github.io/
 [cssnano]: https://cssnano.co/
 
 ## Resources
 
+1. `create-react-app` template in TypeScript (created by me 🙂), [cra-template-tailwindcss-typescript](https://github.com/dance2die/cra-template-tailwindcss-typescript).
+    - Scaffold a new CRA app like `npx create-react-app my-app --template tailwindcss-typescript`
+    - Most of steps in this post is used in the project
 1. Demo repository - https://github.com/dance2die/template.tailwind.cra
    - Created by following this post
-2. CodeSandbox template - https://codesandbox.io/s/create-react-app-tailwind-oqvyu
+1. CodeSandbox template - https://codesandbox.io/s/create-react-app-tailwind-oqvyu
    - You can fork and play around with Tailwind + React with this one :)
 
 ---
