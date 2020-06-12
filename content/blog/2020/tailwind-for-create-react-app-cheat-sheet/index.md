@@ -65,7 +65,7 @@ new-item postcss.config.js
 ```
 
 2. Configure Post CSS to work with Tailwind
-   1. [autoprefixer][autoprefixer] - Add browser specific prefixes such as `-webkit/-o/-moz`
+   1. [postcss-preset-env][postcss-preset-env] - Supports newer CSS syntax and much more! (e.g. replaces `autoprefixer`)
    1. [cssnano][cssnano] - Minify CSS to reduce bundle size
 
 ```js
@@ -128,6 +128,7 @@ Add following Tailwind utilities
 
 [autoprefixer]: https://autoprefixer.github.io/
 [cssnano]: https://cssnano.co/
+[postcss-preset-env]: https://github.com/csstools/postcss-preset-env
 
 ## Resources
 
