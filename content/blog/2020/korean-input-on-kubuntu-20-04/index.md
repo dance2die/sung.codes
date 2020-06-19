@@ -5,7 +5,7 @@ published: true
 tags: "linux, ubuntu, kubuntu, korean, input"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image Credit: [Patent Model of a Sheet-Feed Apparatus for Printing Machines](https://www.si.edu/object/nmah_998909)"
+bannerCredit: "Image Credit: [Free-Photos](https://pixabay.com/photos/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=407695) by [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=407695)"
 ---
 
 Installed [Kubuntu 20.04 LTS](https://kubuntu.org/) (KDE version of Ubuntu) on my old laptop.  
@@ -93,3 +93,7 @@ You can change the default keyboard binding in the preferences screen.
 
 You should now be able to type in Korean (I am using VS Code below)
 ![5.5](./images/5.5.jpg)
+
+---
+
+Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=407695">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=407695">Pixabay</a>
