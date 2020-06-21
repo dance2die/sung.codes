@@ -1,6 +1,6 @@
 ---
 title: Svelte tutorial note
-date: "2020-06-08"
+date: "2020-06-20"
 published: true
 tags: "svelte, javascript, selfnote"
 author: Sung M. Kim
@@ -9,6 +9,8 @@ bannerCredit: "Image by [William Krause](https://unsplash.com/@williamk?utm_sour
 ---
 
 This is a note as I wrote down as I was going through [Svelte tutorial](https://svelte.dev/tutorial/basics).
+
+Might be of helpful for some but foremost, this is a note for myself :)
 
 ## 1. Introduction
 
