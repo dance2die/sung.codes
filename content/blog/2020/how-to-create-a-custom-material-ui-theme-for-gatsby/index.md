@@ -4,7 +4,7 @@ date: "2020-06-25"
 tags: "material-ui, theme, gatsby, react, selfnote"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [William Krause](https://unsplash.com/@williamk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) from [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+bannerCredit: "Image by [annca](https://pixabay.com/users/annca-1564471/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521)"
 ---
 
 Adding a custom Material UI theme for Gatsby
@@ -156,3 +156,7 @@ From here on, simply updating `./plugins/custom-mui-theme/theme/theme.json` shou
     - Official MUI + Gatsby sample - https://github.com/mui-org/material-ui/tree/master/examples/gatsby
     - Theming - https://material-ui.com/customization/theming/
     - Default Theme (Theme JSON overrides this) - https://material-ui.com/customization/default-theme/
+
+---
+
+Image by <a href="https://pixabay.com/users/annca-1564471/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521">annca</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521">Pixabay</a>
