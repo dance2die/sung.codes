@@ -140,6 +140,7 @@ From here on, simply updating `./plugins/custom-mui-theme/theme/theme.json` shou
 
 ## 6. Resources
 
+- A Gatsby site source created by following the steps above - https://github.com/dance2die/blog.custom-material-ui-gatsby-theme
 - Google's Material Design Color Tool: https://material.io/resources/color/
 - Create MUI Theme site
     - Home - https://react-theming.github.io/create-mui-theme/
