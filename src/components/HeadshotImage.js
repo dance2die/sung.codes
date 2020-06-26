@@ -18,7 +18,7 @@ const HeadshotImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        headshotImage: file(relativePath: { eq: "headshot-parasite.jpg" }) {
+        headshotImage: file(relativePath: { eq: "headshot.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 640, traceSVG: { color: "#FFC600" }) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
