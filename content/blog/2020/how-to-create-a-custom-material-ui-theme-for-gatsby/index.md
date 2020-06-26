@@ -7,7 +7,10 @@ banner: ./images/featured-image.jpg
 bannerCredit: "Image by [annca](https://pixabay.com/users/annca-1564471/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521)"
 ---
 
-Adding a custom Material UI theme for Gatsby
+Been searching for easy way to customize Material UI (MUI hereafter) theme and found few online tools to help me get it done quick.
+
+Most of steps here are for configuring Gatsby for Material UI theme but a custom MUI theme set up is easy.
+
 
 ## 1. Bootstrap a new Gatsby site
 
@@ -34,10 +37,10 @@ npx gatsby new site-name-here
 
 1. Go to the [Google's Material Design Color Tool site](https://material.io/resources/color)
 1. Select primary & secondary colors and copy the current URL (, which updates on color selection)  
-      ![color tool](./images/color-tool-select-colors.png)
+      ![color tool](https://sung.codes/static/bad736d2163940130efa7c04ec54c75c/17fa4/color-tool-select-colors.png "color tool")
 1. Go to https://react-theming.github.io/create-mui-theme/ and paste the URL in `Paste URL here` input box
 1. Now custom Theme JSON should be generated on the bottom right
-      ![custom JSON](./images/custom-json.png)
+      ![custom JSON](https://sung.codes/static/a54b2c9610f5ae1622570b82cab0f148/17fa4/custom-json.png "custom JSON")
 
 ## 4. Configure MUI theme
 
@@ -134,7 +137,7 @@ export default IndexPage
 
 You will see that the `primary` and `secondary` colors are applied according to the custom theme.
 
-![result](./images/result.png)
+![result](https://sung.codes/static/4f4b24b0c6635d9d4504ef599276abc4/17fa4/result.png "result")
 
 From here on, simply updating `./plugins/custom-mui-theme/theme/theme.json` should update the MUI theme
 
