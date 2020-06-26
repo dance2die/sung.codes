@@ -7,6 +7,12 @@ banner: ./images/featured-image.jpg
 bannerCredit: "Image by [annca](https://pixabay.com/users/annca-1564471/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2168521)"
 ---
 
+** Note on 2020-06-26 **
+
+There is a very nice customization video, [React Material-UI Themes: Customize Material Components for your Project](https://www.youtube.com/watch?v=bDkB3LoQKxs).
+
+---
+
 Been searching for easy way to customize Material UI (MUI hereafter) theme and found few online tools to help me get it done quick.
 
 Most of steps here are for configuring Gatsby for Material UI theme but a custom MUI theme set up is easy.
