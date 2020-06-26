@@ -80,7 +80,7 @@ Refer to [Creating a Local Plugin](https://www.gatsbyjs.org/docs/creating-a-loca
         }
         ```
 1. Create a new folder `./plugins/custom-mui-theme/theme`
-1. Create two files udner the theme folder\
+1. Create two files under the theme folder
     1. `theme.json`
         - Copy & paste the theme JSON file in the previous step, `Createa  custom MUI theme`
     1. `index.js`
