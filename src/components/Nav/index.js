@@ -9,7 +9,6 @@ import HamburgerMenu from "#components/Nav/HamburgerMenu"
 import ThemeSwitch from "./ThemeSwitch"
 
 const headingStyle = { fontSize: [3, 5, 6, 6] }
-const subHeadingStyle = { fontSize: [1, 1, 2, 2] }
 const linkStyle = {
   marginLeft: [1, "calc(8px + 3.3vw)", 5, 5],
   fontSize: [1, 1, 4, 4],
