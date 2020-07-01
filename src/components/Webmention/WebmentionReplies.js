@@ -11,24 +11,28 @@ import AvatarPlaceholder from "../../images/avatar-placeholder.jpg"
 function Replies({ replies }) {
   const replyElements = replies.map(link => (
     <li key={link.id} sx={{ margin: "1.6rem 0" }}>
-      <Flex direcition="row">
-        <ExternalLink
-          to={link.data.author.url}
-          sx={{ flexShrink: 0, cursor: "pointer" }}
-        >
-          <Image
-            sx={{ borderRadius: "50%" }}
-            width={40}
-            src={link.data.author.photo || AvatarPlaceholder}
-            alt={`avatar of ${link.data.author.name}`}
-          />
-        </ExternalLink>
-        <Dangerous
-          sx={{ padding: "0 1rem 0" }}
-          html={link.activity.sentence_html}
-          as="article"
-        />
-      </Flex>
+      {
+        link && link.data && link.data.author && (
+          <Flex direcition="row">
+            <ExternalLink
+              to={link.data.author.url}
+              sx={{ flexShrink: 0, cursor: "pointer" }}
+            >
+              <Image
+                sx={{ borderRadius: "50%" }}
+                width={40}
+                src={link.data.author.photo || AvatarPlaceholder}
+                alt={`avatar of ${link.data.author.name}`}
+              />
+            </ExternalLink>
+            <Dangerous
+              sx={{ padding: "0 1rem 0" }}
+              html={link.activity.sentence_html}
+              as="article"
+            />
+          </Flex>
+        )
+      }
     </li>
   ))
 
@@ -37,8 +41,8 @@ function Replies({ replies }) {
       {replies && replies.length ? (
         <ul sx={{ listStyle: "none" }}>{replyElements}</ul>
       ) : (
-        <Text>There is no reply...</Text>
-      )}
+          <Text>There is no reply...</Text>
+        )}
     </Box>
   )
 }
@@ -102,16 +106,16 @@ function WebmentionReplies({ target }) {
           Fetch More...
         </Button>
       ) : (
-        <Text>
-          No further replies found.{" "}
-          <ExternalLink
-            to={`https://twitter.com/intent/tweet/?text=My%20thoughts%20on%20${target}`}
-          >
-            Tweet about this post
+          <Text>
+            No further replies found.{" "}
+            <ExternalLink
+              to={`https://twitter.com/intent/tweet/?text=My%20thoughts%20on%20${target}`}
+            >
+              Tweet about this post
           </ExternalLink>{" "}
           and it will show up here!
-        </Text>
-      )}
+          </Text>
+        )}
     </>
   )
 }
