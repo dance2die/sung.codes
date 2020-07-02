@@ -5,7 +5,7 @@ published: true
 tags: "tampermonkey, javascript, productivity"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [BRRT](https://pixabay.com/users/BRRT-122519/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3150731) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3150731)"
+bannerCredit: "Image by [Stefan Keller](https://pixabay.com/users/KELLEPICS-4893063/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2925179) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2925179)"
 ---
 
 ## Introduction
@@ -103,5 +103,6 @@ The custom HTML will be an aweful-looking red-colored **strong** element.
 
 You can play around with [position](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML#Parameters) (first parameter, `beforeEnd`) the way you see fit.
 
+---
 
-
+Image by <a href="https://pixabay.com/users/KELLEPICS-4893063/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2925179">Stefan Keller</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2925179">Pixabay</a>
