@@ -31,6 +31,8 @@ If you want to quickly just paste a CSS to achieve a similar effect, check out t
 
 What you will see in the end on every dev.to post looks like this.
 
+Reference: [Mesure your create react app build.](https://dev.to/avinash8847/mesure-your-create-react-app-build-331h)
+
 ![result](./images/result.jpg)
 
 ## Tampermonkey script
