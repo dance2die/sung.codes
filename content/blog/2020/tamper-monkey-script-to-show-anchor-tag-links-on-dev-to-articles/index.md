@@ -1,6 +1,6 @@
 ---
 title: Tampermonkey script to show anchor tag links on dev.to articles
-date: "2020-07-20"
+date: "2020-07-02"
 published: true
 tags: "tampermonkey, javascript, productivity"
 author: Sung M. Kim
