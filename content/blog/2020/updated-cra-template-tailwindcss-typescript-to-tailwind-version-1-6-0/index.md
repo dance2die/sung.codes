@@ -8,6 +8,12 @@ banner: ./images/featured-image.jpg
 bannerCredit: "Image by [Carabo Spain](https://pixabay.com/users/Donations_are_appreciated-30101/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1745186) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1745186)"
 ---
 
+## Update on 2020-08-19
+
+Updated to Tailwind CSS version 1.7.1.  
+Refer to the official 1.7.1 [update blog post](https://blog.tailwindcss.com/tailwindcss-1-7).
+
+---
 ## Update on 2020-08-12
 
 Updated to Tailwind CSS [version 1.6.2](https://www.npmjs.com/package/tailwindcss/v/1.6.2).
