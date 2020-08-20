@@ -7,8 +7,6 @@ author: Sung M. Kim
 banner: ./images/featured-image.jpg
 ---
 
-_Photo by _[_Martino Pietropoli_](https://unsplash.com/photos/H8zix6ErdXg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/serial?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
 _**Note 📝 to self...**_
 
 When you have more than one states defined using `useState` and need to access updated state value sync-like manner...
@@ -68,3 +66,32 @@ _Try it on_ [_CodeSandbox_](https://codesandbox.io/s/8y05v1vx3j)_._
 I am using a promise, not accepting a callback as it makes code clunky possibly causing a callback hell.
 
 And also with a setter promise, you can also use `async/await` syntax.
+
+
+## Update on August 20, 2020
+
+[tfiechowski](https://github.com/tfiechowski) on GitHub kindly suggested [a better implementation on GitHub gist](https://gist.github.com/dance2die/35416648292313d931c7bd6efb930fb8#gistcomment-3424680).
+
+_Thank you, tfiechowski~_
+
+```js
+function increment() {
+    const newCount = count + 1;
+    setCount(newCount);
+    setMessage(`count is ${newCount}`);
+}
+function decrement() {
+    const newCount = count - 1;
+    setCount(newCount);
+    setMessage(`count is ${newCount}`);
+}
+```
+
+The count has been updated as `newCount` once, and the cached value is applied to both `count` and `message`.
+
+You can see that I misunderstood Dan's suggestion and `tfiechowski` corrected it nicely.
+
+
+---
+
+_Photo by _[_Martino Pietropoli_](https://unsplash.com/photos/H8zix6ErdXg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_ on _[_Unsplash_](https://unsplash.com/search/photos/serial?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
