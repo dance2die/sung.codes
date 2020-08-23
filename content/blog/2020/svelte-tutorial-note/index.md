@@ -75,7 +75,7 @@ https://svelte.dev/tutorial/reactive-statements
 <script>
 	let count = 0;
 	
-	$: console.log(`the count is {count}`);
+	$: console.log(`the count is ${count}`);
 
 	$: if (count >= 10) {
 		alert(`count is too high!`)
