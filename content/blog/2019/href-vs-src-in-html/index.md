@@ -9,7 +9,7 @@ author: Sung M. Kim
 
 Last night, I vented out my frustration on `<link>` requiring `href` to point to a CSS stylesheet instead of `src`.
 
-I will share the help I received and the history provided by wonderful folks, [Vuild](https://vuild.com/), [Brendan Eich](https://brendaneich.com/) (creator of JavaScript), and [Håkon Wium Lie](https://www.wiumlie.no/en.html) (creator of CSS) on Twitter.
+I will share the help I received and the history provided by wonderful folks, [Brendan Eich](https://brendaneich.com/) (creator of JavaScript), and [Håkon Wium Lie](https://www.wiumlie.no/en.html) (creator of CSS) on Twitter.
 
 ## TL;DR
 
@@ -19,13 +19,11 @@ The confusion between `href` and `src` is due to a historical reason in early we
 
 ## Difference between "href" & "src"
 
-[Vuild](https://twitter.com/vuildco) replied that `src` is for a request while `href` is for a link to a resource.
+`src` is for a request while `href` is for a link to a resource.
 
-https://twitter.com/vuildco/status/1151288830860976128
+Being unable to grasp the difference, I replied that "CSS" is a request to download/parse/apply, it should be using `src`.
 
-Being unable to grasp the difference, I replied that "CSS" is a request to download/parse/apply, it should be using `src`. As Vuild felt the same way, and he [requested](https://mobile.twitter.com/vuildco/status/1151291872322760705) [Brendan Eich](https://mobile.twitter.com/BrendanEich), and [Håkon Wium Lie](https://mobile.twitter.com/wiumlie) for help.
-
-Brendan Eich kindly replied that `src` is for "auto inclusion" while `href`'ed resources are loaded after an action occurs.
+[Brendan Eich](https://mobile.twitter.com/BrendanEich) kindly replied that `src` is for "auto inclusion" while `href`'ed resources are loaded after an action occurs.
 
 https://twitter.com/BrendanEich/status/1151317825908166656
 
@@ -37,14 +35,13 @@ But as for CSS, he agreed that `href` for CSS "[seems(ed) inconsistent](https://
 
 ## **link href**
 
-Håkon Wium Lie kindly provided the history (how) and the rationale (why) behind it.
+[Håkon Wium Lie](https://mobile.twitter.com/wiumlie) kindly provided the history (how) and the rationale (why) behind it.
 
 The rationale was because the "HTML2 specification said so".
 
 https://twitter.com/wiumlie/status/1151458530567831553
 
-_"[There we have it, HTML2 spec.](https://twitter.com/vuildco/status/1151462988798464002)" (Vuild took words out of my mouth 😀*).*  
-Note that [it's the HTML2 spec not XHTML2](https://twitter.com/wiumlie/status/1151576065934012422)._
+_Note that [it's the HTML2 spec not XHTML2](https://twitter.com/wiumlie/status/1151576065934012422)._
 
 ## **img src**
 
@@ -70,7 +67,7 @@ _**SPOILER**: An old spell checker didn't catch it._
 
 ## Parting Words
 
-Many thanks to [Vuild](https://vuild.com/), [Brendan Eich](https://brendaneich.com/), and [Håkon Wium Lie](https://www.wiumlie.no/en.html) for the help and the hi/story.
+Many thanks to [Brendan Eich](https://brendaneich.com/), and [Håkon Wium Lie](https://www.wiumlie.no/en.html) for the help and the hi/story.
 
 It was a great experience as they spared their time to teach and share the experience.
 
