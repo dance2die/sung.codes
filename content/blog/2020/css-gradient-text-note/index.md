@@ -5,7 +5,7 @@ published: true
 tags: "css, gradient, selfnote"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [William Krause](https://unsplash.com/@williamk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) from [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+bannerCredit: "Image by [Lichtmagnet](https://pixabay.com/users/lichtmagnet-14706/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=73350) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=73350)"
 ---
 
 A note to self on how to make HTML text with gradient background.
@@ -14,7 +14,7 @@ A note to self on how to make HTML text with gradient background.
 
 I saw a cool text with animated gradient for text on [Digital Ocean's Delploy conference site](https://www.digitalocean.com/deploy/).
 
-![demo](animated-gradient-text.gif)
+![demo](./images/animated-gradient-text.gif)
 
 I wanted to know how it was implemented but didn't know how the gradient font was implemented in the first place.
 
@@ -115,3 +115,7 @@ You can achive the gradient text effect with Tailwind CSS with [bg-clip-text](ht
   </span>
 </div>
 ```
+
+---
+
+Image by <a href="https://pixabay.com/users/lichtmagnet-14706/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=73350">Lichtmagnet</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=73350">Pixabay</a>
