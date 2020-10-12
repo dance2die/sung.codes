@@ -2,7 +2,7 @@
 title: Notes on the Dip by Seth Godin
 date: "2020-10-10"
 published: true
-tags: "tailwind, tailwindcss, css, youtube, cheatsheet"
+tags: "books, notes"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
 bannerCredit: "Image by [Bernadette Wurzinger](https://pixabay.com/users/einladung_zum_essen-3625323/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4171459) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4171459)"
