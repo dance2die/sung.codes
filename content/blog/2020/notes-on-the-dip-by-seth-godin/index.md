@@ -1,6 +1,6 @@
 ---
 title: Notes on the Dip by Seth Godin
-date: "2020-10-10"
+date: "2020-10-12"
 published: true
 tags: "books, notes"
 author: Sung M. Kim
