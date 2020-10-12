@@ -5,7 +5,7 @@ published: true
 tags: "tailwind, tailwindcss, css, youtube, cheatsheet"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Rudy and Peter Skitterians](https://pixabay.com/users/skitterphoto-324082/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1017451) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1017451)"
+bannerCredit: "Image by [Bernadette Wurzinger](https://pixabay.com/users/einladung_zum_essen-3625323/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4171459) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4171459)"
 ---
 
 ## Introduction
@@ -257,3 +257,7 @@ _Page 71_
    - And then "stick with it"
 1. "Outline your quitting strategy BEFORE the discomfort sets in"
    - **because it's hard to see when you are in the Dip or Cul-de-Sac, differentiating those is hard**
+
+---
+
+Image by <a href="https://pixabay.com/users/einladung_zum_essen-3625323/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4171459">Bernadette Wurzinger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4171459">Pixabay</a>
