@@ -81,6 +81,140 @@ yarn type-check
 
 If there is no error, you should be able to run it with `yarn start`.
 
-## Set up Husky
+## Set up Commitizen with Husky
 
-## Set up Commitizen
+To enforce consistent commit message (I like [Angular Commit Message Format](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)), I will install Commitizen.
+
+Checking it manually is taxing so I will use [Husky](https://typicode.github.io/husky) to make it run during `git commit`.
+
+I will also add TypeScript ESLint to see if there is any error (Is this needed when `tsc` is run with `type-check`???)
+
+### 1. Install packages
+
+To add commitizen, husky and eslint, run the following command
+
+```bash
+yarn add -D commitizen cz-conventional-changelog eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks husky lint-staged prettier @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser
+```
+
+### 2. Add scripts for husky and linting
+
+In `package.json`,
+
+```json
+  "scripts": {
+    ...
+    "cm": "cz",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "yarn lint --fix"
+  },
+```
+
+### 3. Set up Commitizen for conventional log
+
+In `package.json`, add the commitizen configuration
+
+```
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+```
+
+This will enforce the Angular commit message convention.
+
+And add `cz` command.
+
+### 4. Configure Lint-Staged
+
+Create `.lintstagedrc` file in the project root and add following configuration
+
+```json
+{
+  "*.{js,jsx,ts,tsx}": ["yarn lint:fix", "git add"],
+  "*.scss": ["prettier --write", "stylelint --fix", "git add"],
+  "{*.{json,md}}": ["prettier --write", "git add"]
+}
+```
+
+### 5. Configure Husky
+
+Create `.huskyrc` file in the project root.  
+The following configuration will let husky run when `git commit` is typed.
+
+What it does is to
+
+```json
+{
+  "hooks": {
+    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+    "pre-commit": ["yarn type-check && lint-staged"]
+  }
+}
+```
+
+### 6. Configure ESLint
+
+Create `.eslintrc.js` in the project root.  
+It is based on [Setting up a GatsbyJS starter with TypeScript, ESLint, Prettier and pre-commit hooks](https://www.arden.nl/setting-up-a-gatsby-js-starter-with-type-script-es-lint-prettier-and-pre-commit-hooks).
+
+```js
+/**
+ * based on Setting up the linters
+ * https://www.arden.nl/setting-up-a-gatsby-js-starter-with-type-script-es-lint-prettier-and-pre-commit-hooks
+ */
+module.exports = {
+  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
+  ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+    "import/resolver": {
+      alias: [
+        ["src", "./src"],
+        ["components", "./src/components"],
+        ["store", "./store"],
+      ],
+    },
+  },
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+  },
+  plugins: ["@typescript-eslint", "react"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: "module", // Allows for the use of imports
+  },
+  rules: {
+    "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
+    "@typescript-eslint/explicit-function-return-type": "off",
+  },
+  overrides: [
+    // Override some TypeScript rules just for .js files
+    {
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off", //
+      },
+    },
+  ],
+}
+```
+
+When you stage your files and type `git commit`, you should see `commitzen-conventional-log` prompt.
+
+![husky result](./images/husky.jpg)
