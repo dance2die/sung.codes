@@ -5,7 +5,7 @@ published: true
 tags: "docusaurus, cheatsheet, typescript, husky"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Bernadette Wurzinger](https://pixabay.com/users/einladung_zum_essen-3625323/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4171459) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4171459)"
+bannerCredit: "Image by [Lynn Coetzee](https://pixabay.com/users/lynettec-3567727/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1771662) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1771662)"
 ---
 
 ## Introduction
@@ -218,3 +218,7 @@ module.exports = {
 When you stage your files and type `git commit`, you should see `commitzen-conventional-log` prompt.
 
 ![husky result](./images/husky.jpg)
+
+---
+
+Image by <a href="https://pixabay.com/users/lynettec-3567727/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1771662">Lynn Coetzee</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1771662">Pixabay</a>
