@@ -26,7 +26,6 @@
     "gatsby-plugin-manifest": "^2.2.21",
     "gatsby-plugin-mdx": "^1.0.55",
     "gatsby-plugin-offline": "^3.0.13",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-sass": "^2.1.18",
     "gatsby-plugin-sharp": "^2.2.29",
