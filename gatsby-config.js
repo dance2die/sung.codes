@@ -141,20 +141,22 @@ module.exports = {
     // to use Theme-UI https://theme-ui.com/getting-started
     `gatsby-plugin-emotion`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: "Ropa Sans",
-            subsets: ["latin"],
-            variants: ["400"],
-          },
-          {
-            family: "Open Sans",
-            subsets: ["latin"],
-            variants: ["400", "600", "700", "800"],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: "Ropa Sans",
+              subsets: ["latin"],
+              variants: ["400"],
+            },
+            {
+              family: "Open Sans",
+              subsets: ["latin"],
+              variants: ["400", "600", "700", "800"],
+            },
+          ],
+        },
       },
     },
     {

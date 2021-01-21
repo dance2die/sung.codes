@@ -61,6 +61,7 @@
     "universal-url": "^2.0.0"
   },
   "devDependencies": {
+    "gatsby-plugin-webfonts": "^1.1.4",
     "netlify-cli": "^2.21.0",
     "prettier": "^1.18.2"
   },

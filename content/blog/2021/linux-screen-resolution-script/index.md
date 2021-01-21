@@ -8,7 +8,13 @@ banner: ./images/featured-image.jpg
 bannerCredit: "Image by [Pexels](https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1868496) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1868496)"
 ---
 
-base stuff
+## Introduction
+
+abc
+
+## Scripts
+
+## Gists
 
 ---
 
