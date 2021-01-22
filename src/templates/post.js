@@ -43,7 +43,7 @@ const useReloadDisqusOnThemeChange = () => {
   return shouldReloadDisqus
 }
 
-export default ({
+const Post = ({
   data: {
     site: {
       siteMetadata: { siteUrl },
@@ -157,3 +157,4 @@ export const pageQuery = graphql`
     }
   }
 `
+export default Post

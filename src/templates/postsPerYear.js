@@ -10,7 +10,7 @@ import { URL } from "universal-url"
 import Link from "#components/Link/TextLink"
 import SEO from "#components/seo"
 
-export default ({ data }) => {
+const PostsPerYear = ({ data }) => {
   const posts = data.allMdx.edges.map(
     ({
       node: {
@@ -93,3 +93,5 @@ export const query = graphql`
     }
   }
 `
+
+export default PostsPerYear

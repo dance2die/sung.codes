@@ -96,7 +96,7 @@ const Post = ({ year, count }) => {
 
 const toPost = ([year, count]) => <Post year={year} count={count} />
 
-export default () => {
+const Blog = () => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -132,3 +132,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Blog

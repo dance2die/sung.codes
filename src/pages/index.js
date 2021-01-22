@@ -100,7 +100,7 @@ const Bio = () => (
   </Flex>
 )
 
-export default () => {
+const Index = () => {
   return (
     <Layout>
       <SEO />
@@ -109,3 +109,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Index
