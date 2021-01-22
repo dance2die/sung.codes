@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, useColorMode } from "theme-ui"
 import { Fragment } from "react"
 import styled from "@emotion/styled"
 import { useState } from "react"
@@ -97,16 +97,25 @@ const Social = () => (
 export default () => {
   const [isClicked, setIsClicked] = useState(false)
   const toggleClicked = () => setIsClicked(clicked => !clicked)
+  const [colorMode] = useColorMode()
 
   return (
     <Fragment>
-      <a
+      <button
         onClick={toggleClicked}
         sx={{
+          // backgroundColor: "transparent",
+          borderStyle: "none",
+          "&:focus": { outline: 0 },
+          "&:hover": { textDecoration: "none", cursor: "pointer" },
+
           zIndex: "99",
           height: "2.75rem",
           width: "2.75rem",
-          background: theme => theme.colors.primary,
+          background: theme =>
+            colorMode === "dark"
+              ? theme.colors.primary
+              : theme.colors.secondary,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -114,7 +123,7 @@ export default () => {
         }}
       >
         {isClicked ? "❌" : "🍔"}
-      </a>
+      </button>
       {isClicked && (
         <nav
           sx={{
