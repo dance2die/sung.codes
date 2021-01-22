@@ -94,7 +94,7 @@ const createBlogYearPages = async ({ graphql, actions, reporter }) => {
       allDirectory(
         filter: {
           sourceInstanceName: { eq: "blog" }
-          relativeDirectory: { regex: "/^\\\\d{4}$/gi" }
+          relativeDirectory: { regex: "/^\\\\d{4}/*/gi" }
         }
       ) {
         nodes {
@@ -109,11 +109,15 @@ const createBlogYearPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create a page per year
-  const years = query.data.allDirectory.nodes
-  const { createPage } = actions
-
-  years.forEach(({ year }) => {
-    createPage({
+  // ".replace(/\/.*/gi, "")" is because sometimes Gasby returns relative path including subpath for some reason
+  // e.g.) Instead of "year: 2021", it returns ""year": "2021/linux-screen-resolution-script""
+  const years = [
+    ...new Set(
+      query.data.allDirectory.nodes.map(node => node.year.replace(/\/.*/gi, ""))
+    ),
+  ]
+  years.forEach(year => {
+    actions.createPage({
       path: `/blog/${year}`,
       component: path.resolve(`./src/templates/postsPerYear.js`),
       context: { year },
