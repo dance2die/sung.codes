@@ -15,7 +15,7 @@ export default ({ data }) => {
     ({
       node: {
         frontmatter: { title, date },
-        fields: { slug, year },
+        fields: { slug },
         id,
       },
     }) => (
