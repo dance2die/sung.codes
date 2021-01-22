@@ -5,18 +5,21 @@ const ThemeSwitch = () => {
   const [colorMode, setColorMode] = useColorMode()
 
   return (
-    <span
+    <button
       onClick={e => {
         e.preventDefault()
         setColorMode(colorMode === "dark" ? "default" : "dark")
       }}
       sx={{
         fontSize: [1, 2, 3, 4],
+        backgroundColor: "transparent",
+        borderStyle: "none",
+        "&:focus": { outline: 0 },
         "&:hover": { textDecoration: "none", cursor: "pointer" },
       }}
     >
       {colorMode === "dark" ? "🌙" : "🌞"}
-    </span>
+    </button>
   )
 }
 
