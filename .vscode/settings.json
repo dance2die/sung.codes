@@ -15,6 +15,5 @@
     "statusBar.foreground": "#15202b",
     "activityBar.activeBackground": "#65c89b"
   },
-  "peacock.color": "#42b882",
-  "eslint.enable": true
+  "peacock.color": "#42b882"
 }

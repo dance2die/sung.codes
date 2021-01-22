@@ -115,14 +115,13 @@ const Post = ({
                 Let me know
               </ExternalLink>{" "}
             </Box>
+            {/* eslint-disable-next-line */}
             <Styled.root>
               <MDXRenderer>{body}</MDXRenderer>
             </Styled.root>
-
             <Box sx={{ padding: [1, 2, 3, 5] }}>
               <Webmention target={url} />
             </Box>
-
             <Box sx={{ padding: [1, 2, 3, 5] }}>
               {shouldReloadDisqus && <Disqus config={disqusConfig} />}
             </Box>
