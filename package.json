@@ -6,6 +6,7 @@
   "author": "Sung M. Kim (aka dance2die)",
   "dependencies": {
     "@emotion/core": "^10.0.22",
+    "@emotion/react": "^11.1.4",
     "@emotion/styled": "^10.0.23",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
