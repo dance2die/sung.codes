@@ -14,10 +14,12 @@ Tailwind provides [Presets](https://tailwindcss.com/docs/presets) and [Plugins](
 
 The difference is hard to grasp from descriptions.
 
-> Creating your own reusable configuration presets.  
+> Creating your own reusable configuration presets.
+>
 > **Presets**
 
-> Extending Tailwind with reusable third-party plugins.  
+> Extending Tailwind with reusable third-party plugins.
+>
 > **Plugins**
 
 Note that both promotes "re-usability". A bit confusing because of the recursive definition of presets.
@@ -43,8 +45,7 @@ they can contain plugins, while the reverse is not true.
 
 ### Presets
 
-You'd normally create a custom TW configuration options such as base, components, utilities ("styles" hereafter).  
-As mentioned above, Presets can add plugins.
+You'd normally create a custom TW configuration options such as base, components, utilities ("styles" hereafter). As mentioned above, Presets can add plugins.
 
 As it's still a TW configuration, you can either override or extend styles.
 
