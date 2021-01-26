@@ -1,11 +1,11 @@
 ---
 title: Tailwind Preset vs Plugin
-date: "2021-01-21"
+date: "2021-01-26"
 published: true
 tags: "tailwind, tailwindcss, comparison, selfnote"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Pexels](https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1868496) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1868496)"
+bannerCredit: "Image by [Devon Breen](https://pixabay.com/users/dbreen-1643989/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1085072) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1085072)"
 ---
 
 ## Introduction
@@ -89,3 +89,7 @@ Check out [Creating a preset](https://tailwindcss.com/docs/presets#creating-a-pr
 ### Plugins
 
 Better to refer you to official [Plugin documentation](https://tailwindcss.com/docs/plugins) for examples (it's flexible.)
+
+---
+
+Image by <a href="https://pixabay.com/users/dbreen-1643989/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1085072">Devon Breen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1085072">Pixabay</a>
