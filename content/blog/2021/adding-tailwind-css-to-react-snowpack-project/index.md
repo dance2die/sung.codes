@@ -106,6 +106,8 @@ Replace `./src/index.css` content with Tailwind directives
 @tailwind utilities;
 ```
 
+Check out the official Taiwlind CSS [Installation documentation](https://tailwindcss.com/docs/installation#installing-tailwind-css-as-a-post-css-plugin) for more options.
+
 ---
 
 Image by <a href="https://pixabay.com/users/zmortero-1348534/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=912247">zmortero</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=912247">Pixabay</a>
