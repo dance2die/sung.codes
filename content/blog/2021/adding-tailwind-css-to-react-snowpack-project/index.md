@@ -1,11 +1,11 @@
 ---
 title: Adding Tailwind CSS to React Snowpack Project
-date: "2021-01-26"
+date: "2021-01-28"
 published: true
 tags: "tailwind, tailwindcss, snowpack, cheatsheet"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Devon Breen](https://pixabay.com/users/dbreen-1643989/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1085072) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1085072)"
+bannerCredit: "Image by [zmortero](https://pixabay.com/users/zmortero-1348534/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=912247) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=912247)"
 ---
 
 ## Introduction
@@ -105,3 +105,7 @@ Replace `./src/index.css` content with Tailwind directives
 @tailwind components;
 @tailwind utilities;
 ```
+
+---
+
+Image by <a href="https://pixabay.com/users/zmortero-1348534/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=912247">zmortero</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=912247">Pixabay</a>
