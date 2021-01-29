@@ -28,7 +28,7 @@ cd app-name
 git branch -M master main
 ```
 
-You can find more templates in the offical repository.  
+You can find more templates (`@snowpack/app-template-*`) in the offical repository.  
 https://github.com/snowpackjs/snowpack/tree/main/create-snowpack-app/cli#official-app-templates
 
 ### 2. Install NPM packages
