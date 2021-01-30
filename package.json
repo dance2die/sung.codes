@@ -13,7 +13,7 @@
     "@theme-ui/color": "^0.2.49",
     "@theme-ui/components": "^0.2.46",
     "@theme-ui/match-media": "^0.2.49",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.2",
     "classnames": "^2.2.6",
     "dangerous-components": "1.0.0",
