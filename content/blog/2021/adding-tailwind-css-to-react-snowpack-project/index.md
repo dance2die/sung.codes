@@ -79,24 +79,7 @@ const plugins =
 module.exports = { plugins }
 ```
 
-### 6. Configure Tailwind CSS
-
-`tailwindcss.config.js`
-
-```js
-const cssnano = require("cssnano")
-const tailwindcss = require("tailwindcss")
-const autoprefixer = require("autoprefixer")
-
-const plugins =
-  process.env.NODE_ENV === "production"
-    ? [tailwindcss, autoprefixer, cssnano]
-    : [tailwindcss, autoprefixer]
-
-module.exports = { plugins }
-```
-
-### 7. Add Tailwind CSS Utilities
+### 6. Add Tailwind CSS Utilities
 
 Replace `./src/index.css` content with Tailwind directives
 
