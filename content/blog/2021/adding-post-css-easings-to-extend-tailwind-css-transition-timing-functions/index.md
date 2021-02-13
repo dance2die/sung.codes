@@ -5,7 +5,7 @@ published: true
 tags: "tailwind, tailwindcss, easings, transition"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [zmortero](https://pixabay.com/users/zmortero-1348534/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=912247) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=912247)"
+bannerCredit: "Image by [Angelo Esslinger](https://pixabay.com/users/whitesession-4645995/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717431) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717431)"
 ---
 
 ## Introduction
@@ -99,3 +99,7 @@ module.exports = {
   plugins: [],
 }
 ```
+
+---
+
+Image by <a href="https://pixabay.com/users/whitesession-4645995/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717431">Angelo Esslinger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717431">Pixabay</a>
