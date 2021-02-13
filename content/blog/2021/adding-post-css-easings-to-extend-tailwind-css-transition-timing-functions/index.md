@@ -1,5 +1,5 @@
 ---
-title: Adding Custom Tailwind CSS Transition Timing Functions
+title: Adding PostCSS-Easings to Extend Tailwind CSS Transition Timing Functions
 date: "2021-02-12"
 published: true
 tags: "tailwind, tailwindcss, easings, transition"
