@@ -85,7 +85,8 @@ const numberedOutlines = Object.entries(values)
   }))
 ```
 
-You can see that `outline-5` was applied somewhere in the DOM tree and `outline` was applied to the whole page.
+You can see that `outline-5` was applied somewhere in the DOM tree and `outline` was applied to the whole page.  
+(disregard the fact that it's showing `outline-4` cuz it's WIP 😅)
 
 ![working!](./images/working-css.jpg)
 
