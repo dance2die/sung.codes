@@ -1,19 +1,21 @@
 ---
 title: A hack for missing @at-root for Tailwind CSS Plugin
-date: "2021-01-26"
+date: "2021-03-05"
 published: true
 tags: "tailwind, tailwindcss, hack, SASS"
 author: Sung M. Kim
 banner: ./images/featured-image.jpg
-bannerCredit: "Image by [Devon Breen](https://pixabay.com/users/dbreen-1643989/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1085072) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1085072)"
+bannerCredit: "Image by [Peter H](https://pixabay.com/users/tama66-1032521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1644155) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1644155)"
 ---
 
 ## Introduction
 
-I was creating a Tailwind CSS ("TW") plugin, [@downwindcss/debug](https://github.com/downwindcss/debug).  
-I wanted to create a utility `outline-{n}` to apply outline for the whole page wherever a user applies the class in the DOM tree.
+I was creating a Tailwind CSS ("TW") plugin, [@downwindcss/debug](https://github.com/downwindcss/debug). for a utility `outline-{n}` to apply outline.
 
-## Problem
+The utility should apply to a whole page when a user adds the utility class anywhere in the DOM tree.  
+Basically [@at-root](https://sass-lang.com/documentation/at-rules/at-root) in SASS.
+
+## Problems and Attempts
 
 When you add a utility, you can use a [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syntax), to refer to the parent with `&` (ampersand).
 
@@ -67,7 +69,7 @@ But both of them still appeneded `.outline` in front of `body` like,
 .outline, .outline body > *
 ```
 
-## Final working attempt
+## Working Code
 
 Ok, frustrated I was, I decided to hack it by excluding the current `&` and including it again (`body * > :not(&), &`).
 
@@ -86,3 +88,7 @@ const numberedOutlines = Object.entries(values)
 You can see that `outline-5` was applied somewhere in the DOM tree and `outline` was applied to the whole page.
 
 ![working!](./images/working-css.jpg)
+
+---
+
+Image by <a href="https://pixabay.com/users/tama66-1032521/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1644155">Peter H</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1644155">Pixabay</a>
